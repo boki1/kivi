@@ -1,5 +1,5 @@
 %language "c++"
-%define parser_class_name  { kivi_parser }
+%define api.parser.class { kivi_parser }
 %define api.value.type variant
 %define parse.assert
 %define parse.error verbose
@@ -11,7 +11,7 @@
 } //%code requires
 
 %token END 0
-%token LET "let" IF "if" WHILE "while" RETURN "return"
+%token VAR "auto" IF "if" WHILE "while" RETURN "return"
 %token IDENTIFIER STRING_LITERAL NUMBER_LITERAL
 %token EQ "==" NE "<>"
 
@@ -22,64 +22,154 @@
 %left '+' '-'
 %left '*' '/'
 %left '('
+
+%type<long>        NUMBER_LITERAL
+%type<std::string> IDENTIFIER STRING_LITERAL
+%type<std::string> Safe_identifier
 %%
 
-program: functions
-
-functions:
-  /* empty */
-| functions single_function;
-
-single_function: IDENTIFIER parameter_list ':' statement;
-
-parameter_list:
-  /* empty */
-| single_param
+Program:
+	Functions
 ;
 
-single_param:
-  single_param ',' IDENTIFIER		// One or more; comma-delimited
+Functions:
+  /* empty */
+| Functions Single_function;
+
+Single_function:
+  Safe_identifier
+  Parameter_list Safe_colon
+  Safe_statement
+;
+
+Parameter_list:
+  /* empty */
+| Single_param
+;
+
+Single_param:
+  // One or more; comma-delimited
+  Single_param ',' Safe_identifier
 | IDENTIFIER
 ;
 
-statement:
-  compound_statement '}'
-| IF expression ':' statement
-| WHILE expression ':' statement
-| RETURN expression ';'
-| expressions ';'
+Statement:
+  Compound_statement Safe_closing_brace
+| IF Safe_expression Safe_colon Safe_statement
+| WHILE Safe_expression ':' Safe_statement
+| RETURN Safe_expression Safe_semicolon
+| Expressions Safe_semicolon
 | ';'
 ;
 
-expressions:
-  var_definition
-| expression
-| comma_sep_expressions ',' expression
+Comma_sep_expressions:
+  Safe_expression
+  // One or more; comma-delimited
+| Comma_sep_expressions ',' Safe_expression
 ;
 
-comma_sep_expressions:
-  expression
-| comma_sep_expressions ',' expression    // One or more; comma-delimited
+Var_definition:
+    VAR Safe_identifier '=' Safe_expression
 ;
 
-var_definition:  LET IDENTIFIER '=' expression
+Compound_statement:
+  '{'
+| Compound_statement Statement
 ;
 
-compound_statement: '{'
-| compound_statement statement
+Comparison_operation:
+  Expression "==" error
+| Expression "==" Expression
+| Expression "<>" error
+| Expression "<>" Expression
 ;
 
-expression: STRING_LITERAL
+Arithmetic_operation:
+  Expression '+' error
+| Expression '+' Expression
+| Expression '-' error
+| Expression '-' Expression %prec '+'
+| Expression '*' error
+| Expression '*' Expression
+// TODO:
+// Make division by 0 a compiler time error
+| Expression '/' error
+| Expression '/' Expression %prec '*'
+| Expression '=' error
+| Expression '=' Expression
+;
+
+Unary_operation:
+  '-' Expression
+| '-' error
+;
+
+Function_call_operation:
+  Expression '(' ')'
+| Expression '(' Comma_sep_expressions Safe_closing_parentesis
+| '(' Comma_sep_expressions Safe_closing_parentesis
+;
+
+Expressions:
+  Var_definition
+| Expression
+| Expression ',' Comma_sep_expressions
+;
+
+Expression:
+  STRING_LITERAL
 | NUMBER_LITERAL
 | IDENTIFIER
-| '(' expressions ')'
-| expression '(' ')'
-| expression '(' comma_sep_expressions')'
-| expression '+' expression
-| expression '-' expression %prec '+'
-| expression '*' expression
-| expression '/' expression %prec '*'
-| expression "==" expression
-| expression "<>" expression
+| Arithmetic_operation
+| Comparison_operation
+| Unary_operation
+| Function_call_operation
+;
+
+//
+// Error handling and correction
+Safe_identifier:
+  error
+| IDENTIFIER
+;
+
+Safe_colon:
+  error
+| ':'
+;
+
+Safe_semicolon:
+  error
+| ';'
+;
+
+Safe_closing_brace:
+  error
+| '}'
+;
+
+Safe_closing_parentesis:
+  error
+| ')'
+;
+
+Safe_statement:
+  error
+| Statement
+;
+
+Safe_expression:
+  error
+| Expression
+;
+
+Safe_expressions:
+  error
+| Expressions
+;
+
+Safe_parentesised_expression:
+  error
+| '(' Safe_expressions Safe_closing_parentesis
 ;
 
