@@ -86,5 +86,11 @@ private:
 EXPRESSION_TYPES(o)
 #undef o
 
+struct function {
+  std::string name;
+  expression code;
+  unsigned num_locals = 0;
+  unsigned num_parameters = 0;
+};
 #endif // KIVI_PARSER_H
 
