@@ -1,4 +1,5 @@
 #include "include/parser.hpp"
+#include "include/kivi_parser.tab.hh"
 #include <algorithm>
 
 

@@ -36,7 +36,7 @@ private:
 
 #define EXPRESSION_TYPES(o)                                                    \
   o(nop) o(string) o(number) o(identifier)                                     \
-  o(addition) o(negation) o(equality) 										   \
+  o(addition) o(negation) o(equality) o(multiplication) o(division)	    	   \
   o(compare_and) o(compare_loop)                                               \
   o(function_call) o(copy)                                                     \
   o(expression_sequence) o(retrn)
