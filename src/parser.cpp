@@ -7,7 +7,7 @@ parsing_context::define_identifier (const std::string &name, identifier &&f)
 {
     auto it = m_scope_list.back().emplace(name, std::move(f));
     if (!it.second) {
-		// TODO: Duplicate definition error message
+		throw yy::kivi_parser::syntax_error (location, "Duplicate definition <" + name + ">");
     }
     return it.first->second;
 }
@@ -21,7 +21,8 @@ parsing_context::use_identifier (const std::string &name) const
         }
     }
 
-		// TODO: Undefined identifier error message
+	throw yy::kivi_parser::syntax_error (location, "Undefined identifier <" + name + ">");
+
 }
 
 void
