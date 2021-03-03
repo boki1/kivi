@@ -1,9 +1,12 @@
 #ifndef KIVI_PARSER_H
 #define KIVI_PARSER_H
 
+#include "stack.hh"
+#include "location.hh"
+
+
 #include <map>
 #include <vector>
-#include <string>
 #include <list>
 
 enum class identifier_type {
@@ -107,11 +110,13 @@ private:
 
 public:
   const char *lexer_cursor;
+  yy::location location;
 
 public:
-  parsing_context(const char *code, const std::string *filename)
-      : lexer_cursor(code) {}
-
+  parsing_context(const char *code, std::string *filename)
+      : lexer_cursor(code) {
+    location.begin.filename = location.end.filename = filename;
+	  }
 public:
     const std::vector<function> &get_function_list() const { return m_function_list; }
 
