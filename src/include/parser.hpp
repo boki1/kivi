@@ -1,6 +1,8 @@
 #ifndef KIVI_PARSER_H
 #define KIVI_PARSER_H
 
+#include <map>
+#include <vector>
 #include <string>
 #include <list>
 
@@ -80,7 +82,7 @@ private:
 
 
 #define o(n)                                                                   \
-  template <typename... T> inline expression new_##n(T &&... args) {    \
+  template <typename... T> inline expression new_##n##_expr(T &&... args) {    \
     return expression(expression_type::n, std::forward<T>(args)...);           \
   }
 EXPRESSION_TYPES(o)
@@ -92,5 +94,48 @@ struct function {
   unsigned num_locals = 0;
   unsigned num_parameters = 0;
 };
+
+
+class parsing_context {
+private:
+  std::vector<std::map<std::string, identifier>> m_scope_list;
+  std::vector<function> m_function_list;
+
+  // The number of the pseudo register in the following code generation step
+  unsigned m_register_counter = 0;
+  function m_current_function;
+
+public:
+  const char *lexer_cursor;
+
+public:
+  parsing_context(const char *code, const std::string *filename)
+      : lexer_cursor(code) {}
+
+public:
+    const std::vector<function> &get_function_list() const { return m_function_list; }
+
+public:
+  const identifier &define_identifier(const std::string &name, identifier &&f);
+
+  expression define_local(const std::string &name);
+
+  expression define_function(const std::string &name);
+
+  expression define_parameter(const std::string &name);
+
+  expression new_register_variable();
+
+  expression use_identifier(const std::string &name) const;
+
+  void add_function_with_block(std::string &&name, expression &&code);
+
+  void enter_scope();
+
+  void exit_scope();
+};
+
+
 #endif // KIVI_PARSER_H
+
 
