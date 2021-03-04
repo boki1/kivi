@@ -1,13 +1,12 @@
-#ifndef KIVI_PARSER_H
-#define KIVI_PARSER_H
+#ifndef KIVI_LEXER_H
+#define KIVI_LEXER_H
 
-#include "stack.hh"
 #include "location.hh"
+#include "stack.hh"
 
-
+#include <list>
 #include <map>
 #include <vector>
-#include <list>
 
 enum class identifier_type {
   UNDEFINED,
@@ -33,10 +32,9 @@ private:
   std::size_t m_index_within = 0;
   std::string m_name;
 };
-
 #define EXPRESSION_TYPES(o)                                                    \
   o(nop) o(string) o(number) o(identifier)                                     \
-  o(addition) o(negation) o(equality) o(multiplication) o(division)	    	   \
+  o(addition) o(negation) o(equality) o(multiplication) o(division)            \
   o(compare_and) o(compare_loop)                                               \
   o(function_call) o(copy)                                                     \
   o(expression_sequence) o(retrn)
@@ -83,14 +81,6 @@ private:
   std::list<expression> m_parameters;
 };
 
-
-#define o(n)                                                                   \
-  template <typename... T> inline expression new_##n##_expr(T &&... args) {    \
-    return expression(expression_type::n, std::forward<T>(args)...);           \
-  }
-EXPRESSION_TYPES(o)
-#undef o
-
 struct function {
   std::string name;
   expression code;
@@ -98,6 +88,12 @@ struct function {
   unsigned num_parameters = 0;
 };
 
+#define o(n)                                                                   \
+  template <typename... T> inline expression new_##n##_expr(T &&... args) {    \
+    return expression(expression_type::n, std::forward<T>(args)...);           \
+  }
+EXPRESSION_TYPES(o)
+#undef o
 
 class parsing_context {
 private:
@@ -116,7 +112,8 @@ public:
   parsing_context(const char *code, std::string *filename)
       : lexer_cursor(code) {
     location.begin.filename = location.end.filename = filename;
-	  }
+  }
+
 public:
     const std::vector<function> &get_function_list() const { return m_function_list; }
 
@@ -141,6 +138,5 @@ public:
 };
 
 
-#endif // KIVI_PARSER_H
-
+#endif
 

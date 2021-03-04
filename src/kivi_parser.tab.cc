@@ -175,13 +175,14 @@ namespace yy {
 
 
   /// Build a parser object.
-   kivi_parser :: kivi_parser  ()
+   kivi_parser :: kivi_parser  (parsing_context &ctx_yyarg)
 #if YYDEBUG
     : yydebug_ (false),
-      yycdebug_ (&std::cerr)
+      yycdebug_ (&std::cerr),
 #else
-
+    :
 #endif
+      ctx (ctx_yyarg)
   {}
 
    kivi_parser ::~ kivi_parser  ()
@@ -509,7 +510,7 @@ namespace yy {
         try
 #endif // YY_EXCEPTIONS
           {
-            symbol_type yylookahead (yylex ());
+            symbol_type yylookahead (yylex (ctx));
             yyla.move (yylookahead);
           }
 #if YY_EXCEPTIONS
@@ -604,13 +605,13 @@ namespace yy {
           switch (yyn)
             {
   case 51:
-#line 133 "../misc/grammar.y"
+#line 135 "src/misc/grammar.y"
   { yylhs.value.as < std::string > () = yystack_[0].value.as < std::string > (); }
-#line 610 "kivi_parser.tab.cc"
+#line 611 "kivi_parser.tab.cc"
     break;
 
 
-#line 614 "kivi_parser.tab.cc"
+#line 615 "kivi_parser.tab.cc"
 
             default:
               break;
@@ -1041,13 +1042,13 @@ namespace yy {
   const unsigned char
    kivi_parser ::yyrline_[] =
   {
-       0,    32,    32,    35,    37,    40,    45,    47,    52,    53,
-      57,    58,    59,    60,    61,    62,    66,    68,    72,    76,
-      77,    81,    82,    83,    84,    88,    89,    90,    91,    92,
-      93,    96,    97,    98,    99,   103,   104,   108,   109,   110,
-     114,   115,   116,   120,   121,   122,   123,   124,   125,   126,
-     132,   133,   137,   138,   142,   143,   147,   148,   152,   153,
-     157,   158,   162,   163
+       0,    34,    34,    37,    39,    42,    47,    49,    54,    55,
+      59,    60,    61,    62,    63,    64,    68,    70,    74,    78,
+      79,    83,    84,    85,    86,    90,    91,    92,    93,    94,
+      95,    98,    99,   100,   101,   105,   106,   110,   111,   112,
+     116,   117,   118,   122,   123,   124,   125,   126,   127,   128,
+     134,   135,   139,   140,   144,   145,   149,   150,   154,   155,
+     159,   160,   164,   165
   };
 
   // Print the state stack on the debug stream.
@@ -1081,5 +1082,5 @@ namespace yy {
 
 
 } // yy
-#line 1085 "kivi_parser.tab.cc"
+#line 1086 "kivi_parser.tab.cc"
 
