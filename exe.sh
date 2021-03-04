@@ -1,6 +1,11 @@
 BUILD_DIR=build
-EXE_FILE=kivi
+EXE_FILE="$BUILD_DIR"/kivi
 
-./build.sh
+if [ ! -e "$EXE_FILE" ]
+then
+	./build.sh
+fi
 
-[ -f "$BUILD_DIR"/$EXE_FILE ] && ./"$BUILD_DIR"/"$EXE_FILE"
+echo "$1"
+
+./"$EXE_FILE" $1
