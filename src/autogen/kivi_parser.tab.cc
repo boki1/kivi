@@ -1,4 +1,4 @@
-// A Bison parser, made by GNU Bison 3.5.1.
+// A Bison parser, made by GNU Bison 3.7.3.
 
 // Skeleton implementation for Bison LALR(1) parsers in C++
 
@@ -30,8 +30,9 @@
 // This special exception was added by the Free Software Foundation in
 // version 2.2 of Bison.
 
-// Undocumented macros, especially those whose name start with YY_,
-// are private implementation details.  Do not rely on them.
+// DO NOT RELY ON FEATURES THAT ARE NOT DOCUMENTED in the manual,
+// especially those whose name start with YY_ or yy_.  They are
+// private implementation details that can be changed or removed.
 
 
 
@@ -53,6 +54,7 @@
 #  define YY_(msgid) msgid
 # endif
 #endif
+
 
 // Whether we are compiled with exception support.
 #ifndef YY_EXCEPTIONS
@@ -109,7 +111,7 @@
 # define YY_STACK_PRINT()               \
   do {                                  \
     if (yydebug_)                       \
-      yystack_print_ ();                \
+      yy_stack_print_ ();                \
   } while (false)
 
 #else // !YYDEBUG
@@ -130,49 +132,7 @@
 #define YYRECOVERING()  (!!yyerrstatus_)
 
 namespace yy {
-#line 134 "kivi_parser.tab.cc"
-
-
-  /* Return YYSTR after stripping away unnecessary quotes and
-     backslashes, so that it's suitable for yyerror.  The heuristic is
-     that double-quoting is unnecessary unless the string contains an
-     apostrophe, a comma, or backslash (other than backslash-backslash).
-     YYSTR is taken from yytname.  */
-  std::string
-   kivi_parser ::yytnamerr_ (const char *yystr)
-  {
-    if (*yystr == '"')
-      {
-        std::string yyr;
-        char const *yyp = yystr;
-
-        for (;;)
-          switch (*++yyp)
-            {
-            case '\'':
-            case ',':
-              goto do_not_strip_quotes;
-
-            case '\\':
-              if (*++yyp != '\\')
-                goto do_not_strip_quotes;
-              else
-                goto append;
-
-            append:
-            default:
-              yyr += *yyp;
-              break;
-
-            case '"':
-              return yyr;
-            }
-      do_not_strip_quotes: ;
-      }
-
-    return yystr;
-  }
-
+#line 136 "src/autogen/kivi_parser.tab.cc"
 
   /// Build a parser object.
    kivi_parser :: kivi_parser  (parsing_context &ctx_yyarg)
@@ -192,7 +152,7 @@ namespace yy {
   {}
 
   /*---------------.
-  | Symbol types.  |
+  | symbol kinds.  |
   `---------------*/
 
 
@@ -223,13 +183,13 @@ namespace yy {
     : state (s)
   {}
 
-   kivi_parser ::symbol_number_type
-   kivi_parser ::by_state::type_get () const YY_NOEXCEPT
+   kivi_parser ::symbol_kind_type
+   kivi_parser ::by_state::kind () const YY_NOEXCEPT
   {
     if (state == empty_state)
-      return empty_symbol;
+      return symbol_kind::S_YYEMPTY;
     else
-      return yystos_[+state];
+      return YY_CAST (symbol_kind_type, yystos_[+state]);
   }
 
    kivi_parser ::stack_symbol_type::stack_symbol_type ()
@@ -238,15 +198,15 @@ namespace yy {
    kivi_parser ::stack_symbol_type::stack_symbol_type (YY_RVREF (stack_symbol_type) that)
     : super_type (YY_MOVE (that.state), YY_MOVE (that.location))
   {
-    switch (that.type_get ())
+    switch (that.kind ())
     {
-      case 9: // NUMBER_LITERAL
+      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.YY_MOVE_OR_COPY< long > (YY_MOVE (that.value));
         break;
 
-      case 7: // IDENTIFIER
-      case 8: // STRING_LITERAL
-      case 40: // Safe_identifier
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
+      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
+      case symbol_kind::S_Safe_identifier: // Safe_identifier
         value.YY_MOVE_OR_COPY< std::string > (YY_MOVE (that.value));
         break;
 
@@ -263,15 +223,15 @@ namespace yy {
    kivi_parser ::stack_symbol_type::stack_symbol_type (state_type s, YY_MOVE_REF (symbol_type) that)
     : super_type (s, YY_MOVE (that.location))
   {
-    switch (that.type_get ())
+    switch (that.kind ())
     {
-      case 9: // NUMBER_LITERAL
+      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.move< long > (YY_MOVE (that.value));
         break;
 
-      case 7: // IDENTIFIER
-      case 8: // STRING_LITERAL
-      case 40: // Safe_identifier
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
+      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
+      case symbol_kind::S_Safe_identifier: // Safe_identifier
         value.move< std::string > (YY_MOVE (that.value));
         break;
 
@@ -280,7 +240,7 @@ namespace yy {
     }
 
     // that is emptied.
-    that.type = empty_symbol;
+    that.kind_ = symbol_kind::S_YYEMPTY;
   }
 
 #if YY_CPLUSPLUS < 201103L
@@ -288,15 +248,15 @@ namespace yy {
    kivi_parser ::stack_symbol_type::operator= (const stack_symbol_type& that)
   {
     state = that.state;
-    switch (that.type_get ())
+    switch (that.kind ())
     {
-      case 9: // NUMBER_LITERAL
+      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.copy< long > (that.value);
         break;
 
-      case 7: // IDENTIFIER
-      case 8: // STRING_LITERAL
-      case 40: // Safe_identifier
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
+      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
+      case symbol_kind::S_Safe_identifier: // Safe_identifier
         value.copy< std::string > (that.value);
         break;
 
@@ -312,15 +272,15 @@ namespace yy {
    kivi_parser ::stack_symbol_type::operator= (stack_symbol_type& that)
   {
     state = that.state;
-    switch (that.type_get ())
+    switch (that.kind ())
     {
-      case 9: // NUMBER_LITERAL
+      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.move< long > (that.value);
         break;
 
-      case 7: // IDENTIFIER
-      case 8: // STRING_LITERAL
-      case 40: // Safe_identifier
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
+      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
+      case symbol_kind::S_Safe_identifier: // Safe_identifier
         value.move< std::string > (that.value);
         break;
 
@@ -346,23 +306,21 @@ namespace yy {
 #if YYDEBUG
   template <typename Base>
   void
-   kivi_parser ::yy_print_ (std::ostream& yyo,
-                                     const basic_symbol<Base>& yysym) const
+   kivi_parser ::yy_print_ (std::ostream& yyo, const basic_symbol<Base>& yysym) const
   {
     std::ostream& yyoutput = yyo;
     YYUSE (yyoutput);
-    symbol_number_type yytype = yysym.type_get ();
-#if defined __GNUC__ && ! defined __clang__ && ! defined __ICC && __GNUC__ * 100 + __GNUC_MINOR__ <= 408
-    // Avoid a (spurious) G++ 4.8 warning about "array subscript is
-    // below array bounds".
     if (yysym.empty ())
-      std::abort ();
-#endif
-    yyo << (yytype < yyntokens_ ? "token" : "nterm")
-        << ' ' << yytname_[yytype] << " ("
-        << yysym.location << ": ";
-    YYUSE (yytype);
-    yyo << ')';
+      yyo << "empty symbol";
+    else
+      {
+        symbol_kind_type yykind = yysym.kind ();
+        yyo << (yykind < YYNTOKENS ? "token" : "nterm")
+            << ' ' << yysym.name () << " ("
+            << yysym.location << ": ";
+        YYUSE (yykind);
+        yyo << ')';
+      }
   }
 #endif
 
@@ -421,11 +379,11 @@ namespace yy {
    kivi_parser ::state_type
    kivi_parser ::yy_lr_goto_state_ (state_type yystate, int yysym)
   {
-    int yyr = yypgoto_[yysym - yyntokens_] + yystate;
+    int yyr = yypgoto_[yysym - YYNTOKENS] + yystate;
     if (0 <= yyr && yyr <= yylast_ && yycheck_[yyr] == yystate)
       return yytable_[yyr];
     else
-      return yydefgoto_[yysym - yyntokens_];
+      return yydefgoto_[yysym - YYNTOKENS];
   }
 
   bool
@@ -485,6 +443,7 @@ namespace yy {
   `-----------------------------------------------*/
   yynewstate:
     YYCDEBUG << "Entering state " << int (yystack_[0].state) << '\n';
+    YY_STACK_PRINT ();
 
     // Accept?
     if (yystack_[0].state == yyfinal_)
@@ -505,7 +464,7 @@ namespace yy {
     // Read a lookahead token.
     if (yyla.empty ())
       {
-        YYCDEBUG << "Reading a token: ";
+        YYCDEBUG << "Reading a token\n";
 #if YY_EXCEPTIONS
         try
 #endif // YY_EXCEPTIONS
@@ -524,10 +483,20 @@ namespace yy {
       }
     YY_SYMBOL_PRINT ("Next token is", yyla);
 
+    if (yyla.kind () == symbol_kind::S_YYerror)
+    {
+      // The scanner already issued an error message, process directly
+      // to error recovery.  But do not keep the error token as
+      // lookahead, it is too special and may lead us to an endless
+      // loop in error recovery. */
+      yyla.kind_ = symbol_kind::S_YYUNDEF;
+      goto yyerrlab1;
+    }
+
     /* If the proper action on seeing token YYLA.TYPE is to reduce or
        to detect an error, take that action.  */
-    yyn += yyla.type_get ();
-    if (yyn < 0 || yylast_ < yyn || yycheck_[yyn] != yyla.type_get ())
+    yyn += yyla.kind ();
+    if (yyn < 0 || yylast_ < yyn || yycheck_[yyn] != yyla.kind ())
       {
         goto yydefault;
       }
@@ -574,13 +543,13 @@ namespace yy {
          when using variants.  */
       switch (yyr1_[yyn])
     {
-      case 9: // NUMBER_LITERAL
+      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         yylhs.value.emplace< long > ();
         break;
 
-      case 7: // IDENTIFIER
-      case 8: // STRING_LITERAL
-      case 40: // Safe_identifier
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
+      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
+      case symbol_kind::S_Safe_identifier: // Safe_identifier
         yylhs.value.emplace< std::string > ();
         break;
 
@@ -604,14 +573,14 @@ namespace yy {
         {
           switch (yyn)
             {
-  case 51:
-#line 135 "src/misc/grammar.y"
+  case 51: // Safe_identifier: IDENTIFIER
+#line 138 "src/misc/grammar.y"
   { yylhs.value.as < std::string > () = yystack_[0].value.as < std::string > (); }
-#line 611 "kivi_parser.tab.cc"
+#line 580 "src/autogen/kivi_parser.tab.cc"
     break;
 
 
-#line 615 "kivi_parser.tab.cc"
+#line 584 "src/autogen/kivi_parser.tab.cc"
 
             default:
               break;
@@ -628,7 +597,6 @@ namespace yy {
       YY_SYMBOL_PRINT ("-> $$ =", yylhs);
       yypop_ (yylen);
       yylen = 0;
-      YY_STACK_PRINT ();
 
       // Shift the result of the reduction.
       yypush_ (YY_NULLPTR, YY_MOVE (yylhs));
@@ -644,7 +612,9 @@ namespace yy {
     if (!yyerrstatus_)
       {
         ++yynerrs_;
-        error (yyla.location, yysyntax_error_ (yystack_[0].state, yyla));
+        context yyctx (*this, yyla);
+        std::string msg = yysyntax_error_ (yyctx);
+        error (yyla.location, YY_MOVE (msg));
       }
 
 
@@ -655,7 +625,7 @@ namespace yy {
            error, discard it.  */
 
         // Return failure if at end of input.
-        if (yyla.type_get () == yyeof_)
+        if (yyla.kind () == symbol_kind::S_YYEOF)
           YYABORT;
         else if (!yyla.empty ())
           {
@@ -681,6 +651,7 @@ namespace yy {
        this YYERROR.  */
     yypop_ (yylen);
     yylen = 0;
+    YY_STACK_PRINT ();
     goto yyerrlab1;
 
 
@@ -689,31 +660,33 @@ namespace yy {
   `-------------------------------------------------------------*/
   yyerrlab1:
     yyerrstatus_ = 3;   // Each real token shifted decrements this.
+    // Pop stack until we find a state that shifts the error token.
+    for (;;)
+      {
+        yyn = yypact_[+yystack_[0].state];
+        if (!yy_pact_value_is_default_ (yyn))
+          {
+            yyn += symbol_kind::S_YYerror;
+            if (0 <= yyn && yyn <= yylast_
+                && yycheck_[yyn] == symbol_kind::S_YYerror)
+              {
+                yyn = yytable_[yyn];
+                if (0 < yyn)
+                  break;
+              }
+          }
+
+        // Pop the current state because it cannot handle the error token.
+        if (yystack_.size () == 1)
+          YYABORT;
+
+        yyerror_range[1].location = yystack_[0].location;
+        yy_destroy_ ("Error: popping", yystack_[0]);
+        yypop_ ();
+        YY_STACK_PRINT ();
+      }
     {
       stack_symbol_type error_token;
-      for (;;)
-        {
-          yyn = yypact_[+yystack_[0].state];
-          if (!yy_pact_value_is_default_ (yyn))
-            {
-              yyn += yy_error_token_;
-              if (0 <= yyn && yyn <= yylast_ && yycheck_[yyn] == yy_error_token_)
-                {
-                  yyn = yytable_[yyn];
-                  if (0 < yyn)
-                    break;
-                }
-            }
-
-          // Pop the current state because it cannot handle the error token.
-          if (yystack_.size () == 1)
-            YYABORT;
-
-          yyerror_range[1].location = yystack_[0].location;
-          yy_destroy_ ("Error: popping", yystack_[0]);
-          yypop_ ();
-          YY_STACK_PRINT ();
-        }
 
       yyerror_range[2].location = yyla.location;
       YYLLOC_DEFAULT (error_token.location, yyerror_range, 2);
@@ -751,6 +724,7 @@ namespace yy {
     /* Do not reclaim the symbols of the rule whose action triggered
        this YYABORT or YYACCEPT.  */
     yypop_ (yylen);
+    YY_STACK_PRINT ();
     while (1 < yystack_.size ())
       {
         yy_destroy_ ("Cleanup: popping", yystack_[0]);
@@ -784,18 +758,100 @@ namespace yy {
     error (yyexc.location, yyexc.what ());
   }
 
-  // Generate an error message.
+  /* Return YYSTR after stripping away unnecessary quotes and
+     backslashes, so that it's suitable for yyerror.  The heuristic is
+     that double-quoting is unnecessary unless the string contains an
+     apostrophe, a comma, or backslash (other than backslash-backslash).
+     YYSTR is taken from yytname.  */
   std::string
-   kivi_parser ::yysyntax_error_ (state_type yystate, const symbol_type& yyla) const
+   kivi_parser ::yytnamerr_ (const char *yystr)
   {
-    // Number of reported tokens (one for the "unexpected", one per
-    // "expected").
-    std::ptrdiff_t yycount = 0;
-    // Its maximum.
-    enum { YYERROR_VERBOSE_ARGS_MAXIMUM = 5 };
-    // Arguments of yyformat.
-    char const *yyarg[YYERROR_VERBOSE_ARGS_MAXIMUM];
+    if (*yystr == '"')
+      {
+        std::string yyr;
+        char const *yyp = yystr;
 
+        for (;;)
+          switch (*++yyp)
+            {
+            case '\'':
+            case ',':
+              goto do_not_strip_quotes;
+
+            case '\\':
+              if (*++yyp != '\\')
+                goto do_not_strip_quotes;
+              else
+                goto append;
+
+            append:
+            default:
+              yyr += *yyp;
+              break;
+
+            case '"':
+              return yyr;
+            }
+      do_not_strip_quotes: ;
+      }
+
+    return yystr;
+  }
+
+  std::string
+   kivi_parser ::symbol_name (symbol_kind_type yysymbol)
+  {
+    return yytnamerr_ (yytname_[yysymbol]);
+  }
+
+
+
+  //  kivi_parser ::context.
+   kivi_parser ::context::context (const  kivi_parser & yyparser, const symbol_type& yyla)
+    : yyparser_ (yyparser)
+    , yyla_ (yyla)
+  {}
+
+  int
+   kivi_parser ::context::expected_tokens (symbol_kind_type yyarg[], int yyargn) const
+  {
+    // Actual number of expected tokens
+    int yycount = 0;
+
+    int yyn = yypact_[+yyparser_.yystack_[0].state];
+    if (!yy_pact_value_is_default_ (yyn))
+      {
+        /* Start YYX at -YYN if negative to avoid negative indexes in
+           YYCHECK.  In other words, skip the first -YYN actions for
+           this state because they are default actions.  */
+        int yyxbegin = yyn < 0 ? -yyn : 0;
+        // Stay within bounds of both yycheck and yytname.
+        int yychecklim = yylast_ - yyn + 1;
+        int yyxend = yychecklim < YYNTOKENS ? yychecklim : YYNTOKENS;
+        for (int yyx = yyxbegin; yyx < yyxend; ++yyx)
+          if (yycheck_[yyx + yyn] == yyx && yyx != symbol_kind::S_YYerror
+              && !yy_table_value_is_error_ (yytable_[yyx + yyn]))
+            {
+              if (!yyarg)
+                ++yycount;
+              else if (yycount == yyargn)
+                return 0;
+              else
+                yyarg[yycount++] = YY_CAST (symbol_kind_type, yyx);
+            }
+      }
+
+    if (yyarg && yycount == 0 && 0 < yyargn)
+      yyarg[0] = symbol_kind::S_YYEMPTY;
+    return yycount;
+  }
+
+
+
+  int
+   kivi_parser ::yy_syntax_error_arguments_ (const context& yyctx,
+                                                 symbol_kind_type yyarg[], int yyargn) const
+  {
     /* There are many possibilities here to consider:
        - If this state is a consistent state with a default action, then
          the only way this function was invoked is if the default action
@@ -820,35 +876,26 @@ namespace yy {
          one exception: it will still contain any token that will not be
          accepted due to an error action in a later state.
     */
-    if (!yyla.empty ())
-      {
-        symbol_number_type yytoken = yyla.type_get ();
-        yyarg[yycount++] = yytname_[yytoken];
 
-        int yyn = yypact_[+yystate];
-        if (!yy_pact_value_is_default_ (yyn))
-          {
-            /* Start YYX at -YYN if negative to avoid negative indexes in
-               YYCHECK.  In other words, skip the first -YYN actions for
-               this state because they are default actions.  */
-            int yyxbegin = yyn < 0 ? -yyn : 0;
-            // Stay within bounds of both yycheck and yytname.
-            int yychecklim = yylast_ - yyn + 1;
-            int yyxend = yychecklim < yyntokens_ ? yychecklim : yyntokens_;
-            for (int yyx = yyxbegin; yyx < yyxend; ++yyx)
-              if (yycheck_[yyx + yyn] == yyx && yyx != yy_error_token_
-                  && !yy_table_value_is_error_ (yytable_[yyx + yyn]))
-                {
-                  if (yycount == YYERROR_VERBOSE_ARGS_MAXIMUM)
-                    {
-                      yycount = 1;
-                      break;
-                    }
-                  else
-                    yyarg[yycount++] = yytname_[yyx];
-                }
-          }
+    if (!yyctx.lookahead ().empty ())
+      {
+        if (yyarg)
+          yyarg[0] = yyctx.token ();
+        int yyn = yyctx.expected_tokens (yyarg ? yyarg + 1 : yyarg, yyargn - 1);
+        return yyn + 1;
       }
+    return 0;
+  }
+
+  // Generate an error message.
+  std::string
+   kivi_parser ::yysyntax_error_ (const context& yyctx) const
+  {
+    // Its maximum.
+    enum { YYARGS_MAX = 5 };
+    // Arguments of yyformat.
+    symbol_kind_type yyarg[YYARGS_MAX];
+    int yycount = yy_syntax_error_arguments_ (yyctx, yyarg, YYARGS_MAX);
 
     char const* yyformat = YY_NULLPTR;
     switch (yycount)
@@ -873,7 +920,7 @@ namespace yy {
     for (char const* yyp = yyformat; *yyp; ++yyp)
       if (yyp[0] == '%' && yyp[1] == 's' && yyi < yycount)
         {
-          yyres += yytnamerr_ (yyarg[yyi++]);
+          yyres += symbol_name (yyarg[yyi++]);
           ++yyp;
         }
       else
@@ -1020,13 +1067,13 @@ namespace yy {
   };
 
 
-
+#if YYDEBUG || 1
   // YYTNAME[SYMBOL-NUM] -- String name of the symbol SYMBOL-NUM.
-  // First, the terminals, then, starting at \a yyntokens_, nonterminals.
+  // First, the terminals, then, starting at \a YYNTOKENS, nonterminals.
   const char*
   const  kivi_parser ::yytname_[] =
   {
-  "END", "error", "$undefined", "\"auto\"", "\"if\"", "\"while\"",
+  "END", "error", "\"invalid token\"", "\"auto\"", "\"if\"", "\"while\"",
   "\"return\"", "IDENTIFIER", "STRING_LITERAL", "NUMBER_LITERAL", "\"==\"",
   "\"<>\"", "','", "'='", "'+'", "'-'", "'*'", "'/'", "'('", "':'", "';'",
   "'{'", "')'", "'}'", "$accept", "Program", "Functions",
@@ -1037,23 +1084,24 @@ namespace yy {
   "Safe_identifier", "Safe_colon", "Safe_semicolon", "Safe_closing_brace",
   "Safe_closing_parentesis", "Safe_statement", "Safe_expression", YY_NULLPTR
   };
+#endif
+
 
 #if YYDEBUG
   const unsigned char
    kivi_parser ::yyrline_[] =
   {
-       0,    34,    34,    37,    39,    42,    47,    49,    54,    55,
-      59,    60,    61,    62,    63,    64,    68,    70,    74,    78,
-      79,    83,    84,    85,    86,    90,    91,    92,    93,    94,
-      95,    98,    99,   100,   101,   105,   106,   110,   111,   112,
-     116,   117,   118,   122,   123,   124,   125,   126,   127,   128,
-     134,   135,   139,   140,   144,   145,   149,   150,   154,   155,
-     159,   160,   164,   165
+       0,    37,    37,    40,    42,    45,    50,    52,    57,    58,
+      62,    63,    64,    65,    66,    67,    71,    73,    77,    81,
+      82,    86,    87,    88,    89,    93,    94,    95,    96,    97,
+      98,   101,   102,   103,   104,   108,   109,   113,   114,   115,
+     119,   120,   121,   125,   126,   127,   128,   129,   130,   131,
+     137,   138,   142,   143,   147,   148,   152,   153,   157,   158,
+     162,   163,   167,   168
   };
 
-  // Print the state stack on the debug stream.
   void
-   kivi_parser ::yystack_print_ ()
+   kivi_parser ::yy_stack_print_ () const
   {
     *yycdebug_ << "Stack now";
     for (stack_type::const_iterator
@@ -1064,9 +1112,8 @@ namespace yy {
     *yycdebug_ << '\n';
   }
 
-  // Report on the debug stream that the rule \a yyrule is going to be reduced.
   void
-   kivi_parser ::yy_reduce_print_ (int yyrule)
+   kivi_parser ::yy_reduce_print_ (int yyrule) const
   {
     int yylno = yyrline_[yyrule];
     int yynrhs = yyr2_[yyrule];
@@ -1082,5 +1129,5 @@ namespace yy {
 
 
 } // yy
-#line 1086 "kivi_parser.tab.cc"
+#line 1133 "src/autogen/kivi_parser.tab.cc"
 

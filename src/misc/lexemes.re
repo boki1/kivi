@@ -1,4 +1,4 @@
-#include "../include/kivi_parser.tab.hh"
+#include "kivi_parser.tab.hh"
 #include "../include/parser.hpp"
 
 namespace yy {
@@ -45,5 +45,4 @@ namespace yy {
     }
 
 }
-
 

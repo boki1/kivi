@@ -1,4 +1,4 @@
-// A Bison parser, made by GNU Bison 3.5.1.
+// A Bison parser, made by GNU Bison 3.7.3.
 
 // Locations for Bison parsers in C++
 
@@ -31,12 +31,12 @@
 // version 2.2 of Bison.
 
 /**
- ** \file location.hh
+ ** \file src/autogen/location.hh
  ** Define the yy::location class.
  */
 
-#ifndef YY_YY_LOCATION_HH_INCLUDED
-# define YY_YY_LOCATION_HH_INCLUDED
+#ifndef YY_YY_SRC_AUTOGEN_LOCATION_HH_INCLUDED
+# define YY_YY_SRC_AUTOGEN_LOCATION_HH_INCLUDED
 
 # include <iostream>
 # include <string>
@@ -54,17 +54,19 @@
 # endif
 
 namespace yy {
-#line 58 "location.hh"
+#line 58 "src/autogen/location.hh"
 
   /// A point in a source file.
   class position
   {
   public:
+    /// Type for file name.
+    typedef const std::string filename_type;
     /// Type for line and column numbers.
     typedef int counter_type;
 
     /// Construct a position.
-    explicit position (std::string* f = YY_NULLPTR,
+    explicit position (filename_type* f = YY_NULLPTR,
                        counter_type l = 1,
                        counter_type c = 1)
       : filename (f)
@@ -74,7 +76,7 @@ namespace yy {
 
 
     /// Initialization.
-    void initialize (std::string* fn = YY_NULLPTR,
+    void initialize (filename_type* fn = YY_NULLPTR,
                      counter_type l = 1,
                      counter_type c = 1)
     {
@@ -103,7 +105,7 @@ namespace yy {
     /** \} */
 
     /// File name to which this position refers.
-    std::string* filename;
+    filename_type* filename;
     /// Current line number.
     counter_type line;
     /// Current column number.
@@ -146,24 +148,6 @@ namespace yy {
     return res -= width;
   }
 
-  /// Compare two position objects.
-  inline bool
-  operator== (const position& pos1, const position& pos2)
-  {
-    return (pos1.line == pos2.line
-            && pos1.column == pos2.column
-            && (pos1.filename == pos2.filename
-                || (pos1.filename && pos2.filename
-                    && *pos1.filename == *pos2.filename)));
-  }
-
-  /// Compare two position objects.
-  inline bool
-  operator!= (const position& pos1, const position& pos2)
-  {
-    return !(pos1 == pos2);
-  }
-
   /** \brief Intercept output stream redirection.
    ** \param ostr the destination output stream
    ** \param pos a reference to the position to redirect
@@ -181,6 +165,8 @@ namespace yy {
   class location
   {
   public:
+    /// Type for file name.
+    typedef position::filename_type filename_type;
     /// Type for line and column numbers.
     typedef position::counter_type counter_type;
 
@@ -197,7 +183,7 @@ namespace yy {
     {}
 
     /// Construct a 0-width location in \a f, \a l, \a c.
-    explicit location (std::string* f,
+    explicit location (filename_type* f,
                        counter_type l = 1,
                        counter_type c = 1)
       : begin (f, l, c)
@@ -206,7 +192,7 @@ namespace yy {
 
 
     /// Initialization.
-    void initialize (std::string* f = YY_NULLPTR,
+    void initialize (filename_type* f = YY_NULLPTR,
                      counter_type l = 1,
                      counter_type c = 1)
     {
@@ -288,20 +274,6 @@ namespace yy {
     return res -= width;
   }
 
-  /// Compare two location objects.
-  inline bool
-  operator== (const location& loc1, const location& loc2)
-  {
-    return loc1.begin == loc2.begin && loc1.end == loc2.end;
-  }
-
-  /// Compare two location objects.
-  inline bool
-  operator!= (const location& loc1, const location& loc2)
-  {
-    return !(loc1 == loc2);
-  }
-
   /** \brief Intercept output stream redirection.
    ** \param ostr the destination output stream
    ** \param loc a reference to the location to redirect
@@ -327,6 +299,6 @@ namespace yy {
   }
 
 } // yy
-#line 331 "location.hh"
+#line 303 "src/autogen/location.hh"
 
-#endif // !YY_YY_LOCATION_HH_INCLUDED
+#endif // !YY_YY_SRC_AUTOGEN_LOCATION_HH_INCLUDED
