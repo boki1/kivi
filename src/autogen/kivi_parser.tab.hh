@@ -48,7 +48,7 @@
 #line 9 "src/misc/grammar.y"
 
 
-	#include "../include/parser.hpp"
+#include "../include/parser.hpp"
 
 
 #line 55 "src/autogen/kivi_parser.tab.hh"
@@ -399,13 +399,28 @@ namespace yy {
     /// An auxiliary type to compute the largest semantic type.
     union union_type
     {
+      // Parameter_list
+      // Statement
+      // Comma_sep_expressions
+      // Var_definition
+      // Compound_statement
+      // Comparison_operation
+      // Arithmetic_operation
+      // Unary_operation
+      // Function_call_operation
+      // Expressions
+      // Expression
+      // Safe_statement
+      // Safe_expression
+      char dummy1[sizeof (expression)];
+
       // NUMBER_LITERAL
-      char dummy1[sizeof (long)];
+      char dummy2[sizeof (long)];
 
       // IDENTIFIER
       // STRING_LITERAL
       // Safe_identifier
-      char dummy2[sizeof (std::string)];
+      char dummy3[sizeof (std::string)];
     };
 
     /// The size of the largest semantic type.
@@ -510,27 +525,29 @@ namespace yy {
         S_23_ = 23,                              // '}'
         S_YYACCEPT = 24,                         // $accept
         S_Program = 25,                          // Program
-        S_Functions = 26,                        // Functions
-        S_Single_function = 27,                  // Single_function
-        S_Parameter_list = 28,                   // Parameter_list
-        S_Single_param = 29,                     // Single_param
-        S_Statement = 30,                        // Statement
-        S_Comma_sep_expressions = 31,            // Comma_sep_expressions
-        S_Var_definition = 32,                   // Var_definition
-        S_Compound_statement = 33,               // Compound_statement
-        S_Comparison_operation = 34,             // Comparison_operation
-        S_Arithmetic_operation = 35,             // Arithmetic_operation
-        S_Unary_operation = 36,                  // Unary_operation
-        S_Function_call_operation = 37,          // Function_call_operation
-        S_Expressions = 38,                      // Expressions
-        S_Expression = 39,                       // Expression
-        S_Safe_identifier = 40,                  // Safe_identifier
-        S_Safe_colon = 41,                       // Safe_colon
-        S_Safe_semicolon = 42,                   // Safe_semicolon
-        S_Safe_closing_brace = 43,               // Safe_closing_brace
-        S_Safe_closing_parentesis = 44,          // Safe_closing_parentesis
-        S_Safe_statement = 45,                   // Safe_statement
-        S_Safe_expression = 46                   // Safe_expression
+        S_26_1 = 26,                             // $@1
+        S_Functions = 27,                        // Functions
+        S_Single_function = 28,                  // Single_function
+        S_29_2 = 29,                             // $@2
+        S_Parameter_list = 30,                   // Parameter_list
+        S_Single_param = 31,                     // Single_param
+        S_Statement = 32,                        // Statement
+        S_Comma_sep_expressions = 33,            // Comma_sep_expressions
+        S_Var_definition = 34,                   // Var_definition
+        S_Compound_statement = 35,               // Compound_statement
+        S_Comparison_operation = 36,             // Comparison_operation
+        S_Arithmetic_operation = 37,             // Arithmetic_operation
+        S_Unary_operation = 38,                  // Unary_operation
+        S_Function_call_operation = 39,          // Function_call_operation
+        S_Expressions = 40,                      // Expressions
+        S_Expression = 41,                       // Expression
+        S_Safe_identifier = 42,                  // Safe_identifier
+        S_Safe_colon = 43,                       // Safe_colon
+        S_Safe_semicolon = 44,                   // Safe_semicolon
+        S_Safe_closing_brace = 45,               // Safe_closing_brace
+        S_Safe_closing_parentesis = 46,          // Safe_closing_parentesis
+        S_Safe_statement = 47,                   // Safe_statement
+        S_Safe_expression = 48                   // Safe_expression
       };
     };
 
@@ -567,6 +584,22 @@ namespace yy {
       {
         switch (this->kind ())
     {
+      case symbol_kind::S_Parameter_list: // Parameter_list
+      case symbol_kind::S_Statement: // Statement
+      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
+      case symbol_kind::S_Var_definition: // Var_definition
+      case symbol_kind::S_Compound_statement: // Compound_statement
+      case symbol_kind::S_Comparison_operation: // Comparison_operation
+      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
+      case symbol_kind::S_Unary_operation: // Unary_operation
+      case symbol_kind::S_Function_call_operation: // Function_call_operation
+      case symbol_kind::S_Expressions: // Expressions
+      case symbol_kind::S_Expression: // Expression
+      case symbol_kind::S_Safe_statement: // Safe_statement
+      case symbol_kind::S_Safe_expression: // Safe_expression
+        value.move< expression > (std::move (that.value));
+        break;
+
       case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.move< long > (std::move (that.value));
         break;
@@ -596,6 +629,19 @@ namespace yy {
 #else
       basic_symbol (typename Base::kind_type t, const location_type& l)
         : Base (t)
+        , location (l)
+      {}
+#endif
+#if 201103L <= YY_CPLUSPLUS
+      basic_symbol (typename Base::kind_type t, expression&& v, location_type&& l)
+        : Base (t)
+        , value (std::move (v))
+        , location (std::move (l))
+      {}
+#else
+      basic_symbol (typename Base::kind_type t, const expression& v, const location_type& l)
+        : Base (t)
+        , value (v)
         , location (l)
       {}
 #endif
@@ -648,6 +694,22 @@ namespace yy {
         // Value type destructor.
 switch (yykind)
     {
+      case symbol_kind::S_Parameter_list: // Parameter_list
+      case symbol_kind::S_Statement: // Statement
+      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
+      case symbol_kind::S_Var_definition: // Var_definition
+      case symbol_kind::S_Compound_statement: // Compound_statement
+      case symbol_kind::S_Comparison_operation: // Comparison_operation
+      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
+      case symbol_kind::S_Unary_operation: // Unary_operation
+      case symbol_kind::S_Function_call_operation: // Function_call_operation
+      case symbol_kind::S_Expressions: // Expressions
+      case symbol_kind::S_Expression: // Expression
+      case symbol_kind::S_Safe_statement: // Safe_statement
+      case symbol_kind::S_Safe_expression: // Safe_expression
+        value.template destroy< expression > ();
+        break;
+
       case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.template destroy< long > ();
         break;
@@ -1114,7 +1176,7 @@ switch (yykind)
 
 #if YYDEBUG
     // YYRLINE[YYN] -- Source line where rule number YYN was defined.
-    static const unsigned char yyrline_[];
+    static const short yyrline_[];
     /// Report on the debug stream that the rule \a r is going to be reduced.
     virtual void yy_reduce_print_ (int r) const;
     /// Print the state stack on the debug stream.
@@ -1342,7 +1404,7 @@ switch (yykind)
     enum
     {
       yylast_ = 185,     ///< Last index in yytable_.
-      yynnts_ = 23,  ///< Number of nonterminal symbols.
+      yynnts_ = 25,  ///< Number of nonterminal symbols.
       yyfinal_ = 3 ///< Termination state number.
     };
 
@@ -1410,6 +1472,22 @@ switch (yykind)
   {
     switch (this->kind ())
     {
+      case symbol_kind::S_Parameter_list: // Parameter_list
+      case symbol_kind::S_Statement: // Statement
+      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
+      case symbol_kind::S_Var_definition: // Var_definition
+      case symbol_kind::S_Compound_statement: // Compound_statement
+      case symbol_kind::S_Comparison_operation: // Comparison_operation
+      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
+      case symbol_kind::S_Unary_operation: // Unary_operation
+      case symbol_kind::S_Function_call_operation: // Function_call_operation
+      case symbol_kind::S_Expressions: // Expressions
+      case symbol_kind::S_Expression: // Expression
+      case symbol_kind::S_Safe_statement: // Safe_statement
+      case symbol_kind::S_Safe_expression: // Safe_expression
+        value.copy< expression > (YY_MOVE (that.value));
+        break;
+
       case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.copy< long > (YY_MOVE (that.value));
         break;
@@ -1449,6 +1527,22 @@ switch (yykind)
     super_type::move (s);
     switch (this->kind ())
     {
+      case symbol_kind::S_Parameter_list: // Parameter_list
+      case symbol_kind::S_Statement: // Statement
+      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
+      case symbol_kind::S_Var_definition: // Var_definition
+      case symbol_kind::S_Compound_statement: // Compound_statement
+      case symbol_kind::S_Comparison_operation: // Comparison_operation
+      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
+      case symbol_kind::S_Unary_operation: // Unary_operation
+      case symbol_kind::S_Function_call_operation: // Function_call_operation
+      case symbol_kind::S_Expressions: // Expressions
+      case symbol_kind::S_Expression: // Expression
+      case symbol_kind::S_Safe_statement: // Safe_statement
+      case symbol_kind::S_Safe_expression: // Safe_expression
+        value.move< expression > (YY_MOVE (s.value));
+        break;
+
       case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.move< long > (YY_MOVE (s.value));
         break;
@@ -1523,7 +1617,7 @@ switch (yykind)
 kivi_parser::symbol_type yylex (parsing_context &ctx);
 
 } // yy
-#line 1525 "src/autogen/kivi_parser.tab.hh"
+#line 1619 "src/autogen/kivi_parser.tab.hh"
 
 
 
