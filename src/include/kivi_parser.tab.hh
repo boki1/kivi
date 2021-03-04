@@ -44,11 +44,12 @@
 #ifndef YY_YY_KIVI_PARSER_TAB_HH_INCLUDED
 # define YY_YY_KIVI_PARSER_TAB_HH_INCLUDED
 // "%code requires" blocks.
-#line 9 "../misc/grammar.y"
+#line 9 "src/misc/grammar.y"
+
+	#include "../include/parser.hpp"
 
 
-
-#line 52 "kivi_parser.tab.hh"
+#line 53 "kivi_parser.tab.hh"
 
 # include <cassert>
 # include <cstdlib> // std::abort
@@ -182,7 +183,7 @@
 #endif
 
 namespace yy {
-#line 186 "kivi_parser.tab.hh"
+#line 187 "kivi_parser.tab.hh"
 
 
 
@@ -676,7 +677,7 @@ switch (yytype)
     };
 
     /// Build a parser object.
-     kivi_parser  ();
+     kivi_parser  (parsing_context &ctx_yyarg);
     virtual ~ kivi_parser  ();
 
     /// Parse.  An alias for parse ().
@@ -1173,6 +1174,8 @@ switch (yytype)
     };
 
 
+    // User arguments.
+    parsing_context &ctx;
   };
 
   inline
@@ -1355,7 +1358,7 @@ switch (yytype)
   }
 
 } // yy
-#line 1359 "kivi_parser.tab.hh"
+#line 1362 "kivi_parser.tab.hh"
 
 
 

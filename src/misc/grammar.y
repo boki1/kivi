@@ -7,9 +7,11 @@
 %locations   // <--
 
 %code requires {
+	#include "../include/parser.hpp"
 
 } //%code requires
 
+%param { parsing_context &ctx }
 %token END 0
 %token VAR "auto" IF "if" WHILE "while" RETURN "return"
 %token IDENTIFIER STRING_LITERAL NUMBER_LITERAL
