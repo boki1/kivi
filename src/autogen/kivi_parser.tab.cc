@@ -1,4 +1,4 @@
-// A Bison parser, made by GNU Bison 3.7.3.
+// A Bison parser, made by GNU Bison 3.5.1.
 
 // Skeleton implementation for Bison LALR(1) parsers in C++
 
@@ -30,9 +30,8 @@
 // This special exception was added by the Free Software Foundation in
 // version 2.2 of Bison.
 
-// DO NOT RELY ON FEATURES THAT ARE NOT DOCUMENTED in the manual,
-// especially those whose name start with YY_ or yy_.  They are
-// private implementation details that can be changed or removed.
+// Undocumented macros, especially those whose name start with YY_,
+// are private implementation details.  Do not rely on them.
 
 
 
@@ -54,7 +53,6 @@
 #  define YY_(msgid) msgid
 # endif
 #endif
-
 
 // Whether we are compiled with exception support.
 #ifndef YY_EXCEPTIONS
@@ -111,7 +109,7 @@
 # define YY_STACK_PRINT()               \
   do {                                  \
     if (yydebug_)                       \
-      yy_stack_print_ ();                \
+      yystack_print_ ();                \
   } while (false)
 
 #else // !YYDEBUG
@@ -132,7 +130,49 @@
 #define YYRECOVERING()  (!!yyerrstatus_)
 
 namespace yy {
-#line 136 "src/autogen/kivi_parser.tab.cc"
+#line 134 "src/autogen/kivi_parser.tab.cc"
+
+
+  /* Return YYSTR after stripping away unnecessary quotes and
+     backslashes, so that it's suitable for yyerror.  The heuristic is
+     that double-quoting is unnecessary unless the string contains an
+     apostrophe, a comma, or backslash (other than backslash-backslash).
+     YYSTR is taken from yytname.  */
+  std::string
+   kivi_parser ::yytnamerr_ (const char *yystr)
+  {
+    if (*yystr == '"')
+      {
+        std::string yyr;
+        char const *yyp = yystr;
+
+        for (;;)
+          switch (*++yyp)
+            {
+            case '\'':
+            case ',':
+              goto do_not_strip_quotes;
+
+            case '\\':
+              if (*++yyp != '\\')
+                goto do_not_strip_quotes;
+              else
+                goto append;
+
+            append:
+            default:
+              yyr += *yyp;
+              break;
+
+            case '"':
+              return yyr;
+            }
+      do_not_strip_quotes: ;
+      }
+
+    return yystr;
+  }
+
 
   /// Build a parser object.
    kivi_parser :: kivi_parser  (parsing_context &ctx_yyarg)
@@ -152,7 +192,7 @@ namespace yy {
   {}
 
   /*---------------.
-  | symbol kinds.  |
+  | Symbol types.  |
   `---------------*/
 
 
@@ -183,13 +223,13 @@ namespace yy {
     : state (s)
   {}
 
-   kivi_parser ::symbol_kind_type
-   kivi_parser ::by_state::kind () const YY_NOEXCEPT
+   kivi_parser ::symbol_number_type
+   kivi_parser ::by_state::type_get () const YY_NOEXCEPT
   {
     if (state == empty_state)
-      return symbol_kind::S_YYEMPTY;
+      return empty_symbol;
     else
-      return YY_CAST (symbol_kind_type, yystos_[+state]);
+      return yystos_[+state];
   }
 
    kivi_parser ::stack_symbol_type::stack_symbol_type ()
@@ -198,31 +238,31 @@ namespace yy {
    kivi_parser ::stack_symbol_type::stack_symbol_type (YY_RVREF (stack_symbol_type) that)
     : super_type (YY_MOVE (that.state), YY_MOVE (that.location))
   {
-    switch (that.kind ())
+    switch (that.type_get ())
     {
-      case symbol_kind::S_Parameter_list: // Parameter_list
-      case symbol_kind::S_Statement: // Statement
-      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
-      case symbol_kind::S_Var_definition: // Var_definition
-      case symbol_kind::S_Compound_statement: // Compound_statement
-      case symbol_kind::S_Comparison_operation: // Comparison_operation
-      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
-      case symbol_kind::S_Unary_operation: // Unary_operation
-      case symbol_kind::S_Function_call_operation: // Function_call_operation
-      case symbol_kind::S_Expressions: // Expressions
-      case symbol_kind::S_Expression: // Expression
-      case symbol_kind::S_Safe_statement: // Safe_statement
-      case symbol_kind::S_Safe_expression: // Safe_expression
+      case 30: // Parameter_list
+      case 32: // Statement
+      case 33: // Comma_sep_expressions
+      case 34: // Var_definition
+      case 35: // Compound_statement
+      case 36: // Comparison_operation
+      case 37: // Arithmetic_operation
+      case 38: // Unary_operation
+      case 39: // Function_call_operation
+      case 40: // Expressions
+      case 41: // Expression
+      case 47: // Safe_statement
+      case 48: // Safe_expression
         value.YY_MOVE_OR_COPY< expression > (YY_MOVE (that.value));
         break;
 
-      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
+      case 9: // NUMBER_LITERAL
         value.YY_MOVE_OR_COPY< long > (YY_MOVE (that.value));
         break;
 
-      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
-      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
-      case symbol_kind::S_Safe_identifier: // Safe_identifier
+      case 7: // IDENTIFIER
+      case 8: // STRING_LITERAL
+      case 42: // Safe_identifier
         value.YY_MOVE_OR_COPY< std::string > (YY_MOVE (that.value));
         break;
 
@@ -239,31 +279,31 @@ namespace yy {
    kivi_parser ::stack_symbol_type::stack_symbol_type (state_type s, YY_MOVE_REF (symbol_type) that)
     : super_type (s, YY_MOVE (that.location))
   {
-    switch (that.kind ())
+    switch (that.type_get ())
     {
-      case symbol_kind::S_Parameter_list: // Parameter_list
-      case symbol_kind::S_Statement: // Statement
-      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
-      case symbol_kind::S_Var_definition: // Var_definition
-      case symbol_kind::S_Compound_statement: // Compound_statement
-      case symbol_kind::S_Comparison_operation: // Comparison_operation
-      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
-      case symbol_kind::S_Unary_operation: // Unary_operation
-      case symbol_kind::S_Function_call_operation: // Function_call_operation
-      case symbol_kind::S_Expressions: // Expressions
-      case symbol_kind::S_Expression: // Expression
-      case symbol_kind::S_Safe_statement: // Safe_statement
-      case symbol_kind::S_Safe_expression: // Safe_expression
+      case 30: // Parameter_list
+      case 32: // Statement
+      case 33: // Comma_sep_expressions
+      case 34: // Var_definition
+      case 35: // Compound_statement
+      case 36: // Comparison_operation
+      case 37: // Arithmetic_operation
+      case 38: // Unary_operation
+      case 39: // Function_call_operation
+      case 40: // Expressions
+      case 41: // Expression
+      case 47: // Safe_statement
+      case 48: // Safe_expression
         value.move< expression > (YY_MOVE (that.value));
         break;
 
-      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
+      case 9: // NUMBER_LITERAL
         value.move< long > (YY_MOVE (that.value));
         break;
 
-      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
-      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
-      case symbol_kind::S_Safe_identifier: // Safe_identifier
+      case 7: // IDENTIFIER
+      case 8: // STRING_LITERAL
+      case 42: // Safe_identifier
         value.move< std::string > (YY_MOVE (that.value));
         break;
 
@@ -272,7 +312,7 @@ namespace yy {
     }
 
     // that is emptied.
-    that.kind_ = symbol_kind::S_YYEMPTY;
+    that.type = empty_symbol;
   }
 
 #if YY_CPLUSPLUS < 201103L
@@ -280,31 +320,31 @@ namespace yy {
    kivi_parser ::stack_symbol_type::operator= (const stack_symbol_type& that)
   {
     state = that.state;
-    switch (that.kind ())
+    switch (that.type_get ())
     {
-      case symbol_kind::S_Parameter_list: // Parameter_list
-      case symbol_kind::S_Statement: // Statement
-      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
-      case symbol_kind::S_Var_definition: // Var_definition
-      case symbol_kind::S_Compound_statement: // Compound_statement
-      case symbol_kind::S_Comparison_operation: // Comparison_operation
-      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
-      case symbol_kind::S_Unary_operation: // Unary_operation
-      case symbol_kind::S_Function_call_operation: // Function_call_operation
-      case symbol_kind::S_Expressions: // Expressions
-      case symbol_kind::S_Expression: // Expression
-      case symbol_kind::S_Safe_statement: // Safe_statement
-      case symbol_kind::S_Safe_expression: // Safe_expression
+      case 30: // Parameter_list
+      case 32: // Statement
+      case 33: // Comma_sep_expressions
+      case 34: // Var_definition
+      case 35: // Compound_statement
+      case 36: // Comparison_operation
+      case 37: // Arithmetic_operation
+      case 38: // Unary_operation
+      case 39: // Function_call_operation
+      case 40: // Expressions
+      case 41: // Expression
+      case 47: // Safe_statement
+      case 48: // Safe_expression
         value.copy< expression > (that.value);
         break;
 
-      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
+      case 9: // NUMBER_LITERAL
         value.copy< long > (that.value);
         break;
 
-      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
-      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
-      case symbol_kind::S_Safe_identifier: // Safe_identifier
+      case 7: // IDENTIFIER
+      case 8: // STRING_LITERAL
+      case 42: // Safe_identifier
         value.copy< std::string > (that.value);
         break;
 
@@ -320,31 +360,31 @@ namespace yy {
    kivi_parser ::stack_symbol_type::operator= (stack_symbol_type& that)
   {
     state = that.state;
-    switch (that.kind ())
+    switch (that.type_get ())
     {
-      case symbol_kind::S_Parameter_list: // Parameter_list
-      case symbol_kind::S_Statement: // Statement
-      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
-      case symbol_kind::S_Var_definition: // Var_definition
-      case symbol_kind::S_Compound_statement: // Compound_statement
-      case symbol_kind::S_Comparison_operation: // Comparison_operation
-      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
-      case symbol_kind::S_Unary_operation: // Unary_operation
-      case symbol_kind::S_Function_call_operation: // Function_call_operation
-      case symbol_kind::S_Expressions: // Expressions
-      case symbol_kind::S_Expression: // Expression
-      case symbol_kind::S_Safe_statement: // Safe_statement
-      case symbol_kind::S_Safe_expression: // Safe_expression
+      case 30: // Parameter_list
+      case 32: // Statement
+      case 33: // Comma_sep_expressions
+      case 34: // Var_definition
+      case 35: // Compound_statement
+      case 36: // Comparison_operation
+      case 37: // Arithmetic_operation
+      case 38: // Unary_operation
+      case 39: // Function_call_operation
+      case 40: // Expressions
+      case 41: // Expression
+      case 47: // Safe_statement
+      case 48: // Safe_expression
         value.move< expression > (that.value);
         break;
 
-      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
+      case 9: // NUMBER_LITERAL
         value.move< long > (that.value);
         break;
 
-      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
-      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
-      case symbol_kind::S_Safe_identifier: // Safe_identifier
+      case 7: // IDENTIFIER
+      case 8: // STRING_LITERAL
+      case 42: // Safe_identifier
         value.move< std::string > (that.value);
         break;
 
@@ -370,21 +410,23 @@ namespace yy {
 #if YYDEBUG
   template <typename Base>
   void
-   kivi_parser ::yy_print_ (std::ostream& yyo, const basic_symbol<Base>& yysym) const
+   kivi_parser ::yy_print_ (std::ostream& yyo,
+                                     const basic_symbol<Base>& yysym) const
   {
     std::ostream& yyoutput = yyo;
     YYUSE (yyoutput);
+    symbol_number_type yytype = yysym.type_get ();
+#if defined __GNUC__ && ! defined __clang__ && ! defined __ICC && __GNUC__ * 100 + __GNUC_MINOR__ <= 408
+    // Avoid a (spurious) G++ 4.8 warning about "array subscript is
+    // below array bounds".
     if (yysym.empty ())
-      yyo << "empty symbol";
-    else
-      {
-        symbol_kind_type yykind = yysym.kind ();
-        yyo << (yykind < YYNTOKENS ? "token" : "nterm")
-            << ' ' << yysym.name () << " ("
-            << yysym.location << ": ";
-        YYUSE (yykind);
-        yyo << ')';
-      }
+      std::abort ();
+#endif
+    yyo << (yytype < yyntokens_ ? "token" : "nterm")
+        << ' ' << yytname_[yytype] << " ("
+        << yysym.location << ": ";
+    YYUSE (yytype);
+    yyo << ')';
   }
 #endif
 
@@ -443,11 +485,11 @@ namespace yy {
    kivi_parser ::state_type
    kivi_parser ::yy_lr_goto_state_ (state_type yystate, int yysym)
   {
-    int yyr = yypgoto_[yysym - YYNTOKENS] + yystate;
+    int yyr = yypgoto_[yysym - yyntokens_] + yystate;
     if (0 <= yyr && yyr <= yylast_ && yycheck_[yyr] == yystate)
       return yytable_[yyr];
     else
-      return yydefgoto_[yysym - YYNTOKENS];
+      return yydefgoto_[yysym - yyntokens_];
   }
 
   bool
@@ -507,7 +549,6 @@ namespace yy {
   `-----------------------------------------------*/
   yynewstate:
     YYCDEBUG << "Entering state " << int (yystack_[0].state) << '\n';
-    YY_STACK_PRINT ();
 
     // Accept?
     if (yystack_[0].state == yyfinal_)
@@ -528,7 +569,7 @@ namespace yy {
     // Read a lookahead token.
     if (yyla.empty ())
       {
-        YYCDEBUG << "Reading a token\n";
+        YYCDEBUG << "Reading a token: ";
 #if YY_EXCEPTIONS
         try
 #endif // YY_EXCEPTIONS
@@ -547,20 +588,10 @@ namespace yy {
       }
     YY_SYMBOL_PRINT ("Next token is", yyla);
 
-    if (yyla.kind () == symbol_kind::S_YYerror)
-    {
-      // The scanner already issued an error message, process directly
-      // to error recovery.  But do not keep the error token as
-      // lookahead, it is too special and may lead us to an endless
-      // loop in error recovery. */
-      yyla.kind_ = symbol_kind::S_YYUNDEF;
-      goto yyerrlab1;
-    }
-
     /* If the proper action on seeing token YYLA.TYPE is to reduce or
        to detect an error, take that action.  */
-    yyn += yyla.kind ();
-    if (yyn < 0 || yylast_ < yyn || yycheck_[yyn] != yyla.kind ())
+    yyn += yyla.type_get ();
+    if (yyn < 0 || yylast_ < yyn || yycheck_[yyn] != yyla.type_get ())
       {
         goto yydefault;
       }
@@ -607,29 +638,29 @@ namespace yy {
          when using variants.  */
       switch (yyr1_[yyn])
     {
-      case symbol_kind::S_Parameter_list: // Parameter_list
-      case symbol_kind::S_Statement: // Statement
-      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
-      case symbol_kind::S_Var_definition: // Var_definition
-      case symbol_kind::S_Compound_statement: // Compound_statement
-      case symbol_kind::S_Comparison_operation: // Comparison_operation
-      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
-      case symbol_kind::S_Unary_operation: // Unary_operation
-      case symbol_kind::S_Function_call_operation: // Function_call_operation
-      case symbol_kind::S_Expressions: // Expressions
-      case symbol_kind::S_Expression: // Expression
-      case symbol_kind::S_Safe_statement: // Safe_statement
-      case symbol_kind::S_Safe_expression: // Safe_expression
+      case 30: // Parameter_list
+      case 32: // Statement
+      case 33: // Comma_sep_expressions
+      case 34: // Var_definition
+      case 35: // Compound_statement
+      case 36: // Comparison_operation
+      case 37: // Arithmetic_operation
+      case 38: // Unary_operation
+      case 39: // Function_call_operation
+      case 40: // Expressions
+      case 41: // Expression
+      case 47: // Safe_statement
+      case 48: // Safe_expression
         yylhs.value.emplace< expression > ();
         break;
 
-      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
+      case 9: // NUMBER_LITERAL
         yylhs.value.emplace< long > ();
         break;
 
-      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
-      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
-      case symbol_kind::S_Safe_identifier: // Safe_identifier
+      case 7: // IDENTIFIER
+      case 8: // STRING_LITERAL
+      case 42: // Safe_identifier
         yylhs.value.emplace< std::string > ();
         break;
 
@@ -653,431 +684,431 @@ namespace yy {
         {
           switch (yyn)
             {
-  case 2: // $@1: %empty
+  case 2:
 #line 39 "src/misc/grammar.y"
     { ctx.enter_scope(); }
-#line 660 "src/autogen/kivi_parser.tab.cc"
+#line 691 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 3: // Program: $@1 Functions
+  case 3:
 #line 40 "src/misc/grammar.y"
                   {
         ctx.exit_scope();
     }
-#line 668 "src/autogen/kivi_parser.tab.cc"
+#line 699 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 6: // $@2: %empty
+  case 6:
 #line 50 "src/misc/grammar.y"
                   {
 	ctx.define_function(yystack_[0].value.as < std::string > ());
 	ctx.enter_scope();
   }
-#line 677 "src/autogen/kivi_parser.tab.cc"
+#line 708 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 7: // Single_function: Safe_identifier $@2 Parameter_list Safe_colon Safe_statement
+  case 7:
 #line 55 "src/misc/grammar.y"
                  {
 	ctx.add_function_with_block(std::move(yystack_[4].value.as < std::string > ()), std::move(yystack_[0].value.as < expression > ()));
 	ctx.exit_scope();
   }
-#line 686 "src/autogen/kivi_parser.tab.cc"
+#line 717 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 10: // Single_param: Single_param ',' Safe_identifier
+  case 10:
 #line 68 "src/misc/grammar.y"
         { ctx.define_parameter(yystack_[0].value.as < std::string > ()); }
-#line 692 "src/autogen/kivi_parser.tab.cc"
+#line 723 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 11: // Single_param: IDENTIFIER
+  case 11:
 #line 70 "src/misc/grammar.y"
         { ctx.define_parameter(yystack_[0].value.as < std::string > ()); }
-#line 698 "src/autogen/kivi_parser.tab.cc"
+#line 729 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 12: // Statement: Compound_statement Safe_closing_brace
+  case 12:
 #line 74 "src/misc/grammar.y"
                                         {
   	yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
  	ctx.exit_scope();
   }
-#line 707 "src/autogen/kivi_parser.tab.cc"
+#line 738 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 13: // Statement: "if" Safe_expression Safe_colon Safe_statement
+  case 13:
 #line 78 "src/misc/grammar.y"
                                                {
 	yylhs.value.as < expression > () = new_compare_and_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
   }
-#line 715 "src/autogen/kivi_parser.tab.cc"
+#line 746 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 14: // Statement: "while" Safe_expression ':' Safe_statement
+  case 14:
 #line 81 "src/misc/grammar.y"
                                            {
 	yylhs.value.as < expression > () = new_compare_loop_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
   }
-#line 723 "src/autogen/kivi_parser.tab.cc"
+#line 754 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 15: // Statement: "return" Safe_expression Safe_semicolon
+  case 15:
 #line 84 "src/misc/grammar.y"
                                         {
 	yylhs.value.as < expression > () = new_retrn_expr(std::move(yystack_[1].value.as < expression > ()));
   }
-#line 731 "src/autogen/kivi_parser.tab.cc"
+#line 762 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 16: // Statement: Expressions Safe_semicolon
+  case 16:
 #line 87 "src/misc/grammar.y"
                              {
 	yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
   }
-#line 739 "src/autogen/kivi_parser.tab.cc"
+#line 770 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 17: // Statement: ';'
+  case 17:
 #line 90 "src/misc/grammar.y"
       { }
-#line 745 "src/autogen/kivi_parser.tab.cc"
+#line 776 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 18: // Comma_sep_expressions: Safe_expression
+  case 18:
 #line 94 "src/misc/grammar.y"
                   {
     yylhs.value.as < expression > () = new_expression_sequence_expr(std::move(yystack_[0].value.as < expression > ()));
   }
-#line 753 "src/autogen/kivi_parser.tab.cc"
+#line 784 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 19: // Comma_sep_expressions: Comma_sep_expressions ',' Safe_expression
+  case 19:
 #line 98 "src/misc/grammar.y"
                                             { yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
     yylhs.value.as < expression > ().add_parameter(std::move(yystack_[0].value.as < expression > ()));
   }
-#line 761 "src/autogen/kivi_parser.tab.cc"
+#line 792 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 20: // Var_definition: "auto" Safe_identifier '=' Safe_expression
+  case 20:
 #line 104 "src/misc/grammar.y"
                                             {
         yylhs.value.as < expression > () = expression(ctx.define_local(yystack_[2].value.as < std::string > ())).move_expr(std::move(yystack_[0].value.as < expression > ()));
     }
-#line 769 "src/autogen/kivi_parser.tab.cc"
+#line 800 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 21: // Compound_statement: '{'
+  case 21:
 #line 110 "src/misc/grammar.y"
       {
 	yylhs.value.as < expression > () = new_expression_sequence_expr();
 	ctx.enter_scope();
   }
-#line 778 "src/autogen/kivi_parser.tab.cc"
+#line 809 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 22: // Compound_statement: Compound_statement Statement
+  case 22:
 #line 114 "src/misc/grammar.y"
                                {
 	yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
 	yylhs.value.as < expression > ().add_parameter(std::move(yystack_[0].value.as < expression > ()));
   }
-#line 787 "src/autogen/kivi_parser.tab.cc"
+#line 818 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 23: // Comparison_operation: Expression "==" error
+  case 23:
 #line 121 "src/misc/grammar.y"
                         {
     yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
   }
-#line 795 "src/autogen/kivi_parser.tab.cc"
+#line 826 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 24: // Comparison_operation: Expression "==" Expression
+  case 24:
 #line 124 "src/misc/grammar.y"
                              {
     yylhs.value.as < expression > () = new_equality_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
   }
-#line 803 "src/autogen/kivi_parser.tab.cc"
+#line 834 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 25: // Comparison_operation: Expression "<>" error
+  case 25:
 #line 127 "src/misc/grammar.y"
                         {
     yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
   }
-#line 811 "src/autogen/kivi_parser.tab.cc"
+#line 842 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 26: // Comparison_operation: Expression "<>" Expression
+  case 26:
 #line 130 "src/misc/grammar.y"
                              {
     yylhs.value.as < expression > () = new_equality_expr(new_equality_expr((std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()))), expression(0ul));
   }
-#line 819 "src/autogen/kivi_parser.tab.cc"
+#line 850 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 27: // Arithmetic_operation: Expression '+' error
+  case 27:
 #line 136 "src/misc/grammar.y"
                        {
     yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
   }
-#line 827 "src/autogen/kivi_parser.tab.cc"
+#line 858 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 28: // Arithmetic_operation: Expression '+' Expression
+  case 28:
 #line 139 "src/misc/grammar.y"
                             {
     yylhs.value.as < expression > () = new_addition_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
   }
-#line 835 "src/autogen/kivi_parser.tab.cc"
+#line 866 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 29: // Arithmetic_operation: Expression '-' error
+  case 29:
 #line 142 "src/misc/grammar.y"
                        {
     yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
   }
-#line 843 "src/autogen/kivi_parser.tab.cc"
+#line 874 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 30: // Arithmetic_operation: Expression '-' Expression
+  case 30:
 #line 145 "src/misc/grammar.y"
                                       {
     yylhs.value.as < expression > () = new_addition_expr(std::move(yystack_[2].value.as < expression > ()), new_negation_expr(std::move(yystack_[0].value.as < expression > ())));
   }
-#line 851 "src/autogen/kivi_parser.tab.cc"
+#line 882 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 31: // Arithmetic_operation: Expression '*' error
+  case 31:
 #line 148 "src/misc/grammar.y"
                        {
     yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
   }
-#line 859 "src/autogen/kivi_parser.tab.cc"
+#line 890 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 32: // Arithmetic_operation: Expression '*' Expression
+  case 32:
 #line 151 "src/misc/grammar.y"
                             {
     yylhs.value.as < expression > () = new_multiplication_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
   }
-#line 867 "src/autogen/kivi_parser.tab.cc"
+#line 898 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 33: // Arithmetic_operation: Expression '/' error
+  case 33:
 #line 158 "src/misc/grammar.y"
                        {
     yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
   }
-#line 875 "src/autogen/kivi_parser.tab.cc"
+#line 906 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 34: // Arithmetic_operation: Expression '/' Expression
+  case 34:
 #line 161 "src/misc/grammar.y"
                                       {
     yylhs.value.as < expression > () = new_division_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
   }
-#line 883 "src/autogen/kivi_parser.tab.cc"
+#line 914 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 35: // Arithmetic_operation: Expression '=' error
+  case 35:
 #line 164 "src/misc/grammar.y"
                        {
     yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
   }
-#line 891 "src/autogen/kivi_parser.tab.cc"
+#line 922 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 36: // Arithmetic_operation: Expression '=' Expression
+  case 36:
 #line 167 "src/misc/grammar.y"
                             {
     yylhs.value.as < expression > () = expression(std::move(yystack_[2].value.as < expression > ()).move_expr(std::move(yystack_[0].value.as < expression > ())));
   }
-#line 899 "src/autogen/kivi_parser.tab.cc"
+#line 930 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 37: // Unary_operation: '-' Expression
+  case 37:
 #line 173 "src/misc/grammar.y"
                  {
     yylhs.value.as < expression > () = new_negation_expr(std::move(yystack_[0].value.as < expression > ()));
   }
-#line 907 "src/autogen/kivi_parser.tab.cc"
+#line 938 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 38: // Unary_operation: '-' error
+  case 38:
 #line 176 "src/misc/grammar.y"
             { }
-#line 913 "src/autogen/kivi_parser.tab.cc"
+#line 944 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 39: // Function_call_operation: Expression '(' ')'
+  case 39:
 #line 180 "src/misc/grammar.y"
                      {
     yylhs.value.as < expression > () = new_function_call_expr(std::move(yystack_[2].value.as < expression > ()));
   }
-#line 921 "src/autogen/kivi_parser.tab.cc"
+#line 952 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 40: // Function_call_operation: Expression '(' Comma_sep_expressions Safe_closing_parentesis
+  case 40:
 #line 183 "src/misc/grammar.y"
                                                                {
     yylhs.value.as < expression > () = new_function_call_expr(std::move(yystack_[3].value.as < expression > ()));
     yylhs.value.as < expression > ().splice_parameter_list_with(std::move(yystack_[1].value.as < expression > ()));
   }
-#line 930 "src/autogen/kivi_parser.tab.cc"
+#line 961 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 41: // Function_call_operation: '(' Comma_sep_expressions Safe_closing_parentesis
+  case 41:
 #line 187 "src/misc/grammar.y"
                                                    {
     yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
   }
-#line 938 "src/autogen/kivi_parser.tab.cc"
+#line 969 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 42: // Expressions: Var_definition
+  case 42:
 #line 193 "src/misc/grammar.y"
                  {
     yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
   }
-#line 946 "src/autogen/kivi_parser.tab.cc"
+#line 977 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 43: // Expressions: Expression
+  case 43:
 #line 196 "src/misc/grammar.y"
              {
     yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
   }
-#line 954 "src/autogen/kivi_parser.tab.cc"
+#line 985 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 44: // Expressions: Expression ',' Comma_sep_expressions
+  case 44:
 #line 199 "src/misc/grammar.y"
                                        {
     yylhs.value.as < expression > () = new_expression_sequence_expr(std::move(yystack_[2].value.as < expression > ()));
     yylhs.value.as < expression > ().splice_parameter_list_with(std::move(yystack_[0].value.as < expression > ()));
   }
-#line 963 "src/autogen/kivi_parser.tab.cc"
+#line 994 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 45: // Expression: STRING_LITERAL
+  case 45:
 #line 206 "src/misc/grammar.y"
                  {
     yylhs.value.as < expression > () = expression(std::move(yystack_[0].value.as < std::string > ()));
   }
-#line 971 "src/autogen/kivi_parser.tab.cc"
+#line 1002 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 46: // Expression: NUMBER_LITERAL
+  case 46:
 #line 209 "src/misc/grammar.y"
                  {
     yylhs.value.as < expression > () = expression(yystack_[0].value.as < long > ());
   }
-#line 979 "src/autogen/kivi_parser.tab.cc"
+#line 1010 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 47: // Expression: IDENTIFIER
+  case 47:
 #line 212 "src/misc/grammar.y"
              {
     yylhs.value.as < expression > () = ctx.use_identifier(yystack_[0].value.as < std::string > ());
   }
-#line 987 "src/autogen/kivi_parser.tab.cc"
+#line 1018 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 48: // Expression: Arithmetic_operation
+  case 48:
 #line 215 "src/misc/grammar.y"
   { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
-#line 993 "src/autogen/kivi_parser.tab.cc"
+#line 1024 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 49: // Expression: Comparison_operation
+  case 49:
 #line 216 "src/misc/grammar.y"
   { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
-#line 999 "src/autogen/kivi_parser.tab.cc"
+#line 1030 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 50: // Expression: Unary_operation
+  case 50:
 #line 217 "src/misc/grammar.y"
   { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
-#line 1005 "src/autogen/kivi_parser.tab.cc"
+#line 1036 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 51: // Expression: Function_call_operation
+  case 51:
 #line 218 "src/misc/grammar.y"
   { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
-#line 1011 "src/autogen/kivi_parser.tab.cc"
+#line 1042 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 52: // Safe_identifier: error
+  case 52:
 #line 226 "src/misc/grammar.y"
         { }
-#line 1017 "src/autogen/kivi_parser.tab.cc"
+#line 1048 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 53: // Safe_identifier: IDENTIFIER
+  case 53:
 #line 227 "src/misc/grammar.y"
              {
     yylhs.value.as < std::string > () = std::move(yystack_[0].value.as < std::string > ());
   }
-#line 1025 "src/autogen/kivi_parser.tab.cc"
+#line 1056 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 54: // Safe_colon: error
+  case 54:
 #line 233 "src/misc/grammar.y"
         { }
-#line 1031 "src/autogen/kivi_parser.tab.cc"
+#line 1062 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 56: // Safe_semicolon: error
+  case 56:
 #line 238 "src/misc/grammar.y"
         { }
-#line 1037 "src/autogen/kivi_parser.tab.cc"
+#line 1068 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 58: // Safe_closing_brace: error
+  case 58:
 #line 243 "src/misc/grammar.y"
         { }
-#line 1043 "src/autogen/kivi_parser.tab.cc"
+#line 1074 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 60: // Safe_closing_parentesis: error
+  case 60:
 #line 248 "src/misc/grammar.y"
         { }
-#line 1049 "src/autogen/kivi_parser.tab.cc"
+#line 1080 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 62: // Safe_statement: error
+  case 62:
 #line 253 "src/misc/grammar.y"
         { }
-#line 1055 "src/autogen/kivi_parser.tab.cc"
+#line 1086 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 63: // Safe_statement: Statement
+  case 63:
 #line 254 "src/misc/grammar.y"
             {
     yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
   }
-#line 1063 "src/autogen/kivi_parser.tab.cc"
+#line 1094 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 64: // Safe_expression: error
+  case 64:
 #line 260 "src/misc/grammar.y"
         { }
-#line 1069 "src/autogen/kivi_parser.tab.cc"
+#line 1100 "src/autogen/kivi_parser.tab.cc"
     break;
 
-  case 65: // Safe_expression: Expression
+  case 65:
 #line 261 "src/misc/grammar.y"
              {
     yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
   }
-#line 1077 "src/autogen/kivi_parser.tab.cc"
+#line 1108 "src/autogen/kivi_parser.tab.cc"
     break;
 
 
-#line 1081 "src/autogen/kivi_parser.tab.cc"
+#line 1112 "src/autogen/kivi_parser.tab.cc"
 
             default:
               break;
@@ -1094,6 +1125,7 @@ namespace yy {
       YY_SYMBOL_PRINT ("-> $$ =", yylhs);
       yypop_ (yylen);
       yylen = 0;
+      YY_STACK_PRINT ();
 
       // Shift the result of the reduction.
       yypush_ (YY_NULLPTR, YY_MOVE (yylhs));
@@ -1109,9 +1141,7 @@ namespace yy {
     if (!yyerrstatus_)
       {
         ++yynerrs_;
-        context yyctx (*this, yyla);
-        std::string msg = yysyntax_error_ (yyctx);
-        error (yyla.location, YY_MOVE (msg));
+        error (yyla.location, yysyntax_error_ (yystack_[0].state, yyla));
       }
 
 
@@ -1122,7 +1152,7 @@ namespace yy {
            error, discard it.  */
 
         // Return failure if at end of input.
-        if (yyla.kind () == symbol_kind::S_YYEOF)
+        if (yyla.type_get () == yyeof_)
           YYABORT;
         else if (!yyla.empty ())
           {
@@ -1148,7 +1178,6 @@ namespace yy {
        this YYERROR.  */
     yypop_ (yylen);
     yylen = 0;
-    YY_STACK_PRINT ();
     goto yyerrlab1;
 
 
@@ -1157,33 +1186,31 @@ namespace yy {
   `-------------------------------------------------------------*/
   yyerrlab1:
     yyerrstatus_ = 3;   // Each real token shifted decrements this.
-    // Pop stack until we find a state that shifts the error token.
-    for (;;)
-      {
-        yyn = yypact_[+yystack_[0].state];
-        if (!yy_pact_value_is_default_ (yyn))
-          {
-            yyn += symbol_kind::S_YYerror;
-            if (0 <= yyn && yyn <= yylast_
-                && yycheck_[yyn] == symbol_kind::S_YYerror)
-              {
-                yyn = yytable_[yyn];
-                if (0 < yyn)
-                  break;
-              }
-          }
-
-        // Pop the current state because it cannot handle the error token.
-        if (yystack_.size () == 1)
-          YYABORT;
-
-        yyerror_range[1].location = yystack_[0].location;
-        yy_destroy_ ("Error: popping", yystack_[0]);
-        yypop_ ();
-        YY_STACK_PRINT ();
-      }
     {
       stack_symbol_type error_token;
+      for (;;)
+        {
+          yyn = yypact_[+yystack_[0].state];
+          if (!yy_pact_value_is_default_ (yyn))
+            {
+              yyn += yy_error_token_;
+              if (0 <= yyn && yyn <= yylast_ && yycheck_[yyn] == yy_error_token_)
+                {
+                  yyn = yytable_[yyn];
+                  if (0 < yyn)
+                    break;
+                }
+            }
+
+          // Pop the current state because it cannot handle the error token.
+          if (yystack_.size () == 1)
+            YYABORT;
+
+          yyerror_range[1].location = yystack_[0].location;
+          yy_destroy_ ("Error: popping", yystack_[0]);
+          yypop_ ();
+          YY_STACK_PRINT ();
+        }
 
       yyerror_range[2].location = yyla.location;
       YYLLOC_DEFAULT (error_token.location, yyerror_range, 2);
@@ -1221,7 +1248,6 @@ namespace yy {
     /* Do not reclaim the symbols of the rule whose action triggered
        this YYABORT or YYACCEPT.  */
     yypop_ (yylen);
-    YY_STACK_PRINT ();
     while (1 < yystack_.size ())
       {
         yy_destroy_ ("Cleanup: popping", yystack_[0]);
@@ -1255,100 +1281,18 @@ namespace yy {
     error (yyexc.location, yyexc.what ());
   }
 
-  /* Return YYSTR after stripping away unnecessary quotes and
-     backslashes, so that it's suitable for yyerror.  The heuristic is
-     that double-quoting is unnecessary unless the string contains an
-     apostrophe, a comma, or backslash (other than backslash-backslash).
-     YYSTR is taken from yytname.  */
+  // Generate an error message.
   std::string
-   kivi_parser ::yytnamerr_ (const char *yystr)
+   kivi_parser ::yysyntax_error_ (state_type yystate, const symbol_type& yyla) const
   {
-    if (*yystr == '"')
-      {
-        std::string yyr;
-        char const *yyp = yystr;
+    // Number of reported tokens (one for the "unexpected", one per
+    // "expected").
+    std::ptrdiff_t yycount = 0;
+    // Its maximum.
+    enum { YYERROR_VERBOSE_ARGS_MAXIMUM = 5 };
+    // Arguments of yyformat.
+    char const *yyarg[YYERROR_VERBOSE_ARGS_MAXIMUM];
 
-        for (;;)
-          switch (*++yyp)
-            {
-            case '\'':
-            case ',':
-              goto do_not_strip_quotes;
-
-            case '\\':
-              if (*++yyp != '\\')
-                goto do_not_strip_quotes;
-              else
-                goto append;
-
-            append:
-            default:
-              yyr += *yyp;
-              break;
-
-            case '"':
-              return yyr;
-            }
-      do_not_strip_quotes: ;
-      }
-
-    return yystr;
-  }
-
-  std::string
-   kivi_parser ::symbol_name (symbol_kind_type yysymbol)
-  {
-    return yytnamerr_ (yytname_[yysymbol]);
-  }
-
-
-
-  //  kivi_parser ::context.
-   kivi_parser ::context::context (const  kivi_parser & yyparser, const symbol_type& yyla)
-    : yyparser_ (yyparser)
-    , yyla_ (yyla)
-  {}
-
-  int
-   kivi_parser ::context::expected_tokens (symbol_kind_type yyarg[], int yyargn) const
-  {
-    // Actual number of expected tokens
-    int yycount = 0;
-
-    int yyn = yypact_[+yyparser_.yystack_[0].state];
-    if (!yy_pact_value_is_default_ (yyn))
-      {
-        /* Start YYX at -YYN if negative to avoid negative indexes in
-           YYCHECK.  In other words, skip the first -YYN actions for
-           this state because they are default actions.  */
-        int yyxbegin = yyn < 0 ? -yyn : 0;
-        // Stay within bounds of both yycheck and yytname.
-        int yychecklim = yylast_ - yyn + 1;
-        int yyxend = yychecklim < YYNTOKENS ? yychecklim : YYNTOKENS;
-        for (int yyx = yyxbegin; yyx < yyxend; ++yyx)
-          if (yycheck_[yyx + yyn] == yyx && yyx != symbol_kind::S_YYerror
-              && !yy_table_value_is_error_ (yytable_[yyx + yyn]))
-            {
-              if (!yyarg)
-                ++yycount;
-              else if (yycount == yyargn)
-                return 0;
-              else
-                yyarg[yycount++] = YY_CAST (symbol_kind_type, yyx);
-            }
-      }
-
-    if (yyarg && yycount == 0 && 0 < yyargn)
-      yyarg[0] = symbol_kind::S_YYEMPTY;
-    return yycount;
-  }
-
-
-
-  int
-   kivi_parser ::yy_syntax_error_arguments_ (const context& yyctx,
-                                                 symbol_kind_type yyarg[], int yyargn) const
-  {
     /* There are many possibilities here to consider:
        - If this state is a consistent state with a default action, then
          the only way this function was invoked is if the default action
@@ -1373,26 +1317,35 @@ namespace yy {
          one exception: it will still contain any token that will not be
          accepted due to an error action in a later state.
     */
-
-    if (!yyctx.lookahead ().empty ())
+    if (!yyla.empty ())
       {
-        if (yyarg)
-          yyarg[0] = yyctx.token ();
-        int yyn = yyctx.expected_tokens (yyarg ? yyarg + 1 : yyarg, yyargn - 1);
-        return yyn + 1;
-      }
-    return 0;
-  }
+        symbol_number_type yytoken = yyla.type_get ();
+        yyarg[yycount++] = yytname_[yytoken];
 
-  // Generate an error message.
-  std::string
-   kivi_parser ::yysyntax_error_ (const context& yyctx) const
-  {
-    // Its maximum.
-    enum { YYARGS_MAX = 5 };
-    // Arguments of yyformat.
-    symbol_kind_type yyarg[YYARGS_MAX];
-    int yycount = yy_syntax_error_arguments_ (yyctx, yyarg, YYARGS_MAX);
+        int yyn = yypact_[+yystate];
+        if (!yy_pact_value_is_default_ (yyn))
+          {
+            /* Start YYX at -YYN if negative to avoid negative indexes in
+               YYCHECK.  In other words, skip the first -YYN actions for
+               this state because they are default actions.  */
+            int yyxbegin = yyn < 0 ? -yyn : 0;
+            // Stay within bounds of both yycheck and yytname.
+            int yychecklim = yylast_ - yyn + 1;
+            int yyxend = yychecklim < yyntokens_ ? yychecklim : yyntokens_;
+            for (int yyx = yyxbegin; yyx < yyxend; ++yyx)
+              if (yycheck_[yyx + yyn] == yyx && yyx != yy_error_token_
+                  && !yy_table_value_is_error_ (yytable_[yyx + yyn]))
+                {
+                  if (yycount == YYERROR_VERBOSE_ARGS_MAXIMUM)
+                    {
+                      yycount = 1;
+                      break;
+                    }
+                  else
+                    yyarg[yycount++] = yytname_[yyx];
+                }
+          }
+      }
 
     char const* yyformat = YY_NULLPTR;
     switch (yycount)
@@ -1417,7 +1370,7 @@ namespace yy {
     for (char const* yyp = yyformat; *yyp; ++yyp)
       if (yyp[0] == '%' && yyp[1] == 's' && yyi < yycount)
         {
-          yyres += symbol_name (yyarg[yyi++]);
+          yyres += yytnamerr_ (yyarg[yyi++]);
           ++yyp;
         }
       else
@@ -1564,13 +1517,13 @@ namespace yy {
   };
 
 
-#if YYDEBUG || 1
+
   // YYTNAME[SYMBOL-NUM] -- String name of the symbol SYMBOL-NUM.
-  // First, the terminals, then, starting at \a YYNTOKENS, nonterminals.
+  // First, the terminals, then, starting at \a yyntokens_, nonterminals.
   const char*
   const  kivi_parser ::yytname_[] =
   {
-  "END", "error", "\"invalid token\"", "\"auto\"", "\"if\"", "\"while\"",
+  "END", "error", "$undefined", "\"auto\"", "\"if\"", "\"while\"",
   "\"return\"", "IDENTIFIER", "STRING_LITERAL", "NUMBER_LITERAL", "\"==\"",
   "\"<>\"", "','", "'='", "'+'", "'-'", "'*'", "'/'", "'('", "':'", "';'",
   "'{'", "')'", "'}'", "$accept", "Program", "$@1", "Functions",
@@ -1581,8 +1534,6 @@ namespace yy {
   "Safe_identifier", "Safe_colon", "Safe_semicolon", "Safe_closing_brace",
   "Safe_closing_parentesis", "Safe_statement", "Safe_expression", YY_NULLPTR
   };
-#endif
-
 
 #if YYDEBUG
   const short
@@ -1597,8 +1548,9 @@ namespace yy {
      248,   249,   253,   254,   260,   261
   };
 
+  // Print the state stack on the debug stream.
   void
-   kivi_parser ::yy_stack_print_ () const
+   kivi_parser ::yystack_print_ ()
   {
     *yycdebug_ << "Stack now";
     for (stack_type::const_iterator
@@ -1609,8 +1561,9 @@ namespace yy {
     *yycdebug_ << '\n';
   }
 
+  // Report on the debug stream that the rule \a yyrule is going to be reduced.
   void
-   kivi_parser ::yy_reduce_print_ (int yyrule) const
+   kivi_parser ::yy_reduce_print_ (int yyrule)
   {
     int yylno = yyrline_[yyrule];
     int yynrhs = yyr2_[yyrule];
@@ -1626,5 +1579,5 @@ namespace yy {
 
 
 } // yy
-#line 1630 "src/autogen/kivi_parser.tab.cc"
+#line 1583 "src/autogen/kivi_parser.tab.cc"
 

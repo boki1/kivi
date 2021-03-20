@@ -2,7 +2,6 @@
 #include "autogen/kivi_parser.tab.hh"
 
 #include <algorithm>
-#include <ranges>
 
 void
 yy::kivi_parser::error (const location_type &p_location,
@@ -103,3 +102,9 @@ expression::splice_parameter_list_with (expression &&other)
 {
     m_parameters.splice (m_parameters.end (), std::move (other.m_parameters));
 }
+
+expression_type expression::get_type() const { return m_type; }
+const identifier &expression::get_identifier() const { return m_identifier; }
+const std::string &expression::get_str_value() const { return m_str_value; }
+long expression::get_number_val() const { return m_number_val; }
+const std::list<expression> &expression::get_parameters() const { return m_parameters; }
