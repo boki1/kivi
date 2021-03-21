@@ -195,5 +195,8 @@ class parsing_context
     void exit_scope ();
 };
 
+struct parsed_file {
+
+};
 
 #endif
