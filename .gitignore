@@ -54,3 +54,5 @@ CMakeCache.txt
 Makefile
 *.cmake
 
+# Dot files
+.gv
