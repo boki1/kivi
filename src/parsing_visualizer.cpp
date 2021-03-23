@@ -18,7 +18,7 @@ std::string stringify_op(const expression& expr, const char* sep, const char* de
     return result;
 }
 
-std::string expect1(const expression &expr) {
+std::string expect_one_param(const expression &expr) {
     if (expr.get_parameters().empty()) return "?";
     else if (expr.get_parameters().size() == 1) {
         return stringify(expr.get_parameters().front());
@@ -52,7 +52,7 @@ std::string stringify(const expression& expr, bool stmt) {
         case expression_type::expression_sequence  :
             return stmt ? stringify_op(expr, "; ", "{}", true) : stringify_op(expr, ", ", "()");
         case expression_type::negation    :
-            return "-(" + expect1(expr) + ")";
+            return "-(" + expect_one_param(expr) + ")";
         case expression_type::copy   :
             return "(" + stringify(expr.get_parameters().back()) + " = " + stringify(expr.get_parameters().front()) + ")";
         case expression_type::function_call  :
@@ -61,7 +61,7 @@ std::string stringify(const expression& expr, bool stmt) {
         case expression_type::compare_loop   :
             return "while " + stringify(expr.get_parameters().front()) + " " + stringify_op(expr, "; ", "{}", true, 1);
         case expression_type::retrn    :
-            return "return " + expect1(expr);
+            return "return " + expect_one_param(expr);
     }
     return "?";
 }
