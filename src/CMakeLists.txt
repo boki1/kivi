@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 include_directories(include)
 include_directories(autogen)
+include_directories(../depen/gvpp/src)
 
 add_compile_definitions(PARSING_VISUALIZATION_ENABLED)
 
@@ -24,4 +25,8 @@ add_executable(kivi
 	autogen/location.hh
 	autogen/position.hh
 	autogen/stack.hh
+
+	# gvpp
+	../depen/gvpp/src/gvpp.hpp
+	../depen/gvpp/src/gvpp.cpp
 )

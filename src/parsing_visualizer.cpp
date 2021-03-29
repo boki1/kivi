@@ -1,7 +1,14 @@
 #include "include/parsing_visualizer.hpp"
+#include "include/parser.hpp"
+#include <vector>
+#include "gvpp.hpp"
+#include <iostream>
+#include <fstream>
 
 std::string stringify_op(const expression& expr, const char* sep, const char* delim, bool stmt, unsigned first, unsigned limit) {
+//    std::string result("\n");
     std::string result(1, delim[0]);
+//    result += "\n";
     const char *first_sep = "";
     for (const auto &p: expr.get_parameters()) {
         if (first) {
@@ -68,4 +75,7 @@ std::string stringify(const expression& expr, bool stmt) {
 
 std::string stringify(const function &f) {
     return stringify(f.code, true);
+}
+
+void visualize_parsing(std::vector<function> functions) {
 }
