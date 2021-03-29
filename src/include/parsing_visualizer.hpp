@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "parser.hpp"
 
 std::string
@@ -11,3 +12,4 @@ std::string expect_one_param(const expression &expr);
 std::string stringify(const expression &expr, bool stmt);
 std::string stringify(const function &f);
 
+void visualize_parsing(std::vector<function> functions);
