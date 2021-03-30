@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# `autogen/` contents
+src/autogen/*
+
 # Compiled Object files
 build/
 *.slo
@@ -48,9 +51,8 @@ cmake-build-debug/
 # KDevelop
 *kdev*
 
-# CMake 
+# CMake
 CMakeFiles/
 CMakeCache.txt
-Makefile
 *.cmake
 

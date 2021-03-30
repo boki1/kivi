@@ -31,12 +31,12 @@
 // version 2.2 of Bison.
 
 /**
- ** \file src/autogen/location.hh
+ ** \file ../autogen/location.hh
  ** Define the yy::location class.
  */
 
-#ifndef YY_YY_SRC_AUTOGEN_LOCATION_HH_INCLUDED
-# define YY_YY_SRC_AUTOGEN_LOCATION_HH_INCLUDED
+#ifndef YY_YY_AUTOGEN_LOCATION_HH_INCLUDED
+# define YY_YY_AUTOGEN_LOCATION_HH_INCLUDED
 
 # include <iostream>
 # include <string>
@@ -54,7 +54,7 @@
 # endif
 
 namespace yy {
-#line 58 "src/autogen/location.hh"
+#line 58 "../autogen/location.hh"
 
   /// A point in a source file.
   class position
@@ -299,6 +299,6 @@ namespace yy {
   }
 
 } // yy
-#line 303 "src/autogen/location.hh"
+#line 303 "../autogen/location.hh"
 
-#endif // !YY_YY_SRC_AUTOGEN_LOCATION_HH_INCLUDED
+#endif // !YY_YY_AUTOGEN_LOCATION_HH_INCLUDED

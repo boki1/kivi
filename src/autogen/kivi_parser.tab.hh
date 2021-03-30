@@ -32,7 +32,7 @@
 
 
 /**
- ** \file src/autogen/kivi_parser.tab.hh
+ ** \file ../autogen/kivi_parser.tab.hh
  ** Define the yy::parser class.
  */
 
@@ -42,16 +42,16 @@
 // especially those whose name start with YY_ or yy_.  They are
 // private implementation details that can be changed or removed.
 
-#ifndef YY_YY_SRC_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
-# define YY_YY_SRC_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
+#ifndef YY_YY_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
+# define YY_YY_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
 // "%code requires" blocks.
-#line 9 "src/misc/grammar.y"
+#line 9 "grammar.y"
 
 
 #include "../include/parser.hpp"
 
 
-#line 55 "src/autogen/kivi_parser.tab.hh"
+#line 55 "../autogen/kivi_parser.tab.hh"
 
 # include <cassert>
 # include <cstdlib> // std::abort
@@ -185,7 +185,7 @@
 #endif
 
 namespace yy {
-#line 189 "src/autogen/kivi_parser.tab.hh"
+#line 189 "../autogen/kivi_parser.tab.hh"
 
 
 
@@ -1617,9 +1617,9 @@ switch (yykind)
 kivi_parser::symbol_type yylex (parsing_context &ctx);
 
 } // yy
-#line 1619 "src/autogen/kivi_parser.tab.hh"
+#line 1619 "../autogen/kivi_parser.tab.hh"
 
 
 
 
-#endif // !YY_YY_SRC_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
+#endif // !YY_YY_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
