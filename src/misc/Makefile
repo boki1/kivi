@@ -22,3 +22,9 @@ lexemes:
 	echo 'Building ... lexemes'
 	re2c $(RE2C_FLAGS) -o $(AUTOGEN_DIR)/kivi_lexer.tab.cc $(LEXEMES_FILE)
 	echo 'Built lexemes'
+
+clean:
+	echo 'Clearing ...'
+	echo 'Cleared'
+
+PHONY: all clean
