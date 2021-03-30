@@ -37,14 +37,14 @@ std::string stringify(const expression& expr, bool stmt) {
         case expression_type::nop    :
             return "";
         case expression_type::string :
-            return "\"" + expr.get_str_value() + "\"";
+            return "\\\"" + expr.get_str_value() + "\\\"";
         case expression_type::number :
             return std::to_string(expr.get_number_val());
         case expression_type::identifier  : {
             const char *ident_type[] = {"?", "Func", "Param", "Var", "Stmt"};
             return ident_type[(int) expr.get_identifier().get_ident_type()] +
-                   std::to_string(expr.get_identifier().get_index_within()) + "\"" + expr.get_identifier().get_name() +
-                   "\"";
+                   std::to_string(expr.get_identifier().get_index_within()) + "\\\"" + expr.get_identifier().get_name() +
+                   "\\\"";
         }
         case expression_type::addition    :
             return stringify_op(expr, " + ", "()");
@@ -77,5 +77,56 @@ std::string stringify(const function &f) {
     return stringify(f.code, true);
 }
 
-void visualize_parsing(std::vector<function> functions) {
+std::string get_next_node_token(const std::string &string, unsigned &start_idx) {
+    if (start_idx >= string.size()) {
+        return "";
+    }
+
+    // Loop till non-space character appear
+    for (unsigned i = start_idx; i < string.size(); ++i) {
+        if (string[i] == ' ' || string[i] == ';') {
+            continue;
+        }
+        start_idx = i;
+        break;
+    }
+
+    unsigned end_idx;
+    for (end_idx = start_idx; end_idx < string.size(); ++end_idx) {
+        if (string[end_idx] == '{' || string[end_idx] == '}') {
+            if (start_idx == end_idx) {
+                ++end_idx;
+            }
+            break;
+        }
+    }
+    return string.substr(start_idx, end_idx - start_idx);
+}
+
+void visualize_parsing(const std::vector<function>& functions) {
+    for (const auto &f : functions) {
+        std::cout << stringify(f) << "\n";
+    }
+
+    gvpp::Graph<> g(true, "parsing_tree_graph");
+    unsigned node_id = 0;
+    for (const auto& f: functions) {
+         std::string stringified = stringify(f);
+        unsigned start_idx = 0;
+         std::string current_node_str;
+         do {
+             current_node_str = get_next_node_token(stringified, start_idx);
+             g.addNode(std::to_string(node_id), current_node_str, false);
+             start_idx += current_node_str.size();
+             ++node_id;
+         } while (!current_node_str.empty());
+
+     }
+    std::ofstream file("dot_file.gv", std::ios::out);
+    if (!file)
+    {
+        std::cout << "error opening output file\n";
+    }
+    file << g;
+    renderToFile(g, "dot", "gtk");
 }
