@@ -99,6 +99,10 @@ std::string get_next_node_token(const std::string &string, unsigned &start_idx) 
             }
             break;
         }
+        if (string[end_idx] == ';') {
+            ++end_idx;
+            break;
+        }
     }
     return string.substr(start_idx, end_idx - start_idx);
 }
@@ -109,19 +113,31 @@ void visualize_parsing(const std::vector<function>& functions) {
     }
 
     gvpp::Graph<> g(true, "parsing_tree_graph");
-    unsigned node_id = 0;
-    for (const auto& f: functions) {
-         std::string stringified = stringify(f);
-        unsigned start_idx = 0;
-         std::string current_node_str;
-         do {
-             current_node_str = get_next_node_token(stringified, start_idx);
-             g.addNode(std::to_string(node_id), current_node_str, false);
-             start_idx += current_node_str.size();
-             ++node_id;
-         } while (!current_node_str.empty());
 
-     }
+    unsigned node_id = 0;
+
+    for (const auto& f: functions) {
+        std::string stringified = stringify(f);
+        unsigned start_idx = 0;
+
+        std::string prev_node_str = get_next_node_token(stringified, start_idx);
+        std::string current_node_str = prev_node_str;
+
+        gvpp::Node<> *prev = &g.addNode(std::to_string(node_id), prev_node_str);
+        start_idx += prev_node_str.size();
+        ++node_id;
+
+        while (!current_node_str.empty()) {
+            current_node_str = get_next_node_token(stringified, start_idx);
+            gvpp::Node<> &curr = g.addNode(std::to_string(node_id), current_node_str);
+            std::cout << current_node_str;
+            start_idx += current_node_str.size();
+            ++node_id;
+            g.addEdge(*prev, curr);
+            prev = &curr;
+        }
+
+    }
     std::ofstream file("dot_file.gv", std::ios::out);
     if (!file)
     {
