@@ -117,26 +117,46 @@ void visualize_parsing(const std::vector<function>& functions) {
     unsigned node_id = 0;
 
     for (const auto& f: functions) {
+        gvpp::SubGraph<> &sg = g.addSubGraph(f.name, true);
+//        sg.set("bgcolor", "lightyellow");
+
+        gvpp::Node<> &function_start = sg.addNode(std::to_string(node_id), "Start: " + f.name);
+        function_start.set("fillcolor", "forestgreen");
+        function_start.set("fontcolor", "white");
+        function_start.set("shape", "tripleoctagon");
+
+        ++node_id;
         std::string stringified = stringify(f);
         unsigned start_idx = 0;
 
         std::string prev_node_str = get_next_node_token(stringified, start_idx);
         std::string current_node_str;
 
-        gvpp::Node<> *prev = &g.addNode(std::to_string(node_id), prev_node_str);
+        gvpp::Node<> *prev = &sg.addNode(std::to_string(node_id), prev_node_str);
         start_idx += prev_node_str.size();
         ++node_id;
 
+        g.addEdge(function_start, *prev);
+
         while (!(current_node_str = get_next_node_token(stringified, start_idx)).empty()) {
-            gvpp::Node<> &curr = g.addNode(std::to_string(node_id), current_node_str);
+            gvpp::Node<> &curr = sg.addNode(std::to_string(node_id), current_node_str);
             start_idx += current_node_str.size();
             ++node_id;
             g.addEdge(*prev, curr);
             prev = &curr;
         }
+
+        gvpp::Node<> &function_end = sg.addNode(std::to_string(node_id), "End");
+        function_end.set("fillcolor", "forestgreen");
+        function_end.set("fontcolor", "white");
+        function_end.set("shape", "tripleoctagon");
+        ++node_id;
+        g.addEdge( *prev, function_end);
+
     }
 
     g.set(gvpp::AttrType::GRAPH, "ranksep", ".5");
+    g.set(gvpp::AttrType::GRAPH, "bgcolor", "white");
     g.set(gvpp::AttrType::EDGE, "style", "dashed");
     g.set(gvpp::AttrType::NODE, "style", "filled");
     g.set(gvpp::AttrType::NODE, "shape", "oval");
