@@ -121,23 +121,27 @@ void visualize_parsing(const std::vector<function>& functions) {
         unsigned start_idx = 0;
 
         std::string prev_node_str = get_next_node_token(stringified, start_idx);
-        std::string current_node_str = prev_node_str;
+        std::string current_node_str;
 
         gvpp::Node<> *prev = &g.addNode(std::to_string(node_id), prev_node_str);
         start_idx += prev_node_str.size();
         ++node_id;
 
-        while (!current_node_str.empty()) {
-            current_node_str = get_next_node_token(stringified, start_idx);
+        while (!(current_node_str = get_next_node_token(stringified, start_idx)).empty()) {
             gvpp::Node<> &curr = g.addNode(std::to_string(node_id), current_node_str);
-            std::cout << current_node_str;
             start_idx += current_node_str.size();
             ++node_id;
             g.addEdge(*prev, curr);
             prev = &curr;
         }
-
     }
+
+    g.set(gvpp::AttrType::GRAPH, "ranksep", ".5");
+    g.set(gvpp::AttrType::EDGE, "style", "dashed");
+    g.set(gvpp::AttrType::NODE, "style", "filled");
+    g.set(gvpp::AttrType::NODE, "shape", "oval");
+    g.set(gvpp::AttrType::NODE, "fillcolor", "lightgreen");
+
     std::ofstream file("dot_file.gv", std::ios::out);
     if (!file)
     {
