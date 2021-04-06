@@ -45,34 +45,7 @@ main (int argc, char *const argv[])
     }
 
     #ifdef PARSING_VISUALIZATION_ENABLED
-        std::string stringified;
-        for (const auto &f : functions)
-        {
-//            std::cout << "---------------------------------\n";
-//
-//            stringified = stringify(f);
-//            unsigned current_tabs = 0;
-//            for (int i = 0; i < stringified.size(); ++i) {
-//                if (i != 0 && (stringified[i - 1] == '{' || stringified[i - 1] == ';' || stringified[i - 1] == '}')) {
-//                    std::cout << "\n";
-//                    if (stringified[i - 1] == '{') {
-//                        ++current_tabs;
-//                    }
-//                    if (i != (stringified.size() - 1) - 1 && stringified[i + 1] == '}') {
-//                        std::cout << "\n";
-//                        --current_tabs;
-//                    }
-//                    for (int j = 0; j < current_tabs; ++j) {
-//                        std::cout << "\t";
-//                    }
-//                    ++i;
-//                }
-//                std::cout << stringified[i];
-//            }
-//            std::cout << "\n";
-        }
-        visualize_parsing(functions);
-
+        process_visualization::visualize_parsing(functions);
     #endif
     return 0;
 }
