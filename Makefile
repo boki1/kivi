@@ -21,6 +21,9 @@ core:
 prep:
 	mkdir -p $(BUILD_DIR)
 
+test: prep all
+	(cd $(TEST_DIR); make all)
+
 clean:
 	echo 'Cleaning ...'
 	(cd $(MISC_DIR); make clean)

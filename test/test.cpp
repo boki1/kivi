@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <fstream>
+#include <iostream>
 #include <map>
 #include <string>
 #include <vector>
@@ -130,8 +131,13 @@ main (int argc, const char *argv[])
 {
     using namespace test;
 
-    std::ofstream os{ "CORRECT.txt", std::ios::out };
-    auto format = format_from_str ((argc > 1) ? argv[2] : "");
+    std::string filename = "CORRECT.txt";
+    if (argc > 1)
+	filename = argv[1];
+    std::string outformat = "--detailed";
+
+    std::ofstream os{ filename, std::ios::out };
+    auto format = format_from_str (outformat);
     output_to (os, format);
 
     return 0;
