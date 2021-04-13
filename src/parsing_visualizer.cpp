@@ -7,10 +7,12 @@
 #include <fstream>
 
 namespace process_visualization {
-    std::string stringify_op(const expression &expr, const char *sep, const char *delim, bool stmt, unsigned first,
-                             unsigned limit) {
+    std::string stringify_operation(const expression &expr, const std::string &sep, const std::string &delim, bool stmt, unsigned first,
+                                    unsigned limit) {
+        // TODO: throw exception
+        if (delim.size() < 2) return "";
         std::string result(1, delim[0]);
-        const char *first_sep = "";
+        std::string first_sep;
         for (const auto &p: expr.get_parameters()) {
             if (first) {
                 --first;
@@ -30,7 +32,7 @@ namespace process_visualization {
         if (expr.get_parameters().empty()) return "?";
         else if (expr.get_parameters().size() == 1) {
             return stringify(expr.get_parameters().front());
-        } else return stringify_op(expr, "??", "()");
+        } else return stringify_operation(expr, "??", "()");
     }
 
     std::string stringify(const expression &expr, bool stmt) {
@@ -50,17 +52,17 @@ namespace process_visualization {
                        "\\\"";
             }
             case expression_type::addition    :
-                return stringify_op(expr, " + ", "()");
+                return stringify_operation(expr, " + ", "()");
             case expression_type::multiplication:
-                return stringify_op(expr, " * ", "()");
+                return stringify_operation(expr, " * ", "()");
             case expression_type::division:
-                return stringify_op(expr, " / ", "()");
+                return stringify_operation(expr, " / ", "()");
             case expression_type::equality     :
-                return stringify_op(expr, " == ", "()");
+                return stringify_operation(expr, " == ", "()");
             case expression_type::compare_and   :
-                return stringify_op(expr, " && ", "()");
+                return stringify_operation(expr, " && ", "()");
             case expression_type::expression_sequence  :
-                return stmt ? stringify_op(expr, "; ", "{}", true) : stringify_op(expr, ", ", "()");
+                return stmt ? stringify_operation(expr, "; ", "{}", true) : stringify_operation(expr, ", ", "()");
             case expression_type::negation    :
                 return "-(" + process_visualization::expect_one_param(expr) + ")";
             case expression_type::copy   :
@@ -68,10 +70,10 @@ namespace process_visualization {
                        stringify(expr_params.front()) + ")";
             case expression_type::function_call  :
                 return "(" + (expr_params.empty() ? "?" :
-                    stringify(expr_params.front())) + ")" + stringify_op(expr, ", ", "()", false, 1);
+                    stringify(expr_params.front())) + ")" + stringify_operation(expr, ", ", "()", false, 1);
             case expression_type::compare_loop   :
                 return "while " + stringify(expr_params.front()) + " " +
-                       stringify_op(expr, "; ", "{}", true, 1);
+                        stringify_operation(expr, "; ", "{}", true, 1);
             case expression_type::retrn    :
                 return "return " + process_visualization::expect_one_param(expr);
         }

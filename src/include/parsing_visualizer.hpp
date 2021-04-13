@@ -8,8 +8,8 @@ namespace process_visualization {
     stringify(const expression &expr, bool stmt = false);
 
     std::string
-    stringify_op(const expression &expr, const char *sep, const char *delim, bool stmt = false, unsigned first = 0,
-                 unsigned limit = ~0u);
+    stringify_operation(const expression &expr, const std::string &sep, const std::string &delim, bool stmt = false, unsigned first = 0,
+                        unsigned limit = ~0u);
 
     std::string expect_one_param(const expression &expr);
 
