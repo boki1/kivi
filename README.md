@@ -4,7 +4,7 @@
 [![Kivi logo](https://i.postimg.cc/PxHqD9Y9/kiwi.png)](https://postimg.cc/2qHmRHH7)
 
 -------------
-##### NB!!! The Kivi programming languge is a school project and does not purport for uniqueness!
+*NB!!! The Kivi programming languge is a school project and does not purport for uniqueness!**
 -----------
 
 Welcome to **The Kivi programming language**!
