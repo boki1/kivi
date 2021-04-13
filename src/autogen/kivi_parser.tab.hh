@@ -32,7 +32,7 @@
 
 
 /**
- ** \file src/autogen/kivi_parser.tab.hh
+ ** \file ../autogen/kivi_parser.tab.hh
  ** Define the yy::parser class.
  */
 
@@ -41,16 +41,20 @@
 // Undocumented macros, especially those whose name start with YY_,
 // are private implementation details.  Do not rely on them.
 
-#ifndef YY_YY_SRC_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
-# define YY_YY_SRC_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
+#ifndef YY_YY_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
+# define YY_YY_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
 // "%code requires" blocks.
-#line 9 "src/misc/grammar.y"
+#line 9 "grammar.y"
 
 
 #include "../include/parser.hpp"
 
 
+<<<<<<< HEAD
+#line 55 "../autogen/kivi_parser.tab.hh"
+=======
 #line 54 "src/autogen/kivi_parser.tab.hh"
+>>>>>>> master
 
 # include <cassert>
 # include <cstdlib> // std::abort
@@ -184,7 +188,11 @@
 #endif
 
 namespace yy {
+<<<<<<< HEAD
+#line 189 "../autogen/kivi_parser.tab.hh"
+=======
 #line 188 "src/autogen/kivi_parser.tab.hh"
+>>>>>>> master
 
 
 
@@ -1453,10 +1461,14 @@ switch (yytype)
 kivi_parser::symbol_type yylex (parsing_context &ctx);
 
 } // yy
+<<<<<<< HEAD
+#line 1619 "../autogen/kivi_parser.tab.hh"
+=======
 #line 1455 "src/autogen/kivi_parser.tab.hh"
 
+>>>>>>> master
 
 
 
 
-#endif // !YY_YY_SRC_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
+#endif // !YY_YY_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED

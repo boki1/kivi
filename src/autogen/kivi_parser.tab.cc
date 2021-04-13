@@ -130,6 +130,9 @@
 #define YYRECOVERING()  (!!yyerrstatus_)
 
 namespace yy {
+<<<<<<< HEAD
+#line 136 "../autogen/kivi_parser.tab.cc"
+=======
 #line 134 "src/autogen/kivi_parser.tab.cc"
 
 
@@ -173,6 +176,7 @@ namespace yy {
     return yystr;
   }
 
+>>>>>>> master
 
   /// Build a parser object.
    kivi_parser :: kivi_parser  (parsing_context &ctx_yyarg)
@@ -684,6 +688,24 @@ namespace yy {
         {
           switch (yyn)
             {
+<<<<<<< HEAD
+  case 2: // $@1: %empty
+#line 39 "grammar.y"
+    { ctx.enter_scope(); }
+#line 660 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 3: // Program: $@1 Functions
+#line 40 "grammar.y"
+                  {
+        ctx.exit_scope();
+    }
+#line 668 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 6: // $@2: %empty
+#line 50 "grammar.y"
+=======
   case 2:
 #line 39 "src/misc/grammar.y"
     { ctx.enter_scope(); }
@@ -700,19 +722,47 @@ namespace yy {
 
   case 6:
 #line 50 "src/misc/grammar.y"
+>>>>>>> master
                   {
 	ctx.define_function(yystack_[0].value.as < std::string > ());
 	ctx.enter_scope();
   }
+<<<<<<< HEAD
+#line 677 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 7: // Single_function: Safe_identifier $@2 Parameter_list Safe_colon Safe_statement
+#line 55 "grammar.y"
+=======
 #line 708 "src/autogen/kivi_parser.tab.cc"
     break;
 
   case 7:
 #line 55 "src/misc/grammar.y"
+>>>>>>> master
                  {
 	ctx.add_function_with_block(std::move(yystack_[4].value.as < std::string > ()), std::move(yystack_[0].value.as < expression > ()));
 	ctx.exit_scope();
   }
+<<<<<<< HEAD
+#line 686 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 10: // Single_param: Single_param ',' Safe_identifier
+#line 68 "grammar.y"
+        { ctx.define_parameter(yystack_[0].value.as < std::string > ()); }
+#line 692 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 11: // Single_param: IDENTIFIER
+#line 70 "grammar.y"
+        { ctx.define_parameter(yystack_[0].value.as < std::string > ()); }
+#line 698 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 12: // Statement: Compound_statement Safe_closing_brace
+#line 74 "grammar.y"
+=======
 #line 717 "src/autogen/kivi_parser.tab.cc"
     break;
 
@@ -730,10 +780,80 @@ namespace yy {
 
   case 12:
 #line 74 "src/misc/grammar.y"
+>>>>>>> master
                                         {
   	yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
  	ctx.exit_scope();
   }
+<<<<<<< HEAD
+#line 707 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 13: // Statement: "if" Safe_expression Safe_colon Safe_statement
+#line 78 "grammar.y"
+                                               {
+	yylhs.value.as < expression > () = new_compare_and_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 715 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 14: // Statement: "while" Safe_expression ':' Safe_statement
+#line 81 "grammar.y"
+                                           {
+	yylhs.value.as < expression > () = new_compare_loop_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 723 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 15: // Statement: "return" Safe_expression Safe_semicolon
+#line 84 "grammar.y"
+                                        {
+	yylhs.value.as < expression > () = new_retrn_expr(std::move(yystack_[1].value.as < expression > ()));
+  }
+#line 731 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 16: // Statement: Expressions Safe_semicolon
+#line 87 "grammar.y"
+                             {
+	yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
+  }
+#line 739 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 17: // Statement: ';'
+#line 90 "grammar.y"
+      { }
+#line 745 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 18: // Comma_sep_expressions: Safe_expression
+#line 94 "grammar.y"
+                  {
+    yylhs.value.as < expression > () = new_expression_sequence_expr(std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 753 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 19: // Comma_sep_expressions: Comma_sep_expressions ',' Safe_expression
+#line 98 "grammar.y"
+                                            { yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
+    yylhs.value.as < expression > ().add_parameter(std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 761 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 20: // Var_definition: "auto" Safe_identifier '=' Safe_expression
+#line 104 "grammar.y"
+                                            {
+        yylhs.value.as < expression > () = expression(ctx.define_local(yystack_[2].value.as < std::string > ())).move_expr(std::move(yystack_[0].value.as < expression > ()));
+    }
+#line 769 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 21: // Compound_statement: '{'
+#line 110 "grammar.y"
+=======
 #line 738 "src/autogen/kivi_parser.tab.cc"
     break;
 
@@ -801,19 +921,169 @@ namespace yy {
 
   case 21:
 #line 110 "src/misc/grammar.y"
+>>>>>>> master
       {
 	yylhs.value.as < expression > () = new_expression_sequence_expr();
 	ctx.enter_scope();
   }
+<<<<<<< HEAD
+#line 778 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 22: // Compound_statement: Compound_statement Statement
+#line 114 "grammar.y"
+=======
 #line 809 "src/autogen/kivi_parser.tab.cc"
     break;
 
   case 22:
 #line 114 "src/misc/grammar.y"
+>>>>>>> master
                                {
 	yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
 	yylhs.value.as < expression > ().add_parameter(std::move(yystack_[0].value.as < expression > ()));
   }
+<<<<<<< HEAD
+#line 787 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 23: // Comparison_operation: Expression "==" error
+#line 121 "grammar.y"
+                        {
+    yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
+  }
+#line 795 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 24: // Comparison_operation: Expression "==" Expression
+#line 124 "grammar.y"
+                             {
+    yylhs.value.as < expression > () = new_equality_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 803 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 25: // Comparison_operation: Expression "<>" error
+#line 127 "grammar.y"
+                        {
+    yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
+  }
+#line 811 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 26: // Comparison_operation: Expression "<>" Expression
+#line 130 "grammar.y"
+                             {
+    yylhs.value.as < expression > () = new_equality_expr(new_equality_expr((std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()))), expression(0ul));
+  }
+#line 819 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 27: // Arithmetic_operation: Expression '+' error
+#line 136 "grammar.y"
+                       {
+    yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
+  }
+#line 827 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 28: // Arithmetic_operation: Expression '+' Expression
+#line 139 "grammar.y"
+                            {
+    yylhs.value.as < expression > () = new_addition_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 835 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 29: // Arithmetic_operation: Expression '-' error
+#line 142 "grammar.y"
+                       {
+    yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
+  }
+#line 843 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 30: // Arithmetic_operation: Expression '-' Expression
+#line 145 "grammar.y"
+                                      {
+    yylhs.value.as < expression > () = new_addition_expr(std::move(yystack_[2].value.as < expression > ()), new_negation_expr(std::move(yystack_[0].value.as < expression > ())));
+  }
+#line 851 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 31: // Arithmetic_operation: Expression '*' error
+#line 148 "grammar.y"
+                       {
+    yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
+  }
+#line 859 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 32: // Arithmetic_operation: Expression '*' Expression
+#line 151 "grammar.y"
+                            {
+    yylhs.value.as < expression > () = new_multiplication_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 867 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 33: // Arithmetic_operation: Expression '/' error
+#line 158 "grammar.y"
+                       {
+    yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
+  }
+#line 875 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 34: // Arithmetic_operation: Expression '/' Expression
+#line 161 "grammar.y"
+                                      {
+    yylhs.value.as < expression > () = new_division_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 883 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 35: // Arithmetic_operation: Expression '=' error
+#line 164 "grammar.y"
+                       {
+    yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
+  }
+#line 891 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 36: // Arithmetic_operation: Expression '=' Expression
+#line 167 "grammar.y"
+                            {
+    yylhs.value.as < expression > () = expression(std::move(yystack_[2].value.as < expression > ()).move_expr(std::move(yystack_[0].value.as < expression > ())));
+  }
+#line 899 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 37: // Unary_operation: '-' Expression
+#line 173 "grammar.y"
+                 {
+    yylhs.value.as < expression > () = new_negation_expr(std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 907 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 38: // Unary_operation: '-' error
+#line 176 "grammar.y"
+            { }
+#line 913 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 39: // Function_call_operation: Expression '(' ')'
+#line 180 "grammar.y"
+                     {
+    yylhs.value.as < expression > () = new_function_call_expr(std::move(yystack_[2].value.as < expression > ()));
+  }
+#line 921 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 40: // Function_call_operation: Expression '(' Comma_sep_expressions Safe_closing_parentesis
+#line 183 "grammar.y"
+=======
 #line 818 "src/autogen/kivi_parser.tab.cc"
     break;
 
@@ -953,10 +1223,42 @@ namespace yy {
 
   case 40:
 #line 183 "src/misc/grammar.y"
+>>>>>>> master
                                                                {
     yylhs.value.as < expression > () = new_function_call_expr(std::move(yystack_[3].value.as < expression > ()));
     yylhs.value.as < expression > ().splice_parameter_list_with(std::move(yystack_[1].value.as < expression > ()));
   }
+<<<<<<< HEAD
+#line 930 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 41: // Function_call_operation: '(' Comma_sep_expressions Safe_closing_parentesis
+#line 187 "grammar.y"
+                                                   {
+    yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
+  }
+#line 938 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 42: // Expressions: Var_definition
+#line 193 "grammar.y"
+                 {
+    yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
+  }
+#line 946 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 43: // Expressions: Expression
+#line 196 "grammar.y"
+             {
+    yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
+  }
+#line 954 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 44: // Expressions: Expression ',' Comma_sep_expressions
+#line 199 "grammar.y"
+=======
 #line 961 "src/autogen/kivi_parser.tab.cc"
     break;
 
@@ -986,10 +1288,132 @@ namespace yy {
 
   case 44:
 #line 199 "src/misc/grammar.y"
+>>>>>>> master
                                        {
     yylhs.value.as < expression > () = new_expression_sequence_expr(std::move(yystack_[2].value.as < expression > ()));
     yylhs.value.as < expression > ().splice_parameter_list_with(std::move(yystack_[0].value.as < expression > ()));
   }
+<<<<<<< HEAD
+#line 963 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 45: // Expression: STRING_LITERAL
+#line 206 "grammar.y"
+                 {
+    yylhs.value.as < expression > () = expression(std::move(yystack_[0].value.as < std::string > ()));
+  }
+#line 971 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 46: // Expression: NUMBER_LITERAL
+#line 209 "grammar.y"
+                 {
+    yylhs.value.as < expression > () = expression(yystack_[0].value.as < long > ());
+  }
+#line 979 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 47: // Expression: IDENTIFIER
+#line 212 "grammar.y"
+             {
+    yylhs.value.as < expression > () = ctx.use_identifier(yystack_[0].value.as < std::string > ());
+  }
+#line 987 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 48: // Expression: Arithmetic_operation
+#line 215 "grammar.y"
+  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
+#line 993 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 49: // Expression: Comparison_operation
+#line 216 "grammar.y"
+  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
+#line 999 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 50: // Expression: Unary_operation
+#line 217 "grammar.y"
+  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
+#line 1005 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 51: // Expression: Function_call_operation
+#line 218 "grammar.y"
+  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
+#line 1011 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 52: // Safe_identifier: error
+#line 226 "grammar.y"
+        { }
+#line 1017 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 53: // Safe_identifier: IDENTIFIER
+#line 227 "grammar.y"
+             {
+    yylhs.value.as < std::string > () = std::move(yystack_[0].value.as < std::string > ());
+  }
+#line 1025 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 54: // Safe_colon: error
+#line 233 "grammar.y"
+        { }
+#line 1031 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 56: // Safe_semicolon: error
+#line 238 "grammar.y"
+        { }
+#line 1037 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 58: // Safe_closing_brace: error
+#line 243 "grammar.y"
+        { }
+#line 1043 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 60: // Safe_closing_parentesis: error
+#line 248 "grammar.y"
+        { }
+#line 1049 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 62: // Safe_statement: error
+#line 253 "grammar.y"
+        { }
+#line 1055 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 63: // Safe_statement: Statement
+#line 254 "grammar.y"
+            {
+    yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
+  }
+#line 1063 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 64: // Safe_expression: error
+#line 260 "grammar.y"
+        { }
+#line 1069 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 65: // Safe_expression: Expression
+#line 261 "grammar.y"
+             {
+    yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
+  }
+#line 1077 "../autogen/kivi_parser.tab.cc"
+    break;
+
+
+#line 1081 "../autogen/kivi_parser.tab.cc"
+=======
 #line 994 "src/autogen/kivi_parser.tab.cc"
     break;
 
@@ -1109,6 +1533,7 @@ namespace yy {
 
 
 #line 1112 "src/autogen/kivi_parser.tab.cc"
+>>>>>>> master
 
             default:
               break;
@@ -1579,5 +2004,9 @@ namespace yy {
 
 
 } // yy
+<<<<<<< HEAD
+#line 1630 "../autogen/kivi_parser.tab.cc"
+=======
 #line 1583 "src/autogen/kivi_parser.tab.cc"
+>>>>>>> master
 

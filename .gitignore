@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# `autogen/` contents
+src/autogen/*
+
 # Compiled Object files
 build/
 *.slo
@@ -51,7 +54,6 @@ cmake-build-debug/
 # CMake
 CMakeFiles/
 CMakeCache.txt
-Makefile
 *.cmake
 
 # Dot files
