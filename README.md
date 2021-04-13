@@ -3,6 +3,9 @@
 
 [![Kivi logo](https://i.postimg.cc/PxHqD9Y9/kiwi.png)](https://postimg.cc/2qHmRHH7)
 
+-------------
+##### NB!!! The Kivi programming languge is a school project and does not purport for uniqueness!
+-----------
 
 Welcome to **The Kivi programming language**!
 ==========================
@@ -25,7 +28,7 @@ Kivi is a **compiler** under active development. It has educational purposes onl
 Why is Kivi?
 -----------------
 
-Kivi is initially started as a *Software development* school project at ELSYS. The principle objectives for us, the creators, are to learn about the fundamental ideas and design principles associated with compiler and programming language design. 
+Kivi is initially started as a *Software development* school project at ELSYS. The principle objectives for us, the creators, are to learn about the fundamental ideas and design principles associated with compiler and programming language design.
 
 What is Kivi not?
 -----------------
