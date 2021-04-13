@@ -1,0 +1,6 @@
+[submodule "gvpp"]
+	path = gvpp
+	url = https://github.com/compilin/gvpp.git
+[submodule "depen/gvpp"]
+	path = depen/gvpp
+	url = https://github.com/compilin/gvpp.git
