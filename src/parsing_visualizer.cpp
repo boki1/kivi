@@ -34,6 +34,7 @@ namespace process_visualization {
     }
 
     std::string stringify(const expression &expr, bool stmt) {
+        auto expr_params = expr.get_parameters();
         switch (expr.get_type()) {
             case expression_type::nop    :
                 return "";
@@ -63,13 +64,13 @@ namespace process_visualization {
             case expression_type::negation    :
                 return "-(" + process_visualization::expect_one_param(expr) + ")";
             case expression_type::copy   :
-                return "(" + stringify(expr.get_parameters().back()) + " = " +
-                       stringify(expr.get_parameters().front()) + ")";
+                return "(" + stringify(expr_params.back()) + " = " +
+                       stringify(expr_params.front()) + ")";
             case expression_type::function_call  :
-                return "(" + (expr.get_parameters().empty() ? "?" :
-                    stringify(expr.get_parameters().front())) + ")" + stringify_op(expr, ", ", "()", false, 1);
+                return "(" + (expr_params.empty() ? "?" :
+                    stringify(expr_params.front())) + ")" + stringify_op(expr, ", ", "()", false, 1);
             case expression_type::compare_loop   :
-                return "while " + stringify(expr.get_parameters().front()) + " " +
+                return "while " + stringify(expr_params.front()) + " " +
                        stringify_op(expr, "; ", "{}", true, 1);
             case expression_type::retrn    :
                 return "return " + process_visualization::expect_one_param(expr);
