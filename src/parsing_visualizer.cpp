@@ -112,6 +112,7 @@ namespace process_visualization {
     }
 
     void visualize_parsing(const std::vector<function>& functions) {
+        graphStyle::graphStyle style;
         for (const auto &f : functions) {
             std::cout << stringify(f) << "\n";
         }
@@ -122,12 +123,12 @@ namespace process_visualization {
 
         for (const auto& f: functions) {
             gvpp::SubGraph<> &sg = g.addSubGraph(f.name, true);
-//        sg.set("bgcolor", "lightyellow");
 
             gvpp::Node<> &function_start = sg.addNode(std::to_string(node_id), "Start: " + f.name);
-            function_start.set("fillcolor", "forestgreen");
-            function_start.set("fontcolor", "white");
-            function_start.set("shape", "tripleoctagon");
+
+            for (const std::pair<std::string, std::string> &start_node_style_attr : style.getFunctionStartNodeAttr()) {
+                function_start.set(start_node_style_attr.first, start_node_style_attr.second);
+            }
 
             ++node_id;
             std::string stringified = stringify(f);
@@ -151,20 +152,26 @@ namespace process_visualization {
             }
 
             gvpp::Node<> &function_end = sg.addNode(std::to_string(node_id), "End");
-            function_end.set("fillcolor", "forestgreen");
-            function_end.set("fontcolor", "white");
-            function_end.set("shape", "tripleoctagon");
+
+            for (const std::pair<std::string, std::string> &end_node_style_attr : style.getFunctionEndNodeAttr()) {
+                function_end.set(end_node_style_attr.first, end_node_style_attr.second);
+            }
             ++node_id;
             g.addEdge( *prev, function_end);
 
         }
 
-        g.set(gvpp::AttrType::GRAPH, "ranksep", ".5");
-        g.set(gvpp::AttrType::GRAPH, "bgcolor", "white");
-        g.set(gvpp::AttrType::EDGE, "style", "dashed");
-        g.set(gvpp::AttrType::NODE, "style", "filled");
-        g.set(gvpp::AttrType::NODE, "shape", "oval");
-        g.set(gvpp::AttrType::NODE, "fillcolor", "lightgreen");
+        for (const std::pair<std::string, std::string> &graph_style_attr : style.getGraphAttr()) {
+            g.set(gvpp::AttrType::GRAPH, graph_style_attr.first, graph_style_attr.second);
+        }
+
+        for (const std::pair<std::string, std::string> &edge_style_attr : style.getEdgeAttr()) {
+            g.set(gvpp::AttrType::EDGE, edge_style_attr.first, edge_style_attr.second);
+        }
+
+        for (const std::pair<std::string, std::string> &node_style_attr : style.getRegularNodeAttr()) {
+            g.set(gvpp::AttrType::NODE, node_style_attr.first, node_style_attr.second);
+        }
 
         std::ofstream file("dot_file.gv", std::ios::out);
         if (!file) {
