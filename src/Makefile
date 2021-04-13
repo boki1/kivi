@@ -28,7 +28,7 @@ $(BUILD)/kivi_lexer.tab.o: $(AUTOGEN_LEXER_DEPS)
 	$(CPPC) $(CPPFLAGS) $< -c -o $@
 
 clean:
-	rm -f kivi
+	rm -f $(BUILD)/kivi
 	rm -f *core*
 	rm -f *.o
 	rm -f $(BUILD)/*.o
