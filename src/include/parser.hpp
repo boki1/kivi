@@ -23,7 +23,8 @@ class identifier
     identifier () = default;
     identifier (identifier_type type, std::size_t index_within,
 		std::string name)
-	: m_type (type), m_index_within (index_within), m_name (std::move(name))
+	: m_type (type), m_index_within (index_within),
+	  m_name (std::move (name))
     {
     }
 
@@ -51,8 +52,8 @@ class identifier
 };
 #define EXPRESSION_TYPES(o)                                                   \
     o (nop) o (string) o (number) o (identifier) o (addition) o (negation)    \
-	o (equality) o (multiplication) o (division) o (compare_and)          \
-	    o (compare_loop) o (function_call) o (copy)                       \
+	o (equality) o (multiplication) o (division) o (modular_division)     \
+	    o (compare_and) o (compare_loop) o (function_call) o (copy)       \
 		o (expression_sequence) o (retrn)
 
 #define o(n) n,
@@ -74,7 +75,7 @@ class expression
     expression () : m_type (expression_type::nop) {}
 
     expression (identifier i)
-	: m_type (expression_type::identifier), m_identifier (std::move(i))
+	: m_type (expression_type::identifier), m_identifier (std::move (i))
     {
     }
 
@@ -93,17 +94,17 @@ class expression
     {
     }
 
-    expression_type get_type() const;
+    expression_type get_type () const;
 
-    const identifier &get_identifier() const;
+    const identifier &get_identifier () const;
 
-    const std::string &get_str_value() const;
+    const std::string &get_str_value () const;
 
-    long get_number_val() const;
+    long get_number_val () const;
 
-    const std::list<expression> &get_parameters() const;
+    const std::list<expression> &get_parameters () const;
 
-public:
+  public:
     // Takes an rvalue `this` argument
     expression
     move_expr (expression &&b) &&
@@ -162,9 +163,10 @@ class parsing_context
     parsing_context (const char *code, const std::string *filename)
 	: lexer_cursor (code)
     {
-    // TODO: change filename constness
-	location.begin.filename = location.end.filename = const_cast<std::string *>(filename);
-//	location.begin.filename = location.end.filename = filename;
+	// TODO: change filename constness
+	location.begin.filename = location.end.filename
+	    = const_cast<std::string *> (filename);
+	//	location.begin.filename = location.end.filename = filename;
     }
 
   public:
@@ -195,8 +197,8 @@ class parsing_context
     void exit_scope ();
 };
 
-struct parsed_file {
-
+struct parsed_file
+{
 };
 
 #endif

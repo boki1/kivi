@@ -882,202 +882,218 @@ namespace yy {
 #line 883 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 35: // Arithmetic_operation: Expression '=' error
+  case 35: // Arithmetic_operation: Expression '%' Expression
 #line 164 "grammar.y"
-                       {
-    yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
+                                      {
+    yylhs.value.as < expression > () = new_modular_division_expr(std::move(yystack_[2].value.as < expression > ()), std::move(yystack_[0].value.as < expression > ()));
   }
 #line 891 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 36: // Arithmetic_operation: Expression '=' Expression
+  case 36: // Arithmetic_operation: Expression '%' error
 #line 167 "grammar.y"
-                            {
-    yylhs.value.as < expression > () = expression(std::move(yystack_[2].value.as < expression > ()).move_expr(std::move(yystack_[0].value.as < expression > ())));
+                       {
+	yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
   }
 #line 899 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 37: // Unary_operation: '-' Expression
-#line 173 "grammar.y"
-                 {
-    yylhs.value.as < expression > () = new_negation_expr(std::move(yystack_[0].value.as < expression > ()));
+  case 37: // Arithmetic_operation: Expression '=' error
+#line 170 "grammar.y"
+                       {
+    yylhs.value.as < expression > () = std::move(yystack_[2].value.as < expression > ());
   }
 #line 907 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 38: // Unary_operation: '-' error
-#line 176 "grammar.y"
-            { }
-#line 913 "../autogen/kivi_parser.tab.cc"
+  case 38: // Arithmetic_operation: Expression '=' Expression
+#line 173 "grammar.y"
+                            {
+    yylhs.value.as < expression > () = expression(std::move(yystack_[2].value.as < expression > ()).move_expr(std::move(yystack_[0].value.as < expression > ())));
+  }
+#line 915 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 39: // Function_call_operation: Expression '(' ')'
-#line 180 "grammar.y"
+  case 39: // Unary_operation: '-' Expression
+#line 179 "grammar.y"
+                 {
+    yylhs.value.as < expression > () = new_negation_expr(std::move(yystack_[0].value.as < expression > ()));
+  }
+#line 923 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 40: // Unary_operation: '-' error
+#line 182 "grammar.y"
+            { }
+#line 929 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 41: // Function_call_operation: Expression '(' ')'
+#line 186 "grammar.y"
                      {
     yylhs.value.as < expression > () = new_function_call_expr(std::move(yystack_[2].value.as < expression > ()));
   }
-#line 921 "../autogen/kivi_parser.tab.cc"
+#line 937 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 40: // Function_call_operation: Expression '(' Comma_sep_expressions Safe_closing_parentesis
-#line 183 "grammar.y"
+  case 42: // Function_call_operation: Expression '(' Comma_sep_expressions Safe_closing_parentesis
+#line 189 "grammar.y"
                                                                {
     yylhs.value.as < expression > () = new_function_call_expr(std::move(yystack_[3].value.as < expression > ()));
     yylhs.value.as < expression > ().splice_parameter_list_with(std::move(yystack_[1].value.as < expression > ()));
   }
-#line 930 "../autogen/kivi_parser.tab.cc"
-    break;
-
-  case 41: // Function_call_operation: '(' Comma_sep_expressions Safe_closing_parentesis
-#line 187 "grammar.y"
-                                                   {
-    yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
-  }
-#line 938 "../autogen/kivi_parser.tab.cc"
-    break;
-
-  case 42: // Expressions: Var_definition
-#line 193 "grammar.y"
-                 {
-    yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
-  }
 #line 946 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 43: // Expressions: Expression
-#line 196 "grammar.y"
-             {
-    yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
+  case 43: // Function_call_operation: '(' Comma_sep_expressions Safe_closing_parentesis
+#line 193 "grammar.y"
+                                                   {
+    yylhs.value.as < expression > () = std::move(yystack_[1].value.as < expression > ());
   }
 #line 954 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 44: // Expressions: Expression ',' Comma_sep_expressions
+  case 44: // Expressions: Var_definition
 #line 199 "grammar.y"
+                 {
+    yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
+  }
+#line 962 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 45: // Expressions: Expression
+#line 202 "grammar.y"
+             {
+    yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
+  }
+#line 970 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 46: // Expressions: Expression ',' Comma_sep_expressions
+#line 205 "grammar.y"
                                        {
     yylhs.value.as < expression > () = new_expression_sequence_expr(std::move(yystack_[2].value.as < expression > ()));
     yylhs.value.as < expression > ().splice_parameter_list_with(std::move(yystack_[0].value.as < expression > ()));
   }
-#line 963 "../autogen/kivi_parser.tab.cc"
-    break;
-
-  case 45: // Expression: STRING_LITERAL
-#line 206 "grammar.y"
-                 {
-    yylhs.value.as < expression > () = expression(std::move(yystack_[0].value.as < std::string > ()));
-  }
-#line 971 "../autogen/kivi_parser.tab.cc"
-    break;
-
-  case 46: // Expression: NUMBER_LITERAL
-#line 209 "grammar.y"
-                 {
-    yylhs.value.as < expression > () = expression(yystack_[0].value.as < long > ());
-  }
 #line 979 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 47: // Expression: IDENTIFIER
+  case 47: // Expression: STRING_LITERAL
 #line 212 "grammar.y"
-             {
-    yylhs.value.as < expression > () = ctx.use_identifier(yystack_[0].value.as < std::string > ());
+                 {
+    yylhs.value.as < expression > () = expression(std::move(yystack_[0].value.as < std::string > ()));
   }
 #line 987 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 48: // Expression: Arithmetic_operation
+  case 48: // Expression: NUMBER_LITERAL
 #line 215 "grammar.y"
-  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
-#line 993 "../autogen/kivi_parser.tab.cc"
+                 {
+    yylhs.value.as < expression > () = expression(yystack_[0].value.as < long > ());
+  }
+#line 995 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 49: // Expression: Comparison_operation
-#line 216 "grammar.y"
-  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
-#line 999 "../autogen/kivi_parser.tab.cc"
-    break;
-
-  case 50: // Expression: Unary_operation
-#line 217 "grammar.y"
-  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
-#line 1005 "../autogen/kivi_parser.tab.cc"
-    break;
-
-  case 51: // Expression: Function_call_operation
+  case 49: // Expression: IDENTIFIER
 #line 218 "grammar.y"
+             {
+    yylhs.value.as < expression > () = ctx.use_identifier(yystack_[0].value.as < std::string > ());
+  }
+#line 1003 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 50: // Expression: Arithmetic_operation
+#line 221 "grammar.y"
   { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
-#line 1011 "../autogen/kivi_parser.tab.cc"
+#line 1009 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 52: // Safe_identifier: error
-#line 226 "grammar.y"
+  case 51: // Expression: Comparison_operation
+#line 222 "grammar.y"
+  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
+#line 1015 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 52: // Expression: Unary_operation
+#line 223 "grammar.y"
+  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
+#line 1021 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 53: // Expression: Function_call_operation
+#line 224 "grammar.y"
+  { yylhs.value.as < expression > () = yystack_[0].value.as < expression > (); }
+#line 1027 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 54: // Safe_identifier: error
+#line 232 "grammar.y"
         { }
-#line 1017 "../autogen/kivi_parser.tab.cc"
+#line 1033 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 53: // Safe_identifier: IDENTIFIER
-#line 227 "grammar.y"
+  case 55: // Safe_identifier: IDENTIFIER
+#line 233 "grammar.y"
              {
     yylhs.value.as < std::string > () = std::move(yystack_[0].value.as < std::string > ());
   }
-#line 1025 "../autogen/kivi_parser.tab.cc"
+#line 1041 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 54: // Safe_colon: error
-#line 233 "grammar.y"
+  case 56: // Safe_colon: error
+#line 239 "grammar.y"
         { }
-#line 1031 "../autogen/kivi_parser.tab.cc"
+#line 1047 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 56: // Safe_semicolon: error
-#line 238 "grammar.y"
+  case 58: // Safe_semicolon: error
+#line 244 "grammar.y"
         { }
-#line 1037 "../autogen/kivi_parser.tab.cc"
+#line 1053 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 58: // Safe_closing_brace: error
-#line 243 "grammar.y"
+  case 60: // Safe_closing_brace: error
+#line 249 "grammar.y"
         { }
-#line 1043 "../autogen/kivi_parser.tab.cc"
+#line 1059 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 60: // Safe_closing_parentesis: error
-#line 248 "grammar.y"
-        { }
-#line 1049 "../autogen/kivi_parser.tab.cc"
-    break;
-
-  case 62: // Safe_statement: error
-#line 253 "grammar.y"
-        { }
-#line 1055 "../autogen/kivi_parser.tab.cc"
-    break;
-
-  case 63: // Safe_statement: Statement
+  case 62: // Safe_closing_parentesis: error
 #line 254 "grammar.y"
+        { }
+#line 1065 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 64: // Safe_statement: error
+#line 259 "grammar.y"
+        { }
+#line 1071 "../autogen/kivi_parser.tab.cc"
+    break;
+
+  case 65: // Safe_statement: Statement
+#line 260 "grammar.y"
             {
     yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
   }
-#line 1063 "../autogen/kivi_parser.tab.cc"
+#line 1079 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 64: // Safe_expression: error
-#line 260 "grammar.y"
+  case 66: // Safe_expression: error
+#line 266 "grammar.y"
         { }
-#line 1069 "../autogen/kivi_parser.tab.cc"
+#line 1085 "../autogen/kivi_parser.tab.cc"
     break;
 
-  case 65: // Safe_expression: Expression
-#line 261 "grammar.y"
+  case 67: // Safe_expression: Expression
+#line 267 "grammar.y"
              {
     yylhs.value.as < expression > () = std::move(yystack_[0].value.as < expression > ());
   }
-#line 1077 "../autogen/kivi_parser.tab.cc"
+#line 1093 "../autogen/kivi_parser.tab.cc"
     break;
 
 
-#line 1081 "../autogen/kivi_parser.tab.cc"
+#line 1097 "../autogen/kivi_parser.tab.cc"
 
             default:
               break;
@@ -1426,46 +1442,46 @@ namespace yy {
   }
 
 
-  const signed char  kivi_parser ::yypact_ninf_ = -41;
+  const signed char  kivi_parser ::yypact_ninf_ = -53;
 
   const signed char  kivi_parser ::yytable_ninf_ = -4;
 
   const short
    kivi_parser ::yypact_[] =
   {
-     -41,     2,   -41,   -41,    60,   -41,   -41,   -41,   -41,    24,
-     -41,     7,    -3,   -41,   -41,    70,     0,   -41,     0,    85,
-      85,    85,   -41,   -41,   -41,    97,    85,   -41,   -41,   -41,
-     -41,    14,   -41,   -41,   -41,   -41,     5,   158,   -41,   -41,
-       1,   -41,   167,     7,    21,     5,   -41,    -5,    32,   -41,
-     -41,   -41,   -41,   -41,   -41,   -41,   -41,   101,   113,    85,
-     117,   129,   133,   145,   149,    50,    85,    70,    70,   -41,
-     -41,    85,   -41,   -41,   -41,    66,   -41,    66,    27,   -41,
-     167,   -41,    -5,   -41,    -5,   -41,    23,   -41,    23,   -41,
-      32,   -41,   -41,   -41,   -41,   -41
+     -53,    12,   -53,   -53,    30,   -53,   -53,   -53,   -53,    -6,
+     -53,     7,    13,   -53,   -53,    72,    27,   -53,    27,    81,
+      81,    81,   -53,   -53,   -53,    94,    81,   -53,   -53,   -53,
+     -53,    14,   -53,   -53,   -53,   -53,     5,   168,   -53,   -53,
+      19,   -53,   178,     7,    21,     5,   -53,    45,     1,   -53,
+     -53,   -53,   -53,   -53,   -53,   -53,   -53,    97,   110,    81,
+     113,   126,   129,   142,   145,   158,    51,    81,    72,    72,
+     -53,   -53,    81,   -53,   -53,   -53,   184,   -53,   184,    32,
+     -53,   178,   -53,    45,   -53,    45,   -53,    36,   -53,    36,
+     -53,    36,   -53,     1,   -53,   -53,   -53,   -53,   -53
   };
 
   const signed char
    kivi_parser ::yydefact_[] =
   {
-       2,     0,     4,     1,     0,    52,    53,     5,     6,     8,
-      11,     0,     9,    54,    55,     0,     0,    62,     0,     0,
-       0,     0,    47,    45,    46,     0,     0,    17,    21,    63,
-      42,     0,    49,    48,    50,    51,     0,    43,     7,    10,
-       0,    64,    65,     0,     0,     0,    38,    37,     0,    18,
-      58,    59,    22,    12,    56,    57,    16,     0,     0,     0,
-       0,     0,     0,     0,     0,     0,     0,     0,     0,    15,
-      60,     0,    61,    41,    23,    24,    25,    26,    44,    35,
-      36,    27,    28,    29,    30,    31,    32,    33,    34,    39,
-       0,    20,    13,    14,    19,    40
+       2,     0,     4,     1,     0,    54,    55,     5,     6,     8,
+      11,     0,     9,    56,    57,     0,     0,    64,     0,     0,
+       0,     0,    49,    47,    48,     0,     0,    17,    21,    65,
+      44,     0,    51,    50,    52,    53,     0,    45,     7,    10,
+       0,    66,    67,     0,     0,     0,    40,    39,     0,    18,
+      60,    61,    22,    12,    58,    59,    16,     0,     0,     0,
+       0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+      15,    62,     0,    63,    43,    23,    24,    25,    26,    46,
+      37,    38,    27,    28,    29,    30,    31,    32,    33,    34,
+      36,    35,    41,     0,    20,    13,    14,    19,    42
   };
 
   const signed char
    kivi_parser ::yypgoto_[] =
   {
-     -41,   -41,   -41,   -41,   -41,   -41,   -41,   -41,    25,   -35,
-     -41,   -41,   -41,   -41,   -41,   -41,   -41,   -15,    20,    19,
-      18,   -41,   -26,   -40,   -16
+     -53,   -53,   -53,   -53,   -53,   -53,   -53,   -53,    26,   -52,
+     -53,   -53,   -53,   -53,   -53,   -53,   -53,   -15,    -7,    22,
+      23,   -53,   -26,   -29,   -16
   };
 
   const signed char
@@ -1473,82 +1489,86 @@ namespace yy {
   {
       -1,     1,     2,     4,     7,     9,    11,    12,    29,    48,
       30,    31,    32,    33,    34,    35,    36,    42,     8,    15,
-      56,    53,    73,    38,    49
+      56,    53,    74,    38,    49
   };
 
   const signed char
    kivi_parser ::yytable_[] =
   {
-      37,     5,     3,    43,    44,    45,    54,     6,    13,    16,
-      47,    63,    64,    65,    66,    50,    37,    18,    19,    20,
-      21,    22,    23,    24,    78,    55,    14,    92,    93,    25,
-      90,    10,    26,    70,    27,    28,    39,    51,    40,    71,
-      68,    65,    75,    77,    71,    80,    82,    84,    86,    88,
-      91,    41,    37,    37,    72,    94,    52,    22,    23,    24,
-      -3,     5,    67,    69,    95,    25,     0,     6,    26,     0,
-       0,    17,    89,    18,    19,    20,    21,    22,    23,    24,
-      61,    62,    63,    64,    65,    25,    41,     0,    26,     0,
-      27,    28,    22,    23,    24,     0,     0,     0,    46,     0,
-      25,     0,    74,    26,    22,    23,    24,     0,    22,    23,
-      24,     0,    25,     0,    76,    26,    25,     0,    79,    26,
-      22,    23,    24,     0,    22,    23,    24,     0,    25,     0,
-      81,    26,    25,     0,    83,    26,    22,    23,    24,     0,
-      22,    23,    24,     0,    25,     0,    85,    26,    25,     0,
-      87,    26,    22,    23,    24,     0,    22,    23,    24,     0,
-      25,     0,     0,    26,    25,     0,     0,    26,    57,    58,
-      59,    60,    61,    62,    63,    64,    65,    57,    58,     0,
-      60,    61,    62,    63,    64,    65
+      37,    10,    71,    43,    44,    45,    54,    79,    13,    39,
+      47,    40,     3,    72,    93,    50,    37,    18,    19,    20,
+      21,    22,    23,    24,    73,    16,    55,    14,     5,    25,
+      -3,     5,    67,    26,     6,    27,    28,     6,    51,    95,
+      96,    69,    76,    78,    72,    81,    83,    85,    87,    89,
+      91,    94,    41,    37,    37,    66,    97,    52,    22,    23,
+      24,    63,    64,    65,    66,    68,    25,    98,    70,     0,
+      26,     0,     0,    17,    92,    18,    19,    20,    21,    22,
+      23,    24,    41,     0,     0,     0,     0,    25,    22,    23,
+      24,    26,     0,    27,    28,    46,    25,     0,    75,     0,
+      26,    22,    23,    24,    22,    23,    24,     0,     0,    25,
+       0,    77,    25,    26,    80,     0,    26,    22,    23,    24,
+      22,    23,    24,     0,     0,    25,     0,    82,    25,    26,
+      84,     0,    26,    22,    23,    24,    22,    23,    24,     0,
+       0,    25,     0,    86,    25,    26,    88,     0,    26,    22,
+      23,    24,    22,    23,    24,     0,     0,    25,     0,    90,
+      25,    26,     0,     0,    26,    22,    23,    24,     0,     0,
+       0,     0,     0,    25,     0,     0,     0,    26,    57,    58,
+      59,    60,    61,    62,    63,    64,    65,    66,    57,    58,
+       0,    60,    61,    62,    63,    64,    65,    66,    61,    62,
+      63,    64,    65,    66
   };
 
   const signed char
    kivi_parser ::yycheck_[] =
   {
-      15,     1,     0,    19,    20,    21,     1,     7,     1,    12,
-      25,    16,    17,    18,    13,     1,    31,     3,     4,     5,
-       6,     7,     8,     9,    59,    20,    19,    67,    68,    15,
-      65,     7,    18,     1,    20,    21,    16,    23,    18,    12,
-      19,    18,    57,    58,    12,    60,    61,    62,    63,    64,
-      66,     1,    67,    68,    22,    71,    31,     7,     8,     9,
-       0,     1,    43,    45,    90,    15,    -1,     7,    18,    -1,
-      -1,     1,    22,     3,     4,     5,     6,     7,     8,     9,
-      14,    15,    16,    17,    18,    15,     1,    -1,    18,    -1,
-      20,    21,     7,     8,     9,    -1,    -1,    -1,     1,    -1,
-      15,    -1,     1,    18,     7,     8,     9,    -1,     7,     8,
-       9,    -1,    15,    -1,     1,    18,    15,    -1,     1,    18,
-       7,     8,     9,    -1,     7,     8,     9,    -1,    15,    -1,
-       1,    18,    15,    -1,     1,    18,     7,     8,     9,    -1,
-       7,     8,     9,    -1,    15,    -1,     1,    18,    15,    -1,
-       1,    18,     7,     8,     9,    -1,     7,     8,     9,    -1,
-      15,    -1,    -1,    18,    15,    -1,    -1,    18,    10,    11,
-      12,    13,    14,    15,    16,    17,    18,    10,    11,    -1,
-      13,    14,    15,    16,    17,    18
+      15,     7,     1,    19,    20,    21,     1,    59,     1,    16,
+      25,    18,     0,    12,    66,     1,    31,     3,     4,     5,
+       6,     7,     8,     9,    23,    12,    21,    20,     1,    15,
+       0,     1,    13,    19,     7,    21,    22,     7,    24,    68,
+      69,    20,    57,    58,    12,    60,    61,    62,    63,    64,
+      65,    67,     1,    68,    69,    19,    72,    31,     7,     8,
+       9,    16,    17,    18,    19,    43,    15,    93,    45,    -1,
+      19,    -1,    -1,     1,    23,     3,     4,     5,     6,     7,
+       8,     9,     1,    -1,    -1,    -1,    -1,    15,     7,     8,
+       9,    19,    -1,    21,    22,     1,    15,    -1,     1,    -1,
+      19,     7,     8,     9,     7,     8,     9,    -1,    -1,    15,
+      -1,     1,    15,    19,     1,    -1,    19,     7,     8,     9,
+       7,     8,     9,    -1,    -1,    15,    -1,     1,    15,    19,
+       1,    -1,    19,     7,     8,     9,     7,     8,     9,    -1,
+      -1,    15,    -1,     1,    15,    19,     1,    -1,    19,     7,
+       8,     9,     7,     8,     9,    -1,    -1,    15,    -1,     1,
+      15,    19,    -1,    -1,    19,     7,     8,     9,    -1,    -1,
+      -1,    -1,    -1,    15,    -1,    -1,    -1,    19,    10,    11,
+      12,    13,    14,    15,    16,    17,    18,    19,    10,    11,
+      -1,    13,    14,    15,    16,    17,    18,    19,    14,    15,
+      16,    17,    18,    19
   };
 
   const signed char
    kivi_parser ::yystos_[] =
   {
-       0,    25,    26,     0,    27,     1,     7,    28,    42,    29,
-       7,    30,    31,     1,    19,    43,    12,     1,     3,     4,
-       5,     6,     7,     8,     9,    15,    18,    20,    21,    32,
-      34,    35,    36,    37,    38,    39,    40,    41,    47,    42,
-      42,     1,    41,    48,    48,    48,     1,    41,    33,    48,
-       1,    23,    32,    45,     1,    20,    44,    10,    11,    12,
-      13,    14,    15,    16,    17,    18,    13,    43,    19,    44,
-       1,    12,    22,    46,     1,    41,     1,    41,    33,     1,
-      41,     1,    41,     1,    41,     1,    41,     1,    41,    22,
-      33,    48,    47,    47,    48,    46
+       0,    26,    27,     0,    28,     1,     7,    29,    43,    30,
+       7,    31,    32,     1,    20,    44,    12,     1,     3,     4,
+       5,     6,     7,     8,     9,    15,    19,    21,    22,    33,
+      35,    36,    37,    38,    39,    40,    41,    42,    48,    43,
+      43,     1,    42,    49,    49,    49,     1,    42,    34,    49,
+       1,    24,    33,    46,     1,    21,    45,    10,    11,    12,
+      13,    14,    15,    16,    17,    18,    19,    13,    44,    20,
+      45,     1,    12,    23,    47,     1,    42,     1,    42,    34,
+       1,    42,     1,    42,     1,    42,     1,    42,     1,    42,
+       1,    42,    23,    34,    49,    48,    48,    49,    47
   };
 
   const signed char
    kivi_parser ::yyr1_[] =
   {
-       0,    24,    26,    25,    27,    27,    29,    28,    30,    30,
-      31,    31,    32,    32,    32,    32,    32,    32,    33,    33,
-      34,    35,    35,    36,    36,    36,    36,    37,    37,    37,
-      37,    37,    37,    37,    37,    37,    37,    38,    38,    39,
-      39,    39,    40,    40,    40,    41,    41,    41,    41,    41,
-      41,    41,    42,    42,    43,    43,    44,    44,    45,    45,
-      46,    46,    47,    47,    48,    48
+       0,    25,    27,    26,    28,    28,    30,    29,    31,    31,
+      32,    32,    33,    33,    33,    33,    33,    33,    34,    34,
+      35,    36,    36,    37,    37,    37,    37,    38,    38,    38,
+      38,    38,    38,    38,    38,    38,    38,    38,    38,    39,
+      39,    40,    40,    40,    41,    41,    41,    42,    42,    42,
+      42,    42,    42,    42,    43,    43,    44,    44,    45,    45,
+      46,    46,    47,    47,    48,    48,    49,    49
   };
 
   const signed char
@@ -1557,10 +1577,10 @@ namespace yy {
        0,     2,     0,     2,     0,     2,     0,     5,     0,     1,
        3,     1,     2,     4,     4,     3,     2,     1,     1,     3,
        4,     1,     2,     3,     3,     3,     3,     3,     3,     3,
-       3,     3,     3,     3,     3,     3,     3,     2,     2,     3,
-       4,     3,     1,     1,     3,     1,     1,     1,     1,     1,
+       3,     3,     3,     3,     3,     3,     3,     3,     3,     2,
+       2,     3,     4,     3,     1,     1,     3,     1,     1,     1,
        1,     1,     1,     1,     1,     1,     1,     1,     1,     1,
-       1,     1,     1,     1,     1,     1
+       1,     1,     1,     1,     1,     1,     1,     1
   };
 
 
@@ -1572,8 +1592,8 @@ namespace yy {
   {
   "END", "error", "\"invalid token\"", "\"auto\"", "\"if\"", "\"while\"",
   "\"return\"", "IDENTIFIER", "STRING_LITERAL", "NUMBER_LITERAL", "\"==\"",
-  "\"<>\"", "','", "'='", "'+'", "'-'", "'*'", "'/'", "'('", "':'", "';'",
-  "'{'", "')'", "'}'", "$accept", "Program", "$@1", "Functions",
+  "\"<>\"", "','", "'='", "'+'", "'-'", "'*'", "'/'", "'%'", "'('", "':'",
+  "';'", "'{'", "')'", "'}'", "$accept", "Program", "$@1", "Functions",
   "Single_function", "$@2", "Parameter_list", "Single_param", "Statement",
   "Comma_sep_expressions", "Var_definition", "Compound_statement",
   "Comparison_operation", "Arithmetic_operation", "Unary_operation",
@@ -1591,10 +1611,10 @@ namespace yy {
        0,    39,    39,    39,    45,    47,    50,    50,    60,    62,
       67,    69,    74,    78,    81,    84,    87,    90,    94,    98,
      104,   110,   114,   121,   124,   127,   130,   136,   139,   142,
-     145,   148,   151,   158,   161,   164,   167,   173,   176,   180,
-     183,   187,   193,   196,   199,   206,   209,   212,   215,   216,
-     217,   218,   226,   227,   233,   234,   238,   239,   243,   244,
-     248,   249,   253,   254,   260,   261
+     145,   148,   151,   158,   161,   164,   167,   170,   173,   179,
+     182,   186,   189,   193,   199,   202,   205,   212,   215,   218,
+     221,   222,   223,   224,   232,   233,   239,   240,   244,   245,
+     249,   250,   254,   255,   259,   260,   266,   267
   };
 
   void
@@ -1626,5 +1646,5 @@ namespace yy {
 
 
 } // yy
-#line 1630 "../autogen/kivi_parser.tab.cc"
+#line 1650 "../autogen/kivi_parser.tab.cc"
 

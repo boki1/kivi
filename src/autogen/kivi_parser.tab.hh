@@ -497,7 +497,7 @@ namespace yy {
     {
       enum symbol_kind_type
       {
-        YYNTOKENS = 24, ///< Number of tokens.
+        YYNTOKENS = 25, ///< Number of tokens.
         S_YYEMPTY = -2,
         S_YYEOF = 0,                             // END
         S_YYerror = 1,                           // error
@@ -517,37 +517,38 @@ namespace yy {
         S_15_ = 15,                              // '-'
         S_16_ = 16,                              // '*'
         S_17_ = 17,                              // '/'
-        S_18_ = 18,                              // '('
-        S_19_ = 19,                              // ':'
-        S_20_ = 20,                              // ';'
-        S_21_ = 21,                              // '{'
-        S_22_ = 22,                              // ')'
-        S_23_ = 23,                              // '}'
-        S_YYACCEPT = 24,                         // $accept
-        S_Program = 25,                          // Program
-        S_26_1 = 26,                             // $@1
-        S_Functions = 27,                        // Functions
-        S_Single_function = 28,                  // Single_function
-        S_29_2 = 29,                             // $@2
-        S_Parameter_list = 30,                   // Parameter_list
-        S_Single_param = 31,                     // Single_param
-        S_Statement = 32,                        // Statement
-        S_Comma_sep_expressions = 33,            // Comma_sep_expressions
-        S_Var_definition = 34,                   // Var_definition
-        S_Compound_statement = 35,               // Compound_statement
-        S_Comparison_operation = 36,             // Comparison_operation
-        S_Arithmetic_operation = 37,             // Arithmetic_operation
-        S_Unary_operation = 38,                  // Unary_operation
-        S_Function_call_operation = 39,          // Function_call_operation
-        S_Expressions = 40,                      // Expressions
-        S_Expression = 41,                       // Expression
-        S_Safe_identifier = 42,                  // Safe_identifier
-        S_Safe_colon = 43,                       // Safe_colon
-        S_Safe_semicolon = 44,                   // Safe_semicolon
-        S_Safe_closing_brace = 45,               // Safe_closing_brace
-        S_Safe_closing_parentesis = 46,          // Safe_closing_parentesis
-        S_Safe_statement = 47,                   // Safe_statement
-        S_Safe_expression = 48                   // Safe_expression
+        S_18_ = 18,                              // '%'
+        S_19_ = 19,                              // '('
+        S_20_ = 20,                              // ':'
+        S_21_ = 21,                              // ';'
+        S_22_ = 22,                              // '{'
+        S_23_ = 23,                              // ')'
+        S_24_ = 24,                              // '}'
+        S_YYACCEPT = 25,                         // $accept
+        S_Program = 26,                          // Program
+        S_27_1 = 27,                             // $@1
+        S_Functions = 28,                        // Functions
+        S_Single_function = 29,                  // Single_function
+        S_30_2 = 30,                             // $@2
+        S_Parameter_list = 31,                   // Parameter_list
+        S_Single_param = 32,                     // Single_param
+        S_Statement = 33,                        // Statement
+        S_Comma_sep_expressions = 34,            // Comma_sep_expressions
+        S_Var_definition = 35,                   // Var_definition
+        S_Compound_statement = 36,               // Compound_statement
+        S_Comparison_operation = 37,             // Comparison_operation
+        S_Arithmetic_operation = 38,             // Arithmetic_operation
+        S_Unary_operation = 39,                  // Unary_operation
+        S_Function_call_operation = 40,          // Function_call_operation
+        S_Expressions = 41,                      // Expressions
+        S_Expression = 42,                       // Expression
+        S_Safe_identifier = 43,                  // Safe_identifier
+        S_Safe_colon = 44,                       // Safe_colon
+        S_Safe_semicolon = 45,                   // Safe_semicolon
+        S_Safe_closing_brace = 46,               // Safe_closing_brace
+        S_Safe_closing_parentesis = 47,          // Safe_closing_parentesis
+        S_Safe_statement = 48,                   // Safe_statement
+        S_Safe_expression = 49                   // Safe_expression
       };
     };
 
@@ -810,13 +811,13 @@ switch (yykind)
       symbol_type (int tok, location_type l)
         : super_type(token_type (tok), std::move (l))
       {
-        YY_ASSERT (tok == token::END || tok == token::YYerror || tok == token::YYUNDEF || tok == token::VAR || tok == token::IF || tok == token::WHILE || tok == token::RETURN || tok == token::EQ || tok == token::NE || tok == 44 || tok == 61 || tok == 43 || tok == 45 || tok == 42 || tok == 47 || tok == 40 || tok == 58 || tok == 59 || tok == 123 || tok == 41 || tok == 125);
+        YY_ASSERT (tok == token::END || tok == token::YYerror || tok == token::YYUNDEF || tok == token::VAR || tok == token::IF || tok == token::WHILE || tok == token::RETURN || tok == token::EQ || tok == token::NE || tok == 44 || tok == 61 || tok == 43 || tok == 45 || tok == 42 || tok == 47 || tok == 37 || tok == 40 || tok == 58 || tok == 59 || tok == 123 || tok == 41 || tok == 125);
       }
 #else
       symbol_type (int tok, const location_type& l)
         : super_type(token_type (tok), l)
       {
-        YY_ASSERT (tok == token::END || tok == token::YYerror || tok == token::YYUNDEF || tok == token::VAR || tok == token::IF || tok == token::WHILE || tok == token::RETURN || tok == token::EQ || tok == token::NE || tok == 44 || tok == 61 || tok == 43 || tok == 45 || tok == 42 || tok == 47 || tok == 40 || tok == 58 || tok == 59 || tok == 123 || tok == 41 || tok == 125);
+        YY_ASSERT (tok == token::END || tok == token::YYerror || tok == token::YYUNDEF || tok == token::VAR || tok == token::IF || tok == token::WHILE || tok == token::RETURN || tok == token::EQ || tok == token::NE || tok == 44 || tok == 61 || tok == 43 || tok == 45 || tok == 42 || tok == 47 || tok == 37 || tok == 40 || tok == 58 || tok == 59 || tok == 123 || tok == 41 || tok == 125);
       }
 #endif
 #if 201103L <= YY_CPLUSPLUS
@@ -1403,7 +1404,7 @@ switch (yykind)
     /// Constants.
     enum
     {
-      yylast_ = 185,     ///< Last index in yytable_.
+      yylast_ = 203,     ///< Last index in yytable_.
       yynnts_ = 25,  ///< Number of nonterminal symbols.
       yyfinal_ = 3 ///< Termination state number.
     };
@@ -1427,16 +1428,16 @@ switch (yykind)
        0,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-      18,    22,    16,    14,    12,    15,     2,    17,     2,     2,
-       2,     2,     2,     2,     2,     2,     2,     2,    19,    20,
+       2,     2,     2,     2,     2,     2,     2,    18,     2,     2,
+      19,    23,    16,    14,    12,    15,     2,    17,     2,     2,
+       2,     2,     2,     2,     2,     2,     2,     2,    20,    21,
        2,    13,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,     2,    21,     2,    23,     2,     2,     2,     2,
+       2,     2,     2,    22,     2,    24,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
@@ -1617,7 +1618,7 @@ switch (yykind)
 kivi_parser::symbol_type yylex (parsing_context &ctx);
 
 } // yy
-#line 1619 "../autogen/kivi_parser.tab.hh"
+#line 1620 "../autogen/kivi_parser.tab.hh"
 
 
 
