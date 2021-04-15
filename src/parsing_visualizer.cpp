@@ -78,6 +78,8 @@ stringify (const expression &expr, bool stmt)
 	    return stringify_operation (expr, " * ", "()");
 	case expression_type::division:
 	    return stringify_operation (expr, " / ", "()");
+	case expression_type::modular_division:
+	    return stringify_operation (expr, " % ", "()");
 	case expression_type::equality:
 	    return stringify_operation (expr, " == ", "()");
 	case expression_type::compare_and:
