@@ -40,17 +40,17 @@ parsing_context::use_identifier (const std::string &name) const
 		}
 	}
 
-    throw yy::kivi_parser::syntax_error (location, "Undefined identifier <"
-						       + name + ">");
+    throw yy::kivi_parser::syntax_error (location, "Undefined identifier <" + name + ">");
 }
 
 void
 parsing_context::add_function_with_block (std::string &&name,
 					  expression &&code)
 {
-    // Add implicit return 0; at the end
+    // Add implicit `return 0;` at the end
     m_current_function.code = new_expression_sequence_expr (
-	std::move (code), new_retrn_expr (1ul));
+	       std::move (code), new_retrn_expr (1ul)
+    );
     m_current_function.name = std::move (name);
     m_function_list.push_back (std::move (m_current_function));
     m_current_function = {};
