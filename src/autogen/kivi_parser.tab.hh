@@ -1,4 +1,4 @@
-// A Bison parser, made by GNU Bison 3.5.1.
+// A Bison parser, made by GNU Bison 3.7.3.
 
 // Skeleton interface for Bison LALR(1) parsers in C++
 
@@ -38,8 +38,9 @@
 
 // C++ LALR(1) parser skeleton written by Akim Demaille.
 
-// Undocumented macros, especially those whose name start with YY_,
-// are private implementation details.  Do not rely on them.
+// DO NOT RELY ON FEATURES THAT ARE NOT DOCUMENTED in the manual,
+// especially those whose name start with YY_ or yy_.  They are
+// private implementation details that can be changed or removed.
 
 #ifndef YY_YY_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
 # define YY_YY_AUTOGEN_KIVI_PARSER_TAB_HH_INCLUDED
@@ -50,11 +51,7 @@
 #include "../include/parser.hpp"
 
 
-<<<<<<< HEAD
 #line 55 "../autogen/kivi_parser.tab.hh"
-=======
-#line 54 "src/autogen/kivi_parser.tab.hh"
->>>>>>> master
 
 # include <cassert>
 # include <cstdlib> // std::abort
@@ -188,11 +185,7 @@
 #endif
 
 namespace yy {
-<<<<<<< HEAD
 #line 189 "../autogen/kivi_parser.tab.hh"
-=======
-#line 188 "src/autogen/kivi_parser.tab.hh"
->>>>>>> master
 
 
 
@@ -227,6 +220,13 @@ namespace yy {
       YY_ASSERT (sizeof (T) <= size);
       new (yyas_<T> ()) T (YY_MOVE (t));
     }
+
+#if 201103L <= YY_CPLUSPLUS
+    /// Non copyable.
+    semantic_type (const self_type&) = delete;
+    /// Non copyable.
+    self_type& operator= (const self_type&) = delete;
+#endif
 
     /// Destruction, allowed only if empty.
     ~semantic_type () YY_NOEXCEPT
@@ -371,9 +371,12 @@ namespace yy {
     }
 
   private:
-    /// Prohibit blind copies.
-    self_type& operator= (const self_type&);
+#if YY_CPLUSPLUS < 201103L
+    /// Non copyable.
     semantic_type (const self_type&);
+    /// Non copyable.
+    self_type& operator= (const self_type&);
+#endif
 
     /// Accessor to raw memory as \a T.
     template <typename T>
@@ -460,40 +463,104 @@ namespace yy {
       location_type location;
     };
 
-    /// Tokens.
+    /// Token kinds.
     struct token
     {
-      enum yytokentype
+      enum token_kind_type
       {
-        END = 0,
-        VAR = 258,
-        IF = 259,
-        WHILE = 260,
-        RETURN = 261,
-        IDENTIFIER = 262,
-        STRING_LITERAL = 263,
-        NUMBER_LITERAL = 264,
-        EQ = 265,
-        NE = 266
+        YYEMPTY = -2,
+    END = 0,                       // END
+    YYerror = 256,                 // error
+    YYUNDEF = 257,                 // "invalid token"
+    VAR = 258,                     // "auto"
+    IF = 259,                      // "if"
+    WHILE = 260,                   // "while"
+    RETURN = 261,                  // "return"
+    IDENTIFIER = 262,              // IDENTIFIER
+    STRING_LITERAL = 263,          // STRING_LITERAL
+    NUMBER_LITERAL = 264,          // NUMBER_LITERAL
+    EQ = 265,                      // "=="
+    NE = 266                       // "<>"
+      };
+      /// Backward compatibility alias (Bison 3.6).
+      typedef token_kind_type yytokentype;
+    };
+
+    /// Token kind, as returned by yylex.
+    typedef token::yytokentype token_kind_type;
+
+    /// Backward compatibility alias (Bison 3.6).
+    typedef token_kind_type token_type;
+
+    /// Symbol kinds.
+    struct symbol_kind
+    {
+      enum symbol_kind_type
+      {
+        YYNTOKENS = 24, ///< Number of tokens.
+        S_YYEMPTY = -2,
+        S_YYEOF = 0,                             // END
+        S_YYerror = 1,                           // error
+        S_YYUNDEF = 2,                           // "invalid token"
+        S_VAR = 3,                               // "auto"
+        S_IF = 4,                                // "if"
+        S_WHILE = 5,                             // "while"
+        S_RETURN = 6,                            // "return"
+        S_IDENTIFIER = 7,                        // IDENTIFIER
+        S_STRING_LITERAL = 8,                    // STRING_LITERAL
+        S_NUMBER_LITERAL = 9,                    // NUMBER_LITERAL
+        S_EQ = 10,                               // "=="
+        S_NE = 11,                               // "<>"
+        S_12_ = 12,                              // ','
+        S_13_ = 13,                              // '='
+        S_14_ = 14,                              // '+'
+        S_15_ = 15,                              // '-'
+        S_16_ = 16,                              // '*'
+        S_17_ = 17,                              // '/'
+        S_18_ = 18,                              // '('
+        S_19_ = 19,                              // ':'
+        S_20_ = 20,                              // ';'
+        S_21_ = 21,                              // '{'
+        S_22_ = 22,                              // ')'
+        S_23_ = 23,                              // '}'
+        S_YYACCEPT = 24,                         // $accept
+        S_Program = 25,                          // Program
+        S_26_1 = 26,                             // $@1
+        S_Functions = 27,                        // Functions
+        S_Single_function = 28,                  // Single_function
+        S_29_2 = 29,                             // $@2
+        S_Parameter_list = 30,                   // Parameter_list
+        S_Single_param = 31,                     // Single_param
+        S_Statement = 32,                        // Statement
+        S_Comma_sep_expressions = 33,            // Comma_sep_expressions
+        S_Var_definition = 34,                   // Var_definition
+        S_Compound_statement = 35,               // Compound_statement
+        S_Comparison_operation = 36,             // Comparison_operation
+        S_Arithmetic_operation = 37,             // Arithmetic_operation
+        S_Unary_operation = 38,                  // Unary_operation
+        S_Function_call_operation = 39,          // Function_call_operation
+        S_Expressions = 40,                      // Expressions
+        S_Expression = 41,                       // Expression
+        S_Safe_identifier = 42,                  // Safe_identifier
+        S_Safe_colon = 43,                       // Safe_colon
+        S_Safe_semicolon = 44,                   // Safe_semicolon
+        S_Safe_closing_brace = 45,               // Safe_closing_brace
+        S_Safe_closing_parentesis = 46,          // Safe_closing_parentesis
+        S_Safe_statement = 47,                   // Safe_statement
+        S_Safe_expression = 48                   // Safe_expression
       };
     };
 
-    /// (External) token type, as returned by yylex.
-    typedef token::yytokentype token_type;
+    /// (Internal) symbol kind.
+    typedef symbol_kind::symbol_kind_type symbol_kind_type;
 
-    /// Symbol type: an internal symbol number.
-    typedef int symbol_number_type;
-
-    /// The symbol type number to denote an empty symbol.
-    enum { empty_symbol = -2 };
-
-    /// Internal symbol number for tokens (subsumed by symbol_number_type).
-    typedef signed char token_number_type;
+    /// The number of tokens.
+    static const symbol_kind_type YYNTOKENS = symbol_kind::YYNTOKENS;
 
     /// A complete symbol.
     ///
-    /// Expects its Base type to provide access to the symbol type
-    /// via type_get ().
+    /// Expects its Base type to provide access to the symbol kind
+    /// via kind ().
     ///
     /// Provide access to semantic value and location.
     template <typename Base>
@@ -510,7 +577,44 @@ namespace yy {
 
 #if 201103L <= YY_CPLUSPLUS
       /// Move constructor.
-      basic_symbol (basic_symbol&& that);
+      basic_symbol (basic_symbol&& that)
+        : Base (std::move (that))
+        , value ()
+        , location (std::move (that.location))
+      {
+        switch (this->kind ())
+    {
+      case symbol_kind::S_Parameter_list: // Parameter_list
+      case symbol_kind::S_Statement: // Statement
+      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
+      case symbol_kind::S_Var_definition: // Var_definition
+      case symbol_kind::S_Compound_statement: // Compound_statement
+      case symbol_kind::S_Comparison_operation: // Comparison_operation
+      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
+      case symbol_kind::S_Unary_operation: // Unary_operation
+      case symbol_kind::S_Function_call_operation: // Function_call_operation
+      case symbol_kind::S_Expressions: // Expressions
+      case symbol_kind::S_Expression: // Expression
+      case symbol_kind::S_Safe_statement: // Safe_statement
+      case symbol_kind::S_Safe_expression: // Safe_expression
+        value.move< expression > (std::move (that.value));
+        break;
+
+      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
+        value.move< long > (std::move (that.value));
+        break;
+
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
+      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
+      case symbol_kind::S_Safe_identifier: // Safe_identifier
+        value.move< std::string > (std::move (that.value));
+        break;
+
+      default:
+        break;
+    }
+
+      }
 #endif
 
       /// Copy constructor.
@@ -578,41 +682,41 @@ namespace yy {
       void clear ()
       {
         // User destructor.
-        symbol_number_type yytype = this->type_get ();
+        symbol_kind_type yykind = this->kind ();
         basic_symbol<Base>& yysym = *this;
         (void) yysym;
-        switch (yytype)
+        switch (yykind)
         {
        default:
           break;
         }
 
-        // Type destructor.
-switch (yytype)
+        // Value type destructor.
+switch (yykind)
     {
-      case 30: // Parameter_list
-      case 32: // Statement
-      case 33: // Comma_sep_expressions
-      case 34: // Var_definition
-      case 35: // Compound_statement
-      case 36: // Comparison_operation
-      case 37: // Arithmetic_operation
-      case 38: // Unary_operation
-      case 39: // Function_call_operation
-      case 40: // Expressions
-      case 41: // Expression
-      case 47: // Safe_statement
-      case 48: // Safe_expression
+      case symbol_kind::S_Parameter_list: // Parameter_list
+      case symbol_kind::S_Statement: // Statement
+      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
+      case symbol_kind::S_Var_definition: // Var_definition
+      case symbol_kind::S_Compound_statement: // Compound_statement
+      case symbol_kind::S_Comparison_operation: // Comparison_operation
+      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
+      case symbol_kind::S_Unary_operation: // Unary_operation
+      case symbol_kind::S_Function_call_operation: // Function_call_operation
+      case symbol_kind::S_Expressions: // Expressions
+      case symbol_kind::S_Expression: // Expression
+      case symbol_kind::S_Safe_statement: // Safe_statement
+      case symbol_kind::S_Safe_expression: // Safe_expression
         value.template destroy< expression > ();
         break;
 
-      case 9: // NUMBER_LITERAL
+      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.template destroy< long > ();
         break;
 
-      case 7: // IDENTIFIER
-      case 8: // STRING_LITERAL
-      case 42: // Safe_identifier
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
+      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
+      case symbol_kind::S_Safe_identifier: // Safe_identifier
         value.template destroy< std::string > ();
         break;
 
@@ -622,6 +726,15 @@ switch (yytype)
 
         Base::clear ();
       }
+
+      /// The user-facing name of this symbol.
+      std::string name () const YY_NOEXCEPT
+      {
+        return  kivi_parser ::symbol_name (this->kind ());
+      }
+
+      /// Backward compatibility (Bison 3.6).
+      symbol_kind_type type_get () const YY_NOEXCEPT;
 
       /// Whether empty.
       bool empty () const YY_NOEXCEPT;
@@ -643,46 +756,51 @@ switch (yytype)
     };
 
     /// Type access provider for token (enum) based symbols.
-    struct by_type
+    struct by_kind
     {
       /// Default constructor.
-      by_type ();
+      by_kind ();
 
 #if 201103L <= YY_CPLUSPLUS
       /// Move constructor.
-      by_type (by_type&& that);
+      by_kind (by_kind&& that);
 #endif
 
       /// Copy constructor.
-      by_type (const by_type& that);
+      by_kind (const by_kind& that);
 
-      /// The symbol type as needed by the constructor.
-      typedef token_type kind_type;
+      /// The symbol kind as needed by the constructor.
+      typedef token_kind_type kind_type;
 
       /// Constructor from (external) token numbers.
-      by_type (kind_type t);
+      by_kind (kind_type t);
 
       /// Record that this symbol is empty.
       void clear ();
 
-      /// Steal the symbol type from \a that.
-      void move (by_type& that);
+      /// Steal the symbol kind from \a that.
+      void move (by_kind& that);
 
       /// The (internal) type number (corresponding to \a type).
       /// \a empty when empty.
-      symbol_number_type type_get () const YY_NOEXCEPT;
+      symbol_kind_type kind () const YY_NOEXCEPT;
 
-      /// The symbol type.
-      /// \a empty_symbol when empty.
-      /// An int, not token_number_type, to be able to store empty_symbol.
-      int type;
+      /// Backward compatibility (Bison 3.6).
+      symbol_kind_type type_get () const YY_NOEXCEPT;
+
+      /// The symbol kind.
+      /// \a S_YYEMPTY when empty.
+      symbol_kind_type kind_;
     };
 
+    /// Backward compatibility for a private implementation detail (Bison 3.6).
+    typedef by_kind by_type;
+
     /// "External" symbols: returned by the scanner.
-    struct symbol_type : basic_symbol<by_type>
+    struct symbol_type : basic_symbol<by_kind>
     {
       /// Superclass.
-      typedef basic_symbol<by_type> super_type;
+      typedef basic_symbol<by_kind> super_type;
 
       /// Empty symbol.
       symbol_type () {}
@@ -692,13 +810,13 @@ switch (yytype)
       symbol_type (int tok, location_type l)
         : super_type(token_type (tok), std::move (l))
       {
-        YY_ASSERT (tok == token::END || tok == token::VAR || tok == token::IF || tok == token::WHILE || tok == token::RETURN || tok == token::EQ || tok == token::NE || tok == 44 || tok == 61 || tok == 43 || tok == 45 || tok == 42 || tok == 47 || tok == 40 || tok == 58 || tok == 59 || tok == 123 || tok == 41 || tok == 125);
+        YY_ASSERT (tok == token::END || tok == token::YYerror || tok == token::YYUNDEF || tok == token::VAR || tok == token::IF || tok == token::WHILE || tok == token::RETURN || tok == token::EQ || tok == token::NE || tok == 44 || tok == 61 || tok == 43 || tok == 45 || tok == 42 || tok == 47 || tok == 40 || tok == 58 || tok == 59 || tok == 123 || tok == 41 || tok == 125);
       }
 #else
       symbol_type (int tok, const location_type& l)
         : super_type(token_type (tok), l)
       {
-        YY_ASSERT (tok == token::END || tok == token::VAR || tok == token::IF || tok == token::WHILE || tok == token::RETURN || tok == token::EQ || tok == token::NE || tok == 44 || tok == 61 || tok == 43 || tok == 45 || tok == 42 || tok == 47 || tok == 40 || tok == 58 || tok == 59 || tok == 123 || tok == 41 || tok == 125);
+        YY_ASSERT (tok == token::END || tok == token::YYerror || tok == token::YYUNDEF || tok == token::VAR || tok == token::IF || tok == token::WHILE || tok == token::RETURN || tok == token::EQ || tok == token::NE || tok == 44 || tok == 61 || tok == 43 || tok == 45 || tok == 42 || tok == 47 || tok == 40 || tok == 58 || tok == 59 || tok == 123 || tok == 41 || tok == 125);
       }
 #endif
 #if 201103L <= YY_CPLUSPLUS
@@ -733,6 +851,13 @@ switch (yytype)
      kivi_parser  (parsing_context &ctx_yyarg);
     virtual ~ kivi_parser  ();
 
+#if 201103L <= YY_CPLUSPLUS
+    /// Non copyable.
+     kivi_parser  (const  kivi_parser &) = delete;
+    /// Non copyable.
+     kivi_parser & operator= (const  kivi_parser &) = delete;
+#endif
+
     /// Parse.  An alias for parse ().
     /// \returns  0 iff parsing succeeded.
     int operator() ();
@@ -763,6 +888,10 @@ switch (yytype)
     /// Report a syntax error.
     void error (const syntax_error& err);
 
+    /// The user-facing name of the symbol whose (internal) number is
+    /// YYSYMBOL.  No bounds checking.
+    static std::string symbol_name (symbol_kind_type yysymbol);
+
     // Implementation of make_symbol for each symbol type.
 #if 201103L <= YY_CPLUSPLUS
       static
@@ -777,6 +906,36 @@ switch (yytype)
       make_END (const location_type& l)
       {
         return symbol_type (token::END, l);
+      }
+#endif
+#if 201103L <= YY_CPLUSPLUS
+      static
+      symbol_type
+      make_YYerror (location_type l)
+      {
+        return symbol_type (token::YYerror, std::move (l));
+      }
+#else
+      static
+      symbol_type
+      make_YYerror (const location_type& l)
+      {
+        return symbol_type (token::YYerror, l);
+      }
+#endif
+#if 201103L <= YY_CPLUSPLUS
+      static
+      symbol_type
+      make_YYUNDEF (location_type l)
+      {
+        return symbol_type (token::YYUNDEF, std::move (l));
+      }
+#else
+      static
+      symbol_type
+      make_YYUNDEF (const location_type& l)
+      {
+        return symbol_type (token::YYUNDEF, l);
       }
 #endif
 #if 201103L <= YY_CPLUSPLUS
@@ -916,20 +1075,43 @@ switch (yytype)
 #endif
 
 
+    class context
+    {
+    public:
+      context (const  kivi_parser & yyparser, const symbol_type& yyla);
+      const symbol_type& lookahead () const { return yyla_; }
+      symbol_kind_type token () const { return yyla_.kind (); }
+      const location_type& location () const { return yyla_.location; }
+
+      /// Put in YYARG at most YYARGN of the expected tokens, and return the
+      /// number of tokens stored in YYARG.  If YYARG is null, return the
+      /// number of expected tokens (guaranteed to be less than YYNTOKENS).
+      int expected_tokens (symbol_kind_type yyarg[], int yyargn) const;
+
+    private:
+      const  kivi_parser & yyparser_;
+      const symbol_type& yyla_;
+    };
+
   private:
-    /// This class is not copyable.
+#if YY_CPLUSPLUS < 201103L
+    /// Non copyable.
      kivi_parser  (const  kivi_parser &);
+    /// Non copyable.
      kivi_parser & operator= (const  kivi_parser &);
+#endif
+
 
     /// Stored state numbers (used for stacks).
     typedef signed char state_type;
 
-    /// Generate an error message.
-    /// \param yystate   the state where the error occurred.
-    /// \param yyla      the lookahead token.
-    virtual std::string yysyntax_error_ (state_type yystate,
-                                         const symbol_type& yyla) const;
+    /// The arguments of the error message.
+    int yy_syntax_error_arguments_ (const context& yyctx,
+                                    symbol_kind_type yyarg[], int yyargn) const;
 
+    /// Generate an error message.
+    /// \param yyctx     the context in which the error occurred.
+    virtual std::string yysyntax_error_ (const context& yyctx) const;
     /// Compute post-reduction state.
     /// \param yystate   the current state
     /// \param yysym     the nonterminal to push on the stack
@@ -946,10 +1128,17 @@ switch (yytype)
     static const signed char yypact_ninf_;
     static const signed char yytable_ninf_;
 
-    /// Convert a scanner token number \a t to a symbol number.
-    /// In theory \a t should be a token_type, but character literals
+    /// Convert a scanner token kind \a t to a symbol kind.
+    /// In theory \a t should be a token_kind_type, but character literals
     /// are valid, yet not members of the token_type enum.
-    static token_number_type yytranslate_ (int t);
+    static symbol_kind_type yytranslate_ (int t);
+
+    /// Convert the symbol name \a n to a form suitable for a diagnostic.
+    static std::string yytnamerr_ (const char *yystr);
+
+    /// For a symbol, its name in clear.
+    static const char* const yytname_[];
+
 
     // Tables.
     // YYPACT[STATE-NUM] -- Index in YYTABLE of the portion describing
@@ -985,26 +1174,20 @@ switch (yytype)
     static const signed char yyr2_[];
 
 
-    /// Convert the symbol name \a n to a form suitable for a diagnostic.
-    static std::string yytnamerr_ (const char *n);
-
-
-    /// For a symbol, its name in clear.
-    static const char* const yytname_[];
 #if YYDEBUG
     // YYRLINE[YYN] -- Source line where rule number YYN was defined.
     static const short yyrline_[];
     /// Report on the debug stream that the rule \a r is going to be reduced.
-    virtual void yy_reduce_print_ (int r);
+    virtual void yy_reduce_print_ (int r) const;
     /// Print the state stack on the debug stream.
-    virtual void yystack_print_ ();
+    virtual void yy_stack_print_ () const;
 
     /// Debugging level.
     int yydebug_;
     /// Debug stream.
     std::ostream* yycdebug_;
 
-    /// \brief Display a symbol type, value and location.
+    /// \brief Display a symbol kind, value and location.
     /// \param yyo    The output stream.
     /// \param yysym  The symbol.
     template <typename Base>
@@ -1025,7 +1208,7 @@ switch (yytype)
       /// Default constructor.
       by_state () YY_NOEXCEPT;
 
-      /// The symbol type as needed by the constructor.
+      /// The symbol kind as needed by the constructor.
       typedef state_type kind_type;
 
       /// Constructor.
@@ -1037,12 +1220,12 @@ switch (yytype)
       /// Record that this symbol is empty.
       void clear () YY_NOEXCEPT;
 
-      /// Steal the symbol type from \a that.
+      /// Steal the symbol kind from \a that.
       void move (by_state& that);
 
-      /// The (internal) type number (corresponding to \a state).
-      /// \a empty_symbol when empty.
-      symbol_number_type type_get () const YY_NOEXCEPT;
+      /// The symbol kind (corresponding to \a state).
+      /// \a symbol_kind::S_YYEMPTY when empty.
+      symbol_kind_type kind () const YY_NOEXCEPT;
 
       /// The state number used to denote an empty symbol.
       /// We use the initial state, as it does not have a value.
@@ -1081,14 +1264,21 @@ switch (yytype)
     {
     public:
       // Hide our reversed order.
-      typedef typename S::reverse_iterator iterator;
-      typedef typename S::const_reverse_iterator const_iterator;
+      typedef typename S::iterator iterator;
+      typedef typename S::const_iterator const_iterator;
       typedef typename S::size_type size_type;
       typedef typename std::ptrdiff_t index_type;
 
       stack (size_type n = 200)
         : seq_ (n)
       {}
+
+#if 201103L <= YY_CPLUSPLUS
+      /// Non copyable.
+      stack (const stack&) = delete;
+      /// Non copyable.
+      stack& operator= (const stack&) = delete;
+#endif
 
       /// Random access.
       ///
@@ -1140,24 +1330,18 @@ switch (yytype)
         return index_type (seq_.size ());
       }
 
-      std::ptrdiff_t
-      ssize () const YY_NOEXCEPT
-      {
-        return std::ptrdiff_t (size ());
-      }
-
       /// Iterator on top of the stack (going downwards).
       const_iterator
       begin () const YY_NOEXCEPT
       {
-        return seq_.rbegin ();
+        return seq_.begin ();
       }
 
       /// Bottom of the stack.
       const_iterator
       end () const YY_NOEXCEPT
       {
-        return seq_.rend ();
+        return seq_.end ();
       }
 
       /// Present a slice of the top of a stack.
@@ -1181,8 +1365,12 @@ switch (yytype)
       };
 
     private:
+#if YY_CPLUSPLUS < 201103L
+      /// Non copyable.
       stack (const stack&);
+      /// Non copyable.
       stack& operator= (const stack&);
+#endif
       /// The wrapped container.
       S seq_;
     };
@@ -1212,33 +1400,28 @@ switch (yytype)
     /// Pop \a n symbols from the stack.
     void yypop_ (int n = 1);
 
-    /// Some specific tokens.
-    static const token_number_type yy_error_token_ = 1;
-    static const token_number_type yy_undef_token_ = 2;
-
     /// Constants.
     enum
     {
-      yyeof_ = 0,
       yylast_ = 185,     ///< Last index in yytable_.
       yynnts_ = 25,  ///< Number of nonterminal symbols.
-      yyfinal_ = 3, ///< Termination state number.
-      yyntokens_ = 24  ///< Number of tokens.
+      yyfinal_ = 3 ///< Termination state number.
     };
 
 
     // User arguments.
     parsing_context &ctx;
+
   };
 
   inline
-   kivi_parser ::token_number_type
+   kivi_parser ::symbol_kind_type
    kivi_parser ::yytranslate_ (int t)
   {
     // YYTRANSLATE[TOKEN-NUM] -- Symbol number corresponding to
     // TOKEN-NUM as returned by yylex.
     static
-    const token_number_type
+    const signed char
     translate_table[] =
     {
        0,     2,     2,     2,     2,     2,     2,     2,     2,     2,
@@ -1269,90 +1452,49 @@ switch (yytype)
        2,     2,     2,     2,     2,     2,     1,     2,     3,     4,
        5,     6,     7,     8,     9,    10,    11
     };
-    const int user_token_number_max_ = 266;
+    // Last valid token kind.
+    const int code_max = 266;
 
     if (t <= 0)
-      return yyeof_;
-    else if (t <= user_token_number_max_)
-      return translate_table[t];
+      return symbol_kind::S_YYEOF;
+    else if (t <= code_max)
+      return YY_CAST (symbol_kind_type, translate_table[t]);
     else
-      return yy_undef_token_;
+      return symbol_kind::S_YYUNDEF;
   }
 
   // basic_symbol.
-#if 201103L <= YY_CPLUSPLUS
-  template <typename Base>
-   kivi_parser ::basic_symbol<Base>::basic_symbol (basic_symbol&& that)
-    : Base (std::move (that))
-    , value ()
-    , location (std::move (that.location))
-  {
-    switch (this->type_get ())
-    {
-      case 30: // Parameter_list
-      case 32: // Statement
-      case 33: // Comma_sep_expressions
-      case 34: // Var_definition
-      case 35: // Compound_statement
-      case 36: // Comparison_operation
-      case 37: // Arithmetic_operation
-      case 38: // Unary_operation
-      case 39: // Function_call_operation
-      case 40: // Expressions
-      case 41: // Expression
-      case 47: // Safe_statement
-      case 48: // Safe_expression
-        value.move< expression > (std::move (that.value));
-        break;
-
-      case 9: // NUMBER_LITERAL
-        value.move< long > (std::move (that.value));
-        break;
-
-      case 7: // IDENTIFIER
-      case 8: // STRING_LITERAL
-      case 42: // Safe_identifier
-        value.move< std::string > (std::move (that.value));
-        break;
-
-      default:
-        break;
-    }
-
-  }
-#endif
-
   template <typename Base>
    kivi_parser ::basic_symbol<Base>::basic_symbol (const basic_symbol& that)
     : Base (that)
     , value ()
     , location (that.location)
   {
-    switch (this->type_get ())
+    switch (this->kind ())
     {
-      case 30: // Parameter_list
-      case 32: // Statement
-      case 33: // Comma_sep_expressions
-      case 34: // Var_definition
-      case 35: // Compound_statement
-      case 36: // Comparison_operation
-      case 37: // Arithmetic_operation
-      case 38: // Unary_operation
-      case 39: // Function_call_operation
-      case 40: // Expressions
-      case 41: // Expression
-      case 47: // Safe_statement
-      case 48: // Safe_expression
+      case symbol_kind::S_Parameter_list: // Parameter_list
+      case symbol_kind::S_Statement: // Statement
+      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
+      case symbol_kind::S_Var_definition: // Var_definition
+      case symbol_kind::S_Compound_statement: // Compound_statement
+      case symbol_kind::S_Comparison_operation: // Comparison_operation
+      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
+      case symbol_kind::S_Unary_operation: // Unary_operation
+      case symbol_kind::S_Function_call_operation: // Function_call_operation
+      case symbol_kind::S_Expressions: // Expressions
+      case symbol_kind::S_Expression: // Expression
+      case symbol_kind::S_Safe_statement: // Safe_statement
+      case symbol_kind::S_Safe_expression: // Safe_expression
         value.copy< expression > (YY_MOVE (that.value));
         break;
 
-      case 9: // NUMBER_LITERAL
+      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.copy< long > (YY_MOVE (that.value));
         break;
 
-      case 7: // IDENTIFIER
-      case 8: // STRING_LITERAL
-      case 42: // Safe_identifier
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
+      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
+      case symbol_kind::S_Safe_identifier: // Safe_identifier
         value.copy< std::string > (YY_MOVE (that.value));
         break;
 
@@ -1365,10 +1507,17 @@ switch (yytype)
 
 
   template <typename Base>
+   kivi_parser ::symbol_kind_type
+   kivi_parser ::basic_symbol<Base>::type_get () const YY_NOEXCEPT
+  {
+    return this->kind ();
+  }
+
+  template <typename Base>
   bool
    kivi_parser ::basic_symbol<Base>::empty () const YY_NOEXCEPT
   {
-    return Base::type_get () == empty_symbol;
+    return this->kind () == symbol_kind::S_YYEMPTY;
   }
 
   template <typename Base>
@@ -1376,31 +1525,31 @@ switch (yytype)
    kivi_parser ::basic_symbol<Base>::move (basic_symbol& s)
   {
     super_type::move (s);
-    switch (this->type_get ())
+    switch (this->kind ())
     {
-      case 30: // Parameter_list
-      case 32: // Statement
-      case 33: // Comma_sep_expressions
-      case 34: // Var_definition
-      case 35: // Compound_statement
-      case 36: // Comparison_operation
-      case 37: // Arithmetic_operation
-      case 38: // Unary_operation
-      case 39: // Function_call_operation
-      case 40: // Expressions
-      case 41: // Expression
-      case 47: // Safe_statement
-      case 48: // Safe_expression
+      case symbol_kind::S_Parameter_list: // Parameter_list
+      case symbol_kind::S_Statement: // Statement
+      case symbol_kind::S_Comma_sep_expressions: // Comma_sep_expressions
+      case symbol_kind::S_Var_definition: // Var_definition
+      case symbol_kind::S_Compound_statement: // Compound_statement
+      case symbol_kind::S_Comparison_operation: // Comparison_operation
+      case symbol_kind::S_Arithmetic_operation: // Arithmetic_operation
+      case symbol_kind::S_Unary_operation: // Unary_operation
+      case symbol_kind::S_Function_call_operation: // Function_call_operation
+      case symbol_kind::S_Expressions: // Expressions
+      case symbol_kind::S_Expression: // Expression
+      case symbol_kind::S_Safe_statement: // Safe_statement
+      case symbol_kind::S_Safe_expression: // Safe_expression
         value.move< expression > (YY_MOVE (s.value));
         break;
 
-      case 9: // NUMBER_LITERAL
+      case symbol_kind::S_NUMBER_LITERAL: // NUMBER_LITERAL
         value.move< long > (YY_MOVE (s.value));
         break;
 
-      case 7: // IDENTIFIER
-      case 8: // STRING_LITERAL
-      case 42: // Safe_identifier
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
+      case symbol_kind::S_STRING_LITERAL: // STRING_LITERAL
+      case symbol_kind::S_Safe_identifier: // Safe_identifier
         value.move< std::string > (YY_MOVE (s.value));
         break;
 
@@ -1411,62 +1560,64 @@ switch (yytype)
     location = YY_MOVE (s.location);
   }
 
-  // by_type.
+  // by_kind.
   inline
-   kivi_parser ::by_type::by_type ()
-    : type (empty_symbol)
+   kivi_parser ::by_kind::by_kind ()
+    : kind_ (symbol_kind::S_YYEMPTY)
   {}
 
 #if 201103L <= YY_CPLUSPLUS
   inline
-   kivi_parser ::by_type::by_type (by_type&& that)
-    : type (that.type)
+   kivi_parser ::by_kind::by_kind (by_kind&& that)
+    : kind_ (that.kind_)
   {
     that.clear ();
   }
 #endif
 
   inline
-   kivi_parser ::by_type::by_type (const by_type& that)
-    : type (that.type)
+   kivi_parser ::by_kind::by_kind (const by_kind& that)
+    : kind_ (that.kind_)
   {}
 
   inline
-   kivi_parser ::by_type::by_type (token_type t)
-    : type (yytranslate_ (t))
+   kivi_parser ::by_kind::by_kind (token_kind_type t)
+    : kind_ (yytranslate_ (t))
   {}
 
   inline
   void
-   kivi_parser ::by_type::clear ()
+   kivi_parser ::by_kind::clear ()
   {
-    type = empty_symbol;
+    kind_ = symbol_kind::S_YYEMPTY;
   }
 
   inline
   void
-   kivi_parser ::by_type::move (by_type& that)
+   kivi_parser ::by_kind::move (by_kind& that)
   {
-    type = that.type;
+    kind_ = that.kind_;
     that.clear ();
   }
 
   inline
-  int
-   kivi_parser ::by_type::type_get () const YY_NOEXCEPT
+   kivi_parser ::symbol_kind_type
+   kivi_parser ::by_kind::kind () const YY_NOEXCEPT
   {
-    return type;
+    return kind_;
+  }
+
+  inline
+   kivi_parser ::symbol_kind_type
+   kivi_parser ::by_kind::type_get () const YY_NOEXCEPT
+  {
+    return this->kind ();
   }
 
 kivi_parser::symbol_type yylex (parsing_context &ctx);
 
 } // yy
-<<<<<<< HEAD
 #line 1619 "../autogen/kivi_parser.tab.hh"
-=======
-#line 1455 "src/autogen/kivi_parser.tab.hh"
-
->>>>>>> master
 
 
 

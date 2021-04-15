@@ -1,0 +1,28 @@
+----------------------------------
+./testcases/function_decl.kv
+----------------------------------
+Function < add_nums >
+# of Parameters = 2
+# of Locals = 0
+Function < sub_nums >
+# of Parameters = 2
+# of Locals = 0
+----------------------------------
+
+----------------------------------
+./testcases/function_with_local.kv
+----------------------------------
+Function < foo >
+# of Parameters = 2
+# of Locals = 1
+----------------------------------
+
+----------------------------------
+./testcases/function_with_syntax_err.kv
+----------------------------------
+./testcases/function_with_syntax_err.kv:2:1-2: syntax error, unexpected '{', expecting ':'
+Function < foo >
+# of Parameters = 0
+# of Locals = 0
+----------------------------------
+

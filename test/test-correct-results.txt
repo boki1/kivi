@@ -1,0 +1,36 @@
+----------------------------------
+test/function_decl.kv
+----------------------------------
+Function < add_nums >
+Locals...
+Params...
+0: a
+1: b
+Function < sub_nums >
+Locals...
+Params...
+0: a
+1: b
+----------------------------------
+
+----------------------------------
+test/function_with_local.kv
+----------------------------------
+Function < foo >
+Locals...
+0: c
+Params...
+0: a
+1: b
+----------------------------------
+
+----------------------------------
+test/function_with_syntax_err.kv
+----------------------------------
+Function < foo >
+Locals...
+-1: VarErr
+Params...
+-1: VarErr
+----------------------------------
+
