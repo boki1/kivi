@@ -1,7 +1,7 @@
 #ifndef KIVI_LEXER_H
 #define KIVI_LEXER_H
 
-/* 
+/*
  * This file provides the blueprint for the parser implementation.
  * It defines helping classes that are used when parsing the given
  * source file such as `identifier` and `expression`. Here is also
@@ -9,7 +9,7 @@
  * all the necessary information which is needed during the whole
  * parsing stage.
  *
-*/
+ */
 
 #include "../autogen/location.hh"
 #include "../autogen/stack.hh"
@@ -259,7 +259,7 @@ class parsing_context
     {
 	// TODO: change filename constness
 	location.begin.filename = location.end.filename
-	    = const_cast<std::string *> (filename) {
+	    = const_cast<std::string *> (filename);
     }
 
   public:
@@ -271,9 +271,10 @@ class parsing_context
 
   public:
     /// `const identifier &define_identifier (const std::string &name,
-    /// identifier &&f)` Defines an arbitary identifier type givena name and an
-    /// r-value identifier. Also a check is made whether this identifier has
-    /// already been created. A syntax error is thrown if a duplicate is seen.
+    /// identifier &&f)` Defines an arbitary identifier type givena name
+    /// and an r-value identifier. Also a check is made whether this
+    /// identifier has already been created. A syntax error is thrown if a
+    /// duplicate is seen.
     const identifier &define_identifier (const std::string &name,
 					 identifier &&f);
 
@@ -301,8 +302,8 @@ class parsing_context
 
     /// `expression use_identifier (const std::string &name) const`
     /// Use an arbitary identifier with given name. If expression with
-    /// this name is found it gets returned, otherwise an exception is thrown
-    /// for undefiened identifier.
+    /// this name is found it gets returned, otherwise an exception is
+    /// thrown for undefiened identifier.
     [[nodiscard]] expression use_identifier (const std::string &name) const;
 
     /// `void add_function_with_block (...)`

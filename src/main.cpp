@@ -5,8 +5,6 @@
 #include "include/parser.hpp"
 #include "include/parsing_visualizer.hpp"
 
-#define PARSING_VISUALIZATION_ENABLED
-
 static void
 usage ()
 {
