@@ -4,6 +4,7 @@ SRC_DIR=src
 INC_DIR=$(SRC_DIR)/include
 MISC_DIR=$(SRC_DIR)/misc
 AUTOGEN_DIR=$(SRC_DIR)/autogen
+DOC_DIR=docs
 
 all: prep lexemes grammar core
 	echo 'Buidling...'
@@ -30,3 +31,7 @@ clean:
 	(cd $(MISC_DIR); make clean)
 	(cd $(SRC_DIR); make clean)
 	echo 'Cleaned'
+
+docs:
+	(cd $(DOC_DIR); doxygen)
+	xdg-open $(DOC_DIR)/docs/html/index.html
