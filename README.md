@@ -39,9 +39,21 @@ Although Kivi has a lot of similarities to the C programming language, is not in
 
 How to Kivi?
 -----------------
+The structure of Kivi is all designed on Makefiles. The Makefile in the root directory calles all other Makefiles needed.
+
 Check the [`Build`](https://github.com/boki1/kivi/wiki/Building) page for detailed instructions.
 
 What in Kivi?
 -----------------
+* Language
+  - mathematical expressions
+  - variable definitions 
+  - control flow - `if` and `while` statements
+  - function definitions
+* Additional tools
+  - Parsing tree visualization
+ 
+[![Example visualization](https://i.postimg.cc/6qy5p302/dot-file.png)](https://i.postimg.cc/6qy5p302/dot-file.png)
+
 Check the [`Features`](https://github.com/boki1/kivi/wiki/Features) page for an in depth listing.
 

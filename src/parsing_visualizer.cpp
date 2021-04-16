@@ -245,6 +245,7 @@ visualize_parsing (const std::vector<function> &functions)
 	    std::cout << "error opening output file\n";
 	}
     file << g;
+
     renderToFile (g, "dot", "gtk");
 }
 }
