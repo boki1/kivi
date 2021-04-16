@@ -24,7 +24,7 @@
 %right '='
 %left "<>" "=="
 %left '+' '-'
-%left '*' '/'
+%left '*' '/' '%'
 %left '('
 
 %type<long>        NUMBER_LITERAL
@@ -123,7 +123,7 @@ Comparison_operation:
   }
 | Expression "==" Expression {
     $$ = new_equality_expr(std::move($1), std::move($3));
-  }  
+  }
 | Expression "<>" error {
     $$ = std::move($1);
   }
@@ -151,15 +151,21 @@ Arithmetic_operation:
 | Expression '*' Expression {
     $$ = new_multiplication_expr(std::move($1), std::move($3));
   }
-//   
+//
 // TODO:
 // Make division by 0 a compiler time error
-// 
+//
 | Expression '/' error {
     $$ = std::move($1);
   }
 | Expression '/' Expression %prec '*' {
     $$ = new_division_expr(std::move($1), std::move($3));
+  }
+| Expression '%' Expression %prec '*' {
+    $$ = new_modular_division_expr(std::move($1), std::move($3));
+  }
+| Expression '%' error {
+	$$ = std::move($1);
   }
 | Expression '=' error {
     $$ = std::move($1);

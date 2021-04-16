@@ -8,7 +8,7 @@ namespace yy {
         const char* anchor = ctx.lexer_cursor;
         ctx.location.step();
 
-    #define COL_DIF ctx.location.columns(ctx.lexer_cursor - anchor);
+	#define COL_DIF ctx.location.columns(ctx.lexer_cursor - anchor);
     using kivi = yy::kivi_parser;
 
     /*!re2c

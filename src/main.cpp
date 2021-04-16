@@ -5,6 +5,8 @@
 #include "include/parser.hpp"
 #include "include/parsing_visualizer.hpp"
 
+#define PARSING_VISUALIZATION_ENABLED
+
 static void
 usage ()
 {
@@ -24,10 +26,10 @@ int
 main (int argc, char *const argv[])
 {
     if (argc != 2)
-    {
-        usage ();
-        return 0;
-    }
+	{
+	    usage ();
+	    return 0;
+	}
 
     const std::string filename = argv[1];
     std::ifstream ifs (filename);
@@ -40,13 +42,14 @@ main (int argc, char *const argv[])
     std::vector<function> functions = std::move (ctx.get_function_list ());
 
     for (const auto &f : functions)
-    {
-        std::cout << f;
-    }
+	{
+	    std::cout << f;
+	}
 
-    #ifdef PARSING_VISUALIZATION_ENABLED
-        process_visualization::visualize_parsing(functions);
-    #endif
+#ifdef PARSING_VISUALIZATION_ENABLED
+    process_visualization::visualize_parsing (functions);
+#endif
+
     return 0;
 }
 

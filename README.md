@@ -40,6 +40,7 @@ Although Kivi has a lot of similarities to the C programming language, is not in
 How to Kivi?
 -----------------
 The structure of Kivi is all designed on Makefiles. The Makefile in the root directory calles all other Makefiles needed.
+
 Check the [`Build`](https://github.com/boki1/kivi/wiki/Building) page for detailed instructions.
 
 What in Kivi?

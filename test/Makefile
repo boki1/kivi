@@ -7,7 +7,8 @@ SCRIPT_TEST=test.sh
 
 all: test.cpp
 	$(CPPC) $(CPPFLAGS) $< -o $(EXE_TEST)
-	./$(SCRIPT_TEST)
+	$(bash ./$(SCRIPT_TEST)()
+	less $(OUTPUT_TEST)
 
 clean:
 	rm -f $(OUTPUT_TEST)

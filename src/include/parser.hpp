@@ -91,8 +91,8 @@ class identifier
 /// different for each expression type only by the name.
 #define EXPRESSION_TYPES(o)                                                   \
     o (nop) o (string) o (number) o (identifier) o (addition) o (negation)    \
-	o (equality) o (multiplication) o (division) o (compare_and)          \
-	    o (compare_loop) o (function_call) o (copy)                       \
+	o (equality) o (multiplication) o (division) o (modular_division)     \
+	    o (compare_and) o (compare_loop) o (function_call) o (copy)       \
 		o (expression_sequence) o (retrn)
 
 /// `enum class expression_type`
@@ -259,7 +259,7 @@ class parsing_context
     {
 	// TODO: change filename constness
 	location.begin.filename = location.end.filename
-	    = const_cast<std::string *> (filename);
+	    = const_cast<std::string *> (filename) {
     }
 
   public:

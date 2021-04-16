@@ -17,7 +17,8 @@ grammar:
 	(cd $(MISC_DIR); make grammar)
 
 core:
-	(cd $(SRC_DIR); make all)
+	cmake -S $(SRC_DIR) -B $(BUILD_DIR)
+	(cd $(BUILD_DIR); make)
 
 prep:
 	mkdir -p $(BUILD_DIR)
