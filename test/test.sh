@@ -37,6 +37,6 @@ done
 # Compare `THIS_OUTPUT` and `CORRECT_OUTPUT` and store it in `OUTPUT`
 diff -sy --width=120 "$CORRECT_OUTPUT" "$THIS_OUTPUT" > "$OUTPUT"
 
-# rm "$THIS_OUTPUT"
-# rm "$CORRECT_OUTPUT"
-# less "$OUTPUT"
+rm "$THIS_OUTPUT"
+rm "$CORRECT_OUTPUT"
+less "$OUTPUT"
