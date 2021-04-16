@@ -45,12 +45,14 @@ Check the [`Build`](https://github.com/boki1/kivi/wiki/Building) page for detail
 What in Kivi?
 -----------------
 * Language
-- mathematical expressions
-- variable definitions 
-- control flow - `if` and `while` statements
-- function definitions
+  - mathematical expressions
+  - variable definitions 
+  - control flow - `if` and `while` statements
+  - function definitions
 * Additional tools
-- Parsing tree visualization
+  - Parsing tree visualization
+ 
 [![Example visualization](https://i.postimg.cc/6qy5p302/dot-file.png)](https://i.postimg.cc/6qy5p302/dot-file.png)
+
 Check the [`Features`](https://github.com/boki1/kivi/wiki/Features) page for an in depth listing.
 
