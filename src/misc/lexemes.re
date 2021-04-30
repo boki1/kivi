@@ -1,5 +1,5 @@
 #include "kivi_parser.tab.hh"
-#include "../include/parser.hpp"
+#include "../kivi/parser.hh"
 
 namespace yy {
 
