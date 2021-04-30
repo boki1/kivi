@@ -8,7 +8,7 @@
 
 %code requires {
 
-#include "../include/parser.hpp"
+#include "../kivi/parser.hh"
 
 } //%code requires
 
