@@ -8,7 +8,8 @@
 
 %code requires {
 
-#include "../kivi/parser.hh"
+#include <ast/parsing_context.hh>
+using namespace syntax_analyzer;
 
 } //%code requires
 

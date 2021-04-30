@@ -9,3 +9,6 @@ add_library(
 )
 
 target_include_directories(kivi_parser PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+
+target_link_libraries(kivi_parser PRIVATE kivi_expressions)
+target_link_libraries(kivi_parser PRIVATE ast)
