@@ -1,28 +1,25 @@
-//
-// Created by Created by boki on 30.04.21 г..
-//
-
+/**
+ * @file string.hh
+ *
+ * Defines a string literal expression
+ */
 #ifndef KIVI_SRC_KIVI_EXPRESSIONS_STRING_HH_
 #define KIVI_SRC_KIVI_EXPRESSIONS_STRING_HH_
 
 #include <string>
 #include <utility>
 
-/**
- * @file string.hh
- * @brief Defines a class which represents a string literal expression
- */
-
-#include "base_expression.hh"
+#include "literal.hh"
 
 namespace syntax_analyzer
 {
 
 	/**
 	 * String expression
+	 *
 	 * @brief Represents a string literal
 	 */
-	class string_expression : expression
+	class string_expression : I_literal
 	{
 	 public:
 		explicit string_expression(std::string f_str) : str(std::move(f_str))

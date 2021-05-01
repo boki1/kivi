@@ -7,33 +7,26 @@
  * @note Probably export a "unary_expression" class when additional support for unary operators is introduced
  */
 
-#include "base_expression.hh"
+
+#include <ast/syntactic_structure.hh>
+
+#include "unary_operation.hh"
 
 namespace syntax_analyzer
 {
-	class negation_expression : expression
+	class negation_expression : unary_operation
 	{
-	 private:
-		int m_num;
-
 	 public:
 		negation_expression() = default;
-		negation_expression(int num)
-			: m_num(num)
+		negation_expression(const value& operand)
+			: unary_operation(operand)
 		{
-
 		}
 
 	 public:
 		std::string to_string() const noexcept override
 		{
-			return std::to_string(num());
-		}
-
-	 public:
-		int num() const noexcept
-		{
-			return m_num;
+//			return std::to_string(operand());
 		}
 	};
 }

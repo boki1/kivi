@@ -1,7 +1,3 @@
-#ifndef KIVI_SRC_KIVI_EXPRESSIONS_MODULAR_DIVISION_HH_
-#define KIVI_SRC_KIVI_EXPRESSIONS_MODULAR_DIVISION_HH_
-
-
 /**
  * @file modular_diviosion.hh
  * @brief Defines the modular_diviosion operation expression class
@@ -9,18 +5,24 @@
  * @note Uses the `binary_expression` abstract class
  */
 
+#ifndef KIVI_SRC_KIVI_EXPRESSIONS_MODULAR_DIVISION_HH_
+#define KIVI_SRC_KIVI_EXPRESSIONS_MODULAR_DIVISION_HH_
+
 #include "binary_expression.hh"
 
 namespace syntax_analyzer
 {
 
-	class modular_diviosion_expression : binary_expression
+	/**
+	 * An expression which represents modular division
+	 */
+	class modular_division_expression : binary_expression
 	{
 	 public:
-		modular_diviosion_expression() = default;
+		modular_division_expression() = default;
 
-		modular_diviosion_expression(int left, int right)
-			: binary_expression(left, right)
+		modular_division_expression(value lhs, value rhs)
+			: binary_expression(lhs, rhs)
 		{
 		}
 

@@ -1,6 +1,3 @@
-#ifndef KIVI_SRC_KIVI_EXPRESSIONS_BINARY_EXPRESSION_HH_
-#define KIVI_SRC_KIVI_EXPRESSIONS_BINARY_EXPRESSION_HH_
-
 /**
  * @file binary_expression.hh
  * @brief Defines an abstract class which represents a binary operation expression.
@@ -9,34 +6,44 @@
  * Used for implementing addition, multiplication and division
  */
 
-#include "base_expression.hh"
+#ifndef KIVI_SRC_KIVI_EXPRESSIONS_BINARY_EXPRESSION_HH_
+#define KIVI_SRC_KIVI_EXPRESSIONS_BINARY_EXPRESSION_HH_
+
+#include "base.hh"
 
 namespace syntax_analyzer
 {
 
-	class binary_expression : expression
+	/**
+	 * @brief An expression which represents a binary operation
+	 */
+	class binary_expression : I_expression
 	{
 	 protected:
 
-		int m_lhs{};
-		int m_rhs{};
+		/// The left hand-side of the expression
+		value m_lhs;
+
+		/// The right hand-side of the expression
+		value m_rhs;
 
 	 public:
 
 		binary_expression() = default;
-		binary_expression(int lhs, int rhs)
+
+		binary_expression(value lhs, value rhs)
 			: m_lhs(lhs), m_rhs(rhs)
 		{
 		}
 
 	 public:
 
-		int left() const
+		const value& left() const
 		{
 			return m_lhs;
 		}
 
-		int right() const
+		const value& right() const
 		{
 			return m_rhs;
 		}

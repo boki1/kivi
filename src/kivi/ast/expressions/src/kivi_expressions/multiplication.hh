@@ -1,11 +1,3 @@
-//
-// Created by Created by boki on 30.04.21 г..
-//
-
-#ifndef KIVI_SRC_KIVI_EXPRESSIONS_MULTIPLICATION_HH_
-#define KIVI_SRC_KIVI_EXPRESSIONS_MULTIPLICATION_HH_
-
-
 /**
  * @file multiplication.hh
  * @brief Defines the multiplication operation expression class
@@ -13,18 +5,24 @@
  * @note Uses the `binary_expression` abstract class
  */
 
+#ifndef KIVI_SRC_KIVI_EXPRESSIONS_MULTIPLICATION_HH_
+#define KIVI_SRC_KIVI_EXPRESSIONS_MULTIPLICATION_HH_
+
 #include "binary_expression.hh"
 
 namespace syntax_analyzer
 {
 
+	/**
+	 * @brief An expression which represents multiplication
+	 */
 	class multiplication_expression : binary_expression
 	{
 	 public:
 		multiplication_expression() = default;
 
-		multiplication_expression(int left, int right) :
-			binary_expression(left, right)
+		multiplication_expression(value lhs, value rhs)
+			: binary_expression(left, right)
 		{
 		}
 

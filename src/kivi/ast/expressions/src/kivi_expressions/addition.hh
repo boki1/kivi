@@ -1,7 +1,3 @@
-#ifndef KIVI_SRC_KIVI_EXPRESSIONS_ADDITION_HH_
-#define KIVI_SRC_KIVI_EXPRESSIONS_ADDITION_HH_
-
-
 /**
  * @file addition.hh
  * @brief Defines the addition operation expression class
@@ -9,17 +5,24 @@
  * @note Uses the `binary_expression` abstract class
  */
 
+#ifndef KIVI_SRC_KIVI_EXPRESSIONS_ADDITION_HH_
+#define KIVI_SRC_KIVI_EXPRESSIONS_ADDITION_HH_
+
 #include "binary_expression.hh"
 
 namespace syntax_analyzer
 {
 
-	class addition_expression : binary_expression
+	/**
+	 * @brief A expression which represents the addition operation.
+	 * @note Directly derives from `binary_expression`
+	 */
+	class addition_expr : binary_expression
 	{
 	 public:
-		addition_expression() = default;
+		addition_expr() = default;
 
-		addition_expression(int left, int right)
+		addition_expr(value left, value right)
 			: binary_expression(left, right)
 		{
 		}
@@ -27,7 +30,8 @@ namespace syntax_analyzer
 	 public:
 		std::string to_string() const noexcept override
 		{
-			return std::to_string(left()) + " + " + std::to_string(right());
+//			return std::to_string(left()) + " + " + std::to_string(right());
+			return "TODO";
 		}
 	};
 }

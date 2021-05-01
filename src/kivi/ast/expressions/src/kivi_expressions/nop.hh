@@ -7,12 +7,12 @@
  * @note Does nothing :D
  */
 
-#include "base_expression.hh"
+#include "base.hh"
 
 namespace syntax_analyzer
 {
 
-	class nop_expression : expression
+	class nop_expression : I_expression
 	{
 	 public:
 		std::string to_string() const noexcept override

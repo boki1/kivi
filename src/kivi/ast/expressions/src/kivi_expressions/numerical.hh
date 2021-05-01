@@ -1,11 +1,14 @@
-//
-// Created by Created by boki on 30.04.21 г..
-//
-
+/**
+ * @file numerical.hh
+ *
+ * Defines a numerical literal expression
+ */
 #ifndef KIVI_SRC_KIVI_EXPRESSIONS_NUMERICAL_HH_
 #define KIVI_SRC_KIVI_EXPRESSIONS_NUMERICAL_HH_
 
-#include "base_expression.hh"
+#include <ast/syntactic_structure.hh>
+
+#include "literal.hh"
 
 namespace syntax_analyzer
 {
@@ -14,14 +17,16 @@ namespace syntax_analyzer
 	 * Numerical expression
 	 * @brief Represents a number literal
 	 */
-	class numerical_expression : expression
+	class numerical_expression : I_literal
 	{
 		explicit numerical_expression(long f_num) : num(f_num)
 		{
 		}
+
 		explicit numerical_expression(int f_num) : num(f_num)
 		{
 		}
+
 		explicit numerical_expression(double f_num) : num(f_num)
 		{
 		}
