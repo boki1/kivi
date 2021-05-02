@@ -125,7 +125,7 @@ namespace syntax_analyzer
 		 * @return void
 		 */
 		void
-		define_function_body(std::string &name, expression&& body);
+		define_function_body(std::string &name, I_expression&& body);
 
 	 public:
 		///

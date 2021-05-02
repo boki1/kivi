@@ -21,7 +21,7 @@ namespace syntax_analyzer
 	{
 	}
 
-	void parsing_context::define_function_body(std::string& name, expression&& body)
+	void parsing_context::define_function_body(std::string& name, I_expression&& body)
 	{
 
 	}

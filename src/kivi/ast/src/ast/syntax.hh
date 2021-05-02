@@ -16,7 +16,7 @@
 #include <string>
 #include <utility>
 
-#include <kivi_expressions/base_expression.hh>
+#include <kivi_expressions/base.hh>
 
 #include "syntactic_structure.hh"
 
@@ -93,7 +93,7 @@ namespace syntax_analyzer
 		identifier m_name;
 
 		/// The body of the function
-		expression body;
+		I_expression body;
 
 		/// The number of local variables defined in the function body
 		int m_locals{};
