@@ -1,11 +1,13 @@
-#ifndef KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_COMPARISON_EXPRESSION_HH_
-#define KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_COMPARISON_EXPRESSION_HH_
+#ifndef KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_COMPARISON_HH_
+#define KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_COMPARISON_HH_
+
+#include <ast/syntactic_structure.hh>
 
 #include "binary_expression.hh"
 
 namespace syntax_analyzer
 {
-	class comparison_expression : binary_expression
+	class comparison_operation : binary_expression
 	{
 	 protected:
 		/// Stores the result from the comparison
@@ -13,14 +15,14 @@ namespace syntax_analyzer
 		int m_result{};
 
 	 public:
-		comparison_expression() = default;
+		comparison_operation() = default;
 
-		comparison_expression(int left, int right)
+		comparison_operation(value left, value right)
 			: binary_expression(left, right)
 		{
 		}
 
-		virtual ~comparison_expression() = default;
+		virtual ~comparison_operation() = default;
 
 	 public:
 
@@ -32,7 +34,8 @@ namespace syntax_analyzer
 		 * @note **Potential bug:** Since we keep the lhs and rhs of the expression as simple integers if
 		 * 		 					we compare identifiers the values of lhs and rhs does not get modified.
 		 */
-		int compare() noexcept {
+		int compare() noexcept
+		{
 			m_result = left() - right();
 		}
 
@@ -46,4 +49,4 @@ namespace syntax_analyzer
 
 }
 
-#endif //KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_COMPARISON_EXPRESSION_HH_
+#endif //KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_COMPARISON_HH_
