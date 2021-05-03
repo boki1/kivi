@@ -8,6 +8,7 @@
 #ifndef KIVI_SRC_KIVI_AST_STMTS_SRC_KIVI_STMTS_COMPOUND_HH_
 #define KIVI_SRC_KIVI_AST_STMTS_SRC_KIVI_STMTS_COMPOUND_HH_
 
+#include <utility>
 #include <vector>
 
 #include <ast/syntactic_structure.hh>
@@ -38,8 +39,8 @@ namespace syntax_analyzer
 	 public:
 		compound_stmt() = default;
 
-		compound_stmt(const std::vector<I_statement>& body)
-			: m_body(body)
+		compound_stmt(std::vector<I_statement> body)
+			: m_body(std::move(body))
 		{
 		}
 
@@ -48,6 +49,11 @@ namespace syntax_analyzer
 		const std::vector<I_statement>& body() const noexcept
 		{
 			return m_body;
+		}
+
+		void append(I_statement&& stmt) noexcept
+		{
+			m_body.push_back(std::move(stmt));
 		}
 
 	};
