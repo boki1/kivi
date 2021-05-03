@@ -1,5 +1,5 @@
 /**
- * @file binary_expression.hh
+ * @file binary_operation.hh
  * @brief Defines an abstract class which represents a binary operation expression.
  * @note Requires 2 operands (left and right)
  *
@@ -17,7 +17,7 @@ namespace syntax_analyzer
 	/**
 	 * @brief An expression which represents a binary operation
 	 */
-	class binary_expression : I_expression
+	class binary_operation : I_expression
 	{
 	 protected:
 
@@ -29,9 +29,9 @@ namespace syntax_analyzer
 
 	 public:
 
-		binary_expression() = default;
+		binary_operation() = default;
 
-		binary_expression(value lhs, value rhs)
+		binary_operation(const value& lhs, const value& rhs)
 			: m_lhs(lhs), m_rhs(rhs)
 		{
 		}

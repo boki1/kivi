@@ -27,6 +27,7 @@ namespace syntax_analyzer
 		std::string to_string() const noexcept override
 		{
 //			return std::to_string(operand());
+			return "TODO";
 		}
 	};
 }

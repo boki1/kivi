@@ -19,14 +19,14 @@ namespace syntax_analyzer
 	 *
 	 * @brief Represents a string literal
 	 */
-	class string_expression : I_literal
+	class string_lit : I_literal
 	{
 	 public:
-		explicit string_expression(std::string f_str) : str(std::move(f_str))
+		explicit string_lit(std::string f_str) : str(std::move(f_str))
 		{
 		}
 
-		explicit string_expression(const char* f_str) : str(f_str)
+		explicit string_lit(const char* f_str) : str(f_str)
 		{
 		}
 

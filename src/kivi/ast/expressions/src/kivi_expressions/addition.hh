@@ -2,28 +2,28 @@
  * @file addition.hh
  * @brief Defines the addition operation expression class
  * @note Requires 2 operands (left and right)
- * @note Uses the `binary_expression` abstract class
+ * @note Uses the `binary_operation` abstract class
  */
 
 #ifndef KIVI_SRC_KIVI_EXPRESSIONS_ADDITION_HH_
 #define KIVI_SRC_KIVI_EXPRESSIONS_ADDITION_HH_
 
-#include "binary_expression.hh"
+#include "binary_operation.hh"
 
 namespace syntax_analyzer
 {
 
 	/**
 	 * @brief A expression which represents the addition operation.
-	 * @note Directly derives from `binary_expression`
+	 * @note Directly derives from `binary_operation`
 	 */
-	class addition_expr : binary_expression
+	class addition_expr : binary_operation
 	{
 	 public:
 		addition_expr() = default;
 
 		addition_expr(value left, value right)
-			: binary_expression(left, right)
+			: binary_operation(left, right)
 		{
 		}
 

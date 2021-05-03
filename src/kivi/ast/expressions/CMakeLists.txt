@@ -13,7 +13,17 @@ add_library(
         src/kivi_expressions/modular_division.hh
         src/kivi_expressions/identifier.hh
         src/kivi_expressions/assignment.hh
-        src/kivi_expressions/binary_expression.hh
-        src/kivi_expressions/comparison_expression.hh ../stmts/src/kivi_stmts/statement.hh src/kivi_expressions/literal.hh src/kivi_expressions/unary_operation.hh src/kivi_expressions/parameter_list.hh)
+        src/kivi_expressions/binary_operation.hh
+        src/kivi_expressions/comparison_operation.hh
+        src/kivi_expressions/literal.hh
+        src/kivi_expressions/unary_operation.hh
+        src/kivi_expressions/parameter_list.hh
+        src/kivi_expressions/equality.hh
+        src/kivi_expressions/inequality.hh
+        src/kivi_expressions/arithmetic_operation.hh
+        src/kivi_expressions/sequence.hh)
 
 target_include_directories(kivi_expressions PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
+
+target_link_libraries(kivi_expressions PRIVATE util)
+target_link_libraries(kivi_expressions PRIVATE ast)

@@ -17,17 +17,17 @@ namespace syntax_analyzer
 	 * Numerical expression
 	 * @brief Represents a number literal
 	 */
-	class numerical_expression : I_literal
+	class numerical_lit : I_literal
 	{
-		explicit numerical_expression(long f_num) : num(f_num)
+		explicit numerical_lit(long f_num) : num(f_num)
 		{
 		}
 
-		explicit numerical_expression(int f_num) : num(f_num)
+		explicit numerical_lit(int f_num) : num(f_num)
 		{
 		}
 
-		explicit numerical_expression(double f_num) : num(f_num)
+		explicit numerical_lit(double f_num) : num(f_num)
 		{
 		}
 
