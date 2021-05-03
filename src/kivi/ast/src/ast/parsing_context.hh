@@ -22,13 +22,29 @@ namespace syntax_analyzer
 	class parsing_context
 	{
 	 private:
+		/// All parsed scopes
 		std::vector<std::map<std::string, identifier>> m_all_scopes;
+
+		/// All parsed functions
 		std::vector<function> m_all_functions;
+
+		/// The current function that is being processed
 		function m_this_function;
+
+		/// The current number of "registers" being used
 		int m_registers = 0;
 
-		const char* m_lexer_cursor;
-		yy::location m_yy_location;
+		/**
+		 * NB: The following 2 fields are public, because they are required by bison and re2c in order to keep track
+		 * of the current location of the concrete process being executed. Because they are publicly visible, they do
+		 * not follow the standard convention for field names - no "m_" prefix, and can be used without getters.
+		 */
+	 public:
+		/// The location which is used and updated by the re2c module
+		const char* lexer_cursor;
+
+		/// The location which is used and updated by the bison module
+		yy::location yy_location;
 
 	 public:
 
@@ -44,10 +60,10 @@ namespace syntax_analyzer
 		 * @param filename the "location" var for the parser
 		 */
 		parsing_context(const char* code_beginning, std::string* filename)
-			: m_lexer_cursor(code_beginning)
+			: lexer_cursor(code_beginning)
 		{
-			m_yy_location.begin.filename = filename;
-			m_yy_location.end.filename = filename;
+			yy_location.begin.filename = filename;
+			yy_location.end.filename = filename;
 		}
 
 	 public:
@@ -83,7 +99,7 @@ namespace syntax_analyzer
 		 * @return The newly created local variable
 		 */
 		void
-		define_local(const std::string &name);
+		define_local(const std::string& name);
 
 		/**
 		 * @brief Defines a new function
@@ -91,7 +107,7 @@ namespace syntax_analyzer
 		 * @return The newly created function
 		 */
 		void
-		define_function(const std::string &name);
+		define_function(const std::string& name);
 
 		/**
 		 * @brief Defines a new parameter identifier
@@ -99,7 +115,7 @@ namespace syntax_analyzer
 		 * @return The newly created parameter
 		 */
 		void
-		define_parameter(const std::string &name);
+		define_parameter(const std::string& name);
 
 		/**
 		 * @brief Creates a new local variable with is going to be used as a IR register label
@@ -116,7 +132,7 @@ namespace syntax_analyzer
 		 * @throws In case the identifier has not been already defined, an exception is thrown
 		 */
 		void
-		use_identifier(const std::string &name) const;
+		use_identifier(const std::string& name) const;
 
 		/**
 		 * @brief Defines a function and associated expression body
@@ -125,7 +141,7 @@ namespace syntax_analyzer
 		 * @return void
 		 */
 		void
-		define_function_body(std::string &name, I_expression&& body);
+		define_function_body(std::string& name, I_expression&& body);
 
 	 public:
 		///
@@ -136,25 +152,20 @@ namespace syntax_analyzer
 		{
 			return m_all_scopes;
 		}
+
 		const std::vector<function>& all_functions() const
 		{
 			return m_all_functions;
 		}
+
 		const function& this_function() const
 		{
 			return m_this_function;
 		}
+
 		int registers() const
 		{
 			return m_registers;
-		}
-		const char* lexer_cursor() const
-		{
-			return m_lexer_cursor;
-		}
-		const yy::location& yy_location() const
-		{
-			return m_yy_location;
 		}
 
 	};
