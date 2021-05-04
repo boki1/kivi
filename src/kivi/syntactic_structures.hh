@@ -291,7 +291,7 @@ namespace syntax_analyzer
 		/// Defines a new function with the given name. The value
 		/// of the `index_within` field is set to the number of already
 		/// processed functions (`function_list.size()`).
-		expression define_function(const std::string& name);
+		identifier define_function(const std::string& name);
 
 		/// `expression define_parameter (const std::string &name)`
 		/// Defines a new parameter with the given name. The value
@@ -307,7 +307,7 @@ namespace syntax_analyzer
 		/// Use an arbitrary identifier with given name. If expression with
 		/// this name is found it gets returned, otherwise an exception is
 		/// thrown for undefiened identifier.
-		[[nodiscard]] expression use_identifier(const std::string& name) const;
+		[[nodiscard]] const identifier use_identifier(const std::string& name) const;
 
 		/// `void add_function_with_block (...)`
 		/// Define a function with given name and with given expression.

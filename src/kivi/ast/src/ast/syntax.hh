@@ -91,10 +91,10 @@ namespace syntax_analyzer
 	{
 	 private:
 		/// The name of the function
-		identifier m_name;
+		std::string m_name;
 
 		/// The body of the function
-		I_expression body;
+		I_statement m_body;
 
 		/// The number of local variables defined in the function body
 		int m_locals{};
@@ -105,22 +105,41 @@ namespace syntax_analyzer
 	 public:
 		function() = default;
 
-		function(identifier name, /* expression body, */ int locals, int parameters)
-			: m_name(std::move(name)), m_locals(locals), m_parameters(parameters)
+		function(const std::string& name, const I_statement& body, int locals, int parameters)
+			: m_name{ name },
+			  m_locals{ locals },
+			  m_parameters{ parameters },
+			  m_body{ body }
 		{
 		}
+
+		function(const std::string& name, const I_statement& body)
+			: m_name{ name },
+			  m_body{ body },
+			  m_parameters{},
+			  m_locals{}
+		{
+		}
+
 	 public:
-		const identifier& name() const
+		const std::string& name() const noexcept
 		{
 			return m_name;
 		}
-		int locals() const
+
+		int locals() const noexcept
 		{
 			return m_locals;
 		}
-		int parameters() const
+
+		int parameters() const noexcept
 		{
 			return m_parameters;
+		}
+
+		const I_statement& body() const noexcept
+		{
+			return m_body;
 		}
 
 	};

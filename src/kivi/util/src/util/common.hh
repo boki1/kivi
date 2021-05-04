@@ -20,7 +20,7 @@
  */
 #define Unimplemented() \
     do {                \
-        std::cerr << __FILE__ << ":" << __LINE__ << "Use of unimplemented function"; \
+        std::cerr << std::endl << __FILE__ << ":" << __LINE__ << "Use of unimplemented function" << std::endl; \
     } while(0);
 
 #endif //KIVI_SRC_KIVI_UTIL_COMMON_HH_

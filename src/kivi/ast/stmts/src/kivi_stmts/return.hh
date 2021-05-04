@@ -35,6 +35,8 @@ namespace syntax_analyzer
 		{
 		}
 
+		return_stmt() = default;
+
 	 public:
 		const value& retval() const noexcept
 		{

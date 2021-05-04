@@ -44,6 +44,12 @@ namespace syntax_analyzer
 		{
 		}
 
+		template<typename ...T>
+		explicit compound_stmt(T&& ... args)
+			: m_body({ std::forward<T>(args)... })
+		{
+		}
+
 	 public:
 
 		const std::vector<I_statement>& body() const noexcept

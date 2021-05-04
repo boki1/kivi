@@ -92,7 +92,7 @@ namespace syntax_analyzer
 		 * @note Also a check is made whether this identifier has already been created. * @throws A syntax error is thrown if a duplicate is seen.
 		 * @return New identifier
 		 */
-		identifier
+		const identifier &
 		define_identifier(const std::string& name, identifier&& ident);
 
 		/**
@@ -108,7 +108,7 @@ namespace syntax_analyzer
 		 * @param name The name of the function
 		 * @return The newly created function
 		 */
-		function
+		identifier
 		define_function(const std::string& name);
 
 		/**
@@ -122,9 +122,9 @@ namespace syntax_analyzer
 		/**
 		 * @brief Creates a new local variable with is going to be used as a IR register label
 		 * @return The newly created local variable
-		 * @param The id number of the just defined "register" variable
+		 * @param The newly defined "register" variable
 		 */
-		int
+		identifier
 		define_register();
 
 		/**
@@ -133,16 +133,16 @@ namespace syntax_analyzer
 		 * @return Reference to the found identifier
 		 * @throws In case the identifier has not been already defined, an exception is thrown
 		 */
-		identifier&
+		identifier
 		use_identifier(const std::string& name) const;
 
 		/**
 		 * @brief Defines a function and associated expression body
 		 * @param name the name of the function
 		 * @param body the function body
-		 * @return The function
+		 * @return Reference to the newly placed function
 		 */
-		function
+		const function&
 		define_function_body(const std::string& name, I_statement&& body);
 
 	 public:
@@ -152,6 +152,10 @@ namespace syntax_analyzer
 
 		const std::vector<std::map<std::string, identifier>>& all_scopes() const
 		{
+			return m_all_scopes;
+		}
+
+		std::vector<std::map<std::string, identifier> >& all_scopes_mut() {
 			return m_all_scopes;
 		}
 
