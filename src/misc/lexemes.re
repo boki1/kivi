@@ -39,14 +39,14 @@ yylex (sa::parsing_context &ctx)
 
     /// Whitespace and comments:
     "\000"                  { return make_token(kp::make_END); }
-    "\r\n" | [\r\n]         { ctx.location.lines(); return yylex(ctx); }
+    "\r\n" | [\r\n]         { ctx.yy_location.lines(); return yylex(ctx); }
     "//" [^\r\n]*           { return yylex(ctx); }
-    [\t\v\b\f ]             { ctx.location.columns(); return yylex(ctx); }
+    [\t\v\b\f ]             { ctx.yy_location.columns(); return yylex(ctx); }
 
     /// Multi-char operators and any other character (either an operator or an
-    "<>"                    { make_token(kp::make_NE); }
-    "=="                    { make_token(kp::make_EQ); }
-    .                       { make_token(kp::symbol_type(kivi::token_type(ctx.lexer_cursor[-1] & 0xFF))); } //< Return that character
+    "<>"                    { return make_token(kp::make_NE); }
+    "=="                    { return make_token(kp::make_EQ); }
+    .                       { return make_token([] (auto...s) { return kp::symbol_type(s...); }, kp::token_type(ctx.lexer_cursor[-1] & 0xFF)); }
     */
 }
 

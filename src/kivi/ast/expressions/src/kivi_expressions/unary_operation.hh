@@ -13,33 +13,30 @@
 namespace syntax_analyzer
 {
 
-	/**
-	 * A unary operation representation via an abstract class
-	 */
-	class unary_operation : I_expression
-	{
-	 private:
+/**
+ * A unary operation representation via an abstract class
+ */
+class unary_operation : public I_expression
+{
+  private:
+    /// The operand of operation
+    value m_operand;
 
-		/// The operand of operation
-		value m_operand;
+  public:
+    unary_operation () = default;
 
-	 public:
-		unary_operation() = default;
+    unary_operation (value operand) : m_operand (operand) {}
 
-		unary_operation(value operand)
-			: m_operand(operand)
-		{
-		}
+    virtual ~unary_operation () = default;
 
-		virtual ~unary_operation() = default;
-
-	 public:
-		const value& operand() const noexcept
-		{
-			return m_operand;
-		}
-	};
+  public:
+    const value &
+    operand () const noexcept
+    {
+	return m_operand;
+    }
+};
 
 }
 
-#endif //KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_UNARY_OPERATION_HH_
+#endif // KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_UNARY_OPERATION_HH_

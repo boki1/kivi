@@ -9,35 +9,44 @@
 #include <ast/syntax.hh>
 #include <utility>
 
-#include "parameter_list.hh"
 #include "base.hh"
+#include "parameter_list.hh"
 
 namespace syntax_analyzer
 {
-	class function_call_expr : I_expression
+	class function_call_expr : public I_expression
 	{
 	 private:
-		identifier m_ident;
-//		parameter_list_expr m_params;
+		value m_ident;
+		parameter_list_expr m_params;
 
 	 public:
 		function_call_expr() = default;
 
-		function_call_expr(identifier ident/*, const parameter_list_expr &params */ )
-			: m_ident(std::move(ident)) /*, m_params(params) */
+		explicit function_call_expr(const value& val)
+			: m_ident(val),
+			  m_params()
 		{
 		}
 
+		function_call_expr(const value &val, parameter_list_expr parlist)
+			: m_ident(val),
+			  m_params(std::move(parlist))
+		{}
+
 	 public:
-		const identifier& ident()
+		const value&
+		ident()
 		{
 			return m_ident;
 		}
 
-//		const parameter_list_expr &params() const noexcept {
-//			return m_params;
-//		}
+		const parameter_list_expr&
+		params() const noexcept
+		{
+			return m_params;
+		}
 	};
 }
 
-#endif //KIVI_SRC_KIVI_EXPRESSIONS_FUNCTION_CALL_HH_
+#endif // KIVI_SRC_KIVI_EXPRESSIONS_FUNCTION_CALL_HH_

@@ -19,7 +19,7 @@ namespace syntax_analyzer
 	 * An interface from which all concrete implementations of
 	 * expression derive.
 	 */
-	class I_expression : I_evaluable_syntactic_structure
+	class I_expression : public I_evaluable_syntactic_structure
 	{
 	 public:
 

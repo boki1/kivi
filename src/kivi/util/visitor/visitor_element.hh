@@ -1,7 +1,3 @@
-//
-// Created by boki on 30.04.21 г..
-//
-
 #ifndef KIVI_SRC_KIVI_UTIL_VISITER_ELEMENT_HH_
 #define KIVI_SRC_KIVI_UTIL_VISITER_ELEMENT_HH_
 

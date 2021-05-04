@@ -5,3 +5,5 @@ src/autogen/kivi_parser/*
 cmake-build-debug/
 .idea/
 CMakeCache.txt
+
+.cache/

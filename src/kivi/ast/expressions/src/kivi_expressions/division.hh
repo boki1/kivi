@@ -16,12 +16,12 @@ namespace syntax_analyzer
 	/**
 	 * @brief An expression which represents the division operation
 	 */
-	class division_expression : I_arithmetic_operation
+	class division_expr : public I_arithmetic_operation
 	{
 	 public:
-		division_expression() = default;
+		division_expr() = default;
 
-		division_expression(const value& lhs, const value& rhs)
+		division_expr(const value& lhs, const value& rhs)
 			: I_arithmetic_operation(lhs, rhs)
 		{
 		}

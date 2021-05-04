@@ -14,6 +14,8 @@
 #include <kivi_parser/location.hh>
 #include <kivi_parser/stack.hh>
 
+#include <kivi_stmts/statement.hh>
+
 #include "syntax.hh"
 
 namespace syntax_analyzer
@@ -90,7 +92,7 @@ namespace syntax_analyzer
 		 * @note Also a check is made whether this identifier has already been created. * @throws A syntax error is thrown if a duplicate is seen.
 		 * @return New identifier
 		 */
-		const identifier&
+		identifier
 		define_identifier(const std::string& name, identifier&& ident);
 
 		/**
@@ -98,7 +100,7 @@ namespace syntax_analyzer
 		 * @param name The name of variable
 		 * @return The newly created local variable
 		 */
-		void
+		identifier
 		define_local(const std::string& name);
 
 		/**
@@ -106,7 +108,7 @@ namespace syntax_analyzer
 		 * @param name The name of the function
 		 * @return The newly created function
 		 */
-		void
+		function
 		define_function(const std::string& name);
 
 		/**
@@ -114,34 +116,34 @@ namespace syntax_analyzer
 		 * @param name The name of the identifier
 		 * @return The newly created parameter
 		 */
-		void
+		identifier
 		define_parameter(const std::string& name);
 
 		/**
 		 * @brief Creates a new local variable with is going to be used as a IR register label
 		 * @return The newly created local variable
-		 * @param void
+		 * @param The id number of the just defined "register" variable
 		 */
-		void
+		int
 		define_register();
 
 		/**
 		 * @brief Fetch the already defined identifier by a given name
 		 * @param name The name of the identifier
-		 * @return The found identifier
+		 * @return Reference to the found identifier
 		 * @throws In case the identifier has not been already defined, an exception is thrown
 		 */
-		void
+		identifier&
 		use_identifier(const std::string& name) const;
 
 		/**
 		 * @brief Defines a function and associated expression body
 		 * @param name the name of the function
 		 * @param body the function body
-		 * @return void
+		 * @return The function
 		 */
-		void
-		define_function_body(std::string& name, I_expression&& body);
+		function
+		define_function_body(const std::string& name, I_statement&& body);
 
 	 public:
 		///

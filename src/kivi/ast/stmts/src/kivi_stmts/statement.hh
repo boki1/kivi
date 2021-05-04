@@ -16,7 +16,7 @@ namespace syntax_analyzer
 	 *
 	 * All statement implement this.
 	 */
-	class I_statement : I_syntactic_structure
+	class I_statement : public I_syntactic_structure
 	{
 
 	 public:

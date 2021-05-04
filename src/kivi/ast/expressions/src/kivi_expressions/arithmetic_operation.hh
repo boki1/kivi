@@ -15,7 +15,7 @@ namespace syntax_analyzer
 	/**
 	 * An arithmetic operation
 	 */
-	class I_arithmetic_operation : binary_operation
+	class I_arithmetic_operation : public binary_operation
 	{
 	 public:
 		I_arithmetic_operation() = default;
@@ -23,6 +23,11 @@ namespace syntax_analyzer
 		I_arithmetic_operation(const value& lhs, const value& rhs)
 			: binary_operation(lhs, rhs)
 		{
+		}
+
+	 public:
+		I_arithmetic_operation operator=(const I_expression &rhs) {
+			return (*this);
 		}
 	};
 }

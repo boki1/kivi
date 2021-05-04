@@ -15,32 +15,31 @@
 namespace syntax_analyzer
 {
 
-	/**
-	 * @brief A function parameter list expression
-	 */
-	class parameter_list_expr : I_expression
-	{
-	 private:
-		/// The parameters themselves. Each one is kept as a value instance
-		std::vector<value> m_params;
+/**
+ * @brief A function parameter list expression
+ */
+class parameter_list_expr : public I_expression
+{
+  private:
+    /// The parameters themselves. Each one is kept as a value instance
+    std::vector<value> m_params{};
 
-	 public:
+  public:
+    parameter_list_expr () = default;
 
-		parameter_list_expr() = default;
+    explicit parameter_list_expr (std::vector<value> params)
+	: m_params (std::move (params))
+    {
+    }
 
-		parameter_list_expr(std::vector<value> params)
-			: m_params(std::move(params))
-		{
-		}
-
-	 public:
-		const std::vector<value>& params() const noexcept
-		{
-			return m_params;
-		}
-
-	};
+  public:
+    const std::vector<value> &
+    params () const noexcept
+    {
+	return m_params;
+    }
+};
 
 }
 
-#endif //KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_PARAMETER_LIST_HH_
+#endif // KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_PARAMETER_LIST_HH_

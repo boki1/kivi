@@ -12,26 +12,28 @@
 
 namespace syntax_analyzer
 {
-	/**
-	 * An expression which represents modular division
-	 */
-	class modular_division_expression : I_arithmetic_operation
-	{
-	 public:
-		modular_division_expression() = default;
+/**
+ * An expression which represents modular division
+ */
+class modular_division_expr : public I_arithmetic_operation
+{
+  public:
+    modular_division_expr () = default;
 
-		modular_division_expression(value lhs, value rhs)
-			: I_arithmetic_operation(lhs, rhs)
-		{
-		}
+    modular_division_expr (value lhs, value rhs)
+	: I_arithmetic_operation (lhs, rhs)
+    {
+    }
 
-	 public:
-		std::string to_string() const noexcept override
-		{
-//			return std::to_string(left()) + " % " + std::to_string(right());
-			return "TODO";
-		}
-	};
+  public:
+    std::string
+    to_string () const noexcept override
+    {
+	//			return std::to_string(left()) + " % " +
+	//std::to_string(right());
+	return "TODO";
+    }
+};
 }
 
-#endif //KIVI_SRC_KIVI_EXPRESSIONS_MODULAR_DIVISION_HH_
+#endif // KIVI_SRC_KIVI_EXPRESSIONS_MODULAR_DIVISION_HH_

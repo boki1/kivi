@@ -17,12 +17,12 @@ namespace syntax_analyzer
 	 * @brief A expression which represents the addition operation.
 	 * @note Directly derives from `binary_operation`
 	 */
-	class addition_expr : binary_operation
+	class addition_expr : public binary_operation
 	{
 	 public:
 		addition_expr() = default;
 
-		addition_expr(value left, value right)
+		addition_expr(const value &left, const value &right)
 			: binary_operation(left, right)
 		{
 		}

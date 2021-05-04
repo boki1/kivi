@@ -12,15 +12,16 @@
 namespace syntax_analyzer
 {
 
-	class nop_expression : I_expression
-	{
-	 public:
-		std::string to_string() const noexcept override
-		{
-			return "nop";
-		}
-	};
+class nop_expr : public I_expression
+{
+  public:
+    std::string
+    to_string () const noexcept override
+    {
+	return "nop";
+    }
+};
 
 }
 
-#endif //KIVI_SRC_KIVI_EXPRESSIONS_NOP_HH_
+#endif // KIVI_SRC_KIVI_EXPRESSIONS_NOP_HH_

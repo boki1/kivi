@@ -21,7 +21,7 @@ namespace syntax_analyzer
 	 * if _condition_: _statement_
 	 * ```
 	 */
-	class if_stmt : I_statement
+	class if_stmt : public I_statement
 	{
 	 private:
 		/// The condition required to be evaluated to true in order to execute the body
@@ -36,8 +36,6 @@ namespace syntax_analyzer
 			  m_than(than)
 		{
 		}
-
-		if_stmt() = default;
 
 	 public:
 		const value& condition() const noexcept

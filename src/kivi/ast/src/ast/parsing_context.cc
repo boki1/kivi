@@ -21,36 +21,44 @@ namespace syntax_analyzer
 		Unimplemented();
 	}
 
-	const identifier& parsing_context::define_identifier(const std::string& name, identifier&& ident)
+	identifier parsing_context::define_identifier(const std::string& name, identifier&& ident)
+	{
+		Unimplemented();
+		return identifier();
+	}
+
+	function parsing_context::define_function_body(const std::string& name, I_statement&& body)
+	{
+		Unimplemented();
+		return function();
+	}
+
+	identifier& parsing_context::use_identifier(const std::string& name) const
 	{
 		Unimplemented();
 	}
 
-	void parsing_context::define_function_body(std::string& name, I_expression&& body)
+	identifier parsing_context::define_local(const std::string& name)
 	{
 		Unimplemented();
-	}
-	void parsing_context::use_identifier(const std::string& name) const
-	{
-		Unimplemented();
-	}
-	void parsing_context::define_local(const std::string& name)
-	{
-		Unimplemented();
+		return identifier();
 	}
 
-	void parsing_context::define_function(const std::string& name)
+	function parsing_context::define_function(const std::string& name)
 	{
 		Unimplemented();
+		return function();
 	}
 
-	void parsing_context::define_parameter(const std::string& name)
+	identifier parsing_context::define_parameter(const std::string& name)
 	{
 		Unimplemented();
+		return identifier();
 	}
 
-	void parsing_context::define_register()
+	int parsing_context::define_register()
 	{
 		Unimplemented();
+		return -1;
 	}
 }

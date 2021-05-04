@@ -81,3 +81,24 @@ from higher level client code
         ...
     };
     ```
+  
+ ----------------
+ ### Includes
+ - Include order is the following:
+    1. Standard library
+    2. Other external libraries
+    3. Local libraries
+    4. Local headers
+ - **Additional:** New line between each category may help :)
+    
+    Example
+    ```c++
+   #include <algorithm>
+
+   #include <boost/...>
+
+   #include <local_lib/...>
+
+   #include <blah.hh>
+   
+    ```

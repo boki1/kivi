@@ -13,39 +13,36 @@
 namespace syntax_analyzer
 {
 
-	/**
-	 * Numerical expression
-	 * @brief Represents a number literal
-	 */
-	class numerical_lit : I_literal
-	{
-		explicit numerical_lit(long f_num) : num(f_num)
-		{
-		}
+/**
+ * Numerical expression
+ * @brief Represents a number literal
+ */
+class numerical_lit : public I_literal
+{
+  public:
+    explicit numerical_lit (long f_num) : num (f_num) {}
 
-		explicit numerical_lit(int f_num) : num(f_num)
-		{
-		}
+    explicit numerical_lit (int f_num) : num (f_num) {}
 
-		explicit numerical_lit(double f_num) : num(f_num)
-		{
-		}
+    explicit numerical_lit (double f_num) : num (f_num) {}
 
-		std::string to_string() const noexcept override
-		{
-			return std::to_string(get_num());
-		}
+    std::string
+    to_string () const noexcept override
+    {
+	return std::to_string (get_num ());
+    }
 
-		long get_num() const noexcept
-		{
-			return num;
-		}
+    long
+    get_num () const noexcept
+    {
+	return num;
+    }
 
-	 private:
-		/// The contained numerical literal value
-		const long num;
-	};
+  private:
+    /// The contained numerical literal value
+    const long num;
+};
 
 }
 
-#endif //KIVI_SRC_KIVI_EXPRESSIONS_NUMERICAL_HH_
+#endif // KIVI_SRC_KIVI_EXPRESSIONS_NUMERICAL_HH_

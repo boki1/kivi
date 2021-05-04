@@ -22,16 +22,15 @@ namespace syntax_analyzer
 	 * return <value>;
 	 * ```
 	 */
-	class return_stmt : I_statement
+	class return_stmt : public I_statement
 	{
 	 private:
 		/// The value returned
 		value m_retval;
 
 	 public:
-		return_stmt() = default;
 
-		return_stmt(const value& retval)
+		explicit return_stmt(const value& retval)
 			: m_retval(retval)
 		{
 		}

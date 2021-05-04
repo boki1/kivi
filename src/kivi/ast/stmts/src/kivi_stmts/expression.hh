@@ -23,16 +23,14 @@ namespace syntax_analyzer
 	 * "string";
 	 * ```
 	 */
-	class expression_stmt : I_statement
+	class expression_stmt : public  I_statement
 	{
 	 private:
 		/// The actual expression. Since all expressions can be evaluated, store a value.
 		value m_expr;
 
 	 public:
-		expression_stmt() = default;
-
-		expression_stmt(const value& expr)
+		explicit expression_stmt(const value& expr)
 			: m_expr(expr)
 		{
 		}

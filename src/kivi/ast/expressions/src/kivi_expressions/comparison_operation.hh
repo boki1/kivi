@@ -12,7 +12,7 @@
 
 namespace syntax_analyzer
 {
-	class I_comparison_operation : binary_operation
+	class I_comparison_operation : public binary_operation
 	{
 	 protected:
 		/// Stores the result from the comparison
@@ -29,6 +29,10 @@ namespace syntax_analyzer
 
 		virtual ~I_comparison_operation() = default;
 
+		I_comparison_operation operator=(const I_expression &rhs) {
+			return (*this);
+		}
+
 	 public:
 
 		virtual /**
@@ -41,7 +45,7 @@ namespace syntax_analyzer
 		 * 		 					we compare identifiers the values of lhs and rhs does not get modified.
 		 * @note This is the "low-level" compare function. It gets called from the "high-level" compare functions
 		 * defines in the deriving classes which map the result given from this one to the specific. For example the
-		 * not equality operator calls this function and than reverts the result.
+		 * not equality_expr operator calls this function and than reverts the result.
 		 */
 		int compare() const noexcept
 		{

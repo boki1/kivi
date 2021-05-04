@@ -1,3 +1,8 @@
+/**
+ * @file syntax.hh
+ * @brief
+ */
+
 #ifndef KIVI_SRC_KIVI_SYNTAX_HH_
 #define KIVI_SRC_KIVI_SYNTAX_HH_
 
@@ -51,13 +56,12 @@ namespace syntax_analyzer
 	{
 	 private:
 		identifier_class m_type = identifier_class::Undefined;
-		std::size_t m_index{};
 		std::string m_name;
 
 	 public:
 		identifier() = default;
-		identifier(identifier_class type, std::size_t index, std::string name)
-			: m_name(std::move(name)), m_index(index), m_type(type)
+		identifier(identifier_class type, std::string name)
+			: m_name(std::move(name)), m_type(type)
 		{
 		}
 
@@ -71,10 +75,7 @@ namespace syntax_analyzer
 		{
 			return m_type;
 		}
-		size_t index() const
-		{
-			return m_index;
-		}
+
 		const std::string& name() const
 		{
 			return m_name;

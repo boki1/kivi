@@ -1,19 +1,54 @@
 %language "c++"
 %define api.parser.class { kivi_parser }
 %define api.value.type variant
+%define api.token.constructor
 %define parse.assert
 %define parse.error verbose
-%define api.token.constructor
-%locations   // <--
-
+%locations // <--
 %code requires {
 
+// The context kept during syntactical analysis
 #include <ast/parsing_context.hh>
-using namespace syntax_analyzer;
+#include <kivi_expressions/base.hh>
+
+#include <kivi_expressions/assignment.hh>
+#include <kivi_expressions/sequence.hh>
+
+// Arithmetic operations
+#include <kivi_expressions/addition.hh>
+#include <kivi_expressions/division.hh>
+#include <kivi_expressions/modular_division.hh>
+#include <kivi_expressions/multiplication.hh>
+#include <kivi_expressions/negation.hh>
+
+// Comparison operations
+#include <kivi_expressions/equality.hh>
+#include <kivi_expressions/inequality.hh>
+
+// Expression literals
+#include <kivi_expressions/identifier.hh>
+#include <kivi_expressions/nop.hh>
+#include <kivi_expressions/numerical.hh>
+#include <kivi_expressions/string.hh>
+
+// Function call - related
+#include <kivi_expressions/function_call.hh>
+#include <kivi_expressions/parameter_list.hh>
+
+#include <kivi_stmts/compound.hh>
+#include <kivi_stmts/expression.hh>
+#include <kivi_stmts/if.hh>
+#include <kivi_stmts/return.hh>
+#include <kivi_stmts/statement.hh>
+#include <kivi_stmts/while.hh>
+#include <kivi_stmts/var.hh>
+
+namespace sa = syntax_analyzer;
 
 } //%code requires
 
-%param { parsing_context &ctx }
+
+%param { syntax_analyzer::parsing_context &ctx }
 
 %token END 0
 %token VAR "auto" IF "if" WHILE "while" RETURN "return"
@@ -23,40 +58,48 @@ using namespace syntax_analyzer;
 // Precedence and associativity
 %left ','
 %right '='
-%left "<>" "=="
+%left "<>" "==" '<' '>' "<=" ">="
 %left '+' '-'
 %left '*' '/' '%'
 %left '('
 
-%type<long>        NUMBER_LITERAL
-%type<std::string> IDENTIFIER STRING_LITERAL
-%type<std::string> Safe_identifier
-%type<expression>  Statement Expression Expressions Comma_sep_expressions Var_definition Compound_statement Parameter_list
-%type<expression>  Comparison_operation Arithmetic_operation Unary_operation Function_call_operation
-%type<expression>  Safe_expression Safe_expressions Safe_statement Safe_parentesised_expression
+/*
+ * Note this "IDENTIFIER" __has nothing__ to do with the identifier class
+ * defined in <ast/syntax.hh>
+ * @bug ??? `type<sa::sequence> Comma_sep_expressions`
+ */
+%type<int> 				NUMBER_LITERAL
+%type<std::string> 			STRING_LITERAL
+%type<std::string> 			IDENTIFIER Safe_identifier
+%type<sa::function_call_expr> 		Function_call
+%type<sa::parameter_list_expr>  	Parameter_list
+%type<sa::I_statement> 			Statement Safe_statement
+%type<sa::I_expression> 		Expression Safe_expression
+%type<sa::sequence> 			Safe_expressions Expressions
+%type<sa::unary_operation> 		Unary_operation
+%type<sa::var_stmt> 			Var_definition
+%type<sa::compound_stmt> 		Compound_statement
+%type<sa::parameter_list_expr> 		Safe_parenthesised_expression Comma_sep_expressions
+%type<sa::I_comparison_operation> 	Comparison_operation
+%type<sa::I_arithmetic_operation> 	Arithmetic_operation
 %%
 
-Program:
-    { ctx.enter_scope(); }
-	Functions {
-        ctx.exit_scope();
-    }
-;
+Program: { ctx.enter_scope (); } Functions { ctx.exit_scope (); };
 
-Functions:
+Functions :
   /* empty */
 | Functions Single_function;
 
 Single_function:
-  Safe_identifier {
-	ctx.define_function($1);
-	ctx.enter_scope();
-  }
-  Parameter_list Safe_colon
-  Safe_statement {
-	ctx.add_function_with_block(std::move($1), std::move($5));
-	ctx.exit_scope();
-  };
+	Safe_identifier {
+		ctx.define_function ($1);
+		ctx.enter_scope ();
+	}
+	Parameter_list Safe_colon Safe_statement {
+		ctx.define_function_body (std::move ($1), std::move ($5));
+		ctx.exit_scope ();
+	}
+;
 
 Parameter_list:
   /* empty */
@@ -64,222 +107,108 @@ Parameter_list:
 ;
 
 Single_param:
-  // One or more; comma-delimited
-  Single_param ',' Safe_identifier
-  	{ ctx.define_parameter($3); }
-| IDENTIFIER
-	{ ctx.define_parameter($1); }
+  Single_param ',' Safe_identifier    			{ ctx.define_parameter ($3); }
+| IDENTIFIER                            		{ ctx.define_parameter ($1); }
 ;
 
 Statement:
-  Compound_statement Safe_closing_brace {
-  	$$ = std::move($1);
- 	ctx.exit_scope();
-  }
-| IF Safe_expression Safe_colon Safe_statement {
-	$$ = new_compare_and_expr(std::move($2), std::move($4));
-  }
-| WHILE Safe_expression ':' Safe_statement {
-	$$ = new_compare_loop_expr(std::move($2), std::move($4));
-  }
-| RETURN Safe_expression Safe_semicolon {
-	$$ = new_retrn_expr(std::move($2));
-  }
-| Expressions Safe_semicolon {
-	$$ = std::move($1);
-  }
-| ';' { }
+  Compound_statement Safe_closing_brace 		{ $<sa::I_statement>$ = std::move ($1); ctx.exit_scope (); }
+| IF Safe_expression Safe_colon Safe_statement 		{ $<sa::I_statement>$ = sa::if_stmt (std::move ($2), std::move ($4)); }
+| WHILE Safe_expression ':' Safe_statement 		{ $<sa::I_statement>$ = sa::while_stmt (std::move ($2), std::move ($4)); }
+| RETURN Safe_expression Safe_semicolon 		{ $<sa::I_statement>$ = sa::return_stmt (std::move ($2)); }
+| Expression Safe_semicolon 				{ $<sa::I_statement>$ = sa::expression_stmt(std::move ($1)); }
+| ';' 							{ }
 ;
 
 Comma_sep_expressions:
-  Safe_expression {
-    $$ = new_expression_sequence_expr(std::move($1));
-  }
-  // One or more; comma-delimited
-| Comma_sep_expressions ',' Safe_expression { $$ = std::move($1);
-    $$.add_parameter(std::move($3));
-  }
+  Safe_expression 				{ $<sa::sequence>$ = sa::sequence (std::move ($1)); }
+| Comma_sep_expressions ',' Safe_expression 	{ $<sa::sequence>$ = std::move ($<sa::sequence>1); $<sa::sequence>$.append (std::move ($<sa::I_expression>3)); }
 ;
 
 Var_definition:
-    VAR Safe_identifier '=' Safe_expression {
-        $$ = expression(ctx.define_local($2)).move_expr(std::move($4));
-    }
+  VAR Safe_identifier '=' Safe_expression 	{ $<sa::var_stmt>$ = sa::var_stmt(std::move($2), std::move($4)); }
 ;
 
 Compound_statement:
-  '{' {
-	$$ = new_expression_sequence_expr();
-	ctx.enter_scope();
-  }
-| Compound_statement Statement {
-	$$ = std::move($1);
-	$$.add_parameter(std::move($2));
-  }
+  '{'                             { $$ = sa::compound_stmt (); ctx.enter_scope (); }
+| Compound_statement Statement    { $$ = std::move ($1); $$.append (std::move ($2)); }
 ;
 
 Comparison_operation:
-  Expression "==" error {
-    $$ = std::move($1);
-  }
-| Expression "==" Expression {
-    $$ = new_equality_expr(std::move($1), std::move($3));
-  }
-| Expression "<>" error {
-    $$ = std::move($1);
-  }
-| Expression "<>" Expression {
-    $$ = new_equality_expr(new_equality_expr((std::move($1), std::move($3))), expression(0ul));
-  }
+  Expression "==" error 	{ $$ = std::move ($1); }
+| Expression "==" Expression 	{ $$ = sa::equality_expr (std::move ($1), std::move ($3)); }
+| Expression "<>" error 	{ $$ = std::move ($1); }
+| Expression "<>" Expression 	{ $$ = sa::inequality_expr (std::move ($1), std::move ($3)); }
 ;
 
 Arithmetic_operation:
-  Expression '+' error {
-    $$ = std::move($1);
-  }
-| Expression '+' Expression {
-    $$ = new_addition_expr(std::move($1), std::move($3));
-  }
-| Expression '-' error {
-    $$ = std::move($1);
-  }
-| Expression '-' Expression %prec '+' {
-    $$ = new_addition_expr(std::move($1), new_negation_expr(std::move($3)));
-  }
-| Expression '*' error {
-    $$ = std::move($1);
-  }
-| Expression '*' Expression {
-    $$ = new_multiplication_expr(std::move($1), std::move($3));
-  }
-//
-// TODO:
-// Make division by 0 a compiler time error
-//
-| Expression '/' error {
-    $$ = std::move($1);
-  }
-| Expression '/' Expression %prec '*' {
-    $$ = new_division_expr(std::move($1), std::move($3));
-  }
-| Expression '%' Expression %prec '*' {
-    $$ = new_modular_division_expr(std::move($1), std::move($3));
-  }
-| Expression '%' error {
-	$$ = std::move($1);
-  }
-| Expression '=' error {
-    $$ = std::move($1);
-  }
-| Expression '=' Expression {
-    $$ = expression(std::move($1).move_expr(std::move($3)));
-  }
+  Expression '+' error 				{ $$ = std::move ($1); }
+| Expression '+' Expression 	        	{ $$ = sa::addition_expr (std::move ($1), std::move ($3)); }
+| Expression '-' error 				{ $$ = std::move ($1); }
+| Expression '-' Expression %prec '+' 		{ $$ = sa::addition_expr (std::move ($1), sa::negation_expr (std::move ($3))); }
+| Expression '*' error 				{ $$ = std::move ($1); }
+| Expression '*' Expression 			{ $$ = sa::multiplication_expr (std::move ($1), std::move ($3));}
+| Expression '/' error  			{ $$ = std::move ($1); }
+| Expression '/' Expression %prec '*' 		{ $$ = sa::division_expr (std::move ($1), std::move ($3)); }
+| Expression '%' error 				{ $$ = std::move ($1); }
+| Expression '%' Expression %prec '*' 		{ $$ = sa::modular_division_expr (std::move ($1), std::move ($3)); }
+| Expression '=' error 				{ $$ = std::move ($1); }
+| Expression '=' Expression 			{ $$ = sa::assignment_expr (std::move($1), std::move($3)); }
 ;
 
 Unary_operation:
-  '-' Expression {
-    $$ = new_negation_expr(std::move($2));
-  }
-| '-' error { }
+  '-' Expression 			{ $$ = sa::negation_expr (std::move ($2)); }
+| '-' error 	 			{  }
 ;
 
-Function_call_operation:
-  Expression '(' ')' {
-    $$ = new_function_call_expr(std::move($1));
-  }
-| Expression '(' Comma_sep_expressions Safe_closing_parentesis {
-    $$ = new_function_call_expr(std::move($1));
-    $$.splice_parameter_list_with(std::move($3));
-  }
-| '(' Comma_sep_expressions Safe_closing_parentesis{
-    $$ = std::move($2);
-  }
+Function_call:
+  Expression '(' ')' 							{ $$ = sa::function_call_expr (std::move ($1)); }
+| Expression '(' Comma_sep_expressions Safe_closing_parenthesis  	{ $$ = sa::function_call_expr (std::move ($1), std::move ($3)); }
+
+// TODO:
+// Is that actually correct? Why was the "function_call" the params only?
+//| '(' Comma_sep_expressions Safe_closing_parenthesis 			{ $$ = std::move ($2); }
 ;
 
 Expressions:
-  Var_definition {
-    $$ = std::move($1);
-  }
-| Expression {
-    $$ = std::move($1);
-  }
-| Expression ',' Comma_sep_expressions {
-    $$ = new_expression_sequence_expr(std::move($1));
-    $$.splice_parameter_list_with(std::move($3));
-  }
+
+// TODO:
+// Is that correct? Why was the var_Def a "expressions"?
+// Var_definition				{ $$ = std::move ($1); } |
+
+  Expression					{ $$ = sa::sequence(std::move ($1)); }
+| Expression ',' Comma_sep_expressions  	{ $$ = sa::sequence(std::move ($1)); }
 ;
 
 Expression:
-  STRING_LITERAL {
-    $$ = expression(std::move($1));
-  }
-| NUMBER_LITERAL {
-    $$ = expression($1);
-  }
-| IDENTIFIER {
-    $$ = ctx.use_identifier($1);
-  }
-| Arithmetic_operation
-| Comparison_operation
-| Unary_operation
-| Function_call_operation
+  STRING_LITERAL 		{ $<sa::I_expression>$ = sa::string_lit (std::move ($1)); }
+| NUMBER_LITERAL 		{ $<sa::I_expression>$ = sa::numerical_lit ($1); }
+| IDENTIFIER 			{ $$ = dynamic_cast<sa::I_expression &>(ctx.use_identifier ($1)); }
+| Function_call         	{ $$ = std::move($<sa::function_call_expr>1); }
+| Arithmetic_operation  	{ $$ = std::move($1); }
+| Comparison_operation  	{ $$ = std::move($1); }
+| Unary_operation       	{ $$ = std::move($1); }
+| Expressions           	{ $$ = std::move($1); }
 ;
 
 //
 // Error handling and correction
 //
 
-Safe_identifier:
-  error { }
-| IDENTIFIER {
-    $$ = std::move($1);
-  }
-;
+Safe_identifier : error{} | IDENTIFIER { $$ = std::move ($1); };
 
-Safe_colon:
-  error { }
-| ':'
-;
+Safe_colon : error{} | ':';
 
-Safe_semicolon:
-  error { }
-| ';'
-;
+Safe_semicolon : error{} | ';';
 
-Safe_closing_brace:
-  error { }
-| '}'
-;
+Safe_closing_brace : error{} | '}';
 
-Safe_closing_parentesis:
-  error { }
-| ')'
-;
+Safe_closing_parenthesis : error{} | ')';
 
-Safe_statement:
-  error { }
-| Statement {
-    $$ = std::move($1);
-  }
-;
+Safe_statement : error{} | Statement { $$ = std::move ($1); };
 
-Safe_expression:
-  error { }
-| Expression {
-    $$ = std::move($1);
-  }
-;
+Safe_expression : error{} | Expression { $$ = std::move ($1); };
 
-Safe_expressions:
-  error { }
-| Expressions {
-    $$ = std::move($1);
-  }
-;
+Safe_expressions : error{} | Expressions { $$ = std::move ($1); };
 
-Safe_parentesised_expression:
-  error { }
-| '(' Safe_expressions Safe_closing_parentesis {
-    $$ = std::move($2);
-  }
-;
+Safe_parenthesised_expression : error{} | '(' Safe_expressions Safe_closing_parenthesis { $$ = std::move ($2); };

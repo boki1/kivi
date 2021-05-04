@@ -7,7 +7,8 @@ add_library(
         src/ast/parsing_context.cc
         src/ast/syntax.hh
         src/ast/syntactic_structure.hh
-)
+        src/ast/syntactic_structure.cc
+        src/ast/kivi_parser_error.cc)
 
 target_include_directories(ast PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
 

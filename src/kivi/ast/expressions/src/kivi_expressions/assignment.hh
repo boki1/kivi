@@ -7,23 +7,20 @@
 
 #include <ast/syntactic_structure.hh>
 
-#include "binary_operation.hh"
+#include "arithmetic_operation.hh"
 
 namespace syntax_analyzer
 {
 	/**
 	 * @brief An assignment operation
-	 * @note Directly derives the `binary_operation`
 	 * @warning Potential bug: `binary_operation` stores 2 `value`'s as copies and not the originally passed ones.
 	 * 			This is a problem since in order to affect the lhs, we need to keep a reference to it.
 	 */
-	class assignment_expr : binary_operation
+	class assignment_expr : public I_arithmetic_operation
 	{
 	 public:
-		assignment_expr() = default;
-
 		assignment_expr(const value& lvalue, const value& rvalue)
-			: binary_operation(lvalue, rvalue)
+			: I_arithmetic_operation(lvalue, rvalue)
 		{
 		}
 	};

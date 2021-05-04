@@ -29,6 +29,15 @@ namespace syntax_analyzer
 	{
 	 public:
 		virtual ~I_evaluable_syntactic_structure() = default;
+
+	 public:
+		explicit operator int() const noexcept;
+
+		int operator-(const I_evaluable_syntactic_structure &rhs) const noexcept;
+
+		bool operator==(const I_evaluable_syntactic_structure &rhs) const noexcept;
+
+		bool operator==(int rhs) const noexcept;
 	};
 
 	/**

@@ -30,7 +30,7 @@ namespace syntax_analyzer
 	 * }
 	 * ```
 	 */
-	class compound_stmt : I_statement
+	class compound_stmt : public I_statement
 	{
 	 private:
 		/// All contained statements
@@ -39,7 +39,7 @@ namespace syntax_analyzer
 	 public:
 		compound_stmt() = default;
 
-		compound_stmt(std::vector<I_statement> body)
+		explicit compound_stmt(std::vector<I_statement> body)
 			: m_body(std::move(body))
 		{
 		}

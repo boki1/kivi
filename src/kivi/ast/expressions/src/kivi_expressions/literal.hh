@@ -13,16 +13,16 @@
 namespace syntax_analyzer
 {
 
-	/**
-	 * An interface implemented by all expression literals -
-	 * numerical, string and identifier
-	 */
-	class I_literal : I_expression
-	{
-	 public:
-		virtual ~I_literal() = default;
-	};
+/**
+ * An interface implemented by all expression literals -
+ * numerical, string and identifier
+ */
+class I_literal : public I_expression
+{
+  public:
+    virtual ~I_literal () = default;
+};
 
 }
 
-#endif //KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_LITERAL_HH_
+#endif // KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_LITERAL_HH_
