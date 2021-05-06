@@ -108,12 +108,12 @@ Single_param:
 ;
 
 Statement:
-  Compound_statement Safe_closing_brace 	{ $<sa::I_statement>$ = std::move ($1); ctx.exit_scope (); }
-| IF Safe_expression Safe_colon Safe_statement 	{ $<sa::I_statement>$ = sa::if_stmt (std::move ($2), std::move ($4)); }
-| WHILE Safe_expression ':' Safe_statement 	{ $<sa::I_statement>$ = sa::while_stmt (std::move ($2), std::move ($4)); }
-| RETURN Safe_expression Safe_semicolon 	{ $<sa::I_statement>$ = sa::return_stmt (std::move ($2)); }
-| Expression Safe_semicolon 			{ $<sa::I_statement>$ = sa::expression_stmt(std::move ($1)); }
-| VAR Safe_identifier '=' Safe_expression 	{ $$ = sa::var_stmt(std::move($2), std::move($4)); }
+  Compound_statement Safe_closing_brace 	{ $$ = std::move ($1); ctx.exit_scope (); }
+| IF Safe_expression Safe_colon Safe_statement 	{ $$ = sa::if_stmt ($2, $4); }
+| WHILE Safe_expression ':' Safe_statement 	{ $$ = sa::while_stmt ($2, $4); }
+| RETURN Safe_expression Safe_semicolon 	{ $$ = sa::return_stmt ($2); }
+| Expression Safe_semicolon 			{ $$ = sa::expression_stmt($1); }
+| VAR Safe_identifier '=' Safe_expression 	{ ctx.define_local($2); $$ = sa::var_stmt($2, $4); }
 | ';' 						{ }
 ;
 
@@ -166,9 +166,9 @@ Function_call:
 ;
 
 Expression:
-  STRING_LITERAL 				{ $<sa::I_expression>$ = sa::string_lit (std::move ($1)); }
-| NUMBER_LITERAL 				{ $<sa::I_expression>$ = sa::numerical_lit ($1); }
-| IDENTIFIER 					{ $<sa::I_expression>$ = ctx.use_identifier ($1); }
+  STRING_LITERAL 				{ $$ = sa::string_lit (std::move ($1)); }
+| NUMBER_LITERAL 				{ $$ = sa::numerical_lit ($1); }
+| IDENTIFIER 					{ $$ = ctx.use_identifier ($1); }
 | Function_call         			{ $$ = std::move($<sa::function_call_expr>1); }
 | Arithmetic_operation  			{ $$ = std::move($1); }
 | Comparison_operation  			{ $$ = std::move($1); }
