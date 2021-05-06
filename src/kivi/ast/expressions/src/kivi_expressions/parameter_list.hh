@@ -18,27 +18,51 @@ namespace syntax_analyzer
 /**
  * @brief A function parameter list expression
  */
-class parameter_list_expr : public I_expression
-{
-  private:
-    /// The parameters themselves. Each one is kept as a value instance
-    std::vector<value> m_params{};
+	class parameter_list_expr : public I_expression
+	{
+	 private:
+		/// The parameters themselves. Each one is kept as a value instance
+		std::vector<value> m_params;
 
-  public:
-    parameter_list_expr () = default;
+	 public:
+		parameter_list_expr() = default;
 
-    explicit parameter_list_expr (std::vector<value> params)
-	: m_params (std::move (params))
-    {
-    }
+		explicit parameter_list_expr(const value& param1)
+			: m_params({ param1 })
+		{
+		}
 
-  public:
-    const std::vector<value> &
-    params () const noexcept
-    {
-	return m_params;
-    }
-};
+		explicit parameter_list_expr(std::vector<value> params)
+			: m_params(std::move(params))
+		{
+		}
+
+		/**
+		 * @brief Named constructor which maps a sequence onto parameter list
+		 * @param seq	The sequence
+		 * @return 		The parameter list
+		 */
+		static parameter_list_expr from_sequence(const sequence& seq)
+		{
+			std::vector<value> plist(seq.exprs().size());
+			for (const auto& c: seq.exprs())
+				plist.push_back(c);
+			return parameter_list_expr{ plist };
+		}
+
+	 public:
+		void append(const value& param)
+		{
+			m_params.push_back(param);
+		}
+
+	 public:
+		const std::vector<value>&
+		params() const noexcept
+		{
+			return m_params;
+		}
+	};
 
 }
 

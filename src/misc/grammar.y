@@ -58,7 +58,7 @@ namespace sa = syntax_analyzer;
 // Precedence and associativity
 %left ','
 %right '='
-%left "<>" "==" '<' '>' "<=" ">="
+%left "<>" "=="
 %left '+' '-'
 %left '*' '/' '%'
 %left '('
@@ -68,37 +68,33 @@ namespace sa = syntax_analyzer;
  * defined in <ast/syntax.hh>
  * @bug ??? `type<sa::sequence> Comma_sep_expressions`
  */
-%type<int> 				NUMBER_LITERAL
-%type<std::string> 			STRING_LITERAL
-%type<std::string> 			IDENTIFIER Safe_identifier
-%type<sa::function_call_expr> 		Function_call
-%type<sa::parameter_list_expr>  	Parameter_list
-%type<sa::I_statement> 			Statement Safe_statement
-%type<sa::I_expression> 		Expression Safe_expression
-%type<sa::sequence> 			Safe_expressions Expressions
-%type<sa::unary_operation> 		Unary_operation
-%type<sa::var_stmt> 			Var_definition
-%type<sa::compound_stmt> 		Compound_statement
-%type<sa::parameter_list_expr> 		Safe_parenthesised_expression Comma_sep_expressions
-%type<sa::I_comparison_operation> 	Comparison_operation
-%type<sa::I_arithmetic_operation> 	Arithmetic_operation
+%type<int> 					NUMBER_LITERAL
+%type<std::string> 				STRING_LITERAL
+%type<std::string> 				IDENTIFIER Safe_identifier
+%type<sa::function_call_expr> 			Function_call
+%type<sa::parameter_list_expr>  		Parameter_list
+%type<sa::I_statement> 				Statement Safe_statement
+%type<sa::I_expression> 			Expression Safe_expression
+%type<sa::unary_operation> 			Unary_operation
+%type<sa::compound_stmt> 			Compound_statement
+%type<sa::I_comparison_operation> 		Comparison_operation
+%type<sa::I_arithmetic_operation> 		Arithmetic_operation
+%type<sa::parameter_list_expr> 			Parenthesised_expression Safe_parenthesised_expression
+%type<sa::sequence> 				Comma_sep_expressions
 %%
 
-Program: { ctx.enter_scope (); } Functions { ctx.exit_scope (); };
+Program: 					{ ctx.enter_scope (); }
+	Functions 				{ ctx.exit_scope (); }
+;
 
 Functions :
   /* empty */
 | Functions Single_function;
 
 Single_function:
-	Safe_identifier {
-		ctx.define_function ($1);
-		ctx.enter_scope ();
-	}
-	Parameter_list Safe_colon Safe_statement {
-		ctx.define_function_body (std::move ($1), std::move ($5));
-		ctx.exit_scope ();
-	}
+	Safe_identifier 			{ ctx.define_function ($1); ctx.enter_scope (); }
+	Parameter_list Safe_colon
+		Safe_statement 			{ ctx.define_function_body (std::move ($1), std::move ($5)); ctx.exit_scope (); }
 ;
 
 Parameter_list:
@@ -107,108 +103,115 @@ Parameter_list:
 ;
 
 Single_param:
-  Single_param ',' Safe_identifier    			{ ctx.define_parameter ($3); }
-| IDENTIFIER                            		{ ctx.define_parameter ($1); }
+  Single_param ',' Safe_identifier    		{ ctx.define_parameter ($3); }
+| IDENTIFIER                            	{ ctx.define_parameter ($1); }
 ;
 
 Statement:
-  Compound_statement Safe_closing_brace 		{ $<sa::I_statement>$ = std::move ($1); ctx.exit_scope (); }
-| IF Safe_expression Safe_colon Safe_statement 		{ $<sa::I_statement>$ = sa::if_stmt (std::move ($2), std::move ($4)); }
-| WHILE Safe_expression ':' Safe_statement 		{ $<sa::I_statement>$ = sa::while_stmt (std::move ($2), std::move ($4)); }
-| RETURN Safe_expression Safe_semicolon 		{ $<sa::I_statement>$ = sa::return_stmt (std::move ($2)); }
-| Expression Safe_semicolon 				{ $<sa::I_statement>$ = sa::expression_stmt(std::move ($1)); }
-| ';' 							{ }
+  Compound_statement Safe_closing_brace 	{ $<sa::I_statement>$ = std::move ($1); ctx.exit_scope (); }
+| IF Safe_expression Safe_colon Safe_statement 	{ $<sa::I_statement>$ = sa::if_stmt (std::move ($2), std::move ($4)); }
+| WHILE Safe_expression ':' Safe_statement 	{ $<sa::I_statement>$ = sa::while_stmt (std::move ($2), std::move ($4)); }
+| RETURN Safe_expression Safe_semicolon 	{ $<sa::I_statement>$ = sa::return_stmt (std::move ($2)); }
+| Expression Safe_semicolon 			{ $<sa::I_statement>$ = sa::expression_stmt(std::move ($1)); }
+| VAR Safe_identifier '=' Safe_expression 	{ $$ = sa::var_stmt(std::move($2), std::move($4)); }
+| ';' 						{ }
 ;
 
 Comma_sep_expressions:
-  Safe_expression 				{ $<sa::sequence>$ = sa::sequence (std::move ($1)); }
-| Comma_sep_expressions ',' Safe_expression 	{ $<sa::sequence>$ = std::move ($<sa::sequence>1); $<sa::sequence>$.append (std::move ($<sa::I_expression>3)); }
-;
-
-Var_definition:
-  VAR Safe_identifier '=' Safe_expression 	{ $<sa::var_stmt>$ = sa::var_stmt(std::move($2), std::move($4)); }
+  Safe_expression 				{ $$ = sa::sequence ($1); }
+| Comma_sep_expressions ',' Safe_expression 	{ $$ = std::move ($1); $$.append (std::move ($3)); }
 ;
 
 Compound_statement:
-  '{'                             { $$ = sa::compound_stmt (); ctx.enter_scope (); }
-| Compound_statement Statement    { $$ = std::move ($1); $$.append (std::move ($2)); }
+  '{'                             		{ $$ = sa::compound_stmt (); ctx.enter_scope (); }
+| Compound_statement Statement    		{ $$ = std::move ($1); $$.append (std::move ($2)); }
 ;
 
 Comparison_operation:
-  Expression "==" error 	{ $$ = std::move ($1); }
-| Expression "==" Expression 	{ $$ = sa::equality_expr (std::move ($1), std::move ($3)); }
-| Expression "<>" error 	{ $$ = std::move ($1); }
-| Expression "<>" Expression 	{ $$ = sa::inequality_expr (std::move ($1), std::move ($3)); }
+  Expression "==" error 			{ $$ = std::move ($1); }
+| Expression "==" Expression 			{ $$ = sa::equality_expr (std::move ($1), std::move ($3)); }
+| Expression "<>" error 			{ $$ = std::move ($1); }
+| Expression "<>" Expression 			{ $$ = sa::inequality_expr (std::move ($1), std::move ($3)); }
 ;
 
 Arithmetic_operation:
   Expression '+' error 				{ $$ = std::move ($1); }
-| Expression '+' Expression 	        	{ $$ = sa::addition_expr (std::move ($1), std::move ($3)); }
+| Expression '+' Expression 	        	{ $$ = sa::addition_expr ($1, $3); }
 | Expression '-' error 				{ $$ = std::move ($1); }
-| Expression '-' Expression %prec '+' 		{ $$ = sa::addition_expr (std::move ($1), sa::negation_expr (std::move ($3))); }
+| Expression '-' Expression %prec '+' 		{ $$ = sa::addition_expr ($1, sa::negation_expr ($3)); }
 | Expression '*' error 				{ $$ = std::move ($1); }
-| Expression '*' Expression 			{ $$ = sa::multiplication_expr (std::move ($1), std::move ($3));}
+| Expression '*' Expression 			{ $$ = sa::multiplication_expr ($1, $3);}
 | Expression '/' error  			{ $$ = std::move ($1); }
-| Expression '/' Expression %prec '*' 		{ $$ = sa::division_expr (std::move ($1), std::move ($3)); }
+| Expression '/' Expression %prec '*' 		{ $$ = sa::division_expr ($1, $3); }
 | Expression '%' error 				{ $$ = std::move ($1); }
-| Expression '%' Expression %prec '*' 		{ $$ = sa::modular_division_expr (std::move ($1), std::move ($3)); }
+| Expression '%' Expression %prec '*' 		{ $$ = sa::modular_division_expr ($1, $3); }
 | Expression '=' error 				{ $$ = std::move ($1); }
-| Expression '=' Expression 			{ $$ = sa::assignment_expr (std::move($1), std::move($3)); }
+| Expression '=' Expression 			{ $$ = sa::assignment_expr ($1, $3); }
 ;
 
 Unary_operation:
-  '-' Expression 			{ $$ = sa::negation_expr (std::move ($2)); }
-| '-' error 	 			{  }
+  '-' Expression 				{ $$ = sa::negation_expr (std::move ($2)); }
+| '-' error 	 				{  }
 ;
+
+/**
+ * TODO: Should this be supported as a "Function_call"?
+ *  '(' Comma_sep_expressions Safe_closing_parenthesis
+ * { $$ = std::move ($2); }
+ */
 
 Function_call:
-  Expression '(' ')' 							{ $$ = sa::function_call_expr (std::move ($1)); }
-| Expression '(' Comma_sep_expressions Safe_closing_parenthesis  	{ $$ = sa::function_call_expr (std::move ($1), std::move ($3)); }
-
-// TODO:
-// Is that actually correct? Why was the "function_call" the params only?
-//| '(' Comma_sep_expressions Safe_closing_parenthesis 			{ $$ = std::move ($2); }
-;
-
-Expressions:
-
-// TODO:
-// Is that correct? Why was the var_Def a "expressions"?
-// Var_definition				{ $$ = std::move ($1); } |
-
-  Expression					{ $$ = sa::sequence(std::move ($1)); }
-| Expression ',' Comma_sep_expressions  	{ $$ = sa::sequence(std::move ($1)); }
+  Expression '(' ')' 				{ $$ = sa::function_call_expr (std::move ($1)); }
+| Expression Parenthesised_expression 		{ $$ = sa::function_call_expr (std::move ($1), std::move ($2)); }
 ;
 
 Expression:
-  STRING_LITERAL 		{ $<sa::I_expression>$ = sa::string_lit (std::move ($1)); }
-| NUMBER_LITERAL 		{ $<sa::I_expression>$ = sa::numerical_lit ($1); }
-| IDENTIFIER 			{ $$ = dynamic_cast<sa::I_expression &>(ctx.use_identifier ($1)); }
-| Function_call         	{ $$ = std::move($<sa::function_call_expr>1); }
-| Arithmetic_operation  	{ $$ = std::move($1); }
-| Comparison_operation  	{ $$ = std::move($1); }
-| Unary_operation       	{ $$ = std::move($1); }
-| Expressions           	{ $$ = std::move($1); }
+  STRING_LITERAL 				{ $<sa::I_expression>$ = sa::string_lit (std::move ($1)); }
+| NUMBER_LITERAL 				{ $<sa::I_expression>$ = sa::numerical_lit ($1); }
+| IDENTIFIER 					{ $<sa::I_expression>$ = ctx.use_identifier ($1); }
+| Function_call         			{ $$ = std::move($<sa::function_call_expr>1); }
+| Arithmetic_operation  			{ $$ = std::move($1); }
+| Comparison_operation  			{ $$ = std::move($1); }
+| Unary_operation       			{ $$ = std::move($1); }
 ;
+
+
+Parenthesised_expression:
+  '(' Comma_sep_expressions
+  	Safe_closing_parenthesis 		{ $$ = sa::parameter_list_expr::from_sequence($2); };
 
 //
 // Error handling and correction
 //
 
-Safe_identifier : error{} | IDENTIFIER { $$ = std::move ($1); };
+Safe_identifier:
+  error						{ }
+| IDENTIFIER 					{ $$ = std::move ($1); };
 
-Safe_colon : error{} | ':';
+Safe_colon:
+  error 					{ }
+| ':';
 
-Safe_semicolon : error{} | ';';
+Safe_semicolon:
+  error						{ }
+| ';';
 
-Safe_closing_brace : error{} | '}';
+Safe_closing_brace:
+  error						{ }
+| '}';
 
-Safe_closing_parenthesis : error{} | ')';
+Safe_closing_parenthesis:
+  error 					{ }
+| ')';
 
-Safe_statement : error{} | Statement { $$ = std::move ($1); };
+Safe_statement:
+  error						{ }
+| Statement 					{ $$ = std::move ($1); };
 
-Safe_expression : error{} | Expression { $$ = std::move ($1); };
+Safe_expression:
+  error						{ }
+| Expression 					{ $$ = std::move ($1); };
 
-Safe_expressions : error{} | Expressions { $$ = std::move ($1); };
-
-Safe_parenthesised_expression : error{} | '(' Safe_expressions Safe_closing_parenthesis { $$ = std::move ($2); };
+Safe_parenthesised_expression:
+  error						{ }
+| Parenthesised_expression   			{ $$ = std::move ($1); };

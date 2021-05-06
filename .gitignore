@@ -1,3 +1,4 @@
+# Kivi
 build/
 src/autogen/kivi_parser/*
 
@@ -7,3 +8,6 @@ cmake-build-debug/
 CMakeCache.txt
 
 .cache/
+
+# Core dumps
+core*

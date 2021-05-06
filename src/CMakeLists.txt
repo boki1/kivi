@@ -1,5 +1,5 @@
+add_subdirectory(extern)
 add_subdirectory(misc)
 add_subdirectory(autogen)
 add_subdirectory(kivi)
 add_subdirectory(test)
-add_subdirectory(extern)

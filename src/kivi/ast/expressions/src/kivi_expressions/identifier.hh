@@ -16,31 +16,33 @@
 
 namespace syntax_analyzer
 {
-class identifier_expr : public I_literal
-{
-  private:
-    identifier m_ident;
+	class identifier_expr : public I_literal
+	{
+	 private:
+		identifier m_ident;
 
-  public:
-    identifier_expr () = default;
+	 public:
+		identifier_expr() = default;
 
-    identifier_expr (identifier ident) : m_ident (std::move (ident)) {}
+		explicit identifier_expr(identifier ident) : m_ident(std::move(ident))
+		{
+		}
 
-  public:
-    std::string
-    to_string () const noexcept
-    {
-	//			return std::to_string(ident());
-	return "TODO";
-    }
+	 public:
+		std::string
+		to_string() const noexcept override
+		{
+			// return std::to_string(ident());
+			return "TODO";
+		}
 
-  public:
-    const identifier &
-    ident () const noexcept
-    {
-	return m_ident;
-    }
-};
+	 public:
+		const identifier&
+		ident() const noexcept
+		{
+			return m_ident;
+		}
+	};
 }
 
 #endif // KIVI_SRC_KIVI_EXPRESSIONS_IDENTIFIER_HH_

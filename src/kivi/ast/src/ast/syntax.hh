@@ -14,14 +14,15 @@
  * `expression`.
  *
  *
- * (1) Not exactly all. The `expression` is defined in different file.
- * Check `.hh` for more details.
+ * (1) Not exactly all. The `expression` as well as `statement` are defined in different files.
+ * Check <kivi_stmts/...> and <kivi_expressions/...> for more details.
  */
 
 #include <string>
 #include <utility>
 
 #include <kivi_expressions/base.hh>
+#include <kivi_stmts/statement.hh>
 
 #include "syntactic_structure.hh"
 
@@ -52,7 +53,7 @@ namespace syntax_analyzer
 	 * encountered during parsing of a source file. Check `identifier_class`
 	 * for more information about the different types of identifiers.
 	 */
-	class identifier : I_syntactic_structure
+	class identifier : I_evaluable_syntactic_structure
 	{
 	 private:
 		identifier_class m_type = identifier_class::Undefined;
@@ -61,7 +62,7 @@ namespace syntax_analyzer
 	 public:
 		identifier() = default;
 		identifier(identifier_class type, std::string name)
-			: m_name(std::move(name)), m_type(type)
+			: m_name{ std::move(name) }, m_type{ type }
 		{
 		}
 
@@ -87,7 +88,7 @@ namespace syntax_analyzer
 	 * The following data structure describes a valid function signature
 	 * encountered during parsing of a source file.
 	 */
-	class function : I_syntactic_structure
+	class function : I_evaluable_syntactic_structure
 	{
 	 private:
 		/// The name of the function
@@ -105,16 +106,16 @@ namespace syntax_analyzer
 	 public:
 		function() = default;
 
-		function(const std::string& name, const I_statement& body, int locals, int parameters)
-			: m_name{ name },
+		function(std::string name, const I_statement& body, int locals, int parameters)
+			: m_name{ std::move(name) },
 			  m_locals{ locals },
 			  m_parameters{ parameters },
 			  m_body{ body }
 		{
 		}
 
-		function(const std::string& name, const I_statement& body)
-			: m_name{ name },
+		function(std::string name, const I_statement& body)
+			: m_name{ std::move(name) },
 			  m_body{ body },
 			  m_parameters{},
 			  m_locals{}

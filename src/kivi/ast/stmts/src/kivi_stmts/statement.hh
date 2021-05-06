@@ -21,6 +21,11 @@ namespace syntax_analyzer
 
 	 public:
 		virtual ~I_statement() = default;
+
+		virtual std::string to_string() const
+		{
+			return "TODO";
+		}
 	};
 
 }

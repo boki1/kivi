@@ -11,9 +11,13 @@
 #include <vector>
 #include <map>
 
+#define LOGURU_WITH_STREAMS 1
+#include <loguru/loguru.hpp>
+
 #include <kivi_parser/location.hh>
 #include <kivi_parser/stack.hh>
 
+#include <kivi_expressions/identifier.hh>
 #include <kivi_stmts/statement.hh>
 
 #include "syntax.hh"
@@ -66,6 +70,7 @@ namespace syntax_analyzer
 		{
 			yy_location.begin.filename = filename;
 			yy_location.end.filename = filename;
+			LOG_F(INFO, "Initializing parsing_context\n");
 		}
 
 	 public:
@@ -92,7 +97,7 @@ namespace syntax_analyzer
 		 * @note Also a check is made whether this identifier has already been created. * @throws A syntax error is thrown if a duplicate is seen.
 		 * @return New identifier
 		 */
-		const identifier &
+		const identifier&
 		define_identifier(const std::string& name, identifier&& ident);
 
 		/**
@@ -131,9 +136,10 @@ namespace syntax_analyzer
 		 * @brief Fetch the already defined identifier by a given name
 		 * @param name The name of the identifier
 		 * @return Reference to the found identifier
+		 * @note It is _vitaly_ important that instead of the found identifier, an identifier expression is returned.
 		 * @throws In case the identifier has not been already defined, an exception is thrown
 		 */
-		identifier
+		identifier_expr
 		use_identifier(const std::string& name) const;
 
 		/**
@@ -143,19 +149,17 @@ namespace syntax_analyzer
 		 * @return Reference to the newly placed function
 		 */
 		const function&
-		define_function_body(const std::string& name, I_statement&& body);
+		define_function_body(const std::string& name, const I_statement& body);
 
 	 public:
-		///
-		/// Getters
-		///
 
 		const std::vector<std::map<std::string, identifier>>& all_scopes() const
 		{
 			return m_all_scopes;
 		}
 
-		std::vector<std::map<std::string, identifier> >& all_scopes_mut() {
+		std::vector<std::map<std::string, identifier> >& all_scopes_mut()
+		{
 			return m_all_scopes;
 		}
 

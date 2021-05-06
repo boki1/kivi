@@ -31,7 +31,7 @@ namespace syntax_analyzer
 		I_statement m_than;
 
 	 public:
-		while_stmt(const value& condition, const I_statement& than)
+		while_stmt(value&& condition, I_statement&& than)
 			: m_condition(condition),
 			  m_than(than)
 		{
