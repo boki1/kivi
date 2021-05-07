@@ -34,4 +34,12 @@ TEST_CASE("Parsing context", "[pc]")
 //        REQUIRE(pars_cntx.all_scopes().size() == );
 //    }
 
+        // TODO: bugFix
+    SECTION("regular define_identifier use") {
+        const std::string name = "varIsThis";
+        pars_cntx.define_identifier(name, sa::identifier(sa::identifier_class::Parameter, ""));
+        REQUIRE(pars_cntx.all_scopes().back().find(name)->second.name() == name);
+        REQUIRE(pars_cntx.all_scopes().back().find(name)->second.type() == sa::identifier_class::Parameter);
+        REQUIRE(pars_cntx.all_scopes().back().find(name)->first == name);
+    }
 }
