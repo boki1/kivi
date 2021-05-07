@@ -27,6 +27,13 @@ namespace sa = syntax_analyzer;
 namespace syntax_analyzer
 {
 
+	/**
+	 * @brief An exception which is thrown when `exit_scope()` is called an no active scopes have been entered
+	 */
+	class cannot_pop_out_of_empty_exception : std::exception
+	{
+	};
+
 	class parsing_context
 	{
 	 private:
@@ -89,8 +96,9 @@ namespace syntax_analyzer
 		/**
 		 * Pops the last entry from scopes
 		 * @return void
+		 * @throws `cannot_pop_out_of_empty_exception` when no active scopes have been entered
 		 */
-		void exit_scope();
+		void exit_scope() noexcept(false);
 
 		/**
 		 * @brief Defines an arbitrary identifier

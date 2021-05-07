@@ -7,10 +7,26 @@
 
 #include <memory>
 #include <vector>
+#include <variant>
 
 #include "syntax.hh"
 
 namespace sa = syntax_analyzer;
+
+namespace syntax_analyzer
+{
+	/**
+	 * @brief This structure denotes _invalid_ syntactical structure
+	 * @note Used only as a contained type inside the ast_node
+	 */
+	struct invalid_syntactical_structure
+	{
+		/// Empty (intentionally)
+	};
+
+	/// A shortcut.
+	typedef invalid_syntactical_structure invalid;
+}
 
 namespace syntax_tree
 {
@@ -20,7 +36,8 @@ namespace syntax_tree
 
 	enum class ast_node_kind
 	{
-		Program
+		Program,
+		SintacticalSignature
 	};
 
 	/**
@@ -29,8 +46,14 @@ namespace syntax_tree
 	class ast_node
 	{
 	 private:
+		/// The kind of node value stored in the concrete instance
 		ast_node_kind m_kind;
+
+		/// The children of the current node
 		std::vector<ast_node> m_children;
+
+		/// The value contained in the current node
+		std::variant<sa::I_statement, sa::function, sa::identifier, sa::I_expression, sa::invalid> m_sem_value;
 
 	 public:
 		explicit ast_node(ast_node_kind kind)
@@ -80,9 +103,25 @@ namespace syntax_tree
 		}
 
 	 public:
-		ast_node&& extract(const sa::function& fun)
-		{
-		}
+		/// @brief "Extracts" the AST out of different kind of syntactical structures
+		/// @param fun Function
+		/// @return The root of the extracted AST
+		static ast_node extract(const sa::function& fun);
+
+		/// @brief "Extracts" the AST out of different kind of syntactical structures
+		/// @param stmt Statement
+		/// @return The root of the extracted AST
+		static ast_node extract(const sa::I_statement& stmt);
+
+		/// @brief "Extracts" the AST out of different kind of syntactical structures
+		/// @param expr Expression
+		/// @return The root of the extracted AST
+		static ast_node extract(const sa::I_expression& expr);
+
+		/// @brief "Extracts" the AST out of different kind of syntactical structures
+		/// @param ident Identifier
+		/// @return The root of the extracted AST
+		static ast_node extract(const sa::identifier& ident);
 
 	 public:
 		ast_node& root_mut() noexcept

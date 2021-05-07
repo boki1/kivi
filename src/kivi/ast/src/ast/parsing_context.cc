@@ -23,9 +23,13 @@ namespace syntax_analyzer
 		m_all_scopes.emplace_back();
 	}
 
-	void parsing_context::exit_scope()
+	void parsing_context::exit_scope() noexcept(false)
 	{
 		LOG_F(INFO, "Popping last scope from the back\n");
+		if (m_all_scopes.empty())
+		{
+			throw cannot_pop_out_of_empty_exception();
+		}
 		m_all_scopes.pop_back();
 	}
 
