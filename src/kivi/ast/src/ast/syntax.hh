@@ -26,6 +26,8 @@
 
 #include "syntactic_structure.hh"
 
+namespace sa = syntax_analyzer;
+
 namespace syntax_analyzer
 {
 

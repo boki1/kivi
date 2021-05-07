@@ -1,3 +1,13 @@
-[submodule "depen/gvpp"]
-	path = depen/gvpp
-	url = https://github.com/compilin/gvpp.git
+# Kivi
+build/
+src/autogen/kivi_parser/*
+
+# Clion
+cmake-build-debug/
+.idea/
+CMakeCache.txt
+
+.cache/
+
+# Core dumps
+core*

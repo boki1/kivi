@@ -102,3 +102,12 @@ from higher level client code
    #include <blah.hh>
    
     ```
+   
+-----------------
+### Misc
+- Prefer initializing with `{}` over `()`
+    + Example
+    ```cpp
+    blah b{blah_blah};
+    ```
+  

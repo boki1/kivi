@@ -97,4 +97,5 @@ namespace syntax_analyzer
 		LOG_S(INFO) << "Defining register (\"" + name << "\")" << '\n';
 		return define_local(name);
 	}
+
 }

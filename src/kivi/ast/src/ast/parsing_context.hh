@@ -22,6 +22,8 @@
 
 #include "syntax.hh"
 
+namespace sa = syntax_analyzer;
+
 namespace syntax_analyzer
 {
 
@@ -65,7 +67,7 @@ namespace syntax_analyzer
 		 * @param code_beginning  the "location" var for the lexer
 		 * @param filename the "location" var for the parser
 		 */
-		parsing_context(const char* code_beginning, std::string* filename)
+		explicit parsing_context(const char* code_beginning, std::string* filename)
 			: lexer_cursor(code_beginning)
 		{
 			yy_location.begin.filename = filename;
@@ -94,7 +96,8 @@ namespace syntax_analyzer
 		 * @brief Defines an arbitrary identifier
 		 * @param name The name of the new identifier
 		 * @param ident R-value ref to already instantiated identifier object
-		 * @note Also a check is made whether this identifier has already been created. * @throws A syntax error is thrown if a duplicate is seen.
+		 * @note Also a check is made whether this identifier has already been created.
+		 * @throws A syntax error is thrown if a duplicate is seen.
 		 * @return New identifier
 		 */
 		const identifier&
