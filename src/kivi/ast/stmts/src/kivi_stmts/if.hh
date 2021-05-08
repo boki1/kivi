@@ -39,7 +39,7 @@ namespace syntax_analyzer
 		}
 
 	 public:
-		const value& condition() const noexcept
+		[[nodiscard]] const value& condition() const noexcept
 		{
 			return m_condition;
 		}

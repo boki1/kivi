@@ -4,7 +4,7 @@
 #include <kivi_stmts/if.hh>
 #include <kivi_stmts/var.hh>
 #include <kivi_stmts/expression.hh>
-#include <kivi_stmts/compound.hh>
+//#include <kivi_stmts/compound.hh>
 #include <kivi_stmts/return.hh>
 #include "ast.hh"
 #include "kivi_stmts/while.hh"
@@ -25,7 +25,7 @@ namespace syntax_tree
 		m_str(fun.to_string())
 	{
 
-		proceed_with(fun.body());
+		proceed_with(node(fun.body()));
 
 		// TODO:
 		// proceed_with(fun.parameter_list());
@@ -42,33 +42,32 @@ namespace syntax_tree
 		case s::WhileStmt:
 		{
 			auto s = dynamic_cast<const sa::while_stmt&>(stmt);
-			proceed_with(s.than_body());
-			proceed_with(s.condition());
+			proceed_with(node(s.than_body()));
+			proceed_with(node(dynamic_cast<const sa::expression&>(s.condition())));
 			break;
 		}
 		case s::IfStmt:
 		{
 			auto s = dynamic_cast<const sa::if_stmt&>(stmt);
-			proceed_with(s.than_body());
-			proceed_with(s.condition());
+			proceed_with(node(s.than_body()));
+			proceed_with(node(dynamic_cast<const sa::expression&>(s.condition())));
 			break;
 		}
 		case s::VarStmt:
 		{
 			auto s = dynamic_cast<const sa::var_stmt&>(stmt);
-			proceed_with(sa::identifier(sa::identifier_class::Local, s.var()));
-			proceed_with(s.val());
+			proceed_with(node(sa::identifier(sa::identifier_class::Local, s.var())));
+			proceed_with(node(dynamic_cast<const sa::expression&>(s.val())));
 			break;
 		}
 		case s::ReturnStmt:
 		{
 			auto s = dynamic_cast<const sa::return_stmt&>(stmt);
-			proceed_with(s.retval());
+			proceed_with(node(dynamic_cast<const sa::expression&>(s.retval())));
 			break;
 		}
 		case s::CompoundStmt:
 		{
-			auto s = dynamic_cast<const sa::compound_stmt&>(stmt);
 			// TODO:
 			// It might be clearer just to do not note it in any printable way
 			// Consider some sort of "sticky" bottom which changes parents until its turn doesn't come up
@@ -77,7 +76,7 @@ namespace syntax_tree
 		case s::ExpressionStmt:
 		{
 			auto s = dynamic_cast<const sa::expression_stmt&>(stmt);
-			proceed_with(s.expr());
+			proceed_with(node(s.expr()));
 			break;
 		}
 		case s::Illegal:
@@ -86,7 +85,7 @@ namespace syntax_tree
 
 	}
 
-	[[noreturn]] nod::node(const sa::expression& expr) :
+	nod::node(const sa::expression& expr) :
 		m_kind(expr.get_kind()),
 		m_value(expr),
 		m_str(expr.to_string())
@@ -105,8 +104,8 @@ namespace syntax_tree
 		case e::InequalityOper:
 		{
 			auto bin_oper = dynamic_cast<const sa::binary_operation&> (expr);
-			proceed_with(bin_oper.left());
-			proceed_with(bin_oper.right());
+			proceed_with(node(bin_oper.left()));
+			proceed_with(node(bin_oper.right()));
 			break;
 		}
 
@@ -114,7 +113,7 @@ namespace syntax_tree
 		case e::NegationOper:
 		{
 			auto unary_oper = dynamic_cast<const sa::unary_operation&>(expr);
-			proceed_with(unary_oper.operand());
+			proceed_with(node(unary_oper.operand()));
 			break;
 		}
 
@@ -130,7 +129,7 @@ namespace syntax_tree
 		case e::FunctionCallExpr:
 		{
 			auto funcall = dynamic_cast<const sa::function_call_expr&>(expr);
-			proceed_with(funcall.params());
+			proceed_with(node(funcall.params()));
 			break;
 		}
 
@@ -152,23 +151,19 @@ namespace syntax_tree
 		// Empty
 	}
 
-	void nod::proceed_with(const sa::I_syntactic_structure& str)
+	void nod::proceed_with(ast::node child)
 	{
-	}
-
-	void nod::proceed_with(ast::node&& child)
-	{
-
+		m_children.push_back(std::move(child));
 	}
 
 	bool operator==(const ast::postorder_iterator&, const ast::postorder_iterator&)
 	{
-
+		return false;
 	}
 
 	bool operator!=(const ast::postorder_iterator&, const ast::postorder_iterator&)
 	{
-
+		return false;
 	}
 
 }

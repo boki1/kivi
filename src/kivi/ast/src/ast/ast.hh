@@ -107,25 +107,20 @@ namespace syntax_tree
 			explicit node(const sa::identifier& ident);
 			explicit node(const sa::function& fun);
 			explicit node(const sa::statement& stmt);
-			[[noreturn]] explicit node(const sa::expression& expr);
+			explicit node(const sa::expression& expr);
 
 		 public:
-			/**
-			 * @brief Sets the passed arguments as children of the "this
-			 * @param children The newly added children
-			 */
-			void proceed_with(children_type&& children);
 
 			/**
 			 * @brief Puts the given node as a child node to the current one
 			 * @param child The child node
 			 */
-			void proceed_with(node&& child);
+			void proceed_with(node child);
 
 			/**
 			 * @brief Puts the _extracted_ AST from the given syntactic structure as child to the current node
 			 */
-			void proceed_with(const sa::I_syntactic_structure&);
+//			void proceed_with(const sa::I_syntactic_structure&);
 
 		};
 

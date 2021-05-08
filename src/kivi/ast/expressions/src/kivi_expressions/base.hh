@@ -79,6 +79,9 @@ namespace syntax_analyzer
 
 	};
 
+	/// Every expression is evaluated to a value, so there is an alias for that name.
+	typedef expression value;
+
 }
 
 #endif //KIVI_SRC_KIVI_BASE_HH_

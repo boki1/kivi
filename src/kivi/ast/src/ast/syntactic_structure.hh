@@ -45,11 +45,6 @@ namespace syntax_analyzer
 		bool operator==(int rhs) const noexcept;
 	};
 
-	/**
-	 * Since the name of the interface is waaay too long a shorter one is set ;)
-	 */
-	typedef I_evaluable_syntactic_structure value;
-
 }
 
 #endif //KIVI_SRC_KIVI_SYNTACTIC_STRUCTURE_HH_
