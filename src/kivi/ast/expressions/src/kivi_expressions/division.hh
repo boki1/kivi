@@ -16,13 +16,13 @@ namespace syntax_analyzer
 	/**
 	 * @brief An expression which represents the division operation
 	 */
-	class division_expr : public I_arithmetic_operation
+	class division_expr : public arithmetic_operation
 	{
 	 public:
 		division_expr() = default;
 
 		division_expr(const value& lhs, const value& rhs)
-			: I_arithmetic_operation(lhs, rhs)
+			: arithmetic_operation(lhs, rhs, expression::kind::DivisionOper)
 		{
 		}
 

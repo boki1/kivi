@@ -17,31 +17,30 @@ namespace syntax_analyzer
  * Numerical expression
  * @brief Represents a number literal
  */
-class numerical_lit : public I_literal
-{
-  public:
-    explicit numerical_lit (long f_num) : num (f_num) {}
+	class numerical_lit : public literal
+	{
+	 public:
+		explicit numerical_lit(int f_num) :
+			num(f_num), literal(expression::kind::NumberLiteral)
+		{
+		}
 
-    explicit numerical_lit (int f_num) : num (f_num) {}
+		std::string
+		to_string() const noexcept override
+		{
+			return std::to_string(get_num());
+		}
 
-    explicit numerical_lit (double f_num) : num (f_num) {}
+		long
+		get_num() const noexcept
+		{
+			return num;
+		}
 
-    std::string
-    to_string () const noexcept override
-    {
-	return std::to_string (get_num ());
-    }
-
-    long
-    get_num () const noexcept
-    {
-	return num;
-    }
-
-  private:
-    /// The contained numerical literal value
-    const long num;
-};
+	 private:
+		/// The contained numerical literal value
+		const long num;
+	};
 
 }
 

@@ -1,5 +1,5 @@
 /**
- * @file I_comparison_operation.hh
+ * @file comparison_operation.hh
  * @brief Defines an interface which is responsible for handling all commonalities between comparison operations
  */
 
@@ -12,7 +12,7 @@
 
 namespace syntax_analyzer
 {
-	class I_comparison_operation : public binary_operation
+	class comparison_operation : public binary_operation
 	{
 	 protected:
 		/// Stores the result from the comparison
@@ -20,16 +20,16 @@ namespace syntax_analyzer
 		mutable int m_result{};
 
 	 public:
-		I_comparison_operation() = default;
+		comparison_operation() = default;
 
-		I_comparison_operation(const value& left, const value& right)
-			: binary_operation(left, right)
+		comparison_operation(const value& left, const value& right, expression::kind kind)
+			: binary_operation(left, right, kind)
 		{
 		}
 
-		virtual ~I_comparison_operation() = default;
+		virtual ~comparison_operation() = default;
 
-		I_comparison_operation operator=(const I_expression &rhs) {
+		comparison_operation operator=(const expression &rhs) {
 			return (*this);
 		}
 

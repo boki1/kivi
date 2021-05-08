@@ -73,12 +73,12 @@ namespace sa = syntax_analyzer;
 %type<std::string> 				IDENTIFIER Safe_identifier
 %type<sa::function_call_expr> 			Function_call
 %type<sa::parameter_list_expr>  		Parameter_list
-%type<sa::I_statement> 				Statement Safe_statement
-%type<sa::I_expression> 			Expression Safe_expression
+%type<sa::statement> 				Statement Safe_statement
+%type<sa::expression> 				Expression Safe_expression
 %type<sa::unary_operation> 			Unary_operation
 %type<sa::compound_stmt> 			Compound_statement
-%type<sa::I_comparison_operation> 		Comparison_operation
-%type<sa::I_arithmetic_operation> 		Arithmetic_operation
+%type<sa::comparison_operation> 		Comparison_operation
+%type<sa::arithmetic_operation> 		Arithmetic_operation
 %type<sa::parameter_list_expr> 			Parenthesised_expression Safe_parenthesised_expression
 %type<sa::sequence> 				Comma_sep_expressions
 %%

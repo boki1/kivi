@@ -14,7 +14,7 @@
 
 namespace syntax_analyzer
 {
-	class function_call_expr : public I_expression
+	class function_call_expr : public expression
 	{
 	 private:
 		value m_ident;
@@ -25,14 +25,17 @@ namespace syntax_analyzer
 
 		explicit function_call_expr(const value& val)
 			: m_ident(val),
-			  m_params()
+			  m_params(),
+			  expression(expression::kind::FunctionCallExpr)
 		{
 		}
 
-		function_call_expr(const value &val, parameter_list_expr parlist)
+		function_call_expr(const value& val, parameter_list_expr parlist)
 			: m_ident(val),
-			  m_params(std::move(parlist))
-		{}
+			  m_params(std::move(parlist)),
+			  expression(expression::kind::FunctionCallExpr)
+		{
+		}
 
 	 public:
 		const value&

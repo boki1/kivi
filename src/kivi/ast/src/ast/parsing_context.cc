@@ -23,13 +23,14 @@ namespace syntax_analyzer
 		m_all_scopes.emplace_back();
 	}
 
-	void parsing_context::exit_scope() noexcept(false)
+	void parsing_context::exit_scope()
 	{
-		LOG_F(INFO, "Popping last scope from the back\n");
 		if (m_all_scopes.empty())
 		{
+			LOG_F(WARNING, "Popping last scope from the back FAILED because no elements are present\n");
 			throw cannot_pop_out_of_empty_exception();
 		}
+		LOG_F(INFO, "Popping last scope from the back\n");
 		m_all_scopes.pop_back();
 	}
 
@@ -66,7 +67,7 @@ namespace syntax_analyzer
 	}
 
 	const function&
-	parsing_context::define_function_body(const std::string& name, const I_statement& body)
+	parsing_context::define_function_body(const std::string& name, const statement& body)
 	{
 		/// Adds implicit return statement at the end of the block
 		/// "concatenated" by this double-compound statement

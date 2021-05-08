@@ -21,29 +21,31 @@ namespace syntax_analyzer
 	 * while _condition_: _statement_
 	 * ```
 	 */
-	class while_stmt : public I_statement
+	class while_stmt : public statement
 	{
 	 private:
 		/// The condition required to be evaluated to true in order to execute the body
 		value m_condition;
 
 		/// The body executed if the condition is true
-		I_statement m_than;
+		statement m_than;
 
 	 public:
-		while_stmt(const value& condition, const I_statement& than)
+		while_stmt(const value& condition, const statement& than)
 			: m_condition(condition),
-			  m_than(than)
+			  m_than(than),
+			  statement(statement::kind::WhileStmt)
 		{
 		}
 
 	 public:
-		const value& condition() const noexcept
+
+		[[nodiscard]] const value& condition() const noexcept
 		{
 			return m_condition;
 		}
 
-		const I_statement& than_body() const noexcept
+		[[nodiscard]] const statement& than_body() const noexcept
 		{
 			return m_than;
 		}

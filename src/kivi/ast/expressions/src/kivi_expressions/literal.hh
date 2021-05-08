@@ -17,11 +17,15 @@ namespace syntax_analyzer
  * An interface implemented by all expression literals -
  * numerical, string and identifier
  */
-class I_literal : public I_expression
-{
-  public:
-    virtual ~I_literal () = default;
-};
+	class literal : public expression
+	{
+	 public:
+		literal(expression::kind kind = expression::kind::Illegal)
+			: expression(kind)
+		{
+		}
+		virtual ~literal() = default;
+	};
 
 }
 

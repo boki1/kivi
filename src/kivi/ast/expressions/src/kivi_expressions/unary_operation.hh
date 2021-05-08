@@ -13,29 +13,38 @@
 namespace syntax_analyzer
 {
 
-/**
- * A unary operation representation via an abstract class
- */
-class unary_operation : public I_expression
-{
-  private:
-    /// The operand of operation
-    value m_operand;
+	/**
+	 * A unary operation representation via an abstract class
+	 */
+	class unary_operation : public expression
+	{
+	 private:
+		/// The operand of operation
+		value m_operand;
 
-  public:
-    unary_operation () = default;
+	 public:
+		unary_operation(value operand, expression::kind kind)
+			: expression(kind),
+			  m_operand(operand)
+		{
+		}
 
-    unary_operation (value operand) : m_operand (operand) {}
+		unary_operation()
+		// TODO:
+		//  Change
+			: expression(expression::kind::NegationOper)
+		{
+		}
 
-    virtual ~unary_operation () = default;
+		virtual ~unary_operation() = default;
 
-  public:
-    const value &
-    operand () const noexcept
-    {
-	return m_operand;
-    }
-};
+	 public:
+		const value&
+		operand() const noexcept
+		{
+			return m_operand;
+		}
+	};
 
 }
 

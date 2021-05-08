@@ -22,7 +22,7 @@ namespace syntax_analyzer
 	 * return <value>;
 	 * ```
 	 */
-	class return_stmt : public I_statement
+	class return_stmt : public statement
 	{
 	 private:
 		/// The value returned
@@ -30,15 +30,14 @@ namespace syntax_analyzer
 
 	 public:
 
-		explicit return_stmt(const value& retval)
-			: m_retval(retval)
+		explicit return_stmt(const value& retval = numerical_lit(0))
+			: m_retval(retval),
+			  statement(statement::kind::ReturnStmt)
 		{
 		}
 
-		return_stmt() = default;
-
 	 public:
-		const value& retval() const noexcept
+		[[nodiscard]] const value& retval() const noexcept
 		{
 			return m_retval;
 		}

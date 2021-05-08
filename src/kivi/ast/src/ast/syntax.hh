@@ -70,16 +70,14 @@ namespace syntax_analyzer
 
 	 public:
 
-		//
-		// Getters
-		//
-
-		identifier_class type() const
+		[[nodiscard]] identifier_class
+		type() const
 		{
 			return m_type;
 		}
 
-		const std::string& name() const
+		[[nodiscard]] const std::string&
+		name() const
 		{
 			return m_name;
 		}
@@ -97,7 +95,7 @@ namespace syntax_analyzer
 		std::string m_name;
 
 		/// The body of the function
-		I_statement m_body;
+		statement m_body;
 
 		/// The number of local variables defined in the function body
 		int m_locals{};
@@ -108,7 +106,7 @@ namespace syntax_analyzer
 	 public:
 		function() = default;
 
-		function(std::string name, const I_statement& body, int locals, int parameters)
+		function(std::string name, const statement& body, int locals, int parameters)
 			: m_name{ std::move(name) },
 			  m_locals{ locals },
 			  m_parameters{ parameters },
@@ -116,7 +114,7 @@ namespace syntax_analyzer
 		{
 		}
 
-		function(std::string name, const I_statement& body)
+		function(std::string name, const statement& body)
 			: m_name{ std::move(name) },
 			  m_body{ body },
 			  m_parameters{},
@@ -140,7 +138,7 @@ namespace syntax_analyzer
 			return m_parameters;
 		}
 
-		const I_statement& body() const noexcept
+		[[nodiscard]] const statement& body() const noexcept
 		{
 			return m_body;
 		}

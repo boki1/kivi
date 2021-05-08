@@ -16,7 +16,7 @@
 
 namespace syntax_analyzer
 {
-	class identifier_expr : public I_literal
+	class identifier_expr : public literal
 	{
 	 private:
 		identifier m_ident;
@@ -24,7 +24,9 @@ namespace syntax_analyzer
 	 public:
 		identifier_expr() = default;
 
-		explicit identifier_expr(identifier ident) : m_ident(std::move(ident))
+		explicit identifier_expr(identifier ident) :
+			m_ident(std::move(ident)),
+			literal(expression::kind::IdentifierExpr)
 		{
 		}
 

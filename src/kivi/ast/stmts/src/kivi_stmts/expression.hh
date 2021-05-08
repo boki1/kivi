@@ -23,7 +23,7 @@ namespace syntax_analyzer
 	 * "string";
 	 * ```
 	 */
-	class expression_stmt : public  I_statement
+	class expression_stmt : public statement
 	{
 	 private:
 		/// The actual expression. Since all expressions can be evaluated, store a value.
@@ -31,12 +31,13 @@ namespace syntax_analyzer
 
 	 public:
 		explicit expression_stmt(const value& expr)
-			: m_expr(expr)
+			: m_expr(expr),
+			  statement(statement::kind::ExpressionStmt)
 		{
 		}
 
 	 public:
-		const value& expr() const noexcept
+		[[nodiscard]] const value& expr() const noexcept
 		{
 			return m_expr;
 		}

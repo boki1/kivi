@@ -20,19 +20,22 @@ namespace syntax_analyzer
  * if x == y: ;
  * ```
  */
-class equality_expr : public I_comparison_operation
-{
-  public:
-    equality_expr () = default;
-    equality_expr (value lhs, value rhs) : I_comparison_operation (lhs, rhs) {}
+	class equality_expr : public comparison_operation
+	{
+	 public:
+		equality_expr() = default;
+		equality_expr(value lhs, value rhs) :
+			comparison_operation(lhs, rhs, expression::kind::EqualityOper)
+		{
+		}
 
-  public:
-    int
-    compare () const noexcept
-    {
-	return I_comparison_operation::compare ();
-    }
-};
+	 public:
+		int
+		compare() const noexcept override
+		{
+			return comparison_operation::compare();
+		}
+	};
 
 }
 

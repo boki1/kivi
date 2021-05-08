@@ -17,7 +17,7 @@ namespace syntax_analyzer
 	/**
 	 * @brief An expression which represents a binary operation
 	 */
-	class binary_operation : public I_expression
+	class binary_operation : public expression
 	{
 	 protected:
 
@@ -31,13 +31,9 @@ namespace syntax_analyzer
 
 		binary_operation() = default;
 
-		binary_operation(const value& lhs, const value& rhs)
-			: m_lhs(lhs), m_rhs(rhs)
+		binary_operation(const value& lhs, const value& rhs, expression::kind kind)
+			: m_lhs(lhs), m_rhs(rhs), expression(kind)
 		{
-		}
-
-		binary_operation operator=(const I_expression &rhs) {
-			return (*this);
 		}
 
 	 public:

@@ -20,14 +20,16 @@ namespace syntax_analyzer
 	class sequence
 	{
 	 private:
-		std::vector<I_expression> m_exprs;
+		std::vector<expression> m_exprs;
 
 	 public:
-		sequence() = default;
+		sequence()
+		{
+		}
 
 		template<typename ...T>
 		explicit sequence(T&& ... args)
-			: m_exprs({std::forward<T>(args)...})
+			: m_exprs({ std::forward<T>(args)... })
 		{
 		}
 
@@ -38,22 +40,24 @@ namespace syntax_analyzer
 		 * @note This function "makes" sequence an expression. In reality it is more of a function related only statement.
 		 * @return Either the last _contained_ expression inside the sequence or an empty one
 		 */
-		operator I_expression() const noexcept {
-			if (!m_exprs.empty()) {
-				return I_expression(m_exprs.back());
+		operator expression() const noexcept
+		{
+			if (!m_exprs.empty())
+			{
+				return expression(m_exprs.back());
 			}
 
-			return I_expression();
+			return expression();
 		}
 
 	 public:
-		void append(I_expression&& expr) noexcept
+		void append(expression&& expr) noexcept
 		{
 			m_exprs.push_back(std::move(expr));
 		}
 
 	 public:
-		const std::vector<I_expression>& exprs() const noexcept
+		[[nodiscard]] const std::vector<expression>& exprs() const noexcept
 		{
 			return m_exprs;
 		}

@@ -11,6 +11,8 @@
 #include <vector>
 #include <map>
 
+#define THROWS
+
 #define LOGURU_WITH_STREAMS 1
 #include <loguru/loguru.hpp>
 
@@ -98,7 +100,7 @@ namespace syntax_analyzer
 		 * @return void
 		 * @throws `cannot_pop_out_of_empty_exception` when no active scopes have been entered
 		 */
-		void exit_scope() noexcept(false);
+		void exit_scope() /* throws */;
 
 		/**
 		 * @brief Defines an arbitrary identifier
@@ -150,7 +152,7 @@ namespace syntax_analyzer
 		 * @note It is _vitaly_ important that instead of the found identifier, an identifier expression is returned.
 		 * @throws In case the identifier has not been already defined, an exception is thrown
 		 */
-		identifier_expr
+		[[nodiscard]] identifier_expr
 		use_identifier(const std::string& name) const;
 
 		/**
@@ -160,11 +162,11 @@ namespace syntax_analyzer
 		 * @return Reference to the newly placed function
 		 */
 		const function&
-		define_function_body(const std::string& name, const I_statement& body);
+		define_function_body(const std::string& name, const statement& body);
 
 	 public:
 
-		const std::vector<std::map<std::string, identifier>>& all_scopes() const
+		[[nodiscard]] const std::vector<std::map<std::string, identifier>>& all_scopes() const
 		{
 			return m_all_scopes;
 		}
@@ -174,12 +176,12 @@ namespace syntax_analyzer
 			return m_all_scopes;
 		}
 
-		const std::vector<function>& all_functions() const
+		[[nodiscard]] const std::vector<function>& all_functions() const
 		{
 			return m_all_functions;
 		}
 
-		const function& this_function() const
+		[[nodiscard]] const function& this_function() const
 		{
 			return m_this_function;
 		}

@@ -16,7 +16,7 @@ namespace syntax_analyzer
 	/*
 	 * @brief A var declaration
 	 */
-	class var_stmt : public I_statement
+	class var_stmt : public statement
 	{
 	 private:
 		std::string m_var;
@@ -25,11 +25,21 @@ namespace syntax_analyzer
 	 public:
 		var_stmt(std::string var, const value& val)
 			: m_var(std::move(var)),
-			  m_val(val)
+			  m_val(val),
+			  statement(statement::kind::VarStmt)
 		{
 		}
 
-		var_stmt() = default;
+	 public:
+		[[nodiscard]] const std::string& var() const noexcept
+		{
+			return m_var;
+		}
+
+		[[nodiscard]] const value& val() const noexcept
+		{
+			return m_val;
+		}
 	};
 
 }

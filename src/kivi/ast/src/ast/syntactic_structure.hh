@@ -30,8 +30,8 @@ namespace syntax_analyzer
 	 public:
 		virtual ~I_evaluable_syntactic_structure() = default;
 
-	 public:
 		explicit operator int() const noexcept;
+	 public:
 
 		int operator-(const I_evaluable_syntactic_structure &rhs) const noexcept;
 

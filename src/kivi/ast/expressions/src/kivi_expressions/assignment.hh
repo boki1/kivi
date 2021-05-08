@@ -8,6 +8,7 @@
 #include <ast/syntactic_structure.hh>
 
 #include "arithmetic_operation.hh"
+#include "kivi_expressions/base.hh"
 
 namespace syntax_analyzer
 {
@@ -16,11 +17,11 @@ namespace syntax_analyzer
 	 * @warning Potential bug: `binary_operation` stores 2 `value`'s as copies and not the originally passed ones.
 	 * 			This is a problem since in order to affect the lhs, we need to keep a reference to it.
 	 */
-	class assignment_expr : public I_arithmetic_operation
+	class assignment_expr : public arithmetic_operation
 	{
 	 public:
 		assignment_expr(const value& lvalue, const value& rvalue)
-			: I_arithmetic_operation(lvalue, rvalue)
+			: arithmetic_operation(lvalue, rvalue, expression::kind::AssignmentOper)
 		{
 		}
 	};

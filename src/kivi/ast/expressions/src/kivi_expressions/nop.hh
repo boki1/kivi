@@ -12,15 +12,20 @@
 namespace syntax_analyzer
 {
 
-class nop_expr : public I_expression
-{
-  public:
-    std::string
-    to_string () const noexcept override
-    {
-	return "nop";
-    }
-};
+	class nop_expr : public expression
+	{
+	 public:
+		nop_expr()
+			: expression(expression::kind::NopOper)
+		{
+		}
+
+		std::string
+		to_string() const noexcept override
+		{
+			return "nop";
+		}
+	};
 
 }
 

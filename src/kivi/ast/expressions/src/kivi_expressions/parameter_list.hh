@@ -18,22 +18,27 @@ namespace syntax_analyzer
 /**
  * @brief A function parameter list expression
  */
-	class parameter_list_expr : public I_expression
+	class parameter_list_expr : public expression
 	{
 	 private:
 		/// The parameters themselves. Each one is kept as a value instance
 		std::vector<value> m_params;
 
 	 public:
-		parameter_list_expr() = default;
+		parameter_list_expr()
+			: expression(expression::kind::ParameterList)
+		{
+		}
 
 		explicit parameter_list_expr(const value& param1)
-			: m_params({ param1 })
+			: m_params({ param1 }),
+			  expression(expression::kind::ParameterList)
 		{
 		}
 
 		explicit parameter_list_expr(std::vector<value> params)
-			: m_params(std::move(params))
+			: m_params(std::move(params)),
+			  expression(expression::kind::ParameterList)
 		{
 		}
 

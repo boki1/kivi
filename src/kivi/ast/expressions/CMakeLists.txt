@@ -1,7 +1,6 @@
 add_library(
         kivi_expressions
         src/kivi_expressions/base.hh
-        src/kivi_expressions/base.cc
         src/kivi_expressions/string.hh
         src/kivi_expressions/numerical.hh
         src/kivi_expressions/nop.hh

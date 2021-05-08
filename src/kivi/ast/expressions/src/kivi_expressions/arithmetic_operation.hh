@@ -9,26 +9,28 @@
 #define KIVI_SRC_KIVI_AST_EXPRESSIONS_SRC_KIVI_EXPRESSIONS_ARITHMETIC_OPERATION_HH_
 
 #include "binary_operation.hh"
+#include "kivi_expressions/base.hh"
 
 namespace syntax_analyzer
 {
 	/**
 	 * An arithmetic operation
 	 */
-	class I_arithmetic_operation : public binary_operation
+	class arithmetic_operation : public binary_operation
 	{
 	 public:
-		I_arithmetic_operation() = default;
+		arithmetic_operation() = default;
 
-		I_arithmetic_operation(const value& lhs, const value& rhs)
-			: binary_operation(lhs, rhs)
+		arithmetic_operation(const value& lhs, const value& rhs, expression::kind kind) :
+			binary_operation(lhs, rhs, kind)
 		{
 		}
 
-	 public:
-		I_arithmetic_operation operator=(const I_expression &rhs) {
+		arithmetic_operation operator=(const expression& rhs)
+		{
 			return (*this);
 		}
+
 	};
 }
 

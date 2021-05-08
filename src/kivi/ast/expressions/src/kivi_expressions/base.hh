@@ -9,32 +9,73 @@
 #define KIVI_SRC_KIVI_BASE_HH_
 
 #include <string>
-#include <list>
 
 #include <ast/syntactic_structure.hh>
 
 namespace syntax_analyzer
 {
 	/*
-	 * An interface from which all concrete implementations of
+	 * An abstract class from which all concrete implementations of
 	 * expression derive.
 	 */
-	class I_expression : public I_evaluable_syntactic_structure
+	class expression : public I_evaluable_syntactic_structure
 	{
 	 public:
+		/**
+		 * @brief Lists all legal kinds of expression
+		 */
+		enum class kind
+		{
+			AdditionOper,
+			SubtractionOper,
+			DivisionOper,
+			MultiplicationOper,
+			ModularDivisionOper,
+			EqualityOper,
+			InequalityOper,
+			AssignmentOper,
+			NegationOper,
+			NopOper,
+			StringLiteral,
+			NumberLiteral,
+			IdentifierExpr,
+			Illegal,
+			FunctionCallExpr,
+			ParameterList
+		};
 
-		I_expression() = default;
+	 private:
+		/// Stores the concrete type of expression
+		kind m_kind;
 
-		virtual ~I_expression() = default;
+	 public:
+		/// Construction
+		expression() :
+			m_kind(kind::Illegal)
+		{
+		}
+
+		expression(kind kind_) :
+			m_kind(kind_)
+		{
+		}
+
+		virtual ~expression() = default;
 
 		/**
-		 * Returns the string representation of the concrete expression
-		 * @return string representation
+		 * @brief Returns the string representation of the concrete expression
+		 * @return String representation
 		 */
 		virtual std::string to_string() const noexcept
 		{
 			return "?";
 		};
+
+	 public:
+		expression::kind get_kind()
+		{
+			return m_kind;
+		}
 
 	};
 

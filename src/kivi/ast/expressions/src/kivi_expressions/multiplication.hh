@@ -16,25 +16,25 @@ namespace syntax_analyzer
 /**
  * @brief An expression which represents multiplication
  */
-class multiplication_expr : public binary_operation
-{
-  public:
-    multiplication_expr () = default;
+	class multiplication_expr : public arithmetic_operation
+	{
+	 public:
+		multiplication_expr() = default;
 
-    multiplication_expr (const value &lhs, const value &rhs)
-	: binary_operation (lhs, rhs)
-    {
-    }
+		multiplication_expr(const value& lhs, const value& rhs)
+			: arithmetic_operation(lhs, rhs, expression::kind::MultiplicationOper)
+		{
+		}
 
-  public:
-    std::string
-    to_string () const noexcept override
-    {
-	//			return std::to_string(left()) + " * " +
-	//std::to_string(right());
-	return "TODO";
-    }
-};
+	 public:
+		std::string
+		to_string() const noexcept override
+		{
+			//			return std::to_string(left()) + " * " +
+			//std::to_string(right());
+			return "TODO";
+		}
+	};
 }
 
 #endif // KIVI_SRC_KIVI_EXPRESSIONS_MULTIPLICATION_HH_

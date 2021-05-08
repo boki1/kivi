@@ -8,29 +8,27 @@
 #ifndef KIVI_SRC_KIVI_EXPRESSIONS_ADDITION_HH_
 #define KIVI_SRC_KIVI_EXPRESSIONS_ADDITION_HH_
 
-#include "binary_operation.hh"
+#include "arithmetic_operation.hh"
 
 namespace syntax_analyzer
 {
 
 	/**
 	 * @brief A expression which represents the addition operation.
-	 * @note Directly derives from `binary_operation`
 	 */
-	class addition_expr : public binary_operation
+	class addition_expr : public arithmetic_operation
 	{
 	 public:
 		addition_expr() = default;
 
-		addition_expr(const value &left, const value &right)
-			: binary_operation(left, right)
+		addition_expr(const value &left, const value &right) :
+			arithmetic_operation(left, right, expression::kind::AdditionOper)
 		{
 		}
 
 	 public:
 		std::string to_string() const noexcept override
 		{
-//			return std::to_string(left()) + " + " + std::to_string(right());
 			return "TODO";
 		}
 	};

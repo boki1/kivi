@@ -21,19 +21,20 @@ namespace syntax_analyzer
 	 * if _condition_: _statement_
 	 * ```
 	 */
-	class if_stmt : public I_statement
+	class if_stmt : public statement
 	{
 	 private:
 		/// The condition required to be evaluated to true in order to execute the body
 		value m_condition;
 
 		/// The body executed if the condition is true
-		I_statement m_than;
+		statement m_than;
 
 	 public:
-		if_stmt(const value& condition, const I_statement& than)
+		if_stmt(const value& condition, const statement& than)
 			: m_condition(condition),
-			  m_than(than)
+			  m_than(than),
+			  statement(statement::kind::IfStmt)
 		{
 		}
 
@@ -43,7 +44,7 @@ namespace syntax_analyzer
 			return m_condition;
 		}
 
-		const I_statement& than_body() const noexcept
+		const statement& than_body() const noexcept
 		{
 			return m_than;
 		}
