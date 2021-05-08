@@ -161,8 +161,8 @@ Unary_operation:
  */
 
 Function_call:
-  Expression '(' ')' 				{ $$ = sa::function_call_expr (std::move ($1)); }
-| Expression Parenthesised_expression 		{ $$ = sa::function_call_expr (std::move ($1), std::move ($2)); }
+  IDENTIFIER '(' ')' 				{ $$ = sa::function_call_expr ($1); }
+| IDENTIFIER Parenthesised_expression 		{ $$ = sa::function_call_expr ($1, std::move ($2)); }
 ;
 
 Expression:

@@ -42,6 +42,12 @@ namespace syntax_analyzer
 			return m_expr;
 		}
 
+		std::string to_string() const noexcept
+		{
+			// Intenionally empty
+			return "";
+		}
+
 	};
 
 }

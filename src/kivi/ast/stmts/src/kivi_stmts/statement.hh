@@ -44,9 +44,9 @@ namespace syntax_analyzer
 
 		virtual ~statement() = default;
 
-		virtual std::string to_string() const
+		[[nodiscard]] std::string to_string() const noexcept override
 		{
-			return "TODO";
+			return "<unknown>";
 		}
 
 	 public:

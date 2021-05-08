@@ -68,11 +68,11 @@ namespace syntax_analyzer
 		 */
 		virtual std::string to_string() const noexcept
 		{
-			return "?";
+			return "<unknown>";
 		};
 
 	 public:
-		expression::kind get_kind()
+		expression::kind get_kind() const noexcept
 		{
 			return m_kind;
 		}

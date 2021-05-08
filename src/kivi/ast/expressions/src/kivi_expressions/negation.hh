@@ -23,11 +23,10 @@ namespace syntax_analyzer
 		}
 
 	 public:
-		std::string
+		[[nodiscard]] std::string
 		to_string() const noexcept override
 		{
-			//			return std::to_string(operand());
-			return "TODO";
+			return "-";
 		}
 	};
 }

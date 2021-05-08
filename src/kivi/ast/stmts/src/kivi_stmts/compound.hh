@@ -64,6 +64,12 @@ namespace syntax_analyzer
 			m_body.push_back(std::move(stmt));
 		}
 
+		[[nodiscard]] std::string to_string() const noexcept override
+		{
+			// Intentionally empty
+			return "";
+		}
+
 	};
 
 }

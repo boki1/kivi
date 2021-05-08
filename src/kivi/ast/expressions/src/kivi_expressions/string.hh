@@ -40,7 +40,7 @@ namespace syntax_analyzer
 			return str;
 		}
 
-		std::string
+		[[nodiscard]] std::string
 		to_string() const noexcept override
 		{
 			return get_str();

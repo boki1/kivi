@@ -49,6 +49,11 @@ namespace syntax_analyzer
 			return m_than;
 		}
 
+		[[nodiscard]] std::string to_string() const noexcept override
+		{
+			return "if";
+		}
+
 	};
 
 }

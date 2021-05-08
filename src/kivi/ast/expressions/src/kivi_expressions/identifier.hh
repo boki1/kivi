@@ -34,8 +34,7 @@ namespace syntax_analyzer
 		std::string
 		to_string() const noexcept override
 		{
-			// return std::to_string(ident());
-			return "TODO";
+			return m_ident.name();
 		}
 
 	 public:
@@ -44,6 +43,7 @@ namespace syntax_analyzer
 		{
 			return m_ident;
 		}
+
 	};
 }
 

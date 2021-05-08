@@ -10,6 +10,8 @@
 
 #include <ast/syntactic_structure.hh>
 
+#include <kivi_expressions/numerical.hh>
+
 #include "statement.hh"
 
 namespace syntax_analyzer
@@ -30,7 +32,7 @@ namespace syntax_analyzer
 
 	 public:
 
-		explicit return_stmt(const value& retval = numerical_lit(0))
+		explicit return_stmt(const value& retval = sa::numerical_lit(0))
 			: m_retval(retval),
 			  statement(statement::kind::ReturnStmt)
 		{
@@ -40,6 +42,11 @@ namespace syntax_analyzer
 		[[nodiscard]] const value& retval() const noexcept
 		{
 			return m_retval;
+		}
+
+		[[nodiscard]] std::string to_string() const noexcept override
+		{
+			return "return";
 		}
 
 	};

@@ -24,6 +24,10 @@ namespace syntax_analyzer
 			: arithmetic_operation(lvalue, rvalue, expression::kind::AssignmentOper)
 		{
 		}
+
+		std::string to_string() const noexcept override {
+			return "=";
+		}
 	};
 }
 

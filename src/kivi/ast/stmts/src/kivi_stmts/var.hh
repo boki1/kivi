@@ -40,6 +40,11 @@ namespace syntax_analyzer
 		{
 			return m_val;
 		}
+
+		std::string to_string() const noexcept override
+		{
+			return "var";
+		}
 	};
 
 }

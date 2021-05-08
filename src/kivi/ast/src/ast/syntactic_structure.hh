@@ -19,13 +19,18 @@ namespace syntax_analyzer
 	{
 	 public:
 		virtual ~I_syntactic_structure() = default;
+
+		[[nodiscard]] virtual std::string to_string() const noexcept
+		{
+			return "<unknown>";
+		}
 	};
 
 	/**
 	 * An interface which marks the implementor as a syntactic structure
 	 * which evaluates to a value -- evaluable.
 	 */
-	class I_evaluable_syntactic_structure : I_syntactic_structure
+	class I_evaluable_syntactic_structure : public I_syntactic_structure
 	{
 	 public:
 		virtual ~I_evaluable_syntactic_structure() = default;
@@ -33,9 +38,9 @@ namespace syntax_analyzer
 		explicit operator int() const noexcept;
 	 public:
 
-		int operator-(const I_evaluable_syntactic_structure &rhs) const noexcept;
+		int operator-(const I_evaluable_syntactic_structure& rhs) const noexcept;
 
-		bool operator==(const I_evaluable_syntactic_structure &rhs) const noexcept;
+		bool operator==(const I_evaluable_syntactic_structure& rhs) const noexcept;
 
 		bool operator==(int rhs) const noexcept;
 	};

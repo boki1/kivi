@@ -35,6 +35,11 @@ namespace syntax_analyzer
 		{
 			return comparison_operation::compare();
 		}
+
+		std::string to_string() const noexcept override
+		{
+			return "==";
+		}
 	};
 
 }

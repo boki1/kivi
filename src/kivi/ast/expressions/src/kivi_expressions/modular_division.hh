@@ -26,12 +26,9 @@ namespace syntax_analyzer
 		}
 
 	 public:
-		std::string
-		to_string() const noexcept override
+		[[nodiscard]] std::string to_string() const noexcept override
 		{
-			//			return std::to_string(left()) + " % " +
-			//std::to_string(right());
-			return "TODO";
+			return "%";
 		}
 	};
 }

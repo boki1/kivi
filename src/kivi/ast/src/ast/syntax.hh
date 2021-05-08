@@ -55,7 +55,7 @@ namespace syntax_analyzer
 	 * encountered during parsing of a source file. Check `identifier_class`
 	 * for more information about the different types of identifiers.
 	 */
-	class identifier : I_evaluable_syntactic_structure
+	class identifier : public I_evaluable_syntactic_structure
 	{
 	 private:
 		identifier_class m_type = identifier_class::Undefined;
@@ -82,13 +82,18 @@ namespace syntax_analyzer
 			return m_name;
 		}
 
+		[[nodiscard]] std::string to_string() const noexcept override
+		{
+			return name();
+		}
+
 	};
 
 	/**
 	 * The following data structure describes a valid function signature
 	 * encountered during parsing of a source file.
 	 */
-	class function : I_evaluable_syntactic_structure
+	class function : public I_evaluable_syntactic_structure
 	{
 	 private:
 		/// The name of the function
@@ -141,6 +146,11 @@ namespace syntax_analyzer
 		[[nodiscard]] const statement& body() const noexcept
 		{
 			return m_body;
+		}
+
+		[[nodiscard]] std::string to_string() const noexcept override
+		{
+			return m_name + "()";
 		}
 
 	};

@@ -10,6 +10,7 @@
 
 #include <ast/syntactic_structure.hh>
 
+#include "sequence.hh"
 #include "base.hh"
 
 namespace syntax_analyzer
@@ -62,10 +63,15 @@ namespace syntax_analyzer
 		}
 
 	 public:
-		const std::vector<value>&
+		[[nodiscard]] const std::vector<value>&
 		params() const noexcept
 		{
 			return m_params;
+		}
+
+		[[nodiscard]] std::string to_string() const noexcept override
+		{
+			return "<unknown>";
 		}
 	};
 

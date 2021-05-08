@@ -30,9 +30,7 @@ namespace syntax_analyzer
 		std::string
 		to_string() const noexcept override
 		{
-			//			return std::to_string(left()) + " * " +
-			//std::to_string(right());
-			return "TODO";
+			return "*";
 		}
 	};
 }
