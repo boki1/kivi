@@ -2,6 +2,7 @@ add_executable(
         example_test
         config_test.cc
         parsing_context_test.cc
+        ast_test.cc
 )
 
 target_link_libraries(example_test PRIVATE catch2)

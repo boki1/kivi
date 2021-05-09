@@ -156,14 +156,51 @@ namespace syntax_tree
 		m_children.push_back(std::move(child));
 	}
 
-	bool operator==(const ast::postorder_iterator&, const ast::postorder_iterator&)
-	{
-		return false;
+    ast::postorder_iterator::postorder_iterator(pointer ptr) : m_ptr(ptr) { }
+
+    ast::postorder_iterator &ast::postorder_iterator::operator=(const ast::postorder_iterator &rhs) {
+        m_ptr = rhs.get_ptr_mut();
+        return *this;
+    }
+
+    ast::postorder_iterator &ast::postorder_iterator::operator++() {
+        m_ptr++;
+	    return *this;
+    }
+
+    const ast::postorder_iterator ast::postorder_iterator::operator++(int) {
+        ast::postorder_iterator tmp = *this;
+	        ++(*this);
+	        return tmp;
 	}
 
-	bool operator!=(const ast::postorder_iterator&, const ast::postorder_iterator&)
-	{
-		return false;
-	}
+    const ast::node &ast::postorder_iterator::operator*() const {
+        return *m_ptr;
+    }
+
+    ast::postorder_iterator::pointer ast::postorder_iterator::operator->() const {
+        return m_ptr;
+    }
+
+    bool operator==(const ast::postorder_iterator&lhs, const ast::postorder_iterator&rhs)
+    {
+        return lhs.get_ptr_mut() == rhs.get_ptr_mut();
+    }
+
+    bool operator!=(const ast::postorder_iterator&lhs, const ast::postorder_iterator&rhs)
+    {
+        return !(lhs == rhs);
+    }
+
+    void swap(ast::postorder_iterator &lhs, ast::postorder_iterator &rhs) {
+        ast::postorder_iterator::pointer tmp = rhs.get_ptr_mut();
+        rhs.get_ptr_mut() = lhs.get_ptr_mut();
+        lhs.get_ptr_mut() = tmp;
+    }
+
+    ast::postorder_iterator::pointer &ast::postorder_iterator::get_ptr_mut() const {
+        return const_cast<postorder_iterator::pointer &>(m_ptr);
+    }
+
 
 }

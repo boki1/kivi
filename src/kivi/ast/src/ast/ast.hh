@@ -71,18 +71,15 @@ namespace syntax_tree
 		};
 
 		typedef std::variant<sa::statement, sa::function, sa::identifier, sa::expression, sa::invalid> value_type;      //< The data type of contained value
-		typedef std::variant<ast::node_kind, sa::expression::kind, sa::statement::kind>
-			kind_type;                            //< The data type which combines the 3 "kind" enums
+		typedef std::variant<ast::node_kind, sa::expression::kind, sa::statement::kind> kind_type;                      //< The data type which combines the 3 "kind" enums
 		typedef std::vector<ast::node> children_type;                                                                   //< The data type of children
 
-	 public:
+	 public: /* Class node */
 		/**
 		 * @brief AST node
 		 */
 		class node
 		{
-		 public:
-
 		 private:
 			/// The kind of node value stored in the concrete instance
 			kind_type m_kind;
@@ -96,7 +93,7 @@ namespace syntax_tree
 			/// Stringified
 			std::string m_str = "";
 
-		 public:
+		 public: /* Constructors & Destructors */
 
 			/// Construction
 			node(kind_type kind, const value_type& val, children_type preset_children = {})
@@ -109,7 +106,7 @@ namespace syntax_tree
 			explicit node(const sa::statement& stmt);
 			explicit node(const sa::expression& expr);
 
-		 public:
+		 public: /* Functions */
 
 			/**
 			 * @brief Puts the given node as a child node to the current one
@@ -124,13 +121,14 @@ namespace syntax_tree
 
 		};
 
-	 public:
+	 public: /* Class postorder_iterator */
 		/**
 		 * @brief AST postorder_iterator
 		 * @note The class is marked as final
 		 */
 		class postorder_iterator final
 		{
+		private:
 			///
 			/// Iterator "configuration"
 			/// Defines the iterator _traits_.
@@ -141,10 +139,19 @@ namespace syntax_tree
 			typedef const ast::node* pointer;                        //< The type of pointer to the contained value
 			typedef std::forward_iterator_tag iterator_category;     //< The type of postorder_iterator implementation
 
-		 public:
-			/// Copy construction
-			postorder_iterator(const ast::postorder_iterator&);
+			// The pointer to an ast::node element
+            pointer m_ptr;
 
+        public: /* Constructors & Destructors */
+		    explicit postorder_iterator(pointer ptr);
+
+			/// Copy construction
+			postorder_iterator(const ast::postorder_iterator&) = default;
+
+            /// Destructor
+            ~postorder_iterator() = default;
+
+        public: /* Functions */
 			/// Assignment operator
 			postorder_iterator& operator=(const ast::postorder_iterator&);
 
@@ -152,7 +159,7 @@ namespace syntax_tree
 			postorder_iterator& operator++();
 
 			/// Postfix increment
-			postorder_iterator& operator++(int);
+			const postorder_iterator operator++(int);
 
 			/// Lookup current position
 			reference operator*() const;
@@ -169,11 +176,9 @@ namespace syntax_tree
 			/// Swap function
 			friend void swap(postorder_iterator& lhs, postorder_iterator& rhs);
 
-			/// Destructor
-			~postorder_iterator() = default;
 
-		 public:
-
+		 public: /* Getters & Setters */
+		    [[nodiscard]] pointer &get_ptr_mut() const;
 		};
 
 		/// Set the postorder depth-first search iterator as the default iterator
@@ -196,7 +201,7 @@ namespace syntax_tree
 			sa::invalid()
 		}};
 
-	 public:
+	 public: /* AST Constructors & Destructors */
 		explicit ast(std::vector<sa::function>&& functions)
 		{
 			for (auto const& fun: functions)
@@ -205,11 +210,11 @@ namespace syntax_tree
 			}
 		}
 
-	 public:
+	 public: /* Functions */
 
 		/** 
 		 *  @brief "Extracts" the AST out of different kind of syntactical structures
-		 *  @param ident Identifer
+		 *  @param ident Identifier
 		 *  @return The root of the extracted AST
 		 *  @note The extracted identifier looks this way as if in its AST representation
 		 */
@@ -358,7 +363,7 @@ namespace syntax_tree
 		 */
 		ast::iterator back();
 
-	 public:
+	 public: /* Getters & Setters */
 
 		node&
 		root_mut() noexcept

@@ -5,7 +5,7 @@
 #include <kivi_parser/kivi_parser.tab.hh>   //yy::kivi_parser::syntax_error
 
 /**
- * @file example_test.cc
+ * @file parsing_context_test.cc
  * @brief Tests the parsing_context using the catch2 testing framework
  */
 
@@ -27,23 +27,6 @@ TEST_CASE("Parsing context", "[pc]")
         pars_cntx.exit_scope();
         REQUIRE(pars_cntx.all_scopes().size() == curr_scopes - 1);
     }
-
-    // TODO: test with exception requirement
-//    SECTION("irregular scope exit - exit from 0 scopes") {
-//        pars_cntx.all_scopes_mut().clear();
-//        pars_cntx.exit_scope();
-//        REQUIRE(pars_cntx.all_scopes().size() == );
-//    }
-
-        // TODO: bugFix
-//    SECTION("regular define_identifier use") {
-//        const std::string name = "varIsThis";
-//        pars_cntx.define_identifier(name, sa::identifier(sa::identifier_class::Parameter, ""));
-//        REQUIRE(pars_cntx.all_scopes().back().find(name)->second.name() == name);
-//        REQUIRE(pars_cntx.all_scopes().back().find(name)->second.type() == sa::identifier_class::Parameter);
-//        REQUIRE(pars_cntx.all_scopes().back().find(name)->first == name);
-//    }
-
 
     SECTION("define two identical identifiers") {
         const std::string name = "var1";
