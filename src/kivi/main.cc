@@ -5,9 +5,8 @@
 #include <loguru/loguru.hpp>
 
 #include <ast/ast.hh>
-#include <ast/parsing_context.hh>
-#include <ast_printer/ast_printer.hh>
 #include <kivi_parser/kivi_parser.tab.hh>
+#include <parser/parsing_context.hh>
 
 static void
 usage ()

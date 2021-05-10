@@ -110,6 +110,8 @@ from higher level client code
     ```cpp
     blah b{blah_blah};
     ```
+<<<<<<< HEAD
+=======
 - When using the syntax_analyzer namespace, prefer `syntax_analyzer` over `sa`
     + Use `sa` only when the statement is too long, for example:
     ```cpp
@@ -119,4 +121,5 @@ from higher level client code
     ```cpp
   syntax_analyzer::parsing_context &ctx;
     ```
+>>>>>>> KIVI-44-refactoring-syntax-analyzer
   

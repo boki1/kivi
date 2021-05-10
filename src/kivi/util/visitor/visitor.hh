@@ -3,7 +3,6 @@
 
 class visitor
 {
-
 };
 
-#endif //KIVI_SRC_KIVI_UTIL_VISITER_HH_
+#endif // KIVI_SRC_KIVI_UTIL_VISITER_HH_
