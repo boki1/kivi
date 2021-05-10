@@ -1,2 +1,8 @@
 build/
 src/autogen/kivi_parser/*
+
+Testing
+
+# Clion
+.idea
+cmake-build-debug
