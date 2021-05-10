@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 build/
 src/autogen/kivi_parser/*
 
@@ -6,3 +7,18 @@ Testing
 # Clion
 .idea
 cmake-build-debug
+=======
+# Kivi
+build/
+src/autogen/kivi_parser/*
+
+# Clion
+cmake-build-debug/
+.idea/
+CMakeCache.txt
+
+.cache/
+
+# Core dumps
+core*
+>>>>>>> KIVI-44-refactoring-syntax-analyzer

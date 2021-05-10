@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <kivi_expressions/binary_operation.hh>
 #include <kivi_expressions/unary_operation.hh>
 #include <kivi_expressions/function_call.hh>
@@ -163,6 +164,31 @@ namespace syntax_tree
 	bool operator!=(const ast::postorder_iterator&, const ast::postorder_iterator&)
 	{
 		return false;
+=======
+#include "ast.hh"
+
+namespace st = syntax_tree;
+
+namespace syntax_tree
+{
+	ast_node ast::extract(const sa::function& fun)
+	{
+		return extract(fun.body());
+	}
+
+	ast_node ast::extract(const sa::I_statement& stmt)
+	{
+
+	}
+
+	ast_node ast::extract(const sa::I_expression& expr)
+	{
+	}
+
+	ast_node ast::extract(const sa::identifier& ident)
+	{
+		return ident.name();
+>>>>>>> KIVI-44-refactoring-syntax-analyzer
 	}
 
 }

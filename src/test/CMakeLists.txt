@@ -33,4 +33,3 @@ add_executable(test__parsing_context parsing_context.test.cc)
 target_link_libraries(test__parsing_context PUBLIC test_main)
 add_test(NAME Parsing_context
         COMMAND test__parsing_context)
-
