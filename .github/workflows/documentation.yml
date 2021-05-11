@@ -3,26 +3,17 @@ name: Documentation upload
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-
-
+    
 jobs:
-  build:
-    runs-on: ubuntu-latest
+	  build:
+	    runs-on: ubuntu-latest
+	    steps:
+	    - uses: actions/checkout@v2
+      
+	    - name: Build docs
+	      working-directory: ${{github.workspace}}
+	      run: ./tools/docs.sh
 
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Doxygen Action
-      uses: mattnotmitt/doxygen-action@v1.1.0
-      with:
-        doxyfile-path: "Doxygen"
-        working-directory: "docs/"
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: "build/html"
+	    - name: Deploy docs
+	      working-directory: ${{github.workspace}}
+	      run: ghp-import -npf /docs/build/html
