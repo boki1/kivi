@@ -1,2 +1,12 @@
 build/
 src/autogen/kivi_parser/*
+
+Testing
+
+.idea
+cmake-build-debug
+CMakeCache.txt
+
+.cache/
+
+core*

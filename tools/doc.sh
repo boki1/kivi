@@ -1,5 +1,5 @@
-#!bin/bash
+#!/bin/bash
 
 cd docs/
-doxygen
+doxygen Doxygen
 
