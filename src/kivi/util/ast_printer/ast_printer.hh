@@ -1,13 +1,13 @@
 #ifndef KIVI_SRC_KIVI_UTIL_AST_PRINTER_AST_PRINTER_HH_
 #define KIVI_SRC_KIVI_UTIL_AST_PRINTER_AST_PRINTER_HH_
 
-namespace parser_util
-{
+namespace parser_util {
 
 class ast_printer
 {
+
 };
 
 }
 
-#endif // KIVI_SRC_KIVI_UTIL_AST_PRINTER_AST_PRINTER_HH_
+#endif //KIVI_SRC_KIVI_UTIL_AST_PRINTER_AST_PRINTER_HH_

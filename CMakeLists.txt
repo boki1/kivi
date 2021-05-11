@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.16)
-<<<<<<< HEAD
 
 project(kivi VERSION 0.01)
 
@@ -31,12 +30,6 @@ endfunction()
 print(PROJECT_ROOT SRC_DIR KIVI_SRC_DIR AUTOGEN_DIR MISC_DIR EXTERN_DIR)
 print(PROJECT_ROOT)
 
-#######################
-=======
-set(CMAKE_CXX_STANDARD 17)
-
-project(kivi VERSION 0.01)
-
->>>>>>> KIVI-44-refactoring-syntax-analyzer
+####################
 
 add_subdirectory(src)

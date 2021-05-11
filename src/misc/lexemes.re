@@ -1,6 +1,6 @@
 #include "kivi_parser/kivi_parser.tab.hh"
 #include "parser/parsing_context.hh"
-#
+
 // Namespace shortcuts
 namespace sa = syntax_analyzer;
 using kp = yy::kivi_parser;

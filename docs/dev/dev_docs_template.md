@@ -10,7 +10,7 @@
 - Files
     - _source_: `snake_case.cc`
     - _header_: `snake_case.hh`
-        
+
 -------
 
 ### Structure
@@ -24,12 +24,12 @@ from higher level client code
 *Empty for now :(*
 
 -------
-        
+
 ### Classes
 - Class definitions follow this structure:
-        
+
     ```c++
-  
+
     /**
      * Brief description
      * ...
@@ -38,50 +38,50 @@ from higher level client code
     private:
         /// Info about `m_field1`
         type m_field1;
-  
+
         /// Info about `m_field2`
         type m_field2;
-        
+
     public:
         ///
         /// Constructors and destructors
         ///
-        
+
     public:
         ///
         /// API
         ///
-  
+
         /*
-         * @brief  ... 
-         * @note   ...  
+         * @brief  ...
+         * @note   ...
          * @param  [in|out] param   ...
          * @return ...
          */
         type do_something1(type param);
-  
+
         /*
-         * @brief  ... 
-         * @note   ...  
+         * @brief  ...
+         * @note   ...
          * @param  [in|out] param1   ...
          * @param  [in|out] param2   ...
          * @return ...
          */
         type do_something2(type param1, type param2);
-        
+
     public:
         ///
         /// Getters (optionally also setters)
         ///
-        
+
         type field1() const noexcept {
             return m_field1;
         }
-        
+
         ...
     };
     ```
-  
+
  ----------------
  ### Includes
  - Include order is the following:
@@ -90,7 +90,7 @@ from higher level client code
     3. Local libraries
     4. Local headers
  - **Additional:** New line between each category may help :)
-    
+
     Example
     ```c++
    #include <algorithm>
@@ -100,9 +100,8 @@ from higher level client code
    #include <local_lib/...>
 
    #include <blah.hh>
-   
     ```
-   
+
 -----------------
 ### Misc
 - Prefer initializing with `{}` over `()`
@@ -110,8 +109,6 @@ from higher level client code
     ```cpp
     blah b{blah_blah};
     ```
-<<<<<<< HEAD
-=======
 - When using the syntax_analyzer namespace, prefer `syntax_analyzer` over `sa`
     + Use `sa` only when the statement is too long, for example:
     ```cpp
@@ -120,6 +117,3 @@ from higher level client code
     + Do prefer `syntax_analyzer` for situations like:
     ```cpp
   syntax_analyzer::parsing_context &ctx;
-    ```
->>>>>>> KIVI-44-refactoring-syntax-analyzer
-  

@@ -17,16 +17,15 @@ namespace sa = syntax_analyzer;
  * @return void
  */
 void
-yy::kivi_parser::error (const location_type &p_location,
-			const std::string &p_message)
+yy::kivi_parser::error(const location_type& p_location,
+	const std::string& p_message)
 {
-    auto beg = p_location.begin;
-    auto end = p_location.end;
-    auto fname = beg.filename ? beg.filename->c_str () : "undefined file";
+	auto beg = p_location.begin;
+	auto end = p_location.end;
+	auto fname = beg.filename ? beg.filename->c_str() : "undefined file";
 
-    std::cerr << fname;
-    std::cerr << ':' << beg.line << ':' << beg.column << '-' << end.column
-	      << ": ";
-    std::cerr << p_message << '\n';
+	std::cerr << fname;
+	std::cerr << ':' << beg.line << ':' << beg.column << '-' << end.column << ": ";
+	std::cerr << p_message << '\n';
 }
 
