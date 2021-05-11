@@ -3,17 +3,17 @@ name: Documentation upload
 on:
   push:
     branches: [ master ]
-    
-jobs:
-	  build:
-	    runs-on: ubuntu-latest
-	    steps:
-	    - uses: actions/checkout@v2
-      
-	    - name: Build docs
-	      working-directory: ${{github.workspace}}
-	      run: ./tools/docs.sh
 
-	    - name: Deploy docs
-	      working-directory: ${{github.workspace}}
-	      run: ghp-import -npf /docs/build/html
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v2
+    
+     - name: Build docs
+       working-directory: ${{github.workspace}}
+       run: ./tools/doc.sh
+       
+     - name: Deploy docs
+       working-directory: ${{github.workspace}}
+       run: ghp-import -npf /docs/build/html
