@@ -23,6 +23,7 @@
 
 #include <kivi_expressions/base.hh>
 #include <kivi_stmts/statement.hh>
+#include <kivi_expressions/parameter_list.hh>
 
 #include "syntactic_structure.hh"
 
@@ -108,19 +109,15 @@ namespace syntax_analyzer
 		/// The body of the function
 		statement m_body;
 
-		/// The number of local variables defined in the function body
-		int m_locals{};
-
-		/// The size of the parameter list of the function
-		int m_parameters{};
+		/// A list of all function parameters
+		parameter_list_expr m_parameter_list{};
 
 	 public:
 		function() = default;
 
-		function(std::string name, const statement& body, int locals, int parameters)
+		function(std::string name, const statement& body, parameter_list_expr parameters)
 			: m_name{ std::move(name) },
-			  m_locals{ locals },
-			  m_parameters{ parameters },
+			  m_parameter_list{std::move( parameters )},
 			  m_body{ body }
 		{
 		}
@@ -128,8 +125,7 @@ namespace syntax_analyzer
 		function(std::string name, const statement& body)
 			: m_name{ std::move(name) },
 			  m_body{ body },
-			  m_parameters{},
-			  m_locals{}
+			  m_parameter_list{}
 		{
 		}
 
@@ -139,14 +135,9 @@ namespace syntax_analyzer
 			return m_name;
 		}
 
-		int locals() const noexcept
+		[[nodiscard]] const parameter_list_expr &parameter_list() const noexcept
 		{
-			return m_locals;
-		}
-
-		int parameters() const noexcept
-		{
-			return m_parameters;
+			return m_parameter_list;
 		}
 
 		[[nodiscard]] const statement& body() const noexcept

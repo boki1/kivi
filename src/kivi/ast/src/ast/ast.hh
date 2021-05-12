@@ -94,7 +94,7 @@ namespace syntax_tree
 			value_type m_value;
 
 			/// Stringified
-			std::string m_str = "";
+			std::string m_str;
 
 		 public:
 

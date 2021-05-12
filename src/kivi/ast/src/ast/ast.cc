@@ -25,9 +25,7 @@ namespace syntax_tree
 	{
 
 		proceed_with(node(fun.body()));
-
-		// TODO:
-		// proceed_with(fun.parameter_list());
+		proceed_with(node(fun.parameter_list()));
 	}
 
 	nod::node(const sa::statement& stmt) :

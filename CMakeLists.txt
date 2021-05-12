@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 project(kivi VERSION 0.01)
 
-add_compile_options(--std=c++17)
+add_compile_options(--std=c++17 -g)
 
 find_package(Catch2 CONFIG REQUIRED)
 enable_testing()
