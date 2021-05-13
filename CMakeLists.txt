@@ -22,3 +22,5 @@ add_executable(kivi_ir
         test/frontend/main.test.cc
         test/frontend/parsing_context.test.cc
         main.cc)
+
+add_subdirectory(util)
