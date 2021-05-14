@@ -1,26 +1,34 @@
 cmake_minimum_required(VERSION 3.17)
-project(kivi_ir)
+project(kivi)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-include_directories(extern/catch2)
-include_directories(extern/loguru)
-include_directories(frontend/parser)
 
-add_executable(kivi_ir
-        extern/catch2/catch2.hpp
-        extern/loguru/loguru.cpp
-        extern/loguru/loguru.hpp
-        frontend/parser/kivi_parser_error.cc
-        frontend/parser/parsing_context.cc
-        frontend/parser/parsing_context.hh
-        frontend/parser/syntactic_structure.hh
-        frontend/parser/syntax.hh
-        test/frontend/ast_generation.test.cc
-        test/frontend/config.test.cc
-        test/frontend/example.test.cc
-        test/frontend/main.test.cc
-        test/frontend/parsing_context.test.cc
-        main.cc)
+############## Global "variables"
 
-add_subdirectory(util)
+set(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}")
+set(FRONTEND_DIR "${PROJECT_ROOT}/frontend")
+set(PARSER_DIR "${FRONTEND_DIR}/parser")
+set(GRAMMAR "${PARSER_DIR}/grammar.y")
+set(LEXEMES "${PARSER_DIR}/lexemes.re")
+set(BACKEND_DIR "${PROJECT_ROOT}/backend")
+set(EXTERN_DIR "${PROJECT_ROOT}/extern")
+set(EXTERN_DIR "${PROJECT_ROOT}/extern")
+set(TEST_DIR "${PROJECT_ROOT}/test")
+set(UTILS_DIR "${PROJECT_ROOT}/utils")
+
+############### Utilities
+
+function(print)
+    foreach (var ${ARGN})
+        message("${var} = ${${var}}")
+    endforeach ()
+endfunction()
+
+############### Subdirectories
+
+add_subdirectory(extern)
+add_subdirectory(utils)
+add_subdirectory(frontend)
+add_subdirectory(backend)
+# add_subdirectory(test)

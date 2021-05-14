@@ -14,13 +14,12 @@
 #define LOGURU_WITH_STREAMS 1
 #include <loguru/loguru.hpp>
 
-#include <kivi_parser/kivi_parser.tab.hh>
-#include <kivi_parser/location.hh>
-
-#include <kivi_expressions/identifier.hh>
-#include <kivi_stmts/statement.hh>
+#include "parser.tab.hh"
+#include "location.hh"
 
 #include "syntax.hh"
+
+using std::move;
 
 namespace sa = syntax_analyzer;
 
@@ -70,26 +69,13 @@ namespace syntax_analyzer
 		//
 
 		/**
-		 * The constructor initializes the "location" variables in both the
-		 * lexer and the parser.
-		 *
+		 * @brief The constructor initializes the "location" variables in both the lexer and the parser
 		 * @param code_beginning  the "location" var for the lexer
 		 * @param filename the "location" var for the parser
 		 */
-		explicit parsing_context(const char* code_beginning,
-			std::string* filename)
-			: lexer_cursor(code_beginning)
-		{
-			yy_location.begin.filename = filename;
-			yy_location.end.filename = filename;
-			LOG_F (INFO, "Initializing parsing_context\n");
-		}
+		explicit parsing_context(const char* code_beginning, std::string* filename);
 
 	 public:
-		///
-		/// API
-		///
-
 		/**
 		 * Pushes an empty entry at the end of scopes
 		 * @return void
@@ -110,38 +96,41 @@ namespace syntax_analyzer
 		 * @note Also a check is made whether this identifier has already been
 		 * created.
 		 * @throws A syntax error is thrown if a duplicate is seen.
-		 * @return New identifier
+		 * @return Identifier expression
 		 */
-		const identifier& define_identifier(const identifier& ident);
+		expression define_identifier(const identifier& ident);
 
 		/**
 		 * @brief Defines a new local variable inside a function body
 		 * @param name The name of variable
 		 * @return The newly created local variable
+		 * @return Identifier (local) expression
 		 */
-		identifier define_local(const std::string& name);
+		expression define_local(std::string&& name);
 
 		/**
 		 * @brief Defines a new function
 		 * @param name The name of the function
 		 * @return The newly created function
+		 * @return Identifier (function) expression
 		 */
-		identifier define_function(const std::string& name);
+		expression define_function(std::string&& name);
 
 		/**
 		 * @brief Defines a new parameter identifier
 		 * @param name The name of the identifier
 		 * @return The newly created parameter
+		 * @return Identifier (parameter) expression
 		 */
-		identifier define_parameter(const std::string& name);
+		expression define_parameter(std::string&& name);
 
 		/**
 		 * @brief Creates a new local variable with is going to be used as a IR
 		 * register label
 		 * @return The newly created local variable
-		 * @param The newly defined "register" variable
+		 * @return "Register" variable expression
 		 */
-		identifier define_register();
+		expression define_register();
 
 		/**
 		 * @brief Fetch the already defined identifier by a given name
@@ -152,17 +141,15 @@ namespace syntax_analyzer
 		 * @throws In case the identifier has not been already defined, an
 		 * exception is thrown
 		 */
-		[[nodiscard]] identifier_expr
-		use_identifier(const std::string& name) const;
+		[[nodiscard]] expression use_identifier(const std::string& name) const;
 
 		/**
 		 * @brief Defines a function and associated expression body
-		 * @param name the name of the function
-		 * @param body the function body
-		 * @return Reference to the newly placed function
+		 * @param name The name of the function
+		 * @param body The function body
+		 * @return The newly placed function
 		 */
-		const function& define_function_body(const std::string& name,
-			const statement& body);
+		const function& define_function_body(std::string&& name, expression&& body);
 
 	 public:
 		[[nodiscard]] const std::vector<identifier>&
