@@ -4,10 +4,12 @@
 #include <parser/parser.tab.hh>
 #include <parser/parsing_context.hh>
 
+#include <cli/cli.hh>
+
 int
-main(int argc, char* const argv[])
+main(int argc, char* argv[])
 {
-	if (argc != 2)
+	if (!cli::argument_parser(argc, argv))
 	{
 		std::cout << "Bad usage\n";
 		return 1;
