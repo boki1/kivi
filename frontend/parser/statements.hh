@@ -44,6 +44,16 @@ namespace syntax_analyzer
 	}
 
 	/**
+	 * @brief Define an additional _implicit_ return statement
+	 * @return Expression with 'return 0' in it
+	 */
+	inline expression
+	return_stmt()
+	{
+		return expression{ expression::type::Return, move(expression(0)) };
+	}
+
+	/**
 	 * @brief Define a compound statement
 	 * @tparam T Expected (required) to be expression
 	 * @param first The first (mandatory) expression
@@ -55,6 +65,15 @@ namespace syntax_analyzer
 	compound_stmt(expression&& first, T... other)
 	{
 		return expression{ expression::type::Sequence, first, std::forward<T>(other)... };
+	}
+
+	/**
+	 * @brief Define a compound statement without preset arguments
+	 */
+	inline expression
+	compound_stmt()
+	{
+		return expression{ expression::type::Sequence };
 	}
 
 }

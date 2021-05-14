@@ -24,6 +24,13 @@ namespace syntax_analyzer
 	{
 	}
 
+	expression::expression(const identifier& ident)
+		: m_terminal_value{ ident },
+		  m_type{ expression::type::Identifier },
+		  m_peculiar{}
+	{
+	}
+
 	expression::expression(std::string&& str)
 		: m_terminal_value{ str },
 		  m_type{ expression::type::String },
@@ -50,30 +57,41 @@ namespace syntax_analyzer
 	expression::expression(expression::type type, expression::peculiar_type&& special, T&& ...args)
 		: m_operands{ std::forward<T>(args)... },
 		  m_type{ type },
-		  m_peculiar{ std::move(special) }
+		  m_peculiar{ move(special) }
 	{
 	}
 
-	expression expression::assign(expression&& rhs) &&
+	expression expression::assign(expression&& rhs)&&
 	{
 		return expression(expression::type::Copy, move(rhs), move(*this));
 	}
 
-//
-// Function
-//
+	void expression::append(expression&& appendant)
+	{
+		m_operands.push_back(move(appendant));
+	}
+
+	void expression::merge_with(expression&& other)
+	{
+		m_operands.insert(m_operands.end(), other.m_operands.begin(), other.m_operands.end());
+	}
+
+
+	//
+	// Function
+	//
 
 	function::function(std::string&& name, expression&& body, int locals, int parameters)
-		: m_body(std::move(body)),
-		  m_name(std::move(name)),
+		: m_body(move(body)),
+		  m_name(move(name)),
 		  m_locals(locals),
 		  m_parameters(parameters)
 	{
 	}
 
-//
-// Identifier
-//
+	//
+	// Identifier
+	//
 
 	identifier::identifier(identifier::type type, std::string&& name, int index)
 		: m_name{ std::move(name) },

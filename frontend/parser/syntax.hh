@@ -162,11 +162,20 @@ namespace syntax_analyzer
 		expression::type m_type;
 
 	 public:
+		/// Default construction
+		expression() = default;
+
 		/// Default copy constructor
 		expression(const expression&) = default;
 
-		/// Identifier expression
+		/// Default move constructor
+		expression(expression&&) = default;
+
+		/// Identifier expression constructor (move)
 		explicit expression(identifier&& ident);
+
+		/// Another identifier expression constructor (copying)
+		explicit expression(const identifier& ident);
 
 		/// String literal
 		explicit expression(std::string&& str);
@@ -182,10 +191,32 @@ namespace syntax_analyzer
 		template<typename ...T>
 		expression(expression::type type, peculiar_type&& special, T&& ...);
 
+		expression& operator=(const expression&) = default;
+
 	 public:
 
+		/**
+		 * TODO:
+		 * @brief
+		 * @param rhs
+		 * @return
+		 */
 		expression
 		assign(expression&& rhs)&&;
+
+		/**
+		 * @brief Appends an operand in the operands vector of the expression
+		 * @param appendant The new operand
+		 */
+		void
+		append(expression&& appendant);
+
+		/**
+		 * @brief Combines the operands of the expressions into the first one
+		 * @param other The other one
+		 */
+		void
+		merge_with(expression&& other);
 
 	 public:
 
@@ -234,7 +265,21 @@ namespace syntax_analyzer
 		int m_parameters{};
 
 	 public:
+		/// Default construction
+		function() = default;
+
 		function(std::string&& name, expression&& body, int locals = 0, int parameters = 0);
+
+	 public:
+		int add_local() noexcept
+		{
+			return m_locals++;
+		}
+
+		int add_param() noexcept
+		{
+			return m_parameters++;
+		}
 
 	 public:
 		[[nodiscard]] const std::string&

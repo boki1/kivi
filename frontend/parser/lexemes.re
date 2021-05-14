@@ -1,5 +1,5 @@
-#include "kivi_parser/kivi_parser.tab.hh"
-#include "parser/parsing_context.hh"
+#include "parser.tab.hh"
+#include "parsing_context.hh"
 
 // Namespace shortcuts
 namespace sa = syntax_analyzer;

@@ -176,9 +176,10 @@ namespace syntax_analyzer
 	 */
 	template<typename ...T>
 	inline expression
-	function_call_expr(expression&& fun_name, T&& ... parameters)
+	function_call_expr(std::string&& fun_name, T&& ... parameters)
 	{
-		return expression(expression::type::FunctionCall, fun_name, std::forward<T>(parameters)...);
+		auto name = expression(identifier(identifier::type::Function, move(fun_name)));
+		return expression(expression::type::FunctionCall, move(name), std::forward<T>(parameters)...);
 	}
 
 	/**
