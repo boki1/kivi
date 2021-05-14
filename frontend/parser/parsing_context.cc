@@ -6,8 +6,8 @@
 
 #include "parser.tab.hh"
 #include "parsing_context.hh"
-#include "expressions.hh"
-#include "statements.hh"
+#include "expressions.cc"
+#include "statements.cc"
 #include "syntax.hh"
 
 /**

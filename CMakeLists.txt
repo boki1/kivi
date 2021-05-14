@@ -32,3 +32,11 @@ add_subdirectory(utils)
 add_subdirectory(frontend)
 add_subdirectory(backend)
 # add_subdirectory(test)
+
+################ Main
+
+add_executable(kivi
+        main.cc)
+
+target_link_libraries(kivi PRIVATE kivi_parser)
+target_link_libraries(kivi PRIVATE loguru)

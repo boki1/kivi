@@ -5,8 +5,8 @@
  * during the process of parsing a source file. These are `identifier`,
  * `function` and `expression`.
  */
-#ifndef KIVI_SRC_KIVI_SYNTAX_HH_
-#define KIVI_SRC_KIVI_SYNTAX_HH_
+#ifndef _KIVI_SYNTAX_HH_
+#define _KIVI_SYNTAX_HH_
 
 #include <string>
 #include <utility>
@@ -14,6 +14,8 @@
 #include <vector>
 #include <memory>
 #include <optional>
+
+using std::move;
 
 namespace syntax_analyzer
 {
@@ -183,13 +185,11 @@ namespace syntax_analyzer
 		/// Number constant literal
 		explicit expression(int num);
 
-		/// "Default" (or manual) construction
-		template<typename ...T>
-		explicit expression(expression::type type, T&& ...);
+		/// Manual construction
+		expression(expression::type type, std::vector<expression>);
 
-		/// Construction with "peculiar" field set
-		template<typename ...T>
-		expression(expression::type type, peculiar_type&& special, T&& ...);
+		/// Construction construction with "peculiar" field set
+		expression(expression::type type, peculiar_type&&, std::vector<expression>);
 
 		expression& operator=(const expression&) = default;
 

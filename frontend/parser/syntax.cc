@@ -4,6 +4,7 @@
  */
 
 #include <string>
+#include <utility>
 
 #include "syntax.hh"
 
@@ -45,25 +46,9 @@ namespace syntax_analyzer
 	{
 	}
 
-	template<typename ...T>
-	expression::expression(expression::expression::type type, T&& ...args)
-		: m_operands{ std::forward<T>(args)... },
-		  m_type{ type },
-		  m_peculiar{}
-	{
-	}
-
-	template<typename... T>
-	expression::expression(expression::type type, expression::peculiar_type&& special, T&& ...args)
-		: m_operands{ std::forward<T>(args)... },
-		  m_type{ type },
-		  m_peculiar{ move(special) }
-	{
-	}
-
 	expression expression::assign(expression&& rhs)&&
 	{
-		return expression(expression::type::Copy, move(rhs), move(*this));
+		return expression(expression::type::Copy, { move(rhs), move(*this) });
 	}
 
 	void expression::append(expression&& appendant)
@@ -74,6 +59,20 @@ namespace syntax_analyzer
 	void expression::merge_with(expression&& other)
 	{
 		m_operands.insert(m_operands.end(), other.m_operands.begin(), other.m_operands.end());
+	}
+
+	expression::expression(expression::type type, std::vector<expression> operands)
+		: m_type{ type },
+		  m_operands(move(operands)),
+		  m_peculiar{}
+	{
+	}
+
+	expression::expression(expression::type type, expression::peculiar_type&& peculiar, std::vector<expression> operands)
+		: m_type{ type },
+		  m_peculiar{ move(peculiar) },
+		  m_operands{ move(operands) }
+	{
 	}
 
 

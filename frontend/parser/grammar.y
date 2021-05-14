@@ -9,18 +9,18 @@
 
 %code requires {
 
-#include "statements.hh"
-#include "expressions.hh"
+#include "syntactical_structures.hh"
 #include "parsing_context.hh"
+#include "syntax.hh"
 
-namespace sa = syntax_analyzer ;
+namespace sa = syntax_analyzer;
 
 using std::move;
 
 } //%code requires
 
 
-%param { sa::parsing_context &ctx }
+%param { syntax_analyzer::parsing_context &ctx }
 
 %token END 0
 %token VAR "auto" IF "if" WHILE "while" RETURN "return"
@@ -36,14 +36,14 @@ using std::move;
 %left '+' '-'
 %left '*' '/' '%'
 
-%type<int> 			NUMBER_LITERAL
-%type<std::string> 		STRING_LITERAL
-%type<std::string> 		IDENTIFIER Safe_identifier
-%type<sa::expression> 		Statement Expression Comma_sep_expressions
-%type<sa::expression> 		Safe_statement Safe_expression Parameter_list
-%type<sa::expression>           Compound_statement Function_call Single_param
-%type<sa::expression>           Comparison_operation Arithmetic_operation
-//%type<sa::expression>         	Unary_operation
+%type<int> 					NUMBER_LITERAL
+%type<std::string> 				STRING_LITERAL
+%type<std::string> 				IDENTIFIER Safe_identifier
+%type<syntax_analyzer::expression> 		Statement Expression Comma_sep_expressions
+%type<syntax_analyzer::expression> 		Safe_statement Safe_expression Parameter_list
+%type<syntax_analyzer::expression>           	Compound_statement Function_call Single_param
+%type<syntax_analyzer::expression>           	Comparison_operation Arithmetic_operation
+//%type<syntax_analyzer::expression>         	Unary_operation
 %%
 
 Program: 					{ ctx.enter_scope (); }
@@ -79,55 +79,61 @@ Single_param:
 
 Statement:
   Compound_statement Safe_closing_brace 	{ $$ = move ($1); ctx.exit_scope (); }
-| RETURN Safe_expression Safe_semicolon 	{ $$ = sa::return_stmt (move($2)); }
-| IF Safe_expression Safe_colon Safe_statement 	{ $$ = sa::if_stmt (move($2), move($4)); }
-| WHILE Safe_expression ':' Safe_statement 	{ $$ = sa::while_stmt (move($2), move($4)); }
+| RETURN Safe_expression Safe_semicolon 	{ $$ = syntax_analyzer::return_stmt (move($2)); }
+| IF Safe_expression Safe_colon Safe_statement 	{ $$ = syntax_analyzer::if_stmt (move($2), move($4)); }
+| WHILE Safe_expression ':' Safe_statement 	{ $$ = syntax_analyzer::while_stmt (move($2), move($4)); }
 | VAR Safe_identifier '=' Safe_expression 	{ ctx.define_local(move($2)).assign(move($4)); }
 | Expression Safe_semicolon 			{ $$ = move($1); }
 | ';' 						{ }
 ;
 
 Comma_sep_expressions:
-  Safe_expression 				{ $$ = sa::sequence_expr (move($1)); }
+  Safe_expression 				{ $$ = syntax_analyzer::sequence_expr (move($1)); }
 | Comma_sep_expressions ',' Safe_expression 	{ $$ = move ($1); $$.append (move ($3)); }
 ;
 
 Compound_statement:
-  '{'                             		{ $$ = sa::compound_stmt (); ctx.enter_scope (); }
+  '{'                             		{ $$ = syntax_analyzer::compound_stmt (); ctx.enter_scope (); }
 | Compound_statement Statement    		{ $$ = std::move ($1); $$.append (std::move ($2)); }
 ;
 
 Comparison_operation:
   Expression "==" error 			{ $$ = std::move ($1); }
-| Expression "==" Expression 			{ $$ = sa::equality_expr (std::move ($1), std::move ($3)); }
+| Expression "==" Expression 			{ $$ = syntax_analyzer::equality_expr (std::move ($1), std::move ($3)); }
 | Expression "<>" error 			{ $$ = std::move ($1); }
-| Expression "<>" Expression 			{ $$ = sa::inequality_expr (std::move ($1), std::move ($3)); }
+| Expression "<>" Expression 			{ $$ = syntax_analyzer::inequality_expr (std::move ($1), std::move ($3)); }
 ;
 
 Arithmetic_operation:
   Expression '+' error 				{ $$ = move ($1); }
-| Expression '+' Expression 	        	{ $$ = sa::addition_expr (move($1), move($3)); }
+| Expression '+' Expression 	        	{ $$ = syntax_analyzer::addition_expr (move($1), move($3)); }
 | Expression '-' error 	    %prec '+' 		{ $$ = move ($1); }
-| Expression '-' Expression %prec '+' 		{ $$ = sa::addition_expr (move($1), sa::negation_expr (move($3))); }
+| Expression '-' Expression %prec '+' 		{ $$ = syntax_analyzer::addition_expr (move($1), syntax_analyzer::negation_expr (move($3))); }
 | Expression '*' error 				{ $$ = move ($1); }
-| Expression '*' Expression 			{ $$ = sa::multiplication_expr (move($1), move($3));}
+| Expression '*' Expression 			{ $$ = syntax_analyzer::multiplication_expr (move($1), move($3));}
 | Expression '/' error  			{ $$ = move ($1); }
-| Expression '/' Expression %prec '*' 		{ $$ = sa::division_expr (move($1), move($3)); }
+| Expression '/' Expression %prec '*' 		{ $$ = syntax_analyzer::division_expr (move($1), move($3)); }
 | Expression '%' error 				{ $$ = move ($1); }
-| Expression '%' Expression %prec '*' 		{ $$ = sa::modular_division_expr (move($1), move($3)); }
+| Expression '%' Expression %prec '*' 		{ $$ = syntax_analyzer::modular_division_expr (move($1), move($3)); }
 | Expression '=' error 				{ $$ = move ($1); }
-| Expression '=' Expression 			{ $$ = sa::assignment_expr (move($1), move($3)); }
+| Expression '=' Expression 			{ $$ = syntax_analyzer::assignment_expr (move($1), move($3)); }
 ;
 
 //Unary_operation:
-//  '-' Expression 				{ $$ = sa::negation_expr (move ($2)); }
+//  '-' Expression 				{ $$ = syntax_analyzer::negation_expr (move ($2)); }
 //| '-' error 	 				{  }
 //;
 
+//Function_call:
+//  IDENTIFIER '(' ')' 				{ /* $$ = syntax_analyzer::function_call_expr (move($1)); */ }
+//| IDENTIFIER '(' Comma_sep_expressions
+//	Safe_closing_parenthesis		{ /* $$ = syntax_analyzer::function_call_expr (move($1), move ($3)); */ }
+//;
+
 Function_call:
-  IDENTIFIER '(' ')' 				{ $$ = sa::function_call_expr (move($1)); }
+  IDENTIFIER '(' ')' 				{ }
 | IDENTIFIER '(' Comma_sep_expressions
-	Safe_closing_parenthesis		{ $$ = sa::function_call_expr (move($1), move ($3)); }
+	Safe_closing_parenthesis		{ }
 ;
 
 Expression:
@@ -178,7 +184,7 @@ Safe_expression:
 
 namespace yy
 {
-    yy::kivi_parser::symbol_type yylex(sa::parsing_context &);
+    yy::kivi_parser::symbol_type yylex(syntax_analyzer::parsing_context &);
 }
 
 };

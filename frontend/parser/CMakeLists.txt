@@ -42,21 +42,3 @@ add_custom_target(autogen_kivi_parser ALL DEPENDS ${AUTOGEN_FILES})
 
 set_source_files_properties("${AUTOGEN_FILES}" PROPERTIES GENERATED TRUE)
 
-####################### Configure library target
-
-set(KIVI_PARSER_FILES
-        "${AUTOGEN_FILES}"
-        error.cc
-        expressions.hh
-        statements.hh
-        parsing_context.hh
-        parsing_context.cc
-        syntax.hh
-        syntax.cc
-        )
-
-add_library(kivi_parser "${KIVI_PARSER_FILES}")
-add_dependencies(kivi_parser autogen_kivi_parser)
-target_include_directories(kivi_parser PUBLIC "../${CMAKE_SOURCE_DIR}")
-
-target_link_libraries(kivi_parser PRIVATE loguru)

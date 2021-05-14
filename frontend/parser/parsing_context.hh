@@ -26,10 +26,10 @@ namespace sa = syntax_analyzer;
 namespace syntax_analyzer
 {
 
-/**
- * @brief An exception which is thrown when `exit_scope()` is called an no
- * active scopes have been entered
- */
+	/**
+	 * @brief An exception which is thrown when `exit_scope()` is called an no
+	 * active scopes have been entered
+	 */
 	class cannot_pop_out_of_empty_exception : std::exception
 	{
 	};
