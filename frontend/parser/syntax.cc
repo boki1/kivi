@@ -75,6 +75,40 @@ namespace syntax_analyzer
 	{
 	}
 
+	bool expression::operator==(const expression& other) const noexcept
+	{
+		if (get_type() != other.get_type())
+			return false;
+
+		if (operands().size() != other.operands().size())
+			return false;
+
+		bool peculiar_value = peculiar().has_value();
+		if (peculiar_value != other.peculiar().has_value())
+			return false;
+
+		if (peculiar_value &&
+			*peculiar().value() != *other.peculiar().value())
+			return false;
+
+		auto it_this = operands().begin();
+		auto it_other = other.operands().begin();
+		while (it_this != operands().end())            // We already know that they the have same size
+		{
+			if (*it_this != *it_other)
+				return false;
+			it_this++, it_other++;
+		}
+		if (!(terminal() == other.terminal()))
+			return false;
+
+		return true;
+	}
+
+	bool expression::operator!=(const expression& other) const noexcept
+	{
+		return !(*this == other);
+	}
 
 	//
 	// Function

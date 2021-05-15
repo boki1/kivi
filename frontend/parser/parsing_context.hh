@@ -38,13 +38,13 @@ namespace syntax_analyzer
 	{
 	 private:
 		/// All parsed scopes
-		std::vector<identifier> m_all_scopes;
+		std::vector<identifier> m_scopes;
 
 		/// All parsed functions
-		std::vector<function> m_all_functions;
+		std::vector<function> m_functions;
 
 		/// The current function that is being processed
-		function m_this_function;
+		function m_current_function;
 
 		/// The current number of "registers" being used
 		int m_registers = 0;
@@ -80,7 +80,8 @@ namespace syntax_analyzer
 		 * Pushes an empty entry at the end of scopes
 		 * @return void
 		 */
-		void enter_scope();
+		void
+		enter_scope();
 
 		/**
 		 * Pops the last entry from scopes
@@ -88,7 +89,8 @@ namespace syntax_analyzer
 		 * @throws `cannot_pop_out_of_empty_exception` when no active scopes have
 		 * been entered
 		 */
-		void exit_scope() /* throws */;
+		void
+		exit_scope() /* throws */;
 
 		/**
 		 * @brief Defines an arbitrary identifier
@@ -98,7 +100,8 @@ namespace syntax_analyzer
 		 * @throws A syntax error is thrown if a duplicate is seen.
 		 * @return Identifier expression
 		 */
-		expression define_identifier(const identifier& ident);
+		[[nodiscard]] expression
+		define_identifier(const identifier& ident);
 
 		/**
 		 * @brief Defines a new local variable inside a function body
@@ -106,7 +109,8 @@ namespace syntax_analyzer
 		 * @return The newly created local variable
 		 * @return Identifier (local) expression
 		 */
-		expression define_local(std::string&& name);
+		[[nodiscard]] expression
+		define_local(std::string&& name);
 
 		/**
 		 * @brief Defines a new function
@@ -114,7 +118,8 @@ namespace syntax_analyzer
 		 * @return The newly created function
 		 * @return Identifier (function) expression
 		 */
-		expression define_function(std::string&& name);
+		expression
+		define_function(std::string&& name);
 
 		/**
 		 * @brief Defines a new parameter identifier
@@ -122,7 +127,8 @@ namespace syntax_analyzer
 		 * @return The newly created parameter
 		 * @return Identifier (parameter) expression
 		 */
-		expression define_parameter(std::string&& name);
+		expression
+		define_parameter(std::string&& name);
 
 		/**
 		 * @brief Creates a new local variable with is going to be used as a IR
@@ -130,7 +136,8 @@ namespace syntax_analyzer
 		 * @return The newly created local variable
 		 * @return "Register" variable expression
 		 */
-		expression define_register();
+		[[nodiscard]] expression
+		define_register();
 
 		/**
 		 * @brief Fetch the already defined identifier by a given name
@@ -141,7 +148,8 @@ namespace syntax_analyzer
 		 * @throws In case the identifier has not been already defined, an
 		 * exception is thrown
 		 */
-		[[nodiscard]] expression use_identifier(const std::string& name) const;
+		[[nodiscard]] expression
+		use_identifier(const std::string& name) const;
 
 		/**
 		 * @brief Defines a function and associated expression body
@@ -149,31 +157,32 @@ namespace syntax_analyzer
 		 * @param body The function body
 		 * @return The newly placed function
 		 */
-		const function& define_function_body(std::string&& name, expression&& body);
+		const function&
+		define_function_body(std::string&& name, expression&& body);
 
 	 public:
 		[[nodiscard]] const std::vector<identifier>&
-		all_scopes() const
+		scopes() const
 		{
-			return m_all_scopes;
+			return m_scopes;
 		}
 
-		std::vector<identifier>&
-		all_scopes_mut()
+		[[nodiscard]] std::vector<identifier>&
+		scopes_mut()
 		{
-			return m_all_scopes;
+			return m_scopes;
 		}
 
 		[[nodiscard]] const std::vector<function>&
-		all_functions() const
+		functions() const
 		{
-			return m_all_functions;
+			return m_functions;
 		}
 
 		[[nodiscard]] const function&
-		this_function() const
+		current_function() const
 		{
-			return m_this_function;
+			return m_current_function;
 		}
 
 		[[nodiscard]] int

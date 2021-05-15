@@ -82,7 +82,7 @@ Statement:
 | RETURN Safe_expression Safe_semicolon 	{ $$ = syntax_analyzer::return_stmt (move($2)); }
 | IF Safe_expression Safe_colon Safe_statement 	{ $$ = syntax_analyzer::if_stmt (move($2), move($4)); }
 | WHILE Safe_expression ':' Safe_statement 	{ $$ = syntax_analyzer::while_stmt (move($2), move($4)); }
-| VAR Safe_identifier '=' Safe_expression 	{ ctx.define_local(move($2)).assign(move($4)); }
+| VAR Safe_identifier '=' Safe_expression 	{ $$ = ctx.define_local(move($2)).assign(move($4)); }
 | Expression Safe_semicolon 			{ $$ = move($1); }
 | ';' 						{ }
 ;
@@ -124,11 +124,11 @@ Arithmetic_operation:
 //| '-' error 	 				{  }
 //;
 
-//Function_call:
-//  IDENTIFIER '(' ')' 				{ /* $$ = syntax_analyzer::function_call_expr (move($1)); */ }
-//| IDENTIFIER '(' Comma_sep_expressions
-//	Safe_closing_parenthesis		{ /* $$ = syntax_analyzer::function_call_expr (move($1), move ($3)); */ }
-//;
+Function_call:
+  IDENTIFIER '(' ')' 				{ $$ = syntax_analyzer::function_call_expr (move($1)); }
+| IDENTIFIER '(' Comma_sep_expressions
+	Safe_closing_parenthesis		{ $$ = syntax_analyzer::function_call_expr (move($1), move ($3)); }
+;
 
 Function_call:
   IDENTIFIER '(' ')' 				{ }

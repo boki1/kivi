@@ -71,12 +71,12 @@ namespace syntax_analyzer
 		/// Parameter construction
 		identifier(identifier::type type, std::string&& name, int index = 0);
 
+		/// Equals operator
 		bool
 		operator==(const identifier& other) const
 		{
 			return name() == other.name() &&
-				get_type() == other.get_type() &&
-				index() == other.index();
+				get_type() == other.get_type();
 		}
 
 	 public:
@@ -151,9 +151,8 @@ namespace syntax_analyzer
 		/// The operands associated with the concrete expression
 		std::vector<expression> m_operands;
 
-		/// The value of the expression if it is a terminal(Identifier, String or
-		/// Number)
-		expression::terminal_type m_terminal_value;
+		/// The value of the expression if it is a terminal(Identifier, String or Number)
+		expression::terminal_type m_terminal_value{};
 
 		/// Used to store any special, specific operand such as the condition of
 		/// the if statement, the condition of the while loop and the name of the
@@ -193,6 +192,9 @@ namespace syntax_analyzer
 
 		expression& operator=(const expression&) = default;
 
+		bool operator==(const expression&) const noexcept;
+		bool operator!=(const expression&) const noexcept;
+
 	 public:
 
 		/**
@@ -222,6 +224,12 @@ namespace syntax_analyzer
 
 		[[nodiscard]] const std::vector<expression>&
 		operands() const noexcept
+		{
+			return m_operands;
+		}
+
+		[[nodiscard]] std::vector<expression>
+		operands_copy() const noexcept
 		{
 			return m_operands;
 		}

@@ -3,13 +3,14 @@
  * @brief Implements "constructors" for all expressions
  */
 
-#pragma once
-
 #ifndef _KIVI_PARSER_EXPRESSIONS_HH
 #define _KIVI_PARSER_EXPRESSIONS_HH
 
+#include <memory>
+
 #include "syntactical_structures.hh"
 
+using std::make_shared;
 using std::move;
 
 namespace syntax_analyzer
@@ -88,10 +89,14 @@ namespace syntax_analyzer
 	}
 
 	expression
-	function_call_expr(std::string&& fun_name, std::vector<expression> parameters)
+	function_call_expr(std::string&& fun_name, expression&& parameter_list /* = {} */)
 	{
 		auto name = expression(identifier(identifier::type::Function, move(fun_name)));
-		return expression(expression::type::FunctionCall, std::make_shared<expression>(move(name)), move(parameters));
+		return expression(
+			expression::type::FunctionCall,
+			make_shared<expression>(move(name)),
+			move(parameter_list.operands_copy())
+		);
 	}
 
 	expression

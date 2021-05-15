@@ -13,7 +13,6 @@ set(GRAMMAR "${PARSER_DIR}/grammar.y")
 set(LEXEMES "${PARSER_DIR}/lexemes.re")
 set(BACKEND_DIR "${PROJECT_ROOT}/backend")
 set(EXTERN_DIR "${PROJECT_ROOT}/extern")
-set(EXTERN_DIR "${PROJECT_ROOT}/extern")
 set(TEST_DIR "${PROJECT_ROOT}/test")
 set(UTILS_DIR "${PROJECT_ROOT}/utils")
 
@@ -25,13 +24,20 @@ function(print)
     endforeach ()
 endfunction()
 
+############### Testing
+
+find_package(Catch2 CONFIG REQUIRED)
+enable_testing()
+include(CTest)
+include(Catch)
+
 ############### Subdirectories
 
 add_subdirectory(extern)
 add_subdirectory(utils)
 add_subdirectory(frontend)
 add_subdirectory(backend)
-# add_subdirectory(test)
+add_subdirectory(test)
 
 ################ Main
 

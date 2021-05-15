@@ -33,43 +33,40 @@ namespace syntax_analyzer
 	parsing_context::enter_scope()
 	{
 		LOG_F (INFO, "Placing a new scope at the end\n");
-		m_all_scopes.emplace_back();
+		m_scopes.emplace_back();
 	}
 
 	void
 	parsing_context::exit_scope()
 	{
-		if (m_all_scopes.empty())
+		if (m_scopes.empty())
 		{
 			LOG_F (WARNING, "Popping last scope from the back FAILED because no elements are present\n");
 			throw cannot_pop_out_of_empty_exception();
 		}
 		LOG_F (INFO, "Popping last scope from the back\n");
-		m_all_scopes.pop_back();
+		m_scopes.pop_back();
 	}
 
 	expression
 	parsing_context::define_identifier(const identifier& ident)
 	{
-//		const std::string& name = ident.name();
-//		LOG_S (INFO) << "Defining identifier \"" << name << "\"";
-//
-//		bool is_duplicate = std::any_of(all_scopes().begin(), all_scopes().end(), [&](const auto& s)
-//		{
-//		  return s.name() == name;
-//		});
-//
-//		if (is_duplicate)
-//		{
-//			LOG_S (WARNING) << "Duplicate definition of \"" + ident.name() << "\".";
-//			throw kp::syntax_error(yy_location, "Duplicate definition of \"" + ident.name() + "\".");
-//		}
-//
-//		all_scopes_mut().push_back(ident);
-//
-//		// Return the just pushed identifier
-//		return all_scopes().back();
-		return expression();
+		LOG_S (INFO) << "Defining identifier \"" << ident.name() << "\"";
+
+		bool is_duplicate = std::any_of(scopes().begin(), scopes().end(), [&](const identifier& s)
+		{
+		  return s == ident;
+		});
+
+		if (is_duplicate)
+		{
+			LOG_S (WARNING) << "Duplicate definition of \"" + ident.name() << "\".";
+			throw kp::syntax_error(yy_location, "Duplicate definition of \"" + ident.name() + "\".");
+		}
+
+		scopes_mut().push_back(ident);
+
+		return expression(ident);
 	}
 
 	expression
@@ -77,12 +74,12 @@ namespace syntax_analyzer
 	{
 		LOG_S (INFO) << "Using identifier \"" + name << "\".";
 
-		auto it = std::find_if(all_scopes().begin(), all_scopes().end(), [&](const auto& s)
+		auto it = std::find_if(scopes().begin(), scopes().end(), [&](const auto& s)
 		{
 		  return s.name() == name;
 		});
 
-		if (it != all_scopes().end())
+		if (it != scopes().end())
 		{
 			return expression(*it);
 		}
@@ -101,29 +98,29 @@ namespace syntax_analyzer
 		fun_body.merge_with(move(return_stmt()));
 
 		LOG_S (INFO) << "Defining function (\"" + name << "\") with body.\n";
-		m_all_functions.emplace_back(move(name), move(fun_body));
-		return m_all_functions.back();
+		m_functions.emplace_back(move(name), move(fun_body));
+		return m_functions.back();
 	}
 
 	expression
 	parsing_context::define_local(std::string&& name)
 	{
 		LOG_S (INFO) << "Defining local variable (\"" + name << "\")" << '\n';
-		return define_identifier(identifier(identifier::type::Local, move(name), m_this_function.add_local()));
+		return define_identifier(identifier(identifier::type::Local, move(name), m_current_function.add_local()));
 	}
 
 	expression
 	parsing_context::define_function(std::string&& name)
 	{
 		LOG_S (INFO) << "Defining function (\"" + name << "\")" << '\n';
-		return define_identifier(identifier(identifier::type::Function, move(name), all_functions().size()));
+		return define_identifier(identifier(identifier::type::Function, move(name), functions().size()));
 	}
 
 	expression
 	parsing_context::define_parameter(std::string&& name)
 	{
 		LOG_S (INFO) << "Defining parameter (\"" + name << "\")" << '\n';
-		return define_identifier(identifier(identifier::type::Parameter, move(name), m_this_function.add_param()));
+		return define_identifier(identifier(identifier::type::Parameter, move(name), m_current_function.add_param()));
 	}
 
 	expression

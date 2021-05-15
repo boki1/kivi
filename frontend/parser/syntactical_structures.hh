@@ -117,11 +117,11 @@ namespace syntax_analyzer
 	 * @brief Defines a function call expression
 	 * @tparam T Expected (required); to be expression
 	 * @param fun_name The function name
-	 * @param parameters The parameters passed to the function
+	 * @param parameter_list The parameters passed to the function as a separate expression
 	 * @return Constructed expression
 	 */
 	expression
-	function_call_expr(std::string&& fun_name, std::vector<expression> parameters);
+	function_call_expr(std::string&& fun_name, expression&& parameter_list = {});
 
 	/**
 	 * @brief Defines a sequence of expressions
