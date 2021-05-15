@@ -278,6 +278,8 @@ namespace syntax_analyzer
 
 		function(std::string&& name, expression&& body, int locals = 0, int parameters = 0);
 
+		bool operator==(const function &other) const;
+
 	 public:
 		int add_local() noexcept
 		{
@@ -287,6 +289,14 @@ namespace syntax_analyzer
 		int add_param() noexcept
 		{
 			return m_parameters++;
+		}
+
+		void set_name(const std::string &name) noexcept {
+			m_name = name;
+		}
+
+		void set_body(expression&& expr) noexcept {
+			m_body = expr;
 		}
 
 	 public:

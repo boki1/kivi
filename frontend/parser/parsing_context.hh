@@ -119,7 +119,7 @@ namespace syntax_analyzer
 		 * @return Identifier (function) expression
 		 */
 		expression
-		define_function(std::string&& name);
+		define_function(std::string name);
 
 		/**
 		 * @brief Defines a new parameter identifier
@@ -158,7 +158,7 @@ namespace syntax_analyzer
 		 * @return The newly placed function
 		 */
 		const function&
-		define_function_body(std::string&& name, expression&& body);
+		define_function_body(const std::string &name, expression&& body);
 
 	 public:
 		[[nodiscard]] const std::vector<identifier>&

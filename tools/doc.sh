@@ -1,12 +1,34 @@
 #!/bin/bash
 
+UPLOAD=false
+OPEN=false
+
+for i in "$@"
+do
+	case $i in
+		-u|--upload)
+			UPLOAD=true
+		;;
+		-o|--open)
+			OPEN=true
+		;;
+	esac
+done
+
 pushd .
 cd docs/
 doxygen Doxygen
+popd
 
-if [ "$1" = "--open" ] || [ "$1" = "-o" ]
-then
-	xdg-open build/html/index.html
+if test "$UPLOAD" = true; then
+	ghp-import -npf docs/build/html
 fi
 
-popd
+if test "$OPEN" = true; then
+	if test "$UPLOAD" = true; then
+		xdg-open https://boki1.github.io/kivi
+	else
+		xdg-open docs/build/html/index.html
+	fi
+fi
+

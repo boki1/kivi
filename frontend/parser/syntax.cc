@@ -122,6 +122,14 @@ namespace syntax_analyzer
 	{
 	}
 
+	bool function::operator==(const function& other) const
+	{
+		return parameters() == other.parameters() &&
+			locals() == other.locals() &&
+			body() == other.body() &&
+			name() == other.name();
+	}
+
 	//
 	// Identifier
 	//

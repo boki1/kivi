@@ -2,7 +2,7 @@
 .idea
 cmake-build-debug
 
-#Vscode 
+#Vscode
 .vscode
 
 Testing
@@ -18,3 +18,7 @@ frontend/parser/*.tab.*
 
 # Build
 build
+
+# Docs/
+docs/gh-pages
+docs/build

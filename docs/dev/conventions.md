@@ -19,12 +19,6 @@ from higher level client code
 
 -------
 
-### Functions
-
-*Empty for now :(*
-
--------
-
 ### Classes
 - Class definitions follow this structure:
 
@@ -89,7 +83,7 @@ from higher level client code
     2. Other external libraries
     3. Local libraries
     4. Local headers
- - **Additional:** New line between each category may help :)
+ - **Additional:** New line between each category may improve clarity :)
 
     Example
     ```c++

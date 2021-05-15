@@ -56,13 +56,13 @@ Functions :
 
 Single_function:
   Safe_identifier {
-    ctx.define_function (move($1));
+    ctx.define_function ($1);
     ctx.enter_scope ();
   }
   Parameter_list
   Safe_colon
   Safe_statement {
-    ctx.define_function_body (move ($1), move ($5));
+    ctx.define_function_body ($1, move ($5));
     ctx.exit_scope ();
   }
 ;

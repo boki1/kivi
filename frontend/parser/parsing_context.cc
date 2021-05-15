@@ -89,16 +89,17 @@ namespace syntax_analyzer
 	}
 
 	const function&
-	parsing_context::define_function_body(std::string&& name,
-		expression&& body)
+	parsing_context::define_function_body(const std::string &name, expression&& body)
 	{
 		/// Adds implicit return statement at the end of the block
 		/// "concatenated" by this double-compound statement
-		expression fun_body{ move(body) };
-		fun_body.merge_with(move(return_stmt()));
+		body.merge_with(move(return_stmt()));
+		m_current_function.set_body(move(body));
+		m_current_function.set_name(name);
 
 		LOG_S (INFO) << "Defining function (\"" + name << "\") with body.\n";
-		m_functions.emplace_back(move(name), move(fun_body));
+		m_functions.push_back(m_current_function);
+		m_current_function = {};
 		return m_functions.back();
 	}
 
@@ -110,7 +111,7 @@ namespace syntax_analyzer
 	}
 
 	expression
-	parsing_context::define_function(std::string&& name)
+	parsing_context::define_function(std::string name)
 	{
 		LOG_S (INFO) << "Defining function (\"" + name << "\")" << '\n';
 		return define_identifier(identifier(identifier::type::Function, move(name), functions().size()));
