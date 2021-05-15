@@ -45,5 +45,6 @@ add_executable(kivi
         main.cc)
 
 target_link_libraries(kivi PRIVATE kivi_parser)
+target_link_libraries(kivi PRIVATE ast_printer)
 target_link_libraries(kivi PRIVATE cli)
 target_link_libraries(kivi PRIVATE loguru)

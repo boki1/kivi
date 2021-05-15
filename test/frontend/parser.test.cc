@@ -32,7 +32,7 @@ TEST_CASE("Syntactical analysis", "[parser]")
 			"foo",
 			expression{
 				et::Return,
-				{ expression(1), expression(0) }
+				{ expression(1) }
 			},
 			0,
 			1

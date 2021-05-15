@@ -37,7 +37,7 @@ target_link_libraries(test__expression PUBLIC test_main)
 add_test(NAME Expression
         COMMAND test__expression)
 
-############################## Expression
+############################## Parser
 
 add_executable(test__parser frontend/parser.test.cc)
 target_link_libraries(test__parser PUBLIC test_main)

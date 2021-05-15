@@ -89,11 +89,16 @@ namespace syntax_analyzer
 	}
 
 	const function&
-	parsing_context::define_function_body(const std::string &name, expression&& body)
+	parsing_context::define_function_body(const std::string& name, expression&& body)
 	{
 		/// Adds implicit return statement at the end of the block
 		/// "concatenated" by this double-compound statement
-		body.merge_with(move(return_stmt()));
+
+		if (body.get_type() != expression::type::Return)
+		{
+			body.merge_with(move(return_stmt()));
+		}
+
 		m_current_function.set_body(move(body));
 		m_current_function.set_name(name);
 
