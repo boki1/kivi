@@ -1,37 +1,57 @@
-## Welcome to GitHub Pages
+## Welcome to the Kivi programming language
 
-You can use the [editor on GitHub](https://github.com/boki1/kivi/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![The Kivi Logo](https://postimg.cc/2qHmRHH7)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+```c
+gcd a, b:
+{
+	while b:
+	{
+		auto tmp = b;
+		b = a % b;
+		a = b;
+	}
 
-### Markdown
+	return a;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### About Kivi
 
-### Jekyll Themes
+**What is Kivi?**
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/boki1/kivi/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Kivi is a compiler under active development. It has educational purposes only. Kivi is designed to process a (currently) simplified C-like language, classified as procedural imperative general purpose programming language.
 
-### Support or Contact
+**Why is Kivi?**
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Kivi is initially started as a Software development school project at ELSYS. The principle objectives for us, the creators, are to learn about the fundamental ideas and design principles associated with compiler and programming language design.
+
+**What is Kivi not?**
+
+It is not intended as a useful programming language in real world project. Although Kivi has a lot of similarities to the C programming language, is not intended to be an alternative implementation of any C compiler.
+
+**How to Kivi?**
+
+Additional dev-documentation is provided [here](dev/dev.md).
+
+**What is in Kivi?**
+
+The current functionalities supported are:
+- mathematical expressions
+- variable definitions
+- function definitions
+- control flow
+	+ `if` statements
+	+ `while` statements
+	+ `return`
+
+Some of the next things which are going to be implemented:
+- type system
+- pointers
+
+**Useful links**
+
+[Code documentation](doc-build/index.html)
+
+[GitHub repository](https://github.com/boki1/kivi)
