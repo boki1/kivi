@@ -30,7 +30,7 @@ TEST_CASE("Syntactical analysis", "[parser]")
 
 		function expected{
 			"foo",
-			expression{
+			expression {
 				et::Return,
 				{ expression(1), expression(0) }
 			},

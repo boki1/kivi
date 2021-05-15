@@ -1,6 +1,6 @@
 ### Frontend
 
-This directory contains the source code related to the implementation of the frontend of Kivi compiler.
+This directory contains the source code related to the implementation of the frontend of KIVI compiler.
 
 -------------
 

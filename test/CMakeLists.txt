@@ -6,7 +6,7 @@ set(UNIT_TEST_TARGET Kivi_Tests)
 
 ############################## Main ()
 
-add_library(test_main main.test.cc)
+add_library(test_main config.test.cc)
 target_link_libraries(test_main PUBLIC ${UNIT_TEST_DEPENDS})
 
 ############################## Example test
@@ -37,7 +37,7 @@ target_link_libraries(test__expression PUBLIC test_main)
 add_test(NAME Expression
         COMMAND test__expression)
 
-############################## Expression
+############################## Parser
 
 add_executable(test__parser frontend/parser.test.cc)
 target_link_libraries(test__parser PUBLIC test_main)
