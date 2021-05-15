@@ -1,6 +1,6 @@
 ## Welcome to the Kivi programming language
 
-![The Kivi Logo](https://postimg.cc/2qHmRHH7)
+![The Kivi Logo](https://i.postimg.cc/PxHqD9Y9/kiwi.png)
 
 ```c
 gcd a, b:
