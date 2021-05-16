@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.17)
-project(kivi)
+
+project(kivi
+        VERSION 0.0.1
+        HOMEPAGE_URL https://boki1.github.io/kivi/
+        LANGUAGES C CXX
+        DESCRIPTION "Simple compiler for educational purposes"
+        )
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -45,5 +51,6 @@ add_executable(kivi
 
 target_link_libraries(kivi PRIVATE kivi_parser)
 target_link_libraries(kivi PRIVATE ast_printer)
+target_link_libraries(kivi PRIVATE argparse)
 target_link_libraries(kivi PRIVATE cli)
 target_link_libraries(kivi PRIVATE loguru)

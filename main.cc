@@ -1,19 +1,18 @@
 #include <fstream>
 #include <iostream>
 
-#include <parser/parser.tab.hh>
-#include <parser/parsing_context.hh>
 #include <ast_printer/ast_printer.hh>
 #include <cli/cli.hh>
+#include <parser/parser.tab.hh>
+#include <parser/parsing_context.hh>
 
 int
-main(int argc, char* argv[])
+main(int argc, const char* argv[])
 {
-//	if (cli::argument_parser(argc, argv))
-//	{
-//		std::cout << "Bad usage\n";
-//		return 1;
-//	}
+	if (cli::parse_arguments(argc, argv))
+	{
+		return 1;
+	}
 
 	std::string file = argv[1];
 	std::ifstream fstr(file);
@@ -24,7 +23,20 @@ main(int argc, char* argv[])
 	yy::kivi_parser parser{ ctx };
 	parser.parse();
 
-	std::cout << printer::print(ctx.functions());
+	if (cli::print_ast())
+	{
+		std::cout << printer::print(ctx.functions());
+	}
+
+	if (cli::print_ir())
+	{
+		std::cout << "no ir yet :/\n";
+	}
+
+	if (cli::print_asm())
+	{
+		std::cout << "no asm yet :/\n";
+	}
 
 	return 0;
 }

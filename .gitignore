@@ -5,6 +5,7 @@ cmake-build-debug
 
 #Vscode
 .vscode
+.cache
 
 Testing
 
