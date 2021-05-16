@@ -168,8 +168,7 @@ namespace syntax_analyzer
 	 * @brief Define a compound statement without preset arguments
 	 */
 	expression
-	compound_stmt();
-
+	compound_stmt(std::vector<expression> body = {});
 }
 
 #endif //KIVI_SYNTACTIC_STRUCTURES_HH_

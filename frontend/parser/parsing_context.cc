@@ -4,9 +4,9 @@
 #include <loguru/loguru.hpp>
 //#include <util/common.hh>
 
+#include "expressions.cc"
 #include "parser.tab.hh"
 #include "parsing_context.hh"
-#include "expressions.cc"
 #include "statements.cc"
 #include "syntax.hh"
 
@@ -21,7 +21,8 @@ using std::move;
 
 namespace syntax_analyzer
 {
-	parsing_context::parsing_context(const char* code_beginning, std::string* filename)
+	parsing_context::parsing_context(const char* code_beginning,
+		std::string* filename)
 		: lexer_cursor(code_beginning)
 	{
 		yy_location.begin.filename = filename;
@@ -41,7 +42,8 @@ namespace syntax_analyzer
 	{
 		if (m_scopes.empty())
 		{
-			LOG_F (WARNING, "Popping last scope from the back FAILED because no elements are present\n");
+			LOG_F (WARNING, "Popping last scope from the back FAILED because "
+							"no elements are present\n");
 			throw cannot_pop_out_of_empty_exception();
 		}
 		LOG_F (INFO, "Popping last scope from the back\n");
@@ -53,15 +55,17 @@ namespace syntax_analyzer
 	{
 		LOG_S (INFO) << "Defining identifier \"" << ident.name() << "\"";
 
-		bool is_duplicate = std::any_of(scopes().begin(), scopes().end(), [&](const identifier& s)
-		{
-		  return s == ident;
-		});
+		bool is_duplicate
+			= std::any_of(scopes().begin(), scopes().end(),
+				[&](const identifier& s)
+				{ return s == ident; });
 
 		if (is_duplicate)
 		{
-			LOG_S (WARNING) << "Duplicate definition of \"" + ident.name() << "\".";
-			throw kp::syntax_error(yy_location, "Duplicate definition of \"" + ident.name() + "\".");
+			LOG_S (WARNING)
+			<< "Duplicate definition of \"" + ident.name() << "\".";
+			throw kp::syntax_error(yy_location, "Duplicate definition of \""
+				+ ident.name() + "\".");
 		}
 
 		scopes_mut().push_back(ident);
@@ -74,10 +78,9 @@ namespace syntax_analyzer
 	{
 		LOG_S (INFO) << "Using identifier \"" + name << "\".";
 
-		auto it = std::find_if(scopes().begin(), scopes().end(), [&](const auto& s)
-		{
-		  return s.name() == name;
-		});
+		auto it = std::find_if(scopes().begin(), scopes().end(),
+			[&](const auto& s)
+			{ return s.name() == name; });
 
 		if (it != scopes().end())
 		{
@@ -85,21 +88,23 @@ namespace syntax_analyzer
 		}
 
 		LOG_S (WARNING) << "Unknown identifier \"" + name << "\".";
-		throw kp::syntax_error(yy_location, "Unknown identifier \"" + name + "\"");
+		throw kp::syntax_error(yy_location,
+			"Unknown identifier \"" + name + "\"");
 	}
 
 	const function&
-	parsing_context::define_function_body(const std::string& name, expression&& body)
+	parsing_context::define_function_body(const std::string& name,
+		expression&& body)
 	{
 		/// Adds implicit return statement at the end of the block
 		/// "concatenated" by this double-compound statement
+		auto new_body = sa::compound_stmt(
+			{
+				body,
+				return_stmt()
+			});
 
-		if (body.get_type() != expression::type::Return)
-		{
-			body.merge_with(move(return_stmt()));
-		}
-
-		m_current_function.set_body(move(body));
+		m_current_function.set_body(move(new_body));
 		m_current_function.set_name(name);
 
 		LOG_S (INFO) << "Defining function (\"" + name << "\") with body.\n";
@@ -112,21 +117,25 @@ namespace syntax_analyzer
 	parsing_context::define_local(std::string&& name)
 	{
 		LOG_S (INFO) << "Defining local variable (\"" + name << "\")" << '\n';
-		return define_identifier(identifier(identifier::type::Local, move(name), m_current_function.add_local()));
+		return define_identifier(identifier(identifier::type::Local, move(name),
+			m_current_function.add_local()));
 	}
 
 	expression
 	parsing_context::define_function(std::string name)
 	{
 		LOG_S (INFO) << "Defining function (\"" + name << "\")" << '\n';
-		return define_identifier(identifier(identifier::type::Function, move(name), functions().size()));
+		return define_identifier(identifier(identifier::type::Function,
+			move(name), functions().size()));
 	}
 
 	expression
 	parsing_context::define_parameter(std::string&& name)
 	{
 		LOG_S (INFO) << "Defining parameter (\"" + name << "\")" << '\n';
-		return define_identifier(identifier(identifier::type::Parameter, move(name), m_current_function.add_param()));
+		return define_identifier(identifier(identifier::type::Parameter,
+			move(name),
+			m_current_function.add_param()));
 	}
 
 	expression
@@ -140,7 +149,8 @@ namespace syntax_analyzer
 	bool
 	operator==(const identifier& This, const identifier& other)
 	{
-		return (This.name() == other.name() && This.get_type() == other.get_type());
+		return (This.name() == other.name()
+			&& This.get_type() == other.get_type());
 	}
-
 }
+

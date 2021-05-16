@@ -39,9 +39,9 @@ namespace syntax_analyzer
 	}
 
 	expression
-	compound_stmt()
+	compound_stmt(std::vector<expression> body /* = { } */)
 	{
-		return expression{ expression::type::Sequence, {}};
+		return expression{ expression::type::Sequence, move(body) };
 	}
 
 }

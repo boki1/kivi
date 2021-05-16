@@ -1,5 +1,5 @@
-#include <utility>
 #include <sstream>
+#include <utility>
 
 #include "ast_printer.hh"
 
@@ -9,16 +9,20 @@ using std::make_pair;
 
 namespace printer
 {
-	//!
-	//! The next couple of functions are required by the graph drawing utility
-	//!
+//!
+//! The next couple of functions are required by the graph drawing utility
+//!
+
+	// Colorful constants
+	std::string BoldCyan = "\033[1;36m";
 
 	/**
 	 * @brief Creates vertex in the graph
 	 * @return The created vertex
 	 * @note Required by the 2D graph drawing utility
 	 */
-	static std::string create_vertex(const sa::expression& expr)
+	static std::string
+	create_vertex(const sa::expression& expr)
 	{
 		std::string str = print(expr);
 
@@ -80,79 +84,82 @@ namespace printer
 		return type_str;
 	}
 
-	/**
-	 * @brief Checks whether the atom is simple or not
-	 * @return true / false
-	 * @note Required by the 2D graph drawing utility
-	 */
-	static bool is_simple(const sa::expression& e)
+/**
+ * @brief Checks whether the atom is simple or not
+ * @return true / false
+ * @note Required by the 2D graph drawing utility
+ */
+	static bool
+	is_simple(const sa::expression& e)
 	{
 		return true;
 	}
 
-	/**
-	 * @brief Whether the first item has to be separated by its children
-	 * @return true / false
-	 * @note Required by the 2D graph drawing utility
-	 */
-	static bool should_separate_first(const sa::expression& e)
+/**
+ * @brief Whether the first item has to be separated by its children
+ * @return true / false
+ * @note Required by the 2D graph drawing utility
+ */
+	static bool
+	should_separate_first(const sa::expression& e)
 	{
 		return e.get_type() == et::While;
 	}
 
-	/**
-	 * @brief Whether the full graph of this vertex is a one liner
-	 * @return true / false
-	 * @note Required by the 2D graph drawing utility
-	 */
-	static bool isnot_oneliner(const sa::expression& e)
+/**
+ * @brief Whether the full graph of this vertex is a one liner
+ * @return true / false
+ * @note Required by the 2D graph drawing utility
+ */
+	static bool
+	isnot_oneliner(const sa::expression& e)
 	{
 		return !e.operands().empty();
 	}
 
-	/**
-	 * @brief Gets the children of this vertex
-	 * @return Pair with iterator being and end
-	 * @note Required by the 2D graph drawing utility
-	 */
-	static auto vertex_children(const sa::expression& e)
+/**
+ * @brief Gets the children of this vertex
+ * @return Pair with iterator being and end
+ * @note Required by the 2D graph drawing utility
+ */
+	static auto
+	vertex_children(const sa::expression& e)
 	{
 		return make_pair(e.operands().cbegin(), e.operands().cend());
 	};
 
-	std::string print(const std::vector<sa::function>& functions) noexcept
+	std::string
+	print(const std::vector<sa::function>& functions) noexcept
 	{
 		std::stringstream ast_stream;
 
 		for (const auto& fun : functions)
 		{
 			textbox graph;
-			graph.putbox(0, 0, create_tree_graph(
-				/* vertex data */ fun.body(),
-				/* line limit */ 100,
-				create_vertex,
-				vertex_children,
-				isnot_oneliner,
-				is_simple,
-				should_separate_first
-			));
+			graph.putbox(0, 0,
+				create_tree_graph(
+					/* vertex data */ fun.body(),
+					/* line limit */ 100, create_vertex,
+					vertex_children, isnot_oneliner, is_simple,
+					should_separate_first));
 
-			ast_stream << "[function] " << fun.name() + ":\n";
-			ast_stream << print(fun) + "\n\n\n" << graph.to_string();
+			ast_stream << BoldCyan << "\n" << fun.name() + ":\n" << graph.to_string();
 		}
 
 		return ast_stream.str();
 	}
 
-	std::string print(const sa::function& fun) noexcept
+	std::string
+	print(const sa::function& fun) noexcept
 	{
 		return print(fun.body(), /* is_statement = */ true);
 	}
 
-	// Declare this for later usage
+// Declare this for later usage
 	static std::string next_expression(const sa::expression& expr);
 
-	std::string print(const sa::expression& expr, bool is_statement /* = false */ ) noexcept
+	std::string
+	print(const sa::expression& expr, bool is_statement /* = false */) noexcept
 	{
 		// Iterators pointing to the first and last expression in `expr.operands()`
 		const auto& front = expr.operands().cbegin();
@@ -195,7 +202,8 @@ namespace printer
 		}
 		case et::While:
 		{
-			const std::string& condition = print(*expr.peculiar().value());
+			const std::string& condition
+				= print(*expr.peculiar().value());
 			const std::string& body = print(expr, ", ", "()", false, 1);
 			return "while " + condition + " " + body;
 		}
@@ -203,7 +211,8 @@ namespace printer
 		{
 			if (expr.operands().empty())
 				return "??";
-			return "( " + print(*front) + " )" + print(expr, ", ", "()", false, 1);
+			return "( " + print(*front) + " )"
+				+ print(expr, ", ", "()", false, 1);
 		}
 		case et::Return:
 			return "return ( " + next_expression(expr) + " )";
@@ -211,20 +220,21 @@ namespace printer
 		return "????";
 	}
 
-	std::string print(const sa::identifier& ident) noexcept
+	std::string
+	print(const sa::identifier& ident) noexcept
 	{
 		static std::string prefixes = "??FPV";
 		std::stringstream sstr{};
-		sstr << prefixes[static_cast<int>(ident.get_type())] << std::to_string(ident.index());
+		sstr << prefixes[static_cast<int> (ident.get_type())]
+			 << std::to_string(ident.index());
 		sstr << "\"" << ident.name() << "\"";
 
 		return sstr.str();
 	}
 
-	std::string print(const sa::expression& expr,
-		const std::string& oper,
-		const std::string& separator,
-		bool is_statement /* = false */ ,
+	std::string
+	print(const sa::expression& expr, const std::string& oper,
+		const std::string& separator, bool is_statement /* = false */,
 		unsigned skip_first_n /* = 0 */) noexcept
 	{
 		bool is_first_iteration = true;
@@ -256,7 +266,8 @@ namespace printer
 		return sstr.str();
 	}
 
-	static std::string next_expression(const sa::expression& expr)
+	static std::string
+	next_expression(const sa::expression& expr)
 	{
 		if (expr.operands().empty())
 		{
