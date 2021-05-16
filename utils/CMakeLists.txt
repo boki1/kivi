@@ -2,7 +2,6 @@
 
 add_library(
         cli
-        cli/cli.cc
         cli/cli.hh
 )
 
