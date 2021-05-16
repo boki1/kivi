@@ -6,6 +6,7 @@
 #include <ast_printer/ast_printer.hh>
 #include <cli/cli.hh>
 #include <ir_generation/ir_code.hh>
+#include <ir_printer/ir_printer.hh>
 
 int
 main(int argc, char* argv[])
@@ -28,6 +29,7 @@ main(int argc, char* argv[])
 	std::cout << printer::print(ctx.functions());
 
     intermediate_representation::tac tac{};
+    printer::print_ir(tac, std::cout);
 
 	return 0;
 }

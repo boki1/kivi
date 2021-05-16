@@ -16,7 +16,7 @@ namespace intermediate_representation {
         /**
          * @brief Enumeration class containing all the the three - address codes that KIVI uses
          */
-        enum class type {
+        enum class tac_type {
             Nop,            //< No operation
             Init,           //< Store a pointer to a value at address &identifier + offset where identifier is a function's base
             Add,            //< Perform addition
@@ -32,7 +32,7 @@ namespace intermediate_representation {
 
     private:
         /// The type of the tac
-        tac::type m_type{type::Nop};
+        tac::tac_type m_type{tac_type::Nop};
 
         /// Reference to functions name (label)
         /// @note empty = none
@@ -52,20 +52,23 @@ namespace intermediate_representation {
 
     public:
         tac() = default;
-        tac(tac::type &tac_type, std::vector<fake_register_type> &operands);
-        tac(tac::type &tac_type, std::string_view str = nullptr, int i = 0);
-        tac(std::shared_ptr<tac> b, std::vector<fake_register_type> &operands, tac::type tac_type = type::IfNotZero);
+        tac(tac::tac_type &tac_type, std::vector<fake_register_type> &operands);
+        tac(tac::tac_type &tac_type, std::string_view str = nullptr, int i = 0);
+        tac(std::shared_ptr<tac> b, std::vector<fake_register_type> &operands, tac::tac_type tac_type = tac::tac_type::IfNotZero);
         tac(std::vector<fake_register_type> &operands);
         ~tac() = default;
 
     public:
-        [[nodiscard]] type tac_type() const;
+
+    public:
+        [[nodiscard]] tac_type type() const;
         [[nodiscard]] std::string identifier() const;
         [[nodiscard]] off_t value() const;
         [[nodiscard]] const std::shared_ptr<tac> &next() const;
         [[nodiscard]] const std::optional<std::shared_ptr<tac>> &condition() const;
         [[nodiscard]] const std::vector<fake_register_type> &operands() const;
     };
+
 }
 
 #endif //KIVI_IR_CODE_HH

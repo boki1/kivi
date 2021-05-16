@@ -3,21 +3,21 @@
 #include <parser/parser.tab.hh>
 
 namespace intermediate_representation {
-    tac::tac(tac::type &tac_type, std::vector<fake_register_type> &operands) : m_type(tac_type),
+    tac::tac(tac::tac_type &type, std::vector<fake_register_type> &operands) : m_type(type),
                                                                                m_operands(std::move(operands)) {}
 
-    tac::tac(tac::type &tac_type, std::string_view str /*  = nullptr */, int i /*  = 0 */) : m_type(tac_type){
+    tac::tac(tac::tac_type &type, std::string_view str /*  = nullptr */, int i /*  = 0 */) : m_type(type){
 
     }
 
     tac::tac(std::shared_ptr<tac> b, std::vector<fake_register_type> &operands,
-             tac::type tac_type /* = type::IfNotZero */) :
-            m_condition(b), m_operands(std::move(operands)), m_type(tac_type) {}
+             tac::tac_type type /* = tac_type::IfNotZero */) :
+            m_condition(b), m_operands(std::move(operands)), m_type(type) {}
 
 
     tac::tac(std::vector<fake_register_type> &operands) : m_operands(std::move(operands)) {}
 
-    tac::type tac::tac_type() const {
+    tac::tac_type tac::type() const {
         return m_type;
     }
 
@@ -40,6 +40,7 @@ namespace intermediate_representation {
     const std::vector<tac::fake_register_type> &tac::operands() const {
         return m_operands;
     }
+
 
 };
 
