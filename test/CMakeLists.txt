@@ -6,22 +6,15 @@ set(UNIT_TEST_TARGET Kivi_Tests)
 
 ############################## Main ()
 
-add_library(test_main main.test.cc)
+add_library(test_main config.test.cc)
 target_link_libraries(test_main PUBLIC ${UNIT_TEST_DEPENDS})
 
 ############################## Example test
 
-add_executable(test__example example.test.cc)
+add_executable(test__example frontend/example.test.cc)
 target_link_libraries(test__example PUBLIC test_main)
 add_test(NAME Example
         COMMAND test__example)
-
-############################## Configuration test
-
-add_executable(test__config config.test.cc config.test.cc)
-target_link_libraries(test__config PUBLIC test_main)
-add_test(NAME ConfigCatch2
-        COMMAND test__config)
 
 ############################## Parsing context
 

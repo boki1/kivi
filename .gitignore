@@ -1,3 +1,4 @@
+
 # Clion
 .idea
 cmake-build-debug
@@ -21,4 +22,5 @@ build
 
 # Docs/
 docs/gh-pages
+docs/dev/gh-pages/
 docs/build

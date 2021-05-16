@@ -31,4 +31,3 @@ if test "$OPEN" = true; then
 		xdg-open docs/build/html/index.html
 	fi
 fi
-

@@ -14,7 +14,7 @@ std::string fname = "pseudo.kv";
 std::string code = "gcd:{}";
 syntax_analyzer::parsing_context context(code.c_str(), &fname);
 
-TEST_CASE("Parsing context", "[pc]")
+TEST_CASE("Parsing context - common", "[pc_common]")
 {
 	SECTION("Scope enter : regular")
 	{
@@ -36,46 +36,49 @@ TEST_CASE("Parsing context", "[pc]")
 		context.scopes_mut().clear();
 		REQUIRE_THROWS(context.exit_scope());
 	}
+}
 
-	SECTION("Define identifier : regular")
-	{
-		REQUIRE_NOTHROW(context.define_parameter("foo"));
+TEST_CASE("Parsing context - identifier", "[pc_ident]")
+{
+    SECTION("Define identifier : regular")
+    {
+        REQUIRE_NOTHROW(context.define_parameter("foo"));
 
-		REQUIRE(context.scopes().back().name() == "foo");
-		REQUIRE(context.scopes().back().get_type() == sa::identifier::type::Parameter);
-	}
+        REQUIRE(context.scopes().back().name() == "foo");
+        REQUIRE(context.scopes().back().get_type() == sa::identifier::type::Parameter);
+    }
 
-	SECTION("Define identifier _corner case_ : duplication")
-	{
-		REQUIRE_NOTHROW(context.define_local("foo"));
+    SECTION("Define identifier _corner case_ : duplication")
+    {
+        REQUIRE_NOTHROW(context.define_local("foo"));
 
-		REQUIRE_THROWS_AS(
-			context.define_local("foo"),
-			yy::kivi_parser::syntax_error
-		);
-	}
+        REQUIRE_THROWS_AS(
+                context.define_local("foo"),
+                yy::kivi_parser::syntax_error
+        );
+    }
 
-	SECTION("Use identifier : regular)")
-	{
-		REQUIRE_NOTHROW (
-			context.define_local("regular_ident")
-		);
+    SECTION("Use identifier : regular)")
+    {
+        REQUIRE_NOTHROW (
+                context.define_local("regular_ident")
+        );
 
-		REQUIRE_NOTHROW(
-			context.use_identifier("regular_ident")
-		);
-	}
+        REQUIRE_NOTHROW(
+                context.use_identifier("regular_ident")
+        );
+    }
 
-	SECTION("Use identifier _corner case_ : illegal case)")
-	{
-		REQUIRE_NOTHROW (
-			context.define_local("haha")
-		);
+    SECTION("Use identifier _corner case_ : illegal case)")
+    {
+        REQUIRE_NOTHROW (
+                context.define_local("haha")
+        );
 
-		REQUIRE_THROWS_AS (
-			context.use_identifier("hahaha"),
-			yy::kivi_parser::syntax_error
-		);
-	}
+        REQUIRE_THROWS_AS (
+                context.use_identifier("hahaha"),
+                yy::kivi_parser::syntax_error
+        );
+    }
 
 }

@@ -17,7 +17,6 @@ set(TEST_DIR "${PROJECT_ROOT}/test")
 set(UTILS_DIR "${PROJECT_ROOT}/utils")
 
 ############### Utilities
-
 function(print)
     foreach (var ${ARGN})
         message("${var} = ${${var}}")

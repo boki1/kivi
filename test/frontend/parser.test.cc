@@ -16,21 +16,21 @@ using std::make_shared;
 using namespace syntax_analyzer;
 using et = expression::type;
 
-std::string fake_file = "fake";
+std::string filename = "fake";
 
 TEST_CASE("Syntactical analysis", "[parser]")
 {
 	SECTION("Simple function parse : regular")
 	{
 		std::string code = "foo n: return 1;";
-		parsing_context ctx(code.c_str(), &fake_file);
+		parsing_context ctx(code.c_str(), &filename);
 		yy::kivi_parser parser{ ctx };
 
 		REQUIRE(parser.parse() == 0);
 
 		function expected{
 			"foo",
-			expression{
+			expression {
 				et::Return,
 				{ expression(1) }
 			},
@@ -45,7 +45,7 @@ TEST_CASE("Syntactical analysis", "[parser]")
 	SECTION("Simple function parse : syntax error")
 	{
 		std::string code = "foo: { auto a = 3; auto a = 4; } ";
-		parsing_context ctx(code.c_str(), &fake_file);
+		parsing_context ctx(code.c_str(), &filename);
 		yy::kivi_parser parser{ ctx };
 
 		REQUIRE(parser.parse() == 1);
