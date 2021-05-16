@@ -1,35 +1,48 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.17)
+project(kivi)
 
-project(kivi VERSION 0.01)
+set(CMAKE_CXX_STANDARD 17)
 
-add_compile_options(--std=c++17)
 
-find_package(Catch2 CONFIG REQUIRED)
-enable_testing()
-include(CTest)
-include(Catch)
+############## Global "variables"
 
 set(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}")
-set(SRC_DIR "${PROJECT_ROOT}/src")
-set(KIVI_SRC_DIR "${SRC_DIR}/kivi")
-set(AUTOGEN_DIR "${SRC_DIR}/autogen")
-set(AUTOGEN_OUTPUT_DIR "${AUTOGEN_DIR}/kivi_parser")
-set(MISC_DIR "${SRC_DIR}/misc")
-set(EXTERN_DIR "${SRC_DIR}/extern")
+set(FRONTEND_DIR "${PROJECT_ROOT}/frontend")
+set(PARSER_DIR "${FRONTEND_DIR}/parser")
+set(GRAMMAR "${PARSER_DIR}/grammar.y")
+set(LEXEMES "${PARSER_DIR}/lexemes.re")
+set(BACKEND_DIR "${PROJECT_ROOT}/backend")
+set(EXTERN_DIR "${PROJECT_ROOT}/extern")
+set(TEST_DIR "${PROJECT_ROOT}/test")
+set(UTILS_DIR "${PROJECT_ROOT}/utils")
 
-set(LEXEMES "${MISC_DIR}/lexemes.re")
-set(GRAMMAR "${MISC_DIR}/grammar.y")
-
-
+############### Utilities
 function(print)
     foreach (var ${ARGN})
         message("${var} = ${${var}}")
     endforeach ()
 endfunction()
 
-print(PROJECT_ROOT SRC_DIR KIVI_SRC_DIR AUTOGEN_DIR MISC_DIR EXTERN_DIR)
-print(PROJECT_ROOT)
+############### Testing
 
-####################
+find_package(Catch2 CONFIG REQUIRED)
+enable_testing()
+include(CTest)
+include(Catch)
 
-add_subdirectory(src)
+############### Subdirectories
+
+add_subdirectory(extern)
+add_subdirectory(utils)
+add_subdirectory(frontend)
+add_subdirectory(backend)
+add_subdirectory(test)
+
+################ Main
+
+add_executable(kivi
+        main.cc)
+
+target_link_libraries(kivi PRIVATE kivi_parser)
+target_link_libraries(kivi PRIVATE cli)
+target_link_libraries(kivi PRIVATE loguru)
