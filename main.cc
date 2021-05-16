@@ -5,6 +5,7 @@
 #include <parser/parsing_context.hh>
 #include <ast_printer/ast_printer.hh>
 #include <cli/cli.hh>
+#include <ir_generation/ir_code.hh>
 
 int
 main(int argc, char* argv[])
@@ -25,6 +26,8 @@ main(int argc, char* argv[])
 	parser.parse();
 
 	std::cout << printer::print(ctx.functions());
+
+    intermediate_representation::tac tac{};
 
 	return 0;
 }

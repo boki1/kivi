@@ -1,5 +1,4 @@
 add_subdirectory(parser)
-add_subdirectory(ir_generation)
 
 ############## Parser
 
@@ -23,3 +22,12 @@ add_dependencies(kivi_parser autogen_kivi_parser)
 target_include_directories(kivi_parser PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 
 target_link_libraries(kivi_parser PRIVATE loguru)
+
+add_library(kivi_ir
+        ir_generation/ir_code.hh
+        ir_generation/ir_code.cc
+        )
+
+target_include_directories(kivi_ir PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+target_link_libraries(kivi_ir PRIVATE kivi_parser)
+target_link_libraries(kivi_ir PRIVATE loguru)

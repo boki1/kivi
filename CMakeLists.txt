@@ -3,7 +3,6 @@ project(kivi)
 
 set(CMAKE_CXX_STANDARD 17)
 
-
 ############## Global "variables"
 
 set(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -44,6 +43,7 @@ add_subdirectory(test)
 add_executable(kivi
         main.cc)
 
+target_link_libraries(kivi PRIVATE kivi_ir)
 target_link_libraries(kivi PRIVATE kivi_parser)
 target_link_libraries(kivi PRIVATE ast_printer)
 target_link_libraries(kivi PRIVATE cli)
