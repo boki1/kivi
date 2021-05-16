@@ -123,22 +123,22 @@ namespace syntax_analyzer
 		 */
 		enum class type
 		{
-			Nop,         //< No operation
-			String,         //< String literal
-			Number,         //< Number constant
-			Identifier,     //< Identifier expression
-			Addition,     //< Addition operation
-			Negation,     //< Negation operation
+			Nop,                //< No operation
+			String,             //< String literal
+			Number,             //< Number constant
+			Identifier,         //< Identifier expression
+			Addition,           //< Addition operation
+			Negation,           //< Negation operation
 			Multiplication,     //< Multiplication operation
-			Division,     //< Division operation
-			Equality,     //< Equality comparison operation
-			ModularDivision, //< Modular division operation
-			Copy, //< Copy expression
-			If,         //< If statement
-			While,         //< While statement
-			FunctionCall,     //< Function call operation
-			Sequence,     //< Sequence of expressions
-			Return,         //< Return statement
+			Division,           //< Division operation
+			Equality,           //< Equality comparison operation
+			ModularDivision,    //< Modular division operation
+			Copy,               //< Copy expression
+			If,                 //< If statement
+			While,              //< While statement
+			FunctionCall,       //< Function call operation
+			Sequence,           //< Sequence of expressions
+			Return,             //< Return statement
 		};
 
 	 private:
