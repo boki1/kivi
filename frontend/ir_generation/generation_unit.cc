@@ -1,14 +1,12 @@
 #include "generation_unit.hh"
 
 namespace intermediate_representation {
-    std::unique_ptr <tac> &intermediate_representation::generation_unit::define_tac(std::vector<tac::fake_register_type> &operands) {
-        std::unique_ptr<tac> result = std::make_unique<tac>(std::move(tac{operands}));
-        return result;
+    std::unique_ptr<tac> intermediate_representation::generation_unit::define_tac(std::vector<tac::fake_register_type> &operands) {
+        return std::make_unique<tac>(std::move(tac{operands}));
     }
 
     std::shared_ptr<tac> &generation_unit::define_tac(std::unique_ptr<tac> &tac_code) {
-        m_all_tacs.emplace_back(std::make_shared<tac>(*tac_code));
-        return m_all_tacs.back();
+        return m_all_tacs.emplace_back(std::make_shared<tac>(*tac_code));
     }
 
     const std::vector<std::shared_ptr<tac>> &generation_unit::all_tacs() const {
