@@ -23,17 +23,17 @@ main(int argc, const char* argv[])
 	yy::kivi_parser parser{ ctx };
 	parser.parse();
 
-	if (cli::print_ast())
+	if (cli::should_print(cli::pe::ast))
 	{
 		std::cout << printer::print(ctx.functions());
 	}
 
-	if (cli::print_ir())
+	if (cli::should_print(cli::pe::ir))
 	{
 		std::cout << "no ir yet :/\n";
 	}
-
-	if (cli::print_asm())
+	
+	if (cli::should_print(cli::pe::asm_))
 	{
 		std::cout << "no asm yet :/\n";
 	}
