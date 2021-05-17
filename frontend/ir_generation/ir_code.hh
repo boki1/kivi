@@ -52,10 +52,19 @@ namespace intermediate_representation {
 
     public:
         tac() = default;
-        tac(tac::tac_type &tac_type, std::vector<fake_register_type> &operands);
-        tac(tac::tac_type &tac_type, std::string_view str = nullptr, int i = 0);
-        tac(std::shared_ptr<tac> b, std::vector<fake_register_type> &operands, tac::tac_type tac_type = tac::tac_type::IfNotZero);
+
+        // TODO: using optional or def param?
+        tac(tac::tac_type tac_type);
+
+        tac(tac::tac_type tac_type, std::vector<fake_register_type> &operands);
+
+        tac(std::string_view ident_str, int val, std::vector<fake_register_type> &operands);
+
+        tac(std::unique_ptr<tac> &b, std::vector<fake_register_type> &operands,
+            tac::tac_type type = tac::tac_type::IfNotZero);
+
         tac(std::vector<fake_register_type> &operands);
+
         ~tac() = default;
 
     public:

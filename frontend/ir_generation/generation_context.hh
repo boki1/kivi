@@ -1,7 +1,3 @@
-//
-// Created by vili on 16.05.21 г..
-//
-
 #ifndef KIVI_GENERATION_CONTEXT_HH
 #define KIVI_GENERATION_CONTEXT_HH
 

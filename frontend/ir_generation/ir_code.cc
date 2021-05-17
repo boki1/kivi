@@ -1,18 +1,20 @@
 #include "ir_code.hh"
 
-#include <parser/parser.tab.hh>
-
 namespace intermediate_representation {
-    tac::tac(tac::tac_type &type, std::vector<fake_register_type> &operands) : m_type(type),
-                                                                               m_operands(std::move(operands)) {}
+    tac::tac(tac::tac_type type) : m_type(type) {}
 
-    tac::tac(tac::tac_type &type, std::string_view str /*  = nullptr */, int i /*  = 0 */) : m_type(type){
+    tac::tac(tac::tac_type type, std::vector<fake_register_type> &operands) : m_type(type),
+                                                                              m_operands(std::move(operands)) {}
 
+    tac::tac(std::string_view ident_str, int val, std::vector<fake_register_type> &operands) : tac(tac_type::Init,
+                                                                                                   operands) {
+        m_identifier = ident_str;
+        m_value = val;
     }
 
-    tac::tac(std::shared_ptr<tac> b, std::vector<fake_register_type> &operands,
+    tac::tac(std::unique_ptr<tac> &b, std::vector<fake_register_type> &operands,
              tac::tac_type type /* = tac_type::IfNotZero */) :
-            m_condition(b), m_operands(std::move(operands)), m_type(type) {}
+            m_condition(std::move(b)), m_operands(std::move(operands)), m_type(type) {}
 
 
     tac::tac(std::vector<fake_register_type> &operands) : m_operands(std::move(operands)) {}
@@ -41,7 +43,6 @@ namespace intermediate_representation {
         return m_operands;
     }
 
-
-};
+}
 
 
