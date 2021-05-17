@@ -1,9 +1,0 @@
-#ifndef KIVI_SRC_KIVI_UTIL_VISITER_HH_
-#define KIVI_SRC_KIVI_UTIL_VISITER_HH_
-
-class visitor
-{
-
-};
-
-#endif //KIVI_SRC_KIVI_UTIL_VISITER_HH_

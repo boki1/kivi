@@ -6,6 +6,10 @@ This directory contains the source code related to the implementation of the fro
 
 **Contents**
 
-- `grammar.y` This is the grammar used by `bison` in order to generate an actual state machine-based parser.
+- `parser/` In this folder resides the implementation of the syntactical analyzer used in the first stages of the compilation process
 
-- `lexemes.re` This file lists the lexemes/tokens used by `re2c` (in combination with `bison`) in order to generate the code for lexical analysis stage
+- `ir_generation/` This directory is used for the implementation of the stage which is responsible for "translating" the already generated AST into a more assembly-like architecture-independent simplistic language called _intermediate representation_
+
+----------------
+
+For the next steps of the compilation process check the `backend/` directory.
