@@ -74,8 +74,8 @@ namespace intermediate_representation {
         [[nodiscard]] tac_type type() const;
         [[nodiscard]] std::string identifier() const;
         [[nodiscard]] off_t value() const;
-        [[nodiscard]] const std::shared_ptr<tac> &next() const;
-        [[nodiscard]] const std::shared_ptr<tac> &condition() const;
+        [[nodiscard]] std::shared_ptr<tac> &next();
+        [[nodiscard]] std::shared_ptr<tac> &condition();
         [[nodiscard]] const std::vector<fake_register_type> &operands() const;
     };
 }

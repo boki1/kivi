@@ -22,8 +22,8 @@ namespace intermediate_representation {
     }
 
     std::shared_ptr<tac>
-    generation_unit::tac_nop(const std::vector<tac::fake_register_type> &operands) {
-        return define_tac(std::make_unique<tac>(tac{tac::tac_type::Nop, operands}));
+    generation_unit::tac_nop() {
+        return define_tac(std::make_unique<tac>(tac{tac::tac_type::Nop, {}}));
     }
 
     std::shared_ptr<tac>
@@ -116,7 +116,7 @@ namespace intermediate_representation {
                 break;
             }
             case syntax_analyzer::expression::type::Return: {
-                result  = generate_ir(code.operands().front(), ctx);
+                result = generate_ir(code.operands().front(), ctx);
                 put(tac_rtrn({result}), ctx);
                 break;
             }
@@ -133,42 +133,68 @@ namespace intermediate_representation {
             case syntax_analyzer::expression::type::Addition:
             case syntax_analyzer::expression::type::Equality:
             case syntax_analyzer::expression::type::Sequence: {
-                for(auto &i : code.operands()) {
+                for (auto &i : code.operands()) {
                     tac::fake_register_type prev = result;
                     tac::fake_register_type last = result = generate_ir(i, ctx);
-                    if (prev != ~0u)
-                    {
+                    if (prev != ~0u) {
                         result = ctx.increase_counter();
-//                        if(code.get_type() == tac::tac_type::Add) {
-//                            put(tac_add(result, prev, last));
-//                        }
-//                        else if(code.get_type() == tac::tac_type::Equals) {
-//                            put(tac_eq(result, prev, last));
-//                        }
+                        if (code.get_type() == sa::expression::type::Addition) {
+                            put(tac_add({result, prev, last}), ctx);
+                        } else if (code.get_type() == sa::expression::type::Equality) {
+                            put(tac_eq({result, prev, last}), ctx);
+                        }
                     }
                 }
                 break;
             }
-            case syntax_analyzer::expression::type::Copy: {
-                break;
-            }
-            case syntax_analyzer::expression::type::Multiplication: {
-                break;
-            }
-            case syntax_analyzer::expression::type::Division: {
-                break;
-            }
-            case syntax_analyzer::expression::type::ModularDivision: {
-                break;
-            }
+            case syntax_analyzer::expression::type::While:
             case syntax_analyzer::expression::type::If: {
-                break;
-            }
-            case syntax_analyzer::expression::type::While: {
-                break;
-            }
-            case syntax_analyzer::expression::type::FunctionCall: {
-                break;
+                {
+                    result = ctx.increase_counter();
+                    /// This is an If() statement. Therefore three mandatory statements are created:
+                    // TODO: unique?
+                    std::shared_ptr<tac> b_then = tac_init("", {result, 1l});        // Then-branch
+                    std::shared_ptr<tac> b_else = tac_init("", {result, 0l});        // Else-branch
+                    std::shared_ptr<tac> end = tac_nop();
+                    b_then->next() = b_else->next() = end; // A common target for both.
+
+                    /// For loops reference to the first expression is needed.
+                    /// @note A reference to the pointer is needed instead of copy since it'll change onwards.
+                    std::shared_ptr<tac> &begin = *ctx.target();
+                    for (const auto &i : code.operands()) {
+                        /// Get IR.
+                        tac::fake_register_type i_ir = generate_ir(i, ctx);
+                        // Don't create a branch after contingent statements in a loop.
+                        if (code.get_type() == sa::expression::type::While && i != code.operands().front()) {
+                            continue;
+                        }
+                        // Immediately after the expression, create a branch on its result.
+                        std::shared_ptr<tac> condition = *ctx.target() = tac_ifnz({i_ir, 0});
+
+                        *ctx.target() = condition->next();
+                        condition->condition() = b_else;
+                    }
+                    // The end of the statement chain is linked into b_then.
+                    // For loops, the chain is linked back into the start of the loop instead.
+                    *ctx.target() = code.get_type() == sa::expression::type::While ? begin : b_then;
+                    *ctx.target() = end->next();  // Code continues after the end node.
+                    break;
+                }
+                case syntax_analyzer::expression::type::Copy: {
+                    break;
+                }
+                case syntax_analyzer::expression::type::Multiplication: {
+                    break;
+                }
+                case syntax_analyzer::expression::type::Division: {
+                    break;
+                }
+                case syntax_analyzer::expression::type::ModularDivision: {
+                    break;
+                }
+                case syntax_analyzer::expression::type::FunctionCall: {
+                    break;
+                }
             }
         }
     }

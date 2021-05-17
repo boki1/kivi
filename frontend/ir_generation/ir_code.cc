@@ -35,11 +35,11 @@ namespace intermediate_representation {
         return m_value;
     }
 
-    const std::shared_ptr<tac> &tac::next() const {
+    std::shared_ptr<tac> &tac::next() {
         return m_next;
     }
 
-    const std::shared_ptr<tac> & tac::condition() const {
+    std::shared_ptr<tac> & tac::condition() {
         return m_condition;
     }
 

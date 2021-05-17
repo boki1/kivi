@@ -58,7 +58,7 @@ namespace intermediate_representation {
         define_tac(const std::unique_ptr<tac> &tac_code);
 
         std::shared_ptr<tac>
-        tac_nop(const std::vector<tac::fake_register_type> &operands);
+        tac_nop();
 
         std::shared_ptr<tac>
         tac_init(const std::string &ident_name, const std::vector<tac::fake_register_type> &operands);
