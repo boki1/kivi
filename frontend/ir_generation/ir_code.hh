@@ -45,7 +45,7 @@ namespace intermediate_representation {
         std::shared_ptr<tac> m_next{nullptr};
 
         /// Used for IfNotZero - if var[p0] <> 0, m_condition overrides next.
-        std::optional<std::shared_ptr<tac>> m_condition{nullptr};
+        std::shared_ptr<tac> m_condition{nullptr};
 
         /// Variable indexes
         std::vector<fake_register_type> m_operands{};
@@ -60,10 +60,10 @@ namespace intermediate_representation {
 
         tac(std::string_view ident_str, int val, const std::vector<fake_register_type> &operands);
 
-        tac(const std::unique_ptr<tac> &b, const std::vector<fake_register_type> &operands,
+        tac(std::shared_ptr<tac>  b, std::vector<fake_register_type> operands,
             tac::tac_type type = tac::tac_type::IfNotZero);
 
-        tac(const std::vector<fake_register_type> &operands);
+        tac(std::vector<fake_register_type> operands);
 
         ~tac() = default;
 
@@ -74,10 +74,9 @@ namespace intermediate_representation {
         [[nodiscard]] std::string identifier() const;
         [[nodiscard]] off_t value() const;
         [[nodiscard]] const std::shared_ptr<tac> &next() const;
-        [[nodiscard]] const std::optional<std::shared_ptr<tac>> &condition() const;
+        [[nodiscard]] const std::shared_ptr<tac> &condition() const;
         [[nodiscard]] const std::vector<fake_register_type> &operands() const;
     };
-
 }
 
 #endif //KIVI_IR_CODE_HH

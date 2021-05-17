@@ -77,7 +77,7 @@ namespace printer {
 
             }
             if (tac->condition()) {
-                auto &t = statistics[*(tac->condition())];
+                auto &t = statistics[tac->condition()];
 
                 if (t.labels.empty()) {
                     add_label(t);
@@ -86,7 +86,7 @@ namespace printer {
         }
 
         while (!remaining_statements.empty()) {
-            std::shared_ptr<ir::tac> chain = remaining_statements.front();
+            auto chain = std::make_shared<ir::tac>(remaining_statements.front());
             remaining_statements.pop_front();
             for (bool needs_jmp = false; chain != nullptr; chain = chain->next(), needs_jmp = true) {
                 auto &stats = statistics[chain];
@@ -101,9 +101,9 @@ namespace printer {
                 for (const auto &l: stats.labels) os << l << ":\n";
                 print_ir(chain, os);
                 if (chain->condition()) {
-                    auto &branch_stats = statistics[*chain->condition()];
+                    auto &branch_stats = statistics[chain->condition()];
                     os << ", JMP " << branch_stats.labels.front();
-                    if (!branch_stats.done) { remaining_statements.push_front(**chain->condition()); }
+                    if (!branch_stats.done) { remaining_statements.push_front(*chain->condition()); }
                 }
                 os << '\n';
             }

@@ -12,12 +12,11 @@ namespace intermediate_representation {
         m_value = val;
     }
 
-    tac::tac(const std::unique_ptr<tac> &b, const std::vector<fake_register_type> &operands,
+    tac::tac(std::shared_ptr<tac> b, std::vector<fake_register_type> operands,
              tac::tac_type type /* = tac_type::IfNotZero */) :
             m_condition(std::move(b)), m_operands(std::move(operands)), m_type(type) {}
 
-
-    tac::tac(const std::vector<fake_register_type> &operands) : m_operands(operands) {}
+    tac::tac(std::vector<fake_register_type> operands) : m_operands(std::move(operands)) {}
 
     tac::tac_type tac::type() const {
         return m_type;
@@ -35,14 +34,13 @@ namespace intermediate_representation {
         return m_next;
     }
 
-    const std::optional<std::shared_ptr<tac>> &tac::condition() const {
+    const std::shared_ptr<tac> & tac::condition() const {
         return m_condition;
     }
 
     const std::vector<tac::fake_register_type> &tac::operands() const {
         return m_operands;
     }
-
 }
 
 

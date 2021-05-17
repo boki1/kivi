@@ -38,27 +38,54 @@ namespace intermediate_representation {
 
             [[nodiscard]] const std::map<std::size_t, tac::fake_register_type> &map() const;
 
+            [[nodiscard]] tac::fake_register_type increase_counter();
+
         };
 
-        tac::fake_register_type generate_ir(const syntax_analyzer::expression &code, const generation_context &ctx);
+        tac::fake_register_type generate_ir(const syntax_analyzer::expression &code, generation_context &ctx);
 
     public:
-        static std::unique_ptr<tac> define_tac(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> &define_tac(const std::unique_ptr<tac> &tac_code);
+        static std::unique_ptr<tac>
+        define_tac(const std::vector<tac::fake_register_type> &operands);
 
-        std::shared_ptr<tac> tac_nop(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_init(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_add(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_neg(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_copy(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_read(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_write(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_eq(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_ifnz(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_fcall(const std::vector<tac::fake_register_type> &operands);
-        std::shared_ptr<tac> tac_rtrn(const std::vector<tac::fake_register_type> &operands);
+        std::shared_ptr<tac> &
+        define_tac(const std::unique_ptr<tac> &tac_code);
 
-        void generate_function(const syntax_analyzer::function &fun);
+        std::shared_ptr<tac>
+        tac_nop(const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_init(const std::string &ident_name, const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_add(const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_neg(const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_copy(const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_read(const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_write(const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_eq(const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_ifnz(const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_fcall(const std::vector<tac::fake_register_type> &operands);
+
+        std::shared_ptr<tac>
+        tac_rtrn(const std::vector<tac::fake_register_type> &operands);
+
+        void
+        generate_function(const syntax_analyzer::function &fun);
 
     public:
         [[nodiscard]] const std::vector<std::shared_ptr<tac>> &all_tacs() const;
@@ -68,8 +95,6 @@ namespace intermediate_representation {
         [[nodiscard]] const std::map<std::string, std::shared_ptr<tac>> &entry_points() const;
 
         [[nodiscard]] const std::string &string_constants() const;
-
-
     };
 }
 #endif //KIVI_CONCRETE_CODES_HH
