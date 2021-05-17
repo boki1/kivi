@@ -221,6 +221,20 @@ namespace intermediate_representation {
         return result;
     }
 
+    void
+    generation_unit::generate_function(const syntax_analyzer::function &function) {
+        function_parameters()[function.name()] = function.parameters();
+
+        generation_context ctx{function.parameters(), std::make_shared<std::shared_ptr<tac>>(entry_points()[function.name()])};
+        generate_ir(function.body(), ctx);
+    }
+
+    void
+    generation_unit::generate(const std::vector<sa::function> &ctx_functions) {
+        for (const auto &f: ctx_functions) {
+            generate_function(f);
+        }
+    }
 
     std::vector<std::shared_ptr<tac>> &
     generation_unit::all_tacs() {
@@ -241,6 +255,9 @@ namespace intermediate_representation {
     generation_unit::string_constants() {
         return m_string_constants;
     }
+
+    generation_unit::generation_context::generation_context(int counter, std::shared_ptr<std::shared_ptr<tac>> target)
+            : m_counter(counter), m_target(std::move(target)) {}
 
     tac::fake_register_type
     generation_unit::generation_context::counter() {

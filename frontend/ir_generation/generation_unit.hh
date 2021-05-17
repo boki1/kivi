@@ -32,17 +32,16 @@ namespace intermediate_representation {
             std::map<std::size_t, tac::fake_register_type> m_map;
 
         public:
+            generation_context(int counter, std::shared_ptr<std::shared_ptr<tac>> target);
+
             [[nodiscard]] tac::fake_register_type counter();
 
-            [[nodiscard]] std::shared_ptr<std::shared_ptr<tac>> & target();
+            [[nodiscard]] std::shared_ptr<std::shared_ptr<tac>> &target();
 
             [[nodiscard]] std::map<std::size_t, tac::fake_register_type> &map();
 
             [[nodiscard]] tac::fake_register_type increase_counter();
-
         };
-
-        tac::fake_register_type generate_ir(const syntax_analyzer::expression &code, generation_context &ctx);
 
     public:
         static std::unique_ptr<tac>
@@ -90,8 +89,14 @@ namespace intermediate_representation {
         std::shared_ptr<tac>
         tac_rtrn(const std::vector<tac::fake_register_type> &operands);
 
+        tac::fake_register_type
+        generate_ir(const syntax_analyzer::expression &code, generation_context &ctx);
+
         void
-        generate_function(const syntax_analyzer::function &fun);
+        generate_function(const syntax_analyzer::function &function);
+
+        void
+        generate(const std::vector<syntax_analyzer::function> &ctx_functions);
 
     public:
         [[nodiscard]] std::vector<std::shared_ptr<tac>> & all_tacs();
@@ -101,6 +106,7 @@ namespace intermediate_representation {
         [[nodiscard]] std::map<std::string, std::shared_ptr<tac>> & entry_points();
 
         [[nodiscard]] std::string & string_constants();
+
     };
 }
 #endif //KIVI_CONCRETE_CODES_HH
