@@ -35,3 +35,4 @@ add_library(kivi_ir
 target_include_directories(kivi_ir PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 target_link_libraries(kivi_ir PRIVATE kivi_parser)
 target_link_libraries(kivi_ir PRIVATE loguru)
+target_link_libraries(kivi_ir PRIVATE transform_iterator)

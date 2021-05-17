@@ -3,6 +3,7 @@
 #include <variant>
 #include <memory>
 #include <iostream>
+#include <transform_iterator/transform_iterator.hh>
 
 namespace sa = syntax_analyzer;
 
@@ -11,8 +12,10 @@ namespace intermediate_representation {
     intermediate_representation::generation_unit::define_tac(const std::vector<tac::fake_register_type> &operands) {
         return std::make_unique<tac>(tac{operands});
     }
+
     std::unique_ptr<tac>
-    intermediate_representation::generation_unit::define_tac(const std::string ident_name, const std::vector<tac::fake_register_type> &operands) {
+    intermediate_representation::generation_unit::define_tac(const std::string ident_name,
+                                                             const std::vector<tac::fake_register_type> &operands) {
         return std::make_unique<tac>(tac{operands});
     }
 
@@ -149,55 +152,75 @@ namespace intermediate_representation {
             }
             case syntax_analyzer::expression::type::While:
             case syntax_analyzer::expression::type::If: {
-                {
-                    result = ctx.increase_counter();
-                    /// This is an If() statement. Therefore three mandatory statements are created:
-                    // TODO: unique?
-                    std::shared_ptr<tac> b_then = tac_init("", {result, 1l});        // Then-branch
-                    std::shared_ptr<tac> b_else = tac_init("", {result, 0l});        // Else-branch
-                    std::shared_ptr<tac> end = tac_nop();
-                    b_then->next() = b_else->next() = end; // A common target for both.
+                result = ctx.increase_counter();
+                /// This is an If() statement. Therefore three mandatory statements are created:
+                // TODO: unique?
+                std::shared_ptr<tac> b_then = tac_init("", {result, 1l});        // Then-branch
+                std::shared_ptr<tac> b_else = tac_init("", {result, 0l});        // Else-branch
+                std::shared_ptr<tac> end = tac_nop();
+                b_then->next() = b_else->next() = end; // A common target for both.
 
-                    /// For loops reference to the first expression is needed.
-                    /// @note A reference to the pointer is needed instead of copy since it'll change onwards.
-                    std::shared_ptr<tac> &begin = *ctx.target();
-                    for (const auto &i : code.operands()) {
-                        /// Get IR.
-                        tac::fake_register_type i_ir = generate_ir(i, ctx);
-                        // Don't create a branch after contingent statements in a loop.
-                        if (code.get_type() == sa::expression::type::While && i != code.operands().front()) {
-                            continue;
-                        }
-                        // Immediately after the expression, create a branch on its result.
-                        std::shared_ptr<tac> condition = *ctx.target() = tac_ifnz({i_ir, 0});
-
-                        *ctx.target() = condition->next();
-                        condition->condition() = b_else;
+                /// For loops reference to the first expression is needed.
+                /// @note A reference to the pointer is needed instead of copy since it'll change onwards.
+                std::shared_ptr<tac> &begin = *ctx.target();
+                for (const auto &i : code.operands()) {
+                    /// Get IR.
+                    tac::fake_register_type i_ir = generate_ir(i, ctx);
+                    // Don't create a branch after contingent statements in a loop.
+                    if (code.get_type() == sa::expression::type::While && i != code.operands().front()) {
+                        continue;
                     }
-                    // The end of the statement chain is linked into b_then.
-                    // For loops, the chain is linked back into the start of the loop instead.
-                    *ctx.target() = code.get_type() == sa::expression::type::While ? begin : b_then;
-                    *ctx.target() = end->next();  // Code continues after the end node.
-                    break;
+                    // Immediately after the expression, create a branch on its result.
+                    std::shared_ptr<tac> condition = *ctx.target() = tac_ifnz({i_ir, 0});
+
+                    *ctx.target() = condition->next();
+                    condition->condition() = b_else;
                 }
-                case syntax_analyzer::expression::type::Copy: {
-                    break;
-                }
-                case syntax_analyzer::expression::type::Multiplication: {
-                    break;
-                }
-                case syntax_analyzer::expression::type::Division: {
-                    break;
-                }
-                case syntax_analyzer::expression::type::ModularDivision: {
-                    break;
-                }
-                case syntax_analyzer::expression::type::FunctionCall: {
-                    break;
-                }
+                // The end of the statement chain is linked into b_then.
+                // For loops, the chain is linked back into the start of the loop instead.
+                *ctx.target() = code.get_type() == sa::expression::type::While ? begin : b_then;
+                *ctx.target() = end->next();  // Code continues after the end node.
+                break;
             }
+            case syntax_analyzer::expression::type::Copy: {
+                const auto &src = code.operands().front();
+                const auto &dest = code.operands().back();
+                auto temp = generate_ir(src, ctx);
+                result = generate_ir(dest, ctx);
+                put(tac_copy({result, temp}), ctx);
+                break;
+            }
+            case syntax_analyzer::expression::type::Multiplication: {
+                break;
+            }
+            case syntax_analyzer::expression::type::Division: {
+                break;
+            }
+            case syntax_analyzer::expression::type::ModularDivision: {
+                break;
+            }
+            case syntax_analyzer::expression::type::FunctionCall: {
+                result = ctx.increase_counter();
+
+                std::vector<tac::fake_register_type> operands = {result,
+                                                                 *make_transform_iterator(code.operands().begin(),
+                                                                                          code.operands().end(),
+                                                                                          [&](const sa::expression &p) {
+                                                                                              return generate_ir(p,
+                                                                                                                 ctx);
+                                                                                          }),
+                                                                 *transform_iterator<tac::fake_register_type>{}};
+
+                put(tac_fcall(operands), ctx);
+                break;
+            }
+            /// Strings are not supported yet.
+            case syntax_analyzer::expression::type::String:
+                break;
         }
+        return result;
     }
+
 
     std::vector<std::shared_ptr<tac>> &
     generation_unit::all_tacs() {
