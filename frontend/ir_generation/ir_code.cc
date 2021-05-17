@@ -1,10 +1,12 @@
+#include <utility>
+
 #include "ir_code.hh"
 
 namespace intermediate_representation {
     tac::tac(const tac_type tac_type) : m_type(tac_type) {}
 
-    tac::tac(const tac_type tac_type, const std::vector<fake_register_type> &operands) : m_type(tac_type),
-                                                                                         m_operands(operands) {}
+    tac::tac(const tac_type tac_type, std::vector<fake_register_type> operands) : m_type(tac_type),
+                                                                                         m_operands(std::move(operands)) {}
 
     tac::tac(const std::string_view ident_str, const int val, const std::vector<fake_register_type> &operands) : tac(tac_type::Init,
                                                                                                                      operands) {
@@ -17,6 +19,9 @@ namespace intermediate_representation {
             m_condition(std::move(b)), m_operands(std::move(operands)), m_type(type) {}
 
     tac::tac(std::vector<fake_register_type> operands) : m_operands(std::move(operands)) {}
+
+    tac::tac(const std::string ident_name, std::vector<fake_register_type> operands) : m_identifier(), m_operands(std::move(operands)) {}
+
 
     tac::tac_type tac::type() const {
         return m_type;

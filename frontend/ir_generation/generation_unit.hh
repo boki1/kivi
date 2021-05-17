@@ -32,11 +32,11 @@ namespace intermediate_representation {
             std::map<std::size_t, tac::fake_register_type> m_map;
 
         public:
-            [[nodiscard]] tac::fake_register_type counter() const;
+            [[nodiscard]] tac::fake_register_type counter();
 
-            [[nodiscard]] const std::shared_ptr<std::shared_ptr<tac>> &target() const;
+            [[nodiscard]] std::shared_ptr<std::shared_ptr<tac>> & target();
 
-            [[nodiscard]] const std::map<std::size_t, tac::fake_register_type> &map() const;
+            [[nodiscard]] std::map<std::size_t, tac::fake_register_type> &map();
 
             [[nodiscard]] tac::fake_register_type increase_counter();
 
@@ -48,6 +48,12 @@ namespace intermediate_representation {
         static std::unique_ptr<tac>
         define_tac(const std::vector<tac::fake_register_type> &operands);
 
+        static std::unique_ptr<tac>
+        define_tac(std::string ident_name, const std::vector<tac::fake_register_type> &operands);
+
+        /*
+         * The definitions of the three address code instructions and their operands
+         */
         std::shared_ptr<tac> &
         define_tac(const std::unique_ptr<tac> &tac_code);
 
@@ -88,13 +94,13 @@ namespace intermediate_representation {
         generate_function(const syntax_analyzer::function &fun);
 
     public:
-        [[nodiscard]] const std::vector<std::shared_ptr<tac>> &all_tacs() const;
+        [[nodiscard]] std::vector<std::shared_ptr<tac>> & all_tacs();
 
-        [[nodiscard]] const std::map<std::string, std::size_t> &function_parameters() const;
+        [[nodiscard]] std::map<std::string, std::size_t> & function_parameters();
 
-        [[nodiscard]] const std::map<std::string, std::shared_ptr<tac>> &entry_points() const;
+        [[nodiscard]] std::map<std::string, std::shared_ptr<tac>> & entry_points();
 
-        [[nodiscard]] const std::string &string_constants() const;
+        [[nodiscard]] std::string & string_constants();
     };
 }
 #endif //KIVI_CONCRETE_CODES_HH

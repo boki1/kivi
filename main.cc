@@ -28,7 +28,7 @@ main(int argc, char* argv[])
 
 	std::cout << printer::print(ctx.functions());
 
-    intermediate_representation::tac tac{};
+    intermediate_representation::generation_unit tac{};
     printer::print_ir(tac, std::cout);
 
 	return 0;
