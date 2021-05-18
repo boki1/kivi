@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator" kind="class" language="C++" prot="private">
+    <compoundname>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</compoundname>
+    <basecompoundref refid="d9/d8c/structCatch_1_1IExceptionTranslator" prot="public" virt="non-virtual">Catch::IExceptionTranslator</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator_1a488013ff0869785c9d041443fbf9a757" prot="protected" static="no" mutable="no">
+        <type>std::string(*</type>
+        <definition>std::string(* Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;::m_translateFunction) (T &amp;)</definition>
+        <argsstring>)(T &amp;)</argsstring>
+        <name>m_translateFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3045" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3045" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator_1a2de4e9bcaad47996159763e69f614d7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;::ExceptionTranslator</definition>
+        <argsstring>(std::string(*translateFunction)(T &amp;))</argsstring>
+        <name>ExceptionTranslator</name>
+        <param>
+          <type>std::string(*)(T &amp;)</type>
+          <declname>translateFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3024" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3024" bodyend="3026"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator_1a29e85940ee9ce719f26e43550cb4ed48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;::translate</definition>
+        <argsstring>(ExceptionTranslators::const_iterator it, ExceptionTranslators::const_iterator itEnd) const override</argsstring>
+        <name>translate</name>
+        <reimplements refid="d9/d8c/structCatch_1_1IExceptionTranslator_1a2a554b96ed5ed411e7c796b6b42837a5">translate</reimplements>
+        <param>
+          <type>ExceptionTranslators::const_iterator</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>ExceptionTranslators::const_iterator</type>
+          <declname>itEnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3028" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3028" bodyend="3042"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Catch::IExceptionTranslator</label>
+        <link refid="d9/d8c/structCatch_1_1IExceptionTranslator"/>
+      </node>
+      <node id="1">
+        <label>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</label>
+        <link refid="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Catch::IExceptionTranslator</label>
+        <link refid="d9/d8c/structCatch_1_1IExceptionTranslator"/>
+      </node>
+      <node id="1">
+        <label>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator&lt; T &gt;</label>
+        <link refid="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3021" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3021" bodyend="3046"/>
+    <listofallmembers>
+      <member refid="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator_1a2de4e9bcaad47996159763e69f614d7a" prot="public" virt="non-virtual"><scope>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</scope><name>ExceptionTranslator</name></member>
+      <member refid="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator_1a488013ff0869785c9d041443fbf9a757" prot="protected" virt="non-virtual"><scope>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</scope><name>m_translateFunction</name></member>
+      <member refid="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator_1a29e85940ee9ce719f26e43550cb4ed48" prot="public" virt="virtual"><scope>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</scope><name>translate</name></member>
+      <member refid="d9/d8c/structCatch_1_1IExceptionTranslator_1afa00bb6258c07591df472aadae05783f" prot="public" virt="virtual"><scope>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</scope><name>~IExceptionTranslator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

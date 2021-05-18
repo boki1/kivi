@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d1c/syntax_8hh" kind="file" language="C++">
+    <compoundname>syntax.hh</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">variant</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">optional</includes>
+    <includedby refid="dc/dee/parser_8tab_8hh" local="yes">/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh</includedby>
+    <includedby refid="da/dd4/parsing__context_8cc" local="yes">/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc</includedby>
+    <includedby refid="d9/dd1/parsing__context_8hh" local="yes">/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh</includedby>
+    <includedby refid="d4/d91/syntactical__structures_8hh" local="yes">/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh</includedby>
+    <includedby refid="dd/d41/syntax_8cc" local="yes">/home/boki/.tmp/kivi/frontend/parser/syntax.cc</includedby>
+    <includedby refid="da/d7a/example_8test_8cc" local="no">/home/boki/.tmp/kivi/test/frontend/example.test.cc</includedby>
+    <includedby refid="db/d45/expression_8test_8cc" local="no">/home/boki/.tmp/kivi/test/frontend/expression.test.cc</includedby>
+    <includedby refid="d9/d96/ast__printer_8hh" local="no">/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>variant</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/frontend/parser/syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>optional</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>utility</label>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="18">
+        <label>/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc</label>
+        <link refid="dc/df4/ast__printer_8cc"/>
+      </node>
+      <node id="12">
+        <label>/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh</label>
+        <link refid="d9/d96/ast__printer_8hh"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/boki/.tmp/kivi/frontend/parser/expressions.cc</label>
+        <link refid="d4/d99/expressions_8cc"/>
+      </node>
+      <node id="9">
+        <label>/home/boki/.tmp/kivi/test/frontend/parser.test.cc</label>
+        <link refid="db/dce/parser_8test_8cc"/>
+      </node>
+      <node id="7">
+        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/boki/.tmp/kivi/test/frontend/example.test.cc</label>
+        <link refid="da/d7a/example_8test_8cc"/>
+      </node>
+      <node id="4">
+        <label>/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc</label>
+        <link refid="db/d3d/lexer_8tab_8cc"/>
+      </node>
+      <node id="6">
+        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc</label>
+        <link refid="da/dd4/parsing__context_8cc"/>
+      </node>
+      <node id="15">
+        <label>/home/boki/.tmp/kivi/frontend/parser/syntax.cc</label>
+        <link refid="dd/d41/syntax_8cc"/>
+      </node>
+      <node id="16">
+        <label>/home/boki/.tmp/kivi/test/frontend/expression.test.cc</label>
+        <link refid="db/d45/expression_8test_8cc"/>
+      </node>
+      <node id="5">
+        <label>/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc</label>
+        <link refid="d4/d01/parser_8tab_8cc"/>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/frontend/parser/syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh</label>
+        <link refid="dc/dee/parser_8tab_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/boki/.tmp/kivi/frontend/parser/statements.cc</label>
+        <link refid="d5/d1a/statements_8cc"/>
+      </node>
+      <node id="3">
+        <label>/home/boki/.tmp/kivi/frontend/parser/error.cc</label>
+        <link refid="df/dea/error_8cc"/>
+      </node>
+      <node id="8">
+        <label>/home/boki/.tmp/kivi/main.cc</label>
+        <link refid="d9/d0f/main_8cc"/>
+      </node>
+      <node id="10">
+        <label>/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc</label>
+        <link refid="d2/dfe/parsing__context_8test_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/d98/classsyntax__analyzer_1_1syntactic__structure" prot="public">syntax_analyzer::syntactic_structure</innerclass>
+    <innerclass refid="d1/d9f/classsyntax__analyzer_1_1identifier" prot="public">syntax_analyzer::identifier</innerclass>
+    <innerclass refid="db/df3/classsyntax__analyzer_1_1expression" prot="public">syntax_analyzer::expression</innerclass>
+    <innerclass refid="d7/d16/classsyntax__analyzer_1_1function" prot="public">syntax_analyzer::function</innerclass>
+    <innernamespace refid="d7/df6/namespacesyntax__analyzer">syntax_analyzer</innernamespace>
+    <briefdescription>
+<para>Defines all legal syntactic structures which may be encountered during the process of parsing a source file. These are <computeroutput>identifier</computeroutput>, <computeroutput>function</computeroutput> and <computeroutput>expression</computeroutput>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_KIVI_SYNTAX_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_KIVI_SYNTAX_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;variant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::move;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="df/d98/classsyntax__analyzer_1_1syntactic__structure" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="df/d98/classsyntax__analyzer_1_1syntactic__structure" kindref="compound">syntactic_structure</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30" refid="df/d98/classsyntax__analyzer_1_1syntactic__structure_1a0363c2b7180f7fce96c6e065d3b2bed6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="df/d98/classsyntax__analyzer_1_1syntactic__structure_1a0363c2b7180f7fce96c6e065d3b2bed6" kindref="member">~syntactic_structure</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d1/d9f/classsyntax__analyzer_1_1identifier" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d98/classsyntax__analyzer_1_1syntactic__structure" kindref="compound">syntactic_structure</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177" kindref="member">type</ref></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177aec0fc0100c4fc1ce4eea230c3dc10360" kindref="member">Undefined</ref>,<sp/></highlight><highlight class="comment">//&lt;<sp/>The<sp/>identifier<sp/>is<sp/>used<sp/>in<sp/>unexpected<sp/>and<sp/>illegal<sp/>way.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177a86408593c34af77fdd90df932f8b5261" kindref="member">Function</ref>,<sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>The<sp/>identifier<sp/>is<sp/>a<sp/>function<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177a83f499a540b1323009c200d6f8cc9396" kindref="member">Parameter</ref>,<sp/></highlight><highlight class="comment">//&lt;<sp/>The<sp/>identifier<sp/>is<sp/>a<sp/>parameter<sp/>in<sp/>a<sp/>function<sp/>call</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177a509820290d57f333403f490dde7316f4" kindref="member">Local</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>The<sp/>identifier<sp/>is<sp/>a<sp/>local<sp/>variable<sp/>in<sp/>a<sp/>function<sp/>body</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1ab9c5b13020e083fabc25a1a257a1f626" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177" kindref="member">identifier::type</ref><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1ab9c5b13020e083fabc25a1a257a1f626" kindref="member">m_type</ref><sp/>=<sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177aec0fc0100c4fc1ce4eea230c3dc10360" kindref="member">identifier::type::Undefined</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a043bebc0275159a71eff4ccb88d3390e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a043bebc0275159a71eff4ccb88d3390e" kindref="member">m_name</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a5243781342ab151f4df44f20459b5bb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a5243781342ab151f4df44f20459b5bb6" kindref="member">m_index_within</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a522e7902a4f9ef2d1392ec1dddba2fde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a522e7902a4f9ef2d1392ec1dddba2fde" kindref="member">identifier</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a522e7902a4f9ef2d1392ec1dddba2fde" kindref="member">identifier</ref>(<ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177" kindref="member">identifier::type</ref><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177" kindref="member">type</ref>,<sp/>std::string&amp;&amp;<sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1ae1236ed1f3460df700ecfdcba95f2a25" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a98286bce4809f7d460bb6075c5e20668" kindref="member">index</ref><sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a58f7df029937e3a1a760d2611b060b0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a58f7df029937e3a1a760d2611b060b0a" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="77"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1ae1236ed1f3460df700ecfdcba95f2a25" kindref="member">name</ref>()<sp/>==<sp/>other.<ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1ae1236ed1f3460df700ecfdcba95f2a25" kindref="member">name</ref>()<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1adf4c9b09133fdcb3064e992ff1e052d3" kindref="member">get_type</ref>()<sp/>==<sp/>other.<ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1adf4c9b09133fdcb3064e992ff1e052d3" kindref="member">get_type</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177" kindref="member">identifier::type</ref></highlight></codeline>
+<codeline lineno="84" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1adf4c9b09133fdcb3064e992ff1e052d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1adf4c9b09133fdcb3064e992ff1e052d3" kindref="member">get_type</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1ab9c5b13020e083fabc25a1a257a1f626" kindref="member">m_type</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a98286bce4809f7d460bb6075c5e20668" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a98286bce4809f7d460bb6075c5e20668" kindref="member">index</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a5243781342ab151f4df44f20459b5bb6" kindref="member">m_index_within</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;</highlight></codeline>
+<codeline lineno="96" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1ae1236ed1f3460df700ecfdcba95f2a25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1ae1236ed1f3460df700ecfdcba95f2a25" kindref="member">name</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a043bebc0275159a71eff4ccb88d3390e" kindref="member">m_name</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string</highlight></codeline>
+<codeline lineno="102" refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a3d3f133a504c3ba9f639a400d6d820bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a3d3f133a504c3ba9f639a400d6d820bc" kindref="member">to_string</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1ae1236ed1f3460df700ecfdcba95f2a25" kindref="member">name</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="db/df3/classsyntax__analyzer_1_1expression" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d98/classsyntax__analyzer_1_1syntactic__structure" kindref="compound">syntactic_structure</ref></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115" refid="db/df3/classsyntax__analyzer_1_1expression_1aa1ba2036609a8236fe6d3433681d7ac3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::variant&lt;std::monostate,<sp/>identifier,<sp/>std::string,<sp/>int&gt;<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1aa1ba2036609a8236fe6d3433681d7ac3" kindref="member">terminal_type</ref>;<sp/></highlight><highlight class="comment">//&lt;<sp/>Used<sp/>when<sp/>representing<sp/>a<sp/>terminal<sp/>expression</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">type</ref></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024ab7e7f2b46723f5b08d763041108f8fed" kindref="member">Nop</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>No<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a27118326006d3829667a400ad23d5d98" kindref="member">String</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>String<sp/>literal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024ab2ee912b91d69b435159c7c3f6df7f5f" kindref="member">Number</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Number<sp/>constant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a29ee5d1ebcc033234938a5234f1f2075" kindref="member">Identifier</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Identifier<sp/>expression</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a7c5531bbefed0945814f874baf9e0e0f" kindref="member">Addition</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Addition<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024ac3feba4aa480f4c127c08c370d23415f" kindref="member">Negation</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Negation<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a27d1a1f7b7c2180e5b20ce9e3d00e2dd" kindref="member">Multiplication</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Multiplication<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3025cdaab2deb0bb2cd642449e570833" kindref="member">Division</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Division<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a890ebf2ce6beb154deb673b3af2d03d4" kindref="member">Equality</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Equality<sp/>comparison<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a7d9c9c3399200231f7bbfcf6d50f0ea1" kindref="member">ModularDivision</ref>,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Modular<sp/>division<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a5fb63579fc981698f97d55bfecb213ea" kindref="member">Copy</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Copy<sp/>expression</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a786887572f6ef1c20f2d8177cb2f1639" kindref="member">If</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>If<sp/>statement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3cddbb8f43a4e074e2c2ce3e8622f43e" kindref="member">While</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>While<sp/>statement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024affb017548928ab2305e7c55cb67c04ca" kindref="member">FunctionCall</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Function<sp/>call<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3ff39d3acb327553070a64ef0cb321d5" kindref="member">Sequence</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Sequence<sp/>of<sp/>expressions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a988fd738de9c6d177440c5dcf69e73ce" kindref="member">Return</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Return<sp/>statement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="149"></codeline>
+<codeline lineno="151" refid="db/df3/classsyntax__analyzer_1_1expression_1a5c1233c52b7bddf383264cbd0cc7afc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;expression&gt;<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a5c1233c52b7bddf383264cbd0cc7afc7" kindref="member">m_operands</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="db/df3/classsyntax__analyzer_1_1expression_1aa96a117c462177b6c18977ea535ad8c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1aa1ba2036609a8236fe6d3433681d7ac3" kindref="member">expression::terminal_type</ref><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1aa96a117c462177b6c18977ea535ad8c8" kindref="member">m_terminal_value</ref>{};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="db/df3/classsyntax__analyzer_1_1expression_1ac85273b0002c630c5eb87feaf98c4752" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">expression::type</ref><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1ac85273b0002c630c5eb87feaf98c4752" kindref="member">m_type</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="161" refid="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" kindref="member">expression</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="db/df3/classsyntax__analyzer_1_1expression_1ab12acf17e3ab2997d901567dd8ccc6c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1ab12acf17e3ab2997d901567dd8ccc6c2" kindref="member">expression</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="db/df3/classsyntax__analyzer_1_1expression_1ad7eeb8651b8acaa5525aba804093a7be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1ad7eeb8651b8acaa5525aba804093a7be" kindref="member">expression</ref>(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" kindref="member">expression</ref>(<ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref>&amp;&amp;<sp/>ident);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" kindref="member">expression</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref>&amp;<sp/>ident);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" kindref="member">expression</ref>(std::string&amp;&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" kindref="member">expression</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" kindref="member">expression</ref>(<ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">expression::type</ref><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">type</ref>,<sp/>std::vector&lt;expression&gt;);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="db/df3/classsyntax__analyzer_1_1expression_1a46508bdb2ed00d39a13100d4406830dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a46508bdb2ed00d39a13100d4406830dc" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a9cae3ca524d55edf9b2902efa28bdb67" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1af18b9e6a60298b4d194206441d795ea6" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1adee71448d9680556400d1f02388a44db" kindref="member">assign</ref>(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;&amp;<sp/>rhs)&amp;&amp;;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a551dd89bea2813d46a10ffc62e0d89c9" kindref="member">append</ref>(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;&amp;<sp/>appendant);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a3c3c17370cc623030830d27b59e3a7b4" kindref="member">merge_with</ref>(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;expression&gt;&amp;</highlight></codeline>
+<codeline lineno="217" refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a5c1233c52b7bddf383264cbd0cc7afc7" kindref="member">m_operands</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;</highlight></codeline>
+<codeline lineno="223" refid="db/df3/classsyntax__analyzer_1_1expression_1a617c7971cab175c2a5fbfe53da700287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a617c7971cab175c2a5fbfe53da700287" kindref="member">add_operand</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;<sp/>o)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a5c1233c52b7bddf383264cbd0cc7afc7" kindref="member">m_operands</ref>.push_back(o);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::vector&lt;expression&gt;</highlight></codeline>
+<codeline lineno="230" refid="db/df3/classsyntax__analyzer_1_1expression_1a35b7a4d94014bf2d241ded6e52137494" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a35b7a4d94014bf2d241ded6e52137494" kindref="member">operands_copy</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a5c1233c52b7bddf383264cbd0cc7afc7" kindref="member">m_operands</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1aa1ba2036609a8236fe6d3433681d7ac3" kindref="member">expression::terminal_type</ref>&amp;</highlight></codeline>
+<codeline lineno="236" refid="db/df3/classsyntax__analyzer_1_1expression_1a91fb0b9285eb7478042d33f2d578ea29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a91fb0b9285eb7478042d33f2d578ea29" kindref="member">terminal</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1aa96a117c462177b6c18977ea535ad8c8" kindref="member">m_terminal_value</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">expression::type</ref></highlight></codeline>
+<codeline lineno="242" refid="db/df3/classsyntax__analyzer_1_1expression_1a1018dfb0d0d49eca484b9b10bf0b4db7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1a1018dfb0d0d49eca484b9b10bf0b4db7" kindref="member">get_type</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1ac85273b0002c630c5eb87feaf98c4752" kindref="member">m_type</ref>;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="d7/d16/classsyntax__analyzer_1_1function" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="df/d98/classsyntax__analyzer_1_1syntactic__structure" kindref="compound">syntactic_structure</ref></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="256" refid="d7/d16/classsyntax__analyzer_1_1function_1a6bcbeea0fa4073ca57143c6d3a0f4694" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a6bcbeea0fa4073ca57143c6d3a0f4694" kindref="member">m_name</ref>;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="d7/d16/classsyntax__analyzer_1_1function_1aa0ad845a4004d701405dc49287301295" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1aa0ad845a4004d701405dc49287301295" kindref="member">m_body</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="d7/d16/classsyntax__analyzer_1_1function_1a4e77733d8d8b12a5d96d9b5401797ac4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a4e77733d8d8b12a5d96d9b5401797ac4" kindref="member">m_locals</ref>{};</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="d7/d16/classsyntax__analyzer_1_1function_1ae3da6c960dc33b8bc3c6d1a77fb8d6c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1ae3da6c960dc33b8bc3c6d1a77fb8d6c4" kindref="member">m_parameters</ref>{};</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="269" refid="d7/d16/classsyntax__analyzer_1_1function_1a76ed86643aad3546e415ab49fb755364" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">(std::string&amp;&amp;<sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a7a9796bd1e10e31c8c4fdf008be99036" kindref="member">name</ref>,<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;&amp;<sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a7d4c53a7aa46c4b777f94b4d01188139" kindref="member">body</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a17a1450fd90bb8905cb412cec09e6bf5" kindref="member">locals</ref><sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a0ac7ccaeeaab497da6f81990a7387cef" kindref="member">parameters</ref><sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a38bbdf09fb961a1fe2107409a77cd4b6" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="276" refid="d7/d16/classsyntax__analyzer_1_1function_1a19ec89d996e2e45ac4d4fe019f4d8d69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a19ec89d996e2e45ac4d4fe019f4d8d69" kindref="member">add_local</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a4e77733d8d8b12a5d96d9b5401797ac4" kindref="member">m_locals</ref>++;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="d7/d16/classsyntax__analyzer_1_1function_1afb2c91e99f85abdad45b3eed6df0df5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1afb2c91e99f85abdad45b3eed6df0df5e" kindref="member">add_param</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1ae3da6c960dc33b8bc3c6d1a77fb8d6c4" kindref="member">m_parameters</ref>++;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="d7/d16/classsyntax__analyzer_1_1function_1ab2f1bf39aeb3b6058be56a296964c8a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1ab2f1bf39aeb3b6058be56a296964c8a2" kindref="member">set_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a7a9796bd1e10e31c8c4fdf008be99036" kindref="member">name</ref>)<sp/>noexcept</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a6bcbeea0fa4073ca57143c6d3a0f4694" kindref="member">m_name</ref><sp/>=<sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a7a9796bd1e10e31c8c4fdf008be99036" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="d7/d16/classsyntax__analyzer_1_1function_1a4e230c086d2a4a39b62738384657a772" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a4e230c086d2a4a39b62738384657a772" kindref="member">set_body</ref>(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;&amp;<sp/>expr)<sp/>noexcept</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1aa0ad845a4004d701405dc49287301295" kindref="member">m_body</ref><sp/>=<sp/>expr;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;</highlight></codeline>
+<codeline lineno="298" refid="d7/d16/classsyntax__analyzer_1_1function_1a7a9796bd1e10e31c8c4fdf008be99036" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a7a9796bd1e10e31c8c4fdf008be99036" kindref="member">name</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a6bcbeea0fa4073ca57143c6d3a0f4694" kindref="member">m_name</ref>;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="d7/d16/classsyntax__analyzer_1_1function_1a17a1450fd90bb8905cb412cec09e6bf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a17a1450fd90bb8905cb412cec09e6bf5" kindref="member">locals</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a4e77733d8d8b12a5d96d9b5401797ac4" kindref="member">m_locals</ref>;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="d7/d16/classsyntax__analyzer_1_1function_1a0ac7ccaeeaab497da6f81990a7387cef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a0ac7ccaeeaab497da6f81990a7387cef" kindref="member">parameters</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1ae3da6c960dc33b8bc3c6d1a77fb8d6c4" kindref="member">m_parameters</ref>;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>&amp;</highlight></codeline>
+<codeline lineno="316" refid="d7/d16/classsyntax__analyzer_1_1function_1a7d4c53a7aa46c4b777f94b4d01188139" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a7d4c53a7aa46c4b777f94b4d01188139" kindref="member">body</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1aa0ad845a4004d701405dc49287301295" kindref="member">m_body</ref>;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>std::string</highlight></codeline>
+<codeline lineno="322" refid="d7/d16/classsyntax__analyzer_1_1function_1aecaf19243d4fb7651fb79f7af4a0f5e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1aecaf19243d4fb7651fb79f7af4a0f5e4" kindref="member">to_string</ref>()<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function_1a6bcbeea0fa4073ca57143c6d3a0f4694" kindref="member">m_name</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;()&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>KIVI_SRC_KIVI_SYNTAX_HH_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh"/>
+  </compounddef>
+</doxygen>

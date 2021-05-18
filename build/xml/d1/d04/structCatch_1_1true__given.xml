@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/d04/structCatch_1_1true__given" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::true_given</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::true_type</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>std::true_type</label>
+      </node>
+      <node id="1">
+        <label>Catch::true_given&lt; typename &gt;</label>
+        <link refid="d1/d04/structCatch_1_1true__given"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>std::true_type</label>
+      </node>
+      <node id="1">
+        <label>Catch::true_given&lt; typename &gt;</label>
+        <link refid="d1/d04/structCatch_1_1true__given"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="925" column="15" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="925" bodyend="925"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

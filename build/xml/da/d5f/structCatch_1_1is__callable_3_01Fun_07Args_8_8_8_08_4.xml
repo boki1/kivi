@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d5f/structCatch_1_1is__callable_3_01Fun_07Args_8_8_8_08_4" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::is_callable&lt; Fun(Args...)&gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">decltypeis_callable_tester::test&lt; Fun, Args... &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Fun</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::is_callable&lt; Fun(Args...)&gt;</label>
+        <link refid="da/d5f/structCatch_1_1is__callable_3_01Fun_07Args_8_8_8_08_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>decltypeis_callable_tester::test&lt; Fun, Args... &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Catch::is_callable&lt; Fun(Args...)&gt;</label>
+        <link refid="da/d5f/structCatch_1_1is__callable_3_01Fun_07Args_8_8_8_08_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>decltypeis_callable_tester::test&lt; Fun, Args... &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="937" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="937" bodyend="937"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

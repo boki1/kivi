@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d0a/classCatch_1_1ScopedMessage" kind="class" language="C++" prot="public">
+    <compoundname>Catch::ScopedMessage</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d0a/classCatch_1_1ScopedMessage_1ae6e1476f389cc6e1586f033b3747b27b" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d37/structCatch_1_1MessageInfo" kindref="compound">MessageInfo</ref></type>
+        <definition>MessageInfo Catch::ScopedMessage::m_info</definition>
+        <argsstring></argsstring>
+        <name>m_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2646" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d0a/classCatch_1_1ScopedMessage_1a4fe5607c1f7407240a0da8405b1c12e7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Catch::ScopedMessage::m_moved</definition>
+        <argsstring></argsstring>
+        <name>m_moved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2647" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2647" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d0a/classCatch_1_1ScopedMessage_1a5cc59f0f2ebe840e6607f83004d49a17" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::ScopedMessage::ScopedMessage</definition>
+        <argsstring>(MessageBuilder const &amp;builder)</argsstring>
+        <name>ScopedMessage</name>
+        <param>
+          <type><ref refid="d2/d7e/structCatch_1_1MessageBuilder" kindref="compound">MessageBuilder</ref> const &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2641" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d0a/classCatch_1_1ScopedMessage_1a5fe2e79afdfd737818c15edfc49f378e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::ScopedMessage::ScopedMessage</definition>
+        <argsstring>(ScopedMessage &amp;duplicate)=delete</argsstring>
+        <name>ScopedMessage</name>
+        <param>
+          <type><ref refid="d0/d0a/classCatch_1_1ScopedMessage" kindref="compound">ScopedMessage</ref> &amp;</type>
+          <declname>duplicate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2642" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d0a/classCatch_1_1ScopedMessage_1aac833a6a2245a26e6bd5c9252ca1caa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::ScopedMessage::ScopedMessage</definition>
+        <argsstring>(ScopedMessage &amp;&amp;old)</argsstring>
+        <name>ScopedMessage</name>
+        <param>
+          <type><ref refid="d0/d0a/classCatch_1_1ScopedMessage" kindref="compound">ScopedMessage</ref> &amp;&amp;</type>
+          <declname>old</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2643" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d0a/classCatch_1_1ScopedMessage_1a43190843f9eeb84a0b42b0bc95fdf93a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::ScopedMessage::~ScopedMessage</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2644" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Catch::SourceLineInfo</label>
+        <link refid="dc/d2b/structCatch_1_1SourceLineInfo"/>
+      </node>
+      <node id="1">
+        <label>Catch::ScopedMessage</label>
+        <link refid="d0/d0a/classCatch_1_1ScopedMessage"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_info</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Catch::StringRef</label>
+        <link refid="d5/dd8/classCatch_1_1StringRef"/>
+      </node>
+      <node id="2">
+        <label>Catch::MessageInfo</label>
+        <link refid="d7/d37/structCatch_1_1MessageInfo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lineInfo</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>macroName</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2639" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2639" bodyend="2648"/>
+    <listofallmembers>
+      <member refid="d0/d0a/classCatch_1_1ScopedMessage_1ae6e1476f389cc6e1586f033b3747b27b" prot="public" virt="non-virtual"><scope>Catch::ScopedMessage</scope><name>m_info</name></member>
+      <member refid="d0/d0a/classCatch_1_1ScopedMessage_1a4fe5607c1f7407240a0da8405b1c12e7" prot="public" virt="non-virtual"><scope>Catch::ScopedMessage</scope><name>m_moved</name></member>
+      <member refid="d0/d0a/classCatch_1_1ScopedMessage_1a5cc59f0f2ebe840e6607f83004d49a17" prot="public" virt="non-virtual"><scope>Catch::ScopedMessage</scope><name>ScopedMessage</name></member>
+      <member refid="d0/d0a/classCatch_1_1ScopedMessage_1a5fe2e79afdfd737818c15edfc49f378e" prot="public" virt="non-virtual"><scope>Catch::ScopedMessage</scope><name>ScopedMessage</name></member>
+      <member refid="d0/d0a/classCatch_1_1ScopedMessage_1aac833a6a2245a26e6bd5c9252ca1caa0" prot="public" virt="non-virtual"><scope>Catch::ScopedMessage</scope><name>ScopedMessage</name></member>
+      <member refid="d0/d0a/classCatch_1_1ScopedMessage_1a43190843f9eeb84a0b42b0bc95fdf93a" prot="public" virt="non-virtual"><scope>Catch::ScopedMessage</scope><name>~ScopedMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

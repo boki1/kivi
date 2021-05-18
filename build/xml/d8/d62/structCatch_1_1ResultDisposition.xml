@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/d62/structCatch_1_1ResultDisposition" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::ResultDisposition</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Flags</name>
+        <enumvalue id="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8af3bd52347ed6f8796e8ce2f77bb39ea5" prot="public">
+          <name>Normal</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8aa18c94bd60c5614e17a84c2ced3bbfd5" prot="public">
+          <name>ContinueOnFailure</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8a9980604245f19884691f941dec03eeb8" prot="public">
+          <name>FalseTest</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8a1a88eb6004bddee4ccae4b421991bf54" prot="public">
+          <name>SuppressFail</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1375" column="28" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1375" bodyend="1381"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1375" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1375" bodyend="1381"/>
+    <listofallmembers>
+      <member refid="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8aa18c94bd60c5614e17a84c2ced3bbfd5" prot="public" virt="non-virtual"><scope>Catch::ResultDisposition</scope><name>ContinueOnFailure</name></member>
+      <member refid="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8a9980604245f19884691f941dec03eeb8" prot="public" virt="non-virtual"><scope>Catch::ResultDisposition</scope><name>FalseTest</name></member>
+      <member refid="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8" prot="public" virt="non-virtual"><scope>Catch::ResultDisposition</scope><name>Flags</name></member>
+      <member refid="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8af3bd52347ed6f8796e8ce2f77bb39ea5" prot="public" virt="non-virtual"><scope>Catch::ResultDisposition</scope><name>Normal</name></member>
+      <member refid="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8a1a88eb6004bddee4ccae4b421991bf54" prot="public" virt="non-virtual"><scope>Catch::ResultDisposition</scope><name>SuppressFail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

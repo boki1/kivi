@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind" kind="struct" language="C++" prot="public">
+    <compoundname>yy::kivi_parser::symbol_kind</compoundname>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser.tab.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>symbol_kind_type</name>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a7c736071a0015e83f951aced62ae787a" prot="public">
+          <name>YYNTOKENS</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+<para>Number of tokens. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a44b99e99c94dbc13d830d9a458131135" prot="public">
+          <name>S_YYEMPTY</name>
+          <initializer>= -2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aa3125af4b127c9e22b929aecb2b2d58a" prot="public">
+          <name>S_YYEOF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ab71ab77e40ac96dfbfcd22e114f9c5d4" prot="public">
+          <name>S_YYerror</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a0a3d4edd7a88fd1348516a18f2cc7b80" prot="public">
+          <name>S_YYUNDEF</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a71cca51613ab5e4a794366874228d308" prot="public">
+          <name>S_VAR</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a121516f04be406b45e3231230b7229b4" prot="public">
+          <name>S_IF</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aa923e5e1d2bcd6bb9b2c4235c56965c2" prot="public">
+          <name>S_WHILE</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a13901d31ad33d622eedced2297a8a124" prot="public">
+          <name>S_RETURN</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a518d8fefbb5734b1be7f018e3b5eb6c2" prot="public">
+          <name>S_IDENTIFIER</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a3bd66bd031323d40595813cd7a0782c6" prot="public">
+          <name>S_STRING_LITERAL</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a7c21503f4762bb1efe6b0a701a6dfd94" prot="public">
+          <name>S_NUMBER_LITERAL</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a9a63bc5273c2eada7f1f9a38a637bf67" prot="public">
+          <name>S_EQ</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a581135f9ad96b623c259395cde7dc075" prot="public">
+          <name>S_NE</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aee2a4715af5cb91e6332489204cf2b9a" prot="public">
+          <name>S_12_</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ae109d10fe975dc94cf5d13cd701610a9" prot="public">
+          <name>S_13_</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ad2b00df202370dc22340bc62e3d19576" prot="public">
+          <name>S_14_</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a7d7a00bd8434effee980b99260d8dfec" prot="public">
+          <name>S_15_</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a174efbfdd721291404fdcf41d82417ec" prot="public">
+          <name>S_16_</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a3b52cabac6607ea0962e807bad21d89a" prot="public">
+          <name>S_17_</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a47070368883660c26d4b9df5b98866ae" prot="public">
+          <name>S_18_</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aa5e1eb8169398218f1fdef473536fa23" prot="public">
+          <name>S_19_</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a717ec631b3f97baa51225ac1e85c5bbf" prot="public">
+          <name>S_20_</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ac10516d5d2cb081e9247ed0d9bb90ee9" prot="public">
+          <name>S_21_</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a579424bcf43d059921d589893ae2a769" prot="public">
+          <name>S_22_</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ab63b68bb57bf016a785fc6204c3d96cf" prot="public">
+          <name>S_23_</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a868cba4bb42e06883c627c7813724492" prot="public">
+          <name>S_24_</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a49ebcbbeb341bb945c68bfa0a6a39158" prot="public">
+          <name>S_YYACCEPT</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0af5407244fd35f1bf92c84e4ad7c0d9c6" prot="public">
+          <name>S_Program</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ab77c420515c3c39bb9c1ba1726063e0f" prot="public">
+          <name>S_27_1</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ad8d11584abf694724d4ca2a5172aa993" prot="public">
+          <name>S_Functions</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0afe4cf5721f6a2ad25e2f24eed3454bca" prot="public">
+          <name>S_Single_function</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a06f41c54b53d4774bc8cb4e2fb35dc47" prot="public">
+          <name>S_30_2</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a54c2d29cfdc2f07c86dc5ccb25c56515" prot="public">
+          <name>S_Parameter_list</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a86c6002c8588f10817cb660c5c49e272" prot="public">
+          <name>S_Single_param</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a17063b93c5aee5724c9bdd2b0fc6309a" prot="public">
+          <name>S_Statement</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a0d7a9a9601b8548a09081857cc7b5ecd" prot="public">
+          <name>S_Comma_sep_expressions</name>
+          <initializer>= 34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a48d3022ca8c3d0955869f3f39942193a" prot="public">
+          <name>S_Compound_statement</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0acd27229420517b42d55a0be2b4d62a70" prot="public">
+          <name>S_Comparison_operation</name>
+          <initializer>= 36</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a6f2fe8c82e1bc063f0b395fe8bec3c1d" prot="public">
+          <name>S_Arithmetic_operation</name>
+          <initializer>= 37</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aafa017ee82080a98e16bc12447b42a5d" prot="public">
+          <name>S_Function_call</name>
+          <initializer>= 38</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a08260e592d7dc0efccb2781efc86929e" prot="public">
+          <name>S_Expression</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a6573096dcc4b23047b00d0e38785f0e9" prot="public">
+          <name>S_Safe_identifier</name>
+          <initializer>= 40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0abc22e58a1a758bdbaae0f305e9448075" prot="public">
+          <name>S_Safe_colon</name>
+          <initializer>= 41</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a72979cb8a52043dcd202037a9240bf74" prot="public">
+          <name>S_Safe_semicolon</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a6d634a3c42f8bccf39ce3a4a362d63eb" prot="public">
+          <name>S_Safe_closing_brace</name>
+          <initializer>= 43</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a4626218558ea250f28f8ce1b46f7e63a" prot="public">
+          <name>S_Safe_closing_parenthesis</name>
+          <initializer>= 44</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0accd2ccb81c64fae2c1a31b47a17b7680" prot="public">
+          <name>S_Safe_statement</name>
+          <initializer>= 45</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0afd948fc7720d756692cf6ada9bfed2ab" prot="public">
+          <name>S_Safe_expression</name>
+          <initializer>= 46</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="502" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="503" bodyend="553"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Symbol kinds. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="500" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="501" bodyend="554"/>
+    <listofallmembers>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aee2a4715af5cb91e6332489204cf2b9a" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_12_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ae109d10fe975dc94cf5d13cd701610a9" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_13_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ad2b00df202370dc22340bc62e3d19576" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_14_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a7d7a00bd8434effee980b99260d8dfec" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_15_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a174efbfdd721291404fdcf41d82417ec" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_16_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a3b52cabac6607ea0962e807bad21d89a" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_17_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a47070368883660c26d4b9df5b98866ae" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_18_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aa5e1eb8169398218f1fdef473536fa23" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_19_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a717ec631b3f97baa51225ac1e85c5bbf" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_20_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ac10516d5d2cb081e9247ed0d9bb90ee9" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_21_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a579424bcf43d059921d589893ae2a769" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_22_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ab63b68bb57bf016a785fc6204c3d96cf" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_23_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a868cba4bb42e06883c627c7813724492" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_24_</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ab77c420515c3c39bb9c1ba1726063e0f" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_27_1</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a06f41c54b53d4774bc8cb4e2fb35dc47" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_30_2</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a6f2fe8c82e1bc063f0b395fe8bec3c1d" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Arithmetic_operation</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a0d7a9a9601b8548a09081857cc7b5ecd" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Comma_sep_expressions</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0acd27229420517b42d55a0be2b4d62a70" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Comparison_operation</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a48d3022ca8c3d0955869f3f39942193a" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Compound_statement</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a9a63bc5273c2eada7f1f9a38a637bf67" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_EQ</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a08260e592d7dc0efccb2781efc86929e" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Expression</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aafa017ee82080a98e16bc12447b42a5d" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Function_call</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ad8d11584abf694724d4ca2a5172aa993" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Functions</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a518d8fefbb5734b1be7f018e3b5eb6c2" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_IDENTIFIER</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a121516f04be406b45e3231230b7229b4" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_IF</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a581135f9ad96b623c259395cde7dc075" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_NE</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a7c21503f4762bb1efe6b0a701a6dfd94" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_NUMBER_LITERAL</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a54c2d29cfdc2f07c86dc5ccb25c56515" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Parameter_list</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0af5407244fd35f1bf92c84e4ad7c0d9c6" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Program</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a13901d31ad33d622eedced2297a8a124" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_RETURN</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a6d634a3c42f8bccf39ce3a4a362d63eb" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Safe_closing_brace</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a4626218558ea250f28f8ce1b46f7e63a" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Safe_closing_parenthesis</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0abc22e58a1a758bdbaae0f305e9448075" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Safe_colon</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0afd948fc7720d756692cf6ada9bfed2ab" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Safe_expression</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a6573096dcc4b23047b00d0e38785f0e9" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Safe_identifier</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a72979cb8a52043dcd202037a9240bf74" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Safe_semicolon</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0accd2ccb81c64fae2c1a31b47a17b7680" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Safe_statement</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0afe4cf5721f6a2ad25e2f24eed3454bca" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Single_function</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a86c6002c8588f10817cb660c5c49e272" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Single_param</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a17063b93c5aee5724c9bdd2b0fc6309a" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_Statement</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a3bd66bd031323d40595813cd7a0782c6" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_STRING_LITERAL</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a71cca51613ab5e4a794366874228d308" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_VAR</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aa923e5e1d2bcd6bb9b2c4235c56965c2" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_WHILE</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a49ebcbbeb341bb945c68bfa0a6a39158" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_YYACCEPT</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a44b99e99c94dbc13d830d9a458131135" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_YYEMPTY</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aa3125af4b127c9e22b929aecb2b2d58a" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_YYEOF</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ab71ab77e40ac96dfbfcd22e114f9c5d4" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_YYerror</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a0a3d4edd7a88fd1348516a18f2cc7b80" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_YYUNDEF</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>symbol_kind_type</name></member>
+      <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a7c736071a0015e83f951aced62ae787a" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>YYNTOKENS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

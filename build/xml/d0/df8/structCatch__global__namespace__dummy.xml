@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/df8/structCatch__global__namespace__dummy" kind="struct" language="C++" prot="public">
+    <compoundname>Catch_global_namespace_dummy</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="479" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="479" bodyend="479"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_c49559bd0fcee9c4e5f0bb420cee275a" kind="dir">
+    <compoundname>/home/boki/.tmp/kivi/test/frontend</compoundname>
+    <innerfile refid="da/d7a/example_8test_8cc">example.test.cc</innerfile>
+    <innerfile refid="db/d45/expression_8test_8cc">expression.test.cc</innerfile>
+    <innerfile refid="db/dce/parser_8test_8cc">parser.test.cc</innerfile>
+    <innerfile refid="d2/dfe/parsing__context_8test_8cc">parsing_context.test.cc</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/test/frontend/"/>
+  </compounddef>
+</doxygen>

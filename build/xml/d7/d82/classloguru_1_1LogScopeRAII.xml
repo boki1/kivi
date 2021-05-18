@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d82/classloguru_1_1LogScopeRAII" kind="class" language="C++" prot="public">
+    <compoundname>loguru::LogScopeRAII</compoundname>
+    <includes refid="df/dec/loguru_8hpp" local="no">loguru.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1aede611f669912ed9e6307bbdf7be2351" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref></type>
+        <definition>Verbosity loguru::LogScopeRAII::_verbosity</definition>
+        <argsstring></argsstring>
+        <name>_verbosity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="690" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1a2e6b88f4e4cae0227184fdd154a4fc3f" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::LogScopeRAII::_file</definition>
+        <argsstring></argsstring>
+        <name>_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="691" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1ae9a3c94b24e5b75cad60f32a6850f2f1" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned loguru::LogScopeRAII::_line</definition>
+        <argsstring></argsstring>
+        <name>_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="692" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1acc51c4bd12062ef8b774d58c08c68dac" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool loguru::LogScopeRAII::_indent_stderr</definition>
+        <argsstring></argsstring>
+        <name>_indent_stderr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="693" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1a399e4c282842557ba4d5964ee1470608" prot="private" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long loguru::LogScopeRAII::_start_time_ns</definition>
+        <argsstring></argsstring>
+        <name>_start_time_ns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="694" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1a1298a4ef3afea74b0451a92fc1887ab2" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char loguru::LogScopeRAII::_name[LOGURU_SCOPE_TEXT_SIZE]</definition>
+        <argsstring>[LOGURU_SCOPE_TEXT_SIZE]</argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="695" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1a9bf841a74e103e66b3caf6996fad9c81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>loguru::LogScopeRAII::LogScopeRAII</definition>
+        <argsstring>()</argsstring>
+        <name>LogScopeRAII</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="658" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="658" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1a859bd0bf34492be2ec0a7d6a69c54c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::LogScopeRAII::LogScopeRAII</definition>
+        <argsstring>(Verbosity verbosity, const char *file, unsigned line, LOGURU_FORMAT_STRING_TYPE format,...) LOGURU_PRINTF_LIKE(5</argsstring>
+        <name>LogScopeRAII</name>
+        <param>
+          <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref></type>
+          <declname>verbosity</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type><ref refid="df/dec/loguru_8hpp_1a644b6af9c9a276043005f51b696c6154" kindref="member">LOGURU_FORMAT_STRING_TYPE</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="661" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1af6a62fa268a8db000f5bc76d5ef1b8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::LogScopeRAII::~LogScopeRAII</definition>
+        <argsstring>()</argsstring>
+        <name>~LogScopeRAII</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="662" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1751" bodyend="1784"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1a6818243f127876647d92507fa1defba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::LogScopeRAII::LogScopeRAII</definition>
+        <argsstring>(LogScopeRAII &amp;&amp;)=default</argsstring>
+        <name>LogScopeRAII</name>
+        <param>
+          <type><ref refid="d7/d82/classloguru_1_1LogScopeRAII" kindref="compound">LogScopeRAII</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="682" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1a6c587d4e7bb3fc0748440d955faf30f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::LogScopeRAII::LogScopeRAII</definition>
+        <argsstring>(const LogScopeRAII &amp;)=delete</argsstring>
+        <name>LogScopeRAII</name>
+        <param>
+          <type>const <ref refid="d7/d82/classloguru_1_1LogScopeRAII" kindref="compound">LogScopeRAII</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="686" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1aa0c5ce888d328f2dbf371a11bf3de9d5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d82/classloguru_1_1LogScopeRAII" kindref="compound">LogScopeRAII</ref> &amp;</type>
+        <definition>LogScopeRAII&amp; loguru::LogScopeRAII::operator=</definition>
+        <argsstring>(const LogScopeRAII &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d7/d82/classloguru_1_1LogScopeRAII" kindref="compound">LogScopeRAII</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="687" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1ad4f673e438095148823c12228c9dcbdd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void loguru::LogScopeRAII::operator=</definition>
+        <argsstring>(LogScopeRAII &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d7/d82/classloguru_1_1LogScopeRAII" kindref="compound">LogScopeRAII</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="688" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="655" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="656" bodyend="696"/>
+    <listofallmembers>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1a2e6b88f4e4cae0227184fdd154a4fc3f" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>_file</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1acc51c4bd12062ef8b774d58c08c68dac" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>_indent_stderr</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1ae9a3c94b24e5b75cad60f32a6850f2f1" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>_line</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1a1298a4ef3afea74b0451a92fc1887ab2" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>_name</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1a399e4c282842557ba4d5964ee1470608" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>_start_time_ns</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1aede611f669912ed9e6307bbdf7be2351" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>_verbosity</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1a9bf841a74e103e66b3caf6996fad9c81" prot="public" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>LogScopeRAII</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1a859bd0bf34492be2ec0a7d6a69c54c05" prot="public" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>LogScopeRAII</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1a6818243f127876647d92507fa1defba4" prot="public" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>LogScopeRAII</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1a6c587d4e7bb3fc0748440d955faf30f7" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>LogScopeRAII</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1aa0c5ce888d328f2dbf371a11bf3de9d5" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>operator=</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1ad4f673e438095148823c12228c9dcbdd" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>operator=</name></member>
+      <member refid="d7/d82/classloguru_1_1LogScopeRAII_1af6a62fa268a8db000f5bc76d5ef1b8b7" prot="public" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>~LogScopeRAII</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/dfa/namespacecli" kind="namespace" language="C++">
+    <compoundname>cli</compoundname>
+    <innerclass refid="df/d62/structcli_1_1settings" prot="public">cli::settings</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d5/dfa/namespacecli_1a8ca7573e9d726fa3664925551e2b8d6a" prot="public" static="no">
+        <type><ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kindref="member">settings::print_stage_enum</ref></type>
+        <definition>using cli::pe = typedef settings::print_stage_enum</definition>
+        <argsstring></argsstring>
+        <name>pe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="26" column="1" bodyfile="/home/boki/.tmp/kivi/utils/cli/cli.hh" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="df/d62/structcli_1_1settings" kindref="compound">cli::settings</ref></type>
+        <definition>struct cli::settings cli::globals</definition>
+        <argsstring></argsstring>
+        <name>globals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="24" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/dfa/namespacecli_1aa2e4349201a2f1a495642d706a82907a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cli::should_print</definition>
+        <argsstring>(pe stage)</argsstring>
+        <name>should_print</name>
+        <param>
+          <type><ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kindref="member">pe</ref></type>
+          <declname>stage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="29" column="1" bodyfile="/home/boki/.tmp/kivi/utils/cli/cli.hh" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dfa/namespacecli_1a7c557b921ffc48ad3e206d16ca501874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cli::parse_arguments</definition>
+        <argsstring>(int argc, const char *argv[])</argsstring>
+        <name>parse_arguments</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="40" column="1" bodyfile="/home/boki/.tmp/kivi/utils/cli/cli.hh" bodystart="40" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="15" column="1"/>
+  </compounddef>
+</doxygen>

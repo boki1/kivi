@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d7e/structCatch_1_1MessageBuilder" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::MessageBuilder</compoundname>
+    <basecompoundref refid="d6/db6/structCatch_1_1MessageStream" prot="public" virt="non-virtual">Catch::MessageStream</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d7e/structCatch_1_1MessageBuilder_1a979f1c2b36d78f80ee275bfa5ba0209f" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d37/structCatch_1_1MessageInfo" kindref="compound">MessageInfo</ref></type>
+        <definition>MessageInfo Catch::MessageBuilder::m_info</definition>
+        <argsstring></argsstring>
+        <name>m_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2636" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2636" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d7e/structCatch_1_1MessageBuilder_1ac34832ca527a758f000ac233d32dd068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::MessageBuilder::MessageBuilder</definition>
+        <argsstring>(StringRef const &amp;macroName, SourceLineInfo const &amp;lineInfo, ResultWas::OfType type)</argsstring>
+        <name>MessageBuilder</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>macroName</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d2b/structCatch_1_1SourceLineInfo" kindref="compound">SourceLineInfo</ref> const &amp;</type>
+          <declname>lineInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/d8c/structCatch_1_1ResultWas_1a624e1ee3661fcf6094ceef1f654601ef" kindref="member">ResultWas::OfType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2626" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d7e/structCatch_1_1MessageBuilder_1a20fa48d069b20dddcc2d3df8abb123c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d2/d7e/structCatch_1_1MessageBuilder" kindref="compound">MessageBuilder</ref> &amp;</type>
+        <definition>MessageBuilder&amp; Catch::MessageBuilder::operator&lt;&lt;</definition>
+        <argsstring>(T const &amp;value)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2631" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2631" bodyend="2634"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::MessageBuilder</label>
+        <link refid="d2/d7e/structCatch_1_1MessageBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::MessageStream</label>
+        <link refid="d6/db6/structCatch_1_1MessageStream"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>Catch::SourceLineInfo</label>
+        <link refid="dc/d2b/structCatch_1_1SourceLineInfo"/>
+      </node>
+      <node id="4">
+        <label>Catch::NonCopyable</label>
+        <link refid="dc/d1c/classCatch_1_1NonCopyable"/>
+      </node>
+      <node id="7">
+        <label>Catch::StringRef</label>
+        <link refid="d5/dd8/classCatch_1_1StringRef"/>
+      </node>
+      <node id="1">
+        <label>Catch::MessageBuilder</label>
+        <link refid="d2/d7e/structCatch_1_1MessageBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_info</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::ReusableStringStream</label>
+        <link refid="d9/d54/classCatch_1_1ReusableStringStream"/>
+        <childnode refid="4" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Catch::MessageInfo</label>
+        <link refid="d7/d37/structCatch_1_1MessageInfo"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lineInfo</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>macroName</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::MessageStream</label>
+        <link refid="d6/db6/structCatch_1_1MessageStream"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_stream</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2625" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2625" bodyend="2637"/>
+    <listofallmembers>
+      <member refid="d2/d7e/structCatch_1_1MessageBuilder_1a979f1c2b36d78f80ee275bfa5ba0209f" prot="public" virt="non-virtual"><scope>Catch::MessageBuilder</scope><name>m_info</name></member>
+      <member refid="d6/db6/structCatch_1_1MessageStream_1a9202520faed8882ef469db9f353ec578" prot="public" virt="non-virtual"><scope>Catch::MessageBuilder</scope><name>m_stream</name></member>
+      <member refid="d2/d7e/structCatch_1_1MessageBuilder_1ac34832ca527a758f000ac233d32dd068" prot="public" virt="non-virtual"><scope>Catch::MessageBuilder</scope><name>MessageBuilder</name></member>
+      <member refid="d2/d7e/structCatch_1_1MessageBuilder_1a20fa48d069b20dddcc2d3df8abb123c1" prot="public" virt="non-virtual"><scope>Catch::MessageBuilder</scope><name>operator&lt;&lt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

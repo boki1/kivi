@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/dca/structCatch_1_1StringMaker_3_01wchar__t_01const_01_5_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::StringMaker&lt; wchar_t const * &gt;</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d6/dca/structCatch_1_1StringMaker_3_01wchar__t_01const_01_5_01_4_1ae7535a1f417ace45ca05e4389334ffeb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Catch::StringMaker&lt; wchar_t const * &gt;::convert</definition>
+        <argsstring>(wchar_t const *str)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>wchar_t const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1698" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1697" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1697" bodyend="1699"/>
+    <listofallmembers>
+      <member refid="d6/dca/structCatch_1_1StringMaker_3_01wchar__t_01const_01_5_01_4_1ae7535a1f417ace45ca05e4389334ffeb" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; wchar_t const * &gt;</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

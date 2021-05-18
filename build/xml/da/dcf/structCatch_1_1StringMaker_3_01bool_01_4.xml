@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/dcf/structCatch_1_1StringMaker_3_01bool_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::StringMaker&lt; bool &gt;</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="da/dcf/structCatch_1_1StringMaker_3_01bool_01_4_1a37e9899c82c4b4515f876f16f8957a77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Catch::StringMaker&lt; bool &gt;::convert</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1760" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1759" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1759" bodyend="1761"/>
+    <listofallmembers>
+      <member refid="da/dcf/structCatch_1_1StringMaker_3_01bool_01_4_1a37e9899c82c4b4515f876f16f8957a77" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; bool &gt;</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

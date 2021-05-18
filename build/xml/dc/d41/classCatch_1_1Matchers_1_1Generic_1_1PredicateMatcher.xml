@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher" kind="class" language="C++" prot="public">
+    <compoundname>Catch::Matchers::Generic::PredicateMatcher</compoundname>
+    <basecompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; T &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1ab7f09e9f96fb9d794e1fc699497ec3e0" prot="private" static="no" mutable="no">
+        <type>std::function&lt; bool(T const  &amp;)&gt;</type>
+        <definition>std::function&lt;bool(T const&amp;)&gt; Catch::Matchers::Generic::PredicateMatcher&lt; T &gt;::m_predicate</definition>
+        <argsstring></argsstring>
+        <name>m_predicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3494" column="19" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1a7736732e65a93e4e1f889804d043407e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::Generic::PredicateMatcher&lt; T &gt;::m_description</definition>
+        <argsstring></argsstring>
+        <name>m_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3495" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3495" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1a57d53ef028c2f7b92b016f627f91aa76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Matchers::Generic::PredicateMatcher&lt; T &gt;::PredicateMatcher</definition>
+        <argsstring>(std::function&lt; bool(T const &amp;)&gt; const &amp;elem, std::string const &amp;descr)</argsstring>
+        <name>PredicateMatcher</name>
+        <param>
+          <type>std::function&lt; bool(T const &amp;)&gt; const &amp;</type>
+          <declname>elem</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>descr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3498" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3498" bodyend="3501"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1a2ec0e8ec19c4c5e26271d59a06a62b52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Catch::Matchers::Generic::PredicateMatcher&lt; T &gt;::match</definition>
+        <argsstring>(T const &amp;item) const override</argsstring>
+        <name>match</name>
+        <reimplements refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod_1ae0920ff9e817acf08e1bb0cbcb044e30">match</reimplements>
+        <param>
+          <type>T const &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3503" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3503" bodyend="3505"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1af7d59e94892cc09471bbaefac4c889fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::Generic::PredicateMatcher&lt; T &gt;::describe</definition>
+        <argsstring>() const override</argsstring>
+        <name>describe</name>
+        <reimplements refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a91d3a907dbfcbb596077df24f6e11fe2">describe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3507" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3507" bodyend="3509"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::Matchers::Generic::PredicateMatcher&lt; T &gt;</label>
+        <link refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; T &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; T &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Catch::Matchers::Generic::PredicateMatcher&lt; T &gt;</label>
+        <link refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; T &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; T &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3493" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3493" bodyend="3510"/>
+    <listofallmembers>
+      <member refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1af7d59e94892cc09471bbaefac4c889fd" prot="public" virt="virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>describe</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a951095c462657e7097a9a6dc4dde813f" prot="protected" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>m_cachedToString</name></member>
+      <member refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1a7736732e65a93e4e1f889804d043407e" prot="private" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>m_description</name></member>
+      <member refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1ab7f09e9f96fb9d794e1fc699497ec3e0" prot="private" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>m_predicate</name></member>
+      <member refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1a2ec0e8ec19c4c5e26271d59a06a62b52" prot="public" virt="virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>match</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1ab65764dc245d85e2b268d3be870b650a" prot="public" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>MatcherUntypedBase</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a985fd3c3ffcc9f2e8dc7a330130040b0" prot="public" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>MatcherUntypedBase</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5bb94bf2ff5c7ef73b7c11eb173bdf3b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>operator!</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1aae4a9827601f6f26a52126e193d012de" prot="public" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>operator&amp;&amp;</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a62668ccc47b64a9094dcb6413f9af80b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>operator=</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5f8542b8f1567a6f9c65d0a6da7b679b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>operator||</name></member>
+      <member refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1a57d53ef028c2f7b92b016f627f91aa76" prot="public" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>PredicateMatcher</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a5982c7c80ca71dfe2298babadad7a453" prot="public" virt="non-virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>toString</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a853be93ce33f71b5abede38081c79e9d" prot="protected" virt="virtual"><scope>Catch::Matchers::Generic::PredicateMatcher</scope><name>~MatcherUntypedBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

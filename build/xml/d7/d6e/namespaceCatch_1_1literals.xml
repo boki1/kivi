@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d6e/namespaceCatch_1_1literals" kind="namespace" language="C++">
+    <compoundname>Catch::literals</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d7/d6e/namespaceCatch_1_1literals_1aed9bf4d544c60a074440a055a54ea6c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/da4/classCatch_1_1Detail_1_1Approx" kindref="compound">Detail::Approx</ref></type>
+        <definition>Detail::Approx Catch::literals::operator&quot;&quot;_a</definition>
+        <argsstring>(long double val)</argsstring>
+        <name>operator&quot;&quot;_a</name>
+        <param>
+          <type>long double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3178" column="20" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3178" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6e/namespaceCatch_1_1literals_1aded81112b3a271a8b9538dff17acd093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/da4/classCatch_1_1Detail_1_1Approx" kindref="compound">Detail::Approx</ref></type>
+        <definition>Detail::Approx Catch::literals::operator&quot;&quot;_a</definition>
+        <argsstring>(unsigned long long val)</argsstring>
+        <name>operator&quot;&quot;_a</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3179" column="20" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3179" declcolumn="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3177" column="1"/>
+  </compounddef>
+</doxygen>

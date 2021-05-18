@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/d9f/classsyntax__analyzer_1_1parsing__context" kind="class" language="C++" prot="public">
+    <compoundname>syntax_analyzer::parsing_context</compoundname>
+    <includes refid="d9/dd1/parsing__context_8hh" local="no">parsing_context.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1ae00fd636b3a0bad580a4999ae7af06a0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &gt;</type>
+        <definition>std::vector&lt;identifier&gt; syntax_analyzer::parsing_context::m_scopes</definition>
+        <argsstring></argsstring>
+        <name>m_scopes</name>
+        <briefdescription>
+<para>All parsed scopes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="41" column="13" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a9149991d8630d72ae400bae32a1c1238" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref> &gt;</type>
+        <definition>std::vector&lt;function&gt; syntax_analyzer::parsing_context::m_functions</definition>
+        <argsstring></argsstring>
+        <name>m_functions</name>
+        <briefdescription>
+<para>All parsed functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="44" column="13" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a3b03eaea3687a9f75ffd9839d79e41fe" prot="private" static="no" mutable="no">
+        <type><ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref></type>
+        <definition>function syntax_analyzer::parsing_context::m_current_function</definition>
+        <argsstring></argsstring>
+        <name>m_current_function</name>
+        <briefdescription>
+<para>The current function that is being processed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="47" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a230ea96dceec0888f154d5448a3b4d8c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int syntax_analyzer::parsing_context::m_registers</definition>
+        <argsstring></argsstring>
+        <name>m_registers</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The current number of &quot;registers&quot; being used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="50" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* syntax_analyzer::parsing_context::lexer_cursor</definition>
+        <argsstring></argsstring>
+        <name>lexer_cursor</name>
+        <briefdescription>
+<para>The location which is used and updated by the re2c module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NB: The following 2 fields are public, because they are required by bison and re2c in order to keep track of the current location of the concrete process being executed. Because they are publicly visible, they do not follow the standard convention for field names - no &quot;m_&quot; prefix, and can be used without getters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="61" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a12e6eabcb03275e68bbb3a887e2ba736" prot="public" static="no" mutable="no">
+        <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">yy::location</ref></type>
+        <definition>yy::location syntax_analyzer::parsing_context::yy_location</definition>
+        <argsstring></argsstring>
+        <name>yy_location</name>
+        <briefdescription>
+<para>The location which is used and updated by the bison module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="64" column="14" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a4515c3176bf9a3afc30f20a258b715c4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>syntax_analyzer::parsing_context::parsing_context</definition>
+        <argsstring>(const char *code_beginning, std::string *filename)</argsstring>
+        <name>parsing_context</name>
+        <param>
+          <type>const char *</type>
+          <declname>code_beginning</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>The constructor initializes the &quot;location&quot; variables in both the lexer and the parser. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code_beginning</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the &quot;location&quot; var for the lexer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the &quot;location&quot; var for the parser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="76" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1acf6678dde52fe14a89d4794670e0c748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void syntax_analyzer::parsing_context::enter_scope</definition>
+        <argsstring>()</argsstring>
+        <name>enter_scope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pushes an empty entry at the end of scopes <simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="84" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1add95595c473fd83ff4fdb081cb692d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void syntax_analyzer::parsing_context::exit_scope</definition>
+        <argsstring>()</argsstring>
+        <name>exit_scope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pops the last entry from scopes <simplesect kind="return"><para>void </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>&lt;tt&gt;cannot_pop_out_of_empty_exception&lt;/tt&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when no active scopes have been entered </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="93" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="39" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1ae06f23672f91a396e038e98e62df8007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::parsing_context::define_identifier</definition>
+        <argsstring>(const identifier &amp;ident)</argsstring>
+        <name>define_identifier</name>
+        <param>
+          <type>const <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Defines an arbitrary identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Already instantiated identifier object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Also a check is made whether this identifier has already been created. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>syntax error is thrown if a duplicate is seen. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Identifier expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="104" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="52" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a235277e494bb30ca3947b9ec3178503c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::parsing_context::define_local</definition>
+        <argsstring>(std::string &amp;&amp;name)</argsstring>
+        <name>define_local</name>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Defines a new local variable inside a function body. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly created local variable </para>
+</simplesect>
+<simplesect kind="return"><para>Identifier (local) expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="113" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a932f936bda0d636d34f4019aa9b1341d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::parsing_context::define_function</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>define_function</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Defines a new function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly created function </para>
+</simplesect>
+<simplesect kind="return"><para>Identifier (function) expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="122" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a65d54eb7593ee9af0b23df4a317a9d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::parsing_context::define_parameter</definition>
+        <argsstring>(std::string &amp;&amp;name)</argsstring>
+        <name>define_parameter</name>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Defines a new parameter identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the identifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly created parameter </para>
+</simplesect>
+<simplesect kind="return"><para>Identifier (parameter) expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="131" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="131" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a915784ee7853a7fac173ed59884129a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::parsing_context::define_register</definition>
+        <argsstring>()</argsstring>
+        <name>define_register</name>
+        <briefdescription>
+<para>Creates a new local variable with is going to be used as a IR register label. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The newly created local variable </para>
+</simplesect>
+<simplesect kind="return"><para>&quot;Register&quot; variable expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="140" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="140" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a918cdca2ea1a9076669ec7b7df647e64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::parsing_context::use_identifier</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>use_identifier</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Fetch the already defined identifier by a given name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the identifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to the found identifier </para>
+</simplesect>
+<simplesect kind="note"><para>It is <emphasis>vitaly</emphasis> important that instead of the found identifier, an identifier expression is returned. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>In</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>case the identifier has not been already defined, an exception is thrown </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="152" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="75" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a7849c16b31f71affa6ae6874269d35f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref> &amp;</type>
+        <definition>const function &amp; syntax_analyzer::parsing_context::define_function_body</definition>
+        <argsstring>(const std::string &amp;name, expression &amp;&amp;body)</argsstring>
+        <name>define_function_body</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Defines a function and associated expression body. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function body </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly placed function </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Adds implicit return statement at the end of the block &quot;concatenated&quot; by this double-compound statement</para>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="161" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="94" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1aa9c9d2238ddf322e66c7731168b889c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;identifier&gt;&amp; syntax_analyzer::parsing_context::scopes</definition>
+        <argsstring>() const</argsstring>
+        <name>scopes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="165" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1acb5f2dd6f4c362ebeb976f76aa80286c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &gt; &amp;</type>
+        <definition>std::vector&lt;identifier&gt;&amp; syntax_analyzer::parsing_context::scopes_mut</definition>
+        <argsstring>()</argsstring>
+        <name>scopes_mut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="171" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="171" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a5e883491811a60f9a974ca6010766855" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;function&gt;&amp; syntax_analyzer::parsing_context::functions</definition>
+        <argsstring>() const</argsstring>
+        <name>functions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="177" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1afadc7125f48e9b2f0e7fe6a2cff1291c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref> &amp;</type>
+        <definition>const function&amp; syntax_analyzer::parsing_context::current_function</definition>
+        <argsstring>() const</argsstring>
+        <name>current_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="183" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1ae05ee75f3a0750b30f71f78439023311" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int syntax_analyzer::parsing_context::registers</definition>
+        <argsstring>() const</argsstring>
+        <name>registers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="189" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="189" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>yy::location</label>
+        <link refid="dc/de8/classyy_1_1location"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>begin</edgelabel>
+          <edgelabel>end</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>syntax_analyzer::parsing_context</label>
+        <link refid="dd/d9f/classsyntax__analyzer_1_1parsing__context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_current_function</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>yy_location</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>syntax_analyzer::function</label>
+        <link refid="d7/d16/classsyntax__analyzer_1_1function"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_body</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>yy::position</label>
+        <link refid="de/d79/classyy_1_1position"/>
+      </node>
+      <node id="3">
+        <label>syntax_analyzer::syntactic_structure</label>
+        <link refid="df/d98/classsyntax__analyzer_1_1syntactic__structure"/>
+      </node>
+      <node id="4">
+        <label>syntax_analyzer::expression</label>
+        <link refid="db/df3/classsyntax__analyzer_1_1expression"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="37" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="38" bodyend="193"/>
+    <listofallmembers>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1afadc7125f48e9b2f0e7fe6a2cff1291c" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>current_function</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a932f936bda0d636d34f4019aa9b1341d" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>define_function</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a7849c16b31f71affa6ae6874269d35f2" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>define_function_body</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1ae06f23672f91a396e038e98e62df8007" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>define_identifier</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a235277e494bb30ca3947b9ec3178503c" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>define_local</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a65d54eb7593ee9af0b23df4a317a9d56" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>define_parameter</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a915784ee7853a7fac173ed59884129a5" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>define_register</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1acf6678dde52fe14a89d4794670e0c748" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>enter_scope</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1add95595c473fd83ff4fdb081cb692d7d" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>exit_scope</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a5e883491811a60f9a974ca6010766855" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>functions</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>lexer_cursor</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a3b03eaea3687a9f75ffd9839d79e41fe" prot="private" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>m_current_function</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a9149991d8630d72ae400bae32a1c1238" prot="private" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>m_functions</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a230ea96dceec0888f154d5448a3b4d8c" prot="private" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>m_registers</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1ae00fd636b3a0bad580a4999ae7af06a0" prot="private" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>m_scopes</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a4515c3176bf9a3afc30f20a258b715c4" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>parsing_context</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1ae05ee75f3a0750b30f71f78439023311" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>registers</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1aa9c9d2238ddf322e66c7731168b889c8" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>scopes</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1acb5f2dd6f4c362ebeb976f76aa80286c" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>scopes_mut</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a918cdca2ea1a9076669ec7b7df647e64" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>use_identifier</name></member>
+      <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a12e6eabcb03275e68bbb3a887e2ba736" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>yy_location</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

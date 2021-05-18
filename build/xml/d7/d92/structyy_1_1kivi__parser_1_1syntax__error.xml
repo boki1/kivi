@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d92/structyy_1_1kivi__parser_1_1syntax__error" kind="struct" language="C++" prot="public">
+    <compoundname>yy::kivi_parser::syntax_error</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::runtime_error</basecompoundref>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser.tab.hh</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1adf33052d7a5a6be372c4c3cdc10a4dff" prot="public" static="no" mutable="no">
+        <type><ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref></type>
+        <definition>location_type yy::kivi_parser::syntax_error::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="467" column="21" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1aa7b6ccc7edc468b094b8b64615673976" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::syntax_error::syntax_error</definition>
+        <argsstring>(const location_type &amp;l, const std::string &amp;m)</argsstring>
+        <name>syntax_error</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="455" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="455" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1ad63dd96d21b8f9b956c76bef4359229f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::syntax_error::syntax_error</definition>
+        <argsstring>(const syntax_error &amp;s)</argsstring>
+        <name>syntax_error</name>
+        <param>
+          <type>const <ref refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error" kindref="compound">syntax_error</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="460" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="460" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1a3558b9bd12d06874d150da5415f937ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::syntax_error::~syntax_error</definition>
+        <argsstring>() YY_NOEXCEPT YY_NOTHROW</argsstring>
+        <name>~syntax_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="465" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="151" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Syntax errors thrown from user actions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>yy::kivi_parser::syntax_error</label>
+        <link refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::runtime_error</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>yy::kivi_parser::syntax_error</label>
+        <link refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>location</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>yy::location</label>
+        <link refid="dc/de8/classyy_1_1location"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>begin</edgelabel>
+          <edgelabel>end</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::runtime_error</label>
+      </node>
+      <node id="4">
+        <label>yy::position</label>
+        <link refid="de/d79/classyy_1_1position"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="453" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="454" bodyend="468"/>
+    <listofallmembers>
+      <member refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1adf33052d7a5a6be372c4c3cdc10a4dff" prot="public" virt="non-virtual"><scope>yy::kivi_parser::syntax_error</scope><name>location</name></member>
+      <member refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1aa7b6ccc7edc468b094b8b64615673976" prot="public" virt="non-virtual"><scope>yy::kivi_parser::syntax_error</scope><name>syntax_error</name></member>
+      <member refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1ad63dd96d21b8f9b956c76bef4359229f" prot="public" virt="non-virtual"><scope>yy::kivi_parser::syntax_error</scope><name>syntax_error</name></member>
+      <member refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1a3558b9bd12d06874d150da5415f937ee" prot="public" virt="non-virtual"><scope>yy::kivi_parser::syntax_error</scope><name>~syntax_error</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator" kind="class" language="C++" prot="public">
+    <compoundname>Catch::Generators::RepeatGenerator</compoundname>
+    <basecompoundref refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator" prot="public" virt="non-virtual">Catch::Generators::IGenerator&lt; T &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1ae4eeba772ffba6d928f959835e8db154" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper" kindref="compound">GeneratorWrapper</ref>&lt; T &gt;</type>
+        <definition>GeneratorWrapper&lt;T&gt; Catch::Generators::RepeatGenerator&lt; T &gt;::m_generator</definition>
+        <argsstring></argsstring>
+        <name>m_generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4197" column="26" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1aee4c7a8c54c739f2fea75c01b02ccc6e" prot="private" static="no" mutable="yes">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; Catch::Generators::RepeatGenerator&lt; T &gt;::m_returned</definition>
+        <argsstring></argsstring>
+        <name>m_returned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4198" column="29" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1af73981a50e1e1438d0159ac0b55a84bf" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Catch::Generators::RepeatGenerator&lt; T &gt;::m_target_repeats</definition>
+        <argsstring></argsstring>
+        <name>m_target_repeats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4199" column="16" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1ad834535fe3a2aec44bf53632c43f68cf" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Catch::Generators::RepeatGenerator&lt; T &gt;::m_current_repeat</definition>
+        <argsstring></argsstring>
+        <name>m_current_repeat</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4200" column="16" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1ab311143cc38451a21de61f444fbc7cf6" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Catch::Generators::RepeatGenerator&lt; T &gt;::m_repeat_index</definition>
+        <argsstring></argsstring>
+        <name>m_repeat_index</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4201" column="16" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1a3aee12c4f9c2c04823ca3c75a20f234f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Generators::RepeatGenerator&lt; T &gt;::RepeatGenerator</definition>
+        <argsstring>(size_t repeats, GeneratorWrapper&lt; T &gt; &amp;&amp;generator)</argsstring>
+        <name>RepeatGenerator</name>
+        <param>
+          <type>size_t</type>
+          <declname>repeats</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper" kindref="compound">GeneratorWrapper</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>generator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4203" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4203" bodyend="4208"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1a43bd573274c9a0cd7f4406a3d0d36d49" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>T const  &amp;</type>
+        <definition>T const&amp; Catch::Generators::RepeatGenerator&lt; T &gt;::get</definition>
+        <argsstring>() const override</argsstring>
+        <name>get</name>
+        <reimplements refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a525d381fc9249a885b075a0632a8579a">get</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4210" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4210" bodyend="4216"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1a24d5c2b1c09d6d220d4bd4c83f222dcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Catch::Generators::RepeatGenerator&lt; T &gt;::next</definition>
+        <argsstring>() override</argsstring>
+        <name>next</name>
+        <reimplements refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1aeed3c0cd6233c5f553549e453b8d6638">next</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4218" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4218" bodyend="4240"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::Generators::RepeatGenerator&lt; T &gt;</label>
+        <link refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+      <node id="2">
+        <label>Catch::Generators::IGenerator&lt; T &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Catch::Generators::RepeatGenerator&lt; T &gt;</label>
+        <link refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+      <node id="2">
+        <label>Catch::Generators::IGenerator&lt; T &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4193" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4193" bodyend="4241"/>
+    <listofallmembers>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a00ff0179d739c3016756b6cf56fabbad" prot="public" virt="non-virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>GeneratorUntypedBase</name></member>
+      <member refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1a43bd573274c9a0cd7f4406a3d0d36d49" prot="public" virt="virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>get</name></member>
+      <member refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1ad834535fe3a2aec44bf53632c43f68cf" prot="private" virt="non-virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>m_current_repeat</name></member>
+      <member refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1ae4eeba772ffba6d928f959835e8db154" prot="private" virt="non-virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>m_generator</name></member>
+      <member refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1ab311143cc38451a21de61f444fbc7cf6" prot="private" virt="non-virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>m_repeat_index</name></member>
+      <member refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1aee4c7a8c54c739f2fea75c01b02ccc6e" prot="private" virt="non-virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>m_returned</name></member>
+      <member refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1af73981a50e1e1438d0159ac0b55a84bf" prot="private" virt="non-virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>m_target_repeats</name></member>
+      <member refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1a24d5c2b1c09d6d220d4bd4c83f222dcb" prot="public" virt="virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>next</name></member>
+      <member refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1a3aee12c4f9c2c04823ca3c75a20f234f" prot="public" virt="non-virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>RepeatGenerator</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a1f8677875fe0ff31f39c60d45504b9a5" prot="public" virt="non-virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>type</name></member>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a6f05f8099fdc5744a7aff68aa8c09c7f" prot="public" virt="virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>~GeneratorUntypedBase</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1afe5b6eecbbd735e69748d68574611747" prot="public" virt="virtual"><scope>Catch::Generators::RepeatGenerator</scope><name>~IGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

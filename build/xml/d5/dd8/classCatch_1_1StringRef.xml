@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/dd8/classCatch_1_1StringRef" kind="class" language="C++" prot="public">
+    <compoundname>Catch::StringRef</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d5/dd8/classCatch_1_1StringRef_1a06b4db8fc82b197004291cf370b2ba7c" prot="public" static="no">
+        <type>std::size_t</type>
+        <definition>using Catch::StringRef::size_type =  std::size_t</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="606" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d5/dd8/classCatch_1_1StringRef_1ac3aa3d16f48b5429a480f823c504f93c" prot="public" static="no">
+        <type>const char *</type>
+        <definition>using Catch::StringRef::const_iterator =  const char*</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="607" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d5/dd8/classCatch_1_1StringRef_1a38d077e89f7f2ce666507ab28dd28653" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr char const  *const</type>
+        <definition>constexpr char const* const Catch::StringRef::s_empty</definition>
+        <argsstring></argsstring>
+        <name>s_empty</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="610" column="43" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/dd8/classCatch_1_1StringRef_1a0583d4e5ea88c99c121504052a4fcb6c" prot="private" static="no" mutable="no">
+        <type>char const  *</type>
+        <definition>char const* Catch::StringRef::m_start</definition>
+        <argsstring></argsstring>
+        <name>m_start</name>
+        <initializer>= <ref refid="d5/dd8/classCatch_1_1StringRef_1a38d077e89f7f2ce666507ab28dd28653" kindref="member">s_empty</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="612" column="20" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/dd8/classCatch_1_1StringRef_1a91ee253f5b7e43303352186139845753" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/dd8/classCatch_1_1StringRef_1a06b4db8fc82b197004291cf370b2ba7c" kindref="member">size_type</ref></type>
+        <definition>size_type Catch::StringRef::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="613" column="19" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1a611907867225695d38198c058758c92d" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr Catch::StringRef::StringRef</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>StringRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="616" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1aea45f5089c53adac362bff6bd7c40943" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::StringRef::StringRef</definition>
+        <argsstring>(char const *rawChars) noexcept</argsstring>
+        <name>StringRef</name>
+        <param>
+          <type>char const *</type>
+          <declname>rawChars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="618" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1a36df94807491c0ad84184fb8e44e1a7c" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr Catch::StringRef::StringRef</definition>
+        <argsstring>(char const *rawChars, size_type size) noexcept</argsstring>
+        <name>StringRef</name>
+        <param>
+          <type>char const *</type>
+          <declname>rawChars</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef_1a06b4db8fc82b197004291cf370b2ba7c" kindref="member">size_type</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="620" column="19" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="620" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1a7fe41469048f906e9a847798cd335f23" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::StringRef::StringRef</definition>
+        <argsstring>(std::string const &amp;stdString) noexcept</argsstring>
+        <name>StringRef</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>stdString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="625" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="625" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1ad9fde21785affacc32d7da7a70d74e93" prot="public" static="no" const="yes" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::StringRef::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="630" column="18" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="630" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1aabb30149ab961187e4b3ff3394bf6e73" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::StringRef::operator==</definition>
+        <argsstring>(StringRef const &amp;other) const noexcept -&gt; bool</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="635" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1aaa6c8bf61c4628034c19763d1c8ad215" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::StringRef::operator!=</definition>
+        <argsstring>(StringRef const &amp;other) const noexcept -&gt; bool</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="636" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="636" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1a4ba2e01eec1f0f56c257d213c796ab3b" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::StringRef::operator[]</definition>
+        <argsstring>(size_type index) const noexcept -&gt; char</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef_1a06b4db8fc82b197004291cf370b2ba7c" kindref="member">size_type</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="640" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="640" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1a0b4841c28cbb14ba07296964a0187023" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto Catch::StringRef::empty</definition>
+        <argsstring>() const noexcept -&gt; bool</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="646" column="24" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="646" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1acb22719801de2b64361b4c283080d4e5" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto Catch::StringRef::size</definition>
+        <argsstring>() const noexcept -&gt; size_type</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="649" column="24" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="649" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1a1669cb2765e820ca258159676cbd82a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::StringRef::c_str</definition>
+        <argsstring>() const -&gt; char const *</argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="655" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1a594bc3e10ffad77df92f7d1a4c99d7ff" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::StringRef::substr</definition>
+        <argsstring>(size_type start, size_type length) const noexcept -&gt; StringRef</argsstring>
+        <name>substr</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef_1a06b4db8fc82b197004291cf370b2ba7c" kindref="member">size_type</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef_1a06b4db8fc82b197004291cf370b2ba7c" kindref="member">size_type</ref></type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="661" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1ab0f85edde9f97153fc758fac3bb14507" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::StringRef::data</definition>
+        <argsstring>() const noexcept -&gt; char const *</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="664" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1a646e58f5f4e1f5e82cfba06d9fd5d016" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto Catch::StringRef::isNullTerminated</definition>
+        <argsstring>() const noexcept -&gt; bool</argsstring>
+        <name>isNullTerminated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="666" column="24" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="666" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1ab0adc7198d60867c2842b998ae456795" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="d5/dd8/classCatch_1_1StringRef_1ac3aa3d16f48b5429a480f823c504f93c" kindref="member">const_iterator</ref></type>
+        <definition>constexpr const_iterator Catch::StringRef::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="671" column="34" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="671" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/dd8/classCatch_1_1StringRef_1a3ce9afc711b559d6cc59666898fc0828" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="d5/dd8/classCatch_1_1StringRef_1ac3aa3d16f48b5429a480f823c504f93c" kindref="member">const_iterator</ref></type>
+        <definition>constexpr const_iterator Catch::StringRef::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="672" column="34" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="672" bodyend="672"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A non-owning string class (similar to the forthcoming std::string_view) Note that, because a <ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> may be a substring of another string, it may not be null terminated. </para>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="604" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="604" bodyend="673"/>
+    <listofallmembers>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1ab0adc7198d60867c2842b998ae456795" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>begin</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a1669cb2765e820ca258159676cbd82a5" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>c_str</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1ac3aa3d16f48b5429a480f823c504f93c" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>const_iterator</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1ab0f85edde9f97153fc758fac3bb14507" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>data</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a0b4841c28cbb14ba07296964a0187023" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>empty</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a3ce9afc711b559d6cc59666898fc0828" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>end</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a646e58f5f4e1f5e82cfba06d9fd5d016" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>isNullTerminated</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a91ee253f5b7e43303352186139845753" prot="private" virt="non-virtual"><scope>Catch::StringRef</scope><name>m_size</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a0583d4e5ea88c99c121504052a4fcb6c" prot="private" virt="non-virtual"><scope>Catch::StringRef</scope><name>m_start</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1ad9fde21785affacc32d7da7a70d74e93" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>operator std::string</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1aaa6c8bf61c4628034c19763d1c8ad215" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>operator!=</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1aabb30149ab961187e4b3ff3394bf6e73" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>operator==</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a4ba2e01eec1f0f56c257d213c796ab3b" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>operator[]</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a38d077e89f7f2ce666507ab28dd28653" prot="private" virt="non-virtual"><scope>Catch::StringRef</scope><name>s_empty</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1acb22719801de2b64361b4c283080d4e5" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>size</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a06b4db8fc82b197004291cf370b2ba7c" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>size_type</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a611907867225695d38198c058758c92d" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>StringRef</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1aea45f5089c53adac362bff6bd7c40943" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>StringRef</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a36df94807491c0ad84184fb8e44e1a7c" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>StringRef</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a7fe41469048f906e9a847798cd335f23" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>StringRef</name></member>
+      <member refid="d5/dd8/classCatch_1_1StringRef_1a594bc3e10ffad77df92f7d1a4c99d7ff" prot="public" virt="non-virtual"><scope>Catch::StringRef</scope><name>substr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

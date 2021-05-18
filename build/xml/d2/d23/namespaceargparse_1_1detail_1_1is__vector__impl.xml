@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d23/namespaceargparse_1_1detail_1_1is__vector__impl" kind="namespace" language="C++">
+    <compoundname>argparse::detail::is_vector_impl</compoundname>
+    <innerclass refid="dc/ddd/structargparse_1_1detail_1_1is__vector__impl_1_1is__vector" prot="public">argparse::detail::is_vector_impl::is_vector</innerclass>
+    <innerclass refid="d5/d9e/structargparse_1_1detail_1_1is__vector__impl_1_1is__vector_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4" prot="public">argparse::detail::is_vector_impl::is_vector&lt; std::vector&lt; Args... &gt; &gt;</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="99" column="1"/>
+  </compounddef>
+</doxygen>

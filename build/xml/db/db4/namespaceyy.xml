@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/db4/namespaceyy" kind="namespace" language="C++">
+    <compoundname>yy</compoundname>
+    <innerclass refid="de/d79/classyy_1_1position" prot="public">yy::position</innerclass>
+    <innerclass refid="dc/de8/classyy_1_1location" prot="public">yy::location</innerclass>
+    <innerclass refid="da/d00/classyy_1_1kivi__parser" prot="public">yy::kivi_parser</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="db/db4/namespaceyy_1a8ac36cf02d396bf94cd641d39e6c5069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">kp::symbol_type</ref></type>
+        <definition>yy::kivi_parser::symbol_type yy::yylex</definition>
+        <argsstring>(sa::parsing_context &amp;ctx)</argsstring>
+        <name>yylex</name>
+        <param>
+          <type><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">sa::parsing_context</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc" line="13" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc" bodystart="13" bodyend="264" declfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" declline="1621" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1ac7a69a333cce8cb17901f3b5443d44cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref> &amp;</type>
+        <definition>position&amp; yy::operator+=</definition>
+        <argsstring>(position &amp;res, position::counter_type width)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">position::counter_type</ref></type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Add <emphasis>width</emphasis> columns, in place. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="124" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1a0c115d2dbb46d45b8815a5f2cba16bb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref></type>
+        <definition>position yy::operator+</definition>
+        <argsstring>(position res, position::counter_type width)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref></type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">position::counter_type</ref></type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Add <emphasis>width</emphasis> columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="132" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1a68fe9f8fa8e8bfb56cb1c0ea55d07555" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref> &amp;</type>
+        <definition>position&amp; yy::operator-=</definition>
+        <argsstring>(position &amp;res, position::counter_type width)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">position::counter_type</ref></type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Subtract <emphasis>width</emphasis> columns, in place. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="139" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1ac5af74549aaf6491d8415ba87d906d1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref></type>
+        <definition>position yy::operator-</definition>
+        <argsstring>(position res, position::counter_type width)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref></type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">position::counter_type</ref></type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Subtract <emphasis>width</emphasis> columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="146" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1ac0f65a84b37cc3e7731a310eb240b952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename YYChar</type>
+          </param>
+        </templateparamlist>
+        <type>std::basic_ostream&lt; YYChar &gt; &amp;</type>
+        <definition>std::basic_ostream&lt;YYChar&gt;&amp; yy::operator&lt;&lt;</definition>
+        <argsstring>(std::basic_ostream&lt; YYChar &gt; &amp;ostr, const position &amp;pos)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::basic_ostream&lt; YYChar &gt; &amp;</type>
+          <declname>ostr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Intercept output stream redirection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ostr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination output stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a reference to the position to redirect </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="146" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="157" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1ac14111e26538c547c68b89899951b6b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref> &amp;</type>
+        <definition>location&amp; yy::operator+=</definition>
+        <argsstring>(location &amp;res, const location &amp;end)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Join two locations, in place. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="235" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="235" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1ad82fe89bde177a8060bad10aca431c79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref></type>
+        <definition>location yy::operator+</definition>
+        <argsstring>(location res, const location &amp;end)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref></type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Join two locations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="243" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1a00a24e38e907701711a3ba91dda8878c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref> &amp;</type>
+        <definition>location&amp; yy::operator+=</definition>
+        <argsstring>(location &amp;res, location::counter_type width)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">location::counter_type</ref></type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Add <emphasis>width</emphasis> columns to the end position, in place. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="250" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="250" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1afe82aff580cd53105cbd097135f1b717" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref></type>
+        <definition>location yy::operator+</definition>
+        <argsstring>(location res, location::counter_type width)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref></type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">location::counter_type</ref></type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Add <emphasis>width</emphasis> columns to the end position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="258" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1a8945c6d6c18cafe08bc626a1b15edf50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref> &amp;</type>
+        <definition>location&amp; yy::operator-=</definition>
+        <argsstring>(location &amp;res, location::counter_type width)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">location::counter_type</ref></type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Subtract <emphasis>width</emphasis> columns to the end position, in place. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="265" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1ae77f455fc4c4ba3746f87ca8040ca8f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref></type>
+        <definition>location yy::operator-</definition>
+        <argsstring>(location res, location::counter_type width)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref></type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">location::counter_type</ref></type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Subtract <emphasis>width</emphasis> columns to the end position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="272" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="db/db4/namespaceyy_1a0406f2358d6ba6b06648ff66f3508aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename YYChar</type>
+          </param>
+        </templateparamlist>
+        <type>std::basic_ostream&lt; YYChar &gt; &amp;</type>
+        <definition>std::basic_ostream&lt;YYChar&gt;&amp; yy::operator&lt;&lt;</definition>
+        <argsstring>(std::basic_ostream&lt; YYChar &gt; &amp;ostr, const location &amp;loc)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::basic_ostream&lt; YYChar &gt; &amp;</type>
+          <declname>ostr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref> &amp;</type>
+          <declname>loc</declname>
+        </param>
+        <briefdescription>
+<para>Intercept output stream redirection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ostr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination output stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a reference to the location to redirect</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Avoid duplicate information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="272" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="285" bodyend="299"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc" line="9" column="1"/>
+  </compounddef>
+</doxygen>

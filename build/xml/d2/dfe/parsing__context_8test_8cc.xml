@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/dfe/parsing__context_8test_8cc" kind="file" language="C++">
+    <compoundname>parsing_context.test.cc</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2/catch2.hpp</includes>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser/parser.tab.hh</includes>
+    <includes refid="d9/dd1/parsing__context_8hh" local="no">parser/parsing_context.hh</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>functional</label>
+      </node>
+      <node id="25">
+        <label>loguru/loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="21">
+        <label>variant</label>
+      </node>
+      <node id="8">
+        <label>cassert</label>
+      </node>
+      <node id="29">
+        <label>stdexcept</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="23">
+        <label>parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>map</label>
+      </node>
+      <node id="26">
+        <label>location.hh</label>
+        <link refid="d3/d46/location_8hh"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>exception</label>
+      </node>
+      <node id="10">
+        <label>ostream</label>
+      </node>
+      <node id="17">
+        <label>random</label>
+      </node>
+      <node id="20">
+        <label>syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>typeinfo</label>
+      </node>
+      <node id="22">
+        <label>optional</label>
+      </node>
+      <node id="18">
+        <label>parser/parser.tab.hh</label>
+        <link refid="dc/dee/parser_8tab_8hh"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="16">
+        <label>utility</label>
+      </node>
+      <node id="4">
+        <label>iosfwd</label>
+      </node>
+      <node id="28">
+        <label>cstdlib</label>
+      </node>
+      <node id="27">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="9">
+        <label>type_traits</label>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc</label>
+        <link refid="d2/dfe/parsing__context_8test_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>catch2/catch2.hpp</label>
+        <link refid="df/dbf/catch2_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d2/dfe/parsing__context_8test_8cc_1a743e93a25d8ce8b513e74ca768364f6b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string fname</definition>
+        <argsstring></argsstring>
+        <name>fname</name>
+        <initializer>= &quot;pseudo.kv&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" line="13" column="13" bodyfile="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <initializer>= &quot;gcd:{}&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" line="14" column="13" bodyfile="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref></type>
+        <definition>syntax_analyzer::parsing_context context</definition>
+        <argsstring>(code.c_str(), &amp;fname)</argsstring>
+        <name>context</name>
+        <param>
+          <type>code.</type>
+          <declname>c_str</declname>
+          <array>()</array>
+        </param>
+        <param>
+          <type>&amp;</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" line="15" column="34" declfile="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" declline="15" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dfe/parsing__context_8test_8cc_1af3c740f5047438f45cec0a9db5b68b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;Parsing context - common&quot;, &quot;[pc_common]&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;Parsing <ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref> - common&quot;</type>
+        </param>
+        <param>
+          <type>&quot;&quot;</type>
+          <array>[pc_common]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" line="17" column="1" bodyfile="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" bodystart="17" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dfe/parsing__context_8test_8cc_1a0058873336f7db409ad74eab2acabff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;Parsing context - identifier&quot;, &quot;[pc_ident]&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;Parsing <ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref> - identifier&quot;</type>
+        </param>
+        <param>
+          <type>&quot;&quot;</type>
+          <array>[pc_ident]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" line="41" column="1" bodyfile="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc" bodystart="41" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="df/dbf/catch2_8hpp" kindref="compound">catch2/catch2.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dc/dee/parser_8tab_8hh" kindref="compound">parser/parser.tab.hh</ref>&gt;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//yy::kivi_parser::syntax_error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d9/dd1/parsing__context_8hh" kindref="compound">parser/parsing_context.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::move;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a743e93a25d8ce8b513e74ca768364f6b" kindref="member">fname</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;pseudo.kv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;gcd:{}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="d2/dfe/parsing__context_8test_8cc_1a743e93a25d8ce8b513e74ca768364f6b" kindref="member">fname</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="d2/dfe/parsing__context_8test_8cc_1af3c740f5047438f45cec0a9db5b68b2e" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Parsing<sp/>context<sp/>-<sp/>common&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[pc_common]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Scope<sp/>enter<sp/>:<sp/>regular&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>curr_scopes<sp/>=<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1aa9c9d2238ddf322e66c7731168b889c8" kindref="member">scopes</ref>().size();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1acf6678dde52fe14a89d4794670e0c748" kindref="member">enter_scope</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(<ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1aa9c9d2238ddf322e66c7731168b889c8" kindref="member">scopes</ref>().size()<sp/>==<sp/>curr_scopes<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Scope<sp/>exit<sp/>:<sp/>regular&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1acb5f2dd6f4c362ebeb976f76aa80286c" kindref="member">scopes_mut</ref>().emplace_back();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>curr_scopes<sp/>=<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1aa9c9d2238ddf322e66c7731168b889c8" kindref="member">scopes</ref>().size();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1add95595c473fd83ff4fdb081cb692d7d" kindref="member">exit_scope</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(<ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1aa9c9d2238ddf322e66c7731168b889c8" kindref="member">scopes</ref>().size()<sp/>==<sp/>curr_scopes<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Scope<sp/>exit<sp/>_corner<sp/>case_<sp/>:<sp/>exit<sp/>from<sp/>0<sp/>scopes&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1acb5f2dd6f4c362ebeb976f76aa80286c" kindref="member">scopes_mut</ref>().clear();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ae3c33faa1d31a2bb0811dac74b994e3e" kindref="member">REQUIRE_THROWS</ref>(<ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1add95595c473fd83ff4fdb081cb692d7d" kindref="member">exit_scope</ref>());</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="d2/dfe/parsing__context_8test_8cc_1af3c740f5047438f45cec0a9db5b68b2e" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Parsing<sp/>context<sp/>-<sp/>identifier&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[pc_ident]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Define<sp/>identifier<sp/>:<sp/>regular&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ab0148f0dfca438f7aa01974e9c33216a" kindref="member">REQUIRE_NOTHROW</ref>(<ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a65d54eb7593ee9af0b23df4a317a9d56" kindref="member">define_parameter</ref>(</highlight><highlight class="stringliteral">&quot;foo&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(<ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1aa9c9d2238ddf322e66c7731168b889c8" kindref="member">scopes</ref>().back().name()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;foo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(<ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1aa9c9d2238ddf322e66c7731168b889c8" kindref="member">scopes</ref>().back().get_type()<sp/>==<sp/>sa::identifier::type::Parameter);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Define<sp/>identifier<sp/>_corner<sp/>case_<sp/>:<sp/>duplication&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ab0148f0dfca438f7aa01974e9c33216a" kindref="member">REQUIRE_NOTHROW</ref>(<ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a235277e494bb30ca3947b9ec3178503c" kindref="member">define_local</ref>(</highlight><highlight class="stringliteral">&quot;foo&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ae24a059e3c28ff3eea69be48282f5f81" kindref="member">REQUIRE_THROWS_AS</ref>(</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a235277e494bb30ca3947b9ec3178503c" kindref="member">define_local</ref>(</highlight><highlight class="stringliteral">&quot;foo&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error" kindref="compound">yy::kivi_parser::syntax_error</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>identifier<sp/>:<sp/>regular)&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ab0148f0dfca438f7aa01974e9c33216a" kindref="member">REQUIRE_NOTHROW</ref><sp/>(</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a235277e494bb30ca3947b9ec3178503c" kindref="member">define_local</ref>(</highlight><highlight class="stringliteral">&quot;regular_ident&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ab0148f0dfca438f7aa01974e9c33216a" kindref="member">REQUIRE_NOTHROW</ref>(</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a918cdca2ea1a9076669ec7b7df647e64" kindref="member">use_identifier</ref>(</highlight><highlight class="stringliteral">&quot;regular_ident&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Use<sp/>identifier<sp/>_corner<sp/>case_<sp/>:<sp/>illegal<sp/>case)&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ab0148f0dfca438f7aa01974e9c33216a" kindref="member">REQUIRE_NOTHROW</ref><sp/>(</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a235277e494bb30ca3947b9ec3178503c" kindref="member">define_local</ref>(</highlight><highlight class="stringliteral">&quot;haha&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ae24a059e3c28ff3eea69be48282f5f81" kindref="member">REQUIRE_THROWS_AS</ref><sp/>(</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a918cdca2ea1a9076669ec7b7df647e64" kindref="member">use_identifier</ref>(</highlight><highlight class="stringliteral">&quot;hahaha&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error" kindref="compound">yy::kivi_parser::syntax_error</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc"/>
+  </compounddef>
+</doxygen>

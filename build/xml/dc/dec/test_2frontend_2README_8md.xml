@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/dec/test_2frontend_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">###<sp/>Frontend<sp/>unit<sp/>test</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>directory<sp/>contains<sp/>unit-tests<sp/>for<sp/>the<sp/>frontend<sp/>part<sp/>of<sp/>the<sp/>compiler.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">----------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Contents**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`example.test.cc`<sp/>-<sp/>This<sp/>test<sp/>is<sp/>an<sp/>example<sp/>for<sp/>how<sp/>to<sp/>use<sp/>the<sp/>`Catch2`<sp/>library</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`config.test.cc`<sp/>-<sp/>This<sp/>tests<sp/>whether<sp/>the<sp/>`Catch2`<sp/>testing<sp/>library<sp/>was<sp/>actually<sp/>properly<sp/>connected<sp/>with<sp/>the<sp/>codebase.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`parsing_context.test.cc`<sp/>-<sp/>This<sp/>tests<sp/>whether<sp/>the<sp/>`parsing_context`<sp/>structure<sp/>used<sp/>during<sp/>the<sp/>syntactical<sp/>analysis<sp/>actually<sp/>acts<sp/>correctly</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/test/frontend/README.md"/>
+  </compounddef>
+</doxygen>

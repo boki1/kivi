@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/df6/namespacesyntax__analyzer" kind="namespace" language="C++">
+    <compoundname>syntax_analyzer</compoundname>
+    <innerclass refid="d2/df1/classsyntax__analyzer_1_1cannot__pop__out__of__empty__exception" prot="public">syntax_analyzer::cannot_pop_out_of_empty_exception</innerclass>
+    <innerclass refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" prot="public">syntax_analyzer::parsing_context</innerclass>
+    <innerclass refid="df/d98/classsyntax__analyzer_1_1syntactic__structure" prot="public">syntax_analyzer::syntactic_structure</innerclass>
+    <innerclass refid="d1/d9f/classsyntax__analyzer_1_1identifier" prot="public">syntax_analyzer::identifier</innerclass>
+    <innerclass refid="db/df3/classsyntax__analyzer_1_1expression" prot="public">syntax_analyzer::expression</innerclass>
+    <innerclass refid="d7/d16/classsyntax__analyzer_1_1function" prot="public">syntax_analyzer::function</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a1d4c1dff621569f3ff750a14d3e96b81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::number_literal</definition>
+        <argsstring>(int num)</argsstring>
+        <name>number_literal</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Construct a number literal expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="19" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="19" bodyend="22" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="20" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a6ee3dc0764d8a21cc27f1902a5a1cb30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::string_literal</definition>
+        <argsstring>(std::string &amp;&amp;str)</argsstring>
+        <name>string_literal</name>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Define a string literal expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="25" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="25" bodyend="28" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="28" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a1d881d7931a6966be2147e9e4c073b92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::identifier_expr</definition>
+        <argsstring>(identifier &amp;&amp;ident)</argsstring>
+        <name>identifier_expr</name>
+        <param>
+          <type><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &amp;&amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Define an identifier expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="31" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="31" bodyend="34" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="36" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a533a85533b9d2a8153e079761e35d4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::nop_expr</definition>
+        <argsstring>()</argsstring>
+        <name>nop_expr</name>
+        <briefdescription>
+<para>No operation expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="37" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="37" bodyend="40" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="43" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a78cb9dbcef41ae49f90453430aaec225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::negation_expr</definition>
+        <argsstring>(expression &amp;&amp;operand)</argsstring>
+        <name>negation_expr</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>operand</declname>
+        </param>
+        <briefdescription>
+<para>Negation expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operand to be negated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="43" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="43" bodyend="46" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="51" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a9ad6a484094a248f6ecd58dadfed6781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::addition_expr</definition>
+        <argsstring>(expression &amp;&amp;lhs, expression &amp;&amp;rhs)</argsstring>
+        <name>addition_expr</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Defines an addition operation expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="49" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="49" bodyend="52" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="60" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a7082e93e3a478dc5181fa85e1dc044df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::multiplication_expr</definition>
+        <argsstring>(expression &amp;&amp;lhs, expression &amp;&amp;rhs)</argsstring>
+        <name>multiplication_expr</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Defines an multiplication operation expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="55" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="55" bodyend="58" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="69" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a3ea046a3281d3216884f66d2a9a2ed82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::modular_division_expr</definition>
+        <argsstring>(expression &amp;&amp;lhs, expression &amp;&amp;rhs)</argsstring>
+        <name>modular_division_expr</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Defines an modular division operation expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="61" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="61" bodyend="64" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="78" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a65910b168b44811d9ec858eb947f17fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::division_expr</definition>
+        <argsstring>(expression &amp;&amp;lhs, expression &amp;&amp;rhs)</argsstring>
+        <name>division_expr</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Defines an division operation expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="67" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="67" bodyend="70" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="87" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a678818cf55653245ebda81825461d3b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::equality_expr</definition>
+        <argsstring>(expression &amp;&amp;lhs, expression &amp;&amp;rhs)</argsstring>
+        <name>equality_expr</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Defines an equality comparison operation expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="73" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="73" bodyend="76" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="96" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1ae1a82efed5e7647f5c6d8243a38c1478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::inequality_expr</definition>
+        <argsstring>(expression &amp;&amp;lhs, expression &amp;&amp;rhs)</argsstring>
+        <name>inequality_expr</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Defines an inequality comparison operation expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="79" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="79" bodyend="83" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="105" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a88c8eb005118819f7d76280a32a08024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::assignment_expr</definition>
+        <argsstring>(expression &amp;&amp;lhs, expression &amp;&amp;rhs)</argsstring>
+        <name>assignment_expr</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Defines an assignment operation expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand-side of the expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="86" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="86" bodyend="89" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="114" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a25e672e5808f12eb55b01e892b1022a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::function_call_expr</definition>
+        <argsstring>(std::string &amp;&amp;fun_name, expression &amp;&amp;parameter_list={})</argsstring>
+        <name>function_call_expr</name>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>fun_name</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>parameter_list</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Defines a function call expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expected (required); to be expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fun_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameter_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameters passed to the function as a separate expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="92" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="92" bodyend="102" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="124" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a7847e2850e81c45dffa4bb57a8c5b47c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::sequence_expr</definition>
+        <argsstring>(expression &amp;&amp;first)</argsstring>
+        <name>sequence_expr</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>first</declname>
+        </param>
+        <briefdescription>
+<para>Defines a sequence of expressions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current expression </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="105" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="105" bodyend="108" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="132" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a84fbe047931e8dc0b4e669c7e30c8376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool syntax_analyzer::operator==</definition>
+        <argsstring>(const identifier &amp;This, const identifier &amp;other)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &amp;</type>
+          <declname>This</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" line="148" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="148" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1ae83e90fa247c1be34a7dbc3ed2f05bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::if_stmt</definition>
+        <argsstring>(expression &amp;&amp;condition, expression &amp;&amp;than_body)</argsstring>
+        <name>if_stmt</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>than_body</declname>
+        </param>
+        <briefdescription>
+<para>Define an if-statement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>condition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The condition of the if-statement </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>than_body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body executed if the predicate is held </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="18" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="18" bodyend="21" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="141" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a717e25ba7c4fec313db67811b64ce0c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::while_stmt</definition>
+        <argsstring>(expression &amp;&amp;condition, expression &amp;&amp;loop_body)</argsstring>
+        <name>while_stmt</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>loop_body</declname>
+        </param>
+        <briefdescription>
+<para>Define a while-loop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>condition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The condition of the while-loop </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loop_body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body executed if the predicate is help </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="24" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="24" bodyend="27" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="150" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1aef31df3c52051f0a99af48ba79dbafe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::return_stmt</definition>
+        <argsstring>(expression &amp;&amp;retval)</argsstring>
+        <name>return_stmt</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>retval</declname>
+        </param>
+        <briefdescription>
+<para>Define a return statement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>retval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to be returned </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constructed statement </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="30" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="30" bodyend="33" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="158" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1af281f3ad5da076ef802ec0bfa6cc23e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::return_stmt</definition>
+        <argsstring>()</argsstring>
+        <name>return_stmt</name>
+        <briefdescription>
+<para>Define an additional <emphasis>implicit</emphasis> return statement. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Expression with &apos;return 0&apos; in it </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="36" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="36" bodyend="39" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="165" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a69bbfeec8bacaad18d3f8b67d0e76575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::compound_stmt</definition>
+        <argsstring>(std::vector&lt; expression &gt; body={})</argsstring>
+        <name>compound_stmt</name>
+        <param>
+          <type>std::vector&lt; <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &gt;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Define a compound statement without preset arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="42" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="42" bodyend="45" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="171" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="16" column="1"/>
+  </compounddef>
+</doxygen>

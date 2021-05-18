@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d7a/structCatch_1_1UseColour" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::UseColour</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d3/d7a/structCatch_1_1UseColour_1a6aa78da0c2de7539bb9e3757e204a3f1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>YesOrNo</name>
+        <enumvalue id="d3/d7a/structCatch_1_1UseColour_1a6aa78da0c2de7539bb9e3757e204a3f1a5c7fa9f5f5536187e8f47df35b892bb7" prot="public">
+          <name>Auto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d3/d7a/structCatch_1_1UseColour_1a6aa78da0c2de7539bb9e3757e204a3f1ad7bb64e0fe49ba51aafbd3e14f06e98d" prot="public">
+          <name>Yes</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d3/d7a/structCatch_1_1UseColour_1a6aa78da0c2de7539bb9e3757e204a3f1af80533ce38685131ea8d7a6360ce9e57" prot="public">
+          <name>No</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4491" column="20" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4491" bodyend="4495"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4491" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4491" bodyend="4495"/>
+    <listofallmembers>
+      <member refid="d3/d7a/structCatch_1_1UseColour_1a6aa78da0c2de7539bb9e3757e204a3f1a5c7fa9f5f5536187e8f47df35b892bb7" prot="public" virt="non-virtual"><scope>Catch::UseColour</scope><name>Auto</name></member>
+      <member refid="d3/d7a/structCatch_1_1UseColour_1a6aa78da0c2de7539bb9e3757e204a3f1af80533ce38685131ea8d7a6360ce9e57" prot="public" virt="non-virtual"><scope>Catch::UseColour</scope><name>No</name></member>
+      <member refid="d3/d7a/structCatch_1_1UseColour_1a6aa78da0c2de7539bb9e3757e204a3f1ad7bb64e0fe49ba51aafbd3e14f06e98d" prot="public" virt="non-virtual"><scope>Catch::UseColour</scope><name>Yes</name></member>
+      <member refid="d3/d7a/structCatch_1_1UseColour_1a6aa78da0c2de7539bb9e3757e204a3f1" prot="public" virt="non-virtual"><scope>Catch::UseColour</scope><name>YesOrNo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

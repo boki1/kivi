@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::Matchers::Vector::ContainsMatcher</compoundname>
+    <basecompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; std::vector&lt; T, AllocMatch &gt; &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename AllocComp</type>
+      </param>
+      <param>
+        <type>typename AllocMatch</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1a76f6a1d34cfe94e506fc44175fc2981d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; T, AllocComp &gt; const  &amp;</type>
+        <definition>std::vector&lt;T, AllocComp&gt; const&amp; Catch::Matchers::Vector::ContainsMatcher&lt; T, AllocComp, AllocMatch &gt;::m_comparator</definition>
+        <argsstring></argsstring>
+        <name>m_comparator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3652" column="31" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3652" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1a5cff10175edc91ed105b157493218ad8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Matchers::Vector::ContainsMatcher&lt; T, AllocComp, AllocMatch &gt;::ContainsMatcher</definition>
+        <argsstring>(std::vector&lt; T, AllocComp &gt; const &amp;comparator)</argsstring>
+        <name>ContainsMatcher</name>
+        <param>
+          <type>std::vector&lt; T, AllocComp &gt; const &amp;</type>
+          <declname>comparator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3628" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3628" bodyend="3628"/>
+      </memberdef>
+      <memberdef kind="function" id="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1a3104513b50a3da1659f82d69ac79057d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::Matchers::Vector::ContainsMatcher&lt; T, AllocComp, AllocMatch &gt;::match</definition>
+        <argsstring>(std::vector&lt; T, AllocMatch &gt; const &amp;v) const override</argsstring>
+        <name>match</name>
+        <param>
+          <type>std::vector&lt; T, AllocMatch &gt; const &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3630" column="18" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3630" bodyend="3647"/>
+      </memberdef>
+      <memberdef kind="function" id="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1aa8ba33f6de86d0198b77023e1808933b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::Vector::ContainsMatcher&lt; T, AllocComp, AllocMatch &gt;::describe</definition>
+        <argsstring>() const override</argsstring>
+        <name>describe</name>
+        <reimplements refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a91d3a907dbfcbb596077df24f6e11fe2">describe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3648" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3648" bodyend="3650"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::Matchers::Vector::ContainsMatcher&lt; T, AllocComp, AllocMatch &gt;</label>
+        <link refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; T &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; T &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Catch::Matchers::Vector::ContainsMatcher&lt; T, AllocComp, AllocMatch &gt;</label>
+        <link refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; T &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; T &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3626" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3626" bodyend="3653"/>
+    <listofallmembers>
+      <member refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1a5cff10175edc91ed105b157493218ad8" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>ContainsMatcher</name></member>
+      <member refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1aa8ba33f6de86d0198b77023e1808933b" prot="public" virt="virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>describe</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a951095c462657e7097a9a6dc4dde813f" prot="protected" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>m_cachedToString</name></member>
+      <member refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1a76f6a1d34cfe94e506fc44175fc2981d" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>m_comparator</name></member>
+      <member refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1a3104513b50a3da1659f82d69ac79057d" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>match</name></member>
+      <member refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod_1ae0920ff9e817acf08e1bb0cbcb044e30" prot="public" virt="pure-virtual" ambiguityscope="Catch::Matchers::Impl::MatcherBase::"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>match</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1ab65764dc245d85e2b268d3be870b650a" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>MatcherUntypedBase</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a985fd3c3ffcc9f2e8dc7a330130040b0" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>MatcherUntypedBase</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5bb94bf2ff5c7ef73b7c11eb173bdf3b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>operator!</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1aae4a9827601f6f26a52126e193d012de" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>operator&amp;&amp;</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a62668ccc47b64a9094dcb6413f9af80b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>operator=</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5f8542b8f1567a6f9c65d0a6da7b679b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>operator||</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a5982c7c80ca71dfe2298babadad7a453" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>toString</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a853be93ce33f71b5abede38081c79e9d" prot="protected" virt="virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>~MatcherUntypedBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

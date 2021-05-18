@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d2b/structCatch_1_1StringMaker_3_01float_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::StringMaker&lt; float &gt;</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d6/d2b/structCatch_1_1StringMaker_3_01float_01_4_1a54ebebe76a755dbe2dd8ad409c329378" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Catch::StringMaker&lt; float &gt;::precision</definition>
+        <argsstring></argsstring>
+        <name>precision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1784" column="20" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1784" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d6/d2b/structCatch_1_1StringMaker_3_01float_01_4_1a7ffacc6fa46a338200f3fbb2ee078648" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Catch::StringMaker&lt; float &gt;::convert</definition>
+        <argsstring>(float value)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1783" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1782" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1782" bodyend="1785"/>
+    <listofallmembers>
+      <member refid="d6/d2b/structCatch_1_1StringMaker_3_01float_01_4_1a7ffacc6fa46a338200f3fbb2ee078648" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; float &gt;</scope><name>convert</name></member>
+      <member refid="d6/d2b/structCatch_1_1StringMaker_3_01float_01_4_1a54ebebe76a755dbe2dd8ad409c329378" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; float &gt;</scope><name>precision</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

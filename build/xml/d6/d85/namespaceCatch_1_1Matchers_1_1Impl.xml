@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d85/namespaceCatch_1_1Matchers_1_1Impl" kind="namespace" language="C++">
+    <compoundname>Catch::Matchers::Impl</compoundname>
+    <innerclass refid="d8/d68/structCatch_1_1Matchers_1_1Impl_1_1MatchAllOf" prot="public">Catch::Matchers::Impl::MatchAllOf</innerclass>
+    <innerclass refid="dc/d21/structCatch_1_1Matchers_1_1Impl_1_1MatchAnyOf" prot="public">Catch::Matchers::Impl::MatchAnyOf</innerclass>
+    <innerclass refid="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf" prot="public">Catch::Matchers::Impl::MatchNotOf</innerclass>
+    <innerclass refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase" prot="public">Catch::Matchers::Impl::MatcherUntypedBase</innerclass>
+    <innerclass refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod" prot="public">Catch::Matchers::Impl::MatcherMethod</innerclass>
+    <innerclass refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public">Catch::Matchers::Impl::MatcherBase</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3235" column="5"/>
+  </compounddef>
+</doxygen>

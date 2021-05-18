@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kind="struct" language="C++" prot="public">
+    <compoundname>yy::kivi_parser::symbol_type</compoundname>
+    <basecompoundref refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol" prot="public" virt="non-virtual">yy::kivi_parser::basic_symbol&lt; by_kind &gt;</basecompoundref>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser.tab.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1ae3d81aa062957d39b0757eeab1104546" prot="public" static="no">
+        <type><ref refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol" kindref="compound">basic_symbol</ref>&lt; <ref refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind" kindref="compound">by_kind</ref> &gt;</type>
+        <definition>typedef basic_symbol&lt;by_kind&gt; yy::kivi_parser::symbol_type::super_type</definition>
+        <argsstring></argsstring>
+        <name>super_type</name>
+        <briefdescription>
+<para>Superclass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="801" column="28" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1a0faeff387e0df8dfbf1942523e6e70e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::symbol_type::symbol_type</definition>
+        <argsstring>()</argsstring>
+        <name>symbol_type</name>
+        <briefdescription>
+<para>Empty symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="804" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="804" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1a8f99527f91f784a8e75dd037ce6b23b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::symbol_type::symbol_type</definition>
+        <argsstring>(int tok, const location_type &amp;l)</argsstring>
+        <name>symbol_type</name>
+        <param>
+          <type>int</type>
+          <declname>tok</declname>
+        </param>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for valueless symbols, and symbols from each type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="814" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="814" bodyend="818"/>
+      </memberdef>
+      <memberdef kind="function" id="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1a496bae07475ac07e80bf750d8d8a8ac5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::symbol_type::symbol_type</definition>
+        <argsstring>(int tok, const int &amp;v, const location_type &amp;l)</argsstring>
+        <name>symbol_type</name>
+        <param>
+          <type>int</type>
+          <declname>tok</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="827" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="827" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1a077d2207509f26e1252fe126238175d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::symbol_type::symbol_type</definition>
+        <argsstring>(int tok, const std::string &amp;v, const location_type &amp;l)</argsstring>
+        <name>symbol_type</name>
+        <param>
+          <type>int</type>
+          <declname>tok</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="840" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="840" bodyend="844"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;External&quot; symbols: returned by the scanner. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>yy::kivi_parser::symbol_type</label>
+        <link refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>yy::kivi_parser::basic_symbol&lt; by_kind &gt;</label>
+        <link refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>yy::kivi_parser::by_kind</label>
+        <link refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>yy::kivi_parser::symbol_type</label>
+        <link refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>yy::kivi_parser::basic_symbol&lt; by_kind &gt;</label>
+        <link refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>yy::kivi_parser::by_kind</label>
+        <link refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="798" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="799" bodyend="846"/>
+    <listofallmembers>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a0442c999a61aee88738d54b585f7b380" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a25e09f67a628a1af7f2a2f9a717f9ace" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1ac39e576c94ece995ff0d2a7c737f27dc" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a536e1062624bc094fe532ce3c0eb1861" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a5140333438c0e8111ec84da566cc6ef9" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a9b565251d4bc6c75c20165a278279c2c" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a097b716664c15e43a5b238fa9cf6a7d6" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>by_kind</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a9b3ebbfe61851931d93d471021f724e3" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>by_kind</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a8dbfda974b2e20eed9e96241cb5cb4c1" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>by_kind</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a5cee56ff2f07ea833dc6593949b7c2c4" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>clear</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a03f059c85335d94e850817d09e2b94c1" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>empty</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a7383e716e731425c04ee63b40a7089be" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>kind</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1ac9d092be37e3857ffcd38b973fbc58a1" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>kind_</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a94f6ae5c71aecb78a5cb0ccabd308cfe" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>kind_type</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a24dc4fc79410441d81e674a5c1c8696c" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>location</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1adaf50fdfad1885d47d11d85a19f09913" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>move</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1aca7a7924560dc34edea02f002489d7f1" prot="public" virt="non-virtual" ambiguityscope="yy::kivi_parser::by_kind::"><scope>yy::kivi_parser::symbol_type</scope><name>move</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1af4f949f86ae0faba836eeae416ce6ee7" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>name</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a35547a415ff83519cfab9f3bd01d99da" prot="private" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>operator=</name></member>
+      <member refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1ae3d81aa062957d39b0757eeab1104546" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>super_type</name></member>
+      <member refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1a0faeff387e0df8dfbf1942523e6e70e7" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>symbol_type</name></member>
+      <member refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1a8f99527f91f784a8e75dd037ce6b23b0" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>symbol_type</name></member>
+      <member refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1a496bae07475ac07e80bf750d8d8a8ac5" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>symbol_type</name></member>
+      <member refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type_1a077d2207509f26e1252fe126238175d1" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>symbol_type</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1ab74bee2e4888d59c8d1b8f0c223eb383" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>type_get</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a71ab24a36122aed032f2bd825eb40949" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>value</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a35666ac7a0360da2df2da73cf21fd020" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_type</scope><name>~basic_symbol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

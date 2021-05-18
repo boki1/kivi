@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/dee/structloguru_1_1Message" kind="struct" language="C++" prot="public">
+    <compoundname>loguru::Message</compoundname>
+    <includes refid="df/dec/loguru_8hpp" local="no">loguru.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1a6c7db321cf6f149180d210a6ca197136" prot="public" static="no" mutable="no">
+        <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref></type>
+        <definition>Verbosity loguru::Message::verbosity</definition>
+        <argsstring></argsstring>
+        <name>verbosity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="357" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1a4e0b82a977a3a7ce4d4c812b0523f0b7" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::Message::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="358" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1a7a2f455ae8d4584ec5c0972bd7e29176" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned loguru::Message::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="359" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1a9bf71a52f140adc7625ff3024f5a15fc" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::Message::preamble</definition>
+        <argsstring></argsstring>
+        <name>preamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="360" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1aa9e01a5de257663fdf80925479f0529d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::Message::indentation</definition>
+        <argsstring></argsstring>
+        <name>indentation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="361" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1afd461d2d71e2df2289a6119571eb233c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::Message::prefix</definition>
+        <argsstring></argsstring>
+        <name>prefix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="362" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1a23ad5394fd8af40df9adb888fec5f477" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::Message::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="363" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="353" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="354" bodyend="364"/>
+    <listofallmembers>
+      <member refid="d6/dee/structloguru_1_1Message_1a4e0b82a977a3a7ce4d4c812b0523f0b7" prot="public" virt="non-virtual"><scope>loguru::Message</scope><name>filename</name></member>
+      <member refid="d6/dee/structloguru_1_1Message_1aa9e01a5de257663fdf80925479f0529d" prot="public" virt="non-virtual"><scope>loguru::Message</scope><name>indentation</name></member>
+      <member refid="d6/dee/structloguru_1_1Message_1a7a2f455ae8d4584ec5c0972bd7e29176" prot="public" virt="non-virtual"><scope>loguru::Message</scope><name>line</name></member>
+      <member refid="d6/dee/structloguru_1_1Message_1a23ad5394fd8af40df9adb888fec5f477" prot="public" virt="non-virtual"><scope>loguru::Message</scope><name>message</name></member>
+      <member refid="d6/dee/structloguru_1_1Message_1a9bf71a52f140adc7625ff3024f5a15fc" prot="public" virt="non-virtual"><scope>loguru::Message</scope><name>preamble</name></member>
+      <member refid="d6/dee/structloguru_1_1Message_1afd461d2d71e2df2289a6119571eb233c" prot="public" virt="non-virtual"><scope>loguru::Message</scope><name>prefix</name></member>
+      <member refid="d6/dee/structloguru_1_1Message_1a6c7db321cf6f149180d210a6ca197136" prot="public" virt="non-virtual"><scope>loguru::Message</scope><name>verbosity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

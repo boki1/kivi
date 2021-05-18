@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d45/expression_8test_8cc" kind="file" language="C++">
+    <compoundname>expression.test.cc</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2/catch2.hpp</includes>
+    <includes refid="d9/d1c/syntax_8hh" local="no">parser/syntax.hh</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="19">
+        <label>variant</label>
+      </node>
+      <node id="8">
+        <label>cassert</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>exception</label>
+      </node>
+      <node id="10">
+        <label>ostream</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/test/frontend/expression.test.cc</label>
+        <link refid="db/d45/expression_8test_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>random</label>
+      </node>
+      <node id="18">
+        <label>parser/syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>optional</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="16">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>iosfwd</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="9">
+        <label>type_traits</label>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="2">
+        <label>catch2/catch2.hpp</label>
+        <link refid="df/dbf/catch2_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="db/d45/expression_8test_8cc_1aaba9649cd00a5afaf63e267de2cd46bf" prot="public" static="no">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">expression::type</ref></type>
+        <definition>using et =  expression::type</definition>
+        <argsstring></argsstring>
+        <name>et</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/expression.test.cc" line="13" column="1" bodyfile="/home/boki/.tmp/kivi/test/frontend/expression.test.cc" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="db/d45/expression_8test_8cc_1a0c0c3dc8e57a6aed888d5c4ed4ca90c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;Expression class&quot;, &quot;[expression]&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;Expression class&quot;</type>
+        </param>
+        <param>
+          <type>&quot;&quot;</type>
+          <array>[expression]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/expression.test.cc" line="15" column="1" bodyfile="/home/boki/.tmp/kivi/test/frontend/expression.test.cc" bodystart="15" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tests the expression class used by the parser. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="df/dbf/catch2_8hpp" kindref="compound">catch2/catch2.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d9/d1c/syntax_8hh" kindref="compound">parser/syntax.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::make_shared;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::move;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">et</ref><sp/>=<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">expression::type</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="db/d45/expression_8test_8cc_1a0c0c3dc8e57a6aed888d5c4ed4ca90c5" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Expression<sp/>class&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[expression]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;operator==<sp/>:<sp/>regular&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref><sp/>expr1{<sp/>et::Addition,<sp/>{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(1),<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(2)<sp/>}};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref><sp/>expr2{<sp/>expr1<sp/>};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(expr1</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">==<sp/>expr2);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;operator==<sp/>:<sp/>regular<sp/>peculiar&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>expr1<sp/>&lt;=&gt;<sp/>if<sp/>1:<sp/>return<sp/>1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref><sp/>expr1<sp/>=<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a786887572f6ef1c20f2d8177cb2f1639" kindref="member">expression::type::If</ref>,<sp/>{<sp/>move(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(1))),<sp/>move(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(et::Return,<sp/>{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(1)<sp/>}))<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref><sp/>expr2{<sp/>expr1<sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(expr1</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">==<sp/>expr2);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;operator==<sp/>:<sp/>negative<sp/>peculiar&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>expr1<sp/>&lt;=&gt;<sp/>if<sp/>1:<sp/>return<sp/>1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref><sp/>expr1<sp/>=<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a786887572f6ef1c20f2d8177cb2f1639" kindref="member">expression::type::If</ref>,<sp/>{<sp/>move(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(1))),<sp/>move(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(et::Return,<sp/>{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(1)<sp/>}))<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>expr2<sp/>&lt;=&gt;<sp/>if<sp/>1:<sp/>return<sp/>3;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref><sp/>expr2<sp/>=<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a786887572f6ef1c20f2d8177cb2f1639" kindref="member">expression::type::If</ref>,<sp/>{<sp/>move(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(1))),<sp/>move(<ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(et::Return,<sp/>{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref>(5)<sp/>}))<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(expr1</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">!=<sp/>expr2);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/test/frontend/expression.test.cc"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d18/namespaceargparse" kind="namespace" language="C++">
+    <compoundname>argparse</compoundname>
+    <innerclass refid="d0/dbb/classargparse_1_1ArgumentParser" prot="public">argparse::ArgumentParser</innerclass>
+    <innernamespace refid="d1/da8/namespaceargparse_1_1detail">argparse::detail</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d6/d18/namespaceargparse_1a7b7be8810b8db22c35769c2a9048df2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; argparse::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const ArgumentParser::Result &amp;r)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d3/dc0/classargparse_1_1ArgumentParser_1_1Result" kindref="compound">ArgumentParser::Result</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="551" column="1" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="551" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d18/namespaceargparse_1a225e9a97f89239969a3b22c24c21d309" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string argparse::ArgumentParser::Argument::get&lt; std::string &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>ArgumentParser::Argument::get&lt; std::string &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="556" column="8" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="556" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d18/namespaceargparse_1a3baa921e8b97a043092fb77b13973034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; argparse::ArgumentParser::Argument::get&lt; std::vector&lt; std::string &gt; &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>ArgumentParser::Argument::get&lt; std::vector&lt; std::string &gt; &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="556" column="8" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="561" bodyend="563"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>License: Apache 2.0 with LLVM Exception or GPL v3</para>
+<para>Author: Jesse Laning </para>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="24" column="1"/>
+  </compounddef>
+</doxygen>

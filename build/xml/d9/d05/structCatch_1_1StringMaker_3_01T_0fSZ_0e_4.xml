@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d05/structCatch_1_1StringMaker_3_01T_0fSZ_0e_4" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::StringMaker&lt; T[SZ]&gt;</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>SZ</declname>
+        <defname>SZ</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/d05/structCatch_1_1StringMaker_3_01T_0fSZ_0e_4_1a3698cea2c24d8649ec9ecb5fa679eeb7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Catch::StringMaker&lt; T[SZ]&gt;::convert</definition>
+        <argsstring>(T const(&amp;arr)[SZ])</argsstring>
+        <name>convert</name>
+        <param>
+          <type>T const(&amp;)</type>
+          <declname>arr</declname>
+          <array>[SZ]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2046" column="28" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2046" bodyend="2048"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2045" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2045" bodyend="2049"/>
+    <listofallmembers>
+      <member refid="d9/d05/structCatch_1_1StringMaker_3_01T_0fSZ_0e_4_1a3698cea2c24d8649ec9ecb5fa679eeb7" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; T[SZ]&gt;</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

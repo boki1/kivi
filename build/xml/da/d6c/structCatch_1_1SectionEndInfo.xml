@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d6c/structCatch_1_1SectionEndInfo" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::SectionEndInfo</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/d6c/structCatch_1_1SectionEndInfo_1a2d44793392cb83735d086d726822abe9" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/d7e/structCatch_1_1SectionInfo" kindref="compound">SectionInfo</ref></type>
+        <definition>SectionInfo Catch::SectionEndInfo::sectionInfo</definition>
+        <argsstring></argsstring>
+        <name>sectionInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2875" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6c/structCatch_1_1SectionEndInfo_1ae70b154cbc05b5dd2901d97f89303d8c" prot="public" static="no" mutable="no">
+        <type><ref refid="de/db0/structCatch_1_1Counts" kindref="compound">Counts</ref></type>
+        <definition>Counts Catch::SectionEndInfo::prevAssertions</definition>
+        <argsstring></argsstring>
+        <name>prevAssertions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2876" column="16" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2876" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6c/structCatch_1_1SectionEndInfo_1a7c262f2dab9cff166b8eca620c47eea5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Catch::SectionEndInfo::durationInSeconds</definition>
+        <argsstring></argsstring>
+        <name>durationInSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2877" column="16" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2877" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Catch::SourceLineInfo</label>
+        <link refid="dc/d2b/structCatch_1_1SourceLineInfo"/>
+      </node>
+      <node id="1">
+        <label>Catch::SectionEndInfo</label>
+        <link refid="da/d6c/structCatch_1_1SectionEndInfo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sectionInfo</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>prevAssertions</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Catch::Counts</label>
+        <link refid="de/db0/structCatch_1_1Counts"/>
+      </node>
+      <node id="2">
+        <label>Catch::SectionInfo</label>
+        <link refid="d4/d7e/structCatch_1_1SectionInfo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lineInfo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2874" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2874" bodyend="2878"/>
+    <listofallmembers>
+      <member refid="da/d6c/structCatch_1_1SectionEndInfo_1a7c262f2dab9cff166b8eca620c47eea5" prot="public" virt="non-virtual"><scope>Catch::SectionEndInfo</scope><name>durationInSeconds</name></member>
+      <member refid="da/d6c/structCatch_1_1SectionEndInfo_1ae70b154cbc05b5dd2901d97f89303d8c" prot="public" virt="non-virtual"><scope>Catch::SectionEndInfo</scope><name>prevAssertions</name></member>
+      <member refid="da/d6c/structCatch_1_1SectionEndInfo_1a2d44793392cb83735d086d726822abe9" prot="public" virt="non-virtual"><scope>Catch::SectionEndInfo</scope><name>sectionInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

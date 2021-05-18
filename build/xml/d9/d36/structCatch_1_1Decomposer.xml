@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d36/structCatch_1_1Decomposer" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::Decomposer</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d36/structCatch_1_1Decomposer_1a4b1e5e844c20e5a90e3d759d216674cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::Decomposer::operator&lt;=</definition>
+        <argsstring>(T const &amp;lhs) -&gt; ExprLhs&lt; T const &amp; &gt;</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2414" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2414" bodyend="2416"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d36/structCatch_1_1Decomposer_1aac129b94903ae1339d5709049d83613b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::Decomposer::operator&lt;=</definition>
+        <argsstring>(bool value) -&gt; ExprLhs&lt; bool &gt;</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2418" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2418" bodyend="2420"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2412" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2412" bodyend="2421"/>
+    <listofallmembers>
+      <member refid="d9/d36/structCatch_1_1Decomposer_1a4b1e5e844c20e5a90e3d759d216674cd" prot="public" virt="non-virtual"><scope>Catch::Decomposer</scope><name>operator&lt;=</name></member>
+      <member refid="d9/d36/structCatch_1_1Decomposer_1aac129b94903ae1339d5709049d83613b" prot="public" virt="non-virtual"><scope>Catch::Decomposer</scope><name>operator&lt;=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

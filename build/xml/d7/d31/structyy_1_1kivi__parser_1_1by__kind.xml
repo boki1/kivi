@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d31/structyy_1_1kivi__parser_1_1by__kind" kind="struct" language="C++" prot="public">
+    <compoundname>yy::kivi_parser::by_kind</compoundname>
+    <derivedcompoundref refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol" prot="public" virt="non-virtual">yy::kivi_parser::basic_symbol&lt; by_kind &gt;</derivedcompoundref>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser.tab.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a94f6ae5c71aecb78a5cb0ccabd308cfe" prot="public" static="no">
+        <type><ref refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3" kindref="member">token_kind_type</ref></type>
+        <definition>typedef token_kind_type yy::kivi_parser::by_kind::kind_type</definition>
+        <argsstring></argsstring>
+        <name>kind_type</name>
+        <briefdescription>
+<para>The symbol kind as needed by the constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="771" column="31" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="771" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1ac9d092be37e3857ffcd38b973fbc58a1" prot="public" static="no" mutable="no">
+        <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+        <definition>symbol_kind_type yy::kivi_parser::by_kind::kind_</definition>
+        <argsstring></argsstring>
+        <name>kind_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The symbol kind. <emphasis>S_YYEMPTY</emphasis> when empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="791" column="24" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="791" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a097b716664c15e43a5b238fa9cf6a7d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::by_kind::by_kind</definition>
+        <argsstring>()</argsstring>
+        <name>by_kind</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="760" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1559" bodyend="1561"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a9b3ebbfe61851931d93d471021f724e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::by_kind::by_kind</definition>
+        <argsstring>(const by_kind &amp;that)</argsstring>
+        <name>by_kind</name>
+        <param>
+          <type>const <ref refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind" kindref="compound">by_kind</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="768" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1573" bodyend="1575"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a8dbfda974b2e20eed9e96241cb5cb4c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::by_kind::by_kind</definition>
+        <argsstring>(kind_type t)</argsstring>
+        <name>by_kind</name>
+        <param>
+          <type><ref refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3" kindref="member">kind_type</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from (external) token numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="774" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1578" bodyend="1580"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a6d19a882d99beca59f5c99eac5745c1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::kivi_parser::by_kind::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Record that this symbol is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="777" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1584" bodyend="1587"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1aca7a7924560dc34edea02f002489d7f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::kivi_parser::by_kind::move</definition>
+        <argsstring>(by_kind &amp;that)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind" kindref="compound">by_kind</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Steal the symbol kind from <emphasis>that</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="780" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1591" bodyend="1595"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a7383e716e731425c04ee63b40a7089be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+        <definition>kivi_parser::symbol_kind_type yy::kivi_parser::by_kind::kind</definition>
+        <argsstring>() const YY_NOEXCEPT</argsstring>
+        <name>kind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The (internal) type number (corresponding to <emphasis>type</emphasis>). <emphasis>empty</emphasis> when empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="784" column="24" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1599" bodyend="1602"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1add1543fb32618037ed9f0aebddf02cab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+        <definition>kivi_parser::symbol_kind_type yy::kivi_parser::by_kind::type_get</definition>
+        <argsstring>() const YY_NOEXCEPT</argsstring>
+        <name>type_get</name>
+        <briefdescription>
+<para>Backward compatibility (Bison 3.6). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="787" column="24" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1606" bodyend="1609"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Type access provider for token (enum) based symbols. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>yy::kivi_parser::symbol_type</label>
+        <link refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>yy::kivi_parser::basic_symbol&lt; by_kind &gt;</label>
+        <link refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>yy::kivi_parser::by_kind</label>
+        <link refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="757" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="758" bodyend="792"/>
+    <listofallmembers>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a097b716664c15e43a5b238fa9cf6a7d6" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_kind</scope><name>by_kind</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a9b3ebbfe61851931d93d471021f724e3" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_kind</scope><name>by_kind</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a8dbfda974b2e20eed9e96241cb5cb4c1" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_kind</scope><name>by_kind</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a6d19a882d99beca59f5c99eac5745c1e" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_kind</scope><name>clear</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a7383e716e731425c04ee63b40a7089be" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_kind</scope><name>kind</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1ac9d092be37e3857ffcd38b973fbc58a1" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_kind</scope><name>kind_</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1a94f6ae5c71aecb78a5cb0ccabd308cfe" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_kind</scope><name>kind_type</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1aca7a7924560dc34edea02f002489d7f1" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_kind</scope><name>move</name></member>
+      <member refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind_1add1543fb32618037ed9f0aebddf02cab" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_kind</scope><name>type_get</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

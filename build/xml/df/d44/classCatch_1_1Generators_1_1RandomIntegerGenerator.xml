@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>Catch::Generators::RandomIntegerGenerator</compoundname>
+    <basecompoundref refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator" prot="public" virt="non-virtual">Catch::Generators::IGenerator&lt; Integer &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Integer</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1af561ef07b93877d15a9af5e5fe19ea13" prot="private" static="no" mutable="no">
+        <type><ref refid="de/d68/classCatch_1_1SimplePcg32" kindref="compound">Catch::SimplePcg32</ref> &amp;</type>
+        <definition>Catch::SimplePcg32&amp; Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;::m_rng</definition>
+        <argsstring></argsstring>
+        <name>m_rng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4619" column="24" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1a0f9a8e409e291c332ebba1667cdc90fe" prot="private" static="no" mutable="no">
+        <type>std::uniform_int_distribution&lt; Integer &gt;</type>
+        <definition>std::uniform_int_distribution&lt;Integer&gt; Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;::m_dist</definition>
+        <argsstring></argsstring>
+        <name>m_dist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4620" column="35" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1a1b811ebf04416b6b822ce153b040f020" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;::m_current_number</definition>
+        <argsstring></argsstring>
+        <name>m_current_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4621" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4621" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1a886d16c899ad70781b83a0e8f9d2cf96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;::RandomIntegerGenerator</definition>
+        <argsstring>(Integer a, Integer b)</argsstring>
+        <name>RandomIntegerGenerator</name>
+        <param>
+          <type>Integer</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4624" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4624" bodyend="4628"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1aafbdf9028762f5e8f8ca9c317d686fca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>Integer const  &amp;</type>
+        <definition>Integer const&amp; Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;::get</definition>
+        <argsstring>() const override</argsstring>
+        <name>get</name>
+        <reimplements refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a525d381fc9249a885b075a0632a8579a">get</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4630" column="19" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4630" bodyend="4632"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1aaa3db70fbdfa3e8dcb61fb5592eba81f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;::next</definition>
+        <argsstring>() override</argsstring>
+        <name>next</name>
+        <reimplements refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1aeed3c0cd6233c5f553549e453b8d6638">next</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4633" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4633" bodyend="4636"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Catch::Generators::IGenerator&lt; Integer &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</label>
+        <link refid="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Catch::Generators::IGenerator&lt; Integer &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::Generators::RandomIntegerGenerator&lt; Integer &gt;</label>
+        <link refid="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_rng</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::SimplePcg32</label>
+        <link refid="de/d68/classCatch_1_1SimplePcg32"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4618" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4618" bodyend="4637"/>
+    <listofallmembers>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a00ff0179d739c3016756b6cf56fabbad" prot="public" virt="non-virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>GeneratorUntypedBase</name></member>
+      <member refid="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1aafbdf9028762f5e8f8ca9c317d686fca" prot="public" virt="virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>get</name></member>
+      <member refid="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1a1b811ebf04416b6b822ce153b040f020" prot="private" virt="non-virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>m_current_number</name></member>
+      <member refid="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1a0f9a8e409e291c332ebba1667cdc90fe" prot="private" virt="non-virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>m_dist</name></member>
+      <member refid="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1af561ef07b93877d15a9af5e5fe19ea13" prot="private" virt="non-virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>m_rng</name></member>
+      <member refid="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1aaa3db70fbdfa3e8dcb61fb5592eba81f" prot="public" virt="virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>next</name></member>
+      <member refid="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1a886d16c899ad70781b83a0e8f9d2cf96" prot="public" virt="non-virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>RandomIntegerGenerator</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a1f8677875fe0ff31f39c60d45504b9a5" prot="public" virt="non-virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>type</name></member>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a6f05f8099fdc5744a7aff68aa8c09c7f" prot="public" virt="virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>~GeneratorUntypedBase</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1afe5b6eecbbd735e69748d68574611747" prot="public" virt="virtual"><scope>Catch::Generators::RandomIntegerGenerator</scope><name>~IGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

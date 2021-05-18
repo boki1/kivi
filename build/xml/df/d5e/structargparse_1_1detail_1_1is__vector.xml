@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d5e/structargparse_1_1detail_1_1is__vector" kind="struct" language="C++" prot="public">
+    <compoundname>argparse::detail::is_vector</compoundname>
+    <includes refid="de/d36/argparse_8h" local="no">argparse.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="df/d5e/structargparse_1_1detail_1_1is__vector_1aff82776fc6740c9a0112403b5caa9867" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool const</type>
+        <definition>constexpr bool const argparse::detail::is_vector&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>=
+      <ref refid="dc/ddd/structargparse_1_1detail_1_1is__vector__impl_1_1is__vector" kindref="compound">is_vector_impl::is_vector</ref>&lt;typename std::decay&lt;T&gt;::type&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="110" column="31" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="109" column="1" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="109" bodyend="112"/>
+    <listofallmembers>
+      <member refid="df/d5e/structargparse_1_1detail_1_1is__vector_1aff82776fc6740c9a0112403b5caa9867" prot="public" virt="non-virtual"><scope>argparse::detail::is_vector</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

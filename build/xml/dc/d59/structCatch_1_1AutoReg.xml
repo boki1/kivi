@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/d59/structCatch_1_1AutoReg" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::AutoReg</compoundname>
+    <basecompoundref refid="dc/d1c/classCatch_1_1NonCopyable" prot="public" virt="non-virtual">Catch::NonCopyable</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d59/structCatch_1_1AutoReg_1a7eba02fb9d80b9896bf5a6517369af28" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::AutoReg::AutoReg</definition>
+        <argsstring>(ITestInvoker *invoker, SourceLineInfo const &amp;lineInfo, StringRef const &amp;classOrMethod, NameAndTags const &amp;nameAndTags) noexcept</argsstring>
+        <name>AutoReg</name>
+        <param>
+          <type><ref refid="d2/dac/structCatch_1_1ITestInvoker" kindref="compound">ITestInvoker</ref> *</type>
+          <declname>invoker</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d2b/structCatch_1_1SourceLineInfo" kindref="compound">SourceLineInfo</ref> const &amp;</type>
+          <declname>lineInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>classOrMethod</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d73/structCatch_1_1NameAndTags" kindref="compound">NameAndTags</ref> const &amp;</type>
+          <declname>nameAndTags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="985" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d59/structCatch_1_1AutoReg_1a3cdb53f1e5ff115310f3372bebe198f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::AutoReg::~AutoReg</definition>
+        <argsstring>()</argsstring>
+        <name>~AutoReg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="986" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Catch::NonCopyable</label>
+        <link refid="dc/d1c/classCatch_1_1NonCopyable"/>
+      </node>
+      <node id="1">
+        <label>Catch::AutoReg</label>
+        <link refid="dc/d59/structCatch_1_1AutoReg"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Catch::NonCopyable</label>
+        <link refid="dc/d1c/classCatch_1_1NonCopyable"/>
+      </node>
+      <node id="1">
+        <label>Catch::AutoReg</label>
+        <link refid="dc/d59/structCatch_1_1AutoReg"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="984" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="984" bodyend="987"/>
+    <listofallmembers>
+      <member refid="dc/d59/structCatch_1_1AutoReg_1a7eba02fb9d80b9896bf5a6517369af28" prot="public" virt="non-virtual"><scope>Catch::AutoReg</scope><name>AutoReg</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a74cf3e4aa051c284941e39b436b2f693" prot="private" virt="non-virtual"><scope>Catch::AutoReg</scope><name>NonCopyable</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a09d1d8775db8c495fa40c285b034faa3" prot="private" virt="non-virtual"><scope>Catch::AutoReg</scope><name>NonCopyable</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a4b492dd5753f9952350fb64dc6cb9fe2" prot="protected" virt="non-virtual"><scope>Catch::AutoReg</scope><name>NonCopyable</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a958b5f57d45fdd6f418bec8b46a629ab" prot="private" virt="non-virtual"><scope>Catch::AutoReg</scope><name>operator=</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a317697b6d3c4cda093666ce61d3a1e31" prot="private" virt="non-virtual"><scope>Catch::AutoReg</scope><name>operator=</name></member>
+      <member refid="dc/d59/structCatch_1_1AutoReg_1a3cdb53f1e5ff115310f3372bebe198f1" prot="public" virt="non-virtual"><scope>Catch::AutoReg</scope><name>~AutoReg</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a81254677280fef337eb4a676e91e3293" prot="protected" virt="virtual"><scope>Catch::AutoReg</scope><name>~NonCopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

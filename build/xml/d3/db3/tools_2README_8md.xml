@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/db3/tools_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">###<sp/>Tools</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Here<sp/>are<sp/>put<sp/>some<sp/>tools<sp/>used<sp/>for<sp/>building,<sp/>running<sp/>and<sp/>testing<sp/>the<sp/>project.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**NB:**<sp/>All<sp/>of<sp/>them<sp/>_have<sp/>to_<sp/>be<sp/>used<sp/>from<sp/>the<sp/>root<sp/>(e.g.<sp/>`./tools/build.sh`).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Contents**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`./tools/build.sh`<sp/>Builds<sp/>the<sp/>project</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`./tools/run.sh<sp/>&lt;file.kv&gt;`<sp/>Runs<sp/>the<sp/>project<sp/>with<sp/>the<sp/>specific<sp/>file<sp/>as<sp/>an<sp/>argument</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`./tools/test.sh`<sp/>Executes<sp/>the<sp/>test<sp/>cases</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`./tools/clean.sh`<sp/>Cleans<sp/>building<sp/>information</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`./tools/doc.sh`<sp/>Generates<sp/>documentation<sp/>w/<sp/>Doxygen.<sp/>Additional<sp/>arguments:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>+<sp/>`--upload`<sp/>(or<sp/>`-u`)<sp/>Uploads<sp/>the<sp/>built<sp/>documentation<sp/>to<sp/>the<sp/>github<sp/>pages</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>+<sp/>`--open`<sp/>(or<sp/>`-o`)<sp/>Opens<sp/>the<sp/>build<sp/>documentation.<sp/>If<sp/>an<sp/>upload<sp/>was<sp/>just<sp/>made,<sp/>it<sp/>is<sp/>opened<sp/>directly<sp/>by<sp/>the<sp/>url,<sp/>otherwise<sp/>-<sp/>from<sp/>local<sp/>files.</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/tools/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d82/structyy_1_1kivi__parser_1_1token" kind="struct" language="C++" prot="public">
+    <compoundname>yy::kivi_parser::token</compoundname>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser.tab.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>token_kind_type</name>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3aac2fb207792a735ebc6623b42df2681a" prot="public">
+          <name>YYEMPTY</name>
+          <initializer>= -2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a228406cf34e0f811d46a04f6cf4db993" prot="public">
+          <name>END</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a101a1bbdb48951ab161dfb2f9da00bd7" prot="public">
+          <name>YYerror</name>
+          <initializer>= 256</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3aa527965b53d66b9cd000fa72783b8143" prot="public">
+          <name>YYUNDEF</name>
+          <initializer>= 257</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3ac688fa4b037ae0a174570e5021ae1328" prot="public">
+          <name>VAR</name>
+          <initializer>= 258</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3ac93f6ac1cafe2357efd50af5319bbc7e" prot="public">
+          <name>IF</name>
+          <initializer>= 259</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3af6e9c66daa972646324e940ff56d6e51" prot="public">
+          <name>WHILE</name>
+          <initializer>= 260</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3aecc7bac9fb3dc9784e3b0b62744008f3" prot="public">
+          <name>RETURN</name>
+          <initializer>= 261</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a5181becc241dedefa4506ea14ae3ba38" prot="public">
+          <name>IDENTIFIER</name>
+          <initializer>= 262</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3aeb19c2d0e7c80cbcb95f376b1f78ad94" prot="public">
+          <name>STRING_LITERAL</name>
+          <initializer>= 263</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a0167852de7080132ab3291a1de193de9" prot="public">
+          <name>NUMBER_LITERAL</name>
+          <initializer>= 264</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a99d1f55690c96e17caec2ad8ebbc5fc5" prot="public">
+          <name>EQ</name>
+          <initializer>= 265</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a40372f092673bd06d7219d5b77e39a55" prot="public">
+          <name>NE</name>
+          <initializer>= 266</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="473" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="474" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d4/d82/structyy_1_1kivi__parser_1_1token_1ac31195ad25e63616c55bdab077d86576" prot="public" static="no">
+        <type><ref refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3" kindref="member">token_kind_type</ref></type>
+        <definition>typedef token_kind_type yy::kivi_parser::token::yytokentype</definition>
+        <argsstring></argsstring>
+        <name>yytokentype</name>
+        <briefdescription>
+<para>Backward compatibility alias (Bison 3.6). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="490" column="31" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Token kinds. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="471" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="472" bodyend="491"/>
+    <listofallmembers>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a228406cf34e0f811d46a04f6cf4db993" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>END</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a99d1f55690c96e17caec2ad8ebbc5fc5" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>EQ</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a5181becc241dedefa4506ea14ae3ba38" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>IDENTIFIER</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3ac93f6ac1cafe2357efd50af5319bbc7e" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>IF</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a40372f092673bd06d7219d5b77e39a55" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>NE</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a0167852de7080132ab3291a1de193de9" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>NUMBER_LITERAL</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3aecc7bac9fb3dc9784e3b0b62744008f3" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>RETURN</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3aeb19c2d0e7c80cbcb95f376b1f78ad94" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>STRING_LITERAL</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>token_kind_type</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3ac688fa4b037ae0a174570e5021ae1328" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>VAR</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3af6e9c66daa972646324e940ff56d6e51" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>WHILE</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3aac2fb207792a735ebc6623b42df2681a" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>YYEMPTY</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a101a1bbdb48951ab161dfb2f9da00bd7" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>YYerror</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1ac31195ad25e63616c55bdab077d86576" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>yytokentype</name></member>
+      <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3aa527965b53d66b9cd000fa72783b8143" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>YYUNDEF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d4f/md__home_boki__tmp_kivi_utils_README" kind="page">
+    <compoundname>md__home_boki__tmp_kivi_utils_README</compoundname>
+    <title>Utilities</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utility libraries which provide additional functionalities without interfering directly with the internal logic.</para>
+<para><bold>Contents</bold></para>
+<para><blockquote><para><computeroutput>ast_printer</computeroutput>\ Pretty-prints the generated AST </para>
+</blockquote><blockquote><para><computeroutput>cli</computeroutput>\ Handles argument passing to the compiler </para>
+</blockquote></para>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/utils/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/dfd/classCatch_1_1ExceptionTranslatorRegistrar" kind="class" language="C++" prot="public">
+    <compoundname>Catch::ExceptionTranslatorRegistrar</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <innerclass refid="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator" prot="private">Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/dfd/classCatch_1_1ExceptionTranslatorRegistrar_1aa73229de911f26b1df6c6c87c4d9e04e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Catch::ExceptionTranslatorRegistrar::ExceptionTranslatorRegistrar</definition>
+        <argsstring>(std::string(*translateFunction)(T &amp;))</argsstring>
+        <name>ExceptionTranslatorRegistrar</name>
+        <param>
+          <type>std::string(*)(T &amp;)</type>
+          <declname>translateFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3050" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3050" bodyend="3053"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3019" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3019" bodyend="3054"/>
+    <listofallmembers>
+      <member refid="d7/dfd/classCatch_1_1ExceptionTranslatorRegistrar_1aa73229de911f26b1df6c6c87c4d9e04e" prot="public" virt="non-virtual"><scope>Catch::ExceptionTranslatorRegistrar</scope><name>ExceptionTranslatorRegistrar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

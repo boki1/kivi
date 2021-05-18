@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d44/structyy_1_1kivi__parser_1_1by__state" kind="struct" language="C++" prot="private">
+    <compoundname>yy::kivi_parser::by_state</compoundname>
+    <derivedcompoundref refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol" prot="public" virt="non-virtual">yy::kivi_parser::basic_symbol&lt; by_state &gt;</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a90282330f77ab92ef397c41c0fee7b00" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@3</name>
+        <enumvalue id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a90282330f77ab92ef397c41c0fee7b00a42174008232f51c957ba088c3cb9c3cd" prot="public">
+          <name>empty_state</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The state number used to denote an empty symbol. We use the initial state, as it does not have a value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1230" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1230" bodyend="1230"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a0ee30ad8d018ab6a0f6c4e316e1c7cb4" prot="public" static="no">
+        <type><ref refid="da/d00/classyy_1_1kivi__parser_1a80cad56158a0cf92302ce401c0ac89be" kindref="member">state_type</ref></type>
+        <definition>typedef state_type yy::kivi_parser::by_state::kind_type</definition>
+        <argsstring></argsstring>
+        <name>kind_type</name>
+        <briefdescription>
+<para>The symbol kind as needed by the constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1210" column="26" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a9f60b7433ca706c4fe2038d82e62bdc6" prot="public" static="no" mutable="no">
+        <type><ref refid="da/d00/classyy_1_1kivi__parser_1a80cad56158a0cf92302ce401c0ac89be" kindref="member">state_type</ref></type>
+        <definition>state_type yy::kivi_parser::by_state::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The state. <emphasis>empty</emphasis> when empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1234" column="18" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1234" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a178d4f9d48b54eb09e157bf9a77956a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::by_state::by_state</definition>
+        <argsstring>() YY_NOEXCEPT</argsstring>
+        <name>by_state</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1207" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a00cd8c1684a5a4143889f5001fbc4f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::by_state::by_state</definition>
+        <argsstring>(kind_type s) YY_NOEXCEPT</argsstring>
+        <name>by_state</name>
+        <param>
+          <type><ref refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a0ee30ad8d018ab6a0f6c4e316e1c7cb4" kindref="member">kind_type</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1213" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a0d01eb5a1197ee8248990a309bb35346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::by_state::by_state</definition>
+        <argsstring>(const by_state &amp;that) YY_NOEXCEPT</argsstring>
+        <name>by_state</name>
+        <param>
+          <type>const <ref refid="da/d44/structyy_1_1kivi__parser_1_1by__state" kindref="compound">by_state</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1216" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1aee08e16142614d70372b14725c5add7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::kivi_parser::by_state::clear</definition>
+        <argsstring>() YY_NOEXCEPT</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Record that this symbol is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1219" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1ab47f78062e3c73db227f9ff6c62933ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::kivi_parser::by_state::move</definition>
+        <argsstring>(by_state &amp;that)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="da/d44/structyy_1_1kivi__parser_1_1by__state" kindref="compound">by_state</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Steal the symbol kind from <emphasis>that</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1222" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="176" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1ab8d0cf7457e615d2ce18c804a50919d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+        <definition>kivi_parser::symbol_kind_type yy::kivi_parser::by_state::kind</definition>
+        <argsstring>() const YY_NOEXCEPT</argsstring>
+        <name>kind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The symbol kind (corresponding to <emphasis>state</emphasis>). <emphasis><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0a44b99e99c94dbc13d830d9a458131135" kindref="member">symbol_kind::S_YYEMPTY</ref></emphasis> when empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1226" column="24" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="187" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Type access provider for state based symbols. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>yy::kivi_parser::by_state</label>
+        <link refid="da/d44/structyy_1_1kivi__parser_1_1by__state"/>
+      </node>
+      <node id="2">
+        <label>yy::kivi_parser::basic_symbol&lt; by_state &gt;</label>
+        <link refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>yy::kivi_parser::stack_symbol_type</label>
+        <link refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1204" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1205" bodyend="1235"/>
+    <listofallmembers>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a178d4f9d48b54eb09e157bf9a77956a0" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>by_state</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a00cd8c1684a5a4143889f5001fbc4f8d" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>by_state</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a0d01eb5a1197ee8248990a309bb35346" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>by_state</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1aee08e16142614d70372b14725c5add7c" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>clear</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a90282330f77ab92ef397c41c0fee7b00a42174008232f51c957ba088c3cb9c3cd" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>empty_state</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1ab8d0cf7457e615d2ce18c804a50919d6" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>kind</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a0ee30ad8d018ab6a0f6c4e316e1c7cb4" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>kind_type</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1ab47f78062e3c73db227f9ff6c62933ba" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>move</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a9f60b7433ca706c4fe2038d82e62bdc6" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

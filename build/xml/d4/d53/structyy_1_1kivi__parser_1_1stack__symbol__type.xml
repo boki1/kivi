@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type" kind="struct" language="C++" prot="private">
+    <compoundname>yy::kivi_parser::stack_symbol_type</compoundname>
+    <basecompoundref refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol" prot="public" virt="non-virtual">yy::kivi_parser::basic_symbol&lt; by_state &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1ae8c8c2ae149a5291bc6b736a9c14b112" prot="public" static="no">
+        <type><ref refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol" kindref="compound">basic_symbol</ref>&lt; <ref refid="da/d44/structyy_1_1kivi__parser_1_1by__state" kindref="compound">by_state</ref> &gt;</type>
+        <definition>typedef basic_symbol&lt;by_state&gt; yy::kivi_parser::stack_symbol_type::super_type</definition>
+        <argsstring></argsstring>
+        <name>super_type</name>
+        <briefdescription>
+<para>Superclass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1241" column="28" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1241" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1abea574e825192dce7371be2a5c175456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::stack_symbol_type::stack_symbol_type</definition>
+        <argsstring>()</argsstring>
+        <name>stack_symbol_type</name>
+        <briefdescription>
+<para>Construct an empty symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1243" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="195" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1a0178a9343336933968223570a0077bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::stack_symbol_type::stack_symbol_type</definition>
+        <argsstring>(YY_RVREF(stack_symbol_type) that)</argsstring>
+        <name>stack_symbol_type</name>
+        <param>
+          <type><ref refid="dc/dee/parser_8tab_8hh_1a136a1225ab9f41786793cf23145b58dd" kindref="member">YY_RVREF</ref>(<ref refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type" kindref="compound">stack_symbol_type</ref>)</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Move or copy construction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1245" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="198" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1a564d08accb6d4041b03cd8a248cd43e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::stack_symbol_type::stack_symbol_type</definition>
+        <argsstring>(state_type s, YY_MOVE_REF(symbol_type) sym)</argsstring>
+        <name>stack_symbol_type</name>
+        <param>
+          <type><ref refid="da/d00/classyy_1_1kivi__parser_1a80cad56158a0cf92302ce401c0ac89be" kindref="member">state_type</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/dee/parser_8tab_8hh_1a5acee687e2d12ed695b3d6d30b8bf5d5" kindref="member">YY_MOVE_REF</ref>(<ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref>)</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+<para>Steal the contents from <emphasis>sym</emphasis> to build this. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1247" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="237" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1a860d4531bd5076b3dfc3b1dee90aea86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type" kindref="compound">stack_symbol_type</ref> &amp;</type>
+        <definition>kivi_parser::stack_symbol_type &amp; yy::kivi_parser::stack_symbol_type::operator=</definition>
+        <argsstring>(stack_symbol_type &amp;that)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type" kindref="compound">stack_symbol_type</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assignment, needed by push_back by some old implementations. Moves the contents of that. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1251" column="25" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="314" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1aa6dc0cac88ef57e378a52158432313b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type" kindref="compound">stack_symbol_type</ref> &amp;</type>
+        <definition>kivi_parser::stack_symbol_type &amp; yy::kivi_parser::stack_symbol_type::operator=</definition>
+        <argsstring>(const stack_symbol_type &amp;that)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type" kindref="compound">stack_symbol_type</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assignment, needed by push_back by other implementations. Needed by some other old implementations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1255" column="25" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="276" bodyend="311"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Internal&quot; symbol: element of the stack. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>yy::kivi_parser::by_state</label>
+        <link refid="da/d44/structyy_1_1kivi__parser_1_1by__state"/>
+      </node>
+      <node id="2">
+        <label>yy::kivi_parser::basic_symbol&lt; by_state &gt;</label>
+        <link refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>yy::kivi_parser::stack_symbol_type</label>
+        <link refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>yy::kivi_parser::by_state</label>
+        <link refid="da/d44/structyy_1_1kivi__parser_1_1by__state"/>
+      </node>
+      <node id="2">
+        <label>yy::kivi_parser::basic_symbol&lt; by_state &gt;</label>
+        <link refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>yy::kivi_parser::stack_symbol_type</label>
+        <link refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1238" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1239" bodyend="1257"/>
+    <listofallmembers>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a0442c999a61aee88738d54b585f7b380" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a25e09f67a628a1af7f2a2f9a717f9ace" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1ac39e576c94ece995ff0d2a7c737f27dc" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a536e1062624bc094fe532ce3c0eb1861" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a5140333438c0e8111ec84da566cc6ef9" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a9b565251d4bc6c75c20165a278279c2c" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a178d4f9d48b54eb09e157bf9a77956a0" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>by_state</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a00cd8c1684a5a4143889f5001fbc4f8d" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>by_state</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a0d01eb5a1197ee8248990a309bb35346" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>by_state</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a5cee56ff2f07ea833dc6593949b7c2c4" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>clear</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a03f059c85335d94e850817d09e2b94c1" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>empty</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a90282330f77ab92ef397c41c0fee7b00a42174008232f51c957ba088c3cb9c3cd" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>empty_state</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1ab8d0cf7457e615d2ce18c804a50919d6" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>kind</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a0ee30ad8d018ab6a0f6c4e316e1c7cb4" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>kind_type</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a24dc4fc79410441d81e674a5c1c8696c" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>location</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1adaf50fdfad1885d47d11d85a19f09913" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>move</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1ab47f78062e3c73db227f9ff6c62933ba" prot="public" virt="non-virtual" ambiguityscope="yy::kivi_parser::by_state::"><scope>yy::kivi_parser::stack_symbol_type</scope><name>move</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1af4f949f86ae0faba836eeae416ce6ee7" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>name</name></member>
+      <member refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1a860d4531bd5076b3dfc3b1dee90aea86" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>operator=</name></member>
+      <member refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1aa6dc0cac88ef57e378a52158432313b9" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>operator=</name></member>
+      <member refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1abea574e825192dce7371be2a5c175456" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>stack_symbol_type</name></member>
+      <member refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1a0178a9343336933968223570a0077bc2" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>stack_symbol_type</name></member>
+      <member refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1a564d08accb6d4041b03cd8a248cd43e5" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>stack_symbol_type</name></member>
+      <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a9f60b7433ca706c4fe2038d82e62bdc6" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>state</name></member>
+      <member refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type_1ae8c8c2ae149a5291bc6b736a9c14b112" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>super_type</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1ab74bee2e4888d59c8d1b8f0c223eb383" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>type_get</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a71ab24a36122aed032f2bd825eb40949" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>value</name></member>
+      <member refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol_1a35666ac7a0360da2df2da73cf21fd020" prot="public" virt="non-virtual"><scope>yy::kivi_parser::stack_symbol_type</scope><name>~basic_symbol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

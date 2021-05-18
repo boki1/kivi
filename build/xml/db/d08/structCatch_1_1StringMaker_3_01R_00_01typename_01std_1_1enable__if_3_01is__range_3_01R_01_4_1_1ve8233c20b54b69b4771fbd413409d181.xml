@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d08/structCatch_1_1StringMaker_3_01R_00_01typename_01std_1_1enable__if_3_01is__range_3_01R_01_4_1_1ve8233c20b54b69b4771fbd413409d181" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::StringMaker&lt; R, typename std::enable_if&lt; is_range&lt; R &gt;::value &amp;&amp;!::Catch::Detail::IsStreamInsertable&lt; R &gt;::value &gt;::type &gt;</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="db/d08/structCatch_1_1StringMaker_3_01R_00_01typename_01std_1_1enable__if_3_01is__range_3_01R_01_4_1_1ve8233c20b54b69b4771fbd413409d181_1ac6088db00103a7482fb9bc04b1603362" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Catch::StringMaker&lt; R, typename std::enable_if&lt; is_range&lt; R &gt;::value &amp;&amp;!::Catch::Detail::IsStreamInsertable&lt; R &gt;::value &gt;::type &gt;::convert</definition>
+        <argsstring>(R const &amp;range)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>R const &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2039" column="28" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2039" bodyend="2041"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2038" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2038" bodyend="2042"/>
+    <listofallmembers>
+      <member refid="db/d08/structCatch_1_1StringMaker_3_01R_00_01typename_01std_1_1enable__if_3_01is__range_3_01R_01_4_1_1ve8233c20b54b69b4771fbd413409d181_1ac6088db00103a7482fb9bc04b1603362" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; R, typename std::enable_if&lt; is_range&lt; R &gt;::value &amp;&amp;!::Catch::Detail::IsStreamInsertable&lt; R &gt;::value &gt;::type &gt;</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

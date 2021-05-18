@@ -1,0 +1,1364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d00/classyy_1_1kivi__parser" kind="class" language="C++" prot="public">
+    <compoundname>yy::kivi_parser</compoundname>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser.tab.hh</includes>
+    <innerclass refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol" prot="public">yy::kivi_parser::basic_symbol</innerclass>
+    <innerclass refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind" prot="public">yy::kivi_parser::by_kind</innerclass>
+    <innerclass refid="da/d44/structyy_1_1kivi__parser_1_1by__state" prot="private">yy::kivi_parser::by_state</innerclass>
+    <innerclass refid="d1/d2b/classyy_1_1kivi__parser_1_1context" prot="public">yy::kivi_parser::context</innerclass>
+    <innerclass refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type" prot="public">yy::kivi_parser::semantic_type</innerclass>
+    <innerclass refid="db/dc9/classyy_1_1kivi__parser_1_1stack" prot="private">yy::kivi_parser::stack</innerclass>
+    <innerclass refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type" prot="private">yy::kivi_parser::stack_symbol_type</innerclass>
+    <innerclass refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind" prot="public">yy::kivi_parser::symbol_kind</innerclass>
+    <innerclass refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" prot="public">yy::kivi_parser::symbol_type</innerclass>
+    <innerclass refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error" prot="public">yy::kivi_parser::syntax_error</innerclass>
+    <innerclass refid="d4/d82/structyy_1_1kivi__parser_1_1token" prot="public">yy::kivi_parser::token</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="da/d00/classyy_1_1kivi__parser_1a0a39ae9bba0fac1307cc0c74fc3aa380" prot="private" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="da/d00/classyy_1_1kivi__parser_1a0a39ae9bba0fac1307cc0c74fc3aa380a36ddf55f83b654d0b1aefe314a55c569" prot="private">
+          <name>yylast_</name>
+          <initializer>= 144</initializer>
+          <briefdescription>
+<para>Last index in yytable_. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d00/classyy_1_1kivi__parser_1a0a39ae9bba0fac1307cc0c74fc3aa380a08626ad837b35fcbf5298fb2cf1845ff" prot="private">
+          <name>yynnts_</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+<para>Number of nonterminal symbols. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d00/classyy_1_1kivi__parser_1a0a39ae9bba0fac1307cc0c74fc3aa380ad86102523204778b705a6c1b726c5ad4" prot="private">
+          <name>yyfinal_</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Termination state number. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Constants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1402" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1403" bodyend="1407"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/d00/classyy_1_1kivi__parser_1a80cad56158a0cf92302ce401c0ac89be" prot="private" static="no">
+        <type>signed char</type>
+        <definition>typedef signed char yy::kivi_parser::state_type</definition>
+        <argsstring></argsstring>
+        <name>state_type</name>
+        <briefdescription>
+<para>Stored state numbers (used for stacks). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1104" column="25" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/d00/classyy_1_1kivi__parser_1a093f1126806d77496be99a16401f2b57" prot="private" static="no">
+        <type><ref refid="db/dc9/classyy_1_1kivi__parser_1_1stack" kindref="compound">stack</ref>&lt; <ref refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type" kindref="compound">stack_symbol_type</ref> &gt;</type>
+        <definition>typedef stack&lt;stack_symbol_type&gt; yy::kivi_parser::stack_type</definition>
+        <argsstring></argsstring>
+        <name>stack_type</name>
+        <briefdescription>
+<para>Stack type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1378" column="19" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1378" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" prot="public" static="no">
+        <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">location</ref></type>
+        <definition>typedef location yy::kivi_parser::location_type</definition>
+        <argsstring></argsstring>
+        <name>location_type</name>
+        <briefdescription>
+<para>Symbol locations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="450" column="22" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/d00/classyy_1_1kivi__parser_1a0eaf34d214d4e7df9cc0268684e9d706" prot="public" static="no">
+        <type><ref refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3" kindref="member">token::yytokentype</ref></type>
+        <definition>typedef token::yytokentype yy::kivi_parser::token_kind_type</definition>
+        <argsstring></argsstring>
+        <name>token_kind_type</name>
+        <briefdescription>
+<para>Token kind, as returned by yylex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="494" column="32" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/d00/classyy_1_1kivi__parser_1a30df10720ee723439c811ef48eb55ee0" prot="public" static="no">
+        <type><ref refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3" kindref="member">token_kind_type</ref></type>
+        <definition>typedef token_kind_type yy::kivi_parser::token_type</definition>
+        <argsstring></argsstring>
+        <name>token_type</name>
+        <briefdescription>
+<para>Backward compatibility alias (Bison 3.6). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="497" column="29" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/d00/classyy_1_1kivi__parser_1a4a180c7f7bbd3e7c4641e00279526908" prot="public" static="no">
+        <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind::symbol_kind_type</ref></type>
+        <definition>typedef symbol_kind::symbol_kind_type yy::kivi_parser::symbol_kind_type</definition>
+        <argsstring></argsstring>
+        <name>symbol_kind_type</name>
+        <briefdescription>
+<para>(Internal) symbol kind. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="557" column="43" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/d00/classyy_1_1kivi__parser_1a0e3f0355903097468caafb4eaf578125" prot="public" static="no">
+        <type><ref refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind" kindref="compound">by_kind</ref></type>
+        <definition>typedef by_kind yy::kivi_parser::by_type</definition>
+        <argsstring></argsstring>
+        <name>by_type</name>
+        <briefdescription>
+<para>Backward compatibility for a private implementation detail (Bison 3.6). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="795" column="21" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1a9ca8760641e0737dfe2019333e8fe62f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+        <definition>const symbol_kind_type yy::kivi_parser::YYNTOKENS</definition>
+        <argsstring></argsstring>
+        <name>YYNTOKENS</name>
+        <initializer>= symbol_kind::YYNTOKENS</initializer>
+        <briefdescription>
+<para>The number of tokens. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="560" column="35" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1a0c5b6b99d322d91ee57a732504cca81f" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yypact_ninf_</definition>
+        <argsstring></argsstring>
+        <name>yypact_ninf_</name>
+        <initializer>= -21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1126" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1adb1eb14fa2a1c532e5ecd9551ad4a141" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yytable_ninf_</definition>
+        <argsstring></argsstring>
+        <name>yytable_ninf_</name>
+        <initializer>= -4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1127" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1ab236692542ea5d5976558f7493c92778" prot="private" static="yes" mutable="no">
+        <type>const char *const</type>
+        <definition>const char *const yy::kivi_parser::yytname_</definition>
+        <argsstring>[]</argsstring>
+        <name>yytname_</name>
+        <initializer>=
+  {
+  &quot;END&quot;, &quot;<ref refid="da/d00/classyy_1_1kivi__parser_1a903f3b3619c148ab0cb178d51785269f" kindref="member">error</ref>&quot;, &quot;\&quot;invalid token\&quot;&quot;, &quot;\&quot;auto\&quot;&quot;, &quot;\&quot;if\&quot;&quot;, &quot;\&quot;while\&quot;&quot;,
+  &quot;\&quot;return\&quot;&quot;, &quot;IDENTIFIER&quot;, &quot;STRING_LITERAL&quot;, &quot;NUMBER_LITERAL&quot;, &quot;\&quot;==\&quot;&quot;,
+  &quot;\&quot;&lt;&gt;\&quot;&quot;, &quot;&apos;=&apos;&quot;, &quot;&apos;+&apos;&quot;, &quot;&apos;-&apos;&quot;, &quot;&apos;*&apos;&quot;, &quot;&apos;/&apos;&quot;, &quot;&apos;%&apos;&quot;, &quot;&apos;,&apos;&quot;, &quot;&apos;:&apos;&quot;, &quot;&apos;;&apos;&quot;,
+  &quot;&apos;{&apos;&quot;, &quot;&apos;(&apos;&quot;, &quot;&apos;)&apos;&quot;, &quot;&apos;}&apos;&quot;, &quot;$accept&quot;, &quot;Program&quot;, &quot;$@1&quot;, &quot;Functions&quot;,
+  &quot;Single_function&quot;, &quot;$@2&quot;, &quot;Parameter_list&quot;, &quot;Single_param&quot;, &quot;Statement&quot;,
+  &quot;Comma_sep_expressions&quot;, &quot;Compound_statement&quot;, &quot;Comparison_operation&quot;,
+  &quot;Arithmetic_operation&quot;, &quot;Function_call&quot;, &quot;Expression&quot;, &quot;Safe_identifier&quot;,
+  &quot;Safe_colon&quot;, &quot;Safe_semicolon&quot;, &quot;Safe_closing_brace&quot;,
+  &quot;Safe_closing_parenthesis&quot;, &quot;Safe_statement&quot;, &quot;Safe_expression&quot;, YY_NULLPTR
+  }</initializer>
+        <briefdescription>
+<para>For a symbol, its name in clear. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1138" column="29" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1a9c46958b5175de19c2aa8fdf224d127b" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yypact_</definition>
+        <argsstring>[]</argsstring>
+        <name>yypact_</name>
+        <initializer>=
+  {
+     -21,    15,   -21,   -21,    16,   -21,   -21,   -21,   -21,    -3,
+     -21,     1,     0,   -21,   -21,    50,    28,   -21,    28,    59,
+      59,    59,     5,   -21,   -21,   -21,   -21,   -21,     4,   -21,
+     -21,   -21,    62,   -21,   -21,    18,   -21,   119,     1,    33,
+       2,    25,   -21,   -21,   -21,   -21,   -21,    79,    82,    91,
+      94,   103,   106,   115,   118,   -21,   -21,    59,    50,    50,
+     -21,   -21,    13,   -21,   -21,   124,   -21,   124,   -21,   119,
+     -21,   127,   -21,   127,   -21,   -21,   -21,   -21,   -21,   -21,
+     -21,   -21,   -21,   -21,    59,   -21,   -21,   -21
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1144" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1a1bbc5ded960cbe811a6b318c675041af" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yydefact_</definition>
+        <argsstring>[]</argsstring>
+        <name>yydefact_</name>
+        <initializer>=
+  {
+       2,     0,     4,     1,     0,    49,    50,     5,     6,     8,
+      11,     0,     9,    51,    52,     0,     0,    59,     0,     0,
+       0,     0,    45,    43,    44,    18,    21,    60,     0,    48,
+      47,    46,     0,     7,    10,     0,    61,    62,     0,     0,
+       0,     0,    55,    56,    22,    12,    53,     0,     0,     0,
+       0,     0,     0,     0,     0,    54,    17,     0,     0,     0,
+      13,    39,     0,    19,    23,    24,    25,    26,    37,    38,
+      27,    28,    29,    30,    31,    32,    33,    34,    35,    36,
+      16,    14,    15,    57,     0,    58,    40,    20
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1149" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1a5c34588b82c1fbc49731b2dfa04ad89c" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yypgoto_</definition>
+        <argsstring>[]</argsstring>
+        <name>yypgoto_</name>
+        <initializer>=
+  {
+     -21,   -21,   -21,   -21,   -21,   -21,   -21,   -21,    34,   -21,
+     -21,   -21,   -21,   -21,    -9,    78,    23,    29,   -21,   -21,
+     -12,   -20
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1152" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1a6a2ccd67142fcf89ee57db0a1fc736fc" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yydefgoto_</definition>
+        <argsstring>[]</argsstring>
+        <name>yydefgoto_</name>
+        <initializer>=
+  {
+      -1,     1,     2,     4,     7,     9,    11,    12,    27,    62,
+      28,    29,    30,    31,    37,     8,    15,    56,    45,    86,
+      33,    38
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1155" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1ac8c8bbd154063cf4232da704e03eb245" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yytable_</definition>
+        <argsstring>[]</argsstring>
+        <name>yytable_</name>
+        <initializer>=
+  {
+      39,    40,    13,    46,    10,    42,    32,    18,    19,    20,
+      21,    22,    23,    24,    83,     3,    -3,     5,    16,    32,
+      14,    63,    55,     6,    25,    26,    36,    41,    43,     5,
+      57,    84,    22,    23,    24,     6,    85,    80,    65,    67,
+      69,    71,    73,    75,    77,    79,    81,    82,    61,    32,
+      32,    17,    59,    18,    19,    20,    21,    22,    23,    24,
+      36,    58,    44,    46,    87,     0,    22,    23,    24,    60,
+      25,    26,    47,    48,    49,    50,    51,    52,    53,    54,
+      64,     0,    55,    66,     0,     0,    22,    23,    24,    22,
+      23,    24,    68,     0,    34,    70,    35,     0,    22,    23,
+      24,    22,    23,    24,    72,     0,     0,    74,     0,     0,
+      22,    23,    24,    22,    23,    24,    76,     0,     0,    78,
+       0,     0,    22,    23,    24,    22,    23,    24,     0,    47,
+      48,    49,    50,    51,    52,    53,    54,    50,    51,    52,
+      53,    54,    52,    53,    54
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1160" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1a8d7ab2ff251288a4319fa233d98ac7c7" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yycheck_</definition>
+        <argsstring>[]</argsstring>
+        <name>yycheck_</name>
+        <initializer>=
+  {
+      20,    21,     1,     1,     7,     1,    15,     3,     4,     5,
+       6,     7,     8,     9,     1,     0,     0,     1,    18,    28,
+      19,    41,    20,     7,    20,    21,     1,    22,    24,     1,
+      12,    18,     7,     8,     9,     7,    23,    57,    47,    48,
+      49,    50,    51,    52,    53,    54,    58,    59,    23,    58,
+      59,     1,    19,     3,     4,     5,     6,     7,     8,     9,
+       1,    38,    28,     1,    84,    -1,     7,     8,     9,    40,
+      20,    21,    10,    11,    12,    13,    14,    15,    16,    17,
+       1,    -1,    20,     1,    -1,    -1,     7,     8,     9,     7,
+       8,     9,     1,    -1,    16,     1,    18,    -1,     7,     8,
+       9,     7,     8,     9,     1,    -1,    -1,     1,    -1,    -1,
+       7,     8,     9,     7,     8,     9,     1,    -1,    -1,     1,
+      -1,    -1,     7,     8,     9,     7,     8,     9,    -1,    10,
+      11,    12,    13,    14,    15,    16,    17,    13,    14,    15,
+      16,    17,    15,    16,    17
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1162" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1ae865dfc46051c20d6a78468fa0149281" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yystos_</definition>
+        <argsstring>[]</argsstring>
+        <name>yystos_</name>
+        <initializer>=
+  {
+       0,    26,    27,     0,    28,     1,     7,    29,    40,    30,
+       7,    31,    32,     1,    19,    41,    18,     1,     3,     4,
+       5,     6,     7,     8,     9,    20,    21,    33,    35,    36,
+      37,    38,    39,    45,    40,    40,     1,    39,    46,    46,
+      46,    22,     1,    24,    33,    43,     1,    10,    11,    12,
+      13,    14,    15,    16,    17,    20,    42,    12,    41,    19,
+      42,    23,    34,    46,     1,    39,     1,    39,     1,    39,
+       1,    39,     1,    39,     1,    39,     1,    39,     1,    39,
+      46,    45,    45,     1,    18,    23,    44,    46
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1166" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1a9028f714d2ce94955248ca83355f0588" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yyr1_</definition>
+        <argsstring>[]</argsstring>
+        <name>yyr1_</name>
+        <initializer>=
+  {
+       0,    25,    27,    26,    28,    28,    30,    29,    31,    31,
+      32,    32,    33,    33,    33,    33,    33,    33,    33,    34,
+      34,    35,    35,    36,    36,    36,    36,    37,    37,    37,
+      37,    37,    37,    37,    37,    37,    37,    37,    37,    38,
+      38,    38,    38,    39,    39,    39,    39,    39,    39,    40,
+      40,    41,    41,    42,    42,    43,    43,    44,    44,    45,
+      45,    46,    46
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1169" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1a3e06459d32495da382f8e7d59340ce3f" prot="private" static="yes" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char yy::kivi_parser::yyr2_</definition>
+        <argsstring>[]</argsstring>
+        <name>yyr2_</name>
+        <initializer>=
+  {
+       0,     2,     0,     2,     0,     2,     0,     5,     0,     1,
+       3,     1,     2,     3,     4,     4,     4,     2,     1,     1,
+       3,     1,     2,     3,     3,     3,     3,     3,     3,     3,
+       3,     3,     3,     3,     3,     3,     3,     3,     3,     3,
+       4,     3,     4,     1,     1,     1,     1,     1,     1,     1,
+       1,     1,     1,     1,     1,     1,     1,     1,     1,     1,
+       1,     1,     1
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1172" column="30" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1ac70d0cf17a23355e6733a12f430ec7a7" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d00/classyy_1_1kivi__parser_1a093f1126806d77496be99a16401f2b57" kindref="member">stack_type</ref></type>
+        <definition>stack_type yy::kivi_parser::yystack_</definition>
+        <argsstring></argsstring>
+        <name>yystack_</name>
+        <briefdescription>
+<para>The stack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1381" column="16" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d00/classyy_1_1kivi__parser_1ac842a549d8db97d29714d5c09e5e3064" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref> &amp;</type>
+        <definition>syntax_analyzer::parsing_context&amp; yy::kivi_parser::ctx</definition>
+        <argsstring></argsstring>
+        <name>ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1411" column="38" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1411" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1ab6a4bcb2d902a0d0dbdf61523e5cb245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::kivi_parser</definition>
+        <argsstring>(syntax_analyzer::parsing_context &amp;ctx_yyarg)</argsstring>
+        <name>kivi_parser</name>
+        <param>
+          <type><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref> &amp;</type>
+          <declname>ctx_yyarg</declname>
+        </param>
+        <briefdescription>
+<para>Build a parser object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="849" column="6" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="138" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a6ef4013ad613fd356ee159384ac15cc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual yy::kivi_parser::~ kivi_parser</definition>
+        <argsstring>()</argsstring>
+        <name>~ kivi_parser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="850" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1afe910be3615985fe53eb94420d952f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int yy::kivi_parser::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse. An alias for parse (). <simplesect kind="return"><para>0 iff parsing succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="861" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="458" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a74365513e5eea20e7cd073d9b6d3a93b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int yy::kivi_parser::parse</definition>
+        <argsstring>()</argsstring>
+        <name>parse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse. <simplesect kind="return"><para>0 iff parsing succeeded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Length of the RHS of the rule being reduced.</para>
+<para>The lookahead symbol.</para>
+<para>The locations where the error started and ended.</para>
+<para>The return value of parse ().</para>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="865" column="17" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="464" bodyend="1153"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a903f3b3619c148ab0cb178d51785269f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void yy::kivi_parser::error</definition>
+        <argsstring>(const location_type &amp;loc, const std::string &amp;msg)</argsstring>
+        <name>error</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>loc</declname>
+          <defname>p_location</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+          <defname>p_message</defname>
+        </param>
+        <briefdescription>
+<para>Reports an occurred syntactical error encountered during the parsing process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Report a syntax error. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>loc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where the syntax error is found. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a description of the syntax error.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location of the error </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message which is outputted by the concrete error </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="884" column="18" bodyfile="/home/boki/.tmp/kivi/frontend/parser/error.cc" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a616222aa49e8e01eb66cd07755ae2acb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::kivi_parser::error</definition>
+        <argsstring>(const syntax_error &amp;err)</argsstring>
+        <name>error</name>
+        <param>
+          <type>const <ref refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error" kindref="compound">syntax_error</ref> &amp;</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+<para>Report a syntax error. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="887" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="1156" bodyend="1159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a7a801aedf5f3a79b946d268c4518697c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string yy::kivi_parser::symbol_name</definition>
+        <argsstring>(symbol_kind_type yysymbol)</argsstring>
+        <name>symbol_name</name>
+        <param>
+          <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+          <declname>yysymbol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user-facing name of the symbol whose (internal) number is YYSYMBOL. No bounds checking. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="891" column="24" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="1202" bodyend="1205"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a2da6905d1b075b59f156cb39809a3b4f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_END</definition>
+        <argsstring>(const location_type &amp;l)</argsstring>
+        <name>make_END</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="904" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="904" bodyend="907"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a96c8f7d8fcc7beaef2ffe7d1aecf1233" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_YYerror</definition>
+        <argsstring>(const location_type &amp;l)</argsstring>
+        <name>make_YYerror</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="919" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="919" bodyend="922"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a899637ea3fe2fa72aa96c5cb828d7838" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_YYUNDEF</definition>
+        <argsstring>(const location_type &amp;l)</argsstring>
+        <name>make_YYUNDEF</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="934" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="934" bodyend="937"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a5e958eeb7a4721a59af5b0fb2bb9f705" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_VAR</definition>
+        <argsstring>(const location_type &amp;l)</argsstring>
+        <name>make_VAR</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="949" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="949" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a8e1b253db27cead776d1a45233c3f50b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_IF</definition>
+        <argsstring>(const location_type &amp;l)</argsstring>
+        <name>make_IF</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="964" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="964" bodyend="967"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1aa2dd33e83f9c51da3a22b06f75b95983" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_WHILE</definition>
+        <argsstring>(const location_type &amp;l)</argsstring>
+        <name>make_WHILE</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="979" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="979" bodyend="982"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a9222921ca66177d7e300b1a23cfa18d2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_RETURN</definition>
+        <argsstring>(const location_type &amp;l)</argsstring>
+        <name>make_RETURN</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="994" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="994" bodyend="997"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a85323ed38cc708fe1d0133efc3f457b3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_IDENTIFIER</definition>
+        <argsstring>(const std::string &amp;v, const location_type &amp;l)</argsstring>
+        <name>make_IDENTIFIER</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1009" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1009" bodyend="1012"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a2bb96193c0dc615414f265738c42d405" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_STRING_LITERAL</definition>
+        <argsstring>(const std::string &amp;v, const location_type &amp;l)</argsstring>
+        <name>make_STRING_LITERAL</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1024" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1024" bodyend="1027"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1af7f39f7bbdc9a58a9b7a898ad56ef19c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_NUMBER_LITERAL</definition>
+        <argsstring>(const int &amp;v, const location_type &amp;l)</argsstring>
+        <name>make_NUMBER_LITERAL</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1039" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1039" bodyend="1042"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a8b38791e76c3fa517af5769902dbfdb5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_EQ</definition>
+        <argsstring>(const location_type &amp;l)</argsstring>
+        <name>make_EQ</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1054" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1054" bodyend="1057"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a6be0be77acdb9cc53648fae39d656fcd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref></type>
+        <definition>static symbol_type yy::kivi_parser::make_NE</definition>
+        <argsstring>(const location_type &amp;l)</argsstring>
+        <name>make_NE</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1069" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1069" bodyend="1072"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a5ec709f4217fcdc21cff1c64b25fb05f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::kivi_parser</definition>
+        <argsstring>(const kivi_parser &amp;)</argsstring>
+        <name>kivi_parser</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">kivi_parser</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Non copyable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1097" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1ac209b8192a9d9ec97604ca601817a1c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">kivi_parser</ref> &amp;</type>
+        <definition>kivi_parser&amp; yy::kivi_parser::operator=</definition>
+        <argsstring>(const kivi_parser &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">kivi_parser</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Non copyable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1099" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a5206d72d4995255f6f73583fee1b679e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int yy::kivi_parser::yy_syntax_error_arguments_</definition>
+        <argsstring>(const context &amp;yyctx, symbol_kind_type yyarg[], int yyargn) const</argsstring>
+        <name>yy_syntax_error_arguments_</name>
+        <param>
+          <type>const <ref refid="d1/d2b/classyy_1_1kivi__parser_1_1context" kindref="compound">context</ref> &amp;</type>
+          <declname>yyctx</declname>
+        </param>
+        <param>
+          <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+          <declname>yyarg</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yyargn</declname>
+        </param>
+        <briefdescription>
+<para>The arguments of the error message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1107" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="1252" bodyend="1288"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a7977da56a69614a9d9cfd719c937c859" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string yy::kivi_parser::yysyntax_error_</definition>
+        <argsstring>(const context &amp;yyctx) const</argsstring>
+        <name>yysyntax_error_</name>
+        <param>
+          <type>const <ref refid="d1/d2b/classyy_1_1kivi__parser_1_1context" kindref="compound">context</ref> &amp;</type>
+          <declname>yyctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate an error message. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the error occurred. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1112" column="25" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="1292" bodyend="1329"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a7d36c0b00ee3fb2fca6bca040cc95e57" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Base</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void yy::kivi_parser::yy_destroy_</definition>
+        <argsstring>(const char *yymsg, basic_symbol&lt; Base &gt; &amp;yysym) const</argsstring>
+        <name>yy_destroy_</name>
+        <param>
+          <type>const char *</type>
+          <declname>yymsg</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol" kindref="compound">basic_symbol</ref>&lt; Base &gt; &amp;</type>
+          <declname>yysym</declname>
+        </param>
+        <briefdescription>
+<para>Reclaim the memory associated to a symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yymsg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Why this token is reclaimed. If null, print nothing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yysym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The symbol. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1200" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="356" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1ae557d617916f356b3d078136f5b9cc3b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::kivi_parser::yypush_</definition>
+        <argsstring>(const char *m, YY_MOVE_REF(stack_symbol_type) sym)</argsstring>
+        <name>yypush_</name>
+        <param>
+          <type>const char *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/dee/parser_8tab_8hh_1a5acee687e2d12ed695b3d6d30b8bf5d5" kindref="member">YY_MOVE_REF</ref>(<ref refid="d4/d53/structyy_1_1kivi__parser_1_1stack__symbol__type" kindref="compound">stack_symbol_type</ref>)</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a new state on the stack. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a debug message to display if null, no trace is output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the symbol </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>the contents of <emphasis>s.value</emphasis> is stolen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1388" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="384" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1ac066340d4157f781ca631741e3d172e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::kivi_parser::yypush_</definition>
+        <argsstring>(const char *m, state_type s, YY_MOVE_REF(symbol_type) sym)</argsstring>
+        <name>yypush_</name>
+        <param>
+          <type>const char *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="da/d00/classyy_1_1kivi__parser_1a80cad56158a0cf92302ce401c0ac89be" kindref="member">state_type</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/dee/parser_8tab_8hh_1a5acee687e2d12ed695b3d6d30b8bf5d5" kindref="member">YY_MOVE_REF</ref>(<ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref>)</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a new look ahead token on the state on the stack. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a debug message to display if null, no trace is output. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the symbol (for its value and location). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>the contents of <emphasis>sym.value</emphasis> is stolen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1396" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="392" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a5cb47897b29e7f448da7f4b77f26a91d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::kivi_parser::yypop_</definition>
+        <argsstring>(int n=1)</argsstring>
+        <name>yypop_</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Pop <emphasis>n</emphasis> symbols from the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1399" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="403" bodyend="406"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1aa2d41bf2dc1d5e2b3d2411a0335bd2c6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d00/classyy_1_1kivi__parser_1a80cad56158a0cf92302ce401c0ac89be" kindref="member">state_type</ref></type>
+        <definition>kivi_parser::state_type yy::kivi_parser::yy_lr_goto_state_</definition>
+        <argsstring>(state_type yystate, int yysym)</argsstring>
+        <name>yy_lr_goto_state_</name>
+        <param>
+          <type><ref refid="da/d00/classyy_1_1kivi__parser_1a80cad56158a0cf92302ce401c0ac89be" kindref="member">state_type</ref></type>
+          <declname>yystate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yysym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute post-reduction state. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yystate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yysym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the nonterminal to push on the stack </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1116" column="23" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="436" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1ab5c2b03d31045c5d8de094a417fcc3ef" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool yy::kivi_parser::yy_pact_value_is_default_</definition>
+        <argsstring>(int yyvalue)</argsstring>
+        <name>yy_pact_value_is_default_</name>
+        <param>
+          <type>int</type>
+          <declname>yyvalue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether the given <computeroutput>yypact_</computeroutput> value indicates a defaulted state. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyvalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1120" column="17" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="446" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a3beaa2640524a4201c802a8f984173e3" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool yy::kivi_parser::yy_table_value_is_error_</definition>
+        <argsstring>(int yyvalue)</argsstring>
+        <name>yy_table_value_is_error_</name>
+        <param>
+          <type>int</type>
+          <declname>yyvalue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether the given <computeroutput>yytable_</computeroutput> value indicates a syntax error. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyvalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1124" column="17" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="452" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a5e98d1cc4af620f14948bec18010289a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+        <definition>kivi_parser::symbol_kind_type yy::kivi_parser::yytranslate_</definition>
+        <argsstring>(int t)</argsstring>
+        <name>yytranslate_</name>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a scanner token kind <emphasis>t</emphasis> to a symbol kind. In theory <emphasis>t</emphasis> should be a token_kind_type, but character literals are valid, yet not members of the token_type enum. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1132" column="29" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1417" bodyend="1462"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/classyy_1_1kivi__parser_1a974190b31b64fd57cbe207b3b7147c26" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string yy::kivi_parser::yytnamerr_</definition>
+        <argsstring>(const char *yystr)</argsstring>
+        <name>yytnamerr_</name>
+        <param>
+          <type>const char *</type>
+          <declname>yystr</declname>
+        </param>
+        <briefdescription>
+<para>Convert the symbol name <emphasis>n</emphasis> to a form suitable for a diagnostic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1135" column="24" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="1167" bodyend="1199"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A Bison parser. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>yy::kivi_parser</label>
+        <link refid="da/d00/classyy_1_1kivi__parser"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ctx</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>yystack_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>yy::location</label>
+        <link refid="dc/de8/classyy_1_1location"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>begin</edgelabel>
+          <edgelabel>end</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>yy::kivi_parser::stack&lt; stack_symbol_type &gt;</label>
+        <link refid="db/dc9/classyy_1_1kivi__parser_1_1stack"/>
+      </node>
+      <node id="2">
+        <label>syntax_analyzer::parsing_context</label>
+        <link refid="dd/d9f/classsyntax__analyzer_1_1parsing__context"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_current_function</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>yy_location</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>syntax_analyzer::function</label>
+        <link refid="d7/d16/classsyntax__analyzer_1_1function"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_body</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>yy::position</label>
+        <link refid="de/d79/classyy_1_1position"/>
+      </node>
+      <node id="4">
+        <label>syntax_analyzer::syntactic_structure</label>
+        <link refid="df/d98/classsyntax__analyzer_1_1syntactic__structure"/>
+      </node>
+      <node id="5">
+        <label>syntax_analyzer::expression</label>
+        <link refid="db/df3/classsyntax__analyzer_1_1expression"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="200" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="201" bodyend="1413"/>
+    <listofallmembers>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a0e3f0355903097468caafb4eaf578125" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>by_type</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ac842a549d8db97d29714d5c09e5e3064" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>ctx</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a903f3b3619c148ab0cb178d51785269f" prot="public" virt="virtual"><scope>yy::kivi_parser</scope><name>error</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a616222aa49e8e01eb66cd07755ae2acb" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>error</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ab6a4bcb2d902a0d0dbdf61523e5cb245" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>kivi_parser</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a5ec709f4217fcdc21cff1c64b25fb05f" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>kivi_parser</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>location_type</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a2da6905d1b075b59f156cb39809a3b4f" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_END</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a8b38791e76c3fa517af5769902dbfdb5" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_EQ</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a85323ed38cc708fe1d0133efc3f457b3" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_IDENTIFIER</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a8e1b253db27cead776d1a45233c3f50b" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_IF</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a6be0be77acdb9cc53648fae39d656fcd" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_NE</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1af7f39f7bbdc9a58a9b7a898ad56ef19c" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_NUMBER_LITERAL</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a9222921ca66177d7e300b1a23cfa18d2" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_RETURN</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a2bb96193c0dc615414f265738c42d405" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_STRING_LITERAL</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a5e958eeb7a4721a59af5b0fb2bb9f705" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_VAR</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1aa2dd33e83f9c51da3a22b06f75b95983" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_WHILE</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a96c8f7d8fcc7beaef2ffe7d1aecf1233" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_YYerror</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a899637ea3fe2fa72aa96c5cb828d7838" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>make_YYUNDEF</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1afe910be3615985fe53eb94420d952f84" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>operator()</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ac209b8192a9d9ec97604ca601817a1c6" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>operator=</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a74365513e5eea20e7cd073d9b6d3a93b" prot="public" virt="virtual"><scope>yy::kivi_parser</scope><name>parse</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a093f1126806d77496be99a16401f2b57" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>stack_type</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a80cad56158a0cf92302ce401c0ac89be" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>state_type</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a4a180c7f7bbd3e7c4641e00279526908" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>symbol_kind_type</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a7a801aedf5f3a79b946d268c4518697c" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>symbol_name</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a0eaf34d214d4e7df9cc0268684e9d706" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>token_kind_type</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a30df10720ee723439c811ef48eb55ee0" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>token_type</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a7d36c0b00ee3fb2fca6bca040cc95e57" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yy_destroy_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1aa2d41bf2dc1d5e2b3d2411a0335bd2c6" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yy_lr_goto_state_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ab5c2b03d31045c5d8de094a417fcc3ef" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yy_pact_value_is_default_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a5206d72d4995255f6f73583fee1b679e" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yy_syntax_error_arguments_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a3beaa2640524a4201c802a8f984173e3" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yy_table_value_is_error_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a8d7ab2ff251288a4319fa233d98ac7c7" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yycheck_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a1bbc5ded960cbe811a6b318c675041af" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yydefact_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a6a2ccd67142fcf89ee57db0a1fc736fc" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yydefgoto_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a0a39ae9bba0fac1307cc0c74fc3aa380ad86102523204778b705a6c1b726c5ad4" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yyfinal_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a0a39ae9bba0fac1307cc0c74fc3aa380a36ddf55f83b654d0b1aefe314a55c569" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yylast_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a0a39ae9bba0fac1307cc0c74fc3aa380a08626ad837b35fcbf5298fb2cf1845ff" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yynnts_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a9ca8760641e0737dfe2019333e8fe62f" prot="public" virt="non-virtual"><scope>yy::kivi_parser</scope><name>YYNTOKENS</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a9c46958b5175de19c2aa8fdf224d127b" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yypact_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a0c5b6b99d322d91ee57a732504cca81f" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yypact_ninf_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a5c34588b82c1fbc49731b2dfa04ad89c" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yypgoto_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a5cb47897b29e7f448da7f4b77f26a91d" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yypop_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ae557d617916f356b3d078136f5b9cc3b" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yypush_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ac066340d4157f781ca631741e3d172e2" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yypush_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a9028f714d2ce94955248ca83355f0588" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yyr1_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a3e06459d32495da382f8e7d59340ce3f" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yyr2_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ac70d0cf17a23355e6733a12f430ec7a7" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yystack_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ae865dfc46051c20d6a78468fa0149281" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yystos_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a7977da56a69614a9d9cfd719c937c859" prot="private" virt="virtual"><scope>yy::kivi_parser</scope><name>yysyntax_error_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ac8c8bbd154063cf4232da704e03eb245" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yytable_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1adb1eb14fa2a1c532e5ecd9551ad4a141" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yytable_ninf_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1ab236692542ea5d5976558f7493c92778" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yytname_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a974190b31b64fd57cbe207b3b7147c26" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yytnamerr_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a5e98d1cc4af620f14948bec18010289a" prot="private" virt="non-virtual"><scope>yy::kivi_parser</scope><name>yytranslate_</name></member>
+      <member refid="da/d00/classyy_1_1kivi__parser_1a6ef4013ad613fd356ee159384ac15cc1" prot="public" virt="virtual"><scope>yy::kivi_parser</scope><name>~ kivi_parser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

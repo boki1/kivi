@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_189a8fa8e8b1754d9daadbd6bf7cfeb9" kind="dir">
+    <compoundname>/home/boki/.tmp/kivi/extern/loguru</compoundname>
+    <innerfile refid="df/d02/loguru_8cpp">loguru.cpp</innerfile>
+    <innerfile refid="df/dec/loguru_8hpp">loguru.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/loguru/"/>
+  </compounddef>
+</doxygen>

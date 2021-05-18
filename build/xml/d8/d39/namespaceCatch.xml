@@ -1,0 +1,1570 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/d39/namespaceCatch" kind="namespace" language="C++">
+    <compoundname>Catch</compoundname>
+    <innerclass refid="d3/d1d/structCatch_1_1CaseSensitive" prot="public">Catch::CaseSensitive</innerclass>
+    <innerclass refid="dc/d1c/classCatch_1_1NonCopyable" prot="public">Catch::NonCopyable</innerclass>
+    <innerclass refid="dc/d2b/structCatch_1_1SourceLineInfo" prot="public">Catch::SourceLineInfo</innerclass>
+    <innerclass refid="d4/dd0/structCatch_1_1StreamEndStop" prot="public">Catch::StreamEndStop</innerclass>
+    <innerclass refid="d3/d8f/structCatch_1_1RegistrarForTagAliases" prot="public">Catch::RegistrarForTagAliases</innerclass>
+    <innerclass refid="d2/dac/structCatch_1_1ITestInvoker" prot="public">Catch::ITestInvoker</innerclass>
+    <innerclass refid="d6/dc8/structCatch_1_1ITestCaseRegistry" prot="public">Catch::ITestCaseRegistry</innerclass>
+    <innerclass refid="d5/dd8/classCatch_1_1StringRef" prot="public">Catch::StringRef</innerclass>
+    <innerclass refid="d2/dd6/structCatch_1_1always__false" prot="public">Catch::always_false</innerclass>
+    <innerclass refid="d1/d04/structCatch_1_1true__given" prot="public">Catch::true_given</innerclass>
+    <innerclass refid="d2/dc6/structCatch_1_1is__callable__tester" prot="public">Catch::is_callable_tester</innerclass>
+    <innerclass refid="d8/db9/structCatch_1_1is__callable" prot="public">Catch::is_callable</innerclass>
+    <innerclass refid="da/d5f/structCatch_1_1is__callable_3_01Fun_07Args_8_8_8_08_4" prot="public">Catch::is_callable&lt; Fun(Args...)&gt;</innerclass>
+    <innerclass refid="d4/d9d/classCatch_1_1TestInvokerAsMethod" prot="public">Catch::TestInvokerAsMethod</innerclass>
+    <innerclass refid="db/d73/structCatch_1_1NameAndTags" prot="public">Catch::NameAndTags</innerclass>
+    <innerclass refid="dc/d59/structCatch_1_1AutoReg" prot="public">Catch::AutoReg</innerclass>
+    <innerclass refid="d5/d8c/structCatch_1_1ResultWas" prot="public">Catch::ResultWas</innerclass>
+    <innerclass refid="d8/d62/structCatch_1_1ResultDisposition" prot="public">Catch::ResultDisposition</innerclass>
+    <innerclass refid="d2/d71/structCatch_1_1AssertionInfo" prot="public">Catch::AssertionInfo</innerclass>
+    <innerclass refid="dc/d99/structCatch_1_1IStream" prot="public">Catch::IStream</innerclass>
+    <innerclass refid="d9/d54/classCatch_1_1ReusableStringStream" prot="public">Catch::ReusableStringStream</innerclass>
+    <innerclass refid="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry" prot="public">Catch::IMutableEnumValuesRegistry</innerclass>
+    <innerclass refid="d2/dc0/structCatch_1_1StringMaker" prot="public">Catch::StringMaker</innerclass>
+    <innerclass refid="d8/dda/structCatch_1_1StringMaker_3_01std_1_1string_01_4" prot="public">Catch::StringMaker&lt; std::string &gt;</innerclass>
+    <innerclass refid="d5/dfc/structCatch_1_1StringMaker_3_01char_01const_01_5_01_4" prot="public">Catch::StringMaker&lt; char const * &gt;</innerclass>
+    <innerclass refid="d0/d4b/structCatch_1_1StringMaker_3_01char_01_5_01_4" prot="public">Catch::StringMaker&lt; char * &gt;</innerclass>
+    <innerclass refid="d2/d92/structCatch_1_1StringMaker_3_01std_1_1wstring_01_4" prot="public">Catch::StringMaker&lt; std::wstring &gt;</innerclass>
+    <innerclass refid="d6/dca/structCatch_1_1StringMaker_3_01wchar__t_01const_01_5_01_4" prot="public">Catch::StringMaker&lt; wchar_t const * &gt;</innerclass>
+    <innerclass refid="d0/d3c/structCatch_1_1StringMaker_3_01wchar__t_01_5_01_4" prot="public">Catch::StringMaker&lt; wchar_t * &gt;</innerclass>
+    <innerclass refid="d6/d92/structCatch_1_1StringMaker_3_01char_0fSZ_0e_4" prot="public">Catch::StringMaker&lt; char[SZ]&gt;</innerclass>
+    <innerclass refid="dd/dce/structCatch_1_1StringMaker_3_01signed_01char_0fSZ_0e_4" prot="public">Catch::StringMaker&lt; signed char[SZ]&gt;</innerclass>
+    <innerclass refid="dc/d23/structCatch_1_1StringMaker_3_01unsigned_01char_0fSZ_0e_4" prot="public">Catch::StringMaker&lt; unsigned char[SZ]&gt;</innerclass>
+    <innerclass refid="da/dc8/structCatch_1_1StringMaker_3_01int_01_4" prot="public">Catch::StringMaker&lt; int &gt;</innerclass>
+    <innerclass refid="d6/da5/structCatch_1_1StringMaker_3_01long_01_4" prot="public">Catch::StringMaker&lt; long &gt;</innerclass>
+    <innerclass refid="da/d35/structCatch_1_1StringMaker_3_01long_01long_01_4" prot="public">Catch::StringMaker&lt; long long &gt;</innerclass>
+    <innerclass refid="d7/d29/structCatch_1_1StringMaker_3_01unsigned_01int_01_4" prot="public">Catch::StringMaker&lt; unsigned int &gt;</innerclass>
+    <innerclass refid="d6/dbc/structCatch_1_1StringMaker_3_01unsigned_01long_01_4" prot="public">Catch::StringMaker&lt; unsigned long &gt;</innerclass>
+    <innerclass refid="dc/d47/structCatch_1_1StringMaker_3_01unsigned_01long_01long_01_4" prot="public">Catch::StringMaker&lt; unsigned long long &gt;</innerclass>
+    <innerclass refid="da/dcf/structCatch_1_1StringMaker_3_01bool_01_4" prot="public">Catch::StringMaker&lt; bool &gt;</innerclass>
+    <innerclass refid="d3/de0/structCatch_1_1StringMaker_3_01char_01_4" prot="public">Catch::StringMaker&lt; char &gt;</innerclass>
+    <innerclass refid="d7/d36/structCatch_1_1StringMaker_3_01signed_01char_01_4" prot="public">Catch::StringMaker&lt; signed char &gt;</innerclass>
+    <innerclass refid="db/d55/structCatch_1_1StringMaker_3_01unsigned_01char_01_4" prot="public">Catch::StringMaker&lt; unsigned char &gt;</innerclass>
+    <innerclass refid="d4/d86/structCatch_1_1StringMaker_3_01std_1_1nullptr__t_01_4" prot="public">Catch::StringMaker&lt; std::nullptr_t &gt;</innerclass>
+    <innerclass refid="d6/d2b/structCatch_1_1StringMaker_3_01float_01_4" prot="public">Catch::StringMaker&lt; float &gt;</innerclass>
+    <innerclass refid="dc/dc8/structCatch_1_1StringMaker_3_01double_01_4" prot="public">Catch::StringMaker&lt; double &gt;</innerclass>
+    <innerclass refid="d6/d38/structCatch_1_1StringMaker_3_01T_01_5_01_4" prot="public">Catch::StringMaker&lt; T * &gt;</innerclass>
+    <innerclass refid="d2/d02/structCatch_1_1StringMaker_3_01R_01C_1_1_5_01_4" prot="public">Catch::StringMaker&lt; R C::* &gt;</innerclass>
+    <innerclass refid="d7/d57/structCatch_1_1is__range" prot="public">Catch::is_range</innerclass>
+    <innerclass refid="db/d08/structCatch_1_1StringMaker_3_01R_00_01typename_01std_1_1enable__if_3_01is__range_3_01R_01_4_1_1ve8233c20b54b69b4771fbd413409d181" prot="public">Catch::StringMaker&lt; R, typename std::enable_if&lt; is_range&lt; R &gt;::value &amp;&amp;!::Catch::Detail::IsStreamInsertable&lt; R &gt;::value &gt;::type &gt;</innerclass>
+    <innerclass refid="d9/d05/structCatch_1_1StringMaker_3_01T_0fSZ_0e_4" prot="public">Catch::StringMaker&lt; T[SZ]&gt;</innerclass>
+    <innerclass refid="d3/d6e/structCatch_1_1ITransientExpression" prot="public">Catch::ITransientExpression</innerclass>
+    <innerclass refid="da/d8b/classCatch_1_1BinaryExpr" prot="public">Catch::BinaryExpr</innerclass>
+    <innerclass refid="d0/df1/classCatch_1_1UnaryExpr" prot="public">Catch::UnaryExpr</innerclass>
+    <innerclass refid="d9/d2f/classCatch_1_1ExprLhs" prot="public">Catch::ExprLhs</innerclass>
+    <innerclass refid="d9/d36/structCatch_1_1Decomposer" prot="public">Catch::Decomposer</innerclass>
+    <innerclass refid="d6/d6e/structCatch_1_1IResultCapture" prot="public">Catch::IResultCapture</innerclass>
+    <innerclass refid="d4/d31/structCatch_1_1TestFailureException" prot="public">Catch::TestFailureException</innerclass>
+    <innerclass refid="d1/d14/classCatch_1_1LazyExpression" prot="public">Catch::LazyExpression</innerclass>
+    <innerclass refid="dd/d07/structCatch_1_1AssertionReaction" prot="public">Catch::AssertionReaction</innerclass>
+    <innerclass refid="d9/d88/classCatch_1_1AssertionHandler" prot="public">Catch::AssertionHandler</innerclass>
+    <innerclass refid="d7/d37/structCatch_1_1MessageInfo" prot="public">Catch::MessageInfo</innerclass>
+    <innerclass refid="d6/db6/structCatch_1_1MessageStream" prot="public">Catch::MessageStream</innerclass>
+    <innerclass refid="d2/d7e/structCatch_1_1MessageBuilder" prot="public">Catch::MessageBuilder</innerclass>
+    <innerclass refid="d0/d0a/classCatch_1_1ScopedMessage" prot="public">Catch::ScopedMessage</innerclass>
+    <innerclass refid="d1/d4d/classCatch_1_1Capturer" prot="public">Catch::Capturer</innerclass>
+    <innerclass refid="de/db0/structCatch_1_1Counts" prot="public">Catch::Counts</innerclass>
+    <innerclass refid="d2/d01/structCatch_1_1Totals" prot="public">Catch::Totals</innerclass>
+    <innerclass refid="d4/d7e/structCatch_1_1SectionInfo" prot="public">Catch::SectionInfo</innerclass>
+    <innerclass refid="da/d6c/structCatch_1_1SectionEndInfo" prot="public">Catch::SectionEndInfo</innerclass>
+    <innerclass refid="d8/d44/classCatch_1_1Timer" prot="public">Catch::Timer</innerclass>
+    <innerclass refid="da/d10/classCatch_1_1Section" prot="public">Catch::Section</innerclass>
+    <innerclass refid="d2/d11/structCatch_1_1IRegistryHub" prot="public">Catch::IRegistryHub</innerclass>
+    <innerclass refid="d2/d60/structCatch_1_1IMutableRegistryHub" prot="public">Catch::IMutableRegistryHub</innerclass>
+    <innerclass refid="d9/d8c/structCatch_1_1IExceptionTranslator" prot="public">Catch::IExceptionTranslator</innerclass>
+    <innerclass refid="d7/d91/structCatch_1_1IExceptionTranslatorRegistry" prot="public">Catch::IExceptionTranslatorRegistry</innerclass>
+    <innerclass refid="d7/dfd/classCatch_1_1ExceptionTranslatorRegistrar" prot="public">Catch::ExceptionTranslatorRegistrar</innerclass>
+    <innerclass refid="df/d3d/structCatch_1_1StringMaker_3_01Catch_1_1Detail_1_1Approx_01_4" prot="public">Catch::StringMaker&lt; Catch::Detail::Approx &gt;</innerclass>
+    <innerclass refid="d2/d54/structCatch_1_1pluralise" prot="public">Catch::pluralise</innerclass>
+    <innerclass refid="d4/d40/classCatch_1_1MatchExpr" prot="public">Catch::MatchExpr</innerclass>
+    <innerclass refid="de/d7e/structCatch_1_1IGeneratorTracker" prot="public">Catch::IGeneratorTracker</innerclass>
+    <innerclass refid="d0/db3/classCatch_1_1GeneratorException" prot="public">Catch::GeneratorException</innerclass>
+    <innerclass refid="d4/d17/structCatch_1_1IContext" prot="public">Catch::IContext</innerclass>
+    <innerclass refid="dc/dc9/structCatch_1_1IMutableContext" prot="public">Catch::IMutableContext</innerclass>
+    <innerclass refid="d7/dc7/classCatch_1_1Option" prot="public">Catch::Option</innerclass>
+    <innerclass refid="de/dcf/structCatch_1_1WarnAbout" prot="public">Catch::WarnAbout</innerclass>
+    <innerclass refid="d0/d82/structCatch_1_1ShowDurations" prot="public">Catch::ShowDurations</innerclass>
+    <innerclass refid="d0/d97/structCatch_1_1RunTests" prot="public">Catch::RunTests</innerclass>
+    <innerclass refid="d3/d7a/structCatch_1_1UseColour" prot="public">Catch::UseColour</innerclass>
+    <innerclass refid="dc/d3e/structCatch_1_1WaitForKeypress" prot="public">Catch::WaitForKeypress</innerclass>
+    <innerclass refid="df/ddf/structCatch_1_1IConfig" prot="public">Catch::IConfig</innerclass>
+    <innerclass refid="de/d68/classCatch_1_1SimplePcg32" prot="public">Catch::SimplePcg32</innerclass>
+    <innerclass refid="de/d62/structCatch_1_1TestCaseInfo" prot="public">Catch::TestCaseInfo</innerclass>
+    <innerclass refid="d6/df4/classCatch_1_1TestCase" prot="public">Catch::TestCase</innerclass>
+    <innerclass refid="d6/d0e/structCatch_1_1IRunner" prot="public">Catch::IRunner</innerclass>
+    <innernamespace refid="d6/dab/namespaceCatch_1_1Detail">Catch::Detail</innernamespace>
+    <innernamespace refid="db/de9/namespaceCatch_1_1detail">Catch::detail</innernamespace>
+    <innernamespace refid="d0/d0a/namespaceCatch_1_1Generators">Catch::Generators</innernamespace>
+    <innernamespace refid="d7/d6e/namespaceCatch_1_1literals">Catch::literals</innernamespace>
+    <innernamespace refid="d3/d08/namespaceCatch_1_1Matchers">Catch::Matchers</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d8/d39/namespaceCatch_1af85c0d46dfe687d923a157362fd07737" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Verbosity</name>
+        <enumvalue id="d8/d39/namespaceCatch_1af85c0d46dfe687d923a157362fd07737a098753f8980036f4b936e3d4b6997111" prot="public">
+          <name>Quiet</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d39/namespaceCatch_1af85c0d46dfe687d923a157362fd07737a960b44c579bc2f6818d2daaf9e4c16f0" prot="public">
+          <name>Normal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d39/namespaceCatch_1af85c0d46dfe687d923a157362fd07737a655d20c1ca69519ca647684edbb2db35" prot="public">
+          <name>High</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4469" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4469" bodyend="4473"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d8/d39/namespaceCatch_1a3051165b0eea6023939f0f8a71ecf03f" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename Func</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>U</declname>
+            <defname>U</defname>
+          </param>
+        </templateparamlist>
+        <type>typename std::remove_reference&lt; typename std::remove_cv&lt; typename std::result_of&lt; Func(U...)&gt;::type &gt;::type &gt;::type</type>
+        <definition>using Catch::FunctionReturnType = typedef typename std::remove_reference&lt;typename std::remove_cv&lt;typename std::result_of&lt;Func(U...)&gt;::type&gt;::type&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>FunctionReturnType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="947" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="947" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d39/namespaceCatch_1ad1b36ac40c2739e52fd453dcdddf0d09" prot="public" static="no">
+        <type>std::shared_ptr&lt; IReporterFactory &gt;</type>
+        <definition>using Catch::IReporterFactoryPtr = typedef std::shared_ptr&lt;IReporterFactory&gt;</definition>
+        <argsstring></argsstring>
+        <name>IReporterFactoryPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2961" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2961" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d39/namespaceCatch_1ae8d8673884dc36b98875106322a2a37b" prot="public" static="no">
+        <type>std::string(*)()</type>
+        <definition>using Catch::exceptionTranslateFunction = typedef std::string(*)()</definition>
+        <argsstring></argsstring>
+        <name>exceptionTranslateFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3003" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3003" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d39/namespaceCatch_1a7ad07967e688fdc03cf784f58be4b741" prot="public" static="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="d9/d8c/structCatch_1_1IExceptionTranslator" kindref="compound">IExceptionTranslator</ref> const  &gt; &gt;</type>
+        <definition>using Catch::ExceptionTranslators = typedef std::vector&lt;std::unique_ptr&lt;IExceptionTranslator const&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>ExceptionTranslators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3006" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d39/namespaceCatch_1aba438977e831821a2eeca82b9b4f4af2" prot="public" static="no">
+        <type><ref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" kindref="compound">Matchers::Impl::MatcherBase</ref>&lt; std::string &gt;</type>
+        <definition>using Catch::StringMatcher = typedef Matchers::Impl::MatcherBase&lt;std::string&gt;</definition>
+        <argsstring></argsstring>
+        <name>StringMatcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3790" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3790" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d39/namespaceCatch_1afd20a5d4f9d2f4d525db81a7765367b0" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="df/ddf/structCatch_1_1IConfig" kindref="compound">IConfig</ref> const  &gt;</type>
+        <definition>typedef std::shared_ptr&lt; IConfig const  &gt; Catch::IConfigPtr</definition>
+        <argsstring></argsstring>
+        <name>IConfigPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4349" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4349" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1acf5ea05e942d2d7fe79111e12754ed76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Catch::rngSeed</definition>
+        <argsstring>()</argsstring>
+        <name>rngSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="99" column="18" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="99" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a6ec18b5054d7fdfdde861c580b082995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Catch::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, SourceLineInfo const &amp;info)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d2b/structCatch_1_1SourceLineInfo" kindref="compound">SourceLineInfo</ref> const &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="521" column="5" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="521" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a5e95b3c47a7618db3649dc39b0bb9004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T const  &amp;</type>
+        <definition>T const&amp; Catch::operator+</definition>
+        <argsstring>(T const &amp;value, StreamEndStop)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dd0/structCatch_1_1StreamEndStop" kindref="compound">StreamEndStop</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="536" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="536" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1af3e820574c7a0b38d71328c5bd54b0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::isThrowSafe</definition>
+        <argsstring>(TestCase const &amp;testCase, IConfig const &amp;config)</argsstring>
+        <name>isThrowSafe</name>
+        <param>
+          <type><ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref> const &amp;</type>
+          <declname>testCase</declname>
+        </param>
+        <param>
+          <type><ref refid="df/ddf/structCatch_1_1IConfig" kindref="compound">IConfig</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="584" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="584" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1aadef80fbc6bc84589777a462770cef49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::matchTest</definition>
+        <argsstring>(TestCase const &amp;testCase, TestSpec const &amp;testSpec, IConfig const &amp;config)</argsstring>
+        <name>matchTest</name>
+        <param>
+          <type><ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref> const &amp;</type>
+          <declname>testCase</declname>
+        </param>
+        <param>
+          <type>TestSpec const &amp;</type>
+          <declname>testSpec</declname>
+        </param>
+        <param>
+          <type><ref refid="df/ddf/structCatch_1_1IConfig" kindref="compound">IConfig</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="585" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="585" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ab5da9aa67c42a3f626aea07d0b556829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref> &gt;</type>
+        <definition>std::vector&lt;TestCase&gt; Catch::filterTests</definition>
+        <argsstring>(std::vector&lt; TestCase &gt; const &amp;testCases, TestSpec const &amp;testSpec, IConfig const &amp;config)</argsstring>
+        <name>filterTests</name>
+        <param>
+          <type>std::vector&lt; <ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref> &gt; const &amp;</type>
+          <declname>testCases</declname>
+        </param>
+        <param>
+          <type>TestSpec const &amp;</type>
+          <declname>testSpec</declname>
+        </param>
+        <param>
+          <type><ref refid="df/ddf/structCatch_1_1IConfig" kindref="compound">IConfig</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="586" column="17" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="586" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a1c9b1a23bc947ea70ddaabf067276cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref> &gt; const  &amp;</type>
+        <definition>std::vector&lt;TestCase&gt; const&amp; Catch::getAllTestCasesSorted</definition>
+        <argsstring>(IConfig const &amp;config)</argsstring>
+        <name>getAllTestCasesSorted</name>
+        <param>
+          <type><ref refid="df/ddf/structCatch_1_1IConfig" kindref="compound">IConfig</ref> const &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="587" column="23" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="587" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a61711bc909f8dc76d8b3deccc1440f46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::operator+=</definition>
+        <argsstring>(std::string &amp;lhs, StringRef const &amp;sr) -&gt; std::string &amp;</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="675" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="675" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a5e37b333d756a28e12d44977f063af43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, StringRef const &amp;sr) -&gt; std::ostream &amp;</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="676" column="5" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="676" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1adc1e84abf2d7a8b971948ec4ab373280" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto Catch::operator&quot;&quot;_sr</definition>
+        <argsstring>(char const *rawChars, std::size_t size) noexcept -&gt; StringRef</argsstring>
+        <name>operator&quot;&quot;_sr</name>
+        <param>
+          <type>char const *</type>
+          <declname>rawChars</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="678" column="20" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="678" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ab3d8ccbc900fe50322c39ecbba52f536" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::makeTestInvoker</definition>
+        <argsstring>(void(*testAsFunction)()) noexcept -&gt; ITestInvoker *</argsstring>
+        <name>makeTestInvoker</name>
+        <param>
+          <type>void(*)()</type>
+          <declname>testAsFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="971" column="6" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="971" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a82a954c4d70afa716115820dc7dc8d24" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename C</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::makeTestInvoker</definition>
+        <argsstring>(void(C::*testAsMethod)()) noexcept -&gt; ITestInvoker *</argsstring>
+        <name>makeTestInvoker</name>
+        <param>
+          <type>void(C::*)()</type>
+          <declname>testAsMethod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="974" column="6" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="974" bodyend="976"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a5205869c81c06d3460759cb86676ae68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::isOk</definition>
+        <argsstring>(ResultWas::OfType resultType)</argsstring>
+        <name>isOk</name>
+        <param>
+          <type><ref refid="d5/d8c/structCatch_1_1ResultWas_1a624e1ee3661fcf6094ceef1f654601ef" kindref="member">ResultWas::OfType</ref></type>
+          <declname>resultType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1371" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="1371" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a54b01af61673a3e1f21f31713639b180" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::isJustInfo</definition>
+        <argsstring>(int flags)</argsstring>
+        <name>isJustInfo</name>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1372" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="1372" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ab32a083e442cc09f736327d2e2865999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8" kindref="member">ResultDisposition::Flags</ref></type>
+        <definition>ResultDisposition::Flags Catch::operator|</definition>
+        <argsstring>(ResultDisposition::Flags lhs, ResultDisposition::Flags rhs)</argsstring>
+        <name>operator|</name>
+        <param>
+          <type><ref refid="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8" kindref="member">ResultDisposition::Flags</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8" kindref="member">ResultDisposition::Flags</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1383" column="30" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="1383" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a7f7480b15d74965459c844f0d393ed87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::shouldContinueOnFailure</definition>
+        <argsstring>(int flags)</argsstring>
+        <name>shouldContinueOnFailure</name>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1385" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="1385" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a93ef4e3e307a2021ca0d41b32c0e54b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::isFalseTest</definition>
+        <argsstring>(int flags)</argsstring>
+        <name>isFalseTest</name>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1386" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1386" bodyend="1386"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ab91eb13081203d634fe48d3d2ab386d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::shouldSuppressFailure</definition>
+        <argsstring>(int flags)</argsstring>
+        <name>shouldSuppressFailure</name>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1387" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="1387" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a50af73c5a37ad5c6558df4ce4a275e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Catch::cout</definition>
+        <argsstring>()</argsstring>
+        <name>cout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1425" column="18" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="1425" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a4e5b5dc07abdfa30de33593dfab71f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Catch::cerr</definition>
+        <argsstring>()</argsstring>
+        <name>cerr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1426" column="18" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="1426" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a5a0677089050dcdb4848f56fb47e9279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Catch::clog</definition>
+        <argsstring>()</argsstring>
+        <name>clog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1427" column="18" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="1427" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1af6d27462573d60c30c51acf1c980e3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::makeStream</definition>
+        <argsstring>(StringRef const &amp;filename) -&gt; IStream const *</argsstring>
+        <name>makeStream</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1436" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="1436" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1af13494e925a793e3e7143c6ce6f442c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Range</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Catch::rangeToString</definition>
+        <argsstring>(Range const &amp;range)</argsstring>
+        <name>rangeToString</name>
+        <param>
+          <type>Range const &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2016" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2016" bodyend="2018"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ae162dc66b7767a52e7e4283915fd3d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Allocator</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string Catch::rangeToString</definition>
+        <argsstring>(std::vector&lt; bool, Allocator &gt; const &amp;v)</argsstring>
+        <name>rangeToString</name>
+        <param>
+          <type>std::vector&lt; bool, Allocator &gt; const &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2022" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2022" bodyend="2035"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a520110c31f26cf9892595772ab814fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::formatReconstructedExpression</definition>
+        <argsstring>(std::ostream &amp;os, std::string const &amp;lhs, StringRef op, std::string const &amp;rhs)</argsstring>
+        <name>formatReconstructedExpression</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2219" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2219" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1af89b8df30cfaf09abd048c6ff67359ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LhsT</type>
+          </param>
+          <param>
+            <type>typename RhsT</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareEqual</definition>
+        <argsstring>(LhsT const &amp;lhs, RhsT const &amp;rhs) -&gt; bool</argsstring>
+        <name>compareEqual</name>
+        <param>
+          <type>LhsT const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>RhsT const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2314" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2314" bodyend="2314"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a68f451c45e65f242dde5f21c19a4cf7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareEqual</definition>
+        <argsstring>(T *const &amp;lhs, int rhs) -&gt; bool</argsstring>
+        <name>compareEqual</name>
+        <param>
+          <type>T *const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2316" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2316" bodyend="2316"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1afca4a005e1053c542462dc7a603b41b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareEqual</definition>
+        <argsstring>(T *const &amp;lhs, long rhs) -&gt; bool</argsstring>
+        <name>compareEqual</name>
+        <param>
+          <type>T *const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2318" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2318" bodyend="2318"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a6af99378569fc6f68270b6af669f1c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareEqual</definition>
+        <argsstring>(int lhs, T *const &amp;rhs) -&gt; bool</argsstring>
+        <name>compareEqual</name>
+        <param>
+          <type>int</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>T *const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2320" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2320" bodyend="2320"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a72f10ec2cad6db16029d48c8c1d9df2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareEqual</definition>
+        <argsstring>(long lhs, T *const &amp;rhs) -&gt; bool</argsstring>
+        <name>compareEqual</name>
+        <param>
+          <type>long</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>T *const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2322" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2322" bodyend="2322"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a8bec217f5ef5f09c17074c311c958f3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LhsT</type>
+          </param>
+          <param>
+            <type>typename RhsT</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareNotEqual</definition>
+        <argsstring>(LhsT const &amp;lhs, RhsT &amp;&amp;rhs) -&gt; bool</argsstring>
+        <name>compareNotEqual</name>
+        <param>
+          <type>LhsT const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>RhsT &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2325" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2325" bodyend="2325"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1aa81c95898f22dce1f61d7710e495d1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareNotEqual</definition>
+        <argsstring>(T *const &amp;lhs, int rhs) -&gt; bool</argsstring>
+        <name>compareNotEqual</name>
+        <param>
+          <type>T *const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2327" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2327" bodyend="2327"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1adad6539b3780b9a8953221efd038e2e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareNotEqual</definition>
+        <argsstring>(T *const &amp;lhs, long rhs) -&gt; bool</argsstring>
+        <name>compareNotEqual</name>
+        <param>
+          <type>T *const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2329" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2329" bodyend="2329"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1adb4b3e912b89a987025ca28cf0c92ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareNotEqual</definition>
+        <argsstring>(int lhs, T *const &amp;rhs) -&gt; bool</argsstring>
+        <name>compareNotEqual</name>
+        <param>
+          <type>int</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>T *const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2331" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2331" bodyend="2331"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a3db634a0adf44a1148767ba149ccf34d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::compareNotEqual</definition>
+        <argsstring>(long lhs, T *const &amp;rhs) -&gt; bool</argsstring>
+        <name>compareNotEqual</name>
+        <param>
+          <type>long</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>T *const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2333" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2333" bodyend="2333"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a65af25091f2ab61056e166765963e525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::handleExpression</definition>
+        <argsstring>(ITransientExpression const &amp;expr)</argsstring>
+        <name>handleExpression</name>
+        <param>
+          <type><ref refid="d3/d6e/structCatch_1_1ITransientExpression" kindref="compound">ITransientExpression</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2405" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2405" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1af2c93db76668a981e75ae835699efce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Catch::handleExpression</definition>
+        <argsstring>(ExprLhs&lt; T &gt; const &amp;expr)</argsstring>
+        <name>handleExpression</name>
+        <param>
+          <type><ref refid="d9/d2f/classCatch_1_1ExprLhs" kindref="compound">ExprLhs</ref>&lt; T &gt; const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2408" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2408" bodyend="2410"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1aff60c1de6ac6cea30175d70e33d83c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d6e/structCatch_1_1IResultCapture" kindref="compound">IResultCapture</ref> &amp;</type>
+        <definition>IResultCapture&amp; Catch::getResultCapture</definition>
+        <argsstring>()</argsstring>
+        <name>getResultCapture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2513" column="20" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2513" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1aea6f8ff3b3838829d4a61694e4bc41ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::handleExceptionMatchExpr</definition>
+        <argsstring>(AssertionHandler &amp;handler, std::string const &amp;str, StringRef const &amp;matcherString)</argsstring>
+        <name>handleExceptionMatchExpr</name>
+        <param>
+          <type><ref refid="d9/d88/classCatch_1_1AssertionHandler" kindref="compound">AssertionHandler</ref> &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>matcherString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2585" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2585" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a98d058468488c486a9cb5c8463f3ba29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::getCurrentNanosecondsSinceEpoch</definition>
+        <argsstring>() -&gt; uint64_t</argsstring>
+        <name>getCurrentNanosecondsSinceEpoch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2889" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2889" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ac8e1ed37624bd0d97b2c0d4ec099d31f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::getEstimatedClockResolution</definition>
+        <argsstring>() -&gt; uint64_t</argsstring>
+        <name>getEstimatedClockResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2890" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2890" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a6332c92ab0c3952586b22cb96fdb8d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/d11/structCatch_1_1IRegistryHub" kindref="compound">IRegistryHub</ref> const  &amp;</type>
+        <definition>IRegistryHub const&amp; Catch::getRegistryHub</definition>
+        <argsstring>()</argsstring>
+        <name>getRegistryHub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2985" column="24" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2985" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ac9ddcc6d66079add9cb2a3140b8ae51e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/d60/structCatch_1_1IMutableRegistryHub" kindref="compound">IMutableRegistryHub</ref> &amp;</type>
+        <definition>IMutableRegistryHub&amp; Catch::getMutableRegistryHub</definition>
+        <argsstring>()</argsstring>
+        <name>getMutableRegistryHub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2986" column="25" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2986" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a0f78e9afdebc6d4512d18e76fbf54b8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::cleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>cleanUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2987" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2987" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1adafff91485eeeeb9e9333f317cc0e3b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::translateActiveException</definition>
+        <argsstring>()</argsstring>
+        <name>translateActiveException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2988" column="17" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="2988" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a695f62327be0676e046291eeaae15110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::startsWith</definition>
+        <argsstring>(std::string const &amp;s, std::string const &amp;prefix)</argsstring>
+        <name>startsWith</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3198" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3198" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1acad23751846ac23d0f379e34f5adebb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::startsWith</definition>
+        <argsstring>(std::string const &amp;s, char prefix)</argsstring>
+        <name>startsWith</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3199" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3199" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ada025504f627feaf9ac68ca391515dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::endsWith</definition>
+        <argsstring>(std::string const &amp;s, std::string const &amp;suffix)</argsstring>
+        <name>endsWith</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>suffix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3200" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3200" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1afd801a3e33fd7a8b91ded0d02747a93f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::endsWith</definition>
+        <argsstring>(std::string const &amp;s, char suffix)</argsstring>
+        <name>endsWith</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>suffix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3201" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3201" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1aa52974b0e426e7e2fbd725a900e9c36e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::contains</definition>
+        <argsstring>(std::string const &amp;s, std::string const &amp;infix)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>infix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3202" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3202" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a0760dbe87d090a55a35414db57d272c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::toLowerInPlace</definition>
+        <argsstring>(std::string &amp;s)</argsstring>
+        <name>toLowerInPlace</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3203" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3203" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ac036a17412d318598ffda8e1fe7a1177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::toLower</definition>
+        <argsstring>(std::string const &amp;s)</argsstring>
+        <name>toLower</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3204" column="17" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3204" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a084108b47f37d8bfd5db51c50c7451b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::trim</definition>
+        <argsstring>(std::string const &amp;str)</argsstring>
+        <name>trim</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Returns a new string without whitespace at the start/end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3206" column="17" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3206" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a6f6d8ef0349688290bd242b50a702c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+        <definition>StringRef Catch::trim</definition>
+        <argsstring>(StringRef ref)</argsstring>
+        <name>trim</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+<para>Returns a substring of the original ref without whitespace. Beware lifetimes! </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3208" column="15" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3208" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a35ef4c6329ab86a47243c25a58274109" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> &gt;</type>
+        <definition>std::vector&lt;StringRef&gt; Catch::splitStringRef</definition>
+        <argsstring>(StringRef str, char delimiter)</argsstring>
+        <name>splitStringRef</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>delimiter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3211" column="17" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3211" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1afe4e6770da547e43e9e4eeaa05f946ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::replaceInPlace</definition>
+        <argsstring>(std::string &amp;str, std::string const &amp;replaceThis, std::string const &amp;withThis)</argsstring>
+        <name>replaceInPlace</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>replaceThis</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>withThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3212" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3212" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a3a96a82307107087642e22fc4be5844d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::handleExceptionMatchExpr</definition>
+        <argsstring>(AssertionHandler &amp;handler, StringMatcher const &amp;matcher, StringRef const &amp;matcherString)</argsstring>
+        <name>handleExceptionMatchExpr</name>
+        <param>
+          <type><ref refid="d9/d88/classCatch_1_1AssertionHandler" kindref="compound">AssertionHandler</ref> &amp;</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d39/namespaceCatch_1aba438977e831821a2eeca82b9b4f4af2" kindref="member">StringMatcher</ref> const &amp;</type>
+          <declname>matcher</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>matcherString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3792" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3792" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a23a9a9a6dfef7ecd5e0eaf553fc52de6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ArgT</type>
+          </param>
+          <param>
+            <type>typename MatcherT</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::makeMatchExpr</definition>
+        <argsstring>(ArgT const &amp;arg, MatcherT const &amp;matcher, StringRef const &amp;matcherString) -&gt; MatchExpr&lt; ArgT, MatcherT &gt;</argsstring>
+        <name>makeMatchExpr</name>
+        <param>
+          <type>ArgT const &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>MatcherT const &amp;</type>
+          <declname>matcher</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>matcherString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3795" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3795" bodyend="3797"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a3cbceeab9252d1b752f66a2826e92548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::throw_exception</definition>
+        <argsstring>(std::exception const &amp;e)</argsstring>
+        <name>throw_exception</name>
+        <param>
+          <type>std::exception const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3880" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3880" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a707884e681203fef6bf7dbf752532fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::throw_logic_error</definition>
+        <argsstring>(std::string const &amp;msg)</argsstring>
+        <name>throw_logic_error</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3884" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3884" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ae67297c3e265b0fcd55de371bf408e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::throw_domain_error</definition>
+        <argsstring>(std::string const &amp;msg)</argsstring>
+        <name>throw_domain_error</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3886" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3886" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a48d2c35022dd9d56a1b7ee78ad581eea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::throw_runtime_error</definition>
+        <argsstring>(std::string const &amp;msg)</argsstring>
+        <name>throw_runtime_error</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3888" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3888" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1af7bb0c32ab2453d2f53e92a96d15360e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/dc9/structCatch_1_1IMutableContext" kindref="compound">IMutableContext</ref> &amp;</type>
+        <definition>IMutableContext&amp; Catch::getCurrentMutableContext</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentMutableContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4374" column="28" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4374" bodyend="4380"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ad517cca9b21deb79101e90e5508dd161" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/d17/structCatch_1_1IContext" kindref="compound">IContext</ref> &amp;</type>
+        <definition>IContext&amp; Catch::getCurrentContext</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4382" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4382" bodyend="4385"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1ae50508f10ffc4ed873a31a4db4caea16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::cleanUpContext</definition>
+        <argsstring>()</argsstring>
+        <name>cleanUpContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4387" column="10" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="4387" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1aa184a4efe2aea62236528357d9342077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d68/classCatch_1_1SimplePcg32" kindref="compound">SimplePcg32</ref> &amp;</type>
+        <definition>SimplePcg32&amp; Catch::rng</definition>
+        <argsstring>()</argsstring>
+        <name>rng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4390" column="17" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="4390" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d39/namespaceCatch_1a5e63df38d06a43d4cee17454e724b5c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref></type>
+        <definition>TestCase Catch::makeTestCase</definition>
+        <argsstring>(ITestInvoker *testCase, std::string const &amp;className, NameAndTags const &amp;nameAndTags, SourceLineInfo const &amp;lineInfo)</argsstring>
+        <name>makeTestCase</name>
+        <param>
+          <type><ref refid="d2/dac/structCatch_1_1ITestInvoker" kindref="compound">ITestInvoker</ref> *</type>
+          <declname>testCase</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>className</declname>
+        </param>
+        <param>
+          <type><ref refid="db/d73/structCatch_1_1NameAndTags" kindref="compound">NameAndTags</ref> const &amp;</type>
+          <declname>nameAndTags</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d2b/structCatch_1_1SourceLineInfo" kindref="compound">SourceLineInfo</ref> const &amp;</type>
+          <declname>lineInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4818" column="14" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="4818" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="98" column="1"/>
+  </compounddef>
+</doxygen>

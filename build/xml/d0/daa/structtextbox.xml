@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/daa/structtextbox" kind="struct" language="C++" prot="public">
+    <compoundname>textbox</compoundname>
+    <includes refid="d2/d2b/textbox_8hh" local="no">textbox.hh</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d0/daa/structtextbox_1a0ce9ba6a47439ba0936a92fa7286e3d1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool textbox::enable_vt100</definition>
+        <argsstring></argsstring>
+        <name>enable_vt100</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="11" column="23" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/daa/structtextbox_1a47637707cb6b3f4868beef028eb995a4" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr unsigned char</type>
+        <definition>constexpr unsigned char textbox::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <initializer>=1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="32" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/daa/structtextbox_1aa3eda82346a22f480c207c32e138dfc1" prot="public" static="yes" mutable="no">
+        <type>constexpr unsigned char</type>
+        <definition>constexpr unsigned char textbox::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <initializer>=2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="34" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/daa/structtextbox_1aeca6702c8ea576b45a4b6a580d876cf1" prot="public" static="yes" mutable="no">
+        <type>constexpr unsigned char</type>
+        <definition>constexpr unsigned char textbox::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <initializer>=4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="36" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/daa/structtextbox_1a585387cb7a236c15587c34abf4401238" prot="public" static="yes" mutable="no">
+        <type>constexpr unsigned char</type>
+        <definition>constexpr unsigned char textbox::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <initializer>=8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="38" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/daa/structtextbox_1a4de3d73c1e6af3081cb6e02d97611e37" prot="public" static="yes" mutable="no">
+        <type>constexpr unsigned char</type>
+        <definition>constexpr unsigned char textbox::nonline</definition>
+        <argsstring></argsstring>
+        <name>nonline</name>
+        <initializer>= ~(<ref refid="d0/daa/structtextbox_1a47637707cb6b3f4868beef028eb995a4" kindref="member">u</ref>+<ref refid="d0/daa/structtextbox_1aa3eda82346a22f480c207c32e138dfc1" kindref="member">d</ref>+<ref refid="d0/daa/structtextbox_1aeca6702c8ea576b45a4b6a580d876cf1" kindref="member">l</ref>+<ref refid="d0/daa/structtextbox_1a585387cb7a236c15587c34abf4401238" kindref="member">r</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="40" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/daa/structtextbox_1a55ff996d19622962f155a87e23d27873" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; textbox::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="14" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/daa/structtextbox_1a027de4c0cc1cb1c5a1b11c4a7382275f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void textbox::putchar</definition>
+        <argsstring>(char c, std::size_t x, std::size_t y)</argsstring>
+        <name>putchar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="18" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a189c5dce550c0efd0803bc542d566996" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void textbox::modchar</definition>
+        <argsstring>(std::size_t x, std::size_t y, F &amp;&amp;func)</argsstring>
+        <name>modchar</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="27" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a58662b70d515ef93a41da09862a16d09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void textbox::putline</definition>
+        <argsstring>(const std::string &amp;s, std::size_t x, std::size_t y)</argsstring>
+        <name>putline</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="37" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="37" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a8c5aa4a6ca8372eb4d0116d21abdb021" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void textbox::putbox</definition>
+        <argsstring>(std::size_t x, std::size_t y, const textbox &amp;b)</argsstring>
+        <name>putbox</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d0/daa/structtextbox" kindref="compound">textbox</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="53" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a94889342cfd37bf11d85dc3f6d606079" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void textbox::trim</definition>
+        <argsstring>()</argsstring>
+        <name>trim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="58" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="58" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a0606e52c7517a8f685bc827902dc79d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t textbox::height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="70" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a096b5ece8c8cf83358e8052b314cc636" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t textbox::width</definition>
+        <argsstring>() const</argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="71" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="71" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a6ae292c34d3d208bbb5af15320c537d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void textbox::hline</definition>
+        <argsstring>(std::size_t x, std::size_t y, std::size_t width, bool bef, bool aft)</argsstring>
+        <name>hline</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bef</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aft</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="81" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a2cd2c45feff1eb6529730e56055fbd9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void textbox::vline</definition>
+        <argsstring>(std::size_t x, std::size_t y, std::size_t height, bool bef, bool aft)</argsstring>
+        <name>vline</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bef</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aft</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="89" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a4d83934a468b7b64e4675845d09500e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t textbox::horiz_append_position</definition>
+        <argsstring>(std::size_t y, const textbox &amp;b) const</argsstring>
+        <name>horiz_append_position</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d0/daa/structtextbox" kindref="compound">textbox</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="98" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="98" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1aea52598f2069f9f726869c7d9bf30eac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t textbox::vert_append_position</definition>
+        <argsstring>(std::size_t x, const textbox &amp;b) const</argsstring>
+        <name>vert_append_position</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d0/daa/structtextbox" kindref="compound">textbox</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="115" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="115" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a1e0ef9680b2279be5b5514b78b5545bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string textbox::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="133" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="133" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d0/daa/structtextbox_1aba299d8c4284ba1b62fa4b2f7d7a2b35" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t textbox::FindLeftPadding</definition>
+        <argsstring>(std::size_t y) const</argsstring>
+        <name>FindLeftPadding</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="181" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="181" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a1ad2f2224461ccaa14976073cec861fd" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t textbox::FindRightPadding</definition>
+        <argsstring>(std::size_t y) const</argsstring>
+        <name>FindRightPadding</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="190" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="190" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1ad962f6558a4b01693e6983fb40589de0" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t textbox::FindTopPadding</definition>
+        <argsstring>(std::size_t x) const</argsstring>
+        <name>FindTopPadding</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="199" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="199" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/daa/structtextbox_1a1d228126520780d37997b819034a0801" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t textbox::FindBottomPadding</definition>
+        <argsstring>(std::size_t x) const</argsstring>
+        <name>FindBottomPadding</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="206" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="206" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="9" column="1" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="10" bodyend="213"/>
+    <listofallmembers>
+      <member refid="d0/daa/structtextbox_1aa3eda82346a22f480c207c32e138dfc1" prot="public" virt="non-virtual"><scope>textbox</scope><name>d</name></member>
+      <member refid="d0/daa/structtextbox_1a55ff996d19622962f155a87e23d27873" prot="public" virt="non-virtual"><scope>textbox</scope><name>data</name></member>
+      <member refid="d0/daa/structtextbox_1a0ce9ba6a47439ba0936a92fa7286e3d1" prot="public" virt="non-virtual"><scope>textbox</scope><name>enable_vt100</name></member>
+      <member refid="d0/daa/structtextbox_1a1d228126520780d37997b819034a0801" prot="private" virt="non-virtual"><scope>textbox</scope><name>FindBottomPadding</name></member>
+      <member refid="d0/daa/structtextbox_1aba299d8c4284ba1b62fa4b2f7d7a2b35" prot="private" virt="non-virtual"><scope>textbox</scope><name>FindLeftPadding</name></member>
+      <member refid="d0/daa/structtextbox_1a1ad2f2224461ccaa14976073cec861fd" prot="private" virt="non-virtual"><scope>textbox</scope><name>FindRightPadding</name></member>
+      <member refid="d0/daa/structtextbox_1ad962f6558a4b01693e6983fb40589de0" prot="private" virt="non-virtual"><scope>textbox</scope><name>FindTopPadding</name></member>
+      <member refid="d0/daa/structtextbox_1a0606e52c7517a8f685bc827902dc79d3" prot="public" virt="non-virtual"><scope>textbox</scope><name>height</name></member>
+      <member refid="d0/daa/structtextbox_1a6ae292c34d3d208bbb5af15320c537d5" prot="public" virt="non-virtual"><scope>textbox</scope><name>hline</name></member>
+      <member refid="d0/daa/structtextbox_1a4d83934a468b7b64e4675845d09500e1" prot="public" virt="non-virtual"><scope>textbox</scope><name>horiz_append_position</name></member>
+      <member refid="d0/daa/structtextbox_1aeca6702c8ea576b45a4b6a580d876cf1" prot="public" virt="non-virtual"><scope>textbox</scope><name>l</name></member>
+      <member refid="d0/daa/structtextbox_1a189c5dce550c0efd0803bc542d566996" prot="public" virt="non-virtual"><scope>textbox</scope><name>modchar</name></member>
+      <member refid="d0/daa/structtextbox_1a4de3d73c1e6af3081cb6e02d97611e37" prot="public" virt="non-virtual"><scope>textbox</scope><name>nonline</name></member>
+      <member refid="d0/daa/structtextbox_1a8c5aa4a6ca8372eb4d0116d21abdb021" prot="public" virt="non-virtual"><scope>textbox</scope><name>putbox</name></member>
+      <member refid="d0/daa/structtextbox_1a027de4c0cc1cb1c5a1b11c4a7382275f" prot="public" virt="non-virtual"><scope>textbox</scope><name>putchar</name></member>
+      <member refid="d0/daa/structtextbox_1a58662b70d515ef93a41da09862a16d09" prot="public" virt="non-virtual"><scope>textbox</scope><name>putline</name></member>
+      <member refid="d0/daa/structtextbox_1a585387cb7a236c15587c34abf4401238" prot="public" virt="non-virtual"><scope>textbox</scope><name>r</name></member>
+      <member refid="d0/daa/structtextbox_1a1e0ef9680b2279be5b5514b78b5545bb" prot="public" virt="non-virtual"><scope>textbox</scope><name>to_string</name></member>
+      <member refid="d0/daa/structtextbox_1a94889342cfd37bf11d85dc3f6d606079" prot="public" virt="non-virtual"><scope>textbox</scope><name>trim</name></member>
+      <member refid="d0/daa/structtextbox_1a47637707cb6b3f4868beef028eb995a4" prot="public" virt="non-virtual"><scope>textbox</scope><name>u</name></member>
+      <member refid="d0/daa/structtextbox_1aea52598f2069f9f726869c7d9bf30eac" prot="public" virt="non-virtual"><scope>textbox</scope><name>vert_append_position</name></member>
+      <member refid="d0/daa/structtextbox_1a2cd2c45feff1eb6529730e56055fbd9f" prot="public" virt="non-virtual"><scope>textbox</scope><name>vline</name></member>
+      <member refid="d0/daa/structtextbox_1a096b5ece8c8cf83358e8052b314cc636" prot="public" virt="non-virtual"><scope>textbox</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

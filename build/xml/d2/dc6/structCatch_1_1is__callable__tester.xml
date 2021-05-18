@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/dc6/structCatch_1_1is__callable__tester" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::is_callable_tester</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d2/dc6/structCatch_1_1is__callable__tester_1a91c513c4fc18b01b96fa0132706f34b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d1/d04/structCatch_1_1true__given" kindref="compound">true_given</ref>&lt; decltype(std::declval&lt; Fun &gt;)(std::declval&lt; Args &gt;)...))&gt;</type>
+        <definition>static true_given&lt;decltype(std::declval&lt;Fun&gt;)(std::declval&lt;Args&gt;)...))&gt; Catch::is_callable_tester::test</definition>
+        <argsstring>(int)</argsstring>
+        <name>test</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="928" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dc6/structCatch_1_1is__callable__tester_1adce16c4accb860bf46f6491dd70cfd63" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+          </param>
+        </templateparamlist>
+        <type>std::false_type</type>
+        <definition>static std::false_type Catch::is_callable_tester::test</definition>
+        <argsstring>(...)</argsstring>
+        <name>test</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="930" column="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="926" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="926" bodyend="931"/>
+    <listofallmembers>
+      <member refid="d2/dc6/structCatch_1_1is__callable__tester_1a91c513c4fc18b01b96fa0132706f34b3" prot="public" virt="non-virtual"><scope>Catch::is_callable_tester</scope><name>test</name></member>
+      <member refid="d2/dc6/structCatch_1_1is__callable__tester_1adce16c4accb860bf46f6491dd70cfd63" prot="public" virt="non-virtual"><scope>Catch::is_callable_tester</scope><name>test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

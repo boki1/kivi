@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/db7/namespaceCatch_1_1Matchers_1_1Vector" kind="namespace" language="C++">
+    <compoundname>Catch::Matchers::Vector</compoundname>
+    <innerclass refid="d2/d5d/structCatch_1_1Matchers_1_1Vector_1_1ContainsElementMatcher" prot="public">Catch::Matchers::Vector::ContainsElementMatcher</innerclass>
+    <innerclass refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher" prot="public">Catch::Matchers::Vector::ContainsMatcher</innerclass>
+    <innerclass refid="dc/da8/structCatch_1_1Matchers_1_1Vector_1_1EqualsMatcher" prot="public">Catch::Matchers::Vector::EqualsMatcher</innerclass>
+    <innerclass refid="dc/db0/structCatch_1_1Matchers_1_1Vector_1_1ApproxMatcher" prot="public">Catch::Matchers::Vector::ApproxMatcher</innerclass>
+    <innerclass refid="dc/daf/structCatch_1_1Matchers_1_1Vector_1_1UnorderedEqualsMatcher" prot="public">Catch::Matchers::Vector::UnorderedEqualsMatcher</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3603" column="5"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/df1/cli_8hh" kind="file" language="C++">
+    <compoundname>cli.hh</compoundname>
+    <includes refid="de/d36/argparse_8h" local="no">argparse/argparse.h</includes>
+    <includedby refid="d9/d0f/main_8cc" local="no">/home/boki/.tmp/kivi/main.cc</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>locale</label>
+      </node>
+      <node id="6">
+        <label>iomanip</label>
+      </node>
+      <node id="12">
+        <label>stdexcept</label>
+      </node>
+      <node id="10">
+        <label>numeric</label>
+      </node>
+      <node id="13">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/utils/cli/cli.hh</label>
+        <link refid="d5/df1/cli_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>cctype</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>unordered_map</label>
+      </node>
+      <node id="3">
+        <label>algorithm</label>
+      </node>
+      <node id="2">
+        <label>argparse/argparse.h</label>
+        <link refid="de/d36/argparse_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/utils/cli/cli.hh</label>
+        <link refid="d5/df1/cli_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/boki/.tmp/kivi/main.cc</label>
+        <link refid="d9/d0f/main_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/d62/structcli_1_1settings" prot="public">cli::settings</innerclass>
+    <innernamespace refid="d5/dfa/namespacecli">cli</innernamespace>
+    <briefdescription>
+<para>This file provides the blueprint of the command line interface where all utilities needed for it are placed. It is used for flags such as -h, <ndash/>help, -v, <ndash/>version, etc. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CLI_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CLI_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="de/d36/argparse_8h" kindref="compound">argparse/argparse.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d6/d18/namespaceargparse" kindref="compound">argparse</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d5/dfa/namespacecli" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d5/dfa/namespacecli" kindref="compound">cli</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="df/d62/structcli_1_1settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="df/d62/structcli_1_1settings" kindref="compound">settings</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20" refid="df/d62/structcli_1_1settings_1a608cffe2e0facd767546896f5004e654" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>verbosity_level<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21" refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kindref="member">print_stage_enum</ref><sp/>{<sp/>ast,<sp/>ir,<sp/>asm_,<sp/>all,<sp/>none<sp/>};</highlight></codeline>
+<codeline lineno="22" refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kindref="member">print_stage_enum</ref><sp/>print_stage{<sp/>print_stage_enum::none<sp/>};</highlight></codeline>
+<codeline lineno="23" refid="df/d62/structcli_1_1settings_1a3b68f39f4bf3c05d1614f6a646f55915" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>output_file<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;a.asm&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24" refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" refkind="member"><highlight class="normal">}<sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d5/dfa/namespacecli_1a8ca7573e9d726fa3664925551e2b8d6a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kindref="member">pe</ref><sp/>=<sp/><ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kindref="member">settings::print_stage_enum</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d5/dfa/namespacecli_1aa2e4349201a2f1a495642d706a82907a" refkind="member"><highlight class="normal"><ref refid="d5/dfa/namespacecli_1aa2e4349201a2f1a495642d706a82907a" kindref="member">should_print</ref><sp/>(<ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kindref="member">pe</ref><sp/>stage)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(stage<sp/>==<sp/>pe::none)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" kindref="member">print_stage</ref><sp/>==<sp/>stage<sp/>||<sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" kindref="member">print_stage</ref><sp/>==<sp/>pe::all;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d5/dfa/namespacecli_1a7c557b921ffc48ad3e206d16ca501874" refkind="member"><highlight class="normal"><ref refid="d5/dfa/namespacecli_1a7c557b921ffc48ad3e206d16ca501874" kindref="member">parse_arguments</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])<sp/></highlight><highlight class="comment">/*<sp/>throws<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/dbb/classargparse_1_1ArgumentParser" kindref="compound">ArgumentParser</ref><sp/>parser<sp/>(</highlight><highlight class="stringliteral">&quot;Kivi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>Kivi<sp/>programming<sp/>language&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a1a550f701add741fd810b08b5ce80e4b" kindref="member">add_argument</ref><sp/>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ae93a7516b1bf66e99a0fe6a1011543e4" kindref="member">names</ref><sp/>({<sp/></highlight><highlight class="stringliteral">&quot;-v&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;--verbose&quot;</highlight><highlight class="normal"><sp/>})</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>.description<sp/>(</highlight><highlight class="stringliteral">&quot;Display<sp/>additional<sp/>information<sp/>while<sp/>compiling&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a1a550f701add741fd810b08b5ce80e4b" kindref="member">add_argument</ref><sp/>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ae93a7516b1bf66e99a0fe6a1011543e4" kindref="member">names</ref><sp/>({<sp/></highlight><highlight class="stringliteral">&quot;-p&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;--pprint&quot;</highlight><highlight class="normal"><sp/>})</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>.description<sp/>(</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Pretty<sp/>print<sp/>a<sp/>certain<sp/>stage<sp/>of<sp/>the<sp/>compilation<sp/>process&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a1a550f701add741fd810b08b5ce80e4b" kindref="member">add_argument</ref><sp/>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ae93a7516b1bf66e99a0fe6a1011543e4" kindref="member">names</ref><sp/>({<sp/></highlight><highlight class="stringliteral">&quot;-o&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;--output&quot;</highlight><highlight class="normal"><sp/>})</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>.description<sp/>(</highlight><highlight class="stringliteral">&quot;Define<sp/>the<sp/>output<sp/>file<sp/>of<sp/>the<sp/>compilation<sp/>process&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a96ed4d93c45f08b7f2c1f04571d9a1a9" kindref="member">enable_help</ref><sp/>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;err<sp/>=<sp/>parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1aacdcf9499f15c63f9a3774749bafdb72" kindref="member">parse</ref><sp/>(argc,<sp/>argv))</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d39/namespaceCatch_1a4e5b5dc07abdfa30de33593dfab71f43" kindref="member">std::cerr</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Bad<sp/>usage:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a749616c7731c4583792eacc738dab97f" kindref="member">print_help</ref><sp/>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a777d03e86fca6a56f861fafddb852c27" kindref="member">exists</ref><sp/>(</highlight><highlight class="stringliteral">&quot;help&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a749616c7731c4583792eacc738dab97f" kindref="member">print_help</ref><sp/>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a777d03e86fca6a56f861fafddb852c27" kindref="member">exists</ref><sp/>(</highlight><highlight class="stringliteral">&quot;pprint&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;s<sp/>=<sp/>parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a4360cb7b6a4e82fab66206e3462c8732" kindref="member">get</ref>&lt;std::string&gt;<sp/>(</highlight><highlight class="stringliteral">&quot;pprint&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;asm&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" kindref="member">print_stage</ref><sp/>=<sp/>settings::print_stage_enum::asm_;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;all&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" kindref="member">print_stage</ref><sp/>=<sp/>settings::print_stage_enum::all;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" kindref="member">print_stage</ref><sp/>=<sp/>settings::print_stage_enum::none;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ir&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" kindref="member">print_stage</ref><sp/>=<sp/>settings::print_stage_enum::ir;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ast&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" kindref="member">print_stage</ref><sp/>=<sp/>settings::print_stage_enum::ast;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a777d03e86fca6a56f861fafddb852c27" kindref="member">exists</ref><sp/>(</highlight><highlight class="stringliteral">&quot;verbose&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v<sp/>=<sp/>parser.<ref refid="d0/dbb/classargparse_1_1ArgumentParser_1a4360cb7b6a4e82fab66206e3462c8732" kindref="member">get</ref>&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;<sp/>(</highlight><highlight class="stringliteral">&quot;verbose&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(v<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(v<sp/>&gt;<sp/>2)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a608cffe2e0facd767546896f5004e654" kindref="member">verbosity_level</ref><sp/>=<sp/>v;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d39/namespaceCatch_1a50af73c5a37ad5c6558df4ce4a275e83" kindref="member">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Argument<sp/>parser<sp/>configuration:<sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d39/namespaceCatch_1a50af73c5a37ad5c6558df4ce4a275e83" kindref="member">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\tPrint<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(<ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" kindref="member">print_stage</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d39/namespaceCatch_1a50af73c5a37ad5c6558df4ce4a275e83" kindref="member">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\tVerbosity<sp/>level<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a608cffe2e0facd767546896f5004e654" kindref="member">verbosity_level</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d39/namespaceCatch_1a50af73c5a37ad5c6558df4ce4a275e83" kindref="member">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\tOutput<sp/>file<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kindref="member">globals</ref>.<ref refid="df/d62/structcli_1_1settings_1a3b68f39f4bf3c05d1614f6a646f55915" kindref="member">output_file</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>_CLI_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh"/>
+  </compounddef>
+</doxygen>

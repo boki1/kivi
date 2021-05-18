@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>Catch::IMutableEnumValuesRegistry</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1aebd423693128987c89ac732478d74673" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Catch::IMutableEnumValuesRegistry::~IMutableEnumValuesRegistry</definition>
+        <argsstring>()</argsstring>
+        <name>~IMutableEnumValuesRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1475" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1a948e66e85f5b66ab68256d50bfe548f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d6/d6d/structCatch_1_1Detail_1_1EnumInfo" kindref="compound">Detail::EnumInfo</ref> const  &amp;</type>
+        <definition>virtual Detail::EnumInfo const&amp; Catch::IMutableEnumValuesRegistry::registerEnum</definition>
+        <argsstring>(StringRef enumName, StringRef allEnums, std::vector&lt; int &gt; const &amp;values)=0</argsstring>
+        <name>registerEnum</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>enumName</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>allEnums</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; const &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1477" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1a60e4546c6fd45f9be68e43410403b562" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename E</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d6/d6d/structCatch_1_1Detail_1_1EnumInfo" kindref="compound">Detail::EnumInfo</ref> const  &amp;</type>
+        <definition>Detail::EnumInfo const&amp; Catch::IMutableEnumValuesRegistry::registerEnum</definition>
+        <argsstring>(StringRef enumName, StringRef allEnums, std::initializer_list&lt; E &gt; values)</argsstring>
+        <name>registerEnum</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>enumName</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>allEnums</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; E &gt;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1480" column="32" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1480" bodyend="1487"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1474" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1474" bodyend="1488"/>
+    <listofallmembers>
+      <member refid="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1a948e66e85f5b66ab68256d50bfe548f4" prot="public" virt="pure-virtual"><scope>Catch::IMutableEnumValuesRegistry</scope><name>registerEnum</name></member>
+      <member refid="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1a60e4546c6fd45f9be68e43410403b562" prot="public" virt="non-virtual"><scope>Catch::IMutableEnumValuesRegistry</scope><name>registerEnum</name></member>
+      <member refid="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1aebd423693128987c89ac732478d74673" prot="public" virt="virtual"><scope>Catch::IMutableEnumValuesRegistry</scope><name>~IMutableEnumValuesRegistry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

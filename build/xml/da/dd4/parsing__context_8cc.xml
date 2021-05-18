@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/dd4/parsing__context_8cc" kind="file" language="C++">
+    <compoundname>parsing_context.cc</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes refid="df/dec/loguru_8hpp" local="no">loguru/loguru.hpp</includes>
+    <includes refid="dc/dee/parser_8tab_8hh" local="yes">parser.tab.hh</includes>
+    <includes refid="d9/dd1/parsing__context_8hh" local="yes">parsing_context.hh</includes>
+    <includes refid="d4/d91/syntactical__structures_8hh" local="yes">syntactical_structures.hh</includes>
+    <includes refid="d9/d1c/syntax_8hh" local="yes">syntax.hh</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>loguru/loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
+      </node>
+      <node id="9">
+        <label>variant</label>
+      </node>
+      <node id="17">
+        <label>cassert</label>
+      </node>
+      <node id="19">
+        <label>stdexcept</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>map</label>
+      </node>
+      <node id="15">
+        <label>location.hh</label>
+        <link refid="d3/d46/location_8hh"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc</label>
+        <link refid="da/dd4/parsing__context_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>typeinfo</label>
+      </node>
+      <node id="12">
+        <label>optional</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>parser.tab.hh</label>
+        <link refid="dc/dee/parser_8tab_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>utility</label>
+      </node>
+      <node id="18">
+        <label>cstdlib</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>algorithm</label>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d7/df6/namespacesyntax__analyzer">syntax_analyzer</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="da/dd4/parsing__context_8cc_1a886c3c31627677e31a418a614b5fdd16" prot="public" static="no">
+        <name>LOGURU_WITH_STREAMS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" line="3" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="da/dd4/parsing__context_8cc_1ae48312692f4bf97c6649d0eece28e53e" prot="public" static="no">
+        <type><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref></type>
+        <definition>using kp =  yy::kivi_parser</definition>
+        <argsstring></argsstring>
+        <name>kp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" line="16" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implements the API of the <computeroutput>parsing_context</computeroutput> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGURU_WITH_STREAMS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="df/dec/loguru_8hpp" kindref="compound">loguru/loguru.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/dee/parser_8tab_8hh" kindref="compound">parser.tab.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/dd1/parsing__context_8hh" kindref="compound">parsing_context.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d91/syntactical__structures_8hh" kindref="compound">syntactical_structures.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d1c/syntax_8hh" kindref="compound">syntax.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">kp</ref><sp/>=<sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::move;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a4515c3176bf9a3afc30f20a258b715c4" kindref="member">parsing_context::parsing_context</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>code_beginning,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string*<sp/><ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>lexer_cursor(code_beginning)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yy_location.begin.filename<sp/>=<sp/><ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yy_location.end.filename<sp/>=<sp/><ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dec/loguru_8hpp_1ad986d424c4c07e47a9e99df7e24be3fe" kindref="member">LOG_F</ref><sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Initializing<sp/>parsing_context\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_context::enter_scope()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dec/loguru_8hpp_1ad986d424c4c07e47a9e99df7e24be3fe" kindref="member">LOG_F</ref><sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Placing<sp/>a<sp/>new<sp/>scope<sp/>at<sp/>the<sp/>end\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_scopes.emplace_back();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_context::exit_scope()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_scopes.empty())</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dec/loguru_8hpp_1ad986d424c4c07e47a9e99df7e24be3fe" kindref="member">LOG_F</ref><sp/>(WARNING,<sp/></highlight><highlight class="stringliteral">&quot;Popping<sp/>last<sp/>scope<sp/>from<sp/>the<sp/>back<sp/>FAILED<sp/>because<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;no<sp/>elements<sp/>are<sp/>present\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>cannot_pop_out_of_empty_exception();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dec/loguru_8hpp_1ad986d424c4c07e47a9e99df7e24be3fe" kindref="member">LOG_F</ref><sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Popping<sp/>last<sp/>scope<sp/>from<sp/>the<sp/>back\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_scopes.pop_back();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_context::define_identifier(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>identifier&amp;<sp/>ident)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_S<sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Defining<sp/>identifier<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ident.name()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_duplicate</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>std::any_of(scopes().begin(),<sp/>scopes().end(),</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>identifier&amp;<sp/>s)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s<sp/>==<sp/>ident;<sp/>});</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(is_duplicate)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_S<sp/>(WARNING)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Duplicate<sp/>definition<sp/>of<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>ident.name()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error" kindref="compound">kp::syntax_error</ref>(yy_location,<sp/></highlight><highlight class="stringliteral">&quot;Duplicate<sp/>definition<sp/>of<sp/>\&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>ident.name()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\&quot;.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scopes_mut().push_back(ident);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression(ident);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_context::use_identifier(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_S<sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Using<sp/>identifier<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>std::find_if(scopes().begin(),<sp/>scopes().end(),</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>s)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.name()<sp/>==<sp/>name;<sp/>});</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it<sp/>!=<sp/>scopes().end())</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression(*it);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_S<sp/>(WARNING)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>identifier<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error" kindref="compound">kp::syntax_error</ref>(yy_location,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>identifier<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>name<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">&amp;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_context::define_function_body(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>expression&amp;&amp;<sp/>body)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>new_body<sp/>=<sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a69bbfeec8bacaad18d3f8b67d0e76575" kindref="member">sa::compound_stmt</ref>(</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>body,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1aef31df3c52051f0a99af48ba79dbafe1" kindref="member">return_stmt</ref>()</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_current_function.set_body(move(new_body));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_current_function.set_name(name);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_S<sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Defining<sp/>function<sp/>(\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;)<sp/>with<sp/>body.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_functions.push_back(m_current_function);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_current_function<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_functions.back();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_context::define_local(std::string&amp;&amp;<sp/>name)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_S<sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Defining<sp/>local<sp/>variable<sp/>(\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>define_identifier(identifier(identifier::type::Local,<sp/>move(name),</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_current_function.add_local()));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_context::define_function(std::string<sp/>name)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_S<sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Defining<sp/>function<sp/>(\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>define_identifier(identifier(identifier::type::Function,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>move(name),<sp/>functions().size()));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_context::define_parameter(std::string&amp;&amp;<sp/>name)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_S<sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Defining<sp/>parameter<sp/>(\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>define_identifier(identifier(identifier::type::Parameter,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>move(name),</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_current_function.add_param()));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>parsing_context::define_register()</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;$L&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(m_registers++);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_S<sp/>(<ref refid="df/dbf/catch2_8hpp_1a3ae64706314066fdc8b6c8029a915aa7" kindref="member">INFO</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Defining<sp/>register<sp/>(\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>define_local(move(name));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a84fbe047931e8dc0b4e669c7e30c8376" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>identifier&amp;<sp/>This,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>identifier&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(This.name()<sp/>==<sp/>other.name()</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>This.get_type()<sp/>==<sp/>other.get_type());</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc"/>
+  </compounddef>
+</doxygen>

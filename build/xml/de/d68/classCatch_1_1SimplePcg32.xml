@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d68/classCatch_1_1SimplePcg32" kind="class" language="C++" prot="public">
+    <compoundname>Catch::SimplePcg32</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="de/d68/classCatch_1_1SimplePcg32_1a87e58661dd1fa2994b6b9c38c4efafdb" prot="private" static="no">
+        <type>std::uint64_t</type>
+        <definition>using Catch::SimplePcg32::state_type =  std::uint64_t</definition>
+        <argsstring></argsstring>
+        <name>state_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4552" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4552" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="de/d68/classCatch_1_1SimplePcg32_1a220ca38f6d16804c6e99937a673ec3ff" prot="public" static="no">
+        <type>std::uint32_t</type>
+        <definition>using Catch::SimplePcg32::result_type =  std::uint32_t</definition>
+        <argsstring></argsstring>
+        <name>result_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4554" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4554" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d68/classCatch_1_1SimplePcg32_1a830bb20e51776b605910f4a00dde46ad" prot="private" static="no" mutable="no">
+        <type>std::uint64_t</type>
+        <definition>std::uint64_t Catch::SimplePcg32::m_state</definition>
+        <argsstring></argsstring>
+        <name>m_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4579" column="23" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4579" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="de/d68/classCatch_1_1SimplePcg32_1a34f89a8ee054db204c8cf17632ac4c03" prot="private" static="yes" mutable="no">
+        <type>const std::uint64_t</type>
+        <definition>const std::uint64_t Catch::SimplePcg32::s_inc</definition>
+        <argsstring></argsstring>
+        <name>s_inc</name>
+        <initializer>= (0x13ed0cc53f939476ULL &lt;&lt; 1ULL) | 1ULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4584" column="36" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4584" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="de/d68/classCatch_1_1SimplePcg32_1a388575137fa70bb32a367a5ad59f2a46" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="de/d68/classCatch_1_1SimplePcg32_1a220ca38f6d16804c6e99937a673ec3ff" kindref="member">result_type</ref>()</type>
+        <definition>static constexpr result_type() Catch::SimplePcg32::min</definition>
+        <argsstring>()</argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4555" column="26" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4555" bodyend="4557"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d68/classCatch_1_1SimplePcg32_1a282cfed1bcba2ae23f242913489195af" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="de/d68/classCatch_1_1SimplePcg32_1a220ca38f6d16804c6e99937a673ec3ff" kindref="member">result_type</ref>()</type>
+        <definition>static constexpr result_type() Catch::SimplePcg32::max</definition>
+        <argsstring>()</argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4558" column="26" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4558" bodyend="4560"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d68/classCatch_1_1SimplePcg32_1a045c99a96f9b0faf384e22f871576282" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::SimplePcg32::SimplePcg32</definition>
+        <argsstring>()</argsstring>
+        <name>SimplePcg32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4563" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4563" bodyend="4563"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d68/classCatch_1_1SimplePcg32_1a901fc48d250c3d92b1ec067bcc6155c1" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::SimplePcg32::SimplePcg32</definition>
+        <argsstring>(result_type seed_)</argsstring>
+        <name>SimplePcg32</name>
+        <param>
+          <type><ref refid="de/d68/classCatch_1_1SimplePcg32_1a220ca38f6d16804c6e99937a673ec3ff" kindref="member">result_type</ref></type>
+          <declname>seed_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4565" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d68/classCatch_1_1SimplePcg32_1a215dac93c384973353a2b4f87f68c8bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::SimplePcg32::seed</definition>
+        <argsstring>(result_type seed_)</argsstring>
+        <name>seed</name>
+        <param>
+          <type><ref refid="de/d68/classCatch_1_1SimplePcg32_1a220ca38f6d16804c6e99937a673ec3ff" kindref="member">result_type</ref></type>
+          <declname>seed_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4567" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d68/classCatch_1_1SimplePcg32_1a877e7a9c14d378af729ad19a0e959178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::SimplePcg32::discard</definition>
+        <argsstring>(uint64_t skip)</argsstring>
+        <name>discard</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4568" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d68/classCatch_1_1SimplePcg32_1acda21743a5ac46fdff9a0b4a6d45a91f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d68/classCatch_1_1SimplePcg32_1a220ca38f6d16804c6e99937a673ec3ff" kindref="member">result_type</ref></type>
+        <definition>result_type Catch::SimplePcg32::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4570" column="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="de/d68/classCatch_1_1SimplePcg32_1a3f1e143181b91f902ce034e2878f87eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(SimplePcg32 const &amp;lhs, SimplePcg32 const &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="de/d68/classCatch_1_1SimplePcg32" kindref="compound">SimplePcg32</ref> const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d68/classCatch_1_1SimplePcg32" kindref="compound">SimplePcg32</ref> const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4573" column="21"/>
+      </memberdef>
+      <memberdef kind="friend" id="de/d68/classCatch_1_1SimplePcg32_1a4940863fe85f6c5a2fa9b3910bfb7406" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(SimplePcg32 const &amp;lhs, SimplePcg32 const &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="de/d68/classCatch_1_1SimplePcg32" kindref="compound">SimplePcg32</ref> const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d68/classCatch_1_1SimplePcg32" kindref="compound">SimplePcg32</ref> const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4574" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4551" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4551" bodyend="4585"/>
+    <listofallmembers>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a877e7a9c14d378af729ad19a0e959178" prot="public" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>discard</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a830bb20e51776b605910f4a00dde46ad" prot="private" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>m_state</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a282cfed1bcba2ae23f242913489195af" prot="public" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>max</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a388575137fa70bb32a367a5ad59f2a46" prot="public" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>min</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a4940863fe85f6c5a2fa9b3910bfb7406" prot="private" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>operator!=</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1acda21743a5ac46fdff9a0b4a6d45a91f" prot="public" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>operator()</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a3f1e143181b91f902ce034e2878f87eb" prot="private" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>operator==</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a220ca38f6d16804c6e99937a673ec3ff" prot="public" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>result_type</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a34f89a8ee054db204c8cf17632ac4c03" prot="private" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>s_inc</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a215dac93c384973353a2b4f87f68c8bc" prot="public" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>seed</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a045c99a96f9b0faf384e22f871576282" prot="public" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>SimplePcg32</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a901fc48d250c3d92b1ec067bcc6155c1" prot="public" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>SimplePcg32</name></member>
+      <member refid="de/d68/classCatch_1_1SimplePcg32_1a87e58661dd1fa2994b6b9c38c4efafdb" prot="private" virt="non-virtual"><scope>Catch::SimplePcg32</scope><name>state_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

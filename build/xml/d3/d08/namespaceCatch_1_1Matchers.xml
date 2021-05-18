@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d08/namespaceCatch_1_1Matchers" kind="namespace" language="C++">
+    <compoundname>Catch::Matchers</compoundname>
+    <innernamespace refid="d5/df6/namespaceCatch_1_1Matchers_1_1Exception">Catch::Matchers::Exception</innernamespace>
+    <innernamespace refid="de/d8f/namespaceCatch_1_1Matchers_1_1Floating">Catch::Matchers::Floating</innernamespace>
+    <innernamespace refid="d4/df2/namespaceCatch_1_1Matchers_1_1Generic">Catch::Matchers::Generic</innernamespace>
+    <innernamespace refid="d6/d85/namespaceCatch_1_1Matchers_1_1Impl">Catch::Matchers::Impl</innernamespace>
+    <innernamespace refid="dd/d2b/namespaceCatch_1_1Matchers_1_1StdString">Catch::Matchers::StdString</innernamespace>
+    <innernamespace refid="d5/db7/namespaceCatch_1_1Matchers_1_1Vector">Catch::Matchers::Vector</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a0fcd8bd126bb510a6bb99e6360aa270a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher" kindref="compound">Exception::ExceptionMessageMatcher</ref></type>
+        <definition>Exception::ExceptionMessageMatcher Catch::Matchers::Message</definition>
+        <argsstring>(std::string const &amp;message)</argsstring>
+        <name>Message</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3412" column="36" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3412" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1ae77e233c3ed735ea12b7c726153798d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher" kindref="compound">Floating::WithinUlpsMatcher</ref></type>
+        <definition>Floating::WithinUlpsMatcher Catch::Matchers::WithinULP</definition>
+        <argsstring>(double target, uint64_t maxUlpDiff)</argsstring>
+        <name>WithinULP</name>
+        <param>
+          <type>double</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>maxUlpDiff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3465" column="33" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3465" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a5d108ff6aaeac40f20f4978dfb3f51fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher" kindref="compound">Floating::WithinUlpsMatcher</ref></type>
+        <definition>Floating::WithinUlpsMatcher Catch::Matchers::WithinULP</definition>
+        <argsstring>(float target, uint64_t maxUlpDiff)</argsstring>
+        <name>WithinULP</name>
+        <param>
+          <type>float</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>maxUlpDiff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3466" column="33" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3466" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a4c9ea76d47d02de0cf2d354c87c26e95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/d2a/structCatch_1_1Matchers_1_1Floating_1_1WithinAbsMatcher" kindref="compound">Floating::WithinAbsMatcher</ref></type>
+        <definition>Floating::WithinAbsMatcher Catch::Matchers::WithinAbs</definition>
+        <argsstring>(double target, double margin)</argsstring>
+        <name>WithinAbs</name>
+        <param>
+          <type>double</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>margin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3467" column="32" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3467" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a0c559d9cfda02a81941ad6933f4ca450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d22/structCatch_1_1Matchers_1_1Floating_1_1WithinRelMatcher" kindref="compound">Floating::WithinRelMatcher</ref></type>
+        <definition>Floating::WithinRelMatcher Catch::Matchers::WithinRel</definition>
+        <argsstring>(double target, double eps)</argsstring>
+        <name>WithinRel</name>
+        <param>
+          <type>double</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3468" column="32" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3468" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a46e2f1efab13b85e2cbe36958a27d518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d22/structCatch_1_1Matchers_1_1Floating_1_1WithinRelMatcher" kindref="compound">Floating::WithinRelMatcher</ref></type>
+        <definition>Floating::WithinRelMatcher Catch::Matchers::WithinRel</definition>
+        <argsstring>(double target)</argsstring>
+        <name>WithinRel</name>
+        <param>
+          <type>double</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3470" column="32" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3470" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a494b4c8c68ac883e29dc35da71a4cd72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d22/structCatch_1_1Matchers_1_1Floating_1_1WithinRelMatcher" kindref="compound">Floating::WithinRelMatcher</ref></type>
+        <definition>Floating::WithinRelMatcher Catch::Matchers::WithinRel</definition>
+        <argsstring>(float target, float eps)</argsstring>
+        <name>WithinRel</name>
+        <param>
+          <type>float</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3471" column="32" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3471" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a18cfb571dd191377674bad0cbb50078e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d22/structCatch_1_1Matchers_1_1Floating_1_1WithinRelMatcher" kindref="compound">Floating::WithinRelMatcher</ref></type>
+        <definition>Floating::WithinRelMatcher Catch::Matchers::WithinRel</definition>
+        <argsstring>(float target)</argsstring>
+        <name>WithinRel</name>
+        <param>
+          <type>float</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3473" column="32" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3473" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a034f2de6c0aac6f4a662fdf2558aedce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher" kindref="compound">Generic::PredicateMatcher</ref>&lt; T &gt;</type>
+        <definition>Generic::PredicateMatcher&lt;T&gt; Catch::Matchers::Predicate</definition>
+        <argsstring>(std::function&lt; bool(T const &amp;)&gt; const &amp;predicate, std::string const &amp;description=&quot;&quot;)</argsstring>
+        <name>Predicate</name>
+        <param>
+          <type>std::function&lt; bool(T const &amp;)&gt; const &amp;</type>
+          <declname>predicate</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>description</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3519" column="31" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3519" bodyend="3521"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1af8af7dfc338335ed4c788cb1b37fc59f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d8/d35/structCatch_1_1Matchers_1_1StdString_1_1EqualsMatcher" kindref="compound">StdString::EqualsMatcher</ref></type>
+        <definition>StdString::EqualsMatcher Catch::Matchers::Equals</definition>
+        <argsstring>(std::string const &amp;str, CaseSensitive::Choice caseSensitivity=CaseSensitive::Yes)</argsstring>
+        <name>Equals</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6a" kindref="member">CaseSensitive::Choice</ref></type>
+          <declname>caseSensitivity</declname>
+          <defval><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6" kindref="member">CaseSensitive::Yes</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3586" column="30" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3586" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a1f6c2accdc6cd75a84d7112dcad647b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d18/structCatch_1_1Matchers_1_1StdString_1_1ContainsMatcher" kindref="compound">StdString::ContainsMatcher</ref></type>
+        <definition>StdString::ContainsMatcher Catch::Matchers::Contains</definition>
+        <argsstring>(std::string const &amp;str, CaseSensitive::Choice caseSensitivity=CaseSensitive::Yes)</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6a" kindref="member">CaseSensitive::Choice</ref></type>
+          <declname>caseSensitivity</declname>
+          <defval><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6" kindref="member">CaseSensitive::Yes</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3587" column="32" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3587" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1ae5a45efb4538c57c43e04f3f9043ad6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/d40/structCatch_1_1Matchers_1_1StdString_1_1EndsWithMatcher" kindref="compound">StdString::EndsWithMatcher</ref></type>
+        <definition>StdString::EndsWithMatcher Catch::Matchers::EndsWith</definition>
+        <argsstring>(std::string const &amp;str, CaseSensitive::Choice caseSensitivity=CaseSensitive::Yes)</argsstring>
+        <name>EndsWith</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6a" kindref="member">CaseSensitive::Choice</ref></type>
+          <declname>caseSensitivity</declname>
+          <defval><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6" kindref="member">CaseSensitive::Yes</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3588" column="32" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3588" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a97c9ee09a70378ca7e8c6f9f01b0d6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/db3/structCatch_1_1Matchers_1_1StdString_1_1StartsWithMatcher" kindref="compound">StdString::StartsWithMatcher</ref></type>
+        <definition>StdString::StartsWithMatcher Catch::Matchers::StartsWith</definition>
+        <argsstring>(std::string const &amp;str, CaseSensitive::Choice caseSensitivity=CaseSensitive::Yes)</argsstring>
+        <name>StartsWith</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6a" kindref="member">CaseSensitive::Choice</ref></type>
+          <declname>caseSensitivity</declname>
+          <defval><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6" kindref="member">CaseSensitive::Yes</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3589" column="34" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3589" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a82f1893cf50ae4c14b9b3e0980bf22b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d82/structCatch_1_1Matchers_1_1StdString_1_1RegexMatcher" kindref="compound">StdString::RegexMatcher</ref></type>
+        <definition>StdString::RegexMatcher Catch::Matchers::Matches</definition>
+        <argsstring>(std::string const &amp;regex, CaseSensitive::Choice caseSensitivity=CaseSensitive::Yes)</argsstring>
+        <name>Matches</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>regex</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6a" kindref="member">CaseSensitive::Choice</ref></type>
+          <declname>caseSensitivity</declname>
+          <defval><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6aa7c5550b69ec3c502e6f609b67f9613c6" kindref="member">CaseSensitive::Yes</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3590" column="29" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3590" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a6016aefc79a29573e7bd540c40a0f4dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename AllocComp</type>
+            <defval>std::allocator&lt;T&gt;</defval>
+          </param>
+          <param>
+            <type>typename AllocMatch</type>
+            <defval>AllocComp</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher" kindref="compound">Vector::ContainsMatcher</ref>&lt; T, AllocComp, AllocMatch &gt;</type>
+        <definition>Vector::ContainsMatcher&lt;T, AllocComp, AllocMatch&gt; Catch::Matchers::Contains</definition>
+        <argsstring>(std::vector&lt; T, AllocComp &gt; const &amp;comparator)</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>std::vector&lt; T, AllocComp &gt; const &amp;</type>
+          <declname>comparator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3737" column="29" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3737" bodyend="3739"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a95520b036d439e75aa9dcbe4ffa20188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Alloc</type>
+            <defval>std::allocator&lt;T&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d2/d5d/structCatch_1_1Matchers_1_1Vector_1_1ContainsElementMatcher" kindref="compound">Vector::ContainsElementMatcher</ref>&lt; T, Alloc &gt;</type>
+        <definition>Vector::ContainsElementMatcher&lt;T, Alloc&gt; Catch::Matchers::VectorContains</definition>
+        <argsstring>(T const &amp;comparator)</argsstring>
+        <name>VectorContains</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>comparator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3742" column="36" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3742" bodyend="3744"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1a3ab7fff821bc655bd4875cc1aa745101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename AllocComp</type>
+            <defval>std::allocator&lt;T&gt;</defval>
+          </param>
+          <param>
+            <type>typename AllocMatch</type>
+            <defval>AllocComp</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="dc/da8/structCatch_1_1Matchers_1_1Vector_1_1EqualsMatcher" kindref="compound">Vector::EqualsMatcher</ref>&lt; T, AllocComp, AllocMatch &gt;</type>
+        <definition>Vector::EqualsMatcher&lt;T, AllocComp, AllocMatch&gt; Catch::Matchers::Equals</definition>
+        <argsstring>(std::vector&lt; T, AllocComp &gt; const &amp;comparator)</argsstring>
+        <name>Equals</name>
+        <param>
+          <type>std::vector&lt; T, AllocComp &gt; const &amp;</type>
+          <declname>comparator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3747" column="27" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3747" bodyend="3749"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1ae706084b5987a683e0eecb79a18d7da9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename AllocComp</type>
+            <defval>std::allocator&lt;T&gt;</defval>
+          </param>
+          <param>
+            <type>typename AllocMatch</type>
+            <defval>AllocComp</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="dc/db0/structCatch_1_1Matchers_1_1Vector_1_1ApproxMatcher" kindref="compound">Vector::ApproxMatcher</ref>&lt; T, AllocComp, AllocMatch &gt;</type>
+        <definition>Vector::ApproxMatcher&lt;T, AllocComp, AllocMatch&gt; Catch::Matchers::Approx</definition>
+        <argsstring>(std::vector&lt; T, AllocComp &gt; const &amp;comparator)</argsstring>
+        <name>Approx</name>
+        <param>
+          <type>std::vector&lt; T, AllocComp &gt; const &amp;</type>
+          <declname>comparator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3752" column="27" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3752" bodyend="3754"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d08/namespaceCatch_1_1Matchers_1aa1955107efa02ee9e0a9f2db9c160f1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename AllocComp</type>
+            <defval>std::allocator&lt;T&gt;</defval>
+          </param>
+          <param>
+            <type>typename AllocMatch</type>
+            <defval>AllocComp</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="dc/daf/structCatch_1_1Matchers_1_1Vector_1_1UnorderedEqualsMatcher" kindref="compound">Vector::UnorderedEqualsMatcher</ref>&lt; T, AllocComp, AllocMatch &gt;</type>
+        <definition>Vector::UnorderedEqualsMatcher&lt;T, AllocComp, AllocMatch&gt; Catch::Matchers::UnorderedEquals</definition>
+        <argsstring>(std::vector&lt; T, AllocComp &gt; const &amp;target)</argsstring>
+        <name>UnorderedEquals</name>
+        <param>
+          <type>std::vector&lt; T, AllocComp &gt; const &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3757" column="36" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3757" bodyend="3759"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3234" column="1"/>
+  </compounddef>
+</doxygen>

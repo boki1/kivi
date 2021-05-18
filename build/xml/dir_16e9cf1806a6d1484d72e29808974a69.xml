@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_16e9cf1806a6d1484d72e29808974a69" kind="dir">
+    <compoundname>/home/boki/.tmp/kivi/extern/argparse</compoundname>
+    <innerfile refid="de/d36/argparse_8h">argparse.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/argparse/"/>
+  </compounddef>
+</doxygen>

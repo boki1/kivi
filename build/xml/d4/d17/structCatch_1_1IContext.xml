@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d17/structCatch_1_1IContext" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>Catch::IContext</compoundname>
+    <derivedcompoundref refid="dc/dc9/structCatch_1_1IMutableContext" prot="public" virt="non-virtual">Catch::IMutableContext</derivedcompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d17/structCatch_1_1IContext_1aeb17355c1be6c2ced5407cad7202628d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Catch::IContext::~IContext</definition>
+        <argsstring>()</argsstring>
+        <name>~IContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4353" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d17/structCatch_1_1IContext_1a684e4ae71d1fdf3060c352ecde1d122f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d6/d6e/structCatch_1_1IResultCapture" kindref="compound">IResultCapture</ref> *</type>
+        <definition>virtual IResultCapture* Catch::IContext::getResultCapture</definition>
+        <argsstring>()=0</argsstring>
+        <name>getResultCapture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4355" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d17/structCatch_1_1IContext_1af088415dde18d039ed5a2f95b02767c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d6/d0e/structCatch_1_1IRunner" kindref="compound">IRunner</ref> *</type>
+        <definition>virtual IRunner* Catch::IContext::getRunner</definition>
+        <argsstring>()=0</argsstring>
+        <name>getRunner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4356" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d17/structCatch_1_1IContext_1a72a2718232adea8925fec9e71d3efd75" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="d8/d39/namespaceCatch_1afd20a5d4f9d2f4d525db81a7765367b0" kindref="member">IConfigPtr</ref> const  &amp;</type>
+        <definition>virtual IConfigPtr const&amp; Catch::IContext::getConfig</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4357" column="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::IContext</label>
+        <link refid="d4/d17/structCatch_1_1IContext"/>
+      </node>
+      <node id="2">
+        <label>Catch::IMutableContext</label>
+        <link refid="dc/dc9/structCatch_1_1IMutableContext"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4351" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4352" bodyend="4358"/>
+    <listofallmembers>
+      <member refid="d4/d17/structCatch_1_1IContext_1a72a2718232adea8925fec9e71d3efd75" prot="public" virt="pure-virtual"><scope>Catch::IContext</scope><name>getConfig</name></member>
+      <member refid="d4/d17/structCatch_1_1IContext_1a684e4ae71d1fdf3060c352ecde1d122f" prot="public" virt="pure-virtual"><scope>Catch::IContext</scope><name>getResultCapture</name></member>
+      <member refid="d4/d17/structCatch_1_1IContext_1af088415dde18d039ed5a2f95b02767c6" prot="public" virt="pure-virtual"><scope>Catch::IContext</scope><name>getRunner</name></member>
+      <member refid="d4/d17/structCatch_1_1IContext_1aeb17355c1be6c2ced5407cad7202628d" prot="public" virt="virtual"><scope>Catch::IContext</scope><name>~IContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

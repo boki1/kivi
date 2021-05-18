@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d98/classsyntax__analyzer_1_1syntactic__structure" kind="class" language="C++" prot="public">
+    <compoundname>syntax_analyzer::syntactic_structure</compoundname>
+    <derivedcompoundref refid="db/df3/classsyntax__analyzer_1_1expression" prot="public" virt="non-virtual">syntax_analyzer::expression</derivedcompoundref>
+    <derivedcompoundref refid="d7/d16/classsyntax__analyzer_1_1function" prot="public" virt="non-virtual">syntax_analyzer::function</derivedcompoundref>
+    <derivedcompoundref refid="d1/d9f/classsyntax__analyzer_1_1identifier" prot="public" virt="non-virtual">syntax_analyzer::identifier</derivedcompoundref>
+    <includes refid="d9/d1c/syntax_8hh" local="no">syntax.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d98/classsyntax__analyzer_1_1syntactic__structure_1a0363c2b7180f7fce96c6e065d3b2bed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual syntax_analyzer::syntactic_structure::~syntactic_structure</definition>
+        <argsstring>()=default</argsstring>
+        <name>~syntactic_structure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="30" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure which represents a syntactic structure. All syntactic structures derive from this. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>syntax_analyzer::identifier</label>
+        <link refid="d1/d9f/classsyntax__analyzer_1_1identifier"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>syntax_analyzer::function</label>
+        <link refid="d7/d16/classsyntax__analyzer_1_1function"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>syntax_analyzer::syntactic_structure</label>
+        <link refid="df/d98/classsyntax__analyzer_1_1syntactic__structure"/>
+      </node>
+      <node id="2">
+        <label>syntax_analyzer::expression</label>
+        <link refid="db/df3/classsyntax__analyzer_1_1expression"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="27" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="28" bodyend="31"/>
+    <listofallmembers>
+      <member refid="df/d98/classsyntax__analyzer_1_1syntactic__structure_1a0363c2b7180f7fce96c6e065d3b2bed6" prot="public" virt="virtual"><scope>syntax_analyzer::syntactic_structure</scope><name>~syntactic_structure</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

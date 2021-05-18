@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/dd0/structCatch_1_1StreamEndStop" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::StreamEndStop</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/dd0/structCatch_1_1StreamEndStop_1a4a518f0342a381074821d5bda2651401" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::StreamEndStop::operator+</definition>
+        <argsstring>() const</argsstring>
+        <name>operator+</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="533" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="532" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="532" bodyend="534"/>
+    <listofallmembers>
+      <member refid="d4/dd0/structCatch_1_1StreamEndStop_1a4a518f0342a381074821d5bda2651401" prot="public" virt="non-virtual"><scope>Catch::StreamEndStop</scope><name>operator+</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d3a/structCatch_1_1Generators_1_1IGenerator" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>Catch::Generators::IGenerator</compoundname>
+    <basecompoundref refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase" prot="public" virt="non-virtual">Catch::Generators::GeneratorUntypedBase</basecompoundref>
+    <derivedcompoundref refid="d0/d2d/classCatch_1_1Generators_1_1FilterGenerator" prot="public" virt="non-virtual">Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d5/de5/classCatch_1_1Generators_1_1FixedValuesGenerator" prot="public" virt="non-virtual">Catch::Generators::FixedValuesGenerator&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d9/dbd/classCatch_1_1Generators_1_1Generators" prot="public" virt="non-virtual">Catch::Generators::Generators&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="df/d28/classCatch_1_1Generators_1_1IteratorGenerator" prot="public" virt="non-virtual">Catch::Generators::IteratorGenerator&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="dc/d4f/classCatch_1_1Generators_1_1MapGenerator" prot="public" virt="non-virtual">Catch::Generators::MapGenerator&lt; T, U, Func &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator" prot="public" virt="non-virtual">Catch::Generators::RangeGenerator&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator" prot="public" virt="non-virtual">Catch::Generators::RepeatGenerator&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d0/d54/classCatch_1_1Generators_1_1SingleValueGenerator" prot="public" virt="non-virtual">Catch::Generators::SingleValueGenerator&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d9/d00/classCatch_1_1Generators_1_1TakeGenerator" prot="public" virt="non-virtual">Catch::Generators::TakeGenerator&lt; T &gt;</derivedcompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a1f8677875fe0ff31f39c60d45504b9a5" prot="public" static="no">
+        <type>T</type>
+        <definition>using Catch::Generators::IGenerator&lt; T &gt;::type =  T</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3947" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3947" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1afe5b6eecbbd735e69748d68574611747" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Catch::Generators::IGenerator&lt; T &gt;::~IGenerator</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IGenerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3940" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a525d381fc9249a885b075a0632a8579a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>T const  &amp;</type>
+        <definition>virtual T const&amp; Catch::Generators::IGenerator&lt; T &gt;::get</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get</name>
+        <reimplementedby refid="d0/d54/classCatch_1_1Generators_1_1SingleValueGenerator_1a5142058c52131a2471e7307972f99b50">get</reimplementedby>
+        <reimplementedby refid="d5/de5/classCatch_1_1Generators_1_1FixedValuesGenerator_1ad2ea8c959c600386bcc4b2656b40d33e">get</reimplementedby>
+        <reimplementedby refid="d9/dbd/classCatch_1_1Generators_1_1Generators_1a66705482b7efa88cae6e6b7062d5de6a">get</reimplementedby>
+        <reimplementedby refid="d9/d00/classCatch_1_1Generators_1_1TakeGenerator_1aa4d2560f2066ec2eb4a351d62c107c78">get</reimplementedby>
+        <reimplementedby refid="d0/d2d/classCatch_1_1Generators_1_1FilterGenerator_1ab30e81b61a77430661d40f814758f6fe">get</reimplementedby>
+        <reimplementedby refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator_1a43bd573274c9a0cd7f4406a3d0d36d49">get</reimplementedby>
+        <reimplementedby refid="dc/d4f/classCatch_1_1Generators_1_1MapGenerator_1a199d377afba00519f202c59b4b488235">get</reimplementedby>
+        <reimplementedby refid="da/d60/classCatch_1_1Generators_1_1ChunkGenerator_1aa41c7d08a165b6a18560f2ab9e977f0b">get</reimplementedby>
+        <reimplementedby refid="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a0dea6fa1f9e2647df022f0b588cf0a8f">get</reimplementedby>
+        <reimplementedby refid="df/d44/classCatch_1_1Generators_1_1RandomIntegerGenerator_1aafbdf9028762f5e8f8ca9c317d686fca">get</reimplementedby>
+        <reimplementedby refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1a2639173bb9f06ba353314cd226fcefec">get</reimplementedby>
+        <reimplementedby refid="df/d28/classCatch_1_1Generators_1_1IteratorGenerator_1a61688118e5caba23340b4b949c3bb7e4">get</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3946" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>Catch::Generators::TakeGenerator&lt; T &gt;</label>
+        <link refid="d9/d00/classCatch_1_1Generators_1_1TakeGenerator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Catch::Generators::Generators&lt; T &gt;</label>
+        <link refid="d9/dbd/classCatch_1_1Generators_1_1Generators"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Catch::Generators::SingleValueGenerator&lt; T &gt;</label>
+        <link refid="d0/d54/classCatch_1_1Generators_1_1SingleValueGenerator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Catch::Generators::RepeatGenerator&lt; T &gt;</label>
+        <link refid="de/dd1/classCatch_1_1Generators_1_1RepeatGenerator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+      <node id="8">
+        <label>Catch::Generators::RangeGenerator&lt; T &gt;</label>
+        <link refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Catch::Generators::IteratorGenerator&lt; T &gt;</label>
+        <link refid="df/d28/classCatch_1_1Generators_1_1IteratorGenerator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Catch::Generators::FixedValuesGenerator&lt; T &gt;</label>
+        <link refid="d5/de5/classCatch_1_1Generators_1_1FixedValuesGenerator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Catch::Generators::MapGenerator&lt; T, U, Func &gt;</label>
+        <link refid="dc/d4f/classCatch_1_1Generators_1_1MapGenerator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::Generators::IGenerator&lt; T &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Generators::FilterGenerator&lt; T, Predicate &gt;</label>
+        <link refid="d0/d2d/classCatch_1_1Generators_1_1FilterGenerator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+      <node id="1">
+        <label>Catch::Generators::IGenerator&lt; T &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3939" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3939" bodyend="3948"/>
+    <listofallmembers>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a00ff0179d739c3016756b6cf56fabbad" prot="public" virt="non-virtual"><scope>Catch::Generators::IGenerator</scope><name>GeneratorUntypedBase</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a525d381fc9249a885b075a0632a8579a" prot="public" virt="pure-virtual"><scope>Catch::Generators::IGenerator</scope><name>get</name></member>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1aeed3c0cd6233c5f553549e453b8d6638" prot="public" virt="pure-virtual"><scope>Catch::Generators::IGenerator</scope><name>next</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a1f8677875fe0ff31f39c60d45504b9a5" prot="public" virt="non-virtual"><scope>Catch::Generators::IGenerator</scope><name>type</name></member>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a6f05f8099fdc5744a7aff68aa8c09c7f" prot="public" virt="virtual"><scope>Catch::Generators::IGenerator</scope><name>~GeneratorUntypedBase</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1afe5b6eecbbd735e69748d68574611747" prot="public" virt="virtual"><scope>Catch::Generators::IGenerator</scope><name>~IGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_dc9e1e299a0b26f222fe6c0a872463f0" kind="dir">
+    <compoundname>/home/boki/.tmp/kivi/extern</compoundname>
+    <innerdir refid="dir_16e9cf1806a6d1484d72e29808974a69">/home/boki/.tmp/kivi/extern/argparse</innerdir>
+    <innerdir refid="dir_106547c1b953ce27182e40df305642f7">/home/boki/.tmp/kivi/extern/catch2</innerdir>
+    <innerdir refid="dir_189a8fa8e8b1754d9daadbd6bf7cfeb9">/home/boki/.tmp/kivi/extern/loguru</innerdir>
+    <innerdir refid="dir_204dd860230fcc27637fb186ed07f283">/home/boki/.tmp/kivi/extern/textbox</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/"/>
+  </compounddef>
+</doxygen>

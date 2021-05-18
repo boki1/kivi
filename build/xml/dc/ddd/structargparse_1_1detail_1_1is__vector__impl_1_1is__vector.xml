@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/ddd/structargparse_1_1detail_1_1is__vector__impl_1_1is__vector" kind="struct" language="C++" prot="public">
+    <compoundname>argparse::detail::is_vector_impl::is_vector</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::false_type</basecompoundref>
+    <includes refid="de/d36/argparse_8h" local="no">argparse.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>std::false_type</label>
+      </node>
+      <node id="1">
+        <label>argparse::detail::is_vector_impl::is_vector&lt; T &gt;</label>
+        <link refid="dc/ddd/structargparse_1_1detail_1_1is__vector__impl_1_1is__vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>std::false_type</label>
+      </node>
+      <node id="1">
+        <label>argparse::detail::is_vector_impl::is_vector&lt; T &gt;</label>
+        <link refid="dc/ddd/structargparse_1_1detail_1_1is__vector__impl_1_1is__vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="101" column="1" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="101" bodyend="101"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

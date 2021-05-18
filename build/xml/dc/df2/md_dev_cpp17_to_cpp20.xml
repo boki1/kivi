@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/df2/md_dev_cpp17_to_cpp20" kind="page">
+    <compoundname>md_dev_cpp17_to_cpp20</compoundname>
+    <title>Cpp17 to Cpp20 transition</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><hruler/>
+</para>
+<para>The project is currently developed for <computeroutput>C++17</computeroutput>. Here are listed some major parts of the codebase which should be modified when <computeroutput>C++20</computeroutput> starts to be utilized used.</para>
+<para><hruler/>
+</para>
+<para><orderedlist>
+<listitem><para>Add hierarchy to parser&apos;s syntactical structure (that is <computeroutput>expression</computeroutput>, <computeroutput>statement</computeroutput>, etc.) using <computeroutput>cpp20</computeroutput>&apos;s <computeroutput>&lt;concept&gt;</computeroutput> in order to mark their specific &quot;type&quot;.</para>
+</listitem><listitem><para>Use <computeroutput>&lt;format&gt;</computeroutput> for string formatting.<itemizedlist>
+<listitem><para>Error reporting </para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+    </detaileddescription>
+    <location file="dev/cpp17_to_cpp20.md"/>
+  </compounddef>
+</doxygen>

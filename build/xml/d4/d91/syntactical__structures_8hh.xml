@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d91/syntactical__structures_8hh" kind="file" language="C++">
+    <compoundname>syntactical_structures.hh</compoundname>
+    <includes refid="d9/d1c/syntax_8hh" local="yes">syntax.hh</includes>
+    <includedby refid="d4/d99/expressions_8cc" local="yes">/home/boki/.tmp/kivi/frontend/parser/expressions.cc</includedby>
+    <includedby refid="dc/dee/parser_8tab_8hh" local="yes">/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh</includedby>
+    <includedby refid="da/dd4/parsing__context_8cc" local="yes">/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc</includedby>
+    <includedby refid="d5/d1a/statements_8cc" local="yes">/home/boki/.tmp/kivi/frontend/parser/statements.cc</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>variant</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>optional</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/boki/.tmp/kivi/frontend/parser/expressions.cc</label>
+        <link refid="d4/d99/expressions_8cc"/>
+      </node>
+      <node id="10">
+        <label>/home/boki/.tmp/kivi/test/frontend/parser.test.cc</label>
+        <link refid="db/dce/parser_8test_8cc"/>
+      </node>
+      <node id="8">
+        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/boki/.tmp/kivi/test/frontend/example.test.cc</label>
+        <link refid="da/d7a/example_8test_8cc"/>
+      </node>
+      <node id="5">
+        <label>/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc</label>
+        <link refid="db/d3d/lexer_8tab_8cc"/>
+      </node>
+      <node id="7">
+        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc</label>
+        <link refid="da/dd4/parsing__context_8cc"/>
+      </node>
+      <node id="6">
+        <label>/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc</label>
+        <link refid="d4/d01/parser_8tab_8cc"/>
+      </node>
+      <node id="3">
+        <label>/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh</label>
+        <link refid="dc/dee/parser_8tab_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/boki/.tmp/kivi/frontend/parser/statements.cc</label>
+        <link refid="d5/d1a/statements_8cc"/>
+      </node>
+      <node id="4">
+        <label>/home/boki/.tmp/kivi/frontend/parser/error.cc</label>
+        <link refid="df/dea/error_8cc"/>
+      </node>
+      <node id="9">
+        <label>/home/boki/.tmp/kivi/main.cc</label>
+        <link refid="d9/d0f/main_8cc"/>
+      </node>
+      <node id="11">
+        <label>/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc</label>
+        <link refid="d2/dfe/parsing__context_8test_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="d7/df6/namespacesyntax__analyzer">syntax_analyzer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_KIVI_SYNTACTIC_STRUCTURES_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_KIVI_SYNTACTIC_STRUCTURES_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d1c/syntax_8hh" kindref="compound">syntax.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::move;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a1d4c1dff621569f3ff750a14d3e96b81" kindref="member">number_literal</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a6ee3dc0764d8a21cc27f1902a5a1cb30" kindref="member">string_literal</ref>(std::string&amp;&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a1d881d7931a6966be2147e9e4c073b92" kindref="member">identifier_expr</ref>(identifier&amp;&amp;<sp/>ident);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a533a85533b9d2a8153e079761e35d4d0" kindref="member">nop_expr</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a78cb9dbcef41ae49f90453430aaec225" kindref="member">negation_expr</ref>(expression&amp;&amp;<sp/>operand);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a9ad6a484094a248f6ecd58dadfed6781" kindref="member">addition_expr</ref>(expression&amp;&amp;<sp/>lhs,<sp/>expression&amp;&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a7082e93e3a478dc5181fa85e1dc044df" kindref="member">multiplication_expr</ref>(expression&amp;&amp;<sp/>lhs,<sp/>expression&amp;&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a3ea046a3281d3216884f66d2a9a2ed82" kindref="member">modular_division_expr</ref>(expression&amp;&amp;<sp/>lhs,<sp/>expression&amp;&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a65910b168b44811d9ec858eb947f17fe" kindref="member">division_expr</ref>(expression&amp;&amp;<sp/>lhs,<sp/>expression&amp;&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a678818cf55653245ebda81825461d3b6" kindref="member">equality_expr</ref>(expression&amp;&amp;<sp/>lhs,<sp/>expression&amp;&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1ae1a82efed5e7647f5c6d8243a38c1478" kindref="member">inequality_expr</ref>(expression&amp;&amp;<sp/>lhs,<sp/>expression&amp;&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a88c8eb005118819f7d76280a32a08024" kindref="member">assignment_expr</ref>(expression&amp;&amp;<sp/>lhs,<sp/>expression&amp;&amp;<sp/>rhs);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a25e672e5808f12eb55b01e892b1022a8" kindref="member">function_call_expr</ref>(std::string&amp;&amp;<sp/>fun_name,<sp/>expression&amp;&amp;<sp/>parameter_list<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a7847e2850e81c45dffa4bb57a8c5b47c" kindref="member">sequence_expr</ref>(expression&amp;&amp;<sp/>first);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1ae83e90fa247c1be34a7dbc3ed2f05bed" kindref="member">if_stmt</ref>(expression&amp;&amp;<sp/>condition,<sp/>expression&amp;&amp;<sp/>than_body);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a717e25ba7c4fec313db67811b64ce0c0" kindref="member">while_stmt</ref>(expression&amp;&amp;<sp/>condition,<sp/>expression&amp;&amp;<sp/>loop_body);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1aef31df3c52051f0a99af48ba79dbafe1" kindref="member">return_stmt</ref>(expression&amp;&amp;<sp/>retval);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1aef31df3c52051f0a99af48ba79dbafe1" kindref="member">return_stmt</ref>();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a69bbfeec8bacaad18d3f8b67d0e76575" kindref="member">compound_stmt</ref>(std::vector&lt;expression&gt;<sp/>body<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//KIVI_SYNTACTIC_STRUCTURES_HH_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/d3e/structCatch_1_1WaitForKeypress" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::WaitForKeypress</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399ba" prot="public" static="no" strong="no">
+        <type></type>
+        <name>When</name>
+        <enumvalue id="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baa3a78e4f64675e7ce54ffd29e6109f1ce" prot="public">
+          <name>Never</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baaba7f6d9b2377122a118b371ab7ae3185" prot="public">
+          <name>BeforeStart</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baad6c3e4a5797b7ee0a812e4fc88128983" prot="public">
+          <name>BeforeExit</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baae8beb496b712aef908028a7cbfdd0c46" prot="public">
+          <name>BeforeStartAndExit</name>
+          <initializer>= BeforeStart | BeforeExit</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4496" column="26" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4496" bodyend="4501"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4496" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4496" bodyend="4501"/>
+    <listofallmembers>
+      <member refid="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baad6c3e4a5797b7ee0a812e4fc88128983" prot="public" virt="non-virtual"><scope>Catch::WaitForKeypress</scope><name>BeforeExit</name></member>
+      <member refid="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baaba7f6d9b2377122a118b371ab7ae3185" prot="public" virt="non-virtual"><scope>Catch::WaitForKeypress</scope><name>BeforeStart</name></member>
+      <member refid="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baae8beb496b712aef908028a7cbfdd0c46" prot="public" virt="non-virtual"><scope>Catch::WaitForKeypress</scope><name>BeforeStartAndExit</name></member>
+      <member refid="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baa3a78e4f64675e7ce54ffd29e6109f1ce" prot="public" virt="non-virtual"><scope>Catch::WaitForKeypress</scope><name>Never</name></member>
+      <member refid="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399ba" prot="public" virt="non-virtual"><scope>Catch::WaitForKeypress</scope><name>When</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

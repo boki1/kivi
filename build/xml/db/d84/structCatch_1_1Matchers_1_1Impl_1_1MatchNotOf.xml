@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::Matchers::Impl::MatchNotOf</compoundname>
+    <basecompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; ArgT &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ArgT</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf_1af7ac67f112b0e93796b048a47329aad4" prot="public" static="no" mutable="no">
+        <type><ref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" kindref="compound">MatcherBase</ref>&lt; ArgT &gt; const  &amp;</type>
+        <definition>MatcherBase&lt;ArgT&gt; const&amp; Catch::Matchers::Impl::MatchNotOf&lt; ArgT &gt;::m_underlyingMatcher</definition>
+        <argsstring></argsstring>
+        <name>m_underlyingMatcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3365" column="31" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3365" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf_1a47afdd9e4c3354cef85adc3186097ae4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Matchers::Impl::MatchNotOf&lt; ArgT &gt;::MatchNotOf</definition>
+        <argsstring>(MatcherBase&lt; ArgT &gt; const &amp;underlyingMatcher)</argsstring>
+        <name>MatchNotOf</name>
+        <param>
+          <type><ref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" kindref="compound">MatcherBase</ref>&lt; ArgT &gt; const &amp;</type>
+          <declname>underlyingMatcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3356" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3356" bodyend="3356"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf_1a181d693c0258e582d80dc6117a1f2b66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::Matchers::Impl::MatchNotOf&lt; ArgT &gt;::match</definition>
+        <argsstring>(ArgT const &amp;arg) const override</argsstring>
+        <name>match</name>
+        <param>
+          <type>ArgT const &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3358" column="18" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3358" bodyend="3360"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf_1ac5fb4ef6a9069d23a4098c3c818f06b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::Impl::MatchNotOf&lt; ArgT &gt;::describe</definition>
+        <argsstring>() const override</argsstring>
+        <name>describe</name>
+        <reimplements refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a91d3a907dbfcbb596077df24f6e11fe2">describe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3362" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3362" bodyend="3364"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; ObjectT &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; ArgT &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::Matchers::Impl::MatchNotOf&lt; ArgT &gt;</label>
+        <link refid="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; ObjectT &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; ArgT &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::Matchers::Impl::MatchNotOf&lt; ArgT &gt;</label>
+        <link refid="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_underlyingMatcher</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3354" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3354" bodyend="3366"/>
+    <listofallmembers>
+      <member refid="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf_1ac5fb4ef6a9069d23a4098c3c818f06b0" prot="public" virt="virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>describe</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a951095c462657e7097a9a6dc4dde813f" prot="protected" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>m_cachedToString</name></member>
+      <member refid="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf_1af7ac67f112b0e93796b048a47329aad4" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>m_underlyingMatcher</name></member>
+      <member refid="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf_1a181d693c0258e582d80dc6117a1f2b66" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>match</name></member>
+      <member refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod_1ae0920ff9e817acf08e1bb0cbcb044e30" prot="public" virt="pure-virtual" ambiguityscope="MatcherBase&lt; ArgT &gt;::"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>match</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1ab65764dc245d85e2b268d3be870b650a" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>MatcherUntypedBase</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a985fd3c3ffcc9f2e8dc7a330130040b0" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>MatcherUntypedBase</name></member>
+      <member refid="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf_1a47afdd9e4c3354cef85adc3186097ae4" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>MatchNotOf</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5bb94bf2ff5c7ef73b7c11eb173bdf3b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>operator!</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1aae4a9827601f6f26a52126e193d012de" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>operator&amp;&amp;</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a62668ccc47b64a9094dcb6413f9af80b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>operator=</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5f8542b8f1567a6f9c65d0a6da7b679b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>operator||</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a5982c7c80ca71dfe2298babadad7a453" prot="public" virt="non-virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>toString</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a853be93ce33f71b5abede38081c79e9d" prot="protected" virt="virtual"><scope>Catch::Matchers::Impl::MatchNotOf</scope><name>~MatcherUntypedBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

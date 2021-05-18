@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/d14/classCatch_1_1LazyExpression" kind="class" language="C++" prot="public">
+    <compoundname>Catch::LazyExpression</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="d1/d14/classCatch_1_1LazyExpression_1a4301a3aa57b612dd8b6ef8461742ecab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class AssertionHandler</definition>
+        <argsstring></argsstring>
+        <name>AssertionHandler</name>
+        <param>
+          <type><ref refid="d9/d88/classCatch_1_1AssertionHandler" kindref="compound">AssertionHandler</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2525" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="d1/d14/classCatch_1_1LazyExpression_1a64019eb137f5ce447cdc71cb80b6e7a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct AssertionStats</definition>
+        <argsstring></argsstring>
+        <name>AssertionStats</name>
+        <param>
+          <type>AssertionStats</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2526" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="d1/d14/classCatch_1_1LazyExpression_1af3aa096bb29a772bc534830f29a2ce7a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class RunContext</definition>
+        <argsstring></argsstring>
+        <name>RunContext</name>
+        <param>
+          <type>RunContext</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2527" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="d1/d14/classCatch_1_1LazyExpression_1aa01086581cab2fcd2d4580b8fa787dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, LazyExpression const &amp;lazyExpr) -&gt; std::ostream &amp;</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d14/classCatch_1_1LazyExpression" kindref="compound">LazyExpression</ref> const &amp;</type>
+          <declname>lazyExpr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2538" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d14/classCatch_1_1LazyExpression_1a5a9ce4c2401a262c21b4e107551180bc" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d6e/structCatch_1_1ITransientExpression" kindref="compound">ITransientExpression</ref> const  *</type>
+        <definition>ITransientExpression const* Catch::LazyExpression::m_transientExpression</definition>
+        <argsstring></argsstring>
+        <name>m_transientExpression</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2529" column="36" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d14/classCatch_1_1LazyExpression_1a975fdfe2bb139512024bb479d478425e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Catch::LazyExpression::m_isNegated</definition>
+        <argsstring></argsstring>
+        <name>m_isNegated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2530" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2530" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d14/classCatch_1_1LazyExpression_1a47186c2487bd4bf871e870ba8048553a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::LazyExpression::LazyExpression</definition>
+        <argsstring>(bool isNegated)</argsstring>
+        <name>LazyExpression</name>
+        <param>
+          <type>bool</type>
+          <declname>isNegated</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2532" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d14/classCatch_1_1LazyExpression_1ab82d5e94df0e159b018fbde0170e46f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::LazyExpression::LazyExpression</definition>
+        <argsstring>(LazyExpression const &amp;other)</argsstring>
+        <name>LazyExpression</name>
+        <param>
+          <type><ref refid="d1/d14/classCatch_1_1LazyExpression" kindref="compound">LazyExpression</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2533" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d14/classCatch_1_1LazyExpression_1ae4ae00d4f36f084c369f2da36565a822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/d14/classCatch_1_1LazyExpression" kindref="compound">LazyExpression</ref> &amp;</type>
+        <definition>LazyExpression&amp; Catch::LazyExpression::operator=</definition>
+        <argsstring>(LazyExpression const &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d1/d14/classCatch_1_1LazyExpression" kindref="compound">LazyExpression</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2534" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d14/classCatch_1_1LazyExpression_1acdb846cb230cecfc6aca7a925b31fbca" prot="public" static="no" const="yes" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::LazyExpression::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2536" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Catch::ITransientExpression</label>
+        <link refid="d3/d6e/structCatch_1_1ITransientExpression"/>
+      </node>
+      <node id="1">
+        <label>Catch::LazyExpression</label>
+        <link refid="d1/d14/classCatch_1_1LazyExpression"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_transientExpression</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2524" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2524" bodyend="2539"/>
+    <listofallmembers>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1a4301a3aa57b612dd8b6ef8461742ecab" prot="private" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>AssertionHandler</name></member>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1a64019eb137f5ce447cdc71cb80b6e7a4" prot="private" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>AssertionStats</name></member>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1a47186c2487bd4bf871e870ba8048553a" prot="public" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>LazyExpression</name></member>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1ab82d5e94df0e159b018fbde0170e46f8" prot="public" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>LazyExpression</name></member>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1a975fdfe2bb139512024bb479d478425e" prot="private" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>m_isNegated</name></member>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1a5a9ce4c2401a262c21b4e107551180bc" prot="private" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>m_transientExpression</name></member>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1acdb846cb230cecfc6aca7a925b31fbca" prot="public" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>operator bool</name></member>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1aa01086581cab2fcd2d4580b8fa787dfc" prot="public" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1ae4ae00d4f36f084c369f2da36565a822" prot="public" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>operator=</name></member>
+      <member refid="d1/d14/classCatch_1_1LazyExpression_1af3aa096bb29a772bc534830f29a2ce7a" prot="private" virt="non-virtual"><scope>Catch::LazyExpression</scope><name>RunContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

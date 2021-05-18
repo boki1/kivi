@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d1e/structloguru_1_1Options" kind="struct" language="C++" prot="public">
+    <compoundname>loguru::Options</compoundname>
+    <includes refid="df/dec/loguru_8hpp" local="no">loguru.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d1e/structloguru_1_1Options_1a4f69aae8a9392791ba007e69d5c00abd" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::Options::verbosity_flag</definition>
+        <argsstring></argsstring>
+        <name>verbosity_flag</name>
+        <initializer>= &quot;-v&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="454" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d1e/structloguru_1_1Options_1a2070fa07956a869ee70093e7324ee821" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::Options::main_thread_name</definition>
+        <argsstring></argsstring>
+        <name>main_thread_name</name>
+        <initializer>= &quot;main thread&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="462" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d1e/structloguru_1_1Options_1a13545dc42585f3b88f6f5ee2c025b4ef" prot="public" static="no" mutable="no">
+        <type><ref refid="dd/df7/structloguru_1_1SignalOptions" kindref="compound">SignalOptions</ref></type>
+        <definition>SignalOptions loguru::Options::signal_options</definition>
+        <argsstring></argsstring>
+        <name>signal_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="464" column="15" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>loguru::Options</label>
+        <link refid="de/d1e/structloguru_1_1Options"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>signal_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>loguru::SignalOptions</label>
+        <link refid="dd/df7/structloguru_1_1SignalOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="450" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="451" bodyend="465"/>
+    <listofallmembers>
+      <member refid="de/d1e/structloguru_1_1Options_1a2070fa07956a869ee70093e7324ee821" prot="public" virt="non-virtual"><scope>loguru::Options</scope><name>main_thread_name</name></member>
+      <member refid="de/d1e/structloguru_1_1Options_1a13545dc42585f3b88f6f5ee2c025b4ef" prot="public" virt="non-virtual"><scope>loguru::Options</scope><name>signal_options</name></member>
+      <member refid="de/d1e/structloguru_1_1Options_1a4f69aae8a9392791ba007e69d5c00abd" prot="public" virt="non-virtual"><scope>loguru::Options</scope><name>verbosity_flag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

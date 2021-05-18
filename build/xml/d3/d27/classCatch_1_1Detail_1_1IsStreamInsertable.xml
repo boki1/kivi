@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable" kind="class" language="C++" prot="public">
+    <compoundname>Catch::Detail::IsStreamInsertable</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1a42818b09ae5851126a70ee263769e309" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool Catch::Detail::IsStreamInsertable&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= decltype(<ref refid="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1a4269761a8bcae50110c0814462fc4ef0" kindref="member">test</ref>&lt;std::ostream, const T&amp;&gt;(0))::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1571" column="31" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1571" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1a4269761a8bcae50110c0814462fc4ef0" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Stream</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto Catch::Detail::IsStreamInsertable&lt; T &gt;::test</definition>
+        <argsstring>(int) -&gt; decltype(std::declval&lt; Stream &amp; &gt;()&lt;&lt; std::declval&lt; U &gt;(), std::true_type())</argsstring>
+        <name>test</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1564" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1ac5761375646929916dc5e165d44cd3d9" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+          </param>
+          <param>
+            <type>typename</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto Catch::Detail::IsStreamInsertable&lt; T &gt;::test</definition>
+        <argsstring>(...) -&gt; std::false_type</argsstring>
+        <name>test</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1568" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1562" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1562" bodyend="1572"/>
+    <listofallmembers>
+      <member refid="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1a4269761a8bcae50110c0814462fc4ef0" prot="private" virt="non-virtual"><scope>Catch::Detail::IsStreamInsertable</scope><name>test</name></member>
+      <member refid="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1ac5761375646929916dc5e165d44cd3d9" prot="private" virt="non-virtual"><scope>Catch::Detail::IsStreamInsertable</scope><name>test</name></member>
+      <member refid="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1a42818b09ae5851126a70ee263769e309" prot="public" virt="non-virtual"><scope>Catch::Detail::IsStreamInsertable</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

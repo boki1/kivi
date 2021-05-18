@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d08/diagrams_8md" kind="file" language="Markdown">
+    <compoundname>diagrams.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Details</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Here<sp/>are<sp/>some<sp/>of<sp/>the<sp/>details<sp/>regarding<sp/>the<sp/>design<sp/>and<sp/>implementation<sp/>of<sp/>the<sp/>kivi<sp/>compiler.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Stages<sp/>of<sp/>compiling</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First,<sp/>there<sp/>are<sp/>4<sp/>major<sp/>stages<sp/>involved<sp/>in<sp/>the<sp/>processing<sp/>of<sp/>source<sp/>files.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Stages](https://i.ibb.co/WP7TxWm/Kivi-Compiler-Stages.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>The<sp/>what,<sp/>how<sp/>and<sp/>why<sp/>of<sp/>the<sp/>stages</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">These<sp/>components<sp/>form<sp/>what&apos;s<sp/>called<sp/>_lexical_<sp/>and<sp/>_syntactical_<sp/>analysis.<sp/>There<sp/>key<sp/>functionalities<sp/>are<sp/>to<sp/>process<sp/>the<sp/>given<sp/>text<sp/>(marked<sp/>as<sp/><sp/>&quot;Source<sp/>File&quot;)<sp/>and<sp/>to<sp/>construct<sp/>what<sp/>is<sp/>called<sp/>[abstract<sp/>syntax<sp/>tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree).</highlight></codeline>
+<codeline><highlight class="normal">As<sp/>it<sp/>is<sp/>shown<sp/>on<sp/>the<sp/>schematic,<sp/>the<sp/>lexer<sp/>understands<sp/>and<sp/>forms<sp/>a<sp/>list<sp/>of<sp/>tokens<sp/>-<sp/>composed<sp/>of<sp/>type<sp/>(e.g<sp/>Identifier,<sp/>Function,<sp/>etc.)<sp/>and<sp/>an<sp/>associated<sp/>value.<sp/>The<sp/>next<sp/>step<sp/>is<sp/>to<sp/>transform<sp/>these<sp/>lexemes<sp/>into<sp/>a<sp/>tree<sp/>structure<sp/>which<sp/>denotes<sp/>the<sp/>order<sp/>of<sp/>execution<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>individual<sp/>_syntactic<sp/>structures_<sp/>(e.g<sp/>expression<sp/>:=<sp/>number<sp/>|<sp/>string<sp/>literal<sp/>|<sp/>etc.).<sp/>Having<sp/>taken<sp/>in<sp/>account<sp/>every<sp/>aspect<sp/>of<sp/>the<sp/>language<sp/>_grammar_,<sp/>the<sp/>next<sp/>step<sp/>is<sp/>to<sp/>perform<sp/>semantic<sp/>analysis<sp/>on<sp/>the<sp/>tree.<sp/>Since<sp/>Kivi<sp/>does<sp/>not<sp/>have<sp/>any<sp/>types<sp/>(only<sp/>integers)<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">so-called<sp/>semantic<sp/>analysis<sp/>is<sp/>pretty-straight<sp/>forward<sp/>-<sp/>are<sp/>the<sp/>functions<sp/>that<sp/>get<sp/>called<sp/>actually<sp/>defined<sp/>--<sp/>well<sp/>that&apos;s<sp/>not<sp/>hard<sp/>:smile:.</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>intermediate<sp/>representation<sp/>component<sp/>translates<sp/>the<sp/>AST<sp/>generated<sp/>before<sp/>in<sp/>a<sp/>assembly-looking<sp/>language<sp/>which<sp/>is<sp/>independent<sp/>of<sp/>architecture<sp/>and<sp/>easier<sp/>to<sp/>translates<sp/>to<sp/>actual<sp/>assembly.<sp/>Lastly,<sp/>the<sp/>intermediate<sp/>representation<sp/>get<sp/>translated<sp/>to<sp/>the<sp/>specified<sp/>assembly<sp/>language.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Design</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Syntax<sp/>analyzer</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![UML<sp/>diagram]()</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Intermediate<sp/>code<sp/>generation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**TODO:<sp/>This<sp/>is<sp/>going<sp/>to<sp/>be<sp/>added<sp/>soon<sp/>:).<sp/>Stay<sp/>tuned.**</highlight></codeline>
+<codeline><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal">![UML<sp/>diagram]()</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Code<sp/>generation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**TODO:<sp/>This<sp/>is<sp/>going<sp/>to<sp/>be<sp/>added<sp/>soon<sp/>:).<sp/>Stay<sp/>tuned.**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![UML<sp/>diagram]()<sp/><sp/><sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="dev/diagrams.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d98/md_dev_conventions" kind="page">
+    <compoundname>md_dev_conventions</compoundname>
+    <title>Code convention</title>
+    <briefdescription>
+<para>... </para>
+    </briefdescription>
+    <detaileddescription>
+<para>...</para>
+<sect2 id="db/d98/md_dev_conventions_1autotoc_md1">
+<title>Naming</title>
+<para><itemizedlist>
+<listitem><para>Namespaces: <emphasis>snake_case</emphasis></para>
+</listitem><listitem><para>Classes: <emphasis>snake_case</emphasis></para>
+</listitem><listitem><para>Class members: *<computeroutput>m_</computeroutput> prefixed snake_case*</para>
+</listitem><listitem><para>Class member getters: <emphasis>class_member name without the <computeroutput>m_</computeroutput> prefix</emphasis></para>
+</listitem><listitem><para>Interfaces =&gt; *<computeroutput>I_</computeroutput> prefixed snake_case*</para>
+</listitem><listitem><para>Files<itemizedlist>
+<listitem><para><emphasis>source</emphasis>: <computeroutput>snake_case.cc</computeroutput></para>
+</listitem><listitem><para><emphasis>header</emphasis>: <computeroutput>snake_case.hh</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+</para>
+</sect2>
+<sect2 id="db/d98/md_dev_conventions_1autotoc_md3">
+<title>Structure</title>
+<para><itemizedlist>
+<listitem><para>Each directory is compiled as a separate library which gets included from higher level client code</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+</para>
+</sect2>
+<sect2 id="db/d98/md_dev_conventions_1autotoc_md5">
+<title>Classes</title>
+<para><itemizedlist>
+<listitem><para>Class definitions follow this structure:</para>
+<para>```c++</para>
+<para>/**<itemizedlist>
+<listitem><para>Brief description</para>
+</listitem><listitem><para>... */ class example_class { private: /// Info about <computeroutput>m_field1</computeroutput> type m_field1;</para>
+<para>/// Info about <computeroutput>m_field2</computeroutput> type m_field2;</para>
+</listitem></itemizedlist>
+</para>
+<para>public: /// /// Constructors and destructors ///</para>
+<para>public: /// /// API ///</para>
+<para>/*<itemizedlist>
+<listitem><para>* <simplesect kind="note"><para>...</para>
+</simplesect>
+</para>
+</listitem><listitem><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[in|out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>param ...</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</listitem><listitem><para><simplesect kind="return"><para>... */ type do_something1(type param);</para>
+</simplesect>
+/*</para>
+</listitem><listitem><para>...</para>
+</listitem><listitem><para><simplesect kind="note"><para>...</para>
+</simplesect>
+</para>
+</listitem><listitem><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[in|out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>param1 ...</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</listitem><listitem><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[in|out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>param2 ...</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</listitem><listitem><para><simplesect kind="return"><para>... */ type do_something2(type param1, type param2);</para>
+</simplesect>
+public: /// /// Getters (optionally also setters) ///</para>
+</listitem></itemizedlist>
+</para>
+<para>type field1() const noexcept { return m_field1; }</para>
+<para>... }; ```</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+ </para>
+</sect2>
+<sect2 id="db/d98/md_dev_conventions_1autotoc_md7">
+<title>Includes</title>
+<para><itemizedlist>
+<listitem><para>Include order is the following:<orderedlist>
+<listitem><para>Standard library</para>
+</listitem><listitem><para>Other external libraries</para>
+</listitem><listitem><para>Local libraries</para>
+</listitem><listitem><para>Local headers</para>
+</listitem></orderedlist>
+</para>
+</listitem><listitem><para><bold>Additional:</bold> New line between each category may improve clarity :)</para>
+<para>Example ```c++ #include &lt;algorithm&gt;</para>
+<para>#include &lt;boost/...&gt;</para>
+<para>#include &lt;local_lib/...&gt;</para>
+<para>#include &lt;blah.hh&gt; ```</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+ </para>
+</sect2>
+<sect2 id="db/d98/md_dev_conventions_1autotoc_md9">
+<title>Misc</title>
+<para><itemizedlist>
+<listitem><para>Prefer initializing with <computeroutput>{}</computeroutput> over <computeroutput>()</computeroutput><itemizedlist>
+<listitem><para>Example ```cpp blah b{blah_blah}; ``<computeroutput></computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><computeroutput>When using the <ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref> namespace, prefer</computeroutput><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref><computeroutput>over</computeroutput>sa<computeroutput><itemizedlist>
+<listitem><para>Usesa<computeroutput>only when the statement is too long, for example: </computeroutput>``cpp std::variant&lt;sa::I_statement, sa::function, sa::identifier, sa::I_expression, sa::invalid&gt; m_field; ``<computeroutput></computeroutput></para>
+</listitem><listitem><para><computeroutput>Do prefer</computeroutput><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref><computeroutput>for situations like: </computeroutput>``cpp <ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref>  </para>
+</listitem></itemizedlist>
+</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+    </detaileddescription>
+    <location file="dev/conventions.md"/>
+  </compounddef>
+</doxygen>

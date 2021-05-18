@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>Catch::Generators::RandomFloatingGenerator</compoundname>
+    <basecompoundref refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator" prot="public" virt="non-virtual">Catch::Generators::IGenerator&lt; Float &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Float</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a6142d65c14d2749ecb3dbc6949c0ca1c" prot="private" static="no" mutable="no">
+        <type><ref refid="de/d68/classCatch_1_1SimplePcg32" kindref="compound">Catch::SimplePcg32</ref> &amp;</type>
+        <definition>Catch::SimplePcg32&amp; Catch::Generators::RandomFloatingGenerator&lt; Float &gt;::m_rng</definition>
+        <argsstring></argsstring>
+        <name>m_rng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4597" column="24" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a6a79be0000a6c2a17e4f11dadb43c8ac" prot="private" static="no" mutable="no">
+        <type>std::uniform_real_distribution&lt; Float &gt;</type>
+        <definition>std::uniform_real_distribution&lt;Float&gt; Catch::Generators::RandomFloatingGenerator&lt; Float &gt;::m_dist</definition>
+        <argsstring></argsstring>
+        <name>m_dist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4598" column="36" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a3591690761d8da0f4438623a453e6bc0" prot="private" static="no" mutable="no">
+        <type>Float</type>
+        <definition>Float Catch::Generators::RandomFloatingGenerator&lt; Float &gt;::m_current_number</definition>
+        <argsstring></argsstring>
+        <name>m_current_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4599" column="11" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4599" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1abce275ce88f7c3465addd7a98b6c408d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;::RandomFloatingGenerator</definition>
+        <argsstring>(Float a, Float b)</argsstring>
+        <name>RandomFloatingGenerator</name>
+        <param>
+          <type>Float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4602" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4602" bodyend="4606"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a0dea6fa1f9e2647df022f0b588cf0a8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>Float const  &amp;</type>
+        <definition>Float const&amp; Catch::Generators::RandomFloatingGenerator&lt; Float &gt;::get</definition>
+        <argsstring>() const override</argsstring>
+        <name>get</name>
+        <reimplements refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a525d381fc9249a885b075a0632a8579a">get</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4608" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4608" bodyend="4610"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a6a65e5f16abd884f58c31581b2a0d6db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Catch::Generators::RandomFloatingGenerator&lt; Float &gt;::next</definition>
+        <argsstring>() override</argsstring>
+        <name>next</name>
+        <reimplements refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1aeed3c0cd6233c5f553549e453b8d6638">next</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4611" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4611" bodyend="4614"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+      <node id="2">
+        <label>Catch::Generators::IGenerator&lt; Float &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</label>
+        <link refid="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::SimplePcg32</label>
+        <link refid="de/d68/classCatch_1_1SimplePcg32"/>
+      </node>
+      <node id="2">
+        <label>Catch::Generators::IGenerator&lt; Float &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::Generators::RandomFloatingGenerator&lt; Float &gt;</label>
+        <link refid="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_rng</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4596" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4596" bodyend="4615"/>
+    <listofallmembers>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a00ff0179d739c3016756b6cf56fabbad" prot="public" virt="non-virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>GeneratorUntypedBase</name></member>
+      <member refid="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a0dea6fa1f9e2647df022f0b588cf0a8f" prot="public" virt="virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>get</name></member>
+      <member refid="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a3591690761d8da0f4438623a453e6bc0" prot="private" virt="non-virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>m_current_number</name></member>
+      <member refid="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a6a79be0000a6c2a17e4f11dadb43c8ac" prot="private" virt="non-virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>m_dist</name></member>
+      <member refid="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a6142d65c14d2749ecb3dbc6949c0ca1c" prot="private" virt="non-virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>m_rng</name></member>
+      <member refid="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1a6a65e5f16abd884f58c31581b2a0d6db" prot="public" virt="virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>next</name></member>
+      <member refid="d1/dbb/classCatch_1_1Generators_1_1RandomFloatingGenerator_1abce275ce88f7c3465addd7a98b6c408d" prot="public" virt="non-virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>RandomFloatingGenerator</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a1f8677875fe0ff31f39c60d45504b9a5" prot="public" virt="non-virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>type</name></member>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a6f05f8099fdc5744a7aff68aa8c09c7f" prot="public" virt="virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>~GeneratorUntypedBase</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1afe5b6eecbbd735e69748d68574611747" prot="public" virt="virtual"><scope>Catch::Generators::RandomFloatingGenerator</scope><name>~IGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

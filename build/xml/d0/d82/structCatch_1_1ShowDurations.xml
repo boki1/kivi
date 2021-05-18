@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d82/structCatch_1_1ShowDurations" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::ShowDurations</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d0/d82/structCatch_1_1ShowDurations_1a82fa0174554187220c1eda175f122ee1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>OrNot</name>
+        <enumvalue id="d0/d82/structCatch_1_1ShowDurations_1a82fa0174554187220c1eda175f122ee1aba1710583107b0736c1f5f0f8dfd23c8" prot="public">
+          <name>DefaultForReporter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d82/structCatch_1_1ShowDurations_1a82fa0174554187220c1eda175f122ee1ab49682ccb55f2d6b4dfcdb027c09da9a" prot="public">
+          <name>Always</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d0/d82/structCatch_1_1ShowDurations_1a82fa0174554187220c1eda175f122ee1af1a716bc46185f561382a12a0dede9f3" prot="public">
+          <name>Never</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4481" column="24" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4481" bodyend="4485"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4481" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4481" bodyend="4485"/>
+    <listofallmembers>
+      <member refid="d0/d82/structCatch_1_1ShowDurations_1a82fa0174554187220c1eda175f122ee1ab49682ccb55f2d6b4dfcdb027c09da9a" prot="public" virt="non-virtual"><scope>Catch::ShowDurations</scope><name>Always</name></member>
+      <member refid="d0/d82/structCatch_1_1ShowDurations_1a82fa0174554187220c1eda175f122ee1aba1710583107b0736c1f5f0f8dfd23c8" prot="public" virt="non-virtual"><scope>Catch::ShowDurations</scope><name>DefaultForReporter</name></member>
+      <member refid="d0/d82/structCatch_1_1ShowDurations_1a82fa0174554187220c1eda175f122ee1af1a716bc46185f561382a12a0dede9f3" prot="public" virt="non-virtual"><scope>Catch::ShowDurations</scope><name>Never</name></member>
+      <member refid="d0/d82/structCatch_1_1ShowDurations_1a82fa0174554187220c1eda175f122ee1" prot="public" virt="non-virtual"><scope>Catch::ShowDurations</scope><name>OrNot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

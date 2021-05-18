@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/db6/structCatch_1_1MessageStream" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::MessageStream</compoundname>
+    <derivedcompoundref refid="d2/d7e/structCatch_1_1MessageBuilder" prot="public" virt="non-virtual">Catch::MessageBuilder</derivedcompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/db6/structCatch_1_1MessageStream_1a9202520faed8882ef469db9f353ec578" prot="public" static="no" mutable="no">
+        <type><ref refid="d9/d54/classCatch_1_1ReusableStringStream" kindref="compound">ReusableStringStream</ref></type>
+        <definition>ReusableStringStream Catch::MessageStream::m_stream</definition>
+        <argsstring></argsstring>
+        <name>m_stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2622" column="30" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2622" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/db6/structCatch_1_1MessageStream_1a554c4aff5925a077e9fe9d858217428d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d6/db6/structCatch_1_1MessageStream" kindref="compound">MessageStream</ref> &amp;</type>
+        <definition>MessageStream&amp; Catch::MessageStream::operator&lt;&lt;</definition>
+        <argsstring>(T const &amp;value)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2617" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2617" bodyend="2620"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Catch::MessageBuilder</label>
+        <link refid="d2/d7e/structCatch_1_1MessageBuilder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::MessageStream</label>
+        <link refid="d6/db6/structCatch_1_1MessageStream"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Catch::NonCopyable</label>
+        <link refid="dc/d1c/classCatch_1_1NonCopyable"/>
+      </node>
+      <node id="2">
+        <label>Catch::ReusableStringStream</label>
+        <link refid="d9/d54/classCatch_1_1ReusableStringStream"/>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::MessageStream</label>
+        <link refid="d6/db6/structCatch_1_1MessageStream"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_stream</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2614" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2614" bodyend="2623"/>
+    <listofallmembers>
+      <member refid="d6/db6/structCatch_1_1MessageStream_1a9202520faed8882ef469db9f353ec578" prot="public" virt="non-virtual"><scope>Catch::MessageStream</scope><name>m_stream</name></member>
+      <member refid="d6/db6/structCatch_1_1MessageStream_1a554c4aff5925a077e9fe9d858217428d" prot="public" virt="non-virtual"><scope>Catch::MessageStream</scope><name>operator&lt;&lt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

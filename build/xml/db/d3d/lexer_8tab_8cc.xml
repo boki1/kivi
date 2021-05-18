@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d3d/lexer_8tab_8cc" kind="file" language="C++">
+    <compoundname>lexer.tab.cc</compoundname>
+    <includes refid="dc/dee/parser_8tab_8hh" local="yes">parser.tab.hh</includes>
+    <includes refid="d9/dd1/parsing__context_8hh" local="yes">parsing_context.hh</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>loguru/loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
+      </node>
+      <node id="7">
+        <label>variant</label>
+      </node>
+      <node id="16">
+        <label>cassert</label>
+      </node>
+      <node id="18">
+        <label>stdexcept</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc</label>
+        <link refid="db/d3d/lexer_8tab_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>location.hh</label>
+        <link refid="d3/d46/location_8hh"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>typeinfo</label>
+      </node>
+      <node id="10">
+        <label>optional</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>parser.tab.hh</label>
+        <link refid="dc/dee/parser_8tab_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="17">
+        <label>cstdlib</label>
+      </node>
+      <node id="15">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="db/db4/namespaceyy">yy</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="db/d3d/lexer_8tab_8cc_1ae48312692f4bf97c6649d0eece28e53e" prot="public" static="no">
+        <type><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref></type>
+        <definition>using kp =  yy::kivi_parser</definition>
+        <argsstring></argsstring>
+        <name>kp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc" line="7" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Generated<sp/>by<sp/>re2c<sp/>2.0.3<sp/>on<sp/>Tue<sp/>May<sp/>18<sp/>13:50:22<sp/>2021<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/dee/parser_8tab_8hh" kindref="compound">parser.tab.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/dd1/parsing__context_8hh" kindref="compound">parsing_context.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Namespace<sp/>shortcuts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">sa</ref><sp/>=<sp/><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">kp</ref><sp/>=<sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="db/db4/namespaceyy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="db/db4/namespaceyy" kindref="compound">yy</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">kp::symbol_type</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="db/db4/namespaceyy_1a8ac36cf02d396bf94cd641d39e6c5069" kindref="member">yylex</ref><sp/>(<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">sa::parsing_context</ref><sp/>&amp;ctx)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*anchor<sp/>=<sp/>ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a12e6eabcb03275e68bbb3a887e2ba736" kindref="member">yy_location</ref>.<ref refid="dc/de8/classyy_1_1location_1a96620cec8dd8ebfc96c60a03c10154d0" kindref="member">step</ref><sp/>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>make_token<sp/>=<sp/>[&amp;]<sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>fun,<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;&amp;...params)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a12e6eabcb03275e68bbb3a887e2ba736" kindref="member">yy_location</ref>.<ref refid="dc/de8/classyy_1_1location_1ac7cd04f903980f32182f0aa65bbf5d84" kindref="member">columns</ref><sp/>(ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref><sp/>-<sp/>anchor);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fun<sp/>(params...,<sp/>ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a12e6eabcb03275e68bbb3a887e2ba736" kindref="member">yy_location</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>yych;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;&lt;&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/>0x1F)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;\t&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/>0x00)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy2;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/>0x07)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy4;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy6;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy8;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;\f&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy6;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy10;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy4;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy6;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy11;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy4;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy13;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy14;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;;&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy4;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy17;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;=&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy18;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;@&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy4;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;`&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy4;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy22;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy23;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;q&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy24;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy25;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy4;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">yy2:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1a2da6905d1b075b59f156cb39809a3b4f" kindref="member">kp::make_END</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">yy4:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">yy5:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token([]<sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">...s)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">kp::symbol_type</ref>(s...);<sp/>},<sp/><ref refid="da/d00/classyy_1_1kivi__parser_1a30df10720ee723439c811ef48eb55ee0" kindref="member">kp::token_type</ref>(ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>[-1]<sp/>&amp;<sp/>0xFF));<sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">yy6:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a12e6eabcb03275e68bbb3a887e2ba736" kindref="member">yy_location</ref>.<ref refid="dc/de8/classyy_1_1location_1ac7cd04f903980f32182f0aa65bbf5d84" kindref="member">columns</ref>();<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/db4/namespaceyy_1a8ac36cf02d396bf94cd641d39e6c5069" kindref="member">yylex</ref>(ctx);<sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">yy8:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">yy9:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a12e6eabcb03275e68bbb3a887e2ba736" kindref="member">yy_location</ref>.<ref refid="dc/de8/classyy_1_1location_1a5c1f01a4bb5dff82b214cc8b780ff04b" kindref="member">lines</ref>();<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/db4/namespaceyy_1a8ac36cf02d396bf94cd641d39e6c5069" kindref="member">yylex</ref>(ctx);<sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">yy10:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy8;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy9;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">yy11:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy26;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy11;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">yy13:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy28;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy5;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">yy14:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy16;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy14;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">yy16:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1af7f39f7bbdc9a58a9b7a898ad56ef19c" kindref="member">kp::make_NUMBER_LITERAL</ref>,<sp/>std::move(std::stol(std::string(anchor,<sp/>ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>))));<sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">yy17:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;&gt;&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy31;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy5;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">yy18:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;=&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy33;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy5;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">yy19:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">yy20:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy21;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;`&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy21;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">yy21:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1a85323ed38cc708fe1d0133efc3f457b3" kindref="member">kp::make_IDENTIFIER</ref>,<sp/>std::move(std::string(anchor,<sp/>ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>)));<sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">yy22:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;u&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy35;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">yy23:</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;f&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy36;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">yy24:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy38;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">yy25:</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy39;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">yy26:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1a2bb96193c0dc615414f265738c42d405" kindref="member">kp::make_STRING_LITERAL</ref>,<sp/>std::move(std::string(anchor<sp/>+<sp/>1,<sp/>ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref><sp/>-<sp/>1)));<sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">yy28:</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy30;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy28;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">yy30:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/db4/namespaceyy_1a8ac36cf02d396bf94cd641d39e6c5069" kindref="member">yylex</ref>(ctx);<sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">yy31:</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1a6be0be77acdb9cc53648fae39d656fcd" kindref="member">kp::make_NE</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">yy33:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1a8b38791e76c3fa517af5769902dbfdb5" kindref="member">kp::make_EQ</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">yy35:</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy40;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">yy36:</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy37;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;`&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy37;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">yy37:</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1a8e1b253db27cead776d1a45233c3f50b" kindref="member">kp::make_IF</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">yy38:</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy41;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">yy39:</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy42;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">yy40:</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy43;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">yy41:</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;u&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy45;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">yy42:</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy46;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">yy43:</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy44;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;`&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy44;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">yy44:</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1a5e958eeb7a4721a59af5b0fb2bb9f705" kindref="member">kp::make_VAR</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">yy45:</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy47;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">yy46:</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy48;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">yy47:</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>==<sp/></highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy50;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy20;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">yy48:</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy49;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;`&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy49;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">yy49:</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1aa2dd33e83f9c51da3a22b06f75b95983" kindref="member">kp::make_WHILE</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">yy50:</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>yych<sp/>=<sp/>*++ctx.<ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a462b0f951503152f3dac27444c307482" kindref="member">lexer_cursor</ref>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy51;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;`&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy51;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yych<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>yy19;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">yy51:</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_token(<ref refid="da/d00/classyy_1_1kivi__parser_1a9222921ca66177d7e300b1a23cfa18d2" kindref="member">kp::make_RETURN</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc"/>
+  </compounddef>
+</doxygen>

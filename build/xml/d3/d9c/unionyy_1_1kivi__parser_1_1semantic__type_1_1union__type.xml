@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type" kind="union" language="C++" prot="private">
+    <compoundname>yy::kivi_parser::semantic_type::union_type</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1aa8223064daf2b99dbadbac8f27ea53fc" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char yy::kivi_parser::semantic_type::union_type::dummy1[sizeof(int)]</definition>
+        <argsstring>[sizeof(int)]</argsstring>
+        <name>dummy1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="409" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1a7ac465bade99967e86a4d0f63322aaf8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char yy::kivi_parser::semantic_type::union_type::dummy2[sizeof(std::string)]</definition>
+        <argsstring>[sizeof(std::string)]</argsstring>
+        <name>dummy2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="414" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1a78ff0c0bd2012729e3896481b63ac836" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char yy::kivi_parser::semantic_type::union_type::dummy3[sizeof(syntax_analyzer::expression)]</definition>
+        <argsstring>[sizeof(syntax_analyzer::expression)]</argsstring>
+        <name>dummy3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="427" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An auxiliary type to compute the largest semantic type. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="406" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="407" bodyend="428"/>
+    <listofallmembers>
+      <member refid="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1aa8223064daf2b99dbadbac8f27ea53fc" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type::union_type</scope><name>dummy1</name></member>
+      <member refid="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1a7ac465bade99967e86a4d0f63322aaf8" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type::union_type</scope><name>dummy2</name></member>
+      <member refid="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1a78ff0c0bd2012729e3896481b63ac836" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type::union_type</scope><name>dummy3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

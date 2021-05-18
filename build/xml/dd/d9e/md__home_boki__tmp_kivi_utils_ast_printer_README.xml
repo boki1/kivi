@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/d9e/md__home_boki__tmp_kivi_utils_ast_printer_README" kind="page">
+    <compoundname>md__home_boki__tmp_kivi_utils_ast_printer_README</compoundname>
+    <title>AST printer</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides visualization to the generated AST.</para>
+<para><hruler/>
+</para>
+<para><bold>Contents</bold></para>
+<para><blockquote><para><computeroutput><ref refid="d9/d96/ast__printer_8hh" kindref="compound">ast_printer.hh</ref></computeroutput>\ Defines the API </para>
+</blockquote><blockquote><para><computeroutput><ref refid="dc/df4/ast__printer_8cc" kindref="compound">ast_printer.cc</ref></computeroutput>\ Implements the API </para>
+</blockquote></para>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/utils/ast_printer/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d92/structCatch_1_1StringMaker_3_01std_1_1wstring_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::StringMaker&lt; std::wstring &gt;</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d2/d92/structCatch_1_1StringMaker_3_01std_1_1wstring_01_4_1a375d49d6281bee4d36d853fa1bd5ebbd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Catch::StringMaker&lt; std::wstring &gt;::convert</definition>
+        <argsstring>(const std::wstring &amp;wstr)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>const std::wstring &amp;</type>
+          <declname>wstr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1686" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1685" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1685" bodyend="1687"/>
+    <listofallmembers>
+      <member refid="d2/d92/structCatch_1_1StringMaker_3_01std_1_1wstring_01_4_1a375d49d6281bee4d36d853fa1bd5ebbd" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; std::wstring &gt;</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

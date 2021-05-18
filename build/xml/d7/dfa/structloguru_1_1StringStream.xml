@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/dfa/structloguru_1_1StringStream" kind="struct" language="C++" prot="public">
+    <compoundname>loguru::StringStream</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/dfa/structloguru_1_1StringStream_1a4f69485f98030452c5de763b02924b0f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string loguru::StringStream::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1870" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1870" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1868" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1869" bodyend="1871"/>
+    <listofallmembers>
+      <member refid="d7/dfa/structloguru_1_1StringStream_1a4f69485f98030452c5de763b02924b0f" prot="public" virt="non-virtual"><scope>loguru::StringStream</scope><name>str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

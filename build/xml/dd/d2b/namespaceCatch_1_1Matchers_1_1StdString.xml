@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/d2b/namespaceCatch_1_1Matchers_1_1StdString" kind="namespace" language="C++">
+    <compoundname>Catch::Matchers::StdString</compoundname>
+    <innerclass refid="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString" prot="public">Catch::Matchers::StdString::CasedString</innerclass>
+    <innerclass refid="d8/dbb/structCatch_1_1Matchers_1_1StdString_1_1StringMatcherBase" prot="public">Catch::Matchers::StdString::StringMatcherBase</innerclass>
+    <innerclass refid="d8/d35/structCatch_1_1Matchers_1_1StdString_1_1EqualsMatcher" prot="public">Catch::Matchers::StdString::EqualsMatcher</innerclass>
+    <innerclass refid="d9/d18/structCatch_1_1Matchers_1_1StdString_1_1ContainsMatcher" prot="public">Catch::Matchers::StdString::ContainsMatcher</innerclass>
+    <innerclass refid="d1/db3/structCatch_1_1Matchers_1_1StdString_1_1StartsWithMatcher" prot="public">Catch::Matchers::StdString::StartsWithMatcher</innerclass>
+    <innerclass refid="d5/d40/structCatch_1_1Matchers_1_1StdString_1_1EndsWithMatcher" prot="public">Catch::Matchers::StdString::EndsWithMatcher</innerclass>
+    <innerclass refid="da/d82/structCatch_1_1Matchers_1_1StdString_1_1RegexMatcher" prot="public">Catch::Matchers::StdString::RegexMatcher</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3534" column="5"/>
+  </compounddef>
+</doxygen>

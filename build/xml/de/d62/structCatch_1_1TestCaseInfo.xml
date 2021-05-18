@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d62/structCatch_1_1TestCaseInfo" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::TestCaseInfo</compoundname>
+    <derivedcompoundref refid="d6/df4/classCatch_1_1TestCase" prot="public" virt="non-virtual">Catch::TestCase</derivedcompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eac" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SpecialProperties</name>
+        <enumvalue id="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacaf94e9de5f8ec1e53b1aa761ec564b31a" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacaeda53906c14c3973e0980900c132b8f7" prot="public">
+          <name>IsHidden</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacaf9002285bccfc343935958f3953f4c01" prot="public">
+          <name>ShouldFail</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacadf1873d3271121cb9f52d7df45b416ca" prot="public">
+          <name>MayFail</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eaca4704adf89ed7f7ad653d08f99813a974" prot="public">
+          <name>Throws</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eaca06472887b53fda9eb8015d74e7fd2cf1" prot="public">
+          <name>NonPortable</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacad0e25e337246ae34d555fe53baf81c16" prot="public">
+          <name>Benchmark</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4766" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4766" bodyend="4774"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d62/structCatch_1_1TestCaseInfo_1a463794e2f5cfead307c93efd134ade36" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Catch::TestCaseInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4791" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d62/structCatch_1_1TestCaseInfo_1a1a5e0825132a38d091defdebbf2f8ce9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Catch::TestCaseInfo::className</definition>
+        <argsstring></argsstring>
+        <name>className</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4792" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d62/structCatch_1_1TestCaseInfo_1a37fe2db9425bc45f6a33893eac31198e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Catch::TestCaseInfo::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4793" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d62/structCatch_1_1TestCaseInfo_1a150a7cbca1dd0c91799ccb14ff822eb0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Catch::TestCaseInfo::tags</definition>
+        <argsstring></argsstring>
+        <name>tags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4794" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d62/structCatch_1_1TestCaseInfo_1a844e3de9baf6e53cadfba9733c236bfe" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Catch::TestCaseInfo::lcaseTags</definition>
+        <argsstring></argsstring>
+        <name>lcaseTags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4795" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d62/structCatch_1_1TestCaseInfo_1aa9407b7f442655b51a2aad24b3fa2fd3" prot="public" static="no" mutable="no">
+        <type><ref refid="dc/d2b/structCatch_1_1SourceLineInfo" kindref="compound">SourceLineInfo</ref></type>
+        <definition>SourceLineInfo Catch::TestCaseInfo::lineInfo</definition>
+        <argsstring></argsstring>
+        <name>lineInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4796" column="24" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d62/structCatch_1_1TestCaseInfo_1afc1e84bd7a2e180895a06d9131302af0" prot="public" static="no" mutable="no">
+        <type><ref refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eac" kindref="member">SpecialProperties</ref></type>
+        <definition>SpecialProperties Catch::TestCaseInfo::properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4797" column="27" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4797" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d62/structCatch_1_1TestCaseInfo_1ad1a6b08b5a83d1c5eb4596b727b5305f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::TestCaseInfo::TestCaseInfo</definition>
+        <argsstring>(std::string const &amp;_name, std::string const &amp;_className, std::string const &amp;_description, std::vector&lt; std::string &gt; const &amp;_tags, SourceLineInfo const &amp;_lineInfo)</argsstring>
+        <name>TestCaseInfo</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>_className</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>_description</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>_tags</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d2b/structCatch_1_1SourceLineInfo" kindref="compound">SourceLineInfo</ref> const &amp;</type>
+          <declname>_lineInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4776" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d62/structCatch_1_1TestCaseInfo_1a934b1a0952700743e99d62ec1731a2e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::TestCaseInfo::isHidden</definition>
+        <argsstring>() const</argsstring>
+        <name>isHidden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4784" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d62/structCatch_1_1TestCaseInfo_1afc70d4379a2070cc22b693ffe3932c1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::TestCaseInfo::throws</definition>
+        <argsstring>() const</argsstring>
+        <name>throws</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4785" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d62/structCatch_1_1TestCaseInfo_1a5f37291295e3a6de2dd85324c941edaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::TestCaseInfo::okToFail</definition>
+        <argsstring>() const</argsstring>
+        <name>okToFail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4786" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d62/structCatch_1_1TestCaseInfo_1abe33d81233230cdae8afa714688e905b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::TestCaseInfo::expectedToFail</definition>
+        <argsstring>() const</argsstring>
+        <name>expectedToFail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4787" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d62/structCatch_1_1TestCaseInfo_1a17506de67fb18e27511c17f8a81119d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::TestCaseInfo::tagsAsString</definition>
+        <argsstring>() const</argsstring>
+        <name>tagsAsString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4789" column="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="de/d62/structCatch_1_1TestCaseInfo_1a0fe44abaf18ae7c26f98a9fc2b08679c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTags</definition>
+        <argsstring>(TestCaseInfo &amp;testCaseInfo, std::vector&lt; std::string &gt; tags)</argsstring>
+        <name>setTags</name>
+        <param>
+          <type><ref refid="de/d62/structCatch_1_1TestCaseInfo" kindref="compound">TestCaseInfo</ref> &amp;</type>
+          <declname>testCaseInfo</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>tags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4782" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::TestCaseInfo</label>
+        <link refid="de/d62/structCatch_1_1TestCaseInfo"/>
+      </node>
+      <node id="2">
+        <label>Catch::TestCase</label>
+        <link refid="d6/df4/classCatch_1_1TestCase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Catch::SourceLineInfo</label>
+        <link refid="dc/d2b/structCatch_1_1SourceLineInfo"/>
+      </node>
+      <node id="1">
+        <label>Catch::TestCaseInfo</label>
+        <link refid="de/d62/structCatch_1_1TestCaseInfo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lineInfo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4765" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4765" bodyend="4798"/>
+    <listofallmembers>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacad0e25e337246ae34d555fe53baf81c16" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>Benchmark</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a1a5e0825132a38d091defdebbf2f8ce9" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>className</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a37fe2db9425bc45f6a33893eac31198e" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>description</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1abe33d81233230cdae8afa714688e905b" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>expectedToFail</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a934b1a0952700743e99d62ec1731a2e2" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>isHidden</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacaeda53906c14c3973e0980900c132b8f7" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>IsHidden</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a844e3de9baf6e53cadfba9733c236bfe" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>lcaseTags</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1aa9407b7f442655b51a2aad24b3fa2fd3" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>lineInfo</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacadf1873d3271121cb9f52d7df45b416ca" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>MayFail</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a463794e2f5cfead307c93efd134ade36" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>name</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacaf94e9de5f8ec1e53b1aa761ec564b31a" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>None</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eaca06472887b53fda9eb8015d74e7fd2cf1" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>NonPortable</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a5f37291295e3a6de2dd85324c941edaf" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>okToFail</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1afc1e84bd7a2e180895a06d9131302af0" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>properties</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a0fe44abaf18ae7c26f98a9fc2b08679c" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>setTags</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacaf9002285bccfc343935958f3953f4c01" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>ShouldFail</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eac" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>SpecialProperties</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a150a7cbca1dd0c91799ccb14ff822eb0" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>tags</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a17506de67fb18e27511c17f8a81119d8" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>tagsAsString</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1ad1a6b08b5a83d1c5eb4596b727b5305f" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>TestCaseInfo</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eaca4704adf89ed7f7ad653d08f99813a974" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>Throws</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1afc70d4379a2070cc22b693ffe3932c1a" prot="public" virt="non-virtual"><scope>Catch::TestCaseInfo</scope><name>throws</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

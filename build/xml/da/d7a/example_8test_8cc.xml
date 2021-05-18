@@ -1,0 +1,468 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d7a/example_8test_8cc" kind="file" language="C++">
+    <compoundname>example.test.cc</compoundname>
+    <includes local="no">exception</includes>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser/parser.tab.hh</includes>
+    <includes refid="d9/d1c/syntax_8hh" local="no">parser/syntax.hh</includes>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2/catch2.hpp</includes>
+    <includes local="no">fstream</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>functional</label>
+      </node>
+      <node id="14">
+        <label>loguru/loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
+      </node>
+      <node id="23">
+        <label>cstdint</label>
+      </node>
+      <node id="8">
+        <label>variant</label>
+      </node>
+      <node id="17">
+        <label>cassert</label>
+      </node>
+      <node id="19">
+        <label>stdexcept</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/test/frontend/example.test.cc</label>
+        <link refid="da/d7a/example_8test_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>location.hh</label>
+        <link refid="d3/d46/location_8hh"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>exception</label>
+      </node>
+      <node id="31">
+        <label>fstream</label>
+      </node>
+      <node id="26">
+        <label>ostream</label>
+      </node>
+      <node id="30">
+        <label>random</label>
+      </node>
+      <node id="5">
+        <label>syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>typeinfo</label>
+      </node>
+      <node id="11">
+        <label>optional</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>parser/parser.tab.hh</label>
+        <link refid="dc/dee/parser_8tab_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>utility</label>
+      </node>
+      <node id="22">
+        <label>iosfwd</label>
+      </node>
+      <node id="18">
+        <label>cstdlib</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="24">
+        <label>cstddef</label>
+      </node>
+      <node id="27">
+        <label>chrono</label>
+      </node>
+      <node id="25">
+        <label>type_traits</label>
+      </node>
+      <node id="29">
+        <label>algorithm</label>
+      </node>
+      <node id="21">
+        <label>catch2/catch2.hpp</label>
+        <link refid="df/dbf/catch2_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <initializer>= &quot;fun.kv&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/example.test.cc" line="14" column="13" bodyfile="/home/boki/.tmp/kivi/test/frontend/example.test.cc" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="da/d7a/example_8test_8cc_1aa5bb3e777caa56cb893c10ebf90893cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;Parameters&quot;, &quot;[params]&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;Parameters&quot;</type>
+        </param>
+        <param>
+          <type>&quot;&quot;</type>
+          <array>[params]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/example.test.cc" line="16" column="1" bodyfile="/home/boki/.tmp/kivi/test/frontend/example.test.cc" bodystart="16" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7a/example_8test_8cc_1a924f738883823a295f1fb08f8043ca5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;General&quot;, &quot;[general]&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;General&quot;</type>
+        </param>
+        <param>
+          <type>&quot;&quot;</type>
+          <array>[general]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/example.test.cc" line="48" column="1" bodyfile="/home/boki/.tmp/kivi/test/frontend/example.test.cc" bodystart="48" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7a/example_8test_8cc_1afa1982a49a8fcb7b2012169d6203f806" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;Syntax error&quot;, &quot;[synt_err]&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;Syntax error&quot;</type>
+        </param>
+        <param>
+          <type>&quot;&quot;</type>
+          <array>[synt_err]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/example.test.cc" line="69" column="1" bodyfile="/home/boki/.tmp/kivi/test/frontend/example.test.cc" bodystart="69" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7a/example_8test_8cc_1a902adcbeeb090b3b12db093500b374d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;Statements&quot;, &quot;[stmts]&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;Statements&quot;</type>
+        </param>
+        <param>
+          <type>&quot;&quot;</type>
+          <array>[stmts]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/example.test.cc" line="99" column="1" bodyfile="/home/boki/.tmp/kivi/test/frontend/example.test.cc" bodystart="99" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d7a/example_8test_8cc_1a0c85509f50855378bbff4596548d8cd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;Examples&quot;, &quot;[examples]&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;Examples&quot;</type>
+        </param>
+        <param>
+          <type>&quot;&quot;</type>
+          <array>[examples]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/test/frontend/example.test.cc" line="124" column="1" bodyfile="/home/boki/.tmp/kivi/test/frontend/example.test.cc" bodystart="124" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dc/dee/parser_8tab_8hh" kindref="compound">parser/parser.tab.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d9/d1c/syntax_8hh" kindref="compound">parser/syntax.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="df/dbf/catch2_8hpp" kindref="compound">catch2/catch2.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//std::string<sp/>filename<sp/>=<sp/>&quot;fun.kv&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">std::string<sp/><ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;fun.kv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="da/d7a/example_8test_8cc_1aa5bb3e777caa56cb893c10ebf90893cd" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Parameters&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[params]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;No<sp/>parameters&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;foo:<sp/>return<sp/>1;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/>ctx(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{ctx};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parser.<ref refid="da/d00/classyy_1_1kivi__parser_1a74365513e5eea20e7cd073d9b6d3a93b" kindref="member">parse</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(ctx.functions().at(0).parameters()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Many<sp/>parameters&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;fun<sp/>p,<sp/>q,<sp/>param:<sp/>{}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/>fun_kv_ctx(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{fun_kv_ctx};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parser.<ref refid="da/d00/classyy_1_1kivi__parser_1a74365513e5eea20e7cd073d9b6d3a93b" kindref="member">parse</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(fun_kv_ctx.functions().at(0).parameters()<sp/>==<sp/>3);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Locals&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;fun<sp/>p,<sp/>q,<sp/>param:<sp/>{<sp/>auto<sp/>var<sp/>=<sp/>3;<sp/>}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/>fun_kv_ctx(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{fun_kv_ctx};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(parser.parse()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(fun_kv_ctx.functions().at(0).locals()<sp/>==<sp/>1);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="da/d7a/example_8test_8cc_1aa5bb3e777caa56cb893c10ebf90893cd" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;General&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[general]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Regular<sp/>comments:<sp/>check<sp/>by<sp/>locals&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;fun<sp/>p,<sp/>q,<sp/>param:<sp/>{<sp/>auto<sp/>var<sp/>=<sp/>3;<sp/>//auto<sp/>var2<sp/>=<sp/>3;\n<sp/>}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/>fun_kv_ctx(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{fun_kv_ctx};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(parser.parse()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(fun_kv_ctx.functions().at(0).locals()<sp/>==<sp/>1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Duplicating<sp/>var<sp/>in<sp/>comments&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;fun<sp/>p,<sp/>q,<sp/>param:<sp/>{<sp/>auto<sp/>var<sp/>=<sp/>3;<sp/>//auto<sp/>var<sp/>=<sp/>3;\n<sp/>}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/>fun_kv_ctx(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{fun_kv_ctx};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(parser.parse()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(fun_kv_ctx.functions().at(0).locals()<sp/>==<sp/>1);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="da/d7a/example_8test_8cc_1aa5bb3e777caa56cb893c10ebf90893cd" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Syntax<sp/>error&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[synt_err]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Illegal<sp/>comma<sp/>separating<sp/>params<sp/>--<sp/>before<sp/>param&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;foo<sp/>,n:<sp/>{<sp/>auto<sp/>a<sp/>=<sp/>3;<sp/>}<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/>ctx(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{<sp/>ctx<sp/>};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REQUIRE(parser.parse()<sp/>--&gt;<sp/>syntax<sp/>error);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Illegal<sp/>comma<sp/>separating<sp/>params<sp/>--<sp/>after<sp/>param&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;foo<sp/>n,:<sp/>{<sp/>auto<sp/>a<sp/>=<sp/>3;<sp/>}<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/>ctx(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{<sp/>ctx<sp/>};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REQUIRE(parser.parse()<sp/>--&gt;<sp/>syntax<sp/>error);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Comments<sp/>without<sp/>new<sp/>line:<sp/>`unexpected<sp/>END`<sp/>expected<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;fun<sp/>p,<sp/>q,<sp/>param:<sp/>{<sp/>auto<sp/>var<sp/>=<sp/>3;<sp/>//auto<sp/>var<sp/>=<sp/>3;<sp/>}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/>fun_kv_ctx(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{fun_kv_ctx};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REQUIRE(parser.parse()<sp/>--&gt;<sp/>syntax<sp/>error);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="da/d7a/example_8test_8cc_1aa5bb3e777caa56cb893c10ebf90893cd" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Statements&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[stmts]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Regular<sp/>use:<sp/>addition&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;foo<sp/>n:<sp/>{<sp/>1<sp/>+<sp/>2;}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">syntax_analyzer::parsing_context</ref><sp/>ctx(<ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>.c_str(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{<sp/>ctx<sp/>};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(parser.parse()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(ctx.functions().size()<sp/>==<sp/>1);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx.functions().at(0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>syntax_analyzer::function<sp/>expected{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;foo&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>syntax_analyzer::expression<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>syntax_analyzer::expression::type::Addition,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>syntax_analyzer::expression(1),<sp/>syntax_analyzer::expression(2)<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REQUIRE(expected<sp/>==<sp/>ctx.functions().at(0));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><ref refid="da/d7a/example_8test_8cc_1aa5bb3e777caa56cb893c10ebf90893cd" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Examples&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[examples]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>filepath<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../../examples/&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>fstr<sp/>(filepath);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>buffer<sp/>(std::istreambuf_iterator&lt;char&gt;<sp/>(fstr),<sp/>{});</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">sa::parsing_context</ref><sp/>ctx{<sp/>buffer.c_str<sp/>(),<sp/>&amp;<ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref><sp/>};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{<sp/>ctx<sp/>};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Regular<sp/>run:<sp/>not<sp/>syntax<sp/>errors&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(parser.parse()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Regular<sp/>run:<sp/>not<sp/>endless<sp/>loop&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/test/frontend/example.test.cc"/>
+  </compounddef>
+</doxygen>

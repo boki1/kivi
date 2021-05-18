@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::Matchers::StdString::CasedString</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1ae1c2864c986941536a6e94cca0528f92" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6a" kindref="member">CaseSensitive::Choice</ref></type>
+        <definition>CaseSensitive::Choice Catch::Matchers::StdString::CasedString::m_caseSensitivity</definition>
+        <argsstring></argsstring>
+        <name>m_caseSensitivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3542" column="35" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1ad05dbc99aba3c3c386d6b856b213f911" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::StdString::CasedString::m_str</definition>
+        <argsstring></argsstring>
+        <name>m_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3543" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3543" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1aa88bbc5acd2bff22351d8d4b1816b561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Matchers::StdString::CasedString::CasedString</definition>
+        <argsstring>(std::string const &amp;str, CaseSensitive::Choice caseSensitivity)</argsstring>
+        <name>CasedString</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6a" kindref="member">CaseSensitive::Choice</ref></type>
+          <declname>caseSensitivity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3538" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1a77639b1165c01f424ee0e96f53335010" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::StdString::CasedString::adjustString</definition>
+        <argsstring>(std::string const &amp;str) const</argsstring>
+        <name>adjustString</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3539" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1a9759155344d696b2476d764a1d95fcc9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::StdString::CasedString::caseSensitivitySuffix</definition>
+        <argsstring>() const</argsstring>
+        <name>caseSensitivitySuffix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3540" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3536" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3537" bodyend="3544"/>
+    <listofallmembers>
+      <member refid="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1a77639b1165c01f424ee0e96f53335010" prot="public" virt="non-virtual"><scope>Catch::Matchers::StdString::CasedString</scope><name>adjustString</name></member>
+      <member refid="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1aa88bbc5acd2bff22351d8d4b1816b561" prot="public" virt="non-virtual"><scope>Catch::Matchers::StdString::CasedString</scope><name>CasedString</name></member>
+      <member refid="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1a9759155344d696b2476d764a1d95fcc9" prot="public" virt="non-virtual"><scope>Catch::Matchers::StdString::CasedString</scope><name>caseSensitivitySuffix</name></member>
+      <member refid="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1ae1c2864c986941536a6e94cca0528f92" prot="public" virt="non-virtual"><scope>Catch::Matchers::StdString::CasedString</scope><name>m_caseSensitivity</name></member>
+      <member refid="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1ad05dbc99aba3c3c386d6b856b213f911" prot="public" virt="non-virtual"><scope>Catch::Matchers::StdString::CasedString</scope><name>m_str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

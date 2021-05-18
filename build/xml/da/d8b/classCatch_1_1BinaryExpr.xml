@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d8b/classCatch_1_1BinaryExpr" kind="class" language="C++" prot="public">
+    <compoundname>Catch::BinaryExpr</compoundname>
+    <basecompoundref refid="d3/d6e/structCatch_1_1ITransientExpression" prot="public" virt="non-virtual">Catch::ITransientExpression</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename LhsT</type>
+      </param>
+      <param>
+        <type>typename RhsT</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d8b/classCatch_1_1BinaryExpr_1a306b29e77b48f9c538c5031a59adc4ce" prot="private" static="no" mutable="no">
+        <type>LhsT</type>
+        <definition>LhsT Catch::BinaryExpr&lt; LhsT, RhsT &gt;::m_lhs</definition>
+        <argsstring></argsstring>
+        <name>m_lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2223" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8b/classCatch_1_1BinaryExpr_1ab21dea40c53fd64d4f7a073dbe93ec95" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+        <definition>StringRef Catch::BinaryExpr&lt; LhsT, RhsT &gt;::m_op</definition>
+        <argsstring></argsstring>
+        <name>m_op</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2224" column="19" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8b/classCatch_1_1BinaryExpr_1a54cb1629bf304ebe0c1560f4cc2bc186" prot="private" static="no" mutable="no">
+        <type>RhsT</type>
+        <definition>RhsT Catch::BinaryExpr&lt; LhsT, RhsT &gt;::m_rhs</definition>
+        <argsstring></argsstring>
+        <name>m_rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2225" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1af998022712d4bd3e4fc7ab9b8a38b445" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Catch::BinaryExpr&lt; LhsT, RhsT &gt;::streamReconstructedExpression</definition>
+        <argsstring>(std::ostream &amp;os) const override</argsstring>
+        <name>streamReconstructedExpression</name>
+        <reimplements refid="d3/d6e/structCatch_1_1ITransientExpression_1aabe1889df9c6e639a24afb08d8a0fe9e">streamReconstructedExpression</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2227" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2227" bodyend="2230"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1a657d66346aef97a760c22776fe6008b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::BinaryExpr&lt; LhsT, RhsT &gt;::BinaryExpr</definition>
+        <argsstring>(bool comparisonResult, LhsT lhs, StringRef op, RhsT rhs)</argsstring>
+        <name>BinaryExpr</name>
+        <param>
+          <type>bool</type>
+          <declname>comparisonResult</declname>
+        </param>
+        <param>
+          <type>LhsT</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>RhsT</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2233" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2233" bodyend="2238"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1ae4fba62be6063010bc33d0988ff7d8d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::BinaryExpr&lt; LhsT, RhsT &gt;::operator&amp;&amp;</definition>
+        <argsstring>(T) const -&gt; BinaryExpr&lt; LhsT, RhsT const &amp; &gt; const</argsstring>
+        <name>operator&amp;&amp;</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2241" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2241" bodyend="2245"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1a331e53968b1a2f92827c35721cc7eded" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::BinaryExpr&lt; LhsT, RhsT &gt;::operator||</definition>
+        <argsstring>(T) const -&gt; BinaryExpr&lt; LhsT, RhsT const &amp; &gt; const</argsstring>
+        <name>operator||</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2248" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2248" bodyend="2252"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1a245bffd2aab2f560814739986710aaf1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::BinaryExpr&lt; LhsT, RhsT &gt;::operator==</definition>
+        <argsstring>(T) const -&gt; BinaryExpr&lt; LhsT, RhsT const &amp; &gt; const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2255" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2255" bodyend="2259"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1ad06dd2c9fc1dd77fe8d8e51440c14ff6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::BinaryExpr&lt; LhsT, RhsT &gt;::operator!=</definition>
+        <argsstring>(T) const -&gt; BinaryExpr&lt; LhsT, RhsT const &amp; &gt; const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2262" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2262" bodyend="2266"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1acff324c7d285cbee7efa9fbe83955638" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::BinaryExpr&lt; LhsT, RhsT &gt;::operator&gt;</definition>
+        <argsstring>(T) const -&gt; BinaryExpr&lt; LhsT, RhsT const &amp; &gt; const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2269" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2269" bodyend="2273"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1a7e6c3dcf59b3cd51e7c82355da3ef451" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::BinaryExpr&lt; LhsT, RhsT &gt;::operator&lt;</definition>
+        <argsstring>(T) const -&gt; BinaryExpr&lt; LhsT, RhsT const &amp; &gt; const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2276" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2276" bodyend="2280"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1a67901ddb9afd83961fb4e65ea3d75050" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::BinaryExpr&lt; LhsT, RhsT &gt;::operator&gt;=</definition>
+        <argsstring>(T) const -&gt; BinaryExpr&lt; LhsT, RhsT const &amp; &gt; const</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2283" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2283" bodyend="2287"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d8b/classCatch_1_1BinaryExpr_1a5590a2c5f5074ca2509c09b92bfcdf57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto Catch::BinaryExpr&lt; LhsT, RhsT &gt;::operator&lt;=</definition>
+        <argsstring>(T) const -&gt; BinaryExpr&lt; LhsT, RhsT const &amp; &gt; const</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2290" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2290" bodyend="2294"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Catch::ITransientExpression</label>
+        <link refid="d3/d6e/structCatch_1_1ITransientExpression"/>
+      </node>
+      <node id="1">
+        <label>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</label>
+        <link refid="da/d8b/classCatch_1_1BinaryExpr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Catch::ITransientExpression</label>
+        <link refid="d3/d6e/structCatch_1_1ITransientExpression"/>
+      </node>
+      <node id="3">
+        <label>Catch::StringRef</label>
+        <link refid="d5/dd8/classCatch_1_1StringRef"/>
+      </node>
+      <node id="1">
+        <label>Catch::BinaryExpr&lt; LhsT, RhsT &gt;</label>
+        <link refid="da/d8b/classCatch_1_1BinaryExpr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_op</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2222" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2222" bodyend="2295"/>
+    <listofallmembers>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1a657d66346aef97a760c22776fe6008b6" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>BinaryExpr</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a101c7db86c87eff93a8ff496720e6320" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>getResult</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a3b436e13a0a6d3522bbf70d4e31deb22" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>isBinaryExpression</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1aafe69572b7ed884e63ec81f58d4afd8c" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>ITransientExpression</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a75ce48da824d514d08152d396abb28d8" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>m_isBinaryExpression</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1a306b29e77b48f9c538c5031a59adc4ce" prot="private" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>m_lhs</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1ab21dea40c53fd64d4f7a073dbe93ec95" prot="private" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>m_op</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a4646e2b5e0156e913653ec3b9b60c942" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>m_result</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1a54cb1629bf304ebe0c1560f4cc2bc186" prot="private" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>m_rhs</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1ad06dd2c9fc1dd77fe8d8e51440c14ff6" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>operator!=</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1ae4fba62be6063010bc33d0988ff7d8d5" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>operator&amp;&amp;</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1a7e6c3dcf59b3cd51e7c82355da3ef451" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>operator&lt;</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1a5590a2c5f5074ca2509c09b92bfcdf57" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>operator&lt;=</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1a245bffd2aab2f560814739986710aaf1" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>operator==</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1acff324c7d285cbee7efa9fbe83955638" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>operator&gt;</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1a67901ddb9afd83961fb4e65ea3d75050" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>operator&gt;=</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1a331e53968b1a2f92827c35721cc7eded" prot="public" virt="non-virtual"><scope>Catch::BinaryExpr</scope><name>operator||</name></member>
+      <member refid="da/d8b/classCatch_1_1BinaryExpr_1af998022712d4bd3e4fc7ab9b8a38b445" prot="private" virt="virtual"><scope>Catch::BinaryExpr</scope><name>streamReconstructedExpression</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1aeadf426de589938c4964fe4068eeee77" prot="public" virt="virtual"><scope>Catch::BinaryExpr</scope><name>~ITransientExpression</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

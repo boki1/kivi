@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>Catch::Matchers::Impl::MatcherMethod</compoundname>
+    <derivedcompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; double &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; std::string &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; std::vector&lt; T, AllocMatch &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; std::vector&lt; T, Alloc &gt; &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; ArgT &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; std::exception &gt;</derivedcompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ObjectT</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod_1ae0920ff9e817acf08e1bb0cbcb044e30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Catch::Matchers::Impl::MatcherMethod&lt; ObjectT &gt;::match</definition>
+        <argsstring>(ObjectT const &amp;arg) const =0</argsstring>
+        <name>match</name>
+        <reimplementedby refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher_1a2ec0e8ec19c4c5e26271d59a06a62b52">match</reimplementedby>
+        <param>
+          <type>ObjectT const &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3261" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; ObjectT &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+      <node id="5">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; std::vector&lt; T, Alloc &gt; &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Catch::Matchers::Impl::MatchAnyOf&lt; ArgT &gt;</label>
+        <link refid="dc/d21/structCatch_1_1Matchers_1_1Impl_1_1MatchAnyOf"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; std::string &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; std::exception &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Catch::Matchers::Impl::MatchAllOf&lt; ArgT &gt;</label>
+        <link refid="d8/d68/structCatch_1_1Matchers_1_1Impl_1_1MatchAllOf"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; std::vector&lt; T, AllocMatch &gt; &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; ArgT &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; double &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Catch::Matchers::Impl::MatchNotOf&lt; ArgT &gt;</label>
+        <link refid="db/d84/structCatch_1_1Matchers_1_1Impl_1_1MatchNotOf"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3260" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3260" bodyend="3262"/>
+    <listofallmembers>
+      <member refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod_1ae0920ff9e817acf08e1bb0cbcb044e30" prot="public" virt="pure-virtual"><scope>Catch::Matchers::Impl::MatcherMethod</scope><name>match</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

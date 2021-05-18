@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/df1/classCatch_1_1UnaryExpr" kind="class" language="C++" prot="public">
+    <compoundname>Catch::UnaryExpr</compoundname>
+    <basecompoundref refid="d3/d6e/structCatch_1_1ITransientExpression" prot="public" virt="non-virtual">Catch::ITransientExpression</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename LhsT</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/df1/classCatch_1_1UnaryExpr_1a7b6e97e576377dd60c77ab551a180325" prot="private" static="no" mutable="no">
+        <type>LhsT</type>
+        <definition>LhsT Catch::UnaryExpr&lt; LhsT &gt;::m_lhs</definition>
+        <argsstring></argsstring>
+        <name>m_lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2299" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d0/df1/classCatch_1_1UnaryExpr_1aaabf30455a996c80675c0f388a6e4110" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Catch::UnaryExpr&lt; LhsT &gt;::streamReconstructedExpression</definition>
+        <argsstring>(std::ostream &amp;os) const override</argsstring>
+        <name>streamReconstructedExpression</name>
+        <reimplements refid="d3/d6e/structCatch_1_1ITransientExpression_1aabe1889df9c6e639a24afb08d8a0fe9e">streamReconstructedExpression</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2301" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2301" bodyend="2303"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/df1/classCatch_1_1UnaryExpr_1ae02f666a1e64da728628aa2033e1d6e7" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::UnaryExpr&lt; LhsT &gt;::UnaryExpr</definition>
+        <argsstring>(LhsT lhs)</argsstring>
+        <name>UnaryExpr</name>
+        <param>
+          <type>LhsT</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2306" column="18" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2306" bodyend="2309"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Catch::ITransientExpression</label>
+        <link refid="d3/d6e/structCatch_1_1ITransientExpression"/>
+      </node>
+      <node id="1">
+        <label>Catch::UnaryExpr&lt; LhsT &gt;</label>
+        <link refid="d0/df1/classCatch_1_1UnaryExpr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Catch::ITransientExpression</label>
+        <link refid="d3/d6e/structCatch_1_1ITransientExpression"/>
+      </node>
+      <node id="1">
+        <label>Catch::UnaryExpr&lt; LhsT &gt;</label>
+        <link refid="d0/df1/classCatch_1_1UnaryExpr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2298" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2298" bodyend="2310"/>
+    <listofallmembers>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a101c7db86c87eff93a8ff496720e6320" prot="public" virt="non-virtual"><scope>Catch::UnaryExpr</scope><name>getResult</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a3b436e13a0a6d3522bbf70d4e31deb22" prot="public" virt="non-virtual"><scope>Catch::UnaryExpr</scope><name>isBinaryExpression</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1aafe69572b7ed884e63ec81f58d4afd8c" prot="public" virt="non-virtual"><scope>Catch::UnaryExpr</scope><name>ITransientExpression</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a75ce48da824d514d08152d396abb28d8" prot="public" virt="non-virtual"><scope>Catch::UnaryExpr</scope><name>m_isBinaryExpression</name></member>
+      <member refid="d0/df1/classCatch_1_1UnaryExpr_1a7b6e97e576377dd60c77ab551a180325" prot="private" virt="non-virtual"><scope>Catch::UnaryExpr</scope><name>m_lhs</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a4646e2b5e0156e913653ec3b9b60c942" prot="public" virt="non-virtual"><scope>Catch::UnaryExpr</scope><name>m_result</name></member>
+      <member refid="d0/df1/classCatch_1_1UnaryExpr_1aaabf30455a996c80675c0f388a6e4110" prot="private" virt="virtual"><scope>Catch::UnaryExpr</scope><name>streamReconstructedExpression</name></member>
+      <member refid="d0/df1/classCatch_1_1UnaryExpr_1ae02f666a1e64da728628aa2033e1d6e7" prot="public" virt="non-virtual"><scope>Catch::UnaryExpr</scope><name>UnaryExpr</name></member>
+      <member refid="d3/d6e/structCatch_1_1ITransientExpression_1aeadf426de589938c4964fe4068eeee77" prot="public" virt="virtual"><scope>Catch::UnaryExpr</scope><name>~ITransientExpression</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

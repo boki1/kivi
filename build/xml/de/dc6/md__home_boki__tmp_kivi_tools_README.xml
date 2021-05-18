@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/dc6/md__home_boki__tmp_kivi_tools_README" kind="page">
+    <compoundname>md__home_boki__tmp_kivi_tools_README</compoundname>
+    <title>Tools</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Here are put some tools used for building, running and testing the project.</para>
+<para><bold>NB:</bold> All of them <emphasis>have to</emphasis> be used from the root (e.g. <computeroutput>./tools/build.sh</computeroutput>).</para>
+<para><hruler/>
+</para>
+<para><bold>Contents</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>./tools/build.sh</computeroutput> Builds the project</para>
+</listitem><listitem><para><computeroutput>./tools/run.sh &lt;file.kv&gt;</computeroutput> Runs the project with the specific file as an argument</para>
+</listitem><listitem><para><computeroutput>./tools/test.sh</computeroutput> Executes the test cases</para>
+</listitem><listitem><para><computeroutput>./tools/clean.sh</computeroutput> Cleans building information</para>
+</listitem><listitem><para><computeroutput>./tools/doc.sh</computeroutput> Generates documentation w/ Doxygen. Additional arguments:<itemizedlist>
+<listitem><para><computeroutput>--upload</computeroutput> (or <computeroutput>-u</computeroutput>) Uploads the built documentation to the github pages</para>
+</listitem><listitem><para><computeroutput>--open</computeroutput> (or <computeroutput>-o</computeroutput>) Opens the build documentation. If an upload was just made, it is opened directly by the url, otherwise - from local files. </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/tools/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument" kind="class" language="C++" prot="public">
+    <compoundname>argparse::ArgumentParser::Argument</compoundname>
+    <includes refid="de/d36/argparse_8h" local="no">argparse.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a2ff8f15a2642170e4459ddb9445f3f74" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>Position</name>
+        <enumvalue id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a2ff8f15a2642170e4459ddb9445f3f74a6eadd924b8d586ebebf9bd96c4ecc876" prot="public">
+          <name>LAST</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a2ff8f15a2642170e4459ddb9445f3f74adebbafe2b07d7e738d215d3498741531" prot="public">
+          <name>DONT_CARE</name>
+          <initializer>= -2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="138" column="5" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="enum" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ab23f07421906d6a8f68e5aa42a17a523" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>Count</name>
+        <enumvalue id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ab23f07421906d6a8f68e5aa42a17a523a35afad2d0315f008296914681bb8b4f8" prot="public">
+          <name>ANY</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="139" column="5" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a55c9e1ac006a645af402e3aee6b64e00" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ArgumentParser</definition>
+        <argsstring></argsstring>
+        <name>ArgumentParser</name>
+        <param>
+          <type><ref refid="d0/dbb/classargparse_1_1ArgumentParser" kindref="compound">ArgumentParser</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="208" column="5" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a7e8862907b0ad2f9f3cd52f5810d9843" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int argparse::ArgumentParser::Argument::_position</definition>
+        <argsstring></argsstring>
+        <name>_position</name>
+        <initializer>{Position::DONT_CARE}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="209" column="9" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a35c56355c9282872a697a0abba6e8819" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int argparse::ArgumentParser::Argument::_count</definition>
+        <argsstring></argsstring>
+        <name>_count</name>
+        <initializer>{Count::ANY}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="210" column="9" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a3e8ebd489a54bac34e89e3bdefc13111" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; argparse::ArgumentParser::Argument::_names</definition>
+        <argsstring></argsstring>
+        <name>_names</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="211" column="17" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ae0d2ed974da8162a9f97c022e21f1e82" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string argparse::ArgumentParser::Argument::_desc</definition>
+        <argsstring></argsstring>
+        <name>_desc</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="212" column="17" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a66068492b9d398a658496813bd9c3bc0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argparse::ArgumentParser::Argument::_found</definition>
+        <argsstring></argsstring>
+        <name>_found</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="213" column="10" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a6bfed0ce06a2814a8cafbbfdfd05e31c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool argparse::ArgumentParser::Argument::_required</definition>
+        <argsstring></argsstring>
+        <name>_required</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="214" column="10" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a3a5b1e9750b41873f0a6212d5b33c99b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int argparse::ArgumentParser::Argument::_index</definition>
+        <argsstring></argsstring>
+        <name>_index</name>
+        <initializer>{-1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="215" column="9" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ac7003d0cf309e8df1c33f5a45e78b02e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; argparse::ArgumentParser::Argument::_values</definition>
+        <argsstring></argsstring>
+        <name>_values</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="217" column="17" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a9ff526d0dfcb165c59df306bfd32cb48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument" kindref="compound">Argument</ref> &amp;</type>
+        <definition>Argument&amp; argparse::ArgumentParser::Argument::name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="141" column="14" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ae93a7516b1bf66e99a0fe6a1011543e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument" kindref="compound">Argument</ref> &amp;</type>
+        <definition>Argument&amp; argparse::ArgumentParser::Argument::names</definition>
+        <argsstring>(std::vector&lt; std::string &gt; names)</argsstring>
+        <name>names</name>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="146" column="14" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1aebfa6024fa5745fcb229e538d7fd5035" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument" kindref="compound">Argument</ref> &amp;</type>
+        <definition>Argument&amp; argparse::ArgumentParser::Argument::description</definition>
+        <argsstring>(const std::string &amp;description)</argsstring>
+        <name>description</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="151" column="14" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ad6f780cc3d77bf267a75ab64d8fa6bda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument" kindref="compound">Argument</ref> &amp;</type>
+        <definition>Argument&amp; argparse::ArgumentParser::Argument::required</definition>
+        <argsstring>(bool req)</argsstring>
+        <name>required</name>
+        <param>
+          <type>bool</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="156" column="14" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a1a98e359c912112e1458d8fff1afc060" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument" kindref="compound">Argument</ref> &amp;</type>
+        <definition>Argument&amp; argparse::ArgumentParser::Argument::position</definition>
+        <argsstring>(int position)</argsstring>
+        <name>position</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="161" column="14" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="161" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a30cee792f48fe8e77f2a0b9b4fa7ccbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument" kindref="compound">Argument</ref> &amp;</type>
+        <definition>Argument&amp; argparse::ArgumentParser::Argument::count</definition>
+        <argsstring>(int count)</argsstring>
+        <name>count</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="172" column="14" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a989337f6facf573f2770323532f93cd2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool argparse::ArgumentParser::Argument::found</definition>
+        <argsstring>() const</argsstring>
+        <name>found</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="177" column="10" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a42a28939db1bab338d710b5feb112f54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt; <ref refid="df/d5e/structargparse_1_1detail_1_1is__vector" kindref="compound">detail::is_vector</ref>&lt; T &gt;::value, T &gt;::type</type>
+        <definition>std::enable_if&lt;detail::is_vector&lt;T&gt;::value, T&gt;::type argparse::ArgumentParser::Argument::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="180" column="37" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="180" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1aabe8557ef7149be6bc6a1e9b76b6f512" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt;!<ref refid="df/d5e/structargparse_1_1detail_1_1is__vector" kindref="compound">detail::is_vector</ref>&lt; T &gt;::value, T &gt;::type</type>
+        <definition>std::enable_if&lt;!detail::is_vector&lt;T&gt;::value, T&gt;::type argparse::ArgumentParser::Argument::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="192" column="37" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="192" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a1e5876e2550a567a64e0922057d66775" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>argparse::ArgumentParser::Argument::Argument</definition>
+        <argsstring>(const std::string &amp;name, const std::string &amp;desc, bool required=false)</argsstring>
+        <name>Argument</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>required</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="200" column="5" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="200" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a0e17658408b3a4bb15309c71558dc92c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>argparse::ArgumentParser::Argument::Argument</definition>
+        <argsstring>()</argsstring>
+        <name>Argument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="206" column="5" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="206" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="136" column="3" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="136" bodyend="218"/>
+    <listofallmembers>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a35c56355c9282872a697a0abba6e8819" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>_count</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ae0d2ed974da8162a9f97c022e21f1e82" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>_desc</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a66068492b9d398a658496813bd9c3bc0" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>_found</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a3a5b1e9750b41873f0a6212d5b33c99b" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>_index</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a3e8ebd489a54bac34e89e3bdefc13111" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>_names</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a7e8862907b0ad2f9f3cd52f5810d9843" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>_position</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a6bfed0ce06a2814a8cafbbfdfd05e31c" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>_required</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ac7003d0cf309e8df1c33f5a45e78b02e" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>_values</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ab23f07421906d6a8f68e5aa42a17a523a35afad2d0315f008296914681bb8b4f8" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>ANY</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a1e5876e2550a567a64e0922057d66775" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>Argument</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a0e17658408b3a4bb15309c71558dc92c" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>Argument</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a55c9e1ac006a645af402e3aee6b64e00" prot="private" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>ArgumentParser</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ab23f07421906d6a8f68e5aa42a17a523" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>Count</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a30cee792f48fe8e77f2a0b9b4fa7ccbc" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>count</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1aebfa6024fa5745fcb229e538d7fd5035" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>description</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a2ff8f15a2642170e4459ddb9445f3f74adebbafe2b07d7e738d215d3498741531" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>DONT_CARE</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a989337f6facf573f2770323532f93cd2" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>found</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a42a28939db1bab338d710b5feb112f54" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>get</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1aabe8557ef7149be6bc6a1e9b76b6f512" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>get</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a2ff8f15a2642170e4459ddb9445f3f74a6eadd924b8d586ebebf9bd96c4ecc876" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>LAST</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a9ff526d0dfcb165c59df306bfd32cb48" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>name</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ae93a7516b1bf66e99a0fe6a1011543e4" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>names</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a1a98e359c912112e1458d8fff1afc060" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>position</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1a2ff8f15a2642170e4459ddb9445f3f74" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>Position</name></member>
+      <member refid="dd/d22/classargparse_1_1ArgumentParser_1_1Argument_1ad6f780cc3d77bf267a75ab64d8fa6bda" prot="public" virt="non-virtual"><scope>argparse::ArgumentParser::Argument</scope><name>required</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d28/classloguru_1_1EcEntryBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>loguru::EcEntryBase</compoundname>
+    <derivedcompoundref refid="de/d7c/classloguru_1_1EcEntryData" prot="public" virt="non-virtual">loguru::EcEntryData&lt; T &gt;</derivedcompoundref>
+    <includes refid="df/dec/loguru_8hpp" local="no">loguru.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d28/classloguru_1_1EcEntryBase_1a2973db9b0f3ed0e4e677a14180750d64" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::EcEntryBase::_file</definition>
+        <argsstring></argsstring>
+        <name>_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="895" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="895" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d28/classloguru_1_1EcEntryBase_1aeb854af3a713401ba619c4a26b5fbb0a" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned loguru::EcEntryBase::_line</definition>
+        <argsstring></argsstring>
+        <name>_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="896" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d28/classloguru_1_1EcEntryBase_1a68dc2d49b602fbeaba578e9e357100ce" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* loguru::EcEntryBase::_descr</definition>
+        <argsstring></argsstring>
+        <name>_descr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="897" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="897" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d28/classloguru_1_1EcEntryBase_1ade23be6579f259f90d81ce6d36332863" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> *</type>
+        <definition>EcEntryBase* loguru::EcEntryBase::_previous</definition>
+        <argsstring></argsstring>
+        <name>_previous</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="898" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="898" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a00be5a6ad88cdb61c3d35115ed583af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::EcEntryBase::EcEntryBase</definition>
+        <argsstring>(const char *file, unsigned line, const char *descr)</argsstring>
+        <name>EcEntryBase</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>descr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="880" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1967" bodyend="1973"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a6c921bd8e98ae6dbf0e39003b4b567fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::EcEntryBase::~EcEntryBase</definition>
+        <argsstring>()</argsstring>
+        <name>~EcEntryBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="881" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1975" bodyend="1978"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1aa900637d961a054b7e0db2d0dfb76bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::EcEntryBase::EcEntryBase</definition>
+        <argsstring>(const EcEntryBase &amp;)=delete</argsstring>
+        <name>EcEntryBase</name>
+        <param>
+          <type>const <ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="882" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a49ecc1cd5c08ddd8358c7784a52d3940" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::EcEntryBase::EcEntryBase</definition>
+        <argsstring>(EcEntryBase &amp;&amp;)=delete</argsstring>
+        <name>EcEntryBase</name>
+        <param>
+          <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="883" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a883b04cbd1cd2a45066099fd5dd6d3da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> &amp;</type>
+        <definition>EcEntryBase&amp; loguru::EcEntryBase::operator=</definition>
+        <argsstring>(const EcEntryBase &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="884" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a326c8204d74626080ec25662100559b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> &amp;</type>
+        <definition>EcEntryBase&amp; loguru::EcEntryBase::operator=</definition>
+        <argsstring>(EcEntryBase &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="885" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a886f464f9b4415c01360f1889e0513eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void loguru::EcEntryBase::print_value</definition>
+        <argsstring>(StringStream &amp;out_string_stream) const =0</argsstring>
+        <name>print_value</name>
+        <reimplementedby refid="de/d7c/classloguru_1_1EcEntryData_1a4979a8172502122c764e8146c51e01a9">print_value</reimplementedby>
+        <param>
+          <type><ref refid="d7/dfa/structloguru_1_1StringStream" kindref="compound">StringStream</ref> &amp;</type>
+          <declname>out_string_stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="887" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a6a718612865ebf161d27c9a2c8c28f24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> *</type>
+        <definition>EcEntryBase* loguru::EcEntryBase::previous</definition>
+        <argsstring>() const</argsstring>
+        <name>previous</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="889" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="889" bodyend="892"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>loguru::EcEntryData&lt; T &gt;</label>
+        <link refid="de/d7c/classloguru_1_1EcEntryData"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>loguru::EcEntryBase</label>
+        <link refid="d3/d28/classloguru_1_1EcEntryBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>loguru::EcEntryBase</label>
+        <link refid="d3/d28/classloguru_1_1EcEntryBase"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_previous</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="877" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="878" bodyend="899"/>
+    <listofallmembers>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1a68dc2d49b602fbeaba578e9e357100ce" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>_descr</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1a2973db9b0f3ed0e4e677a14180750d64" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>_file</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1aeb854af3a713401ba619c4a26b5fbb0a" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>_line</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1ade23be6579f259f90d81ce6d36332863" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>_previous</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1a00be5a6ad88cdb61c3d35115ed583af7" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>EcEntryBase</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1aa900637d961a054b7e0db2d0dfb76bd6" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>EcEntryBase</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1a49ecc1cd5c08ddd8358c7784a52d3940" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>EcEntryBase</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1a883b04cbd1cd2a45066099fd5dd6d3da" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>operator=</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1a326c8204d74626080ec25662100559b1" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>operator=</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1a6a718612865ebf161d27c9a2c8c28f24" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>previous</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1a886f464f9b4415c01360f1889e0513eb" prot="public" virt="pure-virtual"><scope>loguru::EcEntryBase</scope><name>print_value</name></member>
+      <member refid="d3/d28/classloguru_1_1EcEntryBase_1a6c921bd8e98ae6dbf0e39003b4b567fd" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>~EcEntryBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

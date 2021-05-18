@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d4e/structloguru_1_1make__ec__type" kind="struct" language="C++" prot="public">
+    <compoundname>loguru::make_ec_type</compoundname>
+    <includes refid="df/dec/loguru_8hpp" local="no">loguru.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="df/d4e/structloguru_1_1make__ec__type_1af897663dabd4b6f59405e9bea02fdcda" prot="public" static="no">
+        <type>typename <ref refid="d3/d56/structloguru_1_1make__const__ptr" kindref="compound">make_const_ptr</ref>&lt; typename <ref refid="d2/d9e/structloguru_1_1decay__char__array" kindref="compound">decay_char_array</ref>&lt; T &gt;::<ref refid="df/d4e/structloguru_1_1make__ec__type_1af897663dabd4b6f59405e9bea02fdcda" kindref="member">type</ref> &gt;::<ref refid="df/d4e/structloguru_1_1make__ec__type_1af897663dabd4b6f59405e9bea02fdcda" kindref="member">type</ref></type>
+        <definition>using loguru::make_ec_type&lt; T &gt;::type =  typename make_const_ptr&lt;typename decay_char_array&lt;T&gt;::type&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="973" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="973" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="971" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="972" bodyend="974"/>
+    <listofallmembers>
+      <member refid="df/d4e/structloguru_1_1make__ec__type_1af897663dabd4b6f59405e9bea02fdcda" prot="public" virt="non-virtual"><scope>loguru::make_ec_type</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

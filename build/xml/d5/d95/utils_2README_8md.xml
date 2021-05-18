@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/d95/utils_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">###<sp/>Utilities</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Utility<sp/>libraries<sp/>which<sp/>provide<sp/>additional<sp/>functionalities<sp/>without<sp/>interfering<sp/>directly<sp/>with<sp/>the<sp/>internal<sp/>logic.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Contents**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>`ast_printer`\</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Pretty-prints<sp/>the<sp/>generated<sp/>AST</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>`cli`\</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Handles<sp/>argument<sp/>passing<sp/>to<sp/>the<sp/>compiler</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/utils/README.md"/>
+  </compounddef>
+</doxygen>

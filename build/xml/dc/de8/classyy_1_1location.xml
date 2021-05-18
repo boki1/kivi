@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/de8/classyy_1_1location" kind="class" language="C++" prot="public">
+    <compoundname>yy::location</compoundname>
+    <includes refid="d3/d46/location_8hh" local="no">location.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Line and Column related manipulators</header>
+      <memberdef kind="function" id="dc/de8/classyy_1_1location_1a96620cec8dd8ebfc96c60a03c10154d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::location::step</definition>
+        <argsstring>()</argsstring>
+        <name>step</name>
+        <briefdescription>
+<para>Reset initial location to final location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="207" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/de8/classyy_1_1location_1ac7cd04f903980f32182f0aa65bbf5d84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::location::columns</definition>
+        <argsstring>(counter_type count=1)</argsstring>
+        <name>columns</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">counter_type</ref></type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Extend the current location to the COUNT next columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="213" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/de8/classyy_1_1location_1a5c1f01a4bb5dff82b214cc8b780ff04b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::location::lines</definition>
+        <argsstring>(counter_type count=1)</argsstring>
+        <name>lines</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">counter_type</ref></type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Extend the current location to the COUNT next lines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="219" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="219" bodyend="222"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="dc/de8/classyy_1_1location_1ac037d28112de531028f028056ccc980c" prot="public" static="no">
+        <type><ref refid="de/d79/classyy_1_1position_1afee2270e96ccb20135eb3246e2a643ed" kindref="member">position::filename_type</ref></type>
+        <definition>typedef position::filename_type yy::location::filename_type</definition>
+        <argsstring></argsstring>
+        <name>filename_type</name>
+        <briefdescription>
+<para>Type for file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="169" column="37" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" prot="public" static="no">
+        <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">position::counter_type</ref></type>
+        <definition>typedef position::counter_type yy::location::counter_type</definition>
+        <argsstring></argsstring>
+        <name>counter_type</name>
+        <briefdescription>
+<para>Type for line and column numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="171" column="36" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/de8/classyy_1_1location_1a70540e90479a85db4112b552d7e032cf" prot="public" static="no" mutable="no">
+        <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref></type>
+        <definition>position yy::location::begin</definition>
+        <argsstring></argsstring>
+        <name>begin</name>
+        <briefdescription>
+<para>Beginning of the located region. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="228" column="14" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/de8/classyy_1_1location_1aa9be2a89fdb63da08167ebd4b819addd" prot="public" static="no" mutable="no">
+        <type><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref></type>
+        <definition>position yy::location::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+<para>End of the located region. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="230" column="14" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/de8/classyy_1_1location_1a0d659c37bcd57075c7bb25e600d3f526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::location::location</definition>
+        <argsstring>(const position &amp;b, const position &amp;e)</argsstring>
+        <name>location</name>
+        <param>
+          <type>const <ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Construct a location from <emphasis>b</emphasis> to <emphasis>e</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="174" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/de8/classyy_1_1location_1a378c53e8dc67416748f0b12844919e51" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::location::location</definition>
+        <argsstring>(const position &amp;p=position())</argsstring>
+        <name>location</name>
+        <param>
+          <type>const <ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref> &amp;</type>
+          <declname>p</declname>
+          <defval><ref refid="de/d79/classyy_1_1position" kindref="compound">position</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Construct a 0-width location in <emphasis>p</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="180" column="14" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/de8/classyy_1_1location_1a1963dd9616b4554c943f5102151d9d71" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::location::location</definition>
+        <argsstring>(filename_type *f, counter_type l=1, counter_type c=1)</argsstring>
+        <name>location</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1ac037d28112de531028f028056ccc980c" kindref="member">filename_type</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">counter_type</ref></type>
+          <declname>l</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">counter_type</ref></type>
+          <declname>c</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Construct a 0-width location in <emphasis>f</emphasis>, <emphasis>l</emphasis>, <emphasis>c</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="186" column="14" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="186" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/de8/classyy_1_1location_1ac6b3716aedb493f2a4f1d602620ee8bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::location::initialize</definition>
+        <argsstring>(filename_type *f=YY_NULLPTR, counter_type l=1, counter_type c=1)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1ac037d28112de531028f028056ccc980c" kindref="member">filename_type</ref> *</type>
+          <declname>f</declname>
+          <defval><ref refid="d3/d46/location_8hh_1a5a6c82f7ce4ad9cc8c6c08b7a2de5b84" kindref="member">YY_NULLPTR</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">counter_type</ref></type>
+          <declname>l</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" kindref="member">counter_type</ref></type>
+          <declname>c</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="195" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="195" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Two points in a source file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>yy::location</label>
+        <link refid="dc/de8/classyy_1_1location"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>begin</edgelabel>
+          <edgelabel>end</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>yy::position</label>
+        <link refid="de/d79/classyy_1_1position"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="165" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="166" bodyend="231"/>
+    <listofallmembers>
+      <member refid="dc/de8/classyy_1_1location_1a70540e90479a85db4112b552d7e032cf" prot="public" virt="non-virtual"><scope>yy::location</scope><name>begin</name></member>
+      <member refid="dc/de8/classyy_1_1location_1ac7cd04f903980f32182f0aa65bbf5d84" prot="public" virt="non-virtual"><scope>yy::location</scope><name>columns</name></member>
+      <member refid="dc/de8/classyy_1_1location_1a4319905d047c834d9513474feb7f61e5" prot="public" virt="non-virtual"><scope>yy::location</scope><name>counter_type</name></member>
+      <member refid="dc/de8/classyy_1_1location_1aa9be2a89fdb63da08167ebd4b819addd" prot="public" virt="non-virtual"><scope>yy::location</scope><name>end</name></member>
+      <member refid="dc/de8/classyy_1_1location_1ac037d28112de531028f028056ccc980c" prot="public" virt="non-virtual"><scope>yy::location</scope><name>filename_type</name></member>
+      <member refid="dc/de8/classyy_1_1location_1ac6b3716aedb493f2a4f1d602620ee8bb" prot="public" virt="non-virtual"><scope>yy::location</scope><name>initialize</name></member>
+      <member refid="dc/de8/classyy_1_1location_1a5c1f01a4bb5dff82b214cc8b780ff04b" prot="public" virt="non-virtual"><scope>yy::location</scope><name>lines</name></member>
+      <member refid="dc/de8/classyy_1_1location_1a0d659c37bcd57075c7bb25e600d3f526" prot="public" virt="non-virtual"><scope>yy::location</scope><name>location</name></member>
+      <member refid="dc/de8/classyy_1_1location_1a378c53e8dc67416748f0b12844919e51" prot="public" virt="non-virtual"><scope>yy::location</scope><name>location</name></member>
+      <member refid="dc/de8/classyy_1_1location_1a1963dd9616b4554c943f5102151d9d71" prot="public" virt="non-virtual"><scope>yy::location</scope><name>location</name></member>
+      <member refid="dc/de8/classyy_1_1location_1a96620cec8dd8ebfc96c60a03c10154d0" prot="public" virt="non-virtual"><scope>yy::location</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

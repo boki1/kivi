@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>Catch::Generators::RangeGenerator</compoundname>
+    <basecompoundref refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator" prot="public" virt="non-virtual">Catch::Generators::IGenerator&lt; T &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1af2be334be7dc9be55bcb75b2609dea64" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Catch::Generators::RangeGenerator&lt; T &gt;::m_current</definition>
+        <argsstring></argsstring>
+        <name>m_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4661" column="7" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1adea61e79cfc8c51efdea2526daa33dec" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Catch::Generators::RangeGenerator&lt; T &gt;::m_end</definition>
+        <argsstring></argsstring>
+        <name>m_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4662" column="7" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1a44e4683a9f98df49792502a2c51ff249" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Catch::Generators::RangeGenerator&lt; T &gt;::m_step</definition>
+        <argsstring></argsstring>
+        <name>m_step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4663" column="7" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1ad4f0ce4efcf625e04150547363437ff8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Catch::Generators::RangeGenerator&lt; T &gt;::m_positive</definition>
+        <argsstring></argsstring>
+        <name>m_positive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4664" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4664" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1a6a9b3cc009471c085c985642e0ab102e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Generators::RangeGenerator&lt; T &gt;::RangeGenerator</definition>
+        <argsstring>(T const &amp;start, T const &amp;end, T const &amp;step)</argsstring>
+        <name>RangeGenerator</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4667" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4667" bodyend="4676"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1ac999eb143945ff311b97d2c767df90d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Generators::RangeGenerator&lt; T &gt;::RangeGenerator</definition>
+        <argsstring>(T const &amp;start, T const &amp;end)</argsstring>
+        <name>RangeGenerator</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4678" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4678" bodyend="4680"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1a2639173bb9f06ba353314cd226fcefec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>T const  &amp;</type>
+        <definition>T const&amp; Catch::Generators::RangeGenerator&lt; T &gt;::get</definition>
+        <argsstring>() const override</argsstring>
+        <name>get</name>
+        <reimplements refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a525d381fc9249a885b075a0632a8579a">get</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4682" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4682" bodyend="4684"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1a4e6b2038832f09724d5a4355b4691259" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Catch::Generators::RangeGenerator&lt; T &gt;::next</definition>
+        <argsstring>() override</argsstring>
+        <name>next</name>
+        <reimplements refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1aeed3c0cd6233c5f553549e453b8d6638">next</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4686" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4686" bodyend="4689"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+      <node id="1">
+        <label>Catch::Generators::RangeGenerator&lt; T &gt;</label>
+        <link refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Generators::IGenerator&lt; T &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Catch::Generators::GeneratorUntypedBase</label>
+        <link refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase"/>
+      </node>
+      <node id="1">
+        <label>Catch::Generators::RangeGenerator&lt; T &gt;</label>
+        <link refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Generators::IGenerator&lt; T &gt;</label>
+        <link refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4660" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4660" bodyend="4690"/>
+    <listofallmembers>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a00ff0179d739c3016756b6cf56fabbad" prot="public" virt="non-virtual"><scope>Catch::Generators::RangeGenerator</scope><name>GeneratorUntypedBase</name></member>
+      <member refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1a2639173bb9f06ba353314cd226fcefec" prot="public" virt="virtual"><scope>Catch::Generators::RangeGenerator</scope><name>get</name></member>
+      <member refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1af2be334be7dc9be55bcb75b2609dea64" prot="private" virt="non-virtual"><scope>Catch::Generators::RangeGenerator</scope><name>m_current</name></member>
+      <member refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1adea61e79cfc8c51efdea2526daa33dec" prot="private" virt="non-virtual"><scope>Catch::Generators::RangeGenerator</scope><name>m_end</name></member>
+      <member refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1ad4f0ce4efcf625e04150547363437ff8" prot="private" virt="non-virtual"><scope>Catch::Generators::RangeGenerator</scope><name>m_positive</name></member>
+      <member refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1a44e4683a9f98df49792502a2c51ff249" prot="private" virt="non-virtual"><scope>Catch::Generators::RangeGenerator</scope><name>m_step</name></member>
+      <member refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1a4e6b2038832f09724d5a4355b4691259" prot="public" virt="virtual"><scope>Catch::Generators::RangeGenerator</scope><name>next</name></member>
+      <member refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1a6a9b3cc009471c085c985642e0ab102e" prot="public" virt="non-virtual"><scope>Catch::Generators::RangeGenerator</scope><name>RangeGenerator</name></member>
+      <member refid="d7/d7d/classCatch_1_1Generators_1_1RangeGenerator_1ac999eb143945ff311b97d2c767df90d3" prot="public" virt="non-virtual"><scope>Catch::Generators::RangeGenerator</scope><name>RangeGenerator</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a1f8677875fe0ff31f39c60d45504b9a5" prot="public" virt="non-virtual"><scope>Catch::Generators::RangeGenerator</scope><name>type</name></member>
+      <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a6f05f8099fdc5744a7aff68aa8c09c7f" prot="public" virt="virtual"><scope>Catch::Generators::RangeGenerator</scope><name>~GeneratorUntypedBase</name></member>
+      <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1afe5b6eecbbd735e69748d68574611747" prot="public" virt="virtual"><scope>Catch::Generators::RangeGenerator</scope><name>~IGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

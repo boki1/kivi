@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_63772b626f2709090f0bdca0f40827b4" kind="dir">
+    <compoundname>/home/boki/.tmp/kivi/build/CMakeFiles</compoundname>
+    <innerdir refid="dir_479c27bd7d90b4cd2a917db84cc5293e">/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/build/CMakeFiles/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/df1/classsyntax__analyzer_1_1cannot__pop__out__of__empty__exception" kind="class" language="C++" prot="public">
+    <compoundname>syntax_analyzer::cannot_pop_out_of_empty_exception</compoundname>
+    <basecompoundref prot="private" virt="non-virtual">std::exception</basecompoundref>
+    <includes refid="d9/dd1/parsing__context_8hh" local="no">parsing_context.hh</includes>
+    <briefdescription>
+<para>An exception which is thrown when <computeroutput>exit_scope()</computeroutput> is called an no active scopes have been entered. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+      <node id="1">
+        <label>syntax_analyzer::cannot_pop_out_of_empty_exception</label>
+        <link refid="d2/df1/classsyntax__analyzer_1_1cannot__pop__out__of__empty__exception"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+      <node id="1">
+        <label>syntax_analyzer::cannot_pop_out_of_empty_exception</label>
+        <link refid="d2/df1/classsyntax__analyzer_1_1cannot__pop__out__of__empty__exception"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="33" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="34" bodyend="35"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

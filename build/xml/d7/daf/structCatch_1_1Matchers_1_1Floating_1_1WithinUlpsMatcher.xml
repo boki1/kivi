@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::Matchers::Floating::WithinUlpsMatcher</compoundname>
+    <basecompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; double &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1a97b0112726f510af8ca22cb490c2b14d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Catch::Matchers::Floating::WithinUlpsMatcher::m_target</definition>
+        <argsstring></argsstring>
+        <name>m_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3441" column="20" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1a78fbf35cf9419ff31deb9432e314c1e3" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t Catch::Matchers::Floating::WithinUlpsMatcher::m_ulps</definition>
+        <argsstring></argsstring>
+        <name>m_ulps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3442" column="22" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1ac5dc48ae38dbfe143647d450f03771ab" prot="private" static="no" mutable="no">
+        <type>FloatingPointKind</type>
+        <definition>FloatingPointKind Catch::Matchers::Floating::WithinUlpsMatcher::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3443" column="31" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3443" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1a0d29702ebd6ab7b679c9ce275514fe1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Matchers::Floating::WithinUlpsMatcher::WithinUlpsMatcher</definition>
+        <argsstring>(double target, uint64_t ulps, FloatingPointKind baseType)</argsstring>
+        <name>WithinUlpsMatcher</name>
+        <param>
+          <type>double</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>ulps</declname>
+        </param>
+        <param>
+          <type>FloatingPointKind</type>
+          <declname>baseType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3437" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1aabda42a0dc5d00f3c5916feb75006b32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::Matchers::Floating::WithinUlpsMatcher::match</definition>
+        <argsstring>(double const &amp;matchee) const override</argsstring>
+        <name>match</name>
+        <param>
+          <type>double const &amp;</type>
+          <declname>matchee</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3438" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1ad9bc8bb7f3abd326580a4bf6cf369b1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::Floating::WithinUlpsMatcher::describe</definition>
+        <argsstring>() const override</argsstring>
+        <name>describe</name>
+        <reimplements refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a91d3a907dbfcbb596077df24f6e11fe2">describe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3439" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::Matchers::Floating::WithinUlpsMatcher</label>
+        <link refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; T &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; T &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Catch::Matchers::Floating::WithinUlpsMatcher</label>
+        <link refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; T &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; T &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3436" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3436" bodyend="3444"/>
+    <listofallmembers>
+      <member refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1ad9bc8bb7f3abd326580a4bf6cf369b1b" prot="public" virt="virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>describe</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a951095c462657e7097a9a6dc4dde813f" prot="protected" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>m_cachedToString</name></member>
+      <member refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1a97b0112726f510af8ca22cb490c2b14d" prot="private" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>m_target</name></member>
+      <member refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1ac5dc48ae38dbfe143647d450f03771ab" prot="private" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>m_type</name></member>
+      <member refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1a78fbf35cf9419ff31deb9432e314c1e3" prot="private" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>m_ulps</name></member>
+      <member refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1aabda42a0dc5d00f3c5916feb75006b32" prot="public" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>match</name></member>
+      <member refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod_1ae0920ff9e817acf08e1bb0cbcb044e30" prot="public" virt="pure-virtual" ambiguityscope="Catch::Matchers::Impl::MatcherBase::"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>match</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1ab65764dc245d85e2b268d3be870b650a" prot="public" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>MatcherUntypedBase</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a985fd3c3ffcc9f2e8dc7a330130040b0" prot="public" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>MatcherUntypedBase</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5bb94bf2ff5c7ef73b7c11eb173bdf3b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>operator!</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1aae4a9827601f6f26a52126e193d012de" prot="public" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>operator&amp;&amp;</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a62668ccc47b64a9094dcb6413f9af80b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>operator=</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5f8542b8f1567a6f9c65d0a6da7b679b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>operator||</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a5982c7c80ca71dfe2298babadad7a453" prot="public" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>toString</name></member>
+      <member refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher_1a0d29702ebd6ab7b679c9ce275514fe1e" prot="public" virt="non-virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>WithinUlpsMatcher</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a853be93ce33f71b5abede38081c79e9d" prot="protected" virt="virtual"><scope>Catch::Matchers::Floating::WithinUlpsMatcher</scope><name>~MatcherUntypedBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

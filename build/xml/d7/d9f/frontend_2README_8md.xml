@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d9f/frontend_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">###<sp/>Frontend</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>directory<sp/>contains<sp/>the<sp/>source<sp/>code<sp/>related<sp/>to<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>frontend<sp/>of<sp/>KIVI<sp/>compiler.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Contents**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`parser/`<sp/>In<sp/>this<sp/>folder<sp/>resides<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>syntactical<sp/>analyzer<sp/>used<sp/>in<sp/>the<sp/>first<sp/>stages<sp/>of<sp/>the<sp/>compilation<sp/>process</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`ir_generation/`<sp/>This<sp/>directory<sp/>is<sp/>used<sp/>for<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>stage<sp/>which<sp/>is<sp/>responsible<sp/>for<sp/>&quot;translating&quot;<sp/>the<sp/>already<sp/>generated<sp/>AST<sp/>into<sp/>a<sp/>more<sp/>assembly-like<sp/>architecture-independent<sp/>simplistic<sp/>language<sp/>called<sp/>_intermediate<sp/>representation_</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">----------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>the<sp/>next<sp/>steps<sp/>of<sp/>the<sp/>compilation<sp/>process<sp/>check<sp/>the<sp/>`backend/`<sp/>directory.</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/frontend/README.md"/>
+  </compounddef>
+</doxygen>

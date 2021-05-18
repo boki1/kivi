@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/df4/classCatch_1_1TestCase" kind="class" language="C++" prot="public">
+    <compoundname>Catch::TestCase</compoundname>
+    <basecompoundref refid="de/d62/structCatch_1_1TestCaseInfo" prot="public" virt="non-virtual">Catch::TestCaseInfo</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/df4/classCatch_1_1TestCase_1a7aaa375d6f2bda735095eaa43395b54b" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d2/dac/structCatch_1_1ITestInvoker" kindref="compound">ITestInvoker</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ITestInvoker&gt; Catch::TestCase::test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4815" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4815" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/df4/classCatch_1_1TestCase_1aae5709fc1cb68e19ab0ac27e1ffd6a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::TestCase::TestCase</definition>
+        <argsstring>(ITestInvoker *testCase, TestCaseInfo &amp;&amp;info)</argsstring>
+        <name>TestCase</name>
+        <param>
+          <type><ref refid="d2/dac/structCatch_1_1ITestInvoker" kindref="compound">ITestInvoker</ref> *</type>
+          <declname>testCase</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d62/structCatch_1_1TestCaseInfo" kindref="compound">TestCaseInfo</ref> &amp;&amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4803" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/df4/classCatch_1_1TestCase_1a0812e8a216d09b087d5874687009f0d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref></type>
+        <definition>TestCase Catch::TestCase::withName</definition>
+        <argsstring>(std::string const &amp;_newName) const</argsstring>
+        <name>withName</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>_newName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4805" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/df4/classCatch_1_1TestCase_1a26f346c8446dded0562fe3818ae71651" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::TestCase::invoke</definition>
+        <argsstring>() const</argsstring>
+        <name>invoke</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4807" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/df4/classCatch_1_1TestCase_1a1ea0d79f49156cebea076fe1ba50d2b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d62/structCatch_1_1TestCaseInfo" kindref="compound">TestCaseInfo</ref> const  &amp;</type>
+        <definition>TestCaseInfo const&amp; Catch::TestCase::getTestCaseInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>getTestCaseInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4809" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/df4/classCatch_1_1TestCase_1a5456d03a90f75292835c158f3a3374a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::TestCase::operator==</definition>
+        <argsstring>(TestCase const &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4811" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/df4/classCatch_1_1TestCase_1a030e4b9282e9b32e08c8bd5e5cd6fa98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::TestCase::operator&lt;</definition>
+        <argsstring>(TestCase const &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4812" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Catch::TestCaseInfo</label>
+        <link refid="de/d62/structCatch_1_1TestCaseInfo"/>
+      </node>
+      <node id="1">
+        <label>Catch::TestCase</label>
+        <link refid="d6/df4/classCatch_1_1TestCase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Catch::SourceLineInfo</label>
+        <link refid="dc/d2b/structCatch_1_1SourceLineInfo"/>
+      </node>
+      <node id="2">
+        <label>Catch::TestCaseInfo</label>
+        <link refid="de/d62/structCatch_1_1TestCaseInfo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lineInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::TestCase</label>
+        <link refid="d6/df4/classCatch_1_1TestCase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4800" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4800" bodyend="4816"/>
+    <listofallmembers>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacad0e25e337246ae34d555fe53baf81c16" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>Benchmark</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a1a5e0825132a38d091defdebbf2f8ce9" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>className</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a37fe2db9425bc45f6a33893eac31198e" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>description</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1abe33d81233230cdae8afa714688e905b" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>expectedToFail</name></member>
+      <member refid="d6/df4/classCatch_1_1TestCase_1a1ea0d79f49156cebea076fe1ba50d2b6" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>getTestCaseInfo</name></member>
+      <member refid="d6/df4/classCatch_1_1TestCase_1a26f346c8446dded0562fe3818ae71651" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>invoke</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacaeda53906c14c3973e0980900c132b8f7" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>IsHidden</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a934b1a0952700743e99d62ec1731a2e2" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>isHidden</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a844e3de9baf6e53cadfba9733c236bfe" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>lcaseTags</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1aa9407b7f442655b51a2aad24b3fa2fd3" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>lineInfo</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacadf1873d3271121cb9f52d7df45b416ca" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>MayFail</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a463794e2f5cfead307c93efd134ade36" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>name</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacaf94e9de5f8ec1e53b1aa761ec564b31a" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>None</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eaca06472887b53fda9eb8015d74e7fd2cf1" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>NonPortable</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a5f37291295e3a6de2dd85324c941edaf" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>okToFail</name></member>
+      <member refid="d6/df4/classCatch_1_1TestCase_1a030e4b9282e9b32e08c8bd5e5cd6fa98" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>operator&lt;</name></member>
+      <member refid="d6/df4/classCatch_1_1TestCase_1a5456d03a90f75292835c158f3a3374a1" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>operator==</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1afc1e84bd7a2e180895a06d9131302af0" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>properties</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eacaf9002285bccfc343935958f3953f4c01" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>ShouldFail</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eac" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>SpecialProperties</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a150a7cbca1dd0c91799ccb14ff822eb0" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>tags</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a17506de67fb18e27511c17f8a81119d8" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>tagsAsString</name></member>
+      <member refid="d6/df4/classCatch_1_1TestCase_1a7aaa375d6f2bda735095eaa43395b54b" prot="private" virt="non-virtual"><scope>Catch::TestCase</scope><name>test</name></member>
+      <member refid="d6/df4/classCatch_1_1TestCase_1aae5709fc1cb68e19ab0ac27e1ffd6a76" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>TestCase</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1ad1a6b08b5a83d1c5eb4596b727b5305f" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>TestCaseInfo</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1a39b232f74b4a7a6f2183b96759027eaca4704adf89ed7f7ad653d08f99813a974" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>Throws</name></member>
+      <member refid="de/d62/structCatch_1_1TestCaseInfo_1afc70d4379a2070cc22b693ffe3932c1a" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>throws</name></member>
+      <member refid="d6/df4/classCatch_1_1TestCase_1a0812e8a216d09b087d5874687009f0d6" prot="public" virt="non-virtual"><scope>Catch::TestCase</scope><name>withName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

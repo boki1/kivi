@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d79/classyy_1_1position" kind="class" language="C++" prot="public">
+    <compoundname>yy::position</compoundname>
+    <includes refid="d3/d46/location_8hh" local="no">location.hh</includes>
+      <sectiondef kind="user-defined">
+      <header>Line and Column related manipulators</header>
+      <memberdef kind="function" id="de/d79/classyy_1_1position_1a60984f6289e9f1af6afb513df81c6eb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::position::lines</definition>
+        <argsstring>(counter_type count=1)</argsstring>
+        <name>lines</name>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>(line related) Advance to the COUNT next lines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="91" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d79/classyy_1_1position_1ae37ef65518f43d6a0f64072e64199620" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::position::columns</definition>
+        <argsstring>(counter_type count=1)</argsstring>
+        <name>columns</name>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>(column related) Advance to the COUNT next columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="101" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="101" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="de/d79/classyy_1_1position_1afee2270e96ccb20135eb3246e2a643ed" prot="public" static="no">
+        <type>const std::string</type>
+        <definition>typedef const std::string yy::position::filename_type</definition>
+        <argsstring></argsstring>
+        <name>filename_type</name>
+        <briefdescription>
+<para>Type for file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="64" column="31" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int yy::position::counter_type</definition>
+        <argsstring></argsstring>
+        <name>counter_type</name>
+        <briefdescription>
+<para>Type for line and column numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="66" column="17" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d79/classyy_1_1position_1a913aa8e0ec278cd201f211bb850e5216" prot="public" static="no" mutable="no">
+        <type><ref refid="de/d79/classyy_1_1position_1afee2270e96ccb20135eb3246e2a643ed" kindref="member">filename_type</ref> *</type>
+        <definition>filename_type* yy::position::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+<para>File name to which this position refers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="108" column="19" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d79/classyy_1_1position_1abfc7004e57d5d3f2d9bd7f2426896b77" prot="public" static="no" mutable="no">
+        <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+        <definition>counter_type yy::position::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+<para>Current line number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="110" column="18" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d79/classyy_1_1position_1a6c55884c6d5fb8d3fc7158ad13deaff2" prot="public" static="no" mutable="no">
+        <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+        <definition>counter_type yy::position::column</definition>
+        <argsstring></argsstring>
+        <name>column</name>
+        <briefdescription>
+<para>Current column number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="112" column="18" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d79/classyy_1_1position_1a183136cad851585dde8b4d719ff92c77" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::position::position</definition>
+        <argsstring>(filename_type *f=YY_NULLPTR, counter_type l=1, counter_type c=1)</argsstring>
+        <name>position</name>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1afee2270e96ccb20135eb3246e2a643ed" kindref="member">filename_type</ref> *</type>
+          <declname>f</declname>
+          <defval><ref refid="d3/d46/location_8hh_1a5a6c82f7ce4ad9cc8c6c08b7a2de5b84" kindref="member">YY_NULLPTR</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+          <declname>l</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+          <declname>c</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Construct a position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="69" column="14" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="69" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d79/classyy_1_1position_1a98d4e93e632abc318b8a861f77a7e7b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yy::position::initialize</definition>
+        <argsstring>(filename_type *fn=YY_NULLPTR, counter_type l=1, counter_type c=1)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1afee2270e96ccb20135eb3246e2a643ed" kindref="member">filename_type</ref> *</type>
+          <declname>fn</declname>
+          <defval><ref refid="d3/d46/location_8hh_1a5a6c82f7ce4ad9cc8c6c08b7a2de5b84" kindref="member">YY_NULLPTR</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+          <declname>l</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+          <declname>c</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="79" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="79" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="de/d79/classyy_1_1position_1aa01dceb9dd33ef77530bd2e3b4fa62ef" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+        <definition>static counter_type yy::position::add_</definition>
+        <argsstring>(counter_type lhs, counter_type rhs, counter_type min)</argsstring>
+        <name>add_</name>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
+          <declname>min</declname>
+        </param>
+        <briefdescription>
+<para>Compute max (min, lhs+rhs). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="116" column="25" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="116" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A point in a source file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="60" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="61" bodyend="120"/>
+    <listofallmembers>
+      <member refid="de/d79/classyy_1_1position_1aa01dceb9dd33ef77530bd2e3b4fa62ef" prot="private" virt="non-virtual"><scope>yy::position</scope><name>add_</name></member>
+      <member refid="de/d79/classyy_1_1position_1a6c55884c6d5fb8d3fc7158ad13deaff2" prot="public" virt="non-virtual"><scope>yy::position</scope><name>column</name></member>
+      <member refid="de/d79/classyy_1_1position_1ae37ef65518f43d6a0f64072e64199620" prot="public" virt="non-virtual"><scope>yy::position</scope><name>columns</name></member>
+      <member refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" prot="public" virt="non-virtual"><scope>yy::position</scope><name>counter_type</name></member>
+      <member refid="de/d79/classyy_1_1position_1a913aa8e0ec278cd201f211bb850e5216" prot="public" virt="non-virtual"><scope>yy::position</scope><name>filename</name></member>
+      <member refid="de/d79/classyy_1_1position_1afee2270e96ccb20135eb3246e2a643ed" prot="public" virt="non-virtual"><scope>yy::position</scope><name>filename_type</name></member>
+      <member refid="de/d79/classyy_1_1position_1a98d4e93e632abc318b8a861f77a7e7b2" prot="public" virt="non-virtual"><scope>yy::position</scope><name>initialize</name></member>
+      <member refid="de/d79/classyy_1_1position_1abfc7004e57d5d3f2d9bd7f2426896b77" prot="public" virt="non-virtual"><scope>yy::position</scope><name>line</name></member>
+      <member refid="de/d79/classyy_1_1position_1a60984f6289e9f1af6afb513df81c6eb0" prot="public" virt="non-virtual"><scope>yy::position</scope><name>lines</name></member>
+      <member refid="de/d79/classyy_1_1position_1a183136cad851585dde8b4d719ff92c77" prot="public" virt="non-virtual"><scope>yy::position</scope><name>position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

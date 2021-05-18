@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/d44/classCatch_1_1Timer" kind="class" language="C++" prot="public">
+    <compoundname>Catch::Timer</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/d44/classCatch_1_1Timer_1ac13c1ef867cc3b9f942032d5ed79c2a7" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t Catch::Timer::m_nanoseconds</definition>
+        <argsstring></argsstring>
+        <name>m_nanoseconds</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2893" column="18" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2893" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d44/classCatch_1_1Timer_1a0a56e879e43f36c102bf9ea8b5fc8b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::Timer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2895" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d44/classCatch_1_1Timer_1a57be5d17ca868a2d6fb1eea84de665cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::Timer::getElapsedNanoseconds</definition>
+        <argsstring>() const -&gt; uint64_t</argsstring>
+        <name>getElapsedNanoseconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2896" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d44/classCatch_1_1Timer_1a545de17a61a6fee1dbe3de5b0723e5fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::Timer::getElapsedMicroseconds</definition>
+        <argsstring>() const -&gt; uint64_t</argsstring>
+        <name>getElapsedMicroseconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2897" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d44/classCatch_1_1Timer_1a30aaf458dbb59dd8ac8971c9c62e0eac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::Timer::getElapsedMilliseconds</definition>
+        <argsstring>() const -&gt; unsigned int</argsstring>
+        <name>getElapsedMilliseconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2898" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d44/classCatch_1_1Timer_1a065e37e3c9eb16bd4dcf41971d8deedc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::Timer::getElapsedSeconds</definition>
+        <argsstring>() const -&gt; double</argsstring>
+        <name>getElapsedSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2899" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2892" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2892" bodyend="2900"/>
+    <listofallmembers>
+      <member refid="d8/d44/classCatch_1_1Timer_1a545de17a61a6fee1dbe3de5b0723e5fa" prot="public" virt="non-virtual"><scope>Catch::Timer</scope><name>getElapsedMicroseconds</name></member>
+      <member refid="d8/d44/classCatch_1_1Timer_1a30aaf458dbb59dd8ac8971c9c62e0eac" prot="public" virt="non-virtual"><scope>Catch::Timer</scope><name>getElapsedMilliseconds</name></member>
+      <member refid="d8/d44/classCatch_1_1Timer_1a57be5d17ca868a2d6fb1eea84de665cf" prot="public" virt="non-virtual"><scope>Catch::Timer</scope><name>getElapsedNanoseconds</name></member>
+      <member refid="d8/d44/classCatch_1_1Timer_1a065e37e3c9eb16bd4dcf41971d8deedc" prot="public" virt="non-virtual"><scope>Catch::Timer</scope><name>getElapsedSeconds</name></member>
+      <member refid="d8/d44/classCatch_1_1Timer_1ac13c1ef867cc3b9f942032d5ed79c2a7" prot="private" virt="non-virtual"><scope>Catch::Timer</scope><name>m_nanoseconds</name></member>
+      <member refid="d8/d44/classCatch_1_1Timer_1a0a56e879e43f36c102bf9ea8b5fc8b72" prot="public" virt="non-virtual"><scope>Catch::Timer</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher" kind="class" language="C++" prot="public">
+    <compoundname>Catch::Matchers::Exception::ExceptionMessageMatcher</compoundname>
+    <basecompoundref refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase" prot="public" virt="non-virtual">Catch::Matchers::Impl::MatcherBase&lt; std::exception &gt;</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher_1a1cf4836834c357febac9180ab74a178a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::Exception::ExceptionMessageMatcher::m_message</definition>
+        <argsstring></argsstring>
+        <name>m_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3398" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3398" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher_1ace55942f39ba653db3fd69d6d90e188f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Matchers::Exception::ExceptionMessageMatcher::ExceptionMessageMatcher</definition>
+        <argsstring>(std::string const &amp;message)</argsstring>
+        <name>ExceptionMessageMatcher</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3401" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3401" bodyend="3403"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher_1aa0566d24990d69e96495360b8f79593d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::Matchers::Exception::ExceptionMessageMatcher::match</definition>
+        <argsstring>(std::exception const &amp;ex) const override</argsstring>
+        <name>match</name>
+        <param>
+          <type>std::exception const &amp;</type>
+          <declname>ex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3405" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher_1a3543441985ec877a781e660a403b1bae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::Exception::ExceptionMessageMatcher::describe</definition>
+        <argsstring>() const override</argsstring>
+        <name>describe</name>
+        <reimplements refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a91d3a907dbfcbb596077df24f6e11fe2">describe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3407" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::Matchers::Exception::ExceptionMessageMatcher</label>
+        <link refid="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; T &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; T &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Catch::Matchers::Exception::ExceptionMessageMatcher</label>
+        <link refid="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::Matchers::Impl::MatcherBase&lt; T &gt;</label>
+        <link refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Catch::Matchers::Impl::MatcherUntypedBase</label>
+        <link refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase"/>
+      </node>
+      <node id="4">
+        <label>Catch::Matchers::Impl::MatcherMethod&lt; T &gt;</label>
+        <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3397" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3397" bodyend="3408"/>
+    <listofallmembers>
+      <member refid="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher_1a3543441985ec877a781e660a403b1bae" prot="public" virt="virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>describe</name></member>
+      <member refid="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher_1ace55942f39ba653db3fd69d6d90e188f" prot="public" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>ExceptionMessageMatcher</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a951095c462657e7097a9a6dc4dde813f" prot="protected" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>m_cachedToString</name></member>
+      <member refid="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher_1a1cf4836834c357febac9180ab74a178a" prot="private" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>m_message</name></member>
+      <member refid="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher_1aa0566d24990d69e96495360b8f79593d" prot="public" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>match</name></member>
+      <member refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod_1ae0920ff9e817acf08e1bb0cbcb044e30" prot="public" virt="pure-virtual" ambiguityscope="Catch::Matchers::Impl::MatcherBase::"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>match</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1ab65764dc245d85e2b268d3be870b650a" prot="public" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>MatcherUntypedBase</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a985fd3c3ffcc9f2e8dc7a330130040b0" prot="public" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>MatcherUntypedBase</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5bb94bf2ff5c7ef73b7c11eb173bdf3b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>operator!</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1aae4a9827601f6f26a52126e193d012de" prot="public" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>operator&amp;&amp;</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a62668ccc47b64a9094dcb6413f9af80b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>operator=</name></member>
+      <member refid="d8/d94/structCatch_1_1Matchers_1_1Impl_1_1MatcherBase_1a5f8542b8f1567a6f9c65d0a6da7b679b" prot="public" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>operator||</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a5982c7c80ca71dfe2298babadad7a453" prot="public" virt="non-virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>toString</name></member>
+      <member refid="d9/d7c/classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase_1a853be93ce33f71b5abede38081c79e9d" prot="protected" virt="virtual"><scope>Catch::Matchers::Exception::ExceptionMessageMatcher</scope><name>~MatcherUntypedBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

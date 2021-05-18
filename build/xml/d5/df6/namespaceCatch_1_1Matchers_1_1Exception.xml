@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/df6/namespaceCatch_1_1Matchers_1_1Exception" kind="namespace" language="C++">
+    <compoundname>Catch::Matchers::Exception</compoundname>
+    <innerclass refid="de/d61/classCatch_1_1Matchers_1_1Exception_1_1ExceptionMessageMatcher" prot="public">Catch::Matchers::Exception::ExceptionMessageMatcher</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3395" column="1"/>
+  </compounddef>
+</doxygen>

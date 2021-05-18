@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_8c739bbef76d64b22d6b0911c526dd76" kind="dir">
+    <compoundname>/home/boki/.tmp/kivi/backend</compoundname>
+    <innerdir refid="dir_9974de7a91ee6da742cb5e659b0b092b">/home/boki/.tmp/kivi/backend/compiler</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/backend/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>Catch::Generators::GeneratorWrapper</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper_1a8f35291599183b36e4c5af78e17d3a8c" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator" kindref="compound">IGenerator</ref>&lt; T &gt; &gt;</type>
+        <definition>std::unique_ptr&lt;IGenerator&lt;T&gt; &gt; Catch::Generators::GeneratorWrapper&lt; T &gt;::m_generator</definition>
+        <argsstring></argsstring>
+        <name>m_generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3985" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3985" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper_1aecffeafd4fd38d91a52dadf28b6e2b29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Generators::GeneratorWrapper&lt; T &gt;::GeneratorWrapper</definition>
+        <argsstring>(std::unique_ptr&lt; IGenerator&lt; T &gt;&gt; generator)</argsstring>
+        <name>GeneratorWrapper</name>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator" kindref="compound">IGenerator</ref>&lt; T &gt;&gt;</type>
+          <declname>generator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3987" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3987" bodyend="3989"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper_1a271f0f905f2c473c907550435b81e102" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T const  &amp;</type>
+        <definition>T const&amp; Catch::Generators::GeneratorWrapper&lt; T &gt;::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3990" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3990" bodyend="3992"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper_1acbfdca94811ae02461bd2cf5f60b666e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::Generators::GeneratorWrapper&lt; T &gt;::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3993" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3993" bodyend="3995"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3984" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3984" bodyend="3996"/>
+    <listofallmembers>
+      <member refid="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper_1aecffeafd4fd38d91a52dadf28b6e2b29" prot="public" virt="non-virtual"><scope>Catch::Generators::GeneratorWrapper</scope><name>GeneratorWrapper</name></member>
+      <member refid="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper_1a271f0f905f2c473c907550435b81e102" prot="public" virt="non-virtual"><scope>Catch::Generators::GeneratorWrapper</scope><name>get</name></member>
+      <member refid="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper_1a8f35291599183b36e4c5af78e17d3a8c" prot="private" virt="non-virtual"><scope>Catch::Generators::GeneratorWrapper</scope><name>m_generator</name></member>
+      <member refid="d3/def/classCatch_1_1Generators_1_1GeneratorWrapper_1acbfdca94811ae02461bd2cf5f60b666e" prot="public" virt="non-virtual"><scope>Catch::Generators::GeneratorWrapper</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

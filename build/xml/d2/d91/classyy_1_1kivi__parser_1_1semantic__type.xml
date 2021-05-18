@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type" kind="class" language="C++" prot="public">
+    <compoundname>yy::kivi_parser::semantic_type</compoundname>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser.tab.hh</includes>
+    <innerclass refid="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type" prot="private">yy::kivi_parser::semantic_type::union_type</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a74ab2fca0e2da12d033589842460183e" prot="private" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a74ab2fca0e2da12d033589842460183ea9c22e7dd40b7140fc231486f11dc12c8" prot="private">
+          <name>size</name>
+          <initializer>= sizeof (union_type)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The size of the largest semantic type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="431" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="431" bodyend="431"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1adbcd7e050f3ec02a39339e0b8497a040" prot="public" static="no">
+        <type><ref refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type" kindref="compound">semantic_type</ref></type>
+        <definition>typedef semantic_type yy::kivi_parser::semantic_type::self_type</definition>
+        <argsstring></argsstring>
+        <name>self_type</name>
+        <briefdescription>
+<para>Type of *this. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="213" column="27" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a919a45f45dfa604bc92c0e6601deb91e" prot="public" static="no" mutable="no">
+        <type>long double</type>
+        <definition>long double yy::kivi_parser::semantic_type::yyalign_me</definition>
+        <argsstring></argsstring>
+        <name>yyalign_me</name>
+        <briefdescription>
+<para>Strongest alignment constraints. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="437" column="19" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a2f1a1db64c21816f08e81d05551df824" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char yy::kivi_parser::semantic_type::yyraw[size]</definition>
+        <argsstring>[size]</argsstring>
+        <name>yyraw</name>
+        <briefdescription>
+<para>A buffer large enough to store any of the semantic values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="439" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a047cbd825af8329f126d21d1eca7a1c4" prot="private" static="no" mutable="no">
+        <type>union yy::kivi_parser::semantic_type::@2</type>
+        <definition>union yy::kivi_parser::semantic_type::@2 yy::kivi_parser::semantic_type::yybuffer_</definition>
+        <argsstring></argsstring>
+        <name>yybuffer_</name>
+        <briefdescription>
+<para>A buffer to store semantic values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="440" column="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a0e0e4122330bdd2440805c96348c1139" prot="private" static="no" mutable="no">
+        <type>const std::type_info *</type>
+        <definition>const std::type_info* yy::kivi_parser::semantic_type::yytypeid_</definition>
+        <argsstring></argsstring>
+        <name>yytypeid_</name>
+        <briefdescription>
+<para>Whether the content is built: if defined, the name of the stored type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="443" column="26" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1afb3f5dcbadc3f99db0c9352f08a2c33c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::semantic_type::semantic_type</definition>
+        <argsstring>() YY_NOEXCEPT</argsstring>
+        <name>semantic_type</name>
+        <briefdescription>
+<para>Empty construction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="216" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1aaa128dd460f69bd06f6b03e3b8304c61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>yy::kivi_parser::semantic_type::semantic_type</definition>
+        <argsstring>(YY_RVREF(T) t)</argsstring>
+        <name>semantic_type</name>
+        <param>
+          <type><ref refid="dc/dee/parser_8tab_8hh_1a136a1225ab9f41786793cf23145b58dd" kindref="member">YY_RVREF</ref>(T)</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Construct and fill. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="223" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="223" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1ac2d48f296463afcfb7ce52450a7e5998" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::semantic_type::~semantic_type</definition>
+        <argsstring>() YY_NOEXCEPT</argsstring>
+        <name>~semantic_type</name>
+        <briefdescription>
+<para>Destruction, allowed only if empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="238" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="238" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a61a8ac03842362677a62340454aa96a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T&amp; yy::kivi_parser::semantic_type::emplace</definition>
+        <argsstring>()</argsstring>
+        <name>emplace</name>
+        <briefdescription>
+<para>Instantiate an empty <emphasis>T</emphasis> in here. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="258" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="258" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1abfae76f19861e134686f91207b4a0c66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T&amp; yy::kivi_parser::semantic_type::emplace</definition>
+        <argsstring>(const T &amp;t)</argsstring>
+        <name>emplace</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Instantiate a <emphasis>T</emphasis> in here from <emphasis>t</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="269" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="269" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a6f302d526e4539b1f61c0999b3252d0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T&amp; yy::kivi_parser::semantic_type::build</definition>
+        <argsstring>()</argsstring>
+        <name>build</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate an empty <emphasis>T</emphasis> in here. Obsolete, use emplace. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="282" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a5e6a6cc66764a3b29a4208ad170a5ba2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T&amp; yy::kivi_parser::semantic_type::build</definition>
+        <argsstring>(const T &amp;t)</argsstring>
+        <name>build</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate a <emphasis>T</emphasis> in here from <emphasis>t</emphasis>. Obsolete, use emplace. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="291" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="291" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1af3008e0417014fbc5798ecb3babd296c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T&amp; yy::kivi_parser::semantic_type::as</definition>
+        <argsstring>() YY_NOEXCEPT</argsstring>
+        <name>as</name>
+        <briefdescription>
+<para>Accessor to a built <emphasis>T</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="299" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="299" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a12672406be623bf59735d44530b843e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T&amp; yy::kivi_parser::semantic_type::as</definition>
+        <argsstring>() const YY_NOEXCEPT</argsstring>
+        <name>as</name>
+        <briefdescription>
+<para>Const accessor to a built <emphasis>T</emphasis> (for printer). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="310" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="310" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a26842f24e4827067a0917277340ead26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void yy::kivi_parser::semantic_type::swap</definition>
+        <argsstring>(self_type &amp;that) YY_NOEXCEPT</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1adbcd7e050f3ec02a39339e0b8497a040" kindref="member">self_type</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Swap the content with <emphasis>that</emphasis>, of same type.</para>
+<para>Both variants must be built beforehand, because swapping the actual data requires reading it (with <ref refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1af3008e0417014fbc5798ecb3babd296c" kindref="member">as()</ref>), and this is not possible on unconstructed variants: it would require some dynamic testing, which should not be the variant&apos;s responsibility. Swapping between built and (possibly) non-built is done with <ref refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a0d620488e507ea03a52dbe4c9c4b36fe" kindref="member">self_type::move</ref> (). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="328" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="328" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a0d620488e507ea03a52dbe4c9c4b36fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void yy::kivi_parser::semantic_type::move</definition>
+        <argsstring>(self_type &amp;that)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1adbcd7e050f3ec02a39339e0b8497a040" kindref="member">self_type</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move the content of <emphasis>that</emphasis> to this.</para>
+<para>Destroys <emphasis>that</emphasis>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="340" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="340" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a9ae86d855f8e31d3dd2470a9374672b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void yy::kivi_parser::semantic_type::copy</definition>
+        <argsstring>(const self_type &amp;that)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1adbcd7e050f3ec02a39339e0b8497a040" kindref="member">self_type</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Copy the content of <emphasis>that</emphasis> to this. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="365" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1ab7e8832026b8c92f541885220da8ee6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void yy::kivi_parser::semantic_type::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <briefdescription>
+<para>Destroy the stored <emphasis>T</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="373" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="373" bodyend="377"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1acb0dd64480ebc2b122ff49e5d85da2ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::semantic_type::semantic_type</definition>
+        <argsstring>(const self_type &amp;)</argsstring>
+        <name>semantic_type</name>
+        <param>
+          <type>const <ref refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1adbcd7e050f3ec02a39339e0b8497a040" kindref="member">self_type</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Non copyable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="382" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a898cee44fb430f671b956d300b18b0b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1adbcd7e050f3ec02a39339e0b8497a040" kindref="member">self_type</ref> &amp;</type>
+        <definition>self_type&amp; yy::kivi_parser::semantic_type::operator=</definition>
+        <argsstring>(const self_type &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1adbcd7e050f3ec02a39339e0b8497a040" kindref="member">self_type</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Non copyable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="384" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1abeb6f9c4e4c93b689232cfe0e90d09de" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* yy::kivi_parser::semantic_type::yyas_</definition>
+        <argsstring>() YY_NOEXCEPT</argsstring>
+        <name>yyas_</name>
+        <briefdescription>
+<para>Accessor to raw memory as <emphasis>T</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="390" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="390" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a40f1d167890d544ee70710317cd45883" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const T *</type>
+        <definition>const T* yy::kivi_parser::semantic_type::yyas_</definition>
+        <argsstring>() const YY_NOEXCEPT</argsstring>
+        <name>yyas_</name>
+        <briefdescription>
+<para>Const accessor to raw memory as <emphasis>T</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="399" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="399" bodyend="403"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A buffer to store and retrieve objects.</para>
+<para>Sort of a variant, but does not keep track of the nature of the stored data, since that knowledge is available via the current parser state. </para>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="209" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="210" bodyend="444"/>
+    <listofallmembers>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1af3008e0417014fbc5798ecb3babd296c" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>as</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a12672406be623bf59735d44530b843e1" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>as</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a6f302d526e4539b1f61c0999b3252d0c" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>build</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a5e6a6cc66764a3b29a4208ad170a5ba2" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>build</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a9ae86d855f8e31d3dd2470a9374672b7" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>copy</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1ab7e8832026b8c92f541885220da8ee6b" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>destroy</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a61a8ac03842362677a62340454aa96a5" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>emplace</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1abfae76f19861e134686f91207b4a0c66" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>emplace</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a0d620488e507ea03a52dbe4c9c4b36fe" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>move</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a898cee44fb430f671b956d300b18b0b1" prot="private" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>operator=</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1adbcd7e050f3ec02a39339e0b8497a040" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>self_type</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1afb3f5dcbadc3f99db0c9352f08a2c33c" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>semantic_type</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1aaa128dd460f69bd06f6b03e3b8304c61" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>semantic_type</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1acb0dd64480ebc2b122ff49e5d85da2ed" prot="private" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>semantic_type</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a74ab2fca0e2da12d033589842460183ea9c22e7dd40b7140fc231486f11dc12c8" prot="private" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>size</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a26842f24e4827067a0917277340ead26" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>swap</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a919a45f45dfa604bc92c0e6601deb91e" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>yyalign_me</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1abeb6f9c4e4c93b689232cfe0e90d09de" prot="private" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>yyas_</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a40f1d167890d544ee70710317cd45883" prot="private" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>yyas_</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a047cbd825af8329f126d21d1eca7a1c4" prot="private" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>yybuffer_</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a2f1a1db64c21816f08e81d05551df824" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>yyraw</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a0e0e4122330bdd2440805c96348c1139" prot="private" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>yytypeid_</name></member>
+      <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1ac2d48f296463afcfb7ce52450a7e5998" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type</scope><name>~semantic_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

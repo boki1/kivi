@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/d1a/statements_8cc" kind="file" language="C++">
+    <compoundname>statements.cc</compoundname>
+    <includes refid="d4/d91/syntactical__structures_8hh" local="yes">syntactical_structures.hh</includes>
+    <includes local="no">memory</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>variant</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>optional</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>utility</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/frontend/parser/statements.cc</label>
+        <link refid="d5/d1a/statements_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d7/df6/namespacesyntax__analyzer">syntax_analyzer</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d5/d1a/statements_8cc_1a0649e970fdba545073f046a3b73e9efd" prot="public" static="no">
+        <name>KIVI_PARSER_STATEMENTS_HH_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="6" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>KIVI_PARSER_STATEMENTS_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KIVI_PARSER_STATEMENTS_HH_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d91/syntactical__structures_8hh" kindref="compound">syntactical_structures.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::move;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::make_shared;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1ae83e90fa247c1be34a7dbc3ed2f05bed" kindref="member">if_stmt</ref>(expression&amp;&amp;<sp/>condition,<sp/>expression&amp;&amp;<sp/>than_body)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a786887572f6ef1c20f2d8177cb2f1639" kindref="member">expression::type::If</ref>,<sp/>{<sp/>move(condition),<sp/>move(than_body)<sp/>}};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a717e25ba7c4fec313db67811b64ce0c0" kindref="member">while_stmt</ref>(expression&amp;&amp;<sp/>condition,<sp/>expression&amp;&amp;<sp/>loop_body)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3cddbb8f43a4e074e2c2ce3e8622f43e" kindref="member">expression::type::While</ref>,<sp/>{<sp/>move(condition),<sp/>move(loop_body)<sp/>}};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1aef31df3c52051f0a99af48ba79dbafe1" kindref="member">return_stmt</ref>(expression&amp;&amp;<sp/>retval)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a988fd738de9c6d177440c5dcf69e73ce" kindref="member">expression::type::Return</ref>,<sp/>{<sp/>move(retval)<sp/>}};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1aef31df3c52051f0a99af48ba79dbafe1" kindref="member">return_stmt</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a988fd738de9c6d177440c5dcf69e73ce" kindref="member">expression::type::Return</ref>,<sp/>{<sp/>move(expression(0))<sp/>}};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a69bbfeec8bacaad18d3f8b67d0e76575" kindref="member">compound_stmt</ref>(std::vector&lt;expression&gt;<sp/>body<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>{<sp/>}<sp/>*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3ff39d3acb327553070a64ef0cb321d5" kindref="member">expression::type::Sequence</ref>,<sp/>move(body)<sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//KIVI_PARSER_STATEMENTS_HH_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc"/>
+  </compounddef>
+</doxygen>

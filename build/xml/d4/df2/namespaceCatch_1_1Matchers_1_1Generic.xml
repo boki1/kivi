@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/df2/namespaceCatch_1_1Matchers_1_1Generic" kind="namespace" language="C++">
+    <compoundname>Catch::Matchers::Generic</compoundname>
+    <innerclass refid="dc/d41/classCatch_1_1Matchers_1_1Generic_1_1PredicateMatcher" prot="public">Catch::Matchers::Generic::PredicateMatcher</innerclass>
+    <innernamespace refid="d1/d1a/namespaceCatch_1_1Matchers_1_1Generic_1_1Detail">Catch::Matchers::Generic::Detail</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3486" column="1"/>
+  </compounddef>
+</doxygen>

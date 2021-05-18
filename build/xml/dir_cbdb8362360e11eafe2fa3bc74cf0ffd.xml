@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_cbdb8362360e11eafe2fa3bc74cf0ffd" kind="dir">
+    <compoundname>/home/boki/.tmp/kivi/utils</compoundname>
+    <innerdir refid="dir_e09d4ff75fc26d3c209910dfbe9f7a0f">/home/boki/.tmp/kivi/utils/ast_printer</innerdir>
+    <innerdir refid="dir_c802a52f71a9867085062b6c590fa632">/home/boki/.tmp/kivi/utils/cli</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/utils/"/>
+  </compounddef>
+</doxygen>

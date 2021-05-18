@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/d1c/classCatch_1_1NonCopyable" kind="class" language="C++" prot="public">
+    <compoundname>Catch::NonCopyable</compoundname>
+    <derivedcompoundref refid="dc/d59/structCatch_1_1AutoReg" prot="public" virt="non-virtual">Catch::AutoReg</derivedcompoundref>
+    <derivedcompoundref refid="df/ddf/structCatch_1_1IConfig" prot="public" virt="non-virtual">Catch::IConfig</derivedcompoundref>
+    <derivedcompoundref refid="d9/d54/classCatch_1_1ReusableStringStream" prot="private" virt="non-virtual">Catch::ReusableStringStream</derivedcompoundref>
+    <derivedcompoundref refid="da/d10/classCatch_1_1Section" prot="private" virt="non-virtual">Catch::Section</derivedcompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dc/d1c/classCatch_1_1NonCopyable_1a74cf3e4aa051c284941e39b436b2f693" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::NonCopyable::NonCopyable</definition>
+        <argsstring>(NonCopyable const &amp;)=delete</argsstring>
+        <name>NonCopyable</name>
+        <param>
+          <type><ref refid="dc/d1c/classCatch_1_1NonCopyable" kindref="compound">NonCopyable</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="490" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d1c/classCatch_1_1NonCopyable_1a09d1d8775db8c495fa40c285b034faa3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::NonCopyable::NonCopyable</definition>
+        <argsstring>(NonCopyable &amp;&amp;)=delete</argsstring>
+        <name>NonCopyable</name>
+        <param>
+          <type><ref refid="dc/d1c/classCatch_1_1NonCopyable" kindref="compound">NonCopyable</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="491" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d1c/classCatch_1_1NonCopyable_1a958b5f57d45fdd6f418bec8b46a629ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/d1c/classCatch_1_1NonCopyable" kindref="compound">NonCopyable</ref> &amp;</type>
+        <definition>NonCopyable&amp; Catch::NonCopyable::operator=</definition>
+        <argsstring>(NonCopyable const &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="dc/d1c/classCatch_1_1NonCopyable" kindref="compound">NonCopyable</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="492" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d1c/classCatch_1_1NonCopyable_1a317697b6d3c4cda093666ce61d3a1e31" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/d1c/classCatch_1_1NonCopyable" kindref="compound">NonCopyable</ref> &amp;</type>
+        <definition>NonCopyable&amp; Catch::NonCopyable::operator=</definition>
+        <argsstring>(NonCopyable &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="dc/d1c/classCatch_1_1NonCopyable" kindref="compound">NonCopyable</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="493" column="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="dc/d1c/classCatch_1_1NonCopyable_1a4b492dd5753f9952350fb64dc6cb9fe2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::NonCopyable::NonCopyable</definition>
+        <argsstring>()</argsstring>
+        <name>NonCopyable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="496" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d1c/classCatch_1_1NonCopyable_1a81254677280fef337eb4a676e91e3293" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Catch::NonCopyable::~NonCopyable</definition>
+        <argsstring>()</argsstring>
+        <name>~NonCopyable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="497" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Catch::NonCopyable</label>
+        <link refid="dc/d1c/classCatch_1_1NonCopyable"/>
+      </node>
+      <node id="3">
+        <label>Catch::IConfig</label>
+        <link refid="df/ddf/structCatch_1_1IConfig"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Catch::ReusableStringStream</label>
+        <link refid="d9/d54/classCatch_1_1ReusableStringStream"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::AutoReg</label>
+        <link refid="dc/d59/structCatch_1_1AutoReg"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Catch::Section</label>
+        <link refid="da/d10/classCatch_1_1Section"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="489" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="489" bodyend="498"/>
+    <listofallmembers>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a74cf3e4aa051c284941e39b436b2f693" prot="private" virt="non-virtual"><scope>Catch::NonCopyable</scope><name>NonCopyable</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a09d1d8775db8c495fa40c285b034faa3" prot="private" virt="non-virtual"><scope>Catch::NonCopyable</scope><name>NonCopyable</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a4b492dd5753f9952350fb64dc6cb9fe2" prot="protected" virt="non-virtual"><scope>Catch::NonCopyable</scope><name>NonCopyable</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a958b5f57d45fdd6f418bec8b46a629ab" prot="private" virt="non-virtual"><scope>Catch::NonCopyable</scope><name>operator=</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a317697b6d3c4cda093666ce61d3a1e31" prot="private" virt="non-virtual"><scope>Catch::NonCopyable</scope><name>operator=</name></member>
+      <member refid="dc/d1c/classCatch_1_1NonCopyable_1a81254677280fef337eb4a676e91e3293" prot="protected" virt="virtual"><scope>Catch::NonCopyable</scope><name>~NonCopyable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

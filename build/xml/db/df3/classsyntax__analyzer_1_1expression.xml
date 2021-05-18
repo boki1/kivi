@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/df3/classsyntax__analyzer_1_1expression" kind="class" language="C++" prot="public">
+    <compoundname>syntax_analyzer::expression</compoundname>
+    <basecompoundref refid="df/d98/classsyntax__analyzer_1_1syntactic__structure" prot="public" virt="non-virtual">syntax_analyzer::syntactic_structure</basecompoundref>
+    <includes refid="d9/d1c/syntax_8hh" local="no">syntax.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>type</name>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024ab7e7f2b46723f5b08d763041108f8fed" prot="public">
+          <name>Nop</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a27118326006d3829667a400ad23d5d98" prot="public">
+          <name>String</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024ab2ee912b91d69b435159c7c3f6df7f5f" prot="public">
+          <name>Number</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a29ee5d1ebcc033234938a5234f1f2075" prot="public">
+          <name>Identifier</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a7c5531bbefed0945814f874baf9e0e0f" prot="public">
+          <name>Addition</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024ac3feba4aa480f4c127c08c370d23415f" prot="public">
+          <name>Negation</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a27d1a1f7b7c2180e5b20ce9e3d00e2dd" prot="public">
+          <name>Multiplication</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3025cdaab2deb0bb2cd642449e570833" prot="public">
+          <name>Division</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a890ebf2ce6beb154deb673b3af2d03d4" prot="public">
+          <name>Equality</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a7d9c9c3399200231f7bbfcf6d50f0ea1" prot="public">
+          <name>ModularDivision</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a5fb63579fc981698f97d55bfecb213ea" prot="public">
+          <name>Copy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a786887572f6ef1c20f2d8177cb2f1639" prot="public">
+          <name>If</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3cddbb8f43a4e074e2c2ce3e8622f43e" prot="public">
+          <name>While</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024affb017548928ab2305e7c55cb67c04ca" prot="public">
+          <name>FunctionCall</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3ff39d3acb327553070a64ef0cb321d5" prot="public">
+          <name>Sequence</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a988fd738de9c6d177440c5dcf69e73ce" prot="public">
+          <name>Return</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration which marks the concrete type of expression which is contained. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Each expression instance contains one of the values of <ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">expression::type</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="123" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="124" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="typedef" id="db/df3/classsyntax__analyzer_1_1expression_1aa1ba2036609a8236fe6d3433681d7ac3" prot="public" static="no">
+        <type>std::variant&lt; std::monostate, <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref>, std::string, int &gt;</type>
+        <definition>typedef std::variant&lt;std::monostate, identifier, std::string, int&gt; syntax_analyzer::expression::terminal_type</definition>
+        <argsstring></argsstring>
+        <name>terminal_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="115" column="22" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/df3/classsyntax__analyzer_1_1expression_1a5c1233c52b7bddf383264cbd0cc7afc7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &gt;</type>
+        <definition>std::vector&lt;expression&gt; syntax_analyzer::expression::m_operands</definition>
+        <argsstring></argsstring>
+        <name>m_operands</name>
+        <briefdescription>
+<para>The operands associated with the concrete expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In the operands of the expressions are contained all associated expressions which are required in order to successfully process &quot;this&quot; expression. Important note is that the supported statements are also represented as expression having (if one is present) their specific peculiarity stored in specific way. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="151" column="13" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/df3/classsyntax__analyzer_1_1expression_1aa96a117c462177b6c18977ea535ad8c8" prot="private" static="no" mutable="no">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression_1aa1ba2036609a8236fe6d3433681d7ac3" kindref="member">expression::terminal_type</ref></type>
+        <definition>expression::terminal_type syntax_analyzer::expression::m_terminal_value</definition>
+        <argsstring></argsstring>
+        <name>m_terminal_value</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>The value of the expression if it is a terminal(Identifier, String or Number) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="154" column="27" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/df3/classsyntax__analyzer_1_1expression_1ac85273b0002c630c5eb87feaf98c4752" prot="private" static="no" mutable="no">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">expression::type</ref></type>
+        <definition>expression::type syntax_analyzer::expression::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <briefdescription>
+<para>Holds the specific type of expression. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="157" column="18" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>syntax_analyzer::expression::expression</definition>
+        <argsstring>()=default</argsstring>
+        <name>expression</name>
+        <briefdescription>
+<para>Default construction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1ab12acf17e3ab2997d901567dd8ccc6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>syntax_analyzer::expression::expression</definition>
+        <argsstring>(const expression &amp;)=default</argsstring>
+        <name>expression</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Default copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1ad7eeb8651b8acaa5525aba804093a7be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>syntax_analyzer::expression::expression</definition>
+        <argsstring>(expression &amp;&amp;)=default</argsstring>
+        <name>expression</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Default move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1af9c6980eb852cd37b8752211f28c25b4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>syntax_analyzer::expression::expression</definition>
+        <argsstring>(identifier &amp;&amp;ident)</argsstring>
+        <name>expression</name>
+        <param>
+          <type><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &amp;&amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Identifier expression constructor (move) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="170" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a64a0aa4985014087587f1f45d2418009" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>syntax_analyzer::expression::expression</definition>
+        <argsstring>(const identifier &amp;ident)</argsstring>
+        <name>expression</name>
+        <param>
+          <type>const <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &amp;</type>
+          <declname>ident</declname>
+        </param>
+        <briefdescription>
+<para>Another identifier expression constructor (copying) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="173" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a498a7e05f8c8d7bea5fb8ae3927fd307" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>syntax_analyzer::expression::expression</definition>
+        <argsstring>(std::string &amp;&amp;str)</argsstring>
+        <name>expression</name>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>String literal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="176" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1aa00955e82e69a2ecf601cd417eee246d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>syntax_analyzer::expression::expression</definition>
+        <argsstring>(int num)</argsstring>
+        <name>expression</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Number constant literal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="179" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a602f25498363cee345c05c1908be5094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>syntax_analyzer::expression::expression</definition>
+        <argsstring>(expression::type type, std::vector&lt; expression &gt;)</argsstring>
+        <name>expression</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">expression::type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &gt;</type>
+          <defname>operands</defname>
+        </param>
+        <briefdescription>
+<para>Manual construction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="182" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a46508bdb2ed00d39a13100d4406830dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;</type>
+        <definition>expression&amp; syntax_analyzer::expression::operator=</definition>
+        <argsstring>(const expression &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="184" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a9cae3ca524d55edf9b2902efa28bdb67" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool syntax_analyzer::expression::operator==</definition>
+        <argsstring>(const expression &amp;) const noexcept</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="186" column="6" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="67" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1af18b9e6a60298b4d194206441d795ea6" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool syntax_analyzer::expression::operator!=</definition>
+        <argsstring>(const expression &amp;) const noexcept</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="187" column="6" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1adee71448d9680556400d1f02388a44db" prot="public" static="no" const="no" explicit="no" inline="no" refqual="rvalue" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
+        <definition>expression syntax_analyzer::expression::assign</definition>
+        <argsstring>(expression &amp;&amp;rhs) &amp;&amp;</argsstring>
+        <name>assign</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="198" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a551dd89bea2813d46a10ffc62e0d89c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void syntax_analyzer::expression::append</definition>
+        <argsstring>(expression &amp;&amp;appendant)</argsstring>
+        <name>append</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>appendant</declname>
+        </param>
+        <briefdescription>
+<para>Appends an operand in the operands vector of the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>appendant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new operand </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="205" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a3c3c17370cc623030830d27b59e3a7b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void syntax_analyzer::expression::merge_with</definition>
+        <argsstring>(expression &amp;&amp;other)</argsstring>
+        <name>merge_with</name>
+        <param>
+          <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Combines the operands of the expressions into the first one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other one </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="212" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;expression&gt;&amp; syntax_analyzer::expression::operands</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="217" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a617c7971cab175c2a5fbfe53da700287" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;</type>
+        <definition>const expression&amp; syntax_analyzer::expression::add_operand</definition>
+        <argsstring>(const expression &amp;o)</argsstring>
+        <name>add_operand</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="223" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="223" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a35b7a4d94014bf2d241ded6e52137494" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref> &gt;</type>
+        <definition>std::vector&lt;expression&gt; syntax_analyzer::expression::operands_copy</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operands_copy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="230" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a91fb0b9285eb7478042d33f2d578ea29" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression_1aa1ba2036609a8236fe6d3433681d7ac3" kindref="member">expression::terminal_type</ref> &amp;</type>
+        <definition>const expression::terminal_type&amp; syntax_analyzer::expression::terminal</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>terminal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="236" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df3/classsyntax__analyzer_1_1expression_1a1018dfb0d0d49eca484b9b10bf0b4db7" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" kindref="member">expression::type</ref></type>
+        <definition>expression::type syntax_analyzer::expression::get_type</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="242" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="242" bodyend="245"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure which represents the syntactical structure expression. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>The inner representation of statement is the same as expression. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>syntax_analyzer::syntactic_structure</label>
+        <link refid="df/d98/classsyntax__analyzer_1_1syntactic__structure"/>
+      </node>
+      <node id="1">
+        <label>syntax_analyzer::expression</label>
+        <link refid="db/df3/classsyntax__analyzer_1_1expression"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>syntax_analyzer::syntactic_structure</label>
+        <link refid="df/d98/classsyntax__analyzer_1_1syntactic__structure"/>
+      </node>
+      <node id="1">
+        <label>syntax_analyzer::expression</label>
+        <link refid="db/df3/classsyntax__analyzer_1_1expression"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="112" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="113" bodyend="246"/>
+    <listofallmembers>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a617c7971cab175c2a5fbfe53da700287" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>add_operand</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a551dd89bea2813d46a10ffc62e0d89c9" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>append</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1adee71448d9680556400d1f02388a44db" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>assign</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>expression</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1ab12acf17e3ab2997d901567dd8ccc6c2" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>expression</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1ad7eeb8651b8acaa5525aba804093a7be" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>expression</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1af9c6980eb852cd37b8752211f28c25b4" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>expression</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a64a0aa4985014087587f1f45d2418009" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>expression</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a498a7e05f8c8d7bea5fb8ae3927fd307" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>expression</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1aa00955e82e69a2ecf601cd417eee246d" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>expression</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a602f25498363cee345c05c1908be5094" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>expression</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a1018dfb0d0d49eca484b9b10bf0b4db7" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>get_type</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a5c1233c52b7bddf383264cbd0cc7afc7" prot="private" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>m_operands</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1aa96a117c462177b6c18977ea535ad8c8" prot="private" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>m_terminal_value</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1ac85273b0002c630c5eb87feaf98c4752" prot="private" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>m_type</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a3c3c17370cc623030830d27b59e3a7b4" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>merge_with</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>operands</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a35b7a4d94014bf2d241ded6e52137494" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>operands_copy</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1af18b9e6a60298b4d194206441d795ea6" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>operator!=</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a46508bdb2ed00d39a13100d4406830dc" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>operator=</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a9cae3ca524d55edf9b2902efa28bdb67" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>operator==</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1a91fb0b9285eb7478042d33f2d578ea29" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>terminal</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1aa1ba2036609a8236fe6d3433681d7ac3" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>terminal_type</name></member>
+      <member refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024" prot="public" virt="non-virtual"><scope>syntax_analyzer::expression</scope><name>type</name></member>
+      <member refid="df/d98/classsyntax__analyzer_1_1syntactic__structure_1a0363c2b7180f7fce96c6e065d3b2bed6" prot="public" virt="virtual"><scope>syntax_analyzer::expression</scope><name>~syntactic_structure</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

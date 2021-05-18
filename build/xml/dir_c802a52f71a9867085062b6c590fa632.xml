@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_c802a52f71a9867085062b6c590fa632" kind="dir">
+    <compoundname>/home/boki/.tmp/kivi/utils/cli</compoundname>
+    <innerfile refid="d5/df1/cli_8hh">cli.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/utils/cli/"/>
+  </compounddef>
+</doxygen>

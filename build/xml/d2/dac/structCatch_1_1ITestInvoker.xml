@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/dac/structCatch_1_1ITestInvoker" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>Catch::ITestInvoker</compoundname>
+    <derivedcompoundref refid="d4/d9d/classCatch_1_1TestInvokerAsMethod" prot="public" virt="non-virtual">Catch::TestInvokerAsMethod&lt; C &gt;</derivedcompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/dac/structCatch_1_1ITestInvoker_1a6fcd5c5b67d6d5ade6491ff33411ca7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::ITestInvoker::invoke</definition>
+        <argsstring>() const =0</argsstring>
+        <name>invoke</name>
+        <reimplementedby refid="d4/d9d/classCatch_1_1TestInvokerAsMethod_1a8115a06efe273f4112ec0b5452c1b5f2">invoke</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="571" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dac/structCatch_1_1ITestInvoker_1a2c89f3eece5b1b677243766e409bd831" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Catch::ITestInvoker::~ITestInvoker</definition>
+        <argsstring>()</argsstring>
+        <name>~ITestInvoker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="572" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Catch::TestInvokerAsMethod&lt; C &gt;</label>
+        <link refid="d4/d9d/classCatch_1_1TestInvokerAsMethod"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Catch::ITestInvoker</label>
+        <link refid="d2/dac/structCatch_1_1ITestInvoker"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="570" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="570" bodyend="573"/>
+    <listofallmembers>
+      <member refid="d2/dac/structCatch_1_1ITestInvoker_1a6fcd5c5b67d6d5ade6491ff33411ca7f" prot="public" virt="pure-virtual"><scope>Catch::ITestInvoker</scope><name>invoke</name></member>
+      <member refid="d2/dac/structCatch_1_1ITestInvoker_1a2c89f3eece5b1b677243766e409bd831" prot="public" virt="virtual"><scope>Catch::ITestInvoker</scope><name>~ITestInvoker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

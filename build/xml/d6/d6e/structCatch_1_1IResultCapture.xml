@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d6e/structCatch_1_1IResultCapture" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>Catch::IResultCapture</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a3bd16719d6772b7470887fc36c6d0808" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Catch::IResultCapture::~IResultCapture</definition>
+        <argsstring>()</argsstring>
+        <name>~IResultCapture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2458" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a5b76ed52badcb64cf374202e12b81a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Catch::IResultCapture::sectionStarted</definition>
+        <argsstring>(SectionInfo const &amp;sectionInfo, Counts &amp;assertions)=0</argsstring>
+        <name>sectionStarted</name>
+        <param>
+          <type><ref refid="d4/d7e/structCatch_1_1SectionInfo" kindref="compound">SectionInfo</ref> const &amp;</type>
+          <declname>sectionInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="de/db0/structCatch_1_1Counts" kindref="compound">Counts</ref> &amp;</type>
+          <declname>assertions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2460" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a4e152bc43dc0933684e31fa67a58195d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::sectionEnded</definition>
+        <argsstring>(SectionEndInfo const &amp;endInfo)=0</argsstring>
+        <name>sectionEnded</name>
+        <param>
+          <type><ref refid="da/d6c/structCatch_1_1SectionEndInfo" kindref="compound">SectionEndInfo</ref> const &amp;</type>
+          <declname>endInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2462" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1afcc71eef8ca821ae132cced4a2be6988" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::sectionEndedEarly</definition>
+        <argsstring>(SectionEndInfo const &amp;endInfo)=0</argsstring>
+        <name>sectionEndedEarly</name>
+        <param>
+          <type><ref refid="da/d6c/structCatch_1_1SectionEndInfo" kindref="compound">SectionEndInfo</ref> const &amp;</type>
+          <declname>endInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2463" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a8f93a848e0a48b630ca9ecbf225e4817" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto Catch::IResultCapture::acquireGeneratorTracker</definition>
+        <argsstring>(StringRef generatorName, SourceLineInfo const &amp;lineInfo) -&gt; IGeneratorTracker &amp;=0</argsstring>
+        <name>acquireGeneratorTracker</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>generatorName</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d2b/structCatch_1_1SourceLineInfo" kindref="compound">SourceLineInfo</ref> const &amp;</type>
+          <declname>lineInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2465" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a91d154c1e087e383dcde5aad95cb6a05" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::pushScopedMessage</definition>
+        <argsstring>(MessageInfo const &amp;message)=0</argsstring>
+        <name>pushScopedMessage</name>
+        <param>
+          <type><ref refid="d7/d37/structCatch_1_1MessageInfo" kindref="compound">MessageInfo</ref> const &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2474" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a42bcb13276706bf8c3ce081ce16d37fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::popScopedMessage</definition>
+        <argsstring>(MessageInfo const &amp;message)=0</argsstring>
+        <name>popScopedMessage</name>
+        <param>
+          <type><ref refid="d7/d37/structCatch_1_1MessageInfo" kindref="compound">MessageInfo</ref> const &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2475" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a49f74f1323ef8be71b8f9b8e8b2c0fc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::emplaceUnscopedMessage</definition>
+        <argsstring>(MessageBuilder const &amp;builder)=0</argsstring>
+        <name>emplaceUnscopedMessage</name>
+        <param>
+          <type><ref refid="d2/d7e/structCatch_1_1MessageBuilder" kindref="compound">MessageBuilder</ref> const &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2477" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a48559e6598ba9474b903697b69c769b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::handleFatalErrorCondition</definition>
+        <argsstring>(StringRef message)=0</argsstring>
+        <name>handleFatalErrorCondition</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2479" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a59a2b05391e464954575d2afb6d5d607" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::handleExpr</definition>
+        <argsstring>(AssertionInfo const &amp;info, ITransientExpression const &amp;expr, AssertionReaction &amp;reaction)=0</argsstring>
+        <name>handleExpr</name>
+        <param>
+          <type><ref refid="d2/d71/structCatch_1_1AssertionInfo" kindref="compound">AssertionInfo</ref> const &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d6e/structCatch_1_1ITransientExpression" kindref="compound">ITransientExpression</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type><ref refid="dd/d07/structCatch_1_1AssertionReaction" kindref="compound">AssertionReaction</ref> &amp;</type>
+          <declname>reaction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2481" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a21788ebc64571abf322b80c8cc51794d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::handleMessage</definition>
+        <argsstring>(AssertionInfo const &amp;info, ResultWas::OfType resultType, StringRef const &amp;message, AssertionReaction &amp;reaction)=0</argsstring>
+        <name>handleMessage</name>
+        <param>
+          <type><ref refid="d2/d71/structCatch_1_1AssertionInfo" kindref="compound">AssertionInfo</ref> const &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/d8c/structCatch_1_1ResultWas_1a624e1ee3661fcf6094ceef1f654601ef" kindref="member">ResultWas::OfType</ref></type>
+          <declname>resultType</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type><ref refid="dd/d07/structCatch_1_1AssertionReaction" kindref="compound">AssertionReaction</ref> &amp;</type>
+          <declname>reaction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2485" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a6382ed20486e2d9a020da971c6d5c53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::handleUnexpectedExceptionNotThrown</definition>
+        <argsstring>(AssertionInfo const &amp;info, AssertionReaction &amp;reaction)=0</argsstring>
+        <name>handleUnexpectedExceptionNotThrown</name>
+        <param>
+          <type><ref refid="d2/d71/structCatch_1_1AssertionInfo" kindref="compound">AssertionInfo</ref> const &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="dd/d07/structCatch_1_1AssertionReaction" kindref="compound">AssertionReaction</ref> &amp;</type>
+          <declname>reaction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2490" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1afc97bc69829185222f955ebeef97adfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::handleUnexpectedInflightException</definition>
+        <argsstring>(AssertionInfo const &amp;info, std::string const &amp;message, AssertionReaction &amp;reaction)=0</argsstring>
+        <name>handleUnexpectedInflightException</name>
+        <param>
+          <type><ref refid="d2/d71/structCatch_1_1AssertionInfo" kindref="compound">AssertionInfo</ref> const &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type><ref refid="dd/d07/structCatch_1_1AssertionReaction" kindref="compound">AssertionReaction</ref> &amp;</type>
+          <declname>reaction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2493" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a89b89372eb09cc44f8dcad363de6157d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::handleIncomplete</definition>
+        <argsstring>(AssertionInfo const &amp;info)=0</argsstring>
+        <name>handleIncomplete</name>
+        <param>
+          <type><ref refid="d2/d71/structCatch_1_1AssertionInfo" kindref="compound">AssertionInfo</ref> const &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2497" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1ab7dbdf8aa28427119583e24dbb302c63" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::handleNonExpr</definition>
+        <argsstring>(AssertionInfo const &amp;info, ResultWas::OfType resultType, AssertionReaction &amp;reaction)=0</argsstring>
+        <name>handleNonExpr</name>
+        <param>
+          <type><ref refid="d2/d71/structCatch_1_1AssertionInfo" kindref="compound">AssertionInfo</ref> const &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/d8c/structCatch_1_1ResultWas_1a624e1ee3661fcf6094ceef1f654601ef" kindref="member">ResultWas::OfType</ref></type>
+          <declname>resultType</declname>
+        </param>
+        <param>
+          <type><ref refid="dd/d07/structCatch_1_1AssertionReaction" kindref="compound">AssertionReaction</ref> &amp;</type>
+          <declname>reaction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2499" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a973435fbdcb2f6f07a0ec5719a01e956" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Catch::IResultCapture::lastAssertionPassed</definition>
+        <argsstring>()=0</argsstring>
+        <name>lastAssertionPassed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2504" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1a9b0ef2cb071e9a9dc6ec1b533026aea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::assertionPassed</definition>
+        <argsstring>()=0</argsstring>
+        <name>assertionPassed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2505" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1aea1617f4a84cc648246aa3ed6918b5bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Catch::IResultCapture::getCurrentTestName</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getCurrentTestName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2508" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1ab18872c89fab97405a56e9c6a4919736" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const AssertionResult *</type>
+        <definition>virtual const AssertionResult* Catch::IResultCapture::getLastResult</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getLastResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2509" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d6e/structCatch_1_1IResultCapture_1ae63ecec95db4c236c63ecf616f483810" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Catch::IResultCapture::exceptionEarlyReported</definition>
+        <argsstring>()=0</argsstring>
+        <name>exceptionEarlyReported</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2510" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2456" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2456" bodyend="2511"/>
+    <listofallmembers>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a8f93a848e0a48b630ca9ecbf225e4817" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>acquireGeneratorTracker</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a9b0ef2cb071e9a9dc6ec1b533026aea7" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>assertionPassed</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a49f74f1323ef8be71b8f9b8e8b2c0fc2" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>emplaceUnscopedMessage</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1ae63ecec95db4c236c63ecf616f483810" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>exceptionEarlyReported</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1aea1617f4a84cc648246aa3ed6918b5bf" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>getCurrentTestName</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1ab18872c89fab97405a56e9c6a4919736" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>getLastResult</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a59a2b05391e464954575d2afb6d5d607" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>handleExpr</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a48559e6598ba9474b903697b69c769b2" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>handleFatalErrorCondition</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a89b89372eb09cc44f8dcad363de6157d" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>handleIncomplete</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a21788ebc64571abf322b80c8cc51794d" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>handleMessage</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1ab7dbdf8aa28427119583e24dbb302c63" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>handleNonExpr</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a6382ed20486e2d9a020da971c6d5c53d" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>handleUnexpectedExceptionNotThrown</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1afc97bc69829185222f955ebeef97adfe" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>handleUnexpectedInflightException</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a973435fbdcb2f6f07a0ec5719a01e956" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>lastAssertionPassed</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a42bcb13276706bf8c3ce081ce16d37fd" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>popScopedMessage</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a91d154c1e087e383dcde5aad95cb6a05" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>pushScopedMessage</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a4e152bc43dc0933684e31fa67a58195d" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>sectionEnded</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1afcc71eef8ca821ae132cced4a2be6988" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>sectionEndedEarly</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a5b76ed52badcb64cf374202e12b81a03" prot="public" virt="pure-virtual"><scope>Catch::IResultCapture</scope><name>sectionStarted</name></member>
+      <member refid="d6/d6e/structCatch_1_1IResultCapture_1a3bd16719d6772b7470887fc36c6d0808" prot="public" virt="virtual"><scope>Catch::IResultCapture</scope><name>~IResultCapture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/dc7/classCatch_1_1Option" kind="class" language="C++" prot="public">
+    <compoundname>Catch::Option</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/dc7/classCatch_1_1Option_1aa6643e8dc409f4fc86cc8c80f9c3266b" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* Catch::Option&lt; T &gt;::nullableValue</definition>
+        <argsstring></argsstring>
+        <name>nullableValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4454" column="11" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/dc7/classCatch_1_1Option_1acdebca1b18bb8542c3f676b8dd805f23" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Catch::Option&lt; T &gt;::storage[sizeof(T)]</definition>
+        <argsstring>[sizeof(T)]</argsstring>
+        <name>storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4455" column="22" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4455" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a8efb01b593d798decc80cbbdf311f2a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Option&lt; T &gt;::Option</definition>
+        <argsstring>()</argsstring>
+        <name>Option</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4404" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4404" bodyend="4404"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a5aeb9c22d48a6882bdf5fb4730b06c86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Option&lt; T &gt;::Option</definition>
+        <argsstring>(T const &amp;_value)</argsstring>
+        <name>Option</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4405" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4405" bodyend="4407"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1af02f2e4559f06384baec0def8c68c5fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Option&lt; T &gt;::Option</definition>
+        <argsstring>(Option const &amp;_other)</argsstring>
+        <name>Option</name>
+        <param>
+          <type><ref refid="d7/dc7/classCatch_1_1Option" kindref="compound">Option</ref> const &amp;</type>
+          <declname>_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4408" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4408" bodyend="4410"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a37fe90bb47bb909f150a5ad6be25581a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Option&lt; T &gt;::~Option</definition>
+        <argsstring>()</argsstring>
+        <name>~Option</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4412" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4412" bodyend="4414"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a78c65b15dd6b2fbd04c5012c43017c8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d7/dc7/classCatch_1_1Option" kindref="compound">Option</ref> &amp;</type>
+        <definition>Option&amp; Catch::Option&lt; T &gt;::operator=</definition>
+        <argsstring>(Option const &amp;_other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d7/dc7/classCatch_1_1Option" kindref="compound">Option</ref> const &amp;</type>
+          <declname>_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4416" column="16" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4416" bodyend="4423"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a2be7e343ab22d6061726d32ab4622653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d7/dc7/classCatch_1_1Option" kindref="compound">Option</ref> &amp;</type>
+        <definition>Option&amp; Catch::Option&lt; T &gt;::operator=</definition>
+        <argsstring>(T const &amp;_value)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4424" column="16" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4424" bodyend="4428"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a37b4e0e5d4d56296adacd267a616f4e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::Option&lt; T &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4430" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4430" bodyend="4434"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1afd989852fa453731c3190dac63caccb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Catch::Option&lt; T &gt;::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4436" column="11" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4436" bodyend="4436"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a734fc9c2eb1a1f7f8e8f6a4eb12160f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T const  &amp;</type>
+        <definition>T const&amp; Catch::Option&lt; T &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4437" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4437" bodyend="4437"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1acad340798a16c8f700f8763119e90f31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Catch::Option&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4438" column="11" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4438" bodyend="4438"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1ae8343cbc36dbb95b2dce333d2a6fdc28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T* Catch::Option&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4439" column="17" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4439" bodyend="4439"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a8d9ae2e30b0eb76fe134a6fbc8423124" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Catch::Option&lt; T &gt;::valueOr</definition>
+        <argsstring>(T const &amp;defaultValue) const</argsstring>
+        <name>valueOr</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4441" column="11" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4441" bodyend="4443"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a97c95829afbe92f2bcc5fd75b32c0825" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::Option&lt; T &gt;::some</definition>
+        <argsstring>() const</argsstring>
+        <name>some</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4445" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4445" bodyend="4445"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a821753afdc3fac947a13a01fbe0d248e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::Option&lt; T &gt;::none</definition>
+        <argsstring>() const</argsstring>
+        <name>none</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4446" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4446" bodyend="4446"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1a96dccb86bdf45ee0c08e122b6133bef3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Catch::Option&lt; T &gt;::operator!</definition>
+        <argsstring>() const</argsstring>
+        <name>operator!</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4448" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4448" bodyend="4448"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc7/classCatch_1_1Option_1aba0def0bd9cd45d4e00fe47a604b0270" prot="public" static="no" const="yes" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::Option&lt; T &gt;::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4449" column="18" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4449" bodyend="4451"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4402" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4402" bodyend="4456"/>
+    <listofallmembers>
+      <member refid="d7/dc7/classCatch_1_1Option_1a821753afdc3fac947a13a01fbe0d248e" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>none</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1aa6643e8dc409f4fc86cc8c80f9c3266b" prot="private" virt="non-virtual"><scope>Catch::Option</scope><name>nullableValue</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1aba0def0bd9cd45d4e00fe47a604b0270" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>operator bool</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a96dccb86bdf45ee0c08e122b6133bef3" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>operator!</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1afd989852fa453731c3190dac63caccb0" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>operator*</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a734fc9c2eb1a1f7f8e8f6a4eb12160f0" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>operator*</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1acad340798a16c8f700f8763119e90f31" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>operator-&gt;</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1ae8343cbc36dbb95b2dce333d2a6fdc28" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>operator-&gt;</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a78c65b15dd6b2fbd04c5012c43017c8f" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>operator=</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a2be7e343ab22d6061726d32ab4622653" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>operator=</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a8efb01b593d798decc80cbbdf311f2a3" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>Option</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a5aeb9c22d48a6882bdf5fb4730b06c86" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>Option</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1af02f2e4559f06384baec0def8c68c5fd" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>Option</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a37b4e0e5d4d56296adacd267a616f4e0" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>reset</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a97c95829afbe92f2bcc5fd75b32c0825" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>some</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1acdebca1b18bb8542c3f676b8dd805f23" prot="private" virt="non-virtual"><scope>Catch::Option</scope><name>storage</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a8d9ae2e30b0eb76fe134a6fbc8423124" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>valueOr</name></member>
+      <member refid="d7/dc7/classCatch_1_1Option_1a37fe90bb47bb909f150a5ad6be25581a" prot="public" virt="non-virtual"><scope>Catch::Option</scope><name>~Option</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

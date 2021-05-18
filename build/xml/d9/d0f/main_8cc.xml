@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d0f/main_8cc" kind="file" language="C++">
+    <compoundname>main.cc</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="d9/d96/ast__printer_8hh" local="no">ast_printer/ast_printer.hh</includes>
+    <includes refid="d5/df1/cli_8hh" local="no">cli/cli.hh</includes>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser/parser.tab.hh</includes>
+    <includes refid="d9/dd1/parsing__context_8hh" local="no">parser/parsing_context.hh</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>locale</label>
+      </node>
+      <node id="26">
+        <label>syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>iomanip</label>
+      </node>
+      <node id="28">
+        <label>loguru/loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
+      </node>
+      <node id="4">
+        <label>ast_printer/ast_printer.hh</label>
+        <link refid="d9/d96/ast__printer_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>variant</label>
+      </node>
+      <node id="30">
+        <label>cassert</label>
+      </node>
+      <node id="23">
+        <label>stdexcept</label>
+      </node>
+      <node id="21">
+        <label>numeric</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="27">
+        <label>parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>map</label>
+      </node>
+      <node id="29">
+        <label>location.hh</label>
+        <link refid="d3/d46/location_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>parser/syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>cli/cli.hh</label>
+        <link refid="d5/df1/cli_8hh"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>typeinfo</label>
+      </node>
+      <node id="13">
+        <label>optional</label>
+      </node>
+      <node id="25">
+        <label>parser/parser.tab.hh</label>
+        <link refid="dc/dee/parser_8tab_8hh"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="22">
+        <label>sstream</label>
+      </node>
+      <node id="31">
+        <label>cstdlib</label>
+      </node>
+      <node id="16">
+        <label>cctype</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="24">
+        <label>unordered_map</label>
+      </node>
+      <node id="8">
+        <label>textbox/textbox.hh</label>
+        <link refid="d2/d2b/textbox_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/boki/.tmp/kivi/main.cc</label>
+        <link refid="d9/d0f/main_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>algorithm</label>
+      </node>
+      <node id="15">
+        <label>argparse/argparse.h</label>
+        <link refid="de/d36/argparse_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>cstring</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d9/d0f/main_8cc_1ac0f2228420376f4db7e1274f2b41667c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, const char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/main.cc" line="10" column="1" bodyfile="/home/boki/.tmp/kivi/main.cc" bodystart="10" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d9/d96/ast__printer_8hh" kindref="compound">ast_printer/ast_printer.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d5/df1/cli_8hh" kindref="compound">cli/cli.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dc/dee/parser_8tab_8hh" kindref="compound">parser/parser.tab.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d9/dd1/parsing__context_8hh" kindref="compound">parser/parsing_context.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="d9/d0f/main_8cc_1ac0f2228420376f4db7e1274f2b41667c" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d5/dfa/namespacecli_1a7c557b921ffc48ad3e206d16ca501874" kindref="member">cli::parse_arguments</ref>(argc,<sp/>argv))</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>file<sp/>=<sp/>argv[1];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>fstr(file);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>buffer(std::istreambuf_iterator&lt;char&gt;(fstr),<sp/>{});</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kindref="compound">sa::parsing_context</ref><sp/>ctx{<sp/>buffer.c_str(),<sp/>&amp;file<sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">yy::kivi_parser</ref><sp/>parser{<sp/>ctx<sp/>};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="da/d00/classyy_1_1kivi__parser_1a74365513e5eea20e7cd073d9b6d3a93b" kindref="member">parse</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d5/dfa/namespacecli_1aa2e4349201a2f1a495642d706a82907a" kindref="member">cli::should_print</ref>(<ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82a7c3a6c0f7beaa0d19955f0ed6fa2df6b" kindref="member">cli::pe::ast</ref>))</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d39/namespaceCatch_1a50af73c5a37ad5c6558df4ce4a275e83" kindref="member">std::cout</ref><sp/>&lt;&lt;<sp/><ref refid="d5/d08/namespaceprinter_1acf808b23bcea1a30edb5d99ef24c260d" kindref="member">printer::print</ref>(ctx.functions());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d5/dfa/namespacecli_1aa2e4349201a2f1a495642d706a82907a" kindref="member">cli::should_print</ref>(<ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82ad74eea4899a61f9fcbc527ef988ea0ff" kindref="member">cli::pe::ir</ref>))</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d39/namespaceCatch_1a50af73c5a37ad5c6558df4ce4a275e83" kindref="member">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;no<sp/>ir<sp/>yet<sp/>:/\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d5/dfa/namespacecli_1aa2e4349201a2f1a495642d706a82907a" kindref="member">cli::should_print</ref>(<ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82a3a90436113e528aef1ea19b2b94c80bf" kindref="member">cli::pe::asm_</ref>))</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d39/namespaceCatch_1a50af73c5a37ad5c6558df4ce4a275e83" kindref="member">std::cout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;no<sp/>asm<sp/>yet<sp/>:/\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/.tmp/kivi/main.cc"/>
+  </compounddef>
+</doxygen>

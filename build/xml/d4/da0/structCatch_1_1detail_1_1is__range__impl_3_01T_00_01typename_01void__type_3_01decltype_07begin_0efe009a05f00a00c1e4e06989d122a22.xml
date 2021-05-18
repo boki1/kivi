@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/da0/structCatch_1_1detail_1_1is__range__impl_3_01T_00_01typename_01void__type_3_01decltype_07begin_0efe009a05f00a00c1e4e06989d122a22" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::detail::is_range_impl&lt; T, typename void_type&lt; decltype(begin(std::declval&lt; T &gt;()))&gt;::type &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::true_type</basecompoundref>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>std::true_type</label>
+      </node>
+      <node id="1">
+        <label>Catch::detail::is_range_impl&lt; T, typename void_type&lt; decltype(begin(std::declval&lt; T &gt;()))&gt;::type &gt;</label>
+        <link refid="d4/da0/structCatch_1_1detail_1_1is__range__impl_3_01T_00_01typename_01void__type_3_01decltype_07begin_0efe009a05f00a00c1e4e06989d122a22"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>std::true_type</label>
+      </node>
+      <node id="1">
+        <label>Catch::detail::is_range_impl&lt; T, typename void_type&lt; decltype(begin(std::declval&lt; T &gt;()))&gt;::type &gt;</label>
+        <link refid="d4/da0/structCatch_1_1detail_1_1is__range__impl_3_01T_00_01typename_01void__type_3_01decltype_07begin_0efe009a05f00a00c1e4e06989d122a22"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2000" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2000" bodyend="2001"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

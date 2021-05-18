@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/d2b/classyy_1_1kivi__parser_1_1context" kind="class" language="C++" prot="public">
+    <compoundname>yy::kivi_parser::context</compoundname>
+    <includes refid="dc/dee/parser_8tab_8hh" local="no">parser.tab.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d2b/classyy_1_1kivi__parser_1_1context_1a9204ac3497e9f05fc39da4d9361ccb4e" prot="private" static="no" mutable="no">
+        <type>const <ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">kivi_parser</ref> &amp;</type>
+        <definition>const kivi_parser&amp; yy::kivi_parser::context::yyparser_</definition>
+        <argsstring></argsstring>
+        <name>yyparser_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1090" column="27" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1090" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d2b/classyy_1_1kivi__parser_1_1context_1a44b0cd8b28628c29b7729d2b3d901d72" prot="private" static="no" mutable="no">
+        <type>const <ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref> &amp;</type>
+        <definition>const symbol_type&amp; yy::kivi_parser::context::yyla_</definition>
+        <argsstring></argsstring>
+        <name>yyla_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1091" column="25" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1091" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d2b/classyy_1_1kivi__parser_1_1context_1ad666db8bfc45e134de63b8f6d54c30fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>yy::kivi_parser::context::context</definition>
+        <argsstring>(const kivi_parser &amp;yyparser, const symbol_type &amp;yyla)</argsstring>
+        <name>context</name>
+        <param>
+          <type>const <ref refid="da/d00/classyy_1_1kivi__parser" kindref="compound">kivi_parser</ref> &amp;</type>
+          <declname>yyparser</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref> &amp;</type>
+          <declname>yyla</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1079" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="1210" bodyend="1213"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d2b/classyy_1_1kivi__parser_1_1context_1aa71a29b38b9161b63654a630b9cbffca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type" kindref="compound">symbol_type</ref> &amp;</type>
+        <definition>const symbol_type&amp; yy::kivi_parser::context::lookahead</definition>
+        <argsstring>() const</argsstring>
+        <name>lookahead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1080" column="25" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1080" bodyend="1080"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d2b/classyy_1_1kivi__parser_1_1context_1adfe86a697211435405c6c6f6378fac3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+        <definition>symbol_kind_type yy::kivi_parser::context::token</definition>
+        <argsstring>() const</argsstring>
+        <name>token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1081" column="24" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1081" bodyend="1081"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d2b/classyy_1_1kivi__parser_1_1context_1a74f3a41ceaf4c0d0a2cd1c00be398523" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="da/d00/classyy_1_1kivi__parser_1a57dc2de901cb4aef506b73a6e67753b3" kindref="member">location_type</ref> &amp;</type>
+        <definition>const location_type&amp; yy::kivi_parser::context::location</definition>
+        <argsstring>() const</argsstring>
+        <name>location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1082" column="27" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1082" bodyend="1082"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d2b/classyy_1_1kivi__parser_1_1context_1a5828de4399c473c81f16f60661352ae5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int yy::kivi_parser::context::expected_tokens</definition>
+        <argsstring>(symbol_kind_type yyarg[], int yyargn) const</argsstring>
+        <name>expected_tokens</name>
+        <param>
+          <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
+          <declname>yyarg</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yyargn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Put in YYARG at most YYARGN of the expected tokens, and return the number of tokens stored in YYARG. If YYARG is null, return the number of expected tokens (guaranteed to be less than YYNTOKENS). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1087" column="11" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="1216" bodyend="1247"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>yy::kivi_parser::context</label>
+        <link refid="d1/d2b/classyy_1_1kivi__parser_1_1context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>yyparser_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>yyla_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>yy::kivi_parser</label>
+        <link refid="da/d00/classyy_1_1kivi__parser"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ctx</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>yystack_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>yy::location</label>
+        <link refid="dc/de8/classyy_1_1location"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>begin</edgelabel>
+          <edgelabel>end</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>yy::kivi_parser::symbol_type</label>
+        <link refid="de/de9/structyy_1_1kivi__parser_1_1symbol__type"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>yy::kivi_parser::stack&lt; stack_symbol_type &gt;</label>
+        <link refid="db/dc9/classyy_1_1kivi__parser_1_1stack"/>
+      </node>
+      <node id="3">
+        <label>syntax_analyzer::parsing_context</label>
+        <link refid="dd/d9f/classsyntax__analyzer_1_1parsing__context"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_current_function</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>yy_location</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>syntax_analyzer::function</label>
+        <link refid="d7/d16/classsyntax__analyzer_1_1function"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_body</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>yy::position</label>
+        <link refid="de/d79/classyy_1_1position"/>
+      </node>
+      <node id="5">
+        <label>syntax_analyzer::syntactic_structure</label>
+        <link refid="df/d98/classsyntax__analyzer_1_1syntactic__structure"/>
+      </node>
+      <node id="6">
+        <label>syntax_analyzer::expression</label>
+        <link refid="db/df3/classsyntax__analyzer_1_1expression"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>yy::kivi_parser::basic_symbol&lt; by_kind &gt;</label>
+        <link refid="d5/dba/structyy_1_1kivi__parser_1_1basic__symbol"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>yy::kivi_parser::by_kind</label>
+        <link refid="d7/d31/structyy_1_1kivi__parser_1_1by__kind"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1076" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1077" bodyend="1092"/>
+    <listofallmembers>
+      <member refid="d1/d2b/classyy_1_1kivi__parser_1_1context_1ad666db8bfc45e134de63b8f6d54c30fb" prot="public" virt="non-virtual"><scope>yy::kivi_parser::context</scope><name>context</name></member>
+      <member refid="d1/d2b/classyy_1_1kivi__parser_1_1context_1a5828de4399c473c81f16f60661352ae5" prot="public" virt="non-virtual"><scope>yy::kivi_parser::context</scope><name>expected_tokens</name></member>
+      <member refid="d1/d2b/classyy_1_1kivi__parser_1_1context_1a74f3a41ceaf4c0d0a2cd1c00be398523" prot="public" virt="non-virtual"><scope>yy::kivi_parser::context</scope><name>location</name></member>
+      <member refid="d1/d2b/classyy_1_1kivi__parser_1_1context_1aa71a29b38b9161b63654a630b9cbffca" prot="public" virt="non-virtual"><scope>yy::kivi_parser::context</scope><name>lookahead</name></member>
+      <member refid="d1/d2b/classyy_1_1kivi__parser_1_1context_1adfe86a697211435405c6c6f6378fac3b" prot="public" virt="non-virtual"><scope>yy::kivi_parser::context</scope><name>token</name></member>
+      <member refid="d1/d2b/classyy_1_1kivi__parser_1_1context_1a44b0cd8b28628c29b7729d2b3d901d72" prot="private" virt="non-virtual"><scope>yy::kivi_parser::context</scope><name>yyla_</name></member>
+      <member refid="d1/d2b/classyy_1_1kivi__parser_1_1context_1a9204ac3497e9f05fc39da4d9361ccb4e" prot="private" virt="non-virtual"><scope>yy::kivi_parser::context</scope><name>yyparser_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

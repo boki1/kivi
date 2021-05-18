@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d0e/structCatch_1_1IRunner" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>Catch::IRunner</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d0e/structCatch_1_1IRunner_1a5f539a88a7772d68de8a2e4028774209" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Catch::IRunner::~IRunner</definition>
+        <argsstring>()</argsstring>
+        <name>~IRunner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4834" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0e/structCatch_1_1IRunner_1a03713202dd2e041e30b8030088ab0116" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Catch::IRunner::aborting</definition>
+        <argsstring>() const =0</argsstring>
+        <name>aborting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4835" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4833" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4833" bodyend="4836"/>
+    <listofallmembers>
+      <member refid="d6/d0e/structCatch_1_1IRunner_1a03713202dd2e041e30b8030088ab0116" prot="public" virt="pure-virtual"><scope>Catch::IRunner</scope><name>aborting</name></member>
+      <member refid="d6/d0e/structCatch_1_1IRunner_1a5f539a88a7772d68de8a2e4028774209" prot="public" virt="virtual"><scope>Catch::IRunner</scope><name>~IRunner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

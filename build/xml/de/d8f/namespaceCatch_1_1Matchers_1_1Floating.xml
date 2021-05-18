@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d8f/namespaceCatch_1_1Matchers_1_1Floating" kind="namespace" language="C++">
+    <compoundname>Catch::Matchers::Floating</compoundname>
+    <innerclass refid="d2/d2a/structCatch_1_1Matchers_1_1Floating_1_1WithinAbsMatcher" prot="public">Catch::Matchers::Floating::WithinAbsMatcher</innerclass>
+    <innerclass refid="d7/daf/structCatch_1_1Matchers_1_1Floating_1_1WithinUlpsMatcher" prot="public">Catch::Matchers::Floating::WithinUlpsMatcher</innerclass>
+    <innerclass refid="d9/d22/structCatch_1_1Matchers_1_1Floating_1_1WithinRelMatcher" prot="public">Catch::Matchers::Floating::WithinRelMatcher</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3423" column="5"/>
+  </compounddef>
+</doxygen>

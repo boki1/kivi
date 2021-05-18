@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/d1a/namespaceCatch_1_1Matchers_1_1Generic_1_1Detail" kind="namespace" language="C++">
+    <compoundname>Catch::Matchers::Generic::Detail</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d1/d1a/namespaceCatch_1_1Matchers_1_1Generic_1_1Detail_1a79ef1103073f7a8d31735436d2012835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Catch::Matchers::Generic::Detail::finalizeDescription</definition>
+        <argsstring>(const std::string &amp;desc)</argsstring>
+        <name>finalizeDescription</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3489" column="17" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3489" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3488" column="1"/>
+  </compounddef>
+</doxygen>

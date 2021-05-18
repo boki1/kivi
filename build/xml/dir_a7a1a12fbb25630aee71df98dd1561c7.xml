@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a7a1a12fbb25630aee71df98dd1561c7" kind="dir">
+    <compoundname>/home/boki/.tmp/kivi/frontend/parser</compoundname>
+    <innerfile refid="df/dea/error_8cc">error.cc</innerfile>
+    <innerfile refid="d4/d99/expressions_8cc">expressions.cc</innerfile>
+    <innerfile refid="db/d3d/lexer_8tab_8cc">lexer.tab.cc</innerfile>
+    <innerfile refid="d3/d46/location_8hh">location.hh</innerfile>
+    <innerfile refid="d4/d01/parser_8tab_8cc">parser.tab.cc</innerfile>
+    <innerfile refid="dc/dee/parser_8tab_8hh">parser.tab.hh</innerfile>
+    <innerfile refid="da/dd4/parsing__context_8cc">parsing_context.cc</innerfile>
+    <innerfile refid="d9/dd1/parsing__context_8hh">parsing_context.hh</innerfile>
+    <innerfile refid="d5/d1a/statements_8cc">statements.cc</innerfile>
+    <innerfile refid="d4/d91/syntactical__structures_8hh">syntactical_structures.hh</innerfile>
+    <innerfile refid="dd/d41/syntax_8cc">syntax.cc</innerfile>
+    <innerfile refid="d9/d1c/syntax_8hh">syntax.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/frontend/parser/"/>
+  </compounddef>
+</doxygen>

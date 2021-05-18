@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/dcf/structCatch_1_1WarnAbout" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::WarnAbout</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>What</name>
+        <enumvalue id="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3a9ac33f9211280cca9082557329706d27" prot="public">
+          <name>Nothing</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3a516a40a437d6ff29898e2fa93bca8f82" prot="public">
+          <name>NoAssertions</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3ab449dacc48055ee886a4a7aa283db556" prot="public">
+          <name>NoTests</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4475" column="20" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4475" bodyend="4479"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4475" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4475" bodyend="4479"/>
+    <listofallmembers>
+      <member refid="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3a516a40a437d6ff29898e2fa93bca8f82" prot="public" virt="non-virtual"><scope>Catch::WarnAbout</scope><name>NoAssertions</name></member>
+      <member refid="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3ab449dacc48055ee886a4a7aa283db556" prot="public" virt="non-virtual"><scope>Catch::WarnAbout</scope><name>NoTests</name></member>
+      <member refid="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3a9ac33f9211280cca9082557329706d27" prot="public" virt="non-virtual"><scope>Catch::WarnAbout</scope><name>Nothing</name></member>
+      <member refid="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3" prot="public" virt="non-virtual"><scope>Catch::WarnAbout</scope><name>What</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

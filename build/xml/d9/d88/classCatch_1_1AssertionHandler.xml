@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d88/classCatch_1_1AssertionHandler" kind="class" language="C++" prot="public">
+    <compoundname>Catch::AssertionHandler</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d88/classCatch_1_1AssertionHandler_1ad171e8724bb771d97949b7270f400303" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/d71/structCatch_1_1AssertionInfo" kindref="compound">AssertionInfo</ref></type>
+        <definition>AssertionInfo Catch::AssertionHandler::m_assertionInfo</definition>
+        <argsstring></argsstring>
+        <name>m_assertionInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2547" column="23" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d88/classCatch_1_1AssertionHandler_1a8203c08a43a3761b5f400ee6587fad55" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/d07/structCatch_1_1AssertionReaction" kindref="compound">AssertionReaction</ref></type>
+        <definition>AssertionReaction Catch::AssertionHandler::m_reaction</definition>
+        <argsstring></argsstring>
+        <name>m_reaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2548" column="27" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d88/classCatch_1_1AssertionHandler_1a5a756818dff781c155e8eb970d1d4c68" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Catch::AssertionHandler::m_completed</definition>
+        <argsstring></argsstring>
+        <name>m_completed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2549" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d88/classCatch_1_1AssertionHandler_1aea5283ee36124ce5c51dc2a697b22a39" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d6e/structCatch_1_1IResultCapture" kindref="compound">IResultCapture</ref> &amp;</type>
+        <definition>IResultCapture&amp; Catch::AssertionHandler::m_resultCapture</definition>
+        <argsstring></argsstring>
+        <name>m_resultCapture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2550" column="24" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2550" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1a32efbb1b56b71d758d4c2094bac1f1a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::AssertionHandler::AssertionHandler</definition>
+        <argsstring>(StringRef const &amp;macroName, SourceLineInfo const &amp;lineInfo, StringRef capturedExpression, ResultDisposition::Flags resultDisposition)</argsstring>
+        <name>AssertionHandler</name>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>macroName</declname>
+        </param>
+        <param>
+          <type><ref refid="dc/d2b/structCatch_1_1SourceLineInfo" kindref="compound">SourceLineInfo</ref> const &amp;</type>
+          <declname>lineInfo</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
+          <declname>capturedExpression</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d62/structCatch_1_1ResultDisposition_1a3396cad6e2259af326b3aae93e23e9d8" kindref="member">ResultDisposition::Flags</ref></type>
+          <declname>resultDisposition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2553" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1a1e839d810f6ac0fa6d127fe8350175ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Catch::AssertionHandler::~AssertionHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~AssertionHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2558" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2558" bodyend="2562"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1a2ef387e567bad90ec6e4b5bf5c367388" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::handleExpr</definition>
+        <argsstring>(ExprLhs&lt; T &gt; const &amp;expr)</argsstring>
+        <name>handleExpr</name>
+        <param>
+          <type><ref refid="d9/d2f/classCatch_1_1ExprLhs" kindref="compound">ExprLhs</ref>&lt; T &gt; const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2565" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2565" bodyend="2567"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1afe14d9cf1b1c7f70dae439fbdb51d0c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::handleExpr</definition>
+        <argsstring>(ITransientExpression const &amp;expr)</argsstring>
+        <name>handleExpr</name>
+        <param>
+          <type><ref refid="d3/d6e/structCatch_1_1ITransientExpression" kindref="compound">ITransientExpression</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2568" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1abdb4c180ed83ec2858b2fb87712c516d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::handleMessage</definition>
+        <argsstring>(ResultWas::OfType resultType, StringRef const &amp;message)</argsstring>
+        <name>handleMessage</name>
+        <param>
+          <type><ref refid="d5/d8c/structCatch_1_1ResultWas_1a624e1ee3661fcf6094ceef1f654601ef" kindref="member">ResultWas::OfType</ref></type>
+          <declname>resultType</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> const &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2570" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1ab6caf765764a4064e90fce829eec201d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::handleExceptionThrownAsExpected</definition>
+        <argsstring>()</argsstring>
+        <name>handleExceptionThrownAsExpected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2572" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1a7764d0adb6ed5eeb10964f6abc02fab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::handleUnexpectedExceptionNotThrown</definition>
+        <argsstring>()</argsstring>
+        <name>handleUnexpectedExceptionNotThrown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2573" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1a51e4936e3af43b74690cedae6d2e297a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::handleExceptionNotThrownAsExpected</definition>
+        <argsstring>()</argsstring>
+        <name>handleExceptionNotThrownAsExpected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2574" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1a67a194d5518f307c4a16faa03a7f7442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::handleThrowingCallSkipped</definition>
+        <argsstring>()</argsstring>
+        <name>handleThrowingCallSkipped</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2575" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1aa2504dad6a91f3645e5f52c932c11270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::handleUnexpectedInflightException</definition>
+        <argsstring>()</argsstring>
+        <name>handleUnexpectedInflightException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2576" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1a878a9eb828d8a1863c8dcb6575f6f40e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::complete</definition>
+        <argsstring>()</argsstring>
+        <name>complete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2578" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1a6756bd5395c0ddd28764a9fb4612d5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Catch::AssertionHandler::setCompleted</definition>
+        <argsstring>()</argsstring>
+        <name>setCompleted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2579" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d88/classCatch_1_1AssertionHandler_1a193bb3999494c46457f3059184c6b251" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto Catch::AssertionHandler::allowThrows</definition>
+        <argsstring>() const -&gt; bool</argsstring>
+        <name>allowThrows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2582" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>Catch::SourceLineInfo</label>
+        <link refid="dc/d2b/structCatch_1_1SourceLineInfo"/>
+      </node>
+      <node id="1">
+        <label>Catch::AssertionHandler</label>
+        <link refid="d9/d88/classCatch_1_1AssertionHandler"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_reaction</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_resultCapture</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_assertionInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Catch::StringRef</label>
+        <link refid="d5/dd8/classCatch_1_1StringRef"/>
+      </node>
+      <node id="3">
+        <label>Catch::IResultCapture</label>
+        <link refid="d6/d6e/structCatch_1_1IResultCapture"/>
+      </node>
+      <node id="4">
+        <label>Catch::AssertionInfo</label>
+        <link refid="d2/d71/structCatch_1_1AssertionInfo"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lineInfo</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>capturedExpression</edgelabel>
+          <edgelabel>macroName</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Catch::AssertionReaction</label>
+        <link refid="dd/d07/structCatch_1_1AssertionReaction"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2546" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2546" bodyend="2583"/>
+    <listofallmembers>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a193bb3999494c46457f3059184c6b251" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>allowThrows</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a32efbb1b56b71d758d4c2094bac1f1a9" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>AssertionHandler</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a878a9eb828d8a1863c8dcb6575f6f40e" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>complete</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a51e4936e3af43b74690cedae6d2e297a" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>handleExceptionNotThrownAsExpected</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1ab6caf765764a4064e90fce829eec201d" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>handleExceptionThrownAsExpected</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a2ef387e567bad90ec6e4b5bf5c367388" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>handleExpr</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1afe14d9cf1b1c7f70dae439fbdb51d0c4" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>handleExpr</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1abdb4c180ed83ec2858b2fb87712c516d" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>handleMessage</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a67a194d5518f307c4a16faa03a7f7442" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>handleThrowingCallSkipped</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a7764d0adb6ed5eeb10964f6abc02fab1" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>handleUnexpectedExceptionNotThrown</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1aa2504dad6a91f3645e5f52c932c11270" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>handleUnexpectedInflightException</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1ad171e8724bb771d97949b7270f400303" prot="private" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>m_assertionInfo</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a5a756818dff781c155e8eb970d1d4c68" prot="private" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>m_completed</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a8203c08a43a3761b5f400ee6587fad55" prot="private" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>m_reaction</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1aea5283ee36124ce5c51dc2a697b22a39" prot="private" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>m_resultCapture</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a6756bd5395c0ddd28764a9fb4612d5e4" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>setCompleted</name></member>
+      <member refid="d9/d88/classCatch_1_1AssertionHandler_1a1e839d810f6ac0fa6d127fe8350175ed" prot="public" virt="non-virtual"><scope>Catch::AssertionHandler</scope><name>~AssertionHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

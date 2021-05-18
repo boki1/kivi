@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d54/structCatch_1_1pluralise" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::pluralise</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d54/structCatch_1_1pluralise_1a4dce2fa13ec6f00fac09b2418265441e" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t Catch::pluralise::m_count</definition>
+        <argsstring></argsstring>
+        <name>m_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3219" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d54/structCatch_1_1pluralise_1a8849cbdd3f11ebe7747597c8644e8793" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Catch::pluralise::m_label</definition>
+        <argsstring></argsstring>
+        <name>m_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3220" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3220" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d54/structCatch_1_1pluralise_1a5c55e22de2416cfe416edf715c6b9234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catch::pluralise::pluralise</definition>
+        <argsstring>(std::size_t count, std::string const &amp;label)</argsstring>
+        <name>pluralise</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3215" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="d2/d54/structCatch_1_1pluralise_1aa7dac6b165514c1f85e0695d678fdef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, pluralise const &amp;pluraliser)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/d54/structCatch_1_1pluralise" kindref="compound">pluralise</ref> const &amp;</type>
+          <declname>pluraliser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3217" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3214" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3214" bodyend="3221"/>
+    <listofallmembers>
+      <member refid="d2/d54/structCatch_1_1pluralise_1a4dce2fa13ec6f00fac09b2418265441e" prot="public" virt="non-virtual"><scope>Catch::pluralise</scope><name>m_count</name></member>
+      <member refid="d2/d54/structCatch_1_1pluralise_1a8849cbdd3f11ebe7747597c8644e8793" prot="public" virt="non-virtual"><scope>Catch::pluralise</scope><name>m_label</name></member>
+      <member refid="d2/d54/structCatch_1_1pluralise_1aa7dac6b165514c1f85e0695d678fdef5" prot="public" virt="non-virtual"><scope>Catch::pluralise</scope><name>operator&lt;&lt;</name></member>
+      <member refid="d2/d54/structCatch_1_1pluralise_1a5c55e22de2416cfe416edf715c6b9234" prot="public" virt="non-virtual"><scope>Catch::pluralise</scope><name>pluralise</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

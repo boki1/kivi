@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/d23/structCatch_1_1StringMaker_3_01unsigned_01char_0fSZ_0e_4" kind="struct" language="C++" prot="public">
+    <compoundname>Catch::StringMaker&lt; unsigned char[SZ]&gt;</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>SZ</declname>
+        <defname>SZ</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dc/d23/structCatch_1_1StringMaker_3_01unsigned_01char_0fSZ_0e_4_1a590d64c72b0cc75c113f1eea95d52b66" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Catch::StringMaker&lt; unsigned char[SZ]&gt;::convert</definition>
+        <argsstring>(unsigned char const *str)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>unsigned char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1722" column="28" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1722" bodyend="1724"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1721" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1721" bodyend="1725"/>
+    <listofallmembers>
+      <member refid="dc/d23/structCatch_1_1StringMaker_3_01unsigned_01char_0fSZ_0e_4_1a590d64c72b0cc75c113f1eea95d52b66" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; unsigned char[SZ]&gt;</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

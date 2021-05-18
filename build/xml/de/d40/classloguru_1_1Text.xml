@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d40/classloguru_1_1Text" kind="class" language="C++" prot="public">
+    <compoundname>loguru::Text</compoundname>
+    <includes refid="df/dec/loguru_8hpp" local="no">loguru.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d40/classloguru_1_1Text_1aa845d63ad65611d9ceca7f61eaeaa636" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* loguru::Text::_str</definition>
+        <argsstring></argsstring>
+        <name>_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="289" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d40/classloguru_1_1Text_1afffaf8a50cc4ca0d930b85ae4761ef61" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>loguru::Text::Text</definition>
+        <argsstring>(char *owned_str)</argsstring>
+        <name>Text</name>
+        <param>
+          <type>char *</type>
+          <declname>owned_str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="259" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="259" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d40/classloguru_1_1Text_1a86570e87bdf9ff9dde40fa88ca3281a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::Text::~Text</definition>
+        <argsstring>()</argsstring>
+        <name>~Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="262" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="484" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d40/classloguru_1_1Text_1a2b1e4ea540b597a356dfa4a507bc53d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>loguru::Text::Text</definition>
+        <argsstring>(Text &amp;&amp;t)</argsstring>
+        <name>Text</name>
+        <param>
+          <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref> &amp;&amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="263" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="263" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d40/classloguru_1_1Text_1aa1063d113ce007a3643795bad626e04b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>loguru::Text::Text</definition>
+        <argsstring>(Text &amp;t)=delete</argsstring>
+        <name>Text</name>
+        <param>
+          <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d40/classloguru_1_1Text_1a155370e239313634420310a708b1d62e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref> &amp;</type>
+        <definition>Text&amp; loguru::Text::operator=</definition>
+        <argsstring>(Text &amp;t)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="269" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d40/classloguru_1_1Text_1a2565d0d69db1751a8e956cb4d53a13d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void loguru::Text::operator=</definition>
+        <argsstring>(Text &amp;&amp;t)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref> &amp;&amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="270" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d40/classloguru_1_1Text_1a90acf675c1c2b178d455799c63e05443" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* loguru::Text::c_str</definition>
+        <argsstring>() const</argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="272" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d40/classloguru_1_1Text_1acac2de193f211202ae4c18d1e845f0e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool loguru::Text::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="276" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d40/classloguru_1_1Text_1a12033e376719ce1ddbccf51ff390bc90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* loguru::Text::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="281" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="281" bodyend="286"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="256" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="257" bodyend="290"/>
+    <listofallmembers>
+      <member refid="de/d40/classloguru_1_1Text_1aa845d63ad65611d9ceca7f61eaeaa636" prot="private" virt="non-virtual"><scope>loguru::Text</scope><name>_str</name></member>
+      <member refid="de/d40/classloguru_1_1Text_1a90acf675c1c2b178d455799c63e05443" prot="public" virt="non-virtual"><scope>loguru::Text</scope><name>c_str</name></member>
+      <member refid="de/d40/classloguru_1_1Text_1acac2de193f211202ae4c18d1e845f0e2" prot="public" virt="non-virtual"><scope>loguru::Text</scope><name>empty</name></member>
+      <member refid="de/d40/classloguru_1_1Text_1a155370e239313634420310a708b1d62e" prot="public" virt="non-virtual"><scope>loguru::Text</scope><name>operator=</name></member>
+      <member refid="de/d40/classloguru_1_1Text_1a2565d0d69db1751a8e956cb4d53a13d7" prot="public" virt="non-virtual"><scope>loguru::Text</scope><name>operator=</name></member>
+      <member refid="de/d40/classloguru_1_1Text_1a12033e376719ce1ddbccf51ff390bc90" prot="public" virt="non-virtual"><scope>loguru::Text</scope><name>release</name></member>
+      <member refid="de/d40/classloguru_1_1Text_1afffaf8a50cc4ca0d930b85ae4761ef61" prot="public" virt="non-virtual"><scope>loguru::Text</scope><name>Text</name></member>
+      <member refid="de/d40/classloguru_1_1Text_1a2b1e4ea540b597a356dfa4a507bc53d9" prot="public" virt="non-virtual"><scope>loguru::Text</scope><name>Text</name></member>
+      <member refid="de/d40/classloguru_1_1Text_1aa1063d113ce007a3643795bad626e04b" prot="public" virt="non-virtual"><scope>loguru::Text</scope><name>Text</name></member>
+      <member refid="de/d40/classloguru_1_1Text_1a86570e87bdf9ff9dde40fa88ca3281a4" prot="public" virt="non-virtual"><scope>loguru::Text</scope><name>~Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
