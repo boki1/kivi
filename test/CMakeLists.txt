@@ -43,3 +43,10 @@ add_executable(test__parser frontend/parser.test.cc)
 target_link_libraries(test__parser PUBLIC test_main)
 add_test(NAME Parser
         COMMAND test__parser)
+
+############################## IR
+
+add_executable(test__ir_gen frontend/ir_generation.test.cc)
+target_link_libraries(test__ir_gen PUBLIC test_main)
+add_test(NAME IR
+        COMMAND test__ir_gen)

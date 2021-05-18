@@ -1,3 +1,7 @@
+/**
+ * @file generation_unit.hh
+ * @brief Defines an class which represents an IR generation unit
+ */
 #ifndef KIVI_CONCRETE_CODES_HH
 #define KIVI_CONCRETE_CODES_HH
 
@@ -7,106 +11,119 @@
 #include "ir_code.hh"
 #include <parser/syntax.hh>
 
-namespace intermediate_representation {
-    class generation_unit {
-        /// All three address codes used in a unit to be generated
-        std::vector<std::shared_ptr<tac>> m_all_tacs{};
+using std::unique_ptr;
 
-        /// Number of parameters in each function
-        std::map<std::string, std::size_t> m_function_parameters{};
+namespace intermediate_representation
+{
+	/**
+	 * @brief Unit which is responsible for translating a given AST into a sequence of TAC's (Three-Address Code)
+	 */
+	class generation_unit
+	{
+	 public:
+		typedef std::map<std::string, tac*> label_entries_type;            //< Used for mapping labels (functions) and their associated _first_ TAC
+		typedef std::map<std::string, std::size_t> parameter_count_type;    //< Used for mapping the number of parameters to their function
 
-        /// The entry point address of each function
-        std::map<std::string, std::shared_ptr<tac>> m_entry_points{};
+	 private:
+		/// All three address codes used in a unit to be generated
+		std::vector<unique_ptr<tac>> m_tacs{};
 
-        std::string m_string_constants;
+		/// Number of parameters in each function
+		parameter_count_type m_function_parameters{};
 
-    public:
-        class generation_context {
-            /// The number of the next register
-            tac::fake_register_type m_counter;
+		/// The entry point address of each function
+		label_entries_type m_entry_points{};
 
-            /// Pointer to the next instruction address
-            std::shared_ptr<std::shared_ptr<tac>> m_target;
+	 public:
+		/**
+		 * @brief This class keeps track of all additional information used during the process of IR generation
+		 * @note Full definition in generation_context.hh
+		 */
+		class generation_context;
 
-            /// Relation between AST variables and their register indexes
-            std::map<std::size_t, tac::fake_register_type> m_map;
+	 public:
 
-        public:
-            generation_context(int counter, std::shared_ptr<std::shared_ptr<tac>> target);
+		/// Default construction only required
 
-            [[nodiscard]] tac::fake_register_type counter();
+	 public:
 
-            [[nodiscard]] std::shared_ptr<std::shared_ptr<tac>> &target();
+		/// Instantiates a context for the given function and returns it
+		generation_unit::generation_context
+		prepare_context(const syntax_analyzer::function& function);
 
-            [[nodiscard]] std::map<std::size_t, tac::fake_register_type> &map();
+	 public: // Concrete generators (concrete_generators.cc)
 
-            [[nodiscard]] tac::fake_register_type increase_counter();
-        };
+		void generate_sequence(const syntax_analyzer::expression& e, generation_context& gtx);
+//		void generate_addition(const syntax_analyzer::expression& e, generation_context& gtx);
+//		void generate_multiplication(const syntax_analyzer::expression& e, generation_context& gtx);
+//		void generate_division(const syntax_analyzer::expression& e, generation_context& gtx);
+//		void generate_modulo(const syntax_analyzer::expression& e, generation_context& gtx);
+//		void generate_equality(const syntax_analyzer::expression& e, generation_context& gtx);
 
-    public:
-        static std::unique_ptr<tac>
-        define_tac(const std::vector<tac::fake_register_type> &operands);
+		void generate_copy(const syntax_analyzer::expression& e, generation_context& gtx);
+		void generate_funcall(const syntax_analyzer::expression& e, generation_context& gtx);
+		void generate_number(const syntax_analyzer::expression& e, generation_context& gtx);
+		void generate_return(const syntax_analyzer::expression& e, generation_context& gtx);
+		void generate_nop(const syntax_analyzer::expression& e, generation_context& gtx);
+		void generate_negation(const syntax_analyzer::expression& e, generation_context& gtx);
+		void generate_identifier(const syntax_analyzer::expression& e, generation_context& gtx);
 
-        static std::unique_ptr<tac>
-        define_tac(std::string ident_name, const std::vector<tac::fake_register_type> &operands);
+		void generate_conditional(const syntax_analyzer::expression& e, generation_context& gtx);
+//		void generate_if(const syntax_analyzer::expression& e, generation_context& gtx);
+//		void generate_while(const syntax_analyzer::expression& e, generation_context& gtx);
 
-        /*
-         * The definitions of the three address code instructions and their operands
-         */
-        std::shared_ptr<tac> &
-        define_tac(const std::unique_ptr<tac> &tac_code);
+	 public: // TAC concrete constructors (codes.cc)
+		[[nodiscard]] tac* tac_nop();
+		[[nodiscard]] tac* tac_init(const std::string& ident_name, const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_add(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_neg(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_copy(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_read(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_write(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_eq(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_ifnz(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_fcall(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_return(const tac::operands_type& operands);
 
-        std::shared_ptr<tac>
-        tac_nop();
+		/*
+		 * The definitions of the three address code instructions and their operands
+		 */
+		tac*
+		define_tac(const tac& code);
 
-        std::shared_ptr<tac>
-        tac_init(const std::string &ident_name, const std::vector<tac::fake_register_type> &operands);
+		tac::vregister_type
+		generate_ir(const syntax_analyzer::expression& code, generation_context& ctx);
 
-        std::shared_ptr<tac>
-        tac_add(const std::vector<tac::fake_register_type> &operands);
+		void
+		generate_function(const syntax_analyzer::function& function);
 
-        std::shared_ptr<tac>
-        tac_neg(const std::vector<tac::fake_register_type> &operands);
+		void
+		generate(const std::vector<syntax_analyzer::function>& ctx_functions);
 
-        std::shared_ptr<tac>
-        tac_copy(const std::vector<tac::fake_register_type> &operands);
+	 public: // Getters
+		[[nodiscard]] const std::vector<unique_ptr<tac>>&
+		tacs()
+		{
+			return m_tacs;
+		}
 
-        std::shared_ptr<tac>
-        tac_read(const std::vector<tac::fake_register_type> &operands);
+		[[nodiscard]] /* mut */ parameter_count_type&
+		function_parameters_mut()
+		{
+			return m_function_parameters;
+		}
 
-        std::shared_ptr<tac>
-        tac_write(const std::vector<tac::fake_register_type> &operands);
+		[[nodiscard]] /* mut */ label_entries_type&
+		entry_points_mut()
+		{
+			return m_entry_points;
+		}
 
-        std::shared_ptr<tac>
-        tac_eq(const std::vector<tac::fake_register_type> &operands);
-
-        std::shared_ptr<tac>
-        tac_ifnz(const std::vector<tac::fake_register_type> &operands);
-
-        std::shared_ptr<tac>
-        tac_fcall(const std::vector<tac::fake_register_type> &operands);
-
-        std::shared_ptr<tac>
-        tac_rtrn(const std::vector<tac::fake_register_type> &operands);
-
-        tac::fake_register_type
-        generate_ir(const syntax_analyzer::expression &code, generation_context &ctx);
-
-        void
-        generate_function(const syntax_analyzer::function &function);
-
-        void
-        generate(const std::vector<syntax_analyzer::function> &ctx_functions);
-
-    public:
-        [[nodiscard]] std::vector<std::shared_ptr<tac>> & all_tacs();
-
-        [[nodiscard]] std::map<std::string, std::size_t> & function_parameters();
-
-        [[nodiscard]] std::map<std::string, std::shared_ptr<tac>> & entry_points();
-
-        [[nodiscard]] std::string & string_constants();
-
-    };
+		[[nodiscard]] const label_entries_type&
+		entry_points()
+		{
+			return m_entry_points;
+		}
+	};
 }
 #endif //KIVI_CONCRETE_CODES_HH

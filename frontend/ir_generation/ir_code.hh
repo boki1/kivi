@@ -8,76 +8,163 @@
 #include <variant>
 #include <string_view>
 
-namespace intermediate_representation {
-    class tac {
-    public:
-        /// The indexes of the fake registers
-        typedef int fake_register_type;
-        /**
-         * @brief Enumeration class containing all the the three - address codes that KIVI uses
-         */
-        enum class tac_type {
-            Nop,            //< No operation
-            Init,           //< Store a pointer to a value at address &identifier + offset where identifier is a function's base
-            Add,            //< Perform addition
-            Negate,         //< Negation
-            Copy,           //< Assign a copy of another variable
-            Read,           //< Read from address
-            Write,          //< Write at address
-            Equals,         //< Whether two values are equal
-            IfNotZero,      //< Perform branch if not zero
-            FunctionCall,   //< Function call
-            Return          //< Return value
-        };
+namespace intermediate_representation
+{
+	/**
+	 * @brief Three-Address Code
+	 * @details Used to represent each individual "fake" instruction
+	 */
+	class tac
+	{
+	 public:
+		typedef tac* tac_ptr;                     //< The type used for TAC chaining
+		typedef int vregister_type;                          //< The indexes of the "fake" (virtual) registers
+		typedef std::vector<vregister_type> operands_type;        //< Used to represent all virtual register operands for the current TAC
 
-    private:
-        /// The type of the tac
-        tac::tac_type m_type{tac_type::Nop};
 
-        /// Reference to functions name (label)
-        /// @note empty = none
-        std::string m_identifier{};
+		/**
+		 * @brief Enumeration class containing all the three-address codes
+		 */
+		enum class type
+		{
+			Nop,            //< No operation
+			Init,           //< Store a pointer to a value at address &identifier + offset where identifier is a function's base
+			Add,            //< Perform addition
+			Negate,         //< Negation
+			Copy,           //< Assign a copy of another variable
+			Read,           //< Read from address
+			Write,          //< Write at address
+			Equals,         //< Whether two values are equal
+			IfNotZero,      //< Perform branch if not zero
+			FunctionCall,   //< Function call
+			Return          //< Return value
+		};
 
-        /// Offset
-        off_t m_value{};
+	 private:
+		/// The type of the tac. Default value is type::Nop
+		tac::type m_type{ type::Nop };
 
-        /// Pointer to next statement in the chain. The end is marked with nullptr
-        std::shared_ptr<tac> m_next{nullptr};
+		/// Reference to function's name (label)
+		/// @note empty = none
+		std::string m_identifier{};
 
-        /// Used for IfNotZero - if var[p0] <> 0, m_condition overrides next.
-        std::shared_ptr<tac> m_condition{nullptr};
+		/// Offset
+		int m_value{};
 
-        /// Variable indexes
-        std::vector<fake_register_type> m_operands{};
+		/// Pointer to next statement in the chain
+		/// The end is marked with nullptr
+		tac_ptr m_next{ nullptr };
 
-    public:
-        tac() = default;
+		/// Used _only_ for the IfNotZero TAC
+		/// if var[p0] <> 0, m_condition overrides next.
+		std::optional<tac_ptr> m_condition{};
 
-        tac(tac_type tac_type);
+		/// Contains all virtual registers used
+		tac::operands_type m_operands{};
 
-        tac(tac_type tac_type, std::vector<fake_register_type> operands);
+	 public:    // Ctors
 
-        tac(std::string_view ident_str, int val, const std::vector<fake_register_type> &operands);
+		/// Default construction
+		tac() = default;
 
-        tac(std::shared_ptr<tac>  b, std::vector<fake_register_type> operands,
-            tac::tac_type type = tac::tac_type::IfNotZero);
+		/// Copy construction
+		tac(const tac&) = default;
 
-        tac(std::vector<fake_register_type> operands);
+		/// Manual construction - all fields
+		explicit tac(type tac_type,
+			const operands_type& operands = {},
+			int value = {},
+			const std::string& i = {},
+			const tac_ptr& next = { nullptr },
+			const std::optional<tac_ptr>& condition = {});
 
-        tac(std::string ident_name, std::vector<fake_register_type> operands);
+		/// Init construction
+		tac(const std::string& str, int value, const tac::operands_type& operands);
 
-        ~tac() = default;
+		tac(const std::string& i, const tac::operands_type& operands);
 
-    public:
+		/// IfNotZero _only_ construction
+		tac(const tac_ptr& branch, const tac::operands_type& operands);
 
-    public:
-        [[nodiscard]] tac_type type() const;
-        [[nodiscard]] std::string identifier() const;
-        [[nodiscard]] off_t value() const;
-        [[nodiscard]] std::shared_ptr<tac> &next();
-        [[nodiscard]] std::shared_ptr<tac> &condition();
-        [[nodiscard]] const std::vector<fake_register_type> &operands() const;
-    };
+		/// Nop construction
+		explicit tac(const tac::operands_type& operands);
+
+	 public:    // Getters
+		[[nodiscard]] tac::type
+		get_type() const
+		{
+			return m_type;
+		}
+
+		[[nodiscard]] const std::string&
+		identifier() const
+		{
+			return m_identifier;
+		}
+
+		[[nodiscard]] const int
+		value() const
+		{
+			return m_value;
+		}
+
+		[[nodiscard]] const tac_ptr&
+		next()
+		{
+			return m_next;
+		}
+
+		[[nodiscard]] /* mut */ tac_ptr&
+		next_mut()
+		{
+			return m_next;
+		}
+
+		[[nodiscard]] const std::optional<tac_ptr>&
+		condition()
+		{
+			return m_condition;
+		}
+
+		[[nodiscard]] /* mut */ std::optional<tac_ptr>&
+		condition_mut()
+		{
+			return m_condition;
+		}
+
+		[[nodiscard]] const std::vector<vregister_type>&
+		operands() const
+		{
+			return m_operands;
+		}
+
+		//!
+		//! Concrete TAC "named constructors"
+		//! @note `tac` stands for Three-Address Code
+
+		[[nodiscard]] tac* tac_nop();
+
+		[[nodiscard]] tac* tac_init(const std::string& ident_name, const tac::operands_type& operands);
+
+		[[nodiscard]] tac* tac_add(const tac::operands_type& operands);
+
+		[[nodiscard]] tac* tac_neg(const tac::operands_type& operands);
+
+		[[nodiscard]] tac* tac_copy(const tac::operands_type& operands);
+
+		[[nodiscard]] tac* tac_read(const tac::operands_type& operands);
+
+		[[nodiscard]] tac* tac_write(const tac::operands_type& operands);
+
+		[[nodiscard]] tac* tac_eq(const tac::operands_type& operands);
+
+		[[nodiscard]] tac* tac_ifnz(const tac::operands_type& operands);
+
+		[[nodiscard]] tac* tac_fcall(const tac::operands_type& operands);
+
+		[[nodiscard]] tac* tac_return(const tac::operands_type& operands);
+	};
+
 }
 
 #endif //KIVI_IR_CODE_HH

@@ -22,3 +22,7 @@ build
 # Docs/
 docs/gh-pages
 docs/build
+
+# Kdevelop
+*.kdev4
+.kdev4
