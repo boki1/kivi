@@ -52,6 +52,6 @@ Some of the next things which are going to be implemented:
 
 **Useful links**
 
-[Code documentation](doc-build/index.html)
+[Code documentation](doc-build/html/index.html)
 
 [GitHub repository](https://github.com/boki1/kivi)
