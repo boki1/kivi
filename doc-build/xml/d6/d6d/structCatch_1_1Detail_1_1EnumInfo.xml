@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1465" column="23" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1465" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1465" column="23" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1465" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d6/d6d/structCatch_1_1Detail_1_1EnumInfo_1ad65c0537a50d375859295a2c18ade489" prot="public" static="no" mutable="no">
         <type>std::vector&lt; std::pair&lt; int, <ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref> &gt; &gt;</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1466" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1466" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1466" column="25" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1466" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1468" column="13"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1468" column="13"/>
       </memberdef>
       <memberdef kind="function" id="d6/d6d/structCatch_1_1Detail_1_1EnumInfo_1a2fdfacc411d7afb1cb690366e5e49cb3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1470" column="23"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1470" column="23"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -80,7 +80,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1464" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1464" bodyend="1471"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1464" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1464" bodyend="1471"/>
     <listofallmembers>
       <member refid="d6/d6d/structCatch_1_1Detail_1_1EnumInfo_1a2fdfacc411d7afb1cb690366e5e49cb3" prot="public" virt="non-virtual"><scope>Catch::Detail::EnumInfo</scope><name>lookup</name></member>
       <member refid="d6/d6d/structCatch_1_1Detail_1_1EnumInfo_1a16ecfd3a7e11439433aabbdf6ecb676c" prot="public" virt="non-virtual"><scope>Catch::Detail::EnumInfo</scope><name>m_name</name></member>

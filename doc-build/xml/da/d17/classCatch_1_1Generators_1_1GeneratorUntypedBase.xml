@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3845" column="13"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3845" column="13"/>
       </memberdef>
       <memberdef kind="function" id="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a6f05f8099fdc5744a7aff68aa8c09c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3846" column="21"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3846" column="21"/>
       </memberdef>
       <memberdef kind="function" id="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1aeed3c0cd6233c5f553549e453b8d6638" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3851" column="26"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3851" column="26"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -166,7 +166,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3843" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3843" bodyend="3852"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3843" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3843" bodyend="3852"/>
     <listofallmembers>
       <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a00ff0179d739c3016756b6cf56fabbad" prot="public" virt="non-virtual"><scope>Catch::Generators::GeneratorUntypedBase</scope><name>GeneratorUntypedBase</name></member>
       <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1aeed3c0cd6233c5f553549e453b8d6638" prot="public" virt="pure-virtual"><scope>Catch::Generators::GeneratorUntypedBase</scope><name>next</name></member>

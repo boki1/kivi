@@ -26,14 +26,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1710" column="28" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1710" bodyend="1712"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1710" column="28" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1710" bodyend="1712"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1709" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1709" bodyend="1713"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1709" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1709" bodyend="1713"/>
     <listofallmembers>
       <member refid="d6/d92/structCatch_1_1StringMaker_3_01char_0fSZ_0e_4_1a095e415534f9145300271befe9853357" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; char[SZ]&gt;</scope><name>convert</name></member>
     </listofallmembers>

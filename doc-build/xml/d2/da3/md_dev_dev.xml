@@ -7,11 +7,11 @@
     </briefdescription>
     <detaileddescription>
 <para><bold>Building</bold></para>
-<para>In order to build the kivi compiler, first checkout the /home/boki/.<ref refid="d3/d7c/dev_2requirements_8md" kindref="compound">tmp/kivi/docs/dev/requirements.md</ref> &quot;requirements page&quot;. After that, in order run <computeroutput>./tools/build.sh</computeroutput> to actually build the binary. Having done that, you are ready to go - either <computeroutput>./tools/run.sg source_file.kv</computeroutput> to compile your source file or <computeroutput>./tools/test.sh</computeroutput> in order to run the test cases for the project.</para>
+<para>In order to build the kivi compiler, first checkout the <ref refid="d7/da7/md_dev_requirements" kindref="compound">requirements page</ref>. After that, in order run <computeroutput>./tools/build.sh</computeroutput> to actually build the binary. Having done that, you are ready to go - either <computeroutput>./tools/run.sg source_file.kv</computeroutput> to compile your source file or <computeroutput>./tools/test.sh</computeroutput> in order to run the test cases for the project.</para>
 <para><bold>Conventions</bold></para>
-<para>Checkout /home/boki/.<ref refid="d6/d85/dev_2conventions_8md" kindref="compound">tmp/kivi/docs/dev/conventions.md</ref> &quot;this&quot; file for an in-depth look.</para>
+<para>Checkout <ref refid="db/d98/md_dev_conventions" kindref="compound">this</ref> file for an in-depth look.</para>
 <para><bold>Cpp20</bold></para>
-<para>C++20 is now available so some modifications have been enabled. Check /home/boki/.<ref refid="d8/db9/dev_2cpp17__to__cpp20_8md" kindref="compound">tmp/kivi/docs/dev/cpp17_to_cpp20.md</ref> &quot;this&quot; file for more information. </para>
+<para>C++20 is now available so some modifications have been enabled. Check <ref refid="dc/df2/md_dev_cpp17_to_cpp20" kindref="compound">this</ref> file for more information. </para>
     </detaileddescription>
     <location file="dev/dev.md"/>
   </compounddef>

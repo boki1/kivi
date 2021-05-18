@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ast_20printer_3109',['AST printer',['../dd/d9e/md__home_boki__tmp_kivi_utils_ast_printer_README.html',1,'']]]
+  ['code_20convention_3310',['Code convention',['../db/d98/md_dev_conventions.html',1,'']]],
+  ['cpp17_20to_20cpp20_20transition_3311',['Cpp17 to Cpp20 transition',['../dc/df2/md_dev_cpp17_to_cpp20.html',1,'']]]
 ];

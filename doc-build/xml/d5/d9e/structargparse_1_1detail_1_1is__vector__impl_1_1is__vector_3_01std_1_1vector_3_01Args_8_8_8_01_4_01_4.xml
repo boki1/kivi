@@ -37,7 +37,7 @@
         <label>std::true_type</label>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="103" column="1" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="103" bodyend="103"/>
+    <location file="/home/boki/KIVI/extern/argparse/argparse.h" line="103" column="1" bodyfile="/home/boki/KIVI/extern/argparse/argparse.h" bodystart="103" bodyend="103"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

@@ -22,14 +22,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="955" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="955" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="955" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="955" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="953" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="954" bodyend="956"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="953" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="954" bodyend="956"/>
     <listofallmembers>
       <member refid="df/dd5/structloguru_1_1decay__char__array_3_01const_01char_07_6_08_0fN_0e_4_1a3f1fca8426c193956a4d0b38590dfaf1" prot="public" virt="non-virtual"><scope>loguru::decay_char_array&lt; const char(&amp;)[N]&gt;</scope><name>type</name></member>
     </listofallmembers>

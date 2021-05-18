@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>The Kivi Programming Language</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md_home"/></para>
+<para><ulink url="https://postimg.cc/2qHmRHH7"><image type="html" name="https://i.postimg.cc/PxHqD9Y9/kiwi.png" alt="Kivi logo" inline="yes"></image>
+</ulink></para>
+<para><hruler/>
+ <emphasis>NB!!! The Kivi programming language is a school project and does not purport for uniqueness nor innovation!</emphasis></para>
+<para><hruler/>
+</para>
+<sect1 id="index_1autotoc_md17">
+<title>Welcome to &lt;strong&gt;The Kivi programming language&lt;/strong&gt;!</title>
+<para>Kivi is a compiler for a simplified C-like language created as a course project for the subject Software Development in TUES. The principle objectives for us, the creators, are to learn about the fundamental ideas and design principles associated with compiler and programming language design.</para>
+<sect2 id="index_1autotoc_md18">
+<title>Docs</title>
+<para><ulink url="https://boki1.github.io/kivi"><image type="html" name="https://cdn.iconscout.com/icon/free/png-256/documentation-1502741-1272951.png" inline="yes"></image>
+</ulink></para>
+</sect2>
+<sect2 id="index_1autotoc_md19">
+<title>Dev</title>
+<para><ulink url="https://boki1.github.io/kivi/dev/dev.html"><image type="html" name="https://i.ibb.co/4Sd29HN/gear-wheel.png" inline="yes"></image>
+</ulink> </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="home.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d43/md__home_boki_KIVI_test_frontend_README" kind="page">
+    <compoundname>md__home_boki_KIVI_test_frontend_README</compoundname>
+    <title>Frontend unit test</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This directory contains unit-tests for the frontend part of the compiler.</para>
+<para><hruler/>
+</para>
+<para><bold>Contents</bold></para>
+<para><computeroutput><ref refid="da/d7a/example_8test_8cc" kindref="compound">example.test.cc</ref></computeroutput> - This test is an example for how to use the <computeroutput>Catch2</computeroutput> library</para>
+<para><computeroutput><ref refid="dd/d36/config_8test_8cc" kindref="compound">config.test.cc</ref></computeroutput> - This tests whether the <computeroutput>Catch2</computeroutput> testing library was actually properly connected with the codebase.</para>
+<para><computeroutput><ref refid="d2/dfe/parsing__context_8test_8cc" kindref="compound">parsing_context.test.cc</ref></computeroutput> - This tests whether the <computeroutput>parsing_context</computeroutput> structure used during the syntactical analysis actually acts correctly </para>
+    </detaileddescription>
+    <location file="/home/boki/KIVI/test/frontend/README.md"/>
+  </compounddef>
+</doxygen>

@@ -47,7 +47,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2005" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2005" bodyend="2006"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2005" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2005" bodyend="2006"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

@@ -7,28 +7,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">##<sp/>The<sp/>Kivi<sp/>Programming<sp/>Language</highlight></codeline>
-<codeline></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">[![Kivi<sp/>logo](https://i.postimg.cc/PxHqD9Y9/kiwi.png)](https://postimg.cc/2qHmRHH7)</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">-------------</highlight></codeline>
-<codeline><highlight class="normal">*NB!!!<sp/>The<sp/>Kivi<sp/>programming<sp/>language<sp/>is<sp/>a<sp/>school<sp/>project<sp/>and<sp/>does<sp/>not<sp/>purport<sp/>for<sp/>uniqueness<sp/>nor<sp/>innovation!*</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">-----------</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">Welcome<sp/>to<sp/>**The<sp/>Kivi<sp/>programming<sp/>language**!</highlight></codeline>
-<codeline><highlight class="normal">==========================</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">Kivi<sp/>is<sp/>a<sp/>compiler<sp/>for<sp/>a<sp/>simplified<sp/>C-like<sp/>language<sp/>created<sp/>as<sp/>a<sp/>course<sp/>project<sp/>for<sp/>the<sp/>subject<sp/>Software<sp/>Development<sp/>in<sp/>TUES.<sp/>The<sp/>principle<sp/>objectives<sp/>for<sp/>us,<sp/>the<sp/>creators,<sp/>are<sp/>to<sp/>learn<sp/>about<sp/>the<sp/>fundamental<sp/>ideas<sp/>and<sp/>design<sp/>principles<sp/>associated<sp/>with<sp/>compiler<sp/>and<sp/>programming<sp/>language<sp/>design.</highlight></codeline>
-<codeline></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Docs</highlight></codeline>
-<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://boki1.github.io/kivi&quot;&gt;&lt;img<sp/>width=&quot;200px&quot;<sp/>height=&quot;200px&quot;<sp/><sp/>src=&quot;https://cdn.iconscout.com/icon/free/png-256/documentation-1502741-1272951.png&quot;/&gt;&lt;/a&gt;</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Dev</highlight></codeline>
-<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://boki1.github.io/kivi/dev/dev.html&quot;&gt;&lt;img<sp/>width=&quot;200px&quot;<sp/>height=&quot;200px&quot;<sp/><sp/>src=&quot;https://i.ibb.co/4Sd29HN/gear-wheel.png&quot;/&gt;&lt;/a&gt;</highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/README.md"/>
+    <location file="/home/boki/KIVI/README.md"/>
   </compounddef>
 </doxygen>

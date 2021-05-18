@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="161" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="161" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="161" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/ddc/structloguru_1_1Callback_1a2a1db8f3f1898836e3c7543f22131ff1" prot="public" static="no" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1aba0940a16e22182bdca1084d3f589808" kindref="member">log_handler_t</ref></type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="162" column="15" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="162" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="162" column="15" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/ddc/structloguru_1_1Callback_1a1caa3896afdaea7f09435d16a6016db5" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="163" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="163" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="163" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="163" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/ddc/structloguru_1_1Callback_1aacac7b8ce3aa6a39b62e8521caf8e4e5" prot="public" static="no" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="164" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="164" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="164" column="11" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/ddc/structloguru_1_1Callback_1a875464419fdc1c032ec0b4bf19a55f89" prot="public" static="no" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1a1a748df37fe8c36c3409f7a939eae31d" kindref="member">close_handler_t</ref></type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="165" column="17" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="165" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="165" column="17" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="165" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/ddc/structloguru_1_1Callback_1a47ec62e27ac69aae30521f8cbe57acee" prot="public" static="no" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1af587c5abb88f1d7644642e2ace229cb6" kindref="member">flush_handler_t</ref></type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="166" column="17" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="166" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="166" column="17" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/ddc/structloguru_1_1Callback_1a2a79ada09cb6187714ef0addd0e6858d" prot="public" static="no" mutable="no">
         <type>unsigned</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="167" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="167" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="167" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="167" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -112,7 +112,7 @@
         <link refid="d6/dee/structloguru_1_1Message"/>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="159" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="160" bodyend="168"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="159" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="160" bodyend="168"/>
     <listofallmembers>
       <member refid="d1/ddc/structloguru_1_1Callback_1a2a1db8f3f1898836e3c7543f22131ff1" prot="public" virt="non-virtual"><scope>loguru::Callback</scope><name>callback</name></member>
       <member refid="d1/ddc/structloguru_1_1Callback_1a875464419fdc1c032ec0b4bf19a55f89" prot="public" virt="non-virtual"><scope>loguru::Callback</scope><name>close</name></member>

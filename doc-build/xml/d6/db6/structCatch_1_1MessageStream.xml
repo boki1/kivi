@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2622" column="30" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2622" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2622" column="30" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2622" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2617" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2617" bodyend="2620"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2617" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2617" bodyend="2620"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -78,7 +78,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2614" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2614" bodyend="2623"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2614" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2614" bodyend="2623"/>
     <listofallmembers>
       <member refid="d6/db6/structCatch_1_1MessageStream_1a9202520faed8882ef469db9f353ec578" prot="public" virt="non-virtual"><scope>Catch::MessageStream</scope><name>m_stream</name></member>
       <member refid="d6/db6/structCatch_1_1MessageStream_1a554c4aff5925a077e9fe9d858217428d" prot="public" virt="non-virtual"><scope>Catch::MessageStream</scope><name>operator&lt;&lt;</name></member>

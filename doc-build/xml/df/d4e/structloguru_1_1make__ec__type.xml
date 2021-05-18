@@ -20,14 +20,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="973" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="973" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="973" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="973" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="971" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="972" bodyend="974"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="971" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="972" bodyend="974"/>
     <listofallmembers>
       <member refid="df/d4e/structloguru_1_1make__ec__type_1af897663dabd4b6f59405e9bea02fdcda" prot="public" virt="non-virtual"><scope>loguru::make_ec_type</scope><name>type</name></member>
     </listofallmembers>

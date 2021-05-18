@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pe_2583',['pe',['../d5/dfa/namespacecli.html#a8ca7573e9d726fa3664925551e2b8d6a',1,'cli']]],
-  ['printer_2584',['Printer',['../de/d7c/classloguru_1_1EcEntryData.html#a4e4738a2eb975b3c15a66858cf7f8629',1,'loguru::EcEntryData']]]
+  ['operands_5ftype_2769',['operands_type',['../d1/dc9/classintermediate__representation_1_1tac.html#abfcc782036a2cfe2a8fdbded6c4c95a6',1,'intermediate_representation::tac']]],
+  ['opers_5ftype_2770',['opers_type',['../dc/d6c/codes_8cc.html#a64dee6b451fc588a53deaff3503d3f61',1,'codes.cc']]]
 ];

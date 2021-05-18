@@ -37,14 +37,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4475" column="20" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4475" bodyend="4479"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4475" column="20" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="4475" bodyend="4479"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4475" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4475" bodyend="4479"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4475" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="4475" bodyend="4479"/>
     <listofallmembers>
       <member refid="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3a516a40a437d6ff29898e2fa93bca8f82" prot="public" virt="non-virtual"><scope>Catch::WarnAbout</scope><name>NoAssertions</name></member>
       <member refid="de/dcf/structCatch_1_1WarnAbout_1ae3dde70ef78d700ea896eb29314e0fa3ab449dacc48055ee886a4a7aa283db556" prot="public" virt="non-virtual"><scope>Catch::WarnAbout</scope><name>NoTests</name></member>

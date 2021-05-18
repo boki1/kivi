@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="895" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="895" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="895" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="895" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/d28/classloguru_1_1EcEntryBase_1aeb854af3a713401ba619c4a26b5fbb0a" prot="public" static="no" mutable="no">
         <type>unsigned</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="896" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="896" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="896" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="896" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/d28/classloguru_1_1EcEntryBase_1a68dc2d49b602fbeaba578e9e357100ce" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="897" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="897" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="897" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="897" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/d28/classloguru_1_1EcEntryBase_1ade23be6579f259f90d81ce6d36332863" prot="public" static="no" mutable="no">
         <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> *</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="898" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="898" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="898" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="898" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="880" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1967" bodyend="1973"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="880" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1967" bodyend="1973"/>
       </memberdef>
       <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a6c921bd8e98ae6dbf0e39003b4b567fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="881" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1975" bodyend="1978"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="881" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1975" bodyend="1978"/>
       </memberdef>
       <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1aa900637d961a054b7e0db2d0dfb76bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="882" column="1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="882" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a49ecc1cd5c08ddd8358c7784a52d3940" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="883" column="1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="883" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a883b04cbd1cd2a45066099fd5dd6d3da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> &amp;</type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="884" column="13"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="884" column="13"/>
       </memberdef>
       <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a326c8204d74626080ec25662100559b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> &amp;</type>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="885" column="13"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="885" column="13"/>
       </memberdef>
       <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a886f464f9b4415c01360f1889e0513eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -177,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="887" column="14"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="887" column="14"/>
       </memberdef>
       <memberdef kind="function" id="d3/d28/classloguru_1_1EcEntryBase_1a6a718612865ebf161d27c9a2c8c28f24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> *</type>
@@ -190,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="889" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="889" bodyend="892"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="889" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="889" bodyend="892"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -218,7 +218,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="877" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="878" bodyend="899"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="877" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="878" bodyend="899"/>
     <listofallmembers>
       <member refid="d3/d28/classloguru_1_1EcEntryBase_1a68dc2d49b602fbeaba578e9e357100ce" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>_descr</name></member>
       <member refid="d3/d28/classloguru_1_1EcEntryBase_1a2973db9b0f3ed0e4e677a14180750d64" prot="public" virt="non-virtual"><scope>loguru::EcEntryBase</scope><name>_file</name></member>

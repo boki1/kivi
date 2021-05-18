@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_13e138d54eb8818da29c3992edef070a" kind="dir">
-    <compoundname>/home/boki/.tmp/kivi/test</compoundname>
-    <innerdir refid="dir_5a63852a171075d3b7a0447582be1d95">/home/boki/.tmp/kivi/test/backend</innerdir>
-    <innerdir refid="dir_c49559bd0fcee9c4e5f0bb420cee275a">/home/boki/.tmp/kivi/test/frontend</innerdir>
+    <compoundname>/home/boki/KIVI/test</compoundname>
+    <innerdir refid="dir_5a63852a171075d3b7a0447582be1d95">/home/boki/KIVI/test/backend</innerdir>
+    <innerdir refid="dir_c49559bd0fcee9c4e5f0bb420cee275a">/home/boki/KIVI/test/frontend</innerdir>
     <innerfile refid="dd/d36/config_8test_8cc">config.test.cc</innerfile>
+    <innerfile refid="da/d7a/example_8test_8cc">example.test.cc</innerfile>
+    <innerfile refid="de/d67/main_8test_8cc">main.test.cc</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/test/"/>
+    <location file="/home/boki/KIVI/test/"/>
   </compounddef>
 </doxygen>

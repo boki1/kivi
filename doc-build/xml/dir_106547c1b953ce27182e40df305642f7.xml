@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_106547c1b953ce27182e40df305642f7" kind="dir">
-    <compoundname>/home/boki/.tmp/kivi/extern/catch2</compoundname>
+    <compoundname>/home/boki/KIVI/extern/catch2</compoundname>
     <innerfile refid="df/dbf/catch2_8hpp">catch2.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/"/>
+    <location file="/home/boki/KIVI/extern/catch2/"/>
   </compounddef>
 </doxygen>

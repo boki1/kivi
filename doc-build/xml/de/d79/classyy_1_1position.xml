@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="91" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="91" bodyend="98"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="91" column="10" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="91" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="de/d79/classyy_1_1position_1ae37ef65518f43d6a0f64072e64199620" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="101" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="101" bodyend="104"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="101" column="10" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="101" bodyend="104"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-type">
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="64" column="31" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="64" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="64" column="31" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" prot="public" static="no">
         <type>int</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="66" column="17" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="66" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="66" column="17" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="66" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="108" column="19" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="108" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="108" column="19" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="de/d79/classyy_1_1position_1abfc7004e57d5d3f2d9bd7f2426896b77" prot="public" static="no" mutable="no">
         <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="110" column="18" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="110" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="110" column="18" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="de/d79/classyy_1_1position_1a6c55884c6d5fb8d3fc7158ad13deaff2" prot="public" static="no" mutable="no">
         <type><ref refid="de/d79/classyy_1_1position_1a268dbee9411e246a6a2aca1a2c81d6a7" kindref="member">counter_type</ref></type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="112" column="18" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="112" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="112" column="18" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="112" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="69" column="14" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="69" bodyend="75"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="69" column="14" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="69" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="de/d79/classyy_1_1position_1a98d4e93e632abc318b8a861f77a7e7b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -175,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="79" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="79" bodyend="86"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="79" column="10" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="79" bodyend="86"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -203,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="116" column="25" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="116" bodyend="119"/>
+        <location file="/home/boki/KIVI/frontend/parser/location.hh" line="116" column="25" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="116" bodyend="119"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -211,7 +211,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/location.hh" line="60" column="3" bodyfile="/home/boki/.tmp/kivi/frontend/parser/location.hh" bodystart="61" bodyend="120"/>
+    <location file="/home/boki/KIVI/frontend/parser/location.hh" line="60" column="3" bodyfile="/home/boki/KIVI/frontend/parser/location.hh" bodystart="61" bodyend="120"/>
     <listofallmembers>
       <member refid="de/d79/classyy_1_1position_1aa01dceb9dd33ef77530bd2e3b4fa62ef" prot="private" virt="non-virtual"><scope>yy::position</scope><name>add_</name></member>
       <member refid="de/d79/classyy_1_1position_1a6c55884c6d5fb8d3fc7158ad13deaff2" prot="public" virt="non-virtual"><scope>yy::position</scope><name>column</name></member>

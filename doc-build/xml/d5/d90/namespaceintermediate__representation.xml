@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/d90/namespaceintermediate__representation" kind="namespace" language="C++">
+    <compoundname>intermediate_representation</compoundname>
+    <innerclass refid="da/dea/classintermediate__representation_1_1generation__unit" prot="public">intermediate_representation::generation_unit</innerclass>
+    <innerclass refid="d1/dc9/classintermediate__representation_1_1tac" prot="public">intermediate_representation::tac</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/d90/namespaceintermediate__representation_1a1a02617e0aed574cd1915356bb5c7efe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void intermediate_representation::place_chain</definition>
+        <argsstring>(tac::tac_ptr code, const generation_unit::generation_context &amp;ctx)</argsstring>
+        <name>place_chain</name>
+        <param>
+          <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a6408f11ad47d8b1ff2cd71a52b093358" kindref="member">tac::tac_ptr</ref></type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_unit::generation_context</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>Places a chain of TAC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Common functions for modifying the tacs chain <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The &quot;head&quot; of the TAC chain </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The generation context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc" line="23" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d90/namespaceintermediate__representation_1adfeab5693aebed1eec34e1c609799a9f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+        <definition>static tac::vregister_type intermediate_representation::make_vreg</definition>
+        <argsstring>(gu::generation_context &amp;ctx, bool store_it=false)</argsstring>
+        <name>make_vreg</name>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">gu::generation_context</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>store_it</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Creates a new virtual register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The generation context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new virtual register </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc" line="35" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc" bodystart="35" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/KIVI/frontend/ir_generation/codes.cc" line="18" column="1"/>
+  </compounddef>
+</doxygen>

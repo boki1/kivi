@@ -2,82 +2,56 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="d5/dfa/namespacecli" kind="namespace" language="C++">
     <compoundname>cli</compoundname>
-    <innerclass refid="df/d62/structcli_1_1settings" prot="public">cli::settings</innerclass>
-      <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="d5/dfa/namespacecli_1a8ca7573e9d726fa3664925551e2b8d6a" prot="public" static="no">
-        <type><ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kindref="member">settings::print_stage_enum</ref></type>
-        <definition>using cli::pe = typedef settings::print_stage_enum</definition>
-        <argsstring></argsstring>
-        <name>pe</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="26" column="1" bodyfile="/home/boki/.tmp/kivi/utils/cli/cli.hh" bodystart="26" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="var">
-      <memberdef kind="variable" id="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="df/d62/structcli_1_1settings" kindref="compound">cli::settings</ref></type>
-        <definition>struct cli::settings cli::globals</definition>
-        <argsstring></argsstring>
-        <name>globals</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="24" column="9"/>
-      </memberdef>
-      </sectiondef>
+    <innerclass refid="dd/dcd/classcli_1_1options__set" prot="public">cli::options_set</innerclass>
       <sectiondef kind="func">
-      <memberdef kind="function" id="d5/dfa/namespacecli_1aa2e4349201a2f1a495642d706a82907a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d5/dfa/namespacecli_1a5c8afd5292066bd2e76d8e92fae11f9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
-        <definition>bool cli::should_print</definition>
-        <argsstring>(pe stage)</argsstring>
-        <name>should_print</name>
-        <param>
-          <type><ref refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kindref="member">pe</ref></type>
-          <declname>stage</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="29" column="1" bodyfile="/home/boki/.tmp/kivi/utils/cli/cli.hh" bodystart="29" bodyend="37"/>
-      </memberdef>
-      <memberdef kind="function" id="d5/dfa/namespacecli_1a7c557b921ffc48ad3e206d16ca501874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool cli::parse_arguments</definition>
-        <argsstring>(int argc, const char *argv[])</argsstring>
-        <name>parse_arguments</name>
+        <definition>bool cli::argument_parser</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>argument_parser</name>
         <param>
           <type>int</type>
           <declname>argc</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type>char *</type>
           <declname>argv</declname>
           <array>[]</array>
         </param>
         <briefdescription>
+<para>The &apos;main&apos; of the cli which should be called in order to process all the flags enabled on the command line. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the number of arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if success; 1 if fail </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="40" column="1" bodyfile="/home/boki/.tmp/kivi/utils/cli/cli.hh" bodystart="40" bodyend="103"/>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="105" column="1" bodyfile="/home/boki/KIVI/utils/cli/cli.cc" bodystart="120" bodyend="152" declfile="/home/boki/KIVI/utils/cli/cli.hh" declline="105" declcolumn="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/utils/cli/cli.hh" line="15" column="1"/>
+    <location file="/home/boki/KIVI/utils/cli/cli.hh" line="13" column="1"/>
   </compounddef>
 </doxygen>

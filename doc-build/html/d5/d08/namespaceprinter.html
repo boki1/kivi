@@ -88,6 +88,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aac96d10629fd998cd476471c7e344646"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d08/namespaceprinter.html#aac96d10629fd998cd476471c7e344646">print</a> (const <a class="el" href="../../db/df3/classsyntax__analyzer_1_1expression.html">sa::expression</a> &amp;, const std::string &amp;oper, const std::string &amp;separator, bool is_statement=false, unsigned skip_first_n=0) noexcept</td></tr>
 <tr class="memdesc:aac96d10629fd998cd476471c7e344646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints an operation.  <a href="../../d5/d08/namespaceprinter.html#aac96d10629fd998cd476471c7e344646">More...</a><br /></td></tr>
 <tr class="separator:aac96d10629fd998cd476471c7e344646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2ded5a286f71d12cac6cb131b15942"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d08/namespaceprinter.html#a1c2ded5a286f71d12cac6cb131b15942">print_ir</a> (<a class="el" href="../../d1/dc9/classintermediate__representation_1_1tac.html">ir::tac</a> *tac_code, std::ostream &amp;os)</td></tr>
+<tr class="separator:a1c2ded5a286f71d12cac6cb131b15942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927c641e5e91a350c4363e1b493466fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d08/namespaceprinter.html#a927c641e5e91a350c4363e1b493466fc">print_ir</a> (<a class="el" href="../../da/dea/classintermediate__representation_1_1generation__unit.html">intermediate_representation::generation_unit</a> &amp;gunit, std::ostream &amp;os)</td></tr>
+<tr class="separator:a927c641e5e91a350c4363e1b493466fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e808d611e0ca06c04d57e08bd0b87e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d08/namespaceprinter.html#a6e808d611e0ca06c04d57e08bd0b87e6">print_ir</a> (std::shared_ptr&lt; <a class="el" href="../../d1/dc9/classintermediate__representation_1_1tac.html">intermediate_representation::tac</a> &gt; &amp;<a class="el" href="../../d2/dfe/parsing__context_8test_8cc.html#a40036ceeca10849cabe2f0d92ffda83d">code</a>, std::ostream &amp;os)</td></tr>
+<tr class="separator:a6e808d611e0ca06c04d57e08bd0b87e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -302,6 +308,90 @@ Variables</h2></td></tr>
 
 <p>Print all functions. </p>
 <dl class="section return"><dt>Returns</dt><dd>The string representation of the graph </dd></dl>
+
+</div>
+</div>
+<a id="a927c641e5e91a350c4363e1b493466fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a927c641e5e91a350c4363e1b493466fc">&#9670;&nbsp;</a></span>print_ir() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printer::print_ir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/dea/classintermediate__representation_1_1generation__unit.html">intermediate_representation::generation_unit</a> &amp;&#160;</td>
+          <td class="paramname"><em>gunit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c2ded5a286f71d12cac6cb131b15942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2ded5a286f71d12cac6cb131b15942">&#9670;&nbsp;</a></span>print_ir() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printer::print_ir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/dc9/classintermediate__representation_1_1tac.html">ir::tac</a> *&#160;</td>
+          <td class="paramname"><em>tac_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e808d611e0ca06c04d57e08bd0b87e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e808d611e0ca06c04d57e08bd0b87e6">&#9670;&nbsp;</a></span>print_ir() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printer::print_ir </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="../../d1/dc9/classintermediate__representation_1_1tac.html">intermediate_representation::tac</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -22,36 +22,6 @@
       <node id="10">
         <label>ostream</label>
       </node>
-      <node id="17">
-        <label>random</label>
-      </node>
-      <node id="1">
-        <label>/home/boki/.tmp/kivi/test/config.test.cc</label>
-        <link refid="dd/d36/config_8test_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>vector</label>
-      </node>
-      <node id="16">
-        <label>utility</label>
-      </node>
-      <node id="3">
-        <label>iosfwd</label>
-      </node>
-      <node id="7">
-        <label>cstddef</label>
-      </node>
-      <node id="11">
-        <label>chrono</label>
-      </node>
-      <node id="9">
-        <label>type_traits</label>
-      </node>
-      <node id="15">
-        <label>algorithm</label>
-      </node>
       <node id="2">
         <label>catch2/catch2.hpp</label>
         <link refid="df/dbf/catch2_8hpp"/>
@@ -86,20 +56,56 @@
         <childnode refid="17" relation="include">
         </childnode>
       </node>
+      <node id="17">
+        <label>random</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="16">
+        <label>utility</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/test/config.test.cc</label>
+        <link refid="dd/d36/config_8test_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iosfwd</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="9">
+        <label>type_traits</label>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
       <node id="12">
         <label>memory</label>
       </node>
     </incdepgraph>
-      <sectiondef kind="define">
-      <memberdef kind="define" id="dd/d36/config_8test_8cc_1a656eb5868e824d59f489f910db438420" prot="public" static="no">
-        <name>CATCH_CONFIG_MAIN</name>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dd/d36/config_8test_8cc_1a296bcce58d553536a9d44771a8adbd78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;configure catch2&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;configure catch2&quot;</type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/test/config.test.cc" line="7" column="9" bodyfile="/home/boki/.tmp/kivi/test/config.test.cc" bodystart="7" bodyend="-1"/>
+        <location file="/home/boki/KIVI/test/config.test.cc" line="9" column="1" bodyfile="/home/boki/KIVI/test/config.test.cc" bodystart="9" bodyend="15"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -108,9 +114,16 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CATCH_CONFIG_MAIN</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="df/dbf/catch2_8hpp" kindref="compound">catch2/catch2.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="df/dbf/catch2_8hpp" kindref="compound">catch2/catch2.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="dd/d36/config_8test_8cc_1a296bcce58d553536a9d44771a8adbd78" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;configure<sp/>catch2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;it<sp/>works&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad57835ba8f1bb419a865ada6bd011a85" kindref="member">REQUIRE</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/test/config.test.cc"/>
+    <location file="/home/boki/KIVI/test/config.test.cc"/>
   </compounddef>
 </doxygen>

@@ -340,8 +340,10 @@
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3ff39d3acb327553070a64ef0cb321d5" kind="enumvalue"><name>Sequence</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a988fd738de9c6d177440c5dcf69e73ce" kind="enumvalue"><name>Return</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1aa1ba2036609a8236fe6d3433681d7ac3" kind="typedef"><name>terminal_type</name></member>
+    <member refid="db/df3/classsyntax__analyzer_1_1expression_1acefc5f0889ac011ac8fbdef7595e0a32" kind="typedef"><name>peculiar_type</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a5c1233c52b7bddf383264cbd0cc7afc7" kind="variable"><name>m_operands</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1aa96a117c462177b6c18977ea535ad8c8" kind="variable"><name>m_terminal_value</name></member>
+    <member refid="db/df3/classsyntax__analyzer_1_1expression_1a9a641978daf2d89895a4e4845aafa971" kind="variable"><name>m_peculiar</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1ac85273b0002c630c5eb87feaf98c4752" kind="variable"><name>m_type</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a962f8afc281fc33269f14ce9994ce375" kind="function"><name>expression</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1ab12acf17e3ab2997d901567dd8ccc6c2" kind="function"><name>expression</name></member>
@@ -351,6 +353,7 @@
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a498a7e05f8c8d7bea5fb8ae3927fd307" kind="function"><name>expression</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1aa00955e82e69a2ecf601cd417eee246d" kind="function"><name>expression</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a602f25498363cee345c05c1908be5094" kind="function"><name>expression</name></member>
+    <member refid="db/df3/classsyntax__analyzer_1_1expression_1a63572914631089d2dfa673469434aab4" kind="function"><name>expression</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a46508bdb2ed00d39a13100d4406830dc" kind="function"><name>operator=</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a9cae3ca524d55edf9b2902efa28bdb67" kind="function"><name>operator==</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1af18b9e6a60298b4d194206441d795ea6" kind="function"><name>operator!=</name></member>
@@ -358,9 +361,9 @@
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a551dd89bea2813d46a10ffc62e0d89c9" kind="function"><name>append</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a3c3c17370cc623030830d27b59e3a7b4" kind="function"><name>merge_with</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kind="function"><name>operands</name></member>
-    <member refid="db/df3/classsyntax__analyzer_1_1expression_1a617c7971cab175c2a5fbfe53da700287" kind="function"><name>add_operand</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a35b7a4d94014bf2d241ded6e52137494" kind="function"><name>operands_copy</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a91fb0b9285eb7478042d33f2d578ea29" kind="function"><name>terminal</name></member>
+    <member refid="db/df3/classsyntax__analyzer_1_1expression_1a952418c1a4b06be14444ce4f5a4178d3" kind="function"><name>peculiar</name></member>
     <member refid="db/df3/classsyntax__analyzer_1_1expression_1a1018dfb0d0d49eca484b9b10bf0b4db7" kind="function"><name>get_type</name></member>
   </compound>
   <compound refid="d9/d2f/classCatch_1_1ExprLhs" kind="class"><name>Catch::ExprLhs</name>
@@ -380,6 +383,10 @@
     <member refid="d9/d2f/classCatch_1_1ExprLhs_1ad85684f7b02a98eb1b5d03d4cbd8284b" kind="function"><name>operator&amp;&amp;</name></member>
     <member refid="d9/d2f/classCatch_1_1ExprLhs_1ae9b4ee923b90af22c9e39261c2f03cd3" kind="function"><name>operator||</name></member>
     <member refid="d9/d2f/classCatch_1_1ExprLhs_1ab68bd6d5d3ae21b7fba9010150fba95d" kind="function"><name>makeUnaryExpr</name></member>
+  </compound>
+  <compound refid="d4/da0/classfib__bad__arg__exception" kind="class"><name>fib_bad_arg_exception</name>
+    <member refid="d4/da0/classfib__bad__arg__exception_1a1d87bfd90742bc6a30824a7fca217d96" kind="variable"><name>m_bad_arg</name></member>
+    <member refid="d4/da0/classfib__bad__arg__exception_1aa6b84b593a27420dde2d8fa1913c59b6" kind="function"><name>fib_bad_arg_exception</name></member>
   </compound>
   <compound refid="d0/d2d/classCatch_1_1Generators_1_1FilterGenerator" kind="class"><name>Catch::Generators::FilterGenerator</name>
     <member refid="d0/d2d/classCatch_1_1Generators_1_1FilterGenerator_1a6fb6975b1401cf7bd7e76e3a542a45cf" kind="variable"><name>m_generator</name></member>
@@ -412,6 +419,57 @@
     <member refid="d7/d16/classsyntax__analyzer_1_1function_1a0ac7ccaeeaab497da6f81990a7387cef" kind="function"><name>parameters</name></member>
     <member refid="d7/d16/classsyntax__analyzer_1_1function_1a7d4c53a7aa46c4b777f94b4d01188139" kind="function"><name>body</name></member>
     <member refid="d7/d16/classsyntax__analyzer_1_1function_1aecaf19243d4fb7651fb79f7af4a0f5e4" kind="function"><name>to_string</name></member>
+  </compound>
+  <compound refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kind="class"><name>intermediate_representation::generation_unit::generation_context</name>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a12841a88e2e5cf6c6a28753a3d943a44" kind="typedef"><name>variable_index_type</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ac664f65e54edfa3d509ba960b015bbdc" kind="variable"><name>m_counter</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a457da2fb23797a218098f7ee8ca68c67" kind="variable"><name>m_vreg</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a31a7c01f743f515441dd380147f53fba" kind="variable"><name>m_target</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ae5b67e419225bc5f6918153dd58868f8" kind="variable"><name>m_map</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1aeced1c6491fc07f6a8bffb9577e0bfcb" kind="function"><name>generation_context</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ad060d33cd042e4d0c2f8a7e79ff2a673" kind="function"><name>store_vreg</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a28cda4774604edb44da02b0b73de0a07" kind="function"><name>load_vreg</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a01c6b0b4a7fb723fc9ed10683215f761" kind="function"><name>counter</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ae0ed011e11c03d95d98fbfdde0149f33" kind="function"><name>target</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a5c187217d8e15b63fce95a37a0e6ca9f" kind="function"><name>map</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a3d25b19c035184a098c33710b325c3f7" kind="function"><name>map_mut</name></member>
+    <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a2a6289bb1d2791d5760e5897ac3a849e" kind="function"><name>increase_counter</name></member>
+  </compound>
+  <compound refid="da/dea/classintermediate__representation_1_1generation__unit" kind="class"><name>intermediate_representation::generation_unit</name>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" kind="typedef"><name>label_entries_type</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a748a0ff5411d98928a381a8958309a38" kind="typedef"><name>parameter_count_type</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a570d342b242a2ea6dd141da8e591baa9" kind="variable"><name>m_tacs</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1abd9f1bcece9928c2364d41227c919202" kind="variable"><name>m_function_parameters</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a342593f698e650334bddbe03d9ac33fb" kind="variable"><name>m_entry_points</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1abb2972d5a7ca05ba6f14ce36f19ed763" kind="function"><name>prepare_context</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1aeaec4c6a2164f09d2442024afd780f37" kind="function"><name>generate_sequence</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a87335c4a4800042ba67b560494db6b34" kind="function"><name>generate_copy</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a2d4f40a654d429cd5225540ce9e4dfe8" kind="function"><name>generate_funcall</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a020cc91550e17268f68839f3b37954d2" kind="function"><name>generate_number</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a75117caa2cc27786717b60b2910a15fa" kind="function"><name>generate_return</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a9d7d4f0cad958234a39d710c9bd5cdce" kind="function"><name>generate_nop</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a32419904540ec2582a172a399d3b372c" kind="function"><name>generate_negation</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a3cf0d0c3e1b7639f35ffc2e20d50796e" kind="function"><name>generate_identifier</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a8d61192a557cb47caa44c49de589e58f" kind="function"><name>generate_conditional</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1aaf7c929d7855d1d47427dbbee47b8985" kind="function"><name>tac_nop</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1ade9b9cbec5f857638fd7a952ee4e05fb" kind="function"><name>tac_init</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1aa88fe2248fd95fa2ac3ff4544cf74e8b" kind="function"><name>tac_add</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1ac3e33f0a16025253d43dc01f6b72342f" kind="function"><name>tac_neg</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1aa08ddc7a07d78a52302bf242c63ddf3a" kind="function"><name>tac_copy</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a7a05a7aef970731a32c63268a51f436a" kind="function"><name>tac_read</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a55a25da3a56d406dafe7f72be078d2f8" kind="function"><name>tac_write</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a65acd96e3bffcf60188a63ccd5b03742" kind="function"><name>tac_eq</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a490d3f9da0268354cdc6ce1d16d19b9b" kind="function"><name>tac_ifnz</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a0358f1cad6154db1725d3ba8cd69d79e" kind="function"><name>tac_fcall</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a63c67860335b5c270955f6a4f5370986" kind="function"><name>tac_return</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a601041f6d90806c905ffad8dfe214f90" kind="function"><name>define_tac</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1afeedce24612a7aa95cdfb515a1e5eae2" kind="function"><name>generate_ir</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a43e346ae52885aa30e78f1da4f12208c" kind="function"><name>generate_function</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a7126b3b333c247a512ef5a3354e3ef52" kind="function"><name>generate</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a1583772560255aa94f352edcebfd1dd4" kind="function"><name>tacs</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1ab1002938edd982d492700052e628893b" kind="function"><name>function_parameters_mut</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a0214d6797c5b4a27ef977f796ea360d0" kind="function"><name>entry_points_mut</name></member>
+    <member refid="da/dea/classintermediate__representation_1_1generation__unit_1ae12e7abb493ba4c7b976a15a02033989" kind="function"><name>entry_points</name></member>
   </compound>
   <compound refid="d0/db3/classCatch_1_1GeneratorException" kind="class"><name>Catch::GeneratorException</name>
     <member refid="d0/db3/classCatch_1_1GeneratorException_1a493b6ec9e3be0e3852de73c87dba6e5e" kind="variable"><name>m_msg</name></member>
@@ -849,6 +907,23 @@
     <member refid="de/d1e/structloguru_1_1Options_1a2070fa07956a869ee70093e7324ee821" kind="variable"><name>main_thread_name</name></member>
     <member refid="de/d1e/structloguru_1_1Options_1a13545dc42585f3b88f6f5ee2c025b4ef" kind="variable"><name>signal_options</name></member>
   </compound>
+  <compound refid="dd/dcd/classcli_1_1options__set" kind="class"><name>cli::options_set</name>
+    <member refid="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08" kind="enum"><name>CompileToStage</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08a7ccbb03cb795734415a0b6924a8d7aed" kind="enumvalue"><name>ASM</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08af186217753c37b9b9f958d906208506e" kind="enumvalue"><name>O</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a4fe64da0f71f7d74aecd884fd02699d0" kind="enum"><name>VisualizeFlagShift</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a4fe64da0f71f7d74aecd884fd02699d0ac77bb0f69e2a80e046a8dc7f0da9320f" kind="enumvalue"><name>AST</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a4fe64da0f71f7d74aecd884fd02699d0a4f74d343f26bbd58a8cbbad2cab6a704" kind="enumvalue"><name>IR</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a0ae7d016675568c9a4c9767cefaa221f" kind="variable"><name>VISUALIZATION_TYPES</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1ad4b39783ac2f147fc22223d26ee835e7" kind="variable"><name>compile_to</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a64b26c2f381bf53a41ca198f8384dc76" kind="variable"><name>vis_flags</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a6c4877aedee55652eb27dab082fa8965" kind="function"><name>usage</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a9cf83c19fa1716776bb28a9f2c2a678e" kind="function"><name>set_compile_to</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a85827b3b9c5105149dc53349e60ab5e1" kind="function"><name>recognize_compil_stage</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a223a2e2bb95152a5b58036a21fa02265" kind="function"><name>set_visualization_flags</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1aa2c6b4fa60c7d3eefe81ee8db3d588ee" kind="function"><name>recognize_visualization</name></member>
+    <member refid="dd/dcd/classcli_1_1options__set_1a812effb040060cee1820842f4e14d33d" kind="function"><name>process_options</name></member>
+  </compound>
   <compound refid="dd/d9f/classsyntax__analyzer_1_1parsing__context" kind="class"><name>syntax_analyzer::parsing_context</name>
     <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1ae00fd636b3a0bad580a4999ae7af06a0" kind="variable"><name>m_scopes</name></member>
     <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a9149991d8630d72ae400bae32a1c1238" kind="variable"><name>m_functions</name></member>
@@ -1043,17 +1118,6 @@
     <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a898cee44fb430f671b956d300b18b0b1" kind="function"><name>operator=</name></member>
     <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1abeb6f9c4e4c93b689232cfe0e90d09de" kind="function"><name>yyas_</name></member>
     <member refid="d2/d91/classyy_1_1kivi__parser_1_1semantic__type_1a40f1d167890d544ee70710317cd45883" kind="function"><name>yyas_</name></member>
-  </compound>
-  <compound refid="df/d62/structcli_1_1settings" kind="struct"><name>cli::settings</name>
-    <member refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82" kind="enum"><name>print_stage_enum</name></member>
-    <member refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82a7c3a6c0f7beaa0d19955f0ed6fa2df6b" kind="enumvalue"><name>ast</name></member>
-    <member refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82ad74eea4899a61f9fcbc527ef988ea0ff" kind="enumvalue"><name>ir</name></member>
-    <member refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82a3a90436113e528aef1ea19b2b94c80bf" kind="enumvalue"><name>asm_</name></member>
-    <member refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82aa181a603769c1f98ad927e7367c7aa51" kind="enumvalue"><name>all</name></member>
-    <member refid="df/d62/structcli_1_1settings_1a91adb43617b691230aac8074b7cd2c82a334c4a4c42fdb79d7ebc3e73b517e6f8" kind="enumvalue"><name>none</name></member>
-    <member refid="df/d62/structcli_1_1settings_1a608cffe2e0facd767546896f5004e654" kind="variable"><name>verbosity_level</name></member>
-    <member refid="df/d62/structcli_1_1settings_1a4a5b9fe414d56a82fabbc48030897b60" kind="variable"><name>print_stage</name></member>
-    <member refid="df/d62/structcli_1_1settings_1a3b68f39f4bf3c05d1614f6a646f55915" kind="variable"><name>output_file</name></member>
   </compound>
   <compound refid="d0/d82/structCatch_1_1ShowDurations" kind="struct"><name>Catch::ShowDurations</name>
     <member refid="d0/d82/structCatch_1_1ShowDurations_1a82fa0174554187220c1eda175f122ee1" kind="enum"><name>OrNot</name></member>
@@ -1332,6 +1396,55 @@
     <member refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1ad63dd96d21b8f9b956c76bef4359229f" kind="function"><name>syntax_error</name></member>
     <member refid="d7/d92/structyy_1_1kivi__parser_1_1syntax__error_1a3558b9bd12d06874d150da5415f937ee" kind="function"><name>~syntax_error</name></member>
   </compound>
+  <compound refid="d1/dc9/classintermediate__representation_1_1tac" kind="class"><name>intermediate_representation::tac</name>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9" kind="enum"><name>type</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9ab7e7f2b46723f5b08d763041108f8fed" kind="enumvalue"><name>Nop</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a95b19f7739b0b7ea7d6b07586be54f36" kind="enumvalue"><name>Init</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9aec211f7c20af43e742bf2570c3cb84f9" kind="enumvalue"><name>Add</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a67d9ebb87ad2c62fe6b9de06c8da7fa5" kind="enumvalue"><name>Negate</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a5fb63579fc981698f97d55bfecb213ea" kind="enumvalue"><name>Copy</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a7a1a5f3e79fdc91edf2f5ead9d66abb4" kind="enumvalue"><name>Read</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a1129c0e4d43f2d121652a7302712cff6" kind="enumvalue"><name>Write</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a0ccb67e7eaae09d9e4078d161eeca100" kind="enumvalue"><name>Equals</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9ab04fe4cbf180f1665007dfca7073d598" kind="enumvalue"><name>IfNotZero</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9affb017548928ab2305e7c55cb67c04ca" kind="enumvalue"><name>FunctionCall</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a988fd738de9c6d177440c5dcf69e73ce" kind="enumvalue"><name>Return</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a6408f11ad47d8b1ff2cd71a52b093358" kind="typedef"><name>tac_ptr</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kind="typedef"><name>vregister_type</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kind="typedef"><name>operands_type</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1afdb104612423d4264e947b04df40fae6" kind="variable"><name>m_type</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a4478fdce5e8b9741d8e682fadb162675" kind="variable"><name>m_identifier</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1aff46d2c1c4979e9a483137cb7c7c8f97" kind="variable"><name>m_value</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a283a12d941aa4b7829c94984e60e5a39" kind="variable"><name>m_next</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a8f9cc85a92f2f0c2eee82e5f2266c437" kind="variable"><name>m_condition</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac0bacb5e45cbb2ccd8c89ea1e04c36d0" kind="variable"><name>m_operands</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a284112578177c61aa2adbd894d199fe6" kind="function"><name>tac</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a669d8b62e45a781b061ddef3ea8c88a4" kind="function"><name>tac</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a5892e4a41b9e7a2729a3c1eec346ce03" kind="function"><name>tac</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a283f1a30f7a199b9e377646476f6489b" kind="function"><name>tac</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1aa5d11833be18b7cdaa6074a65aacfc65" kind="function"><name>tac</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac31e9c528bf07539111244a83ba60972" kind="function"><name>tac</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a81defaf8d48264840a275a159a54ee9c" kind="function"><name>tac</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1aec056475e77765e087396cef595a9518" kind="function"><name>get_type</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a000d6b0a8895186e59f635279bb5575f" kind="function"><name>identifier</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a17abdfdc2254b7bf02b463eae044e092" kind="function"><name>value</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1af00f7cfb01021e34070694d7fa44b965" kind="function"><name>next</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a61a169f539f4f1ed3cfc16b729950447" kind="function"><name>next_mut</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a00755a4d40a2ebe897e0d008999dfca1" kind="function"><name>condition</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1aa63f3fc464ad3b1c3da074bd7218a473" kind="function"><name>condition_mut</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kind="function"><name>operands</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a93de28259d061a92cb39a2c76e998f73" kind="function"><name>tac_nop</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a3a0d14743db3e568b895b1f3d7bcae3e" kind="function"><name>tac_init</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1aa8bf1cd84c4b603e169efae8c3d9bb6b" kind="function"><name>tac_add</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1af39ce2fedf674af28bca8fc2d8d4d672" kind="function"><name>tac_neg</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ad253ba86397556baaed2171b02ca4399" kind="function"><name>tac_copy</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a194d035688f147b3bcea2bd523a8cd1e" kind="function"><name>tac_read</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a36153c2643bbbbb381da54ce6273a185" kind="function"><name>tac_write</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1ac6020e8fce0c95e0e0d1b7cc8642b8d9" kind="function"><name>tac_eq</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a0b09428bc096f138bf4caf3c6ec06e09" kind="function"><name>tac_ifnz</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1af8e8436661ab17ba5054ac67ea0015d4" kind="function"><name>tac_fcall</name></member>
+    <member refid="d1/dc9/classintermediate__representation_1_1tac_1a95ad58a01ea22fccaae49e8482a2c530" kind="function"><name>tac_return</name></member>
+  </compound>
   <compound refid="d9/d00/classCatch_1_1Generators_1_1TakeGenerator" kind="class"><name>Catch::Generators::TakeGenerator</name>
     <member refid="d9/d00/classCatch_1_1Generators_1_1TakeGenerator_1a2193ff62cd0fe809049b6d6b2f399d89" kind="variable"><name>m_generator</name></member>
     <member refid="d9/d00/classCatch_1_1Generators_1_1TakeGenerator_1a1014eb709685999a1b6aeed05b4dd978" kind="variable"><name>m_returned</name></member>
@@ -1449,6 +1562,44 @@
     <member refid="d2/d01/structCatch_1_1Totals_1a9279ed39139cb7e7b291918a6d08290e" kind="function"><name>operator-</name></member>
     <member refid="d2/d01/structCatch_1_1Totals_1a574015076e54cc405c70b053e3356e43" kind="function"><name>operator+=</name></member>
     <member refid="d2/d01/structCatch_1_1Totals_1a1a94a654f5f3786b75695e081fc9bca2" kind="function"><name>delta</name></member>
+  </compound>
+  <compound refid="d9/d26/structtransform__iterator" kind="struct"><name>transform_iterator</name>
+    <member refid="d9/d26/structtransform__iterator_1a472a4c9f6299c211f3c16ac9ff47e38c" kind="variable"><name>ptr</name></member>
+    <member refid="d9/d26/structtransform__iterator_1a7a466c61c18c0f0e41f2088caad9f778" kind="function"><name>transform_iterator</name></member>
+    <member refid="d9/d26/structtransform__iterator_1adadbfae0545a6b45e0cdb07250068fe0" kind="function"><name>transform_iterator</name></member>
+    <member refid="d9/d26/structtransform__iterator_1aa63f0625591929e0ed829cf7f0369ea8" kind="function"><name>transform_iterator</name></member>
+    <member refid="d9/d26/structtransform__iterator_1a2adfa9d5dcfc3d96c79e022fb4ee541b" kind="function"><name>operator!=</name></member>
+    <member refid="d9/d26/structtransform__iterator_1aa0486b5f141caa5dd43d79198ff43527" kind="function"><name>operator==</name></member>
+    <member refid="d9/d26/structtransform__iterator_1a2e6d477f4163e28269839af7ecbb365b" kind="function"><name>operator*</name></member>
+    <member refid="d9/d26/structtransform__iterator_1a7232300913e12bb634f476565015b9b0" kind="function"><name>operator++</name></member>
+    <member refid="d9/d26/structtransform__iterator_1aff76da276c0e20783de4e86d9028c056" kind="function"><name>operator--</name></member>
+    <member refid="d9/d26/structtransform__iterator_1aa342193fa567621af304bdb7d6b71009" kind="function"><name>operator+=</name></member>
+    <member refid="d9/d26/structtransform__iterator_1ab3020eeaba71e41b92f16ff17a3efbe2" kind="function"><name>operator-=</name></member>
+    <member refid="d9/d26/structtransform__iterator_1a9b0e365a466e4a99255ea0090119d751" kind="function"><name>operator++</name></member>
+    <member refid="d9/d26/structtransform__iterator_1a8b2308403e83650bb5464fd64acb8192" kind="function"><name>operator--</name></member>
+    <member refid="d9/d26/structtransform__iterator_1ab6b31d0c5312fb736aa0dce12bad125e" kind="function"><name>operator+</name></member>
+    <member refid="d9/d26/structtransform__iterator_1a8b83c240cf2fae0850adcceeb34367f7" kind="function"><name>operator-</name></member>
+  </compound>
+  <compound refid="df/d1b/structtransform__iterator__base" kind="struct"><name>transform_iterator_base</name>
+    <member refid="df/d1b/structtransform__iterator__base_1a122d2d377dec79f4102095401a6e9716" kind="friend"><name>transform_iterator&lt; R &gt;</name></member>
+    <member refid="df/d1b/structtransform__iterator__base_1abe2af9e4f9c30a0645e8a698d0993263" kind="function"><name>~transform_iterator_base</name></member>
+    <member refid="df/d1b/structtransform__iterator__base_1acf3c8be70955fc902ed730e66f00355e" kind="function"><name>transform_iterator_base</name></member>
+    <member refid="df/d1b/structtransform__iterator__base_1acbe38494994f546a1f3000dbd32c1d3d" kind="function"><name>is_end</name></member>
+    <member refid="df/d1b/structtransform__iterator__base_1a743d9108b4d53521f232ddeb3c42d9c2" kind="function"><name>eq</name></member>
+    <member refid="df/d1b/structtransform__iterator__base_1adb0f3663e765919b6d4df681a1b51b5f" kind="function"><name>delta</name></member>
+    <member refid="df/d1b/structtransform__iterator__base_1abd44ce20a709d61664f08409dee8f696" kind="function"><name>ref</name></member>
+    <member refid="df/d1b/structtransform__iterator__base_1a1568439d6a414a371a9a37242f81b5ec" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="d3/df2/structtransform__iterator__spec" kind="struct"><name>transform_iterator_spec</name>
+    <member refid="d3/df2/structtransform__iterator__spec_1a96a36b3449a4b83e4cfa5fb4f17f890b" kind="variable"><name>cur</name></member>
+    <member refid="d3/df2/structtransform__iterator__spec_1ad3d3e97062345a6e7dcb5ed591f94d7e" kind="variable"><name>end</name></member>
+    <member refid="d3/df2/structtransform__iterator__spec_1a201c29a7461c9217f8f1100fdf9d7048" kind="variable"><name>func</name></member>
+    <member refid="d3/df2/structtransform__iterator__spec_1a5e8defbdea93760f4bbb30bdae7fa2d2" kind="function"><name>transform_iterator_spec</name></member>
+    <member refid="d3/df2/structtransform__iterator__spec_1a607b0570dc2708cc9f64d3b860dce240" kind="function"><name>eq</name></member>
+    <member refid="d3/df2/structtransform__iterator__spec_1a253d09507f7def0e172c0adbe5a4ed9a" kind="function"><name>is_end</name></member>
+    <member refid="d3/df2/structtransform__iterator__spec_1ad64f4706117c9f4dad74d293f5f4597f" kind="function"><name>delta</name></member>
+    <member refid="d3/df2/structtransform__iterator__spec_1aecbcd4973fc3156748bcd71eb2b912f9" kind="function"><name>ref</name></member>
+    <member refid="d3/df2/structtransform__iterator__spec_1a98ef388178d491a5c0c20f69eb7ab299" kind="function"><name>clone</name></member>
   </compound>
   <compound refid="d1/d04/structCatch_1_1true__given" kind="struct"><name>Catch::true_given</name>
   </compound>
@@ -1691,12 +1842,13 @@
   <compound refid="d5/db7/namespaceCatch_1_1Matchers_1_1Vector" kind="namespace"><name>Catch::Matchers::Vector</name>
   </compound>
   <compound refid="d5/dfa/namespacecli" kind="namespace"><name>cli</name>
-    <member refid="d5/dfa/namespacecli_1a8ca7573e9d726fa3664925551e2b8d6a" kind="typedef"><name>pe</name></member>
-    <member refid="d5/dfa/namespacecli_1a199ce2c5cde0cf837bd1b16fbd999bc7" kind="variable"><name>globals</name></member>
-    <member refid="d5/dfa/namespacecli_1aa2e4349201a2f1a495642d706a82907a" kind="function"><name>should_print</name></member>
-    <member refid="d5/dfa/namespacecli_1a7c557b921ffc48ad3e206d16ca501874" kind="function"><name>parse_arguments</name></member>
+    <member refid="d5/dfa/namespacecli_1a5c8afd5292066bd2e76d8e92fae11f9c" kind="function"><name>argument_parser</name></member>
   </compound>
   <compound refid="d0/d1c/namespacedecltypeis__callable__tester" kind="namespace"><name>decltypeis_callable_tester</name>
+  </compound>
+  <compound refid="d5/d90/namespaceintermediate__representation" kind="namespace"><name>intermediate_representation</name>
+    <member refid="d5/d90/namespaceintermediate__representation_1a1a02617e0aed574cd1915356bb5c7efe" kind="function"><name>place_chain</name></member>
+    <member refid="d5/d90/namespaceintermediate__representation_1adfeab5693aebed1eec34e1c609799a9f" kind="function"><name>make_vreg</name></member>
   </compound>
   <compound refid="da/d28/namespaceloguru" kind="namespace"><name>loguru</name>
     <member refid="da/d28/namespaceloguru_1a704b99a899d2ab240bd9538c3d9e7aa2" kind="enum"><name>NamedVerbosity</name></member>
@@ -1895,6 +2047,9 @@
     <member refid="d5/d08/namespaceprinter_1a177a78810d48743d9b71ff9c22818bc4" kind="function"><name>print</name></member>
     <member refid="d5/d08/namespaceprinter_1ab1f863ab91da244edd2d926f9630f268" kind="function"><name>print</name></member>
     <member refid="d5/d08/namespaceprinter_1aac96d10629fd998cd476471c7e344646" kind="function"><name>print</name></member>
+    <member refid="d5/d08/namespaceprinter_1a1c2ded5a286f71d12cac6cb131b15942" kind="function"><name>print_ir</name></member>
+    <member refid="d5/d08/namespaceprinter_1a927c641e5e91a350c4363e1b493466fc" kind="function"><name>print_ir</name></member>
+    <member refid="d5/d08/namespaceprinter_1a6e808d611e0ca06c04d57e08bd0b87e6" kind="function"><name>print_ir</name></member>
   </compound>
   <compound refid="d8/dcc/namespacestd" kind="namespace"><name>std</name>
   </compound>
@@ -1946,8 +2101,6 @@
   <compound refid="d1/dee/examples_2README_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="dd/dcd/extern_2README_8md" kind="file"><name>README.md</name>
-  </compound>
-  <compound refid="dd/d17/frontend_2ir__generation_2README_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="df/de8/frontend_2parser_2README_8md" kind="file"><name>README.md</name>
   </compound>
@@ -2027,29 +2180,13 @@
     <member refid="de/df1/cmake-build-debug_2CMakeFiles_23_817_83_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
     <member refid="de/df1/cmake-build-debug_2CMakeFiles_23_817_83_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
-  <compound refid="d6/d85/dev_2conventions_8md" kind="file"><name>conventions.md</name>
+  <compound refid="da/d32/conventions_8md" kind="file"><name>conventions.md</name>
   </compound>
-  <compound refid="d3/d73/gh-pages_2dev_2conventions_8md" kind="file"><name>conventions.md</name>
+  <compound refid="dc/dd5/cpp17__to__cpp20_8md" kind="file"><name>cpp17_to_cpp20.md</name>
   </compound>
-  <compound refid="d8/db9/dev_2cpp17__to__cpp20_8md" kind="file"><name>cpp17_to_cpp20.md</name>
+  <compound refid="de/d91/dev_8md" kind="file"><name>dev.md</name>
   </compound>
-  <compound refid="d1/d4a/gh-pages_2dev_2cpp17__to__cpp20_8md" kind="file"><name>cpp17_to_cpp20.md</name>
-  </compound>
-  <compound refid="d7/df2/dev_2dev_8md" kind="file"><name>dev.md</name>
-  </compound>
-  <compound refid="d8/d33/gh-pages_2dev_2dev_8md" kind="file"><name>dev.md</name>
-  </compound>
-  <compound refid="d4/d23/dev__docs__template_8md" kind="file"><name>dev_docs_template.md</name>
-  </compound>
-  <compound refid="da/d08/diagrams_8md" kind="file"><name>diagrams.md</name>
-  </compound>
-  <compound refid="d3/d7c/dev_2requirements_8md" kind="file"><name>requirements.md</name>
-  </compound>
-  <compound refid="df/d07/gh-pages_2dev_2requirements_8md" kind="file"><name>requirements.md</name>
-  </compound>
-  <compound refid="d8/de8/known__bugs_8md" kind="file"><name>known_bugs.md</name>
-  </compound>
-  <compound refid="df/dcf/index_8md" kind="file"><name>index.md</name>
+  <compound refid="d0/d77/requirements_8md" kind="file"><name>requirements.md</name>
   </compound>
   <compound refid="d2/d62/home_8md" kind="file"><name>home.md</name>
   </compound>
@@ -2351,6 +2488,27 @@
   <compound refid="d2/d2b/textbox_8hh" kind="file"><name>textbox.hh</name>
     <member refid="d2/d2b/textbox_8hh_1a17140cb0db78ffa3673569ca11baf697" kind="function"><name>create_tree_graph</name></member>
   </compound>
+  <compound refid="d5/df9/transform__iterator_8hh" kind="file"><name>transform_iterator.hh</name>
+    <member refid="d5/df9/transform__iterator_8hh_1a40014b6385e3a509135f9f1165bdc71d" kind="function"><name>make_transform_iterator</name></member>
+  </compound>
+  <compound refid="dc/d6c/codes_8cc" kind="file"><name>codes.cc</name>
+    <member refid="dc/d6c/codes_8cc_1a64dee6b451fc588a53deaff3503d3f61" kind="typedef"><name>opers_type</name></member>
+    <member refid="dc/d6c/codes_8cc_1a7df899243573620418516d56f2a9f9b8" kind="typedef"><name>gu</name></member>
+    <member refid="dc/d6c/codes_8cc_1acae8d16027df472cf07674d1f1a3fbfe" kind="typedef"><name>tac_type</name></member>
+  </compound>
+  <compound refid="db/de1/concrete__generators_8cc" kind="file"><name>concrete_generators.cc</name>
+    <member refid="db/de1/concrete__generators_8cc_1a7df899243573620418516d56f2a9f9b8" kind="typedef"><name>gu</name></member>
+  </compound>
+  <compound refid="d7/d00/generation__context_8hh" kind="file"><name>generation_context.hh</name>
+  </compound>
+  <compound refid="d8/dc5/generation__unit_8cc" kind="file"><name>generation_unit.cc</name>
+  </compound>
+  <compound refid="dd/dcd/generation__unit_8hh" kind="file"><name>generation_unit.hh</name>
+  </compound>
+  <compound refid="d0/d70/ir__code_8cc" kind="file"><name>ir_code.cc</name>
+  </compound>
+  <compound refid="db/db5/ir__code_8hh" kind="file"><name>ir_code.hh</name>
+  </compound>
   <compound refid="df/dea/error_8cc" kind="file"><name>error.cc</name>
   </compound>
   <compound refid="d4/d99/expressions_8cc" kind="file"><name>expressions.cc</name>
@@ -2409,45 +2567,53 @@
   <compound refid="d9/d1c/syntax_8hh" kind="file"><name>syntax.hh</name>
   </compound>
   <compound refid="d9/d0f/main_8cc" kind="file"><name>main.cc</name>
-    <member refid="d9/d0f/main_8cc_1ac0f2228420376f4db7e1274f2b41667c" kind="function"><name>main</name></member>
+    <member refid="d9/d0f/main_8cc_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
   <compound refid="dd/d36/config_8test_8cc" kind="file"><name>config.test.cc</name>
-    <member refid="dd/d36/config_8test_8cc_1a656eb5868e824d59f489f910db438420" kind="define"><name>CATCH_CONFIG_MAIN</name></member>
+    <member refid="dd/d36/config_8test_8cc_1a296bcce58d553536a9d44771a8adbd78" kind="function"><name>TEST_CASE</name></member>
   </compound>
   <compound refid="da/d7a/example_8test_8cc" kind="file"><name>example.test.cc</name>
-    <member refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kind="variable"><name>filename</name></member>
-    <member refid="da/d7a/example_8test_8cc_1aa5bb3e777caa56cb893c10ebf90893cd" kind="function"><name>TEST_CASE</name></member>
-    <member refid="da/d7a/example_8test_8cc_1a924f738883823a295f1fb08f8043ca5b" kind="function"><name>TEST_CASE</name></member>
-    <member refid="da/d7a/example_8test_8cc_1afa1982a49a8fcb7b2012169d6203f806" kind="function"><name>TEST_CASE</name></member>
-    <member refid="da/d7a/example_8test_8cc_1a902adcbeeb090b3b12db093500b374d6" kind="function"><name>TEST_CASE</name></member>
-    <member refid="da/d7a/example_8test_8cc_1a0c85509f50855378bbff4596548d8cd0" kind="function"><name>TEST_CASE</name></member>
+    <member refid="da/d7a/example_8test_8cc_1a6e24b20eaa88862a7d4db7583ea01140" kind="function"><name>fib</name></member>
+    <member refid="da/d7a/example_8test_8cc_1adfebc3a5f0d0b02d25958c1ef14fbeea" kind="function"><name>TEST_CASE</name></member>
   </compound>
   <compound refid="db/d45/expression_8test_8cc" kind="file"><name>expression.test.cc</name>
     <member refid="db/d45/expression_8test_8cc_1aaba9649cd00a5afaf63e267de2cd46bf" kind="typedef"><name>et</name></member>
     <member refid="db/d45/expression_8test_8cc_1a0c0c3dc8e57a6aed888d5c4ed4ca90c5" kind="function"><name>TEST_CASE</name></member>
   </compound>
+  <compound refid="d3/d3d/ir__generation_8test_8cc" kind="file"><name>ir_generation.test.cc</name>
+    <member refid="d3/d3d/ir__generation_8test_8cc_1a44299816cc4bd4f029a2b6f2d9837139" kind="variable"><name>foo</name></member>
+    <member refid="d3/d3d/ir__generation_8test_8cc_1a3d8b2ba5aabd4276c67006073a1953c1" kind="function"><name>TEST_CASE</name></member>
+  </compound>
   <compound refid="db/dce/parser_8test_8cc" kind="file"><name>parser.test.cc</name>
     <member refid="db/dce/parser_8test_8cc_1aaba9649cd00a5afaf63e267de2cd46bf" kind="typedef"><name>et</name></member>
-    <member refid="db/dce/parser_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kind="variable"><name>filename</name></member>
+    <member refid="db/dce/parser_8test_8cc_1aadee466f40c97e6988302891105cf3af" kind="variable"><name>fake_file</name></member>
     <member refid="db/dce/parser_8test_8cc_1aa3a5a02e79f79e2150073326d45d155d" kind="function"><name>TEST_CASE</name></member>
   </compound>
   <compound refid="d2/dfe/parsing__context_8test_8cc" kind="file"><name>parsing_context.test.cc</name>
     <member refid="d2/dfe/parsing__context_8test_8cc_1a743e93a25d8ce8b513e74ca768364f6b" kind="variable"><name>fname</name></member>
     <member refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kind="variable"><name>code</name></member>
     <member refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kind="function"><name>context</name></member>
-    <member refid="d2/dfe/parsing__context_8test_8cc_1af3c740f5047438f45cec0a9db5b68b2e" kind="function"><name>TEST_CASE</name></member>
-    <member refid="d2/dfe/parsing__context_8test_8cc_1a0058873336f7db409ad74eab2acabff2" kind="function"><name>TEST_CASE</name></member>
+    <member refid="d2/dfe/parsing__context_8test_8cc_1a3c5d97f777a3ff48c9655c6e7476edaa" kind="function"><name>TEST_CASE</name></member>
+  </compound>
+  <compound refid="de/d67/main_8test_8cc" kind="file"><name>main.test.cc</name>
+    <member refid="de/d67/main_8test_8cc_1a656eb5868e824d59f489f910db438420" kind="define"><name>CATCH_CONFIG_MAIN</name></member>
   </compound>
   <compound refid="dc/df4/ast__printer_8cc" kind="file"><name>ast_printer.cc</name>
     <member refid="dc/df4/ast__printer_8cc_1a1065b861da879f6b0534d01cf92458c2" kind="typedef"><name>et</name></member>
   </compound>
   <compound refid="d9/d96/ast__printer_8hh" kind="file"><name>ast_printer.hh</name>
   </compound>
+  <compound refid="d0/d4f/cli_8cc" kind="file"><name>cli.cc</name>
+  </compound>
   <compound refid="d5/df1/cli_8hh" kind="file"><name>cli.hh</name>
   </compound>
-  <compound refid="db/dab/md__home_boki__tmp_kivi_backend_compiler_README" kind="page"><name>md__home_boki__tmp_kivi_backend_compiler_README</name>
+  <compound refid="d9/d10/ir__printer_8cc" kind="file"><name>ir_printer.cc</name>
   </compound>
-  <compound refid="df/dc1/md__home_boki__tmp_kivi_backend_README" kind="page"><name>md__home_boki__tmp_kivi_backend_README</name>
+  <compound refid="d9/d35/ir__printer_8hh" kind="file"><name>ir_printer.hh</name>
+  </compound>
+  <compound refid="da/de9/md__home_boki_KIVI_backend_compiler_README" kind="page"><name>md__home_boki_KIVI_backend_compiler_README</name>
+  </compound>
+  <compound refid="de/d7a/md__home_boki_KIVI_backend_README" kind="page"><name>md__home_boki_KIVI_backend_README</name>
   </compound>
   <compound refid="db/d98/md_dev_conventions" kind="page"><name>md_dev_conventions</name>
   </compound>
@@ -2455,112 +2621,94 @@
   </compound>
   <compound refid="d2/da3/md_dev_dev" kind="page"><name>md_dev_dev</name>
   </compound>
-  <compound refid="db/dfd/md_dev_dev_docs_template" kind="page"><name>md_dev_dev_docs_template</name>
-  </compound>
-  <compound refid="d7/dde/md_dev_diagrams" kind="page"><name>md_dev_diagrams</name>
-  </compound>
   <compound refid="d7/da7/md_dev_requirements" kind="page"><name>md_dev_requirements</name>
-  </compound>
-  <compound refid="d0/d5a/md_gh_pages_dev_conventions" kind="page"><name>md_gh_pages_dev_conventions</name>
-  </compound>
-  <compound refid="d5/d45/md_gh_pages_dev_cpp17_to_cpp20" kind="page"><name>md_gh_pages_dev_cpp17_to_cpp20</name>
-  </compound>
-  <compound refid="dc/d01/md_gh_pages_dev_dev" kind="page"><name>md_gh_pages_dev_dev</name>
-  </compound>
-  <compound refid="dd/d45/md_gh_pages_dev_known_bugs" kind="page"><name>md_gh_pages_dev_known_bugs</name>
-  </compound>
-  <compound refid="d5/d99/md_gh_pages_dev_requirements" kind="page"><name>md_gh_pages_dev_requirements</name>
-  </compound>
-  <compound refid="d8/da6/md_gh_pages_index" kind="page"><name>md_gh_pages_index</name>
-  </compound>
-  <compound refid="df/d20/md_home" kind="page"><name>md_home</name>
   </compound>
   <compound refid="d0/d30/md_README" kind="page"><name>md_README</name>
   </compound>
-  <compound refid="d9/da3/md__home_boki__tmp_kivi_examples_README" kind="page"><name>md__home_boki__tmp_kivi_examples_README</name>
+  <compound refid="d6/da4/md__home_boki_KIVI_examples_README" kind="page"><name>md__home_boki_KIVI_examples_README</name>
   </compound>
-  <compound refid="d1/d5c/md__home_boki__tmp_kivi_extern_README" kind="page"><name>md__home_boki__tmp_kivi_extern_README</name>
+  <compound refid="d0/dd8/md__home_boki_KIVI_extern_README" kind="page"><name>md__home_boki_KIVI_extern_README</name>
   </compound>
-  <compound refid="d6/dfc/md__home_boki__tmp_kivi_frontend_ir_generation_README" kind="page"><name>md__home_boki__tmp_kivi_frontend_ir_generation_README</name>
+  <compound refid="df/d85/md__home_boki_KIVI_frontend_parser_README" kind="page"><name>md__home_boki_KIVI_frontend_parser_README</name>
   </compound>
-  <compound refid="d2/d56/md__home_boki__tmp_kivi_frontend_parser_README" kind="page"><name>md__home_boki__tmp_kivi_frontend_parser_README</name>
+  <compound refid="d8/dde/md__home_boki_KIVI_frontend_README" kind="page"><name>md__home_boki_KIVI_frontend_README</name>
   </compound>
-  <compound refid="d7/d1a/md__home_boki__tmp_kivi_frontend_README" kind="page"><name>md__home_boki__tmp_kivi_frontend_README</name>
+  <compound refid="d7/d5b/md__home_boki_KIVI_README" kind="page"><name>md__home_boki_KIVI_README</name>
   </compound>
-  <compound refid="db/de6/md__home_boki__tmp_kivi_README" kind="page"><name>md__home_boki__tmp_kivi_README</name>
+  <compound refid="db/dbe/md__home_boki_KIVI_test_backend_README" kind="page"><name>md__home_boki_KIVI_test_backend_README</name>
   </compound>
-  <compound refid="d4/db3/md__home_boki__tmp_kivi_test_backend_README" kind="page"><name>md__home_boki__tmp_kivi_test_backend_README</name>
+  <compound refid="d6/d43/md__home_boki_KIVI_test_frontend_README" kind="page"><name>md__home_boki_KIVI_test_frontend_README</name>
   </compound>
-  <compound refid="d4/dd4/md__home_boki__tmp_kivi_test_frontend_README" kind="page"><name>md__home_boki__tmp_kivi_test_frontend_README</name>
+  <compound refid="d3/d3a/md__home_boki_KIVI_test_README" kind="page"><name>md__home_boki_KIVI_test_README</name>
   </compound>
-  <compound refid="de/dda/md__home_boki__tmp_kivi_test_README" kind="page"><name>md__home_boki__tmp_kivi_test_README</name>
+  <compound refid="d9/db1/md__home_boki_KIVI_tools_README" kind="page"><name>md__home_boki_KIVI_tools_README</name>
   </compound>
-  <compound refid="de/dc6/md__home_boki__tmp_kivi_tools_README" kind="page"><name>md__home_boki__tmp_kivi_tools_README</name>
+  <compound refid="de/d9a/md__home_boki_KIVI_utils_ast_printer_README" kind="page"><name>md__home_boki_KIVI_utils_ast_printer_README</name>
   </compound>
-  <compound refid="dd/d9e/md__home_boki__tmp_kivi_utils_ast_printer_README" kind="page"><name>md__home_boki__tmp_kivi_utils_ast_printer_README</name>
+  <compound refid="d1/d02/md__home_boki_KIVI_utils_README" kind="page"><name>md__home_boki_KIVI_utils_README</name>
   </compound>
-  <compound refid="d9/d4f/md__home_boki__tmp_kivi_utils_README" kind="page"><name>md__home_boki__tmp_kivi_utils_README</name>
+  <compound refid="dir_16118e255a85083d09415381158c4867" kind="dir"><name>/home/boki/KIVI/cmake-build-debug/CMakeFiles/3.17.3</name>
   </compound>
-  <compound refid="dir_16118e255a85083d09415381158c4867" kind="dir"><name>/home/boki/.tmp/kivi/cmake-build-debug/CMakeFiles/3.17.3</name>
+  <compound refid="dir_479c27bd7d90b4cd2a917db84cc5293e" kind="dir"><name>/home/boki/KIVI/build/CMakeFiles/3.19.7</name>
   </compound>
-  <compound refid="dir_479c27bd7d90b4cd2a917db84cc5293e" kind="dir"><name>/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7</name>
+  <compound refid="dir_16e9cf1806a6d1484d72e29808974a69" kind="dir"><name>/home/boki/KIVI/extern/argparse</name>
   </compound>
-  <compound refid="dir_16e9cf1806a6d1484d72e29808974a69" kind="dir"><name>/home/boki/.tmp/kivi/extern/argparse</name>
+  <compound refid="dir_e09d4ff75fc26d3c209910dfbe9f7a0f" kind="dir"><name>/home/boki/KIVI/utils/ast_printer</name>
   </compound>
-  <compound refid="dir_e09d4ff75fc26d3c209910dfbe9f7a0f" kind="dir"><name>/home/boki/.tmp/kivi/utils/ast_printer</name>
+  <compound refid="dir_5a63852a171075d3b7a0447582be1d95" kind="dir"><name>/home/boki/KIVI/test/backend</name>
   </compound>
-  <compound refid="dir_8c739bbef76d64b22d6b0911c526dd76" kind="dir"><name>/home/boki/.tmp/kivi/backend</name>
+  <compound refid="dir_8c739bbef76d64b22d6b0911c526dd76" kind="dir"><name>/home/boki/KIVI/backend</name>
   </compound>
-  <compound refid="dir_5a63852a171075d3b7a0447582be1d95" kind="dir"><name>/home/boki/.tmp/kivi/test/backend</name>
+  <compound refid="dir_4fef79e7177ba769987a8da36c892c5f" kind="dir"><name>/home/boki/KIVI/build</name>
   </compound>
-  <compound refid="dir_4fef79e7177ba769987a8da36c892c5f" kind="dir"><name>/home/boki/.tmp/kivi/build</name>
+  <compound refid="dir_106547c1b953ce27182e40df305642f7" kind="dir"><name>/home/boki/KIVI/extern/catch2</name>
   </compound>
-  <compound refid="dir_106547c1b953ce27182e40df305642f7" kind="dir"><name>/home/boki/.tmp/kivi/extern/catch2</name>
+  <compound refid="dir_c802a52f71a9867085062b6c590fa632" kind="dir"><name>/home/boki/KIVI/utils/cli</name>
   </compound>
-  <compound refid="dir_c802a52f71a9867085062b6c590fa632" kind="dir"><name>/home/boki/.tmp/kivi/utils/cli</name>
+  <compound refid="dir_95e29a8b8ee7c54052c171a88bb95675" kind="dir"><name>/home/boki/KIVI/cmake-build-debug</name>
   </compound>
-  <compound refid="dir_95e29a8b8ee7c54052c171a88bb95675" kind="dir"><name>/home/boki/.tmp/kivi/cmake-build-debug</name>
+  <compound refid="dir_f89abcb304c928c7d889aa5625570de5" kind="dir"><name>/home/boki/KIVI/cmake-build-debug/CMakeFiles</name>
   </compound>
-  <compound refid="dir_f89abcb304c928c7d889aa5625570de5" kind="dir"><name>/home/boki/.tmp/kivi/cmake-build-debug/CMakeFiles</name>
+  <compound refid="dir_63772b626f2709090f0bdca0f40827b4" kind="dir"><name>/home/boki/KIVI/build/CMakeFiles</name>
   </compound>
-  <compound refid="dir_63772b626f2709090f0bdca0f40827b4" kind="dir"><name>/home/boki/.tmp/kivi/build/CMakeFiles</name>
+  <compound refid="dir_9974de7a91ee6da742cb5e659b0b092b" kind="dir"><name>/home/boki/KIVI/backend/compiler</name>
   </compound>
-  <compound refid="dir_9974de7a91ee6da742cb5e659b0b092b" kind="dir"><name>/home/boki/.tmp/kivi/backend/compiler</name>
+  <compound refid="dir_48afe760e69e41c004be5a0e2ec0f42d" kind="dir"><name>/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdC</name>
   </compound>
-  <compound refid="dir_a7b8a9c5edf90788926b36eafc45abeb" kind="dir"><name>/home/boki/.tmp/kivi/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC</name>
+  <compound refid="dir_a7b8a9c5edf90788926b36eafc45abeb" kind="dir"><name>/home/boki/KIVI/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC</name>
   </compound>
-  <compound refid="dir_48afe760e69e41c004be5a0e2ec0f42d" kind="dir"><name>/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdC</name>
+  <compound refid="dir_bd5c49d8da4f1c4bbf175c22c1cea157" kind="dir"><name>/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX</name>
   </compound>
-  <compound refid="dir_bd5c49d8da4f1c4bbf175c22c1cea157" kind="dir"><name>/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX</name>
-  </compound>
-  <compound refid="dir_6c24254bfcd0bf0c016c9474000e5b59" kind="dir"><name>/home/boki/.tmp/kivi/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX</name>
+  <compound refid="dir_6c24254bfcd0bf0c016c9474000e5b59" kind="dir"><name>/home/boki/KIVI/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX</name>
   </compound>
   <compound refid="dir_5179a46a04c00f26153add2c2c09d3cf" kind="dir"><name>dev</name>
   </compound>
-  <compound refid="dir_695a0ead211011d44d37a11ec31b1467" kind="dir"><name>gh-pages/dev</name>
+  <compound refid="dir_d28a4824dc47e487b107a5db32ef43c4" kind="dir"><name>/home/boki/KIVI/examples</name>
   </compound>
-  <compound refid="dir_d28a4824dc47e487b107a5db32ef43c4" kind="dir"><name>/home/boki/.tmp/kivi/examples</name>
+  <compound refid="dir_dc9e1e299a0b26f222fe6c0a872463f0" kind="dir"><name>/home/boki/KIVI/extern</name>
   </compound>
-  <compound refid="dir_dc9e1e299a0b26f222fe6c0a872463f0" kind="dir"><name>/home/boki/.tmp/kivi/extern</name>
+  <compound refid="dir_c49559bd0fcee9c4e5f0bb420cee275a" kind="dir"><name>/home/boki/KIVI/test/frontend</name>
   </compound>
-  <compound refid="dir_ca0386ec887ae6362f93b0d653b52e0c" kind="dir"><name>/home/boki/.tmp/kivi/frontend</name>
+  <compound refid="dir_ca0386ec887ae6362f93b0d653b52e0c" kind="dir"><name>/home/boki/KIVI/frontend</name>
   </compound>
-  <compound refid="dir_c49559bd0fcee9c4e5f0bb420cee275a" kind="dir"><name>/home/boki/.tmp/kivi/test/frontend</name>
+  <compound refid="dir_69fd1c89beb623194d4a9d4a4f99a89d" kind="dir"><name>/home/boki/KIVI/frontend/ir_generation</name>
   </compound>
-  <compound refid="dir_fbc5e13758ef72f89875f75bd5a519b9" kind="dir"><name>gh-pages</name>
+  <compound refid="dir_62f875d55769937077744663a3b06608" kind="dir"><name>/home/boki/KIVI/utils/ir_printer</name>
   </compound>
-  <compound refid="dir_69fd1c89beb623194d4a9d4a4f99a89d" kind="dir"><name>/home/boki/.tmp/kivi/frontend/ir_generation</name>
+  <compound refid="dir_189a8fa8e8b1754d9daadbd6bf7cfeb9" kind="dir"><name>/home/boki/KIVI/extern/loguru</name>
   </compound>
-  <compound refid="dir_189a8fa8e8b1754d9daadbd6bf7cfeb9" kind="dir"><name>/home/boki/.tmp/kivi/extern/loguru</name>
+  <compound refid="dir_a7a1a12fbb25630aee71df98dd1561c7" kind="dir"><name>/home/boki/KIVI/frontend/parser</name>
   </compound>
-  <compound refid="dir_a7a1a12fbb25630aee71df98dd1561c7" kind="dir"><name>/home/boki/.tmp/kivi/frontend/parser</name>
+  <compound refid="dir_13e138d54eb8818da29c3992edef070a" kind="dir"><name>/home/boki/KIVI/test</name>
   </compound>
-  <compound refid="dir_13e138d54eb8818da29c3992edef070a" kind="dir"><name>/home/boki/.tmp/kivi/test</name>
+  <compound refid="dir_204dd860230fcc27637fb186ed07f283" kind="dir"><name>/home/boki/KIVI/extern/textbox</name>
   </compound>
-  <compound refid="dir_204dd860230fcc27637fb186ed07f283" kind="dir"><name>/home/boki/.tmp/kivi/extern/textbox</name>
+  <compound refid="dir_4eeb864c4eec08c7d6b9d3b0352cfdde" kind="dir"><name>/home/boki/KIVI/tools</name>
   </compound>
-  <compound refid="dir_4eeb864c4eec08c7d6b9d3b0352cfdde" kind="dir"><name>/home/boki/.tmp/kivi/tools</name>
+  <compound refid="dir_72f057692ccbf9eea3911b418b550291" kind="dir"><name>/home/boki/KIVI/extern/transform_iterator</name>
   </compound>
-  <compound refid="dir_cbdb8362360e11eafe2fa3bc74cf0ffd" kind="dir"><name>/home/boki/.tmp/kivi/utils</name>
+  <compound refid="dir_cbdb8362360e11eafe2fa3bc74cf0ffd" kind="dir"><name>/home/boki/KIVI/utils</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
   </compound>
 </doxygenindex>

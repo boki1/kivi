@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="357" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="357" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="357" column="11" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="357" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1a4e0b82a977a3a7ce4d4c812b0523f0b7" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="358" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="358" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="358" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="358" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1a7a2f455ae8d4584ec5c0972bd7e29176" prot="public" static="no" mutable="no">
         <type>unsigned</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="359" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="359" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="359" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="359" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1a9bf71a52f140adc7625ff3024f5a15fc" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="360" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="360" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="360" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="360" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1aa9e01a5de257663fdf80925479f0529d" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="361" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="361" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="361" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="361" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1afd461d2d71e2df2289a6119571eb233c" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="362" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="362" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="362" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="362" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d6/dee/structloguru_1_1Message_1a23ad5394fd8af40df9adb888fec5f477" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -93,14 +93,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="363" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="363" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="363" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="363" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="353" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="354" bodyend="364"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="353" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="354" bodyend="364"/>
     <listofallmembers>
       <member refid="d6/dee/structloguru_1_1Message_1a4e0b82a977a3a7ce4d4c812b0523f0b7" prot="public" virt="non-virtual"><scope>loguru::Message</scope><name>filename</name></member>
       <member refid="d6/dee/structloguru_1_1Message_1aa9e01a5de257663fdf80925479f0529d" prot="public" virt="non-virtual"><scope>loguru::Message</scope><name>indentation</name></member>

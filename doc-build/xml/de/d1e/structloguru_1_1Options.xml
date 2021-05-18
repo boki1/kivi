@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="454" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="454" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="454" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="454" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="de/d1e/structloguru_1_1Options_1a2070fa07956a869ee70093e7324ee821" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="462" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="462" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="462" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="462" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="de/d1e/structloguru_1_1Options_1a13545dc42585f3b88f6f5ee2c025b4ef" prot="public" static="no" mutable="no">
         <type><ref refid="dd/df7/structloguru_1_1SignalOptions" kindref="compound">SignalOptions</ref></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="464" column="15" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="464" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="464" column="15" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="464" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -63,7 +63,7 @@
         <link refid="dd/df7/structloguru_1_1SignalOptions"/>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="450" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="451" bodyend="465"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="450" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="451" bodyend="465"/>
     <listofallmembers>
       <member refid="de/d1e/structloguru_1_1Options_1a2070fa07956a869ee70093e7324ee821" prot="public" virt="non-virtual"><scope>loguru::Options</scope><name>main_thread_name</name></member>
       <member refid="de/d1e/structloguru_1_1Options_1a13545dc42585f3b88f6f5ee2c025b4ef" prot="public" virt="non-virtual"><scope>loguru::Options</scope><name>signal_options</name></member>

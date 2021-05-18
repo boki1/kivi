@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/da0/classfib__bad__arg__exception" kind="class" language="C++" prot="public">
+    <compoundname>fib_bad_arg_exception</compoundname>
+    <basecompoundref prot="private" virt="non-virtual">std::exception</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/da0/classfib__bad__arg__exception_1a1d87bfd90742bc6a30824a7fca217d96" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fib_bad_arg_exception::m_bad_arg</definition>
+        <argsstring></argsstring>
+        <name>m_bad_arg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/test/example.test.cc" line="13" column="5" bodyfile="/home/boki/KIVI/test/example.test.cc" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/da0/classfib__bad__arg__exception_1aa6b84b593a27420dde2d8fa1913c59b6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fib_bad_arg_exception::fib_bad_arg_exception</definition>
+        <argsstring>(int bad_arg)</argsstring>
+        <name>fib_bad_arg_exception</name>
+        <param>
+          <type>int</type>
+          <declname>bad_arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/test/example.test.cc" line="15" column="10" bodyfile="/home/boki/KIVI/test/example.test.cc" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+      <node id="1">
+        <label>fib_bad_arg_exception</label>
+        <link refid="d4/da0/classfib__bad__arg__exception"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+      <node id="1">
+        <label>fib_bad_arg_exception</label>
+        <link refid="d4/da0/classfib__bad__arg__exception"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/KIVI/test/example.test.cc" line="10" column="1" bodyfile="/home/boki/KIVI/test/example.test.cc" bodystart="11" bodyend="18"/>
+    <listofallmembers>
+      <member refid="d4/da0/classfib__bad__arg__exception_1aa6b84b593a27420dde2d8fa1913c59b6" prot="public" virt="non-virtual"><scope>fib_bad_arg_exception</scope><name>fib_bad_arg_exception</name></member>
+      <member refid="d4/da0/classfib__bad__arg__exception_1a1d87bfd90742bc6a30824a7fca217d96" prot="private" virt="non-virtual"><scope>fib_bad_arg_exception</scope><name>m_bad_arg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

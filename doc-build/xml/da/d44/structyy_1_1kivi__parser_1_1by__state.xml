@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1230" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1230" bodyend="1230"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1230" column="7" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="1230" bodyend="1230"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a0ee30ad8d018ab6a0f6c4e316e1c7cb4" prot="public" static="no">
         <type><ref refid="da/d00/classyy_1_1kivi__parser_1a80cad56158a0cf92302ce401c0ac89be" kindref="member">state_type</ref></type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1210" column="26" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1210" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1210" column="26" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="1210" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1234" column="18" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1234" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1234" column="18" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="1234" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1207" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="161" bodyend="163"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1207" column="7" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="161" bodyend="163"/>
       </memberdef>
       <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a00cd8c1684a5a4143889f5001fbc4f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1213" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="182" bodyend="184"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1213" column="7" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="182" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1a0d01eb5a1197ee8248990a309bb35346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1216" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="165" bodyend="167"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1216" column="7" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="165" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1aee08e16142614d70372b14725c5add7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1219" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="170" bodyend="173"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1219" column="12" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="170" bodyend="173"/>
       </memberdef>
       <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1ab47f78062e3c73db227f9ff6c62933ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1222" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="176" bodyend="180"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1222" column="12" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="176" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="da/d44/structyy_1_1kivi__parser_1_1by__state_1ab8d0cf7457e615d2ce18c804a50919d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0" kindref="member">symbol_kind_type</ref></type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1226" column="24" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="187" bodyend="193"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1226" column="24" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="187" bodyend="193"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -176,7 +176,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="1204" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="1205" bodyend="1235"/>
+    <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="1204" column="5" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="1205" bodyend="1235"/>
     <listofallmembers>
       <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a178d4f9d48b54eb09e157bf9a77956a0" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>by_state</name></member>
       <member refid="da/d44/structyy_1_1kivi__parser_1_1by__state_1a00cd8c1684a5a4143889f5001fbc4f8d" prot="public" virt="non-virtual"><scope>yy::kivi_parser::by_state</scope><name>by_state</name></member>

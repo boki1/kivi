@@ -117,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="473" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="474" bodyend="488"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="473" column="7" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="474" bodyend="488"/>
       </memberdef>
       <memberdef kind="typedef" id="d4/d82/structyy_1_1kivi__parser_1_1token_1ac31195ad25e63616c55bdab077d86576" prot="public" static="no">
         <type><ref refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3" kindref="member">token_kind_type</ref></type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="490" column="31" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="490" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="490" column="31" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="490" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -139,7 +139,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="471" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="472" bodyend="491"/>
+    <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="471" column="5" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="472" bodyend="491"/>
     <listofallmembers>
       <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a228406cf34e0f811d46a04f6cf4db993" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>END</name></member>
       <member refid="d4/d82/structyy_1_1kivi__parser_1_1token_1a089a43f9743c51e7a03de89e6734b0f3a99d1f55690c96e17caec2ad8ebbc5fc5" prot="public" virt="non-virtual"><scope>yy::kivi_parser::token</scope><name>EQ</name></member>

@@ -4,86 +4,6 @@
     <compoundname>parser.tab.cc</compoundname>
     <includes refid="dc/dee/parser_8tab_8hh" local="yes">parser.tab.hh</includes>
     <incdepgraph>
-      <node id="3">
-        <label>syntactical_structures.hh</label>
-        <link refid="d4/d91/syntactical__structures_8hh"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>loguru/loguru.hpp</label>
-        <link refid="df/dec/loguru_8hpp"/>
-      </node>
-      <node id="7">
-        <label>variant</label>
-      </node>
-      <node id="16">
-        <label>cassert</label>
-      </node>
-      <node id="18">
-        <label>stdexcept</label>
-      </node>
-      <node id="5">
-        <label>string</label>
-      </node>
-      <node id="11">
-        <label>parsing_context.hh</label>
-        <link refid="d9/dd1/parsing__context_8hh"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>map</label>
-      </node>
-      <node id="14">
-        <label>location.hh</label>
-        <link refid="d3/d46/location_8hh"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc</label>
-        <link refid="d4/d01/parser_8tab_8cc"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>syntax.hh</label>
-        <link refid="d9/d1c/syntax_8hh"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>typeinfo</label>
-      </node>
-      <node id="10">
-        <label>optional</label>
-      </node>
-      <node id="8">
-        <label>vector</label>
-      </node>
       <node id="2">
         <label>parser.tab.hh</label>
         <link refid="dc/dee/parser_8tab_8hh"/>
@@ -110,6 +30,52 @@
         <childnode refid="19" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>variant</label>
+      </node>
+      <node id="16">
+        <label>cassert</label>
+      </node>
+      <node id="18">
+        <label>stdexcept</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="19">
+        <label>typeinfo</label>
+      </node>
+      <node id="10">
+        <label>optional</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
       <node id="6">
         <label>utility</label>
       </node>
@@ -118,6 +84,40 @@
       </node>
       <node id="15">
         <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>location.hh</label>
+        <link refid="d3/d46/location_8hh"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>loguru/loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
+      </node>
+      <node id="11">
+        <label>parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/frontend/parser/parser.tab.cc</label>
+        <link refid="d4/d01/parser_8tab_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
       <node id="9">
         <label>memory</label>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="54" column="11" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="54" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="54" column="11" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a50c42b07435bf2867d707c84388133bf" prot="public" static="no">
         <name>YY_EXCEPTIONS</name>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="64" column="13" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="64" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="64" column="13" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1ab2b4f027a2b092ac14ca4464e7b3db60" prot="public" static="no">
         <name>YYRHSLOC</name>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="68" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="68" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="68" column="9" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a485d38f93de30679900c9cad6e7f3446" prot="public" static="no">
         <name>YYLLOC_DEFAULT</name>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="74" column="11" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="74" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="74" column="11" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a3649de2ba01c20b4c9ec72bdc71b2956" prot="public" static="no">
         <name>YYCDEBUG</name>
@@ -194,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="119" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="119" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="119" column="10" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a4b71a422d1f0f6b0f93e6cfbe988d9ed" prot="public" static="no">
         <name>YY_SYMBOL_PRINT</name>
@@ -207,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="120" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="120" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="120" column="10" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a49ad456240785266cadae498ddae9310" prot="public" static="no">
         <name>YY_REDUCE_PRINT</name>
@@ -219,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="121" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="121" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="121" column="10" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a56e528a4079b5c725f0fcbe184414bf5" prot="public" static="no">
         <name>YY_STACK_PRINT</name>
@@ -231,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="122" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="122" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="122" column="10" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a20bf055e53dc4fd5afddfd752a4d1adb" prot="public" static="no">
         <name>yyerrok</name>
@@ -242,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="126" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="126" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="126" column="9" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a5035d59933b3f5388c44f596145db047" prot="public" static="no">
         <name>yyclearin</name>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="127" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="127" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="127" column="9" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1aa6c7a65b580c214b2ea832fd7bdd472e" prot="public" static="no">
         <name>YYACCEPT</name>
@@ -264,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="129" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="129" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="129" column="9" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a3bcde0b05b9aa4ec5169092d9d211dbd" prot="public" static="no">
         <name>YYABORT</name>
@@ -275,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="130" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="130" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="130" column="9" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="130" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1af1eef6197be78122699013d0784acc80" prot="public" static="no">
         <name>YYERROR</name>
@@ -286,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="131" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="131" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="131" column="9" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1ad860e18ca4b79fc589895b531bdb7948" prot="public" static="no">
         <name>YYRECOVERING</name>
@@ -298,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="132" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" bodystart="132" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="132" column="9" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.cc" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d4/d01/parser_8tab_8cc_1a5678224066e7b61a101000279b4bb0be" prot="public" static="no">
         <name>YYCASE_</name>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc" line="1303" column="9"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc" line="1303" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1841,6 +1841,6 @@
 <codeline lineno="1523"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1524"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc"/>
+    <location file="/home/boki/KIVI/frontend/parser/parser.tab.cc"/>
   </compounddef>
 </doxygen>

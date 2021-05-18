@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="571" column="22"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="571" column="22"/>
       </memberdef>
       <memberdef kind="function" id="d2/dac/structCatch_1_1ITestInvoker_1a2c89f3eece5b1b677243766e409bd831" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="572" column="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="572" column="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -49,7 +49,7 @@
         <link refid="d2/dac/structCatch_1_1ITestInvoker"/>
       </node>
     </inheritancegraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="570" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="570" bodyend="573"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="570" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="570" bodyend="573"/>
     <listofallmembers>
       <member refid="d2/dac/structCatch_1_1ITestInvoker_1a6fcd5c5b67d6d5ade6491ff33411ca7f" prot="public" virt="pure-virtual"><scope>Catch::ITestInvoker</scope><name>invoke</name></member>
       <member refid="d2/dac/structCatch_1_1ITestInvoker_1a2c89f3eece5b1b677243766e409bd831" prot="public" virt="virtual"><scope>Catch::ITestInvoker</scope><name>~ITestInvoker</name></member>

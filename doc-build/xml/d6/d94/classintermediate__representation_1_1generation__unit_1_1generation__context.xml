@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kind="class" language="C++" prot="public">
+    <compoundname>intermediate_representation::generation_unit::generation_context</compoundname>
+    <includes refid="d7/d00/generation__context_8hh" local="no">generation_context.hh</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a12841a88e2e5cf6c6a28753a3d943a44" prot="public" static="no">
+        <type>std::map&lt; std::size_t, <ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref> &gt;</type>
+        <definition>typedef std::map&lt;std::size_t, tac::vregister_type&gt; intermediate_representation::generation_unit::generation_context::variable_index_type</definition>
+        <argsstring></argsstring>
+        <name>variable_index_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="21" column="18" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ac664f65e54edfa3d509ba960b015bbdc" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+        <definition>tac::vregister_type intermediate_representation::generation_unit::generation_context::m_counter</definition>
+        <argsstring></argsstring>
+        <name>m_counter</name>
+        <briefdescription>
+<para>The number of the next register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="24" column="21" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a457da2fb23797a218098f7ee8ca68c67" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+        <definition>tac::vregister_type intermediate_representation::generation_unit::generation_context::m_vreg</definition>
+        <argsstring></argsstring>
+        <name>m_vreg</name>
+        <initializer>{ -1 }</initializer>
+        <briefdescription>
+<para>The previous virtual register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="27" column="21" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a31a7c01f743f515441dd380147f53fba" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> **</type>
+        <definition>tac** intermediate_representation::generation_unit::generation_context::m_target</definition>
+        <argsstring></argsstring>
+        <name>m_target</name>
+        <briefdescription>
+<para>Pointer to the next instruction address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="30" column="5" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ae5b67e419225bc5f6918153dd58868f8" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a12841a88e2e5cf6c6a28753a3d943a44" kindref="member">variable_index_type</ref></type>
+        <definition>variable_index_type intermediate_representation::generation_unit::generation_context::m_map</definition>
+        <argsstring></argsstring>
+        <name>m_map</name>
+        <briefdescription>
+<para>Relation between AST variables and their register indexes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="33" column="21" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1aeced1c6491fc07f6a8bffb9577e0bfcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>intermediate_representation::generation_unit::generation_context::generation_context</definition>
+        <argsstring>(tac::vregister_type c, tac **target, const variable_index_type &amp;index={})</argsstring>
+        <name>generation_context</name>
+        <param>
+          <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> **</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a12841a88e2e5cf6c6a28753a3d943a44" kindref="member">variable_index_type</ref> &amp;</type>
+          <declname>index</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Complete manual construction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="38" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ad060d33cd042e4d0c2f8a7e79ff2a673" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+        <definition>tac::vregister_type intermediate_representation::generation_unit::generation_context::store_vreg</definition>
+        <argsstring>(tac::vregister_type vreg)</argsstring>
+        <name>store_vreg</name>
+        <param>
+          <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+          <declname>vreg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="47" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a28cda4774604edb44da02b0b73de0a07" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+        <definition>tac::vregister_type intermediate_representation::generation_unit::generation_context::load_vreg</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>load_vreg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="53" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a01c6b0b4a7fb723fc9ed10683215f761" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+        <definition>tac::vregister_type intermediate_representation::generation_unit::generation_context::counter</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="59" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ae0ed011e11c03d95d98fbfdde0149f33" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> **</type>
+        <definition>tac** intermediate_representation::generation_unit::generation_context::target</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="65" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a5c187217d8e15b63fce95a37a0e6ca9f" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a12841a88e2e5cf6c6a28753a3d943a44" kindref="member">variable_index_type</ref> &amp;</type>
+        <definition>const variable_index_type&amp; intermediate_representation::generation_unit::generation_context::map</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="71" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a3d25b19c035184a098c33710b325c3f7" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a12841a88e2e5cf6c6a28753a3d943a44" kindref="member">variable_index_type</ref> &amp;</type>
+        <definition>variable_index_type&amp; intermediate_representation::generation_unit::generation_context::map_mut</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>map_mut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="77" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a2a6289bb1d2791d5760e5897ac3a849e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+        <definition>tac::vregister_type intermediate_representation::generation_unit::generation_context::increase_counter</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>increase_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="83" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="83" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class keeps track of all additional information used during the process of IR generation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>intermediate_representation::generation_unit::generation_context</label>
+        <link refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_target</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>intermediate_representation::tac</label>
+        <link refid="d1/dc9/classintermediate__representation_1_1tac"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" line="18" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_context.hh" bodystart="19" bodyend="87"/>
+    <listofallmembers>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a01c6b0b4a7fb723fc9ed10683215f761" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>counter</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1aeced1c6491fc07f6a8bffb9577e0bfcb" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>generation_context</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a2a6289bb1d2791d5760e5897ac3a849e" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>increase_counter</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a28cda4774604edb44da02b0b73de0a07" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>load_vreg</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ac664f65e54edfa3d509ba960b015bbdc" prot="private" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>m_counter</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ae5b67e419225bc5f6918153dd58868f8" prot="private" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>m_map</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a31a7c01f743f515441dd380147f53fba" prot="private" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>m_target</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a457da2fb23797a218098f7ee8ca68c67" prot="private" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>m_vreg</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a5c187217d8e15b63fce95a37a0e6ca9f" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>map</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a3d25b19c035184a098c33710b325c3f7" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>map_mut</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ad060d33cd042e4d0c2f8a7e79ff2a673" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>store_vreg</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ae0ed011e11c03d95d98fbfdde0149f33" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>target</name></member>
+      <member refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a12841a88e2e5cf6c6a28753a3d943a44" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit::generation_context</scope><name>variable_index_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

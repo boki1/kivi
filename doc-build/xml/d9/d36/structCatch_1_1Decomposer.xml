@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2414" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2414" bodyend="2416"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2414" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2414" bodyend="2416"/>
       </memberdef>
       <memberdef kind="function" id="d9/d36/structCatch_1_1Decomposer_1aac129b94903ae1339d5709049d83613b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -41,14 +41,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2418" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2418" bodyend="2420"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2418" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2418" bodyend="2420"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2412" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2412" bodyend="2421"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2412" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2412" bodyend="2421"/>
     <listofallmembers>
       <member refid="d9/d36/structCatch_1_1Decomposer_1a4b1e5e844c20e5a90e3d759d216674cd" prot="public" virt="non-virtual"><scope>Catch::Decomposer</scope><name>operator&lt;=</name></member>
       <member refid="d9/d36/structCatch_1_1Decomposer_1aac129b94903ae1339d5709049d83613b" prot="public" virt="non-virtual"><scope>Catch::Decomposer</scope><name>operator&lt;=</name></member>

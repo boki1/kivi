@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="11" column="23" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="11" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="11" column="23" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/daa/structtextbox_1a47637707cb6b3f4868beef028eb995a4" prot="public" static="yes" constexpr="yes" mutable="no">
         <type>constexpr unsigned char</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="32" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="12" column="32" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/daa/structtextbox_1aa3eda82346a22f480c207c32e138dfc1" prot="public" static="yes" mutable="no">
         <type>constexpr unsigned char</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="34" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="12" column="34" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/daa/structtextbox_1aeca6702c8ea576b45a4b6a580d876cf1" prot="public" static="yes" mutable="no">
         <type>constexpr unsigned char</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="36" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="12" column="36" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/daa/structtextbox_1a585387cb7a236c15587c34abf4401238" prot="public" static="yes" mutable="no">
         <type>constexpr unsigned char</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="38" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="12" column="38" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/daa/structtextbox_1a4de3d73c1e6af3081cb6e02d97611e37" prot="public" static="yes" mutable="no">
         <type>constexpr unsigned char</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="12" column="40" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="12" column="40" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="12" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="14" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="14" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="14" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="14" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="18" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="18" bodyend="24"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="18" column="6" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="18" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a189c5dce550c0efd0803bc542d566996" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="27" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="27" bodyend="32"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="27" column="6" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="27" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a58662b70d515ef93a41da09862a16d09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="37" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="37" bodyend="51"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="37" column="6" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="37" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a8c5aa4a6ca8372eb4d0116d21abdb021" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="53" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="53" bodyend="56"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="53" column="6" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="53" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a94889342cfd37bf11d85dc3f6d606079" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -221,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="58" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="58" bodyend="67"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="58" column="6" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="58" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a0606e52c7517a8f685bc827902dc79d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="70" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="70" bodyend="70"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="70" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="70" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a096b5ece8c8cf83358e8052b314cc636" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -247,7 +247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="71" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="71" bodyend="76"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="71" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="71" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a6ae292c34d3d208bbb5af15320c537d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="81" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="81" bodyend="85"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="81" column="6" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="81" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a2cd2c45feff1eb6529730e56055fbd9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="89" column="6" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="89" bodyend="93"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="89" column="6" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="89" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a4d83934a468b7b64e4675845d09500e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -334,7 +334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="98" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="98" bodyend="111"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="98" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="98" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1aea52598f2069f9f726869c7d9bf30eac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -355,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="115" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="115" bodyend="128"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="115" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="115" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a1e0ef9680b2279be5b5514b78b5545bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -368,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="133" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="133" bodyend="179"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="133" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="133" bodyend="179"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -387,7 +387,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="181" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="181" bodyend="189"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="181" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="181" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a1ad2f2224461ccaa14976073cec861fd" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -404,7 +404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="190" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="190" bodyend="198"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="190" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="190" bodyend="198"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1ad962f6558a4b01693e6983fb40589de0" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -421,7 +421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="199" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="199" bodyend="205"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="199" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="199" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="d0/daa/structtextbox_1a1d228126520780d37997b819034a0801" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t</type>
@@ -438,14 +438,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="206" column="13" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="206" bodyend="212"/>
+        <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="206" column="13" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="206" bodyend="212"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" line="9" column="1" bodyfile="/home/boki/.tmp/kivi/extern/textbox/textbox.hh" bodystart="10" bodyend="213"/>
+    <location file="/home/boki/KIVI/extern/textbox/textbox.hh" line="9" column="1" bodyfile="/home/boki/KIVI/extern/textbox/textbox.hh" bodystart="10" bodyend="213"/>
     <listofallmembers>
       <member refid="d0/daa/structtextbox_1aa3eda82346a22f480c207c32e138dfc1" prot="public" virt="non-virtual"><scope>textbox</scope><name>d</name></member>
       <member refid="d0/daa/structtextbox_1a55ff996d19622962f155a87e23d27873" prot="public" virt="non-virtual"><scope>textbox</scope><name>data</name></member>

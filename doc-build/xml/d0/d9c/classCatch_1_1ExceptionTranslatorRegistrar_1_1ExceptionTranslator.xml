@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3045" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3045" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3045" column="13" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3045" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3024" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3024" bodyend="3026"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3024" column="13" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3024" bodyend="3026"/>
       </memberdef>
       <memberdef kind="function" id="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator_1a29e85940ee9ce719f26e43550cb4ed48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3028" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3028" bodyend="3042"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3028" column="25" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3028" bodyend="3042"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -92,7 +92,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3021" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3021" bodyend="3046"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3021" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3021" bodyend="3046"/>
     <listofallmembers>
       <member refid="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator_1a2de4e9bcaad47996159763e69f614d7a" prot="public" virt="non-virtual"><scope>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</scope><name>ExceptionTranslator</name></member>
       <member refid="d0/d9c/classCatch_1_1ExceptionTranslatorRegistrar_1_1ExceptionTranslator_1a488013ff0869785c9d041443fbf9a757" prot="protected" virt="non-virtual"><scope>Catch::ExceptionTranslatorRegistrar::ExceptionTranslator</scope><name>m_translateFunction</name></member>

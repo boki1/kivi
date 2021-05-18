@@ -12,7 +12,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="299" column="10" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="299" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="299" column="10" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="299" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" prot="public" static="no">
         <name>STRINGIFY_HELPER</name>
@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="319" column="9" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="319" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="319" column="9" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="319" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a43e1cad902b6477bec893cb6430bd6c8" prot="public" static="no">
         <name>STRINGIFY</name>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="320" column="9" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="320" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="320" column="9" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="320" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1adbc5372f40838899018fadbc89bd588b" prot="public" static="no">
         <name>PLATFORM_ID</name>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="424" column="10" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="424" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="424" column="10" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="424" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1aba35d0d200deaeb06aee95ca297acb28" prot="public" static="no">
         <name>ARCHITECTURE_ID</name>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="546" column="12" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="546" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="546" column="12" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="546" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1ad1280362da42492bbc11aa78cbf776ad" prot="public" static="no">
         <name>DEC</name>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="550" column="9" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="550" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="550" column="9" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="550" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a46d5d95daa1bef867bd0179594310ed5" prot="public" static="no">
         <name>HEX</name>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="561" column="9" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="561" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="561" column="9" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="561" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a34cc889e576a1ae6c84ae9e0a851ba21" prot="public" static="no">
         <name>CXX_STD</name>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="638" column="12" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="638" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="638" column="12" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="638" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="306" column="12" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="306" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="306" column="12" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="306" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a2321403dee54ee23f0c2fa849c60f7d4" prot="public" static="no" mutable="no">
         <type>char const  *</type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="620" column="12" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="620" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="620" column="12" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="620" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a59647e99d304ed33b15cb284c27ed391" prot="public" static="no" mutable="no">
         <type>char const  *</type>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="621" column="12" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="621" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="621" column="12" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="621" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d8/db8/build_2CMakeFiles_23_819_87_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1a1ce162bad2fe6966ac8b33cc19e120b8" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -175,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="641" column="12" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="641" bodyend="-1"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="641" column="12" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="641" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="657" column="5" bodyfile="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="657" bodyend="680"/>
+        <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" line="657" column="5" bodyfile="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp" bodystart="657" bodyend="680"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -888,6 +888,6 @@
 <codeline lineno="679"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>require;</highlight></codeline>
 <codeline lineno="680"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"/>
+    <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"/>
   </compounddef>
 </doxygen>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2847" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2847" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2847" column="13" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2847" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d01/structCatch_1_1Totals_1a885ded66df752147b30c3d45aa602ec9" prot="public" static="no" mutable="no">
         <type><ref refid="de/db0/structCatch_1_1Counts" kindref="compound">Counts</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2848" column="16" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2848" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2848" column="16" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2848" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d01/structCatch_1_1Totals_1adb195fe477aedee2ecea88c888f16506" prot="public" static="no" mutable="no">
         <type><ref refid="de/db0/structCatch_1_1Counts" kindref="compound">Counts</ref></type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2849" column="16" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2849" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2849" column="16" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2849" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2842" column="16"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2842" column="16"/>
       </memberdef>
       <memberdef kind="function" id="d2/d01/structCatch_1_1Totals_1a574015076e54cc405c70b053e3356e43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="d2/d01/structCatch_1_1Totals" kindref="compound">Totals</ref> &amp;</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2843" column="16"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2843" column="16"/>
       </memberdef>
       <memberdef kind="function" id="d2/d01/structCatch_1_1Totals_1a1a94a654f5f3786b75695e081fc9bca2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="d2/d01/structCatch_1_1Totals" kindref="compound">Totals</ref></type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2845" column="16"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2845" column="16"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -116,7 +116,7 @@
         <link refid="de/db0/structCatch_1_1Counts"/>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2840" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2840" bodyend="2850"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2840" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2840" bodyend="2850"/>
     <listofallmembers>
       <member refid="d2/d01/structCatch_1_1Totals_1a885ded66df752147b30c3d45aa602ec9" prot="public" virt="non-virtual"><scope>Catch::Totals</scope><name>assertions</name></member>
       <member refid="d2/d01/structCatch_1_1Totals_1a1a94a654f5f3786b75695e081fc9bca2" prot="public" virt="non-virtual"><scope>Catch::Totals</scope><name>delta</name></member>

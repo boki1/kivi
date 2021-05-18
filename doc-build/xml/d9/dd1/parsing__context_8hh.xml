@@ -8,84 +8,13 @@
     <includes refid="dc/dee/parser_8tab_8hh" local="yes">parser.tab.hh</includes>
     <includes refid="d3/d46/location_8hh" local="yes">location.hh</includes>
     <includes refid="d9/d1c/syntax_8hh" local="yes">syntax.hh</includes>
-    <includedby refid="db/d3d/lexer_8tab_8cc" local="yes">/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc</includedby>
-    <includedby refid="dc/dee/parser_8tab_8hh" local="yes">/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh</includedby>
-    <includedby refid="da/dd4/parsing__context_8cc" local="yes">/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc</includedby>
-    <includedby refid="d9/d0f/main_8cc" local="no">/home/boki/.tmp/kivi/main.cc</includedby>
-    <includedby refid="db/dce/parser_8test_8cc" local="no">/home/boki/.tmp/kivi/test/frontend/parser.test.cc</includedby>
-    <includedby refid="d2/dfe/parsing__context_8test_8cc" local="no">/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc</includedby>
+    <includedby refid="db/d3d/lexer_8tab_8cc" local="yes">/home/boki/KIVI/frontend/parser/lexer.tab.cc</includedby>
+    <includedby refid="dc/dee/parser_8tab_8hh" local="yes">/home/boki/KIVI/frontend/parser/parser.tab.hh</includedby>
+    <includedby refid="da/dd4/parsing__context_8cc" local="yes">/home/boki/KIVI/frontend/parser/parsing_context.cc</includedby>
+    <includedby refid="d9/d0f/main_8cc" local="no">/home/boki/KIVI/main.cc</includedby>
+    <includedby refid="db/dce/parser_8test_8cc" local="no">/home/boki/KIVI/test/frontend/parser.test.cc</includedby>
+    <includedby refid="d2/dfe/parsing__context_8test_8cc" local="no">/home/boki/KIVI/test/frontend/parsing_context.test.cc</includedby>
     <incdepgraph>
-      <node id="6">
-        <label>syntactical_structures.hh</label>
-        <link refid="d4/d91/syntactical__structures_8hh"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>loguru/loguru.hpp</label>
-        <link refid="df/dec/loguru_8hpp"/>
-      </node>
-      <node id="10">
-        <label>variant</label>
-      </node>
-      <node id="13">
-        <label>cassert</label>
-      </node>
-      <node id="16">
-        <label>stdexcept</label>
-      </node>
-      <node id="8">
-        <label>string</label>
-      </node>
-      <node id="1">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh</label>
-        <link refid="d9/dd1/parsing__context_8hh"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>map</label>
-      </node>
-      <node id="17">
-        <label>location.hh</label>
-        <link refid="d3/d46/location_8hh"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>syntax.hh</label>
-        <link refid="d9/d1c/syntax_8hh"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>typeinfo</label>
-      </node>
-      <node id="12">
-        <label>optional</label>
-      </node>
       <node id="5">
         <label>parser.tab.hh</label>
         <link refid="dc/dee/parser_8tab_8hh"/>
@@ -112,6 +41,49 @@
         <childnode refid="18" relation="include">
         </childnode>
       </node>
+      <node id="6">
+        <label>syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>variant</label>
+      </node>
+      <node id="13">
+        <label>cassert</label>
+      </node>
+      <node id="16">
+        <label>stdexcept</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>map</label>
+      </node>
+      <node id="18">
+        <label>typeinfo</label>
+      </node>
+      <node id="12">
+        <label>optional</label>
+      </node>
       <node id="3">
         <label>vector</label>
       </node>
@@ -124,49 +96,49 @@
       <node id="15">
         <label>iostream</label>
       </node>
-      <node id="11">
-        <label>memory</label>
+      <node id="17">
+        <label>location.hh</label>
+        <link refid="d3/d46/location_8hh"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="9">
-        <label>/home/boki/.tmp/kivi/test/frontend/parser.test.cc</label>
-        <link refid="db/dce/parser_8test_8cc"/>
+      <node id="4">
+        <label>loguru/loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
       </node>
       <node id="1">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh</label>
+        <label>/home/boki/KIVI/frontend/parser/parsing_context.hh</label>
         <link refid="d9/dd1/parsing__context_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
       </node>
-      <node id="8">
-        <label>/home/boki/.tmp/kivi/test/frontend/example.test.cc</label>
-        <link refid="da/d7a/example_8test_8cc"/>
+      <node id="11">
+        <label>memory</label>
       </node>
+    </incdepgraph>
+    <invincdepgraph>
       <node id="2">
-        <label>/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc</label>
+        <label>/home/boki/KIVI/frontend/parser/lexer.tab.cc</label>
         <link refid="db/d3d/lexer_8tab_8cc"/>
       </node>
       <node id="6">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc</label>
+        <label>/home/boki/KIVI/frontend/parser/parsing_context.cc</label>
         <link refid="da/dd4/parsing__context_8cc"/>
       </node>
-      <node id="5">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc</label>
-        <link refid="d4/d01/parser_8tab_8cc"/>
-      </node>
       <node id="3">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh</label>
+        <label>/home/boki/KIVI/frontend/parser/parser.tab.hh</label>
         <link refid="dc/dee/parser_8tab_8hh"/>
         <childnode refid="4" relation="include">
         </childnode>
@@ -184,20 +156,42 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>/home/boki/.tmp/kivi/frontend/parser/error.cc</label>
-        <link refid="df/dea/error_8cc"/>
       </node>
       <node id="7">
-        <label>/home/boki/.tmp/kivi/main.cc</label>
+        <label>/home/boki/KIVI/main.cc</label>
         <link refid="d9/d0f/main_8cc"/>
       </node>
-      <node id="10">
-        <label>/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc</label>
+      <node id="9">
+        <label>/home/boki/KIVI/test/frontend/parsing_context.test.cc</label>
         <link refid="d2/dfe/parsing__context_8test_8cc"/>
+      </node>
+      <node id="8">
+        <label>/home/boki/KIVI/test/frontend/parser.test.cc</label>
+        <link refid="db/dce/parser_8test_8cc"/>
+      </node>
+      <node id="4">
+        <label>/home/boki/KIVI/frontend/parser/error.cc</label>
+        <link refid="df/dea/error_8cc"/>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/frontend/parser/parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/boki/KIVI/frontend/parser/parser.tab.cc</label>
+        <link refid="d4/d01/parser_8tab_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="d2/df1/classsyntax__analyzer_1_1cannot__pop__out__of__empty__exception" prot="public">syntax_analyzer::cannot_pop_out_of_empty_exception</innerclass>
@@ -213,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="14" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="14" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="14" column="9" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="14" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -268,7 +262,7 @@
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a4515c3176bf9a3afc30f20a258b715c4" kindref="member">parsing_context</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>code_beginning,<sp/>std::string*<sp/><ref refid="da/d7a/example_8test_8cc_1ae80f820219e45772366a2a68de6a54c4" kindref="member">filename</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a4515c3176bf9a3afc30f20a258b715c4" kindref="member">parsing_context</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>code_beginning,<sp/>std::string*<sp/><ref refid="da/d28/namespaceloguru_1a537600d7adaf162b1fb4b9a037aa2db3" kindref="member">filename</ref>);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
@@ -334,6 +328,6 @@
 <codeline lineno="196"><highlight class="normal"></highlight></codeline>
 <codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>KIVI_SRC_KIVI_PARSING_CONTEXT_HH_</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh"/>
+    <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh"/>
   </compounddef>
 </doxygen>

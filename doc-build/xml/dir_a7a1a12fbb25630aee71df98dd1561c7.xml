@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_a7a1a12fbb25630aee71df98dd1561c7" kind="dir">
-    <compoundname>/home/boki/.tmp/kivi/frontend/parser</compoundname>
+    <compoundname>/home/boki/KIVI/frontend/parser</compoundname>
     <innerfile refid="df/dea/error_8cc">error.cc</innerfile>
     <innerfile refid="d4/d99/expressions_8cc">expressions.cc</innerfile>
     <innerfile refid="db/d3d/lexer_8tab_8cc">lexer.tab.cc</innerfile>
@@ -18,6 +18,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/"/>
+    <location file="/home/boki/KIVI/frontend/parser/"/>
   </compounddef>
 </doxygen>

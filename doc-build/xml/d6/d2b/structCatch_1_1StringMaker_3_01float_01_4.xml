@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1784" column="20" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1784" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1784" column="20" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1784" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -36,14 +36,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1783" column="28"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1783" column="28"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1782" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1782" bodyend="1785"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1782" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1782" bodyend="1785"/>
     <listofallmembers>
       <member refid="d6/d2b/structCatch_1_1StringMaker_3_01float_01_4_1a7ffacc6fa46a338200f3fbb2ee078648" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; float &gt;</scope><name>convert</name></member>
       <member refid="d6/d2b/structCatch_1_1StringMaker_3_01float_01_4_1a54ebebe76a755dbe2dd8ad409c329378" prot="public" virt="non-virtual"><scope>Catch::StringMaker&lt; float &gt;</scope><name>precision</name></member>

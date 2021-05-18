@@ -9,20 +9,16 @@
     <programlisting>
 <codeline><highlight class="normal">###<sp/>Frontend</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">This<sp/>directory<sp/>contains<sp/>the<sp/>source<sp/>code<sp/>related<sp/>to<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>frontend<sp/>of<sp/>KIVI<sp/>compiler.</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>directory<sp/>contains<sp/>the<sp/>source<sp/>code<sp/>related<sp/>to<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>frontend<sp/>of<sp/>Kivi<sp/>compiler.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">-------------</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">**Contents**</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">-<sp/>`parser/`<sp/>In<sp/>this<sp/>folder<sp/>resides<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>syntactical<sp/>analyzer<sp/>used<sp/>in<sp/>the<sp/>first<sp/>stages<sp/>of<sp/>the<sp/>compilation<sp/>process</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`grammar.y`<sp/>This<sp/>is<sp/>the<sp/>grammar<sp/>used<sp/>by<sp/>`bison`<sp/>in<sp/>order<sp/>to<sp/>generate<sp/>an<sp/>actual<sp/>state<sp/>machine-based<sp/>parser.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">-<sp/>`ir_generation/`<sp/>This<sp/>directory<sp/>is<sp/>used<sp/>for<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>stage<sp/>which<sp/>is<sp/>responsible<sp/>for<sp/>&quot;translating&quot;<sp/>the<sp/>already<sp/>generated<sp/>AST<sp/>into<sp/>a<sp/>more<sp/>assembly-like<sp/>architecture-independent<sp/>simplistic<sp/>language<sp/>called<sp/>_intermediate<sp/>representation_</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">----------------</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">For<sp/>the<sp/>next<sp/>steps<sp/>of<sp/>the<sp/>compilation<sp/>process<sp/>check<sp/>the<sp/>`backend/`<sp/>directory.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`lexemes.re`<sp/>This<sp/>file<sp/>lists<sp/>the<sp/>lexemes/tokens<sp/>used<sp/>by<sp/>`re2c`<sp/>(in<sp/>combination<sp/>with<sp/>`bison`)<sp/>in<sp/>order<sp/>to<sp/>generate<sp/>the<sp/>code<sp/>for<sp/>lexical<sp/>analysis<sp/>stage</highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/frontend/README.md"/>
+    <location file="/home/boki/KIVI/frontend/README.md"/>
   </compounddef>
 </doxygen>

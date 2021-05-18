@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="928" column="31"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="928" column="31"/>
       </memberdef>
       <memberdef kind="function" id="d2/dc6/structCatch_1_1is__callable__tester_1adce16c4accb860bf46f6491dd70cfd63" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -49,14 +49,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="930" column="32"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="930" column="32"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="926" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="926" bodyend="931"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="926" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="926" bodyend="931"/>
     <listofallmembers>
       <member refid="d2/dc6/structCatch_1_1is__callable__tester_1a91c513c4fc18b01b96fa0132706f34b3" prot="public" virt="non-virtual"><scope>Catch::is_callable_tester</scope><name>test</name></member>
       <member refid="d2/dc6/structCatch_1_1is__callable__tester_1adce16c4accb860bf46f6491dd70cfd63" prot="public" virt="non-virtual"><scope>Catch::is_callable_tester</scope><name>test</name></member>

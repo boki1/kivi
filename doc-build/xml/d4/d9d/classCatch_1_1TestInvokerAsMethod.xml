@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="961" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="961" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="961" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="961" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="963" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="963" bodyend="963"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="963" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="963" bodyend="963"/>
       </memberdef>
       <memberdef kind="function" id="d4/d9d/classCatch_1_1TestInvokerAsMethod_1a8115a06efe273f4112ec0b5452c1b5f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="965" column="10" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="965" bodyend="968"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="965" column="10" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="965" bodyend="968"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -85,7 +85,7 @@
         <link refid="d2/dac/structCatch_1_1ITestInvoker"/>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="960" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="960" bodyend="969"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="960" column="1" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="960" bodyend="969"/>
     <listofallmembers>
       <member refid="d4/d9d/classCatch_1_1TestInvokerAsMethod_1a8115a06efe273f4112ec0b5452c1b5f2" prot="public" virt="virtual"><scope>Catch::TestInvokerAsMethod</scope><name>invoke</name></member>
       <member refid="d4/d9d/classCatch_1_1TestInvokerAsMethod_1a4851e50d6b43c022c41d5de776a27ed7" prot="private" virt="non-virtual"><scope>Catch::TestInvokerAsMethod</scope><name>m_testAsMethod</name></member>

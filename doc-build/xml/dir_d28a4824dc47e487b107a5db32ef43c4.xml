@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_d28a4824dc47e487b107a5db32ef43c4" kind="dir">
-    <compoundname>/home/boki/.tmp/kivi/examples</compoundname>
+    <compoundname>/home/boki/KIVI/examples</compoundname>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/examples/"/>
+    <location file="/home/boki/KIVI/examples/"/>
   </compounddef>
 </doxygen>

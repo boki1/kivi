@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="409" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="409" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="409" column="12" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="409" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1a7ac465bade99967e86a4d0f63322aaf8" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="414" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="414" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="414" column="12" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="414" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1a78ff0c0bd2012729e3896481b63ac836" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="427" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="427" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="427" column="12" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="427" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -48,7 +48,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="406" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="407" bodyend="428"/>
+    <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="406" column="5" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="407" bodyend="428"/>
     <listofallmembers>
       <member refid="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1aa8223064daf2b99dbadbac8f27ea53fc" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type::union_type</scope><name>dummy1</name></member>
       <member refid="d3/d9c/unionyy_1_1kivi__parser_1_1semantic__type_1_1union__type_1a7ac465bade99967e86a4d0f63322aaf8" prot="public" virt="non-virtual"><scope>yy::kivi_parser::semantic_type::union_type</scope><name>dummy2</name></member>

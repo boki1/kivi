@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="579" column="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="579" column="17"/>
       </memberdef>
       <memberdef kind="function" id="d6/dc8/structCatch_1_1ITestCaseRegistry_1ad6e4d4a621655123f73ae98cfeda063d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref> &gt; const  &amp;</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="580" column="35"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="580" column="35"/>
       </memberdef>
       <memberdef kind="function" id="d6/dc8/structCatch_1_1ITestCaseRegistry_1a33e46639d0319d35497c05bb5d02be5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="d6/df4/classCatch_1_1TestCase" kindref="compound">TestCase</ref> &gt; const  &amp;</type>
@@ -45,14 +45,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="581" column="35"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="581" column="35"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="578" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="578" bodyend="582"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="578" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="578" bodyend="582"/>
     <listofallmembers>
       <member refid="d6/dc8/structCatch_1_1ITestCaseRegistry_1ad6e4d4a621655123f73ae98cfeda063d" prot="public" virt="pure-virtual"><scope>Catch::ITestCaseRegistry</scope><name>getAllTests</name></member>
       <member refid="d6/dc8/structCatch_1_1ITestCaseRegistry_1a33e46639d0319d35497c05bb5d02be5a" prot="public" virt="pure-virtual"><scope>Catch::ITestCaseRegistry</scope><name>getAllTestsSorted</name></member>

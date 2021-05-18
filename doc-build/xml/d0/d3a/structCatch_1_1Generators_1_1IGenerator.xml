@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3947" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3947" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3947" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3947" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3940" column="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3940" column="17"/>
       </memberdef>
       <memberdef kind="function" id="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a525d381fc9249a885b075a0632a8579a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>T const  &amp;</type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3946" column="25"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3946" column="25"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -155,7 +155,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3939" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3939" bodyend="3948"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3939" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3939" bodyend="3948"/>
     <listofallmembers>
       <member refid="da/d17/classCatch_1_1Generators_1_1GeneratorUntypedBase_1a00ff0179d739c3016756b6cf56fabbad" prot="public" virt="non-virtual"><scope>Catch::Generators::IGenerator</scope><name>GeneratorUntypedBase</name></member>
       <member refid="d0/d3a/structCatch_1_1Generators_1_1IGenerator_1a525d381fc9249a885b075a0632a8579a" prot="public" virt="pure-virtual"><scope>Catch::Generators::IGenerator</scope><name>get</name></member>

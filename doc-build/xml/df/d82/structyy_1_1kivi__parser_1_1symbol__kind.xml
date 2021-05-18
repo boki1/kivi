@@ -406,7 +406,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="502" column="7" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="503" bodyend="553"/>
+        <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="502" column="7" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="503" bodyend="553"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -414,7 +414,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" line="500" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh" bodystart="501" bodyend="554"/>
+    <location file="/home/boki/KIVI/frontend/parser/parser.tab.hh" line="500" column="5" bodyfile="/home/boki/KIVI/frontend/parser/parser.tab.hh" bodystart="501" bodyend="554"/>
     <listofallmembers>
       <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0aee2a4715af5cb91e6332489204cf2b9a" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_12_</name></member>
       <member refid="df/d82/structyy_1_1kivi__parser_1_1symbol__kind_1ac21a9959844bc9205aa61f9d58fdbdf0ae109d10fe975dc94cf5d13cd701610a9" prot="public" virt="non-virtual"><scope>yy::kivi_parser::symbol_kind</scope><name>S_13_</name></member>

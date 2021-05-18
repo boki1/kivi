@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1475" column="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1475" column="17"/>
       </memberdef>
       <memberdef kind="function" id="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1a948e66e85f5b66ab68256d50bfe548f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="d6/d6d/structCatch_1_1Detail_1_1EnumInfo" kindref="compound">Detail::EnumInfo</ref> const  &amp;</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1477" column="40"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1477" column="40"/>
       </memberdef>
       <memberdef kind="function" id="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1a60e4546c6fd45f9be68e43410403b562" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -70,14 +70,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1480" column="32" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1480" bodyend="1487"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1480" column="32" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1480" bodyend="1487"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1474" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1474" bodyend="1488"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1474" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1474" bodyend="1488"/>
     <listofallmembers>
       <member refid="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1a948e66e85f5b66ab68256d50bfe548f4" prot="public" virt="pure-virtual"><scope>Catch::IMutableEnumValuesRegistry</scope><name>registerEnum</name></member>
       <member refid="d4/ddb/structCatch_1_1IMutableEnumValuesRegistry_1a60e4546c6fd45f9be68e43410403b562" prot="public" virt="non-virtual"><scope>Catch::IMutableEnumValuesRegistry</scope><name>registerEnum</name></member>

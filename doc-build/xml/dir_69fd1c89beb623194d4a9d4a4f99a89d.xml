@@ -1,11 +1,18 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_69fd1c89beb623194d4a9d4a4f99a89d" kind="dir">
-    <compoundname>/home/boki/.tmp/kivi/frontend/ir_generation</compoundname>
+    <compoundname>/home/boki/KIVI/frontend/ir_generation</compoundname>
+    <innerfile refid="dc/d6c/codes_8cc">codes.cc</innerfile>
+    <innerfile refid="db/de1/concrete__generators_8cc">concrete_generators.cc</innerfile>
+    <innerfile refid="d7/d00/generation__context_8hh">generation_context.hh</innerfile>
+    <innerfile refid="d8/dc5/generation__unit_8cc">generation_unit.cc</innerfile>
+    <innerfile refid="dd/dcd/generation__unit_8hh">generation_unit.hh</innerfile>
+    <innerfile refid="d0/d70/ir__code_8cc">ir_code.cc</innerfile>
+    <innerfile refid="db/db5/ir__code_8hh">ir_code.hh</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/frontend/ir_generation/"/>
+    <location file="/home/boki/KIVI/frontend/ir_generation/"/>
   </compounddef>
 </doxygen>

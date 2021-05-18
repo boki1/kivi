@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_479c27bd7d90b4cd2a917db84cc5293e" kind="dir">
-    <compoundname>/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7</compoundname>
-    <innerdir refid="dir_48afe760e69e41c004be5a0e2ec0f42d">/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdC</innerdir>
-    <innerdir refid="dir_bd5c49d8da4f1c4bbf175c22c1cea157">/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/CompilerIdCXX</innerdir>
+    <compoundname>/home/boki/KIVI/build/CMakeFiles/3.19.7</compoundname>
+    <innerdir refid="dir_48afe760e69e41c004be5a0e2ec0f42d">/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdC</innerdir>
+    <innerdir refid="dir_bd5c49d8da4f1c4bbf175c22c1cea157">/home/boki/KIVI/build/CMakeFiles/3.19.7/CompilerIdCXX</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/build/CMakeFiles/3.19.7/"/>
+    <location file="/home/boki/KIVI/build/CMakeFiles/3.19.7/"/>
   </compounddef>
 </doxygen>

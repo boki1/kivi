@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="980" column="15" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="980" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="980" column="15" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="980" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="db/d73/structCatch_1_1NameAndTags_1a74062ed1138834a348424eb7ed900c57" prot="public" static="no" mutable="no">
         <type><ref refid="d5/dd8/classCatch_1_1StringRef" kindref="compound">StringRef</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="981" column="15" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="981" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="981" column="15" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="981" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="979" column="5"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="979" column="5"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -74,7 +74,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="978" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="978" bodyend="982"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="978" column="1" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="978" bodyend="982"/>
     <listofallmembers>
       <member refid="db/d73/structCatch_1_1NameAndTags_1a7cbea60e0cebfa622c667008eb011420" prot="public" virt="non-virtual"><scope>Catch::NameAndTags</scope><name>name</name></member>
       <member refid="db/d73/structCatch_1_1NameAndTags_1ab585111e615ce8c504a2b9630de8ee94" prot="public" virt="non-virtual"><scope>Catch::NameAndTags</scope><name>NameAndTags</name></member>

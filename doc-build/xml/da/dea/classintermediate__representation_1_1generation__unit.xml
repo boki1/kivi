@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/dea/classintermediate__representation_1_1generation__unit" kind="class" language="C++" prot="public">
+    <compoundname>intermediate_representation::generation_unit</compoundname>
+    <includes refid="dd/dcd/generation__unit_8hh" local="no">generation_unit.hh</includes>
+    <innerclass refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" prot="public">intermediate_representation::generation_unit::generation_context</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> * &gt;</type>
+        <definition>typedef std::map&lt;std::string, tac*&gt; intermediate_representation::generation_unit::label_entries_type</definition>
+        <argsstring></argsstring>
+        <name>label_entries_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="24" column="18" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/dea/classintermediate__representation_1_1generation__unit_1a748a0ff5411d98928a381a8958309a38" prot="public" static="no">
+        <type>std::map&lt; std::string, std::size_t &gt;</type>
+        <definition>typedef std::map&lt;std::string, std::size_t&gt; intermediate_representation::generation_unit::parameter_count_type</definition>
+        <argsstring></argsstring>
+        <name>parameter_count_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="25" column="18" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/dea/classintermediate__representation_1_1generation__unit_1a570d342b242a2ea6dd141da8e591baa9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unique_ptr&lt; <ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;unique_ptr&lt;tac&gt; &gt; intermediate_representation::generation_unit::m_tacs</definition>
+        <argsstring></argsstring>
+        <name>m_tacs</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>All three address codes used in a unit to be generated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="29" column="13" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dea/classintermediate__representation_1_1generation__unit_1abd9f1bcece9928c2364d41227c919202" prot="private" static="no" mutable="no">
+        <type><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a748a0ff5411d98928a381a8958309a38" kindref="member">parameter_count_type</ref></type>
+        <definition>parameter_count_type intermediate_representation::generation_unit::m_function_parameters</definition>
+        <argsstring></argsstring>
+        <name>m_function_parameters</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Number of parameters in each function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="32" column="22" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dea/classintermediate__representation_1_1generation__unit_1a342593f698e650334bddbe03d9ac33fb" prot="private" static="no" mutable="no">
+        <type><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" kindref="member">label_entries_type</ref></type>
+        <definition>label_entries_type intermediate_representation::generation_unit::m_entry_points</definition>
+        <argsstring></argsstring>
+        <name>m_entry_points</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>The entry point address of each function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="35" column="20" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1abb2972d5a7ca05ba6f14ce36f19ed763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_unit::generation_context</ref></type>
+        <definition>generation_unit::generation_context intermediate_representation::generation_unit::prepare_context</definition>
+        <argsstring>(const syntax_analyzer::function &amp;function)</argsstring>
+        <name>prepare_context</name>
+        <param>
+          <type>const <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">syntax_analyzer::function</ref> &amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+<para>Default construction only required. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiates a context for the given function and returns it </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="52" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.cc" bodystart="95" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1aeaec4c6a2164f09d2442024afd780f37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_sequence</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;e, generation_context &amp;gtx)</argsstring>
+        <name>generate_sequence</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>gtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="56" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a87335c4a4800042ba67b560494db6b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_copy</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;e, generation_context &amp;gtx)</argsstring>
+        <name>generate_copy</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>gtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="63" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a2d4f40a654d429cd5225540ce9e4dfe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_funcall</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;e, generation_context &amp;gtx)</argsstring>
+        <name>generate_funcall</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>gtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="64" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a020cc91550e17268f68839f3b37954d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_number</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;e, generation_context &amp;gtx)</argsstring>
+        <name>generate_number</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>gtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="65" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a75117caa2cc27786717b60b2910a15fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_return</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;e, generation_context &amp;gtx)</argsstring>
+        <name>generate_return</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>gtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="66" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a9d7d4f0cad958234a39d710c9bd5cdce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_nop</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;e, generation_context &amp;gtx)</argsstring>
+        <name>generate_nop</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>gtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="67" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a32419904540ec2582a172a399d3b372c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_negation</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;e, generation_context &amp;gtx)</argsstring>
+        <name>generate_negation</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>gtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="68" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a3cf0d0c3e1b7639f35ffc2e20d50796e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_identifier</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;e, generation_context &amp;gtx)</argsstring>
+        <name>generate_identifier</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>gtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="69" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a8d61192a557cb47caa44c49de589e58f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_conditional</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;e, generation_context &amp;gtx)</argsstring>
+        <name>generate_conditional</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>gtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="71" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1aaf7c929d7855d1d47427dbbee47b8985" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_nop</definition>
+        <argsstring>()</argsstring>
+        <name>tac_nop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="76" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1ade9b9cbec5f857638fd7a952ee4e05fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_init</definition>
+        <argsstring>(const std::string &amp;ident_name, const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_init</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ident_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="77" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1aa88fe2248fd95fa2ac3ff4544cf74e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_add</definition>
+        <argsstring>(const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_add</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="78" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1ac3e33f0a16025253d43dc01f6b72342f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_neg</definition>
+        <argsstring>(const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_neg</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="79" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1aa08ddc7a07d78a52302bf242c63ddf3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_copy</definition>
+        <argsstring>(const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_copy</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="80" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a7a05a7aef970731a32c63268a51f436a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_read</definition>
+        <argsstring>(const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_read</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="81" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a55a25da3a56d406dafe7f72be078d2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_write</definition>
+        <argsstring>(const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_write</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="82" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a65acd96e3bffcf60188a63ccd5b03742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_eq</definition>
+        <argsstring>(const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_eq</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="83" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a490d3f9da0268354cdc6ce1d16d19b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_ifnz</definition>
+        <argsstring>(const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_ifnz</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="84" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a0358f1cad6154db1725d3ba8cd69d79e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_fcall</definition>
+        <argsstring>(const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_fcall</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="85" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a63c67860335b5c270955f6a4f5370986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac* intermediate_representation::generation_unit::tac_return</definition>
+        <argsstring>(const tac::operands_type &amp;operands)</argsstring>
+        <name>tac_return</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref> &amp;</type>
+          <declname>operands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="86" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a601041f6d90806c905ffad8dfe214f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> *</type>
+        <definition>tac * intermediate_representation::generation_unit::define_tac</definition>
+        <argsstring>(const tac &amp;code)</argsstring>
+        <name>define_tac</name>
+        <param>
+          <type>const <ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> &amp;</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Defines an already constructed TAC. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="92" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.cc" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1afeedce24612a7aa95cdfb515a1e5eae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></type>
+        <definition>tac::vregister_type intermediate_representation::generation_unit::generate_ir</definition>
+        <argsstring>(const syntax_analyzer::expression &amp;code, generation_context &amp;ctx)</argsstring>
+        <name>generate_ir</name>
+        <param>
+          <type>const <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref> &amp;</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>The number of the current virtual register <simplesect kind="note"><para>Starts from -1 because -1 + 1 = 0, meaning that each increment will result if correct virtual register number</para>
+</simplesect>
+Each AST expression gets translated to IR according to its type <ndash/> hence <computeroutput>expr_type</computeroutput></para>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="95" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.cc" bodystart="20" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a43e346ae52885aa30e78f1da4f12208c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate_function</definition>
+        <argsstring>(const syntax_analyzer::function &amp;function)</argsstring>
+        <name>generate_function</name>
+        <param>
+          <type>const <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">syntax_analyzer::function</ref> &amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="98" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.cc" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a7126b3b333c247a512ef5a3354e3ef52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void intermediate_representation::generation_unit::generate</definition>
+        <argsstring>(const std::vector&lt; syntax_analyzer::function &gt; &amp;ctx_functions)</argsstring>
+        <name>generate</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">syntax_analyzer::function</ref> &gt; &amp;</type>
+          <declname>ctx_functions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="101" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.cc" bodystart="114" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a1583772560255aa94f352edcebfd1dd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; unique_ptr&lt; <ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref> &gt; &gt; &amp;</type>
+        <definition>const std::vector&lt;unique_ptr&lt;tac&gt; &gt;&amp; intermediate_representation::generation_unit::tacs</definition>
+        <argsstring>()</argsstring>
+        <name>tacs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="105" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1ab1002938edd982d492700052e628893b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a748a0ff5411d98928a381a8958309a38" kindref="member">parameter_count_type</ref> &amp;</type>
+        <definition>parameter_count_type&amp; intermediate_representation::generation_unit::function_parameters_mut</definition>
+        <argsstring>()</argsstring>
+        <name>function_parameters_mut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="111" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1a0214d6797c5b4a27ef977f796ea360d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" kindref="member">label_entries_type</ref> &amp;</type>
+        <definition>label_entries_type&amp; intermediate_representation::generation_unit::entry_points_mut</definition>
+        <argsstring>()</argsstring>
+        <name>entry_points_mut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="117" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dea/classintermediate__representation_1_1generation__unit_1ae12e7abb493ba4c7b976a15a02033989" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" kindref="member">label_entries_type</ref> &amp;</type>
+        <definition>const label_entries_type&amp; intermediate_representation::generation_unit::entry_points</definition>
+        <argsstring>()</argsstring>
+        <name>entry_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="123" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="123" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Unit which is responsible for translating a given AST into a sequence of TAC&apos;s (Three-Address Code) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" line="21" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh" bodystart="22" bodyend="127"/>
+    <listofallmembers>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a601041f6d90806c905ffad8dfe214f90" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>define_tac</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1ae12e7abb493ba4c7b976a15a02033989" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>entry_points</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a0214d6797c5b4a27ef977f796ea360d0" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>entry_points_mut</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1ab1002938edd982d492700052e628893b" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>function_parameters_mut</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a7126b3b333c247a512ef5a3354e3ef52" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a8d61192a557cb47caa44c49de589e58f" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_conditional</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a87335c4a4800042ba67b560494db6b34" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_copy</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a2d4f40a654d429cd5225540ce9e4dfe8" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_funcall</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a43e346ae52885aa30e78f1da4f12208c" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_function</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a3cf0d0c3e1b7639f35ffc2e20d50796e" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_identifier</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1afeedce24612a7aa95cdfb515a1e5eae2" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_ir</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a32419904540ec2582a172a399d3b372c" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_negation</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a9d7d4f0cad958234a39d710c9bd5cdce" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_nop</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a020cc91550e17268f68839f3b37954d2" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_number</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a75117caa2cc27786717b60b2910a15fa" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_return</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1aeaec4c6a2164f09d2442024afd780f37" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>generate_sequence</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>label_entries_type</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a342593f698e650334bddbe03d9ac33fb" prot="private" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>m_entry_points</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1abd9f1bcece9928c2364d41227c919202" prot="private" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>m_function_parameters</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a570d342b242a2ea6dd141da8e591baa9" prot="private" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>m_tacs</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a748a0ff5411d98928a381a8958309a38" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>parameter_count_type</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1abb2972d5a7ca05ba6f14ce36f19ed763" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>prepare_context</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1aa88fe2248fd95fa2ac3ff4544cf74e8b" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_add</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1aa08ddc7a07d78a52302bf242c63ddf3a" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_copy</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a65acd96e3bffcf60188a63ccd5b03742" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_eq</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a0358f1cad6154db1725d3ba8cd69d79e" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_fcall</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a490d3f9da0268354cdc6ce1d16d19b9b" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_ifnz</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1ade9b9cbec5f857638fd7a952ee4e05fb" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_init</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1ac3e33f0a16025253d43dc01f6b72342f" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_neg</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1aaf7c929d7855d1d47427dbbee47b8985" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_nop</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a7a05a7aef970731a32c63268a51f436a" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_read</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a63c67860335b5c270955f6a4f5370986" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_return</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a55a25da3a56d406dafe7f72be078d2f8" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tac_write</name></member>
+      <member refid="da/dea/classintermediate__representation_1_1generation__unit_1a1583772560255aa94f352edcebfd1dd4" prot="public" virt="non-virtual"><scope>intermediate_representation::generation_unit</scope><name>tacs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/df2/structtransform__iterator__spec" kind="struct" language="C++" prot="public">
+    <compoundname>transform_iterator_spec</compoundname>
+    <basecompoundref refid="df/d1b/structtransform__iterator__base" prot="public" virt="non-virtual">transform_iterator_base&lt; decltype((*((const F *) nullptr))(*I())) &gt;</basecompoundref>
+    <includes refid="d5/df9/transform__iterator_8hh" local="no">transform_iterator.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>typename I</type>
+      </param>
+      <param>
+        <type>typename F</type>
+      </param>
+      <param>
+        <type>typename R</type>
+        <defval>decltype((*((const F*)nullptr))(*I()))</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/df2/structtransform__iterator__spec_1a96a36b3449a4b83e4cfa5fb4f17f890b" prot="private" static="no" mutable="no">
+        <type>I</type>
+        <definition>I transform_iterator_spec&lt; I, F, R &gt;::cur</definition>
+        <argsstring></argsstring>
+        <name>cur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="97" column="7" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/df2/structtransform__iterator__spec_1ad3d3e97062345a6e7dcb5ed591f94d7e" prot="private" static="no" mutable="no">
+        <type>I</type>
+        <definition>I transform_iterator_spec&lt; I, F, R &gt;::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="97" column="11" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/df2/structtransform__iterator__spec_1a201c29a7461c9217f8f1100fdf9d7048" prot="private" static="no" mutable="no">
+        <type>F &amp;&amp;</type>
+        <definition>F&amp;&amp; transform_iterator_spec&lt; I, F, R &gt;::func</definition>
+        <argsstring></argsstring>
+        <name>func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="98" column="7" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/df2/structtransform__iterator__spec_1a5e8defbdea93760f4bbb30bdae7fa2d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>transform_iterator_spec&lt; I, F, R &gt;::transform_iterator_spec</definition>
+        <argsstring>(const I &amp;b, const I &amp;e, F &amp;&amp;f)</argsstring>
+        <name>transform_iterator_spec</name>
+        <param>
+          <type>const I &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const I &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="88" column="5" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="88" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d3/df2/structtransform__iterator__spec_1a607b0570dc2708cc9f64d3b860dce240" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool transform_iterator_spec&lt; I, F, R &gt;::eq</definition>
+        <argsstring>(const transform_iterator_base&lt; R &gt; &amp;b) const</argsstring>
+        <name>eq</name>
+        <param>
+          <type>const <ref refid="df/d1b/structtransform__iterator__base" kindref="compound">transform_iterator_base</ref>&lt; R &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="91" column="18" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df2/structtransform__iterator__spec_1a253d09507f7def0e172c0adbe5a4ed9a" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool transform_iterator_spec&lt; I, F, R &gt;::is_end</definition>
+        <argsstring>() const</argsstring>
+        <name>is_end</name>
+        <reimplements refid="df/d1b/structtransform__iterator__base_1acbe38494994f546a1f3000dbd32c1d3d">is_end</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="92" column="18" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df2/structtransform__iterator__spec_1ad64f4706117c9f4dad74d293f5f4597f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void transform_iterator_spec&lt; I, F, R &gt;::delta</definition>
+        <argsstring>(std::ptrdiff_t by)</argsstring>
+        <name>delta</name>
+        <reimplements refid="df/d1b/structtransform__iterator__base_1adb0f3663e765919b6d4df681a1b51b5f">delta</reimplements>
+        <param>
+          <type>std::ptrdiff_t</type>
+          <declname>by</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="93" column="18" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df2/structtransform__iterator__spec_1aecbcd4973fc3156748bcd71eb2b912f9" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R transform_iterator_spec&lt; I, F, R &gt;::ref</definition>
+        <argsstring>() const</argsstring>
+        <name>ref</name>
+        <reimplements refid="df/d1b/structtransform__iterator__base_1abd44ce20a709d61664f08409dee8f696">ref</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="94" column="15" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df2/structtransform__iterator__spec_1a98ef388178d491a5c0c20f69eb7ab299" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="df/d1b/structtransform__iterator__base" kindref="compound">transform_iterator_base</ref>&lt; R &gt; *</type>
+        <definition>virtual transform_iterator_base&lt;R&gt;* transform_iterator_spec&lt; I, F, R &gt;::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <reimplements refid="df/d1b/structtransform__iterator__base_1a1568439d6a414a371a9a37242f81b5ec">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="95" column="37" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="95" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>transform_iterator_spec&lt; I, F, R &gt;</label>
+        <link refid="d3/df2/structtransform__iterator__spec"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>transform_iterator_base&lt; decltype((*((const F *) nullptr))(*I())) &gt;</label>
+        <link refid="df/d1b/structtransform__iterator__base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>transform_iterator_spec&lt; I, F, R &gt;</label>
+        <link refid="d3/df2/structtransform__iterator__spec"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>transform_iterator_base&lt; decltype((*((const F *) nullptr))(*I())) &gt;</label>
+        <link refid="df/d1b/structtransform__iterator__base"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" line="86" column="1" bodyfile="/home/boki/KIVI/extern/transform_iterator/transform_iterator.hh" bodystart="87" bodyend="99"/>
+    <listofallmembers>
+      <member refid="d3/df2/structtransform__iterator__spec_1a98ef388178d491a5c0c20f69eb7ab299" prot="private" virt="virtual"><scope>transform_iterator_spec</scope><name>clone</name></member>
+      <member refid="d3/df2/structtransform__iterator__spec_1a96a36b3449a4b83e4cfa5fb4f17f890b" prot="private" virt="non-virtual"><scope>transform_iterator_spec</scope><name>cur</name></member>
+      <member refid="d3/df2/structtransform__iterator__spec_1ad64f4706117c9f4dad74d293f5f4597f" prot="private" virt="virtual"><scope>transform_iterator_spec</scope><name>delta</name></member>
+      <member refid="d3/df2/structtransform__iterator__spec_1ad3d3e97062345a6e7dcb5ed591f94d7e" prot="private" virt="non-virtual"><scope>transform_iterator_spec</scope><name>end</name></member>
+      <member refid="d3/df2/structtransform__iterator__spec_1a607b0570dc2708cc9f64d3b860dce240" prot="private" virt="virtual"><scope>transform_iterator_spec</scope><name>eq</name></member>
+      <member refid="d3/df2/structtransform__iterator__spec_1a201c29a7461c9217f8f1100fdf9d7048" prot="private" virt="non-virtual"><scope>transform_iterator_spec</scope><name>func</name></member>
+      <member refid="d3/df2/structtransform__iterator__spec_1a253d09507f7def0e172c0adbe5a4ed9a" prot="private" virt="virtual"><scope>transform_iterator_spec</scope><name>is_end</name></member>
+      <member refid="d3/df2/structtransform__iterator__spec_1aecbcd4973fc3156748bcd71eb2b912f9" prot="private" virt="virtual"><scope>transform_iterator_spec</scope><name>ref</name></member>
+      <member refid="df/d1b/structtransform__iterator__base_1acf3c8be70955fc902ed730e66f00355e" prot="protected" virt="non-virtual"><scope>transform_iterator_spec</scope><name>transform_iterator_base</name></member>
+      <member refid="d3/df2/structtransform__iterator__spec_1a5e8defbdea93760f4bbb30bdae7fa2d2" prot="public" virt="non-virtual"><scope>transform_iterator_spec</scope><name>transform_iterator_spec</name></member>
+      <member refid="df/d1b/structtransform__iterator__base_1abe2af9e4f9c30a0645e8a698d0993263" prot="public" virt="virtual"><scope>transform_iterator_spec</scope><name>~transform_iterator_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

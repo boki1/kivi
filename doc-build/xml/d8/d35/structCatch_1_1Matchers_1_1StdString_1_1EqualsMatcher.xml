@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3555" column="13"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3555" column="13"/>
       </memberdef>
       <memberdef kind="function" id="d8/d35/structCatch_1_1Matchers_1_1StdString_1_1EqualsMatcher_1a0bb9d64693f7bb1ef7441062d219f21a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3556" column="18"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3556" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -111,7 +111,7 @@
         <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3554" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3554" bodyend="3557"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3554" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3554" bodyend="3557"/>
     <listofallmembers>
       <member refid="d8/dbb/structCatch_1_1Matchers_1_1StdString_1_1StringMatcherBase_1a47af030f8cea42a601ffb1000eea5cca" prot="public" virt="virtual"><scope>Catch::Matchers::StdString::EqualsMatcher</scope><name>describe</name></member>
       <member refid="d8/d35/structCatch_1_1Matchers_1_1StdString_1_1EqualsMatcher_1ab740f1fb2310e9fe3fed5134d4c7e4c8" prot="public" virt="non-virtual"><scope>Catch::Matchers::StdString::EqualsMatcher</scope><name>EqualsMatcher</name></member>

@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="985" column="5"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="985" column="5"/>
       </memberdef>
       <memberdef kind="function" id="dc/d59/structCatch_1_1AutoReg_1a3cdb53f1e5ff115310f3372bebe198f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="986" column="5"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="986" column="5"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -76,7 +76,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="984" column="1" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="984" bodyend="987"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="984" column="1" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="984" bodyend="987"/>
     <listofallmembers>
       <member refid="dc/d59/structCatch_1_1AutoReg_1a7eba02fb9d80b9896bf5a6517369af28" prot="public" virt="non-virtual"><scope>Catch::AutoReg</scope><name>AutoReg</name></member>
       <member refid="dc/d1c/classCatch_1_1NonCopyable_1a74cf3e4aa051c284941e39b436b2f693" prot="private" virt="non-virtual"><scope>Catch::AutoReg</scope><name>NonCopyable</name></member>

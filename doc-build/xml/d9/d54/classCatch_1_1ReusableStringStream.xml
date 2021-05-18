@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1439" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1439" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1439" column="21" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1439" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d54/classCatch_1_1ReusableStringStream_1ae8dc0aa8ab418990869cd5ea9ee51f14" prot="private" static="no" mutable="no">
         <type>std::ostream *</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1440" column="22" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1440" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1440" column="22" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1440" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1442" column="9"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1442" column="9"/>
       </memberdef>
       <memberdef kind="function" id="d9/d54/classCatch_1_1ReusableStringStream_1aba9384e258a4db3178447b6a58414712" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1443" column="9"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1443" column="9"/>
       </memberdef>
       <memberdef kind="function" id="d9/d54/classCatch_1_1ReusableStringStream_1a0e9ecf260b2a5d35f4886ef0d51f6270" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1445" column="14"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1445" column="14"/>
       </memberdef>
       <memberdef kind="function" id="d9/d54/classCatch_1_1ReusableStringStream_1af95f72024c082db70e5e50782e28e4f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1448" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1448" bodyend="1451"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1448" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1448" bodyend="1451"/>
       </memberdef>
       <memberdef kind="function" id="d9/d54/classCatch_1_1ReusableStringStream_1a6881808c60a080d4e24a0b81c94cbf67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1452" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1452" bodyend="1452"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1452" column="14" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1452" bodyend="1452"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -136,7 +136,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1438" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1438" bodyend="1453"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1438" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1438" bodyend="1453"/>
     <listofallmembers>
       <member refid="d9/d54/classCatch_1_1ReusableStringStream_1a6881808c60a080d4e24a0b81c94cbf67" prot="public" virt="non-virtual"><scope>Catch::ReusableStringStream</scope><name>get</name></member>
       <member refid="d9/d54/classCatch_1_1ReusableStringStream_1a6e8154ffe67117de424c491e3b192504" prot="private" virt="non-virtual"><scope>Catch::ReusableStringStream</scope><name>m_index</name></member>

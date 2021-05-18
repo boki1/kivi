@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="533" column="21"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="533" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="532" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="532" bodyend="534"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="532" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="532" bodyend="534"/>
     <listofallmembers>
       <member refid="d4/dd0/structCatch_1_1StreamEndStop_1a4a518f0342a381074821d5bda2651401" prot="public" virt="non-virtual"><scope>Catch::StreamEndStop</scope><name>operator+</name></member>
     </listofallmembers>

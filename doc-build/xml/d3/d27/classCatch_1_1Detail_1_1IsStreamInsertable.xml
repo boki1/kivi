@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1571" column="31" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1571" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1571" column="31" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1571" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1564" column="25"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1564" column="25"/>
       </memberdef>
       <memberdef kind="function" id="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1ac5761375646929916dc5e165d44cd3d9" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -71,14 +71,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1568" column="25"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1568" column="25"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1562" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1562" bodyend="1572"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1562" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1562" bodyend="1572"/>
     <listofallmembers>
       <member refid="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1a4269761a8bcae50110c0814462fc4ef0" prot="private" virt="non-virtual"><scope>Catch::Detail::IsStreamInsertable</scope><name>test</name></member>
       <member refid="d3/d27/classCatch_1_1Detail_1_1IsStreamInsertable_1ac5761375646929916dc5e165d44cd3d9" prot="private" virt="non-virtual"><scope>Catch::Detail::IsStreamInsertable</scope><name>test</name></member>

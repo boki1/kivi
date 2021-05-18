@@ -18,13 +18,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3489" column="17" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3489" declcolumn="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3489" column="17" declfile="/home/boki/KIVI/extern/catch2/catch2.hpp" declline="3489" declcolumn="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3488" column="1"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3488" column="1"/>
   </compounddef>
 </doxygen>

@@ -2,58 +2,21 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="df/dec/loguru_8hpp" kind="file" language="C++">
     <compoundname>loguru.hpp</compoundname>
-    <includedby refid="df/d02/loguru_8cpp" local="yes">/home/boki/.tmp/kivi/extern/loguru/loguru.cpp</includedby>
-    <includedby refid="da/dd4/parsing__context_8cc" local="no">/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc</includedby>
-    <includedby refid="d9/dd1/parsing__context_8hh" local="no">/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh</includedby>
+    <includedby refid="df/d02/loguru_8cpp" local="yes">/home/boki/KIVI/extern/loguru/loguru.cpp</includedby>
+    <includedby refid="da/dd4/parsing__context_8cc" local="no">/home/boki/KIVI/frontend/parser/parsing_context.cc</includedby>
+    <includedby refid="d9/dd1/parsing__context_8hh" local="no">/home/boki/KIVI/frontend/parser/parsing_context.hh</includedby>
+    <includedby refid="d0/d4f/cli_8cc" local="no">/home/boki/KIVI/utils/cli/cli.cc</includedby>
     <invincdepgraph>
-      <node id="1">
-        <label>/home/boki/.tmp/kivi/extern/loguru/loguru.hpp</label>
-        <link refid="df/dec/loguru_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>/home/boki/.tmp/kivi/test/frontend/parser.test.cc</label>
-        <link refid="db/dce/parser_8test_8cc"/>
-      </node>
-      <node id="4">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh</label>
-        <link refid="d9/dd1/parsing__context_8hh"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>/home/boki/.tmp/kivi/test/frontend/example.test.cc</label>
-        <link refid="da/d7a/example_8test_8cc"/>
-      </node>
       <node id="5">
-        <label>/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc</label>
+        <label>/home/boki/KIVI/frontend/parser/lexer.tab.cc</label>
         <link refid="db/d3d/lexer_8tab_8cc"/>
       </node>
       <node id="3">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc</label>
+        <label>/home/boki/KIVI/frontend/parser/parsing_context.cc</label>
         <link refid="da/dd4/parsing__context_8cc"/>
       </node>
-      <node id="8">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parser.tab.cc</label>
-        <link refid="d4/d01/parser_8tab_8cc"/>
-      </node>
       <node id="6">
-        <label>/home/boki/.tmp/kivi/frontend/parser/parser.tab.hh</label>
+        <label>/home/boki/KIVI/frontend/parser/parser.tab.hh</label>
         <link refid="dc/dee/parser_8tab_8hh"/>
         <childnode refid="7" relation="include">
         </childnode>
@@ -71,24 +34,62 @@
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>/home/boki/.tmp/kivi/frontend/parser/error.cc</label>
-        <link refid="df/dea/error_8cc"/>
       </node>
       <node id="9">
-        <label>/home/boki/.tmp/kivi/main.cc</label>
+        <label>/home/boki/KIVI/main.cc</label>
         <link refid="d9/d0f/main_8cc"/>
       </node>
+      <node id="11">
+        <label>/home/boki/KIVI/test/frontend/parsing_context.test.cc</label>
+        <link refid="d2/dfe/parsing__context_8test_8cc"/>
+      </node>
+      <node id="10">
+        <label>/home/boki/KIVI/test/frontend/parser.test.cc</label>
+        <link refid="db/dce/parser_8test_8cc"/>
+      </node>
       <node id="2">
-        <label>/home/boki/.tmp/kivi/extern/loguru/loguru.cpp</label>
+        <label>/home/boki/KIVI/extern/loguru/loguru.cpp</label>
         <link refid="df/d02/loguru_8cpp"/>
       </node>
       <node id="12">
-        <label>/home/boki/.tmp/kivi/test/frontend/parsing_context.test.cc</label>
-        <link refid="d2/dfe/parsing__context_8test_8cc"/>
+        <label>/home/boki/KIVI/utils/cli/cli.cc</label>
+        <link refid="d0/d4f/cli_8cc"/>
+      </node>
+      <node id="7">
+        <label>/home/boki/KIVI/frontend/parser/error.cc</label>
+        <link refid="df/dea/error_8cc"/>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/extern/loguru/loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/boki/KIVI/frontend/parser/parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/boki/KIVI/frontend/parser/parser.tab.cc</label>
+        <link refid="d4/d01/parser_8tab_8cc"/>
       </node>
     </invincdepgraph>
     <innerclass refid="de/d40/classloguru_1_1Text" prot="public">loguru::Text</innerclass>
@@ -113,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="94" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="94" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="94" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1afb62de02ee7103802682a94b065e8bbf" prot="public" static="no">
         <name>LOGURU_VERSION_MAJOR</name>
@@ -124,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="97" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="97" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="97" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ae2caf8cb50081747659bde178e2c0d81" prot="public" static="no">
         <name>LOGURU_VERSION_MINOR</name>
@@ -135,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="98" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="98" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="98" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1aba9ca5760236db23b19f58b131b4aa26" prot="public" static="no">
         <name>LOGURU_VERSION_PATCH</name>
@@ -146,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="99" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="99" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="99" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ae7fb16d69e58e770a890471ae7760a76" prot="public" static="no">
         <name>LOGURU_SYSLOG</name>
@@ -157,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="108" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="108" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="108" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" prot="public" static="no">
         <name>LOGURU_EXPORT</name>
@@ -167,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="115" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="115" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="115" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1af0b25a6999fa0f7ee694c447a8dbbf97" prot="public" static="no">
         <name>LOGURU_SCOPE_TEXT_SIZE</name>
@@ -178,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="121" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="121" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="121" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a7e81fb9776fe635a356d953f300f9532" prot="public" static="no">
         <name>LOGURU_FILENAME_WIDTH</name>
@@ -189,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="126" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="126" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="126" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1aff5144ac67be22ac70d8cd8823b5c7bd" prot="public" static="no">
         <name>LOGURU_THREADNAME_WIDTH</name>
@@ -200,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="131" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="131" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="131" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1aa2191d317ca5f4d8379aa0a190538b63" prot="public" static="no">
         <name>LOGURU_SCOPE_TIME_PRECISION</name>
@@ -211,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="136" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="136" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="136" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a7982541f47477c3212f31ea3f9489395" prot="public" static="no">
         <name>LOGURU_VERBOSE_SCOPE_ENDINGS</name>
@@ -222,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="145" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="145" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="145" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a44904eb7b5e757f58bfd62e54fe6841b" prot="public" static="no">
         <name>LOGURU_REDEFINE_ASSERT</name>
@@ -233,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="149" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="149" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="149" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a886c3c31627677e31a418a614b5fdd16" prot="public" static="no">
         <name>LOGURU_WITH_STREAMS</name>
@@ -244,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="153" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="153" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="153" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ac9f448b3eba0280a4b76882bd855ffc3" prot="public" static="no">
         <name>LOGURU_REPLACE_GLOG</name>
@@ -255,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="157" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="157" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="157" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="157" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a4f1de6b27697b27fb9943755b6edcc4b" prot="public" static="no">
         <name>LOGURU_USE_FMTLIB</name>
@@ -266,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="175" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="175" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="175" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a889ab458fcbdf3da24106aac44486359" prot="public" static="no">
         <name>LOGURU_WITH_FILEABS</name>
@@ -277,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="179" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="179" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="179" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a3eade08c2a4252e9f7a0bded2cd75e45" prot="public" static="no">
         <name>LOGURU_CONCATENATE_IMPL</name>
@@ -290,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="201" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="201" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="201" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="201" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a654e83eac3fe45e3634d0b1dec48ee32" prot="public" static="no">
         <name>LOGURU_CONCATENATE</name>
@@ -303,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="202" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="202" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="202" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1aeb07be1e6a88bb63fc84250ae9632f29" prot="public" static="no">
         <name>LOGURU_ANONYMOUS_VARIABLE</name>
@@ -315,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="207" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="207" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="207" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="207" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ae117fd8698f9f891040f6e526d3fa36b" prot="public" static="no">
         <name>LOGURU_PRINTF_LIKE</name>
@@ -327,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="219" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="219" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="219" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="219" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a644b6af9c9a276043005f51b696c6154" prot="public" static="no">
         <name>LOGURU_FORMAT_STRING_TYPE</name>
@@ -338,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="220" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="220" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="220" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a524081c4f39147239804e7e0a9e37667" prot="public" static="no">
         <name>LOGURU_NORETURN</name>
@@ -349,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="227" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="227" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="227" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="227" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a2cff9d1abe16dfb3fa45485bc56bbf5a" prot="public" static="no">
         <name>LOGURU_PREDICT_FALSE</name>
@@ -361,7 +362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="234" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="234" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="234" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1afaa51008b5db85ad4e1211ea96f8dd2b" prot="public" static="no">
         <name>LOGURU_PREDICT_TRUE</name>
@@ -373,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="235" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="235" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="235" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="235" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a90d442bcf30fc43b80917d201222283c" prot="public" static="no">
         <name>LOGURU_FMT</name>
@@ -385,7 +386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="242" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="242" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="242" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="242" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a5adf545e22ba035dbd9410d968d3585e" prot="public" static="no">
         <name>STRDUP</name>
@@ -397,7 +398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="248" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="248" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="248" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="248" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a3e1312001653423098e7651db818d8e5" prot="public" static="no">
         <name>ERROR_CONTEXT</name>
@@ -413,7 +414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1003" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1003" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1003" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1003" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a7fd8ebb443425f158ba5e85cd6b6f305" prot="public" static="no">
         <name>VLOG_F</name>
@@ -427,7 +428,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1105" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1105" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1105" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ad986d424c4c07e47a9e99df7e24be3fe" prot="public" static="no">
         <name>LOG_F</name>
@@ -440,7 +441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1110" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1110" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1110" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ae5da0dfc1d1fee0785844619d74526ca" prot="public" static="no">
         <name>VLOG_IF_F</name>
@@ -456,7 +457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1112" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1112" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1112" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ade7e29816b1e5654a4685b03e79968fc" prot="public" static="no">
         <name>LOG_IF_F</name>
@@ -470,7 +471,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1117" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1117" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1117" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a860abf423ea5d58fcc0dff12308aaff7" prot="public" static="no">
         <name>VLOG_SCOPE_F</name>
@@ -485,7 +486,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1120" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1120" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1120" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1af90d742ca705ea4704072e80f655b263" prot="public" static="no">
         <name>RAW_VLOG_F</name>
@@ -499,7 +500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1126" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1126" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1126" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ad19f744edac06a07a67fc40844d27b90" prot="public" static="no">
         <name>RAW_LOG_F</name>
@@ -512,7 +513,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1130" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1130" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1130" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1130" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a36c1651599f9d1b57411fdf716276699" prot="public" static="no">
         <name>LOG_SCOPE_F</name>
@@ -525,7 +526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1133" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1133" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1133" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1aad1958148219de2a8f4f36a0a85bc5f6" prot="public" static="no">
         <name>LOG_SCOPE_FUNCTION</name>
@@ -537,7 +538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1136" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1136" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1136" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1af1604ca9cc5ea913f831a47fb179615c" prot="public" static="no">
         <name>ABORT_F</name>
@@ -549,7 +550,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1142" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1142" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1142" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1abd9bf0fac9bc4982cd474b736f8cb662" prot="public" static="no">
         <name>CHECK_WITH_INFO_F</name>
@@ -564,7 +565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1147" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1147" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1147" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a65d6a968e80dc73775f9785db9c029b5" prot="public" static="no">
         <name>CHECK_F</name>
@@ -577,7 +578,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1154" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1154" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1154" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a1cbfcef052f8df7bf1eb7f9da4ac7419" prot="public" static="no">
         <name>CHECK_NOTNULL_F</name>
@@ -590,7 +591,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1156" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1156" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1156" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a1f80fc8796292b4c8e64448fd4317af0" prot="public" static="no">
         <name>CHECK_OP_F</name>
@@ -619,7 +620,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1158" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1158" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1158" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1158" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1aa2626b1f7ccc9be425de409749b80e5f" prot="public" static="no">
         <name>LOGURU_DEBUG_LOGGING</name>
@@ -630,7 +631,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1177" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1177" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1177" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ae0db278e95d506ce8b5c658ad1cb29d1" prot="public" static="no">
         <name>DLOG_F</name>
@@ -643,7 +644,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1185" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1185" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1185" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1aacf8f78c2e64e0062d3812af254f0268" prot="public" static="no">
         <name>DVLOG_F</name>
@@ -656,7 +657,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1186" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1186" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1186" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a93d5dbc3d289adc13a0d52d1f8bf7652" prot="public" static="no">
         <name>DLOG_IF_F</name>
@@ -669,7 +670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1187" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1187" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1187" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1aabe30e51d4d09803678edcc08c079750" prot="public" static="no">
         <name>DVLOG_IF_F</name>
@@ -682,7 +683,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1188" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1188" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1188" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a3f0adbde2dfb82c25bd9a3275596e8ae" prot="public" static="no">
         <name>DRAW_LOG_F</name>
@@ -695,7 +696,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1189" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1189" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1189" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a0afb4270679ab39dbc3ea83172612461" prot="public" static="no">
         <name>DRAW_VLOG_F</name>
@@ -708,7 +709,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1190" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1190" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1190" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1190" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a5304f5eaf2e5fd454abcc331cf3ff2c7" prot="public" static="no">
         <name>CHECK_EQ_F</name>
@@ -722,7 +723,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1201" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1201" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1201" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1201" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a5b7029843dd16e6810c44e4538fa98d3" prot="public" static="no">
         <name>CHECK_NE_F</name>
@@ -736,7 +737,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1202" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1202" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1202" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1afe1e57ca39c060c345d0fb24a738265e" prot="public" static="no">
         <name>CHECK_LT_F</name>
@@ -750,7 +751,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1203" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1203" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1203" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a8d1121789eb2a8cbf47036c0bbbe6e8f" prot="public" static="no">
         <name>CHECK_GT_F</name>
@@ -764,7 +765,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1204" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1204" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1204" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1204" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1accdfce1b7ef56e98f7f02b084383779b" prot="public" static="no">
         <name>CHECK_LE_F</name>
@@ -778,7 +779,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1205" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1205" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1205" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a6591abaed21dcfe436f8938440632503" prot="public" static="no">
         <name>CHECK_GE_F</name>
@@ -792,7 +793,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1206" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1206" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1206" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a1f87fc8f2c85bc3c7b1010647664bc9d" prot="public" static="no">
         <name>LOGURU_DEBUG_CHECKS</name>
@@ -803,7 +804,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1210" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1210" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1210" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1210" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1ade8cb833a4dcf243c3545f7f608d1b46" prot="public" static="no">
         <name>DCHECK_F</name>
@@ -816,7 +817,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1218" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1218" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1218" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1218" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1aa61ead8a1e1275e0ce77184721b6220b" prot="public" static="no">
         <name>DCHECK_NOTNULL_F</name>
@@ -829,7 +830,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1219" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1219" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1219" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1219" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a973ebb4b182984b2be24dcc25343f77f" prot="public" static="no">
         <name>DCHECK_EQ_F</name>
@@ -843,7 +844,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1220" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1220" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1220" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a96494bdf595775b8c369b81d94bd6214" prot="public" static="no">
         <name>DCHECK_NE_F</name>
@@ -857,7 +858,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1221" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1221" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1221" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a8f41538b8d8b840e746d50942669c800" prot="public" static="no">
         <name>DCHECK_LT_F</name>
@@ -871,7 +872,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1222" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1222" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1222" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a9a3d4823a958feffa2368a92a2769164" prot="public" static="no">
         <name>DCHECK_LE_F</name>
@@ -885,7 +886,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1223" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1223" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1223" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1223" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a53d692c8d96ddcf6c1b4838831c141fb" prot="public" static="no">
         <name>DCHECK_GT_F</name>
@@ -899,7 +900,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1224" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1224" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1224" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/dec/loguru_8hpp_1a2791daca96cb2143f82389909b04397c" prot="public" static="no">
         <name>DCHECK_GE_F</name>
@@ -913,7 +914,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1225" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1225" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1225" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1225" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2482,6 +2483,6 @@
 <codeline lineno="1569"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1570"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LOGURU_HAS_DECLARED_STREAMS_HEADER</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.hpp"/>
   </compounddef>
 </doxygen>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3009" column="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3009" column="17"/>
       </memberdef>
       <memberdef kind="function" id="d9/d8c/structCatch_1_1IExceptionTranslator_1a2a554b96ed5ed411e7c796b6b42837a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>std::string</type>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3010" column="29"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3010" column="29"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -57,7 +57,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3008" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3008" bodyend="3011"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3008" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3008" bodyend="3011"/>
     <listofallmembers>
       <member refid="d9/d8c/structCatch_1_1IExceptionTranslator_1a2a554b96ed5ed411e7c796b6b42837a5" prot="public" virt="pure-virtual"><scope>Catch::IExceptionTranslator</scope><name>translate</name></member>
       <member refid="d9/d8c/structCatch_1_1IExceptionTranslator_1afa00bb6258c07591df472aadae05783f" prot="public" virt="virtual"><scope>Catch::IExceptionTranslator</scope><name>~IExceptionTranslator</name></member>

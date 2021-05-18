@@ -5,87 +5,13 @@
     <includes refid="dc/dee/parser_8tab_8hh" local="yes">parser.tab.hh</includes>
     <includes refid="d9/dd1/parsing__context_8hh" local="yes">parsing_context.hh</includes>
     <incdepgraph>
-      <node id="3">
-        <label>syntactical_structures.hh</label>
-        <link refid="d4/d91/syntactical__structures_8hh"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>loguru/loguru.hpp</label>
-        <link refid="df/dec/loguru_8hpp"/>
-      </node>
-      <node id="7">
-        <label>variant</label>
-      </node>
-      <node id="16">
-        <label>cassert</label>
-      </node>
-      <node id="18">
-        <label>stdexcept</label>
-      </node>
-      <node id="5">
-        <label>string</label>
-      </node>
-      <node id="11">
-        <label>parsing_context.hh</label>
-        <link refid="d9/dd1/parsing__context_8hh"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>map</label>
-      </node>
       <node id="1">
-        <label>/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc</label>
+        <label>/home/boki/KIVI/frontend/parser/lexer.tab.cc</label>
         <link refid="db/d3d/lexer_8tab_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-      </node>
-      <node id="14">
-        <label>location.hh</label>
-        <link refid="d3/d46/location_8hh"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>syntax.hh</label>
-        <link refid="d9/d1c/syntax_8hh"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>typeinfo</label>
-      </node>
-      <node id="10">
-        <label>optional</label>
-      </node>
-      <node id="8">
-        <label>vector</label>
       </node>
       <node id="2">
         <label>parser.tab.hh</label>
@@ -113,6 +39,52 @@
         <childnode refid="19" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>syntactical_structures.hh</label>
+        <link refid="d4/d91/syntactical__structures_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>variant</label>
+      </node>
+      <node id="16">
+        <label>cassert</label>
+      </node>
+      <node id="18">
+        <label>stdexcept</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="19">
+        <label>typeinfo</label>
+      </node>
+      <node id="10">
+        <label>optional</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
       <node id="6">
         <label>utility</label>
       </node>
@@ -121,6 +93,34 @@
       </node>
       <node id="15">
         <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>location.hh</label>
+        <link refid="d3/d46/location_8hh"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>loguru/loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
+      </node>
+      <node id="11">
+        <label>parsing_context.hh</label>
+        <link refid="d9/dd1/parsing__context_8hh"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="9">
         <label>memory</label>
@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc" line="7" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc" bodystart="7" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/lexer.tab.cc" line="7" column="1" bodyfile="/home/boki/KIVI/frontend/parser/lexer.tab.cc" bodystart="7" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -147,7 +147,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*<sp/>Generated<sp/>by<sp/>re2c<sp/>2.0.3<sp/>on<sp/>Tue<sp/>May<sp/>18<sp/>13:50:22<sp/>2021<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Generated<sp/>by<sp/>re2c<sp/>2.0.3<sp/>on<sp/>Mon<sp/>May<sp/>17<sp/>23:45:39<sp/>2021<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dc/dee/parser_8tab_8hh" kindref="compound">parser.tab.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/dd1/parsing__context_8hh" kindref="compound">parsing_context.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
@@ -415,6 +415,6 @@
 <codeline lineno="266"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/lexer.tab.cc"/>
+    <location file="/home/boki/KIVI/frontend/parser/lexer.tab.cc"/>
   </compounddef>
 </doxygen>

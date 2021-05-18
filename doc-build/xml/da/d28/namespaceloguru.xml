@@ -162,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="319" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="320" bodyend="351"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="319" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="320" bodyend="351"/>
       </memberdef>
       <memberdef kind="enum" id="da/d28/namespaceloguru_1ace001ddb7d3395127e1aba1c5313918b" prot="public" static="no" strong="no">
         <type></type>
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="543" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="544" bodyend="546"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="543" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="544" bodyend="546"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -202,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="156" column="14" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="156" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="156" column="14" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1a822ea94dc3e76da86afcfe5d7b1246be" prot="public" static="no">
         <type>std::vector&lt; <ref refid="d1/ddc/structloguru_1_1Callback" kindref="compound">Callback</ref> &gt;</type>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="170" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="170" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="170" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1accfde24c81e82f8868148afdd9cf100b" prot="public" static="no">
         <type>std::pair&lt; std::string, std::string &gt;</type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="172" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="172" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="172" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="172" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1ae059ebe3c190d1c391c44fb2d9a40a9c" prot="public" static="no">
         <type>std::vector&lt; <ref refid="da/d28/namespaceloguru_1accfde24c81e82f8868148afdd9cf100b" kindref="member">StringPair</ref> &gt;</type>
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="173" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="173" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="173" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1a32536af5051303743d462aae48200b0f" prot="public" static="no">
         <type><ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> *</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1881" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1881" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1881" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1881" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" prot="public" static="no">
         <type>int</type>
@@ -267,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="311" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="311" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="311" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="311" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1aba0940a16e22182bdca1084d3f589808" prot="public" static="no">
         <type>void(*</type>
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="392" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="392" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="392" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="392" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1a1a748df37fe8c36c3409f7a939eae31d" prot="public" static="no">
         <type>void(*</type>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="393" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="393" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="393" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1af587c5abb88f1d7644642e2ace229cb6" prot="public" static="no">
         <type>void(*</type>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="394" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="394" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="394" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="394" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1a8cef682d710856999228519bf735e706" prot="public" static="no">
         <type>void(*</type>
@@ -319,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="397" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="397" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="397" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="397" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1af536b98191a25d373fcbe6076992e817" prot="public" static="no">
         <type>const char *(*</type>
@@ -332,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="400" column="15" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="400" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="400" column="15" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="400" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1a2c3696eaca41885b6be3dd82f9a73c48" prot="public" static="no">
         <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref>(*</type>
@@ -345,7 +345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="404" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="404" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="404" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="404" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="da/d28/namespaceloguru_1ade41b46faf8ad40d426a403e173c2e5a" prot="public" static="no">
         <type>const <ref refid="d3/d28/classloguru_1_1EcEntryBase" kindref="compound">EcEntryBase</ref> *</type>
@@ -358,7 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1016" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="1016" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1016" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="1016" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -374,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="175" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="175" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="175" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a55e0eb6cc31145895d0e1103c99b6486" prot="public" static="no" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref></type>
@@ -388,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="177" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="177" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="371" declcolumn="32"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="177" column="11" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="177" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="371" declcolumn="32"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a5d88b76987470b5154e2ffa5b844b08e" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -402,7 +402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="178" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="178" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="372" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="178" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="178" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="372" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a0736b19aa937fee16a11839ec0ce55ab" prot="public" static="no" mutable="no">
         <type>unsigned</type>
@@ -416,7 +416,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="179" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="179" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="373" declcolumn="31"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="179" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="179" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="373" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a78b13bb767288f116d4f83ab0632a74e" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -430,7 +430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="180" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="180" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="374" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="180" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="180" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="374" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1ac75824c056f8075ff3bc5bff7545d9aa" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -444,7 +444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="181" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="181" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="375" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="181" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="181" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="375" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1ae7a622bb54e664791492e525b6f5a0b3" prot="public" static="no" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref></type>
@@ -458,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="183" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="183" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="380" declcolumn="32"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="183" column="11" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="183" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="380" declcolumn="32"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a020d138fa44532a7dd6254cb4c96d2b6" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -472,7 +472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="186" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="186" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="383" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="186" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="186" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="383" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a2ff1071e314a6e8fb5df31a0001fd9ea" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -486,7 +486,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="187" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="187" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="384" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="187" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="187" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="384" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a540b244eae77f8d30a6fd43a6d99a1b8" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -500,7 +500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="188" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="188" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="385" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="188" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="188" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="385" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1aa938b82cfd3194fee6dfe038e88f7d85" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -514,7 +514,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="189" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="189" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="386" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="189" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="189" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="386" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a0df6c63bfa180b7e23fe6bc8d6a5bfdc" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -528,7 +528,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="190" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="190" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="387" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="190" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="190" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="387" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a53cc1722e9969bf8932db55873219cbf" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -542,7 +542,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="191" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="191" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="388" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="191" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="191" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="388" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1ad7fce966b81abcb93c5e5e72ea6518ea" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -556,7 +556,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="192" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="192" bodyend="-1" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="389" declcolumn="27"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="192" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="192" bodyend="-1" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="389" declcolumn="27"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a4c5ab00171b19a5b9484b9fbdd037e49" prot="public" static="yes" mutable="no">
         <type>std::recursive_mutex</type>
@@ -569,7 +569,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="194" column="29" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="194" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="194" column="29" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="194" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a980ef1108b625e4f88f061207ee7194f" prot="public" static="yes" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref></type>
@@ -583,7 +583,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="195" column="18" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="195" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="195" column="18" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="195" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a4d5c27dd6ce5d5fe29bf43f0d94c3ab8" prot="public" static="yes" mutable="no">
         <type>std::string</type>
@@ -596,7 +596,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="196" column="20" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="196" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="196" column="20" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="196" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a7ddb4aa1a51de31114db0303c9e9bd81" prot="public" static="yes" mutable="no">
         <type>std::string</type>
@@ -609,7 +609,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="197" column="20" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="197" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="197" column="20" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="197" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a15f2e68d9b5a45d77443130fc91e7f00" prot="public" static="yes" mutable="no">
         <type>char</type>
@@ -622,7 +622,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="198" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="198" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="198" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="198" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a88fdf43109a1282250e1c22d34b0d43d" prot="public" static="yes" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1a822ea94dc3e76da86afcfe5d7b1246be" kindref="member">CallbackVec</ref></type>
@@ -635,7 +635,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="199" column="20" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="199" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="199" column="20" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1aaae2549e2c823919df57eaf0b2a6d050" prot="public" static="yes" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1a8cef682d710856999228519bf735e706" kindref="member">fatal_handler_t</ref></type>
@@ -649,7 +649,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="200" column="24" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="200" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="200" column="24" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="200" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a998936ef8373f23473bc5d06b8ca52d2" prot="public" static="yes" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1af536b98191a25d373fcbe6076992e817" kindref="member">verbosity_to_name_t</ref></type>
@@ -663,7 +663,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="201" column="28" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="201" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="201" column="28" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="201" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a1a89b0e5f3d4c420f8aeda7ca32a5ad7" prot="public" static="yes" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1a2c3696eaca41885b6be3dd82f9a73c48" kindref="member">name_to_verbosity_t</ref></type>
@@ -677,7 +677,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="202" column="28" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="202" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="202" column="28" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a2f12e51808ad6a96298f8dbd0bf7cfe6" prot="public" static="yes" mutable="no">
         <type><ref refid="da/d28/namespaceloguru_1ae059ebe3c190d1c391c44fb2d9a40a9c" kindref="member">StringPairList</ref></type>
@@ -690,7 +690,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="203" column="23" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="203" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="203" column="23" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1af0d634dfee3a1124e173fa3f49ea5185" prot="public" static="yes" mutable="no">
         <type>bool</type>
@@ -704,7 +704,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="204" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="204" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="204" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="204" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1af895db617f564f24e8f2e113a9df9a37" prot="public" static="yes" mutable="no">
         <type>std::atomic&lt; unsigned &gt;</type>
@@ -718,7 +718,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="205" column="20" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="205" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="205" column="20" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a60884b4d30722032e4331fdd7e2a79a1" prot="public" static="yes" mutable="no">
         <type>std::thread *</type>
@@ -732,7 +732,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="208" column="20" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="208" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="208" column="20" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="208" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a77367adb2d7d7585c3d2bfb735293ea0" prot="public" static="yes" mutable="no">
         <type>bool</type>
@@ -746,7 +746,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="209" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="209" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="209" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="209" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a0256e43de1498a4fdebaa48c3ebd51da" prot="public" static="yes" mutable="no">
         <type><ref refid="dd/df7/structloguru_1_1SignalOptions" kindref="compound">SignalOptions</ref></type>
@@ -760,7 +760,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="211" column="22" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="211" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="211" column="22" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="211" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a289f4f1d9281cb7e72d93c7b4a454dc4" prot="public" static="yes" mutable="no">
         <type>const bool</type>
@@ -773,7 +773,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="213" column="19" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="213" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="213" column="19" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a3cf2221e9d3e6ed3c4f859474c53bbf8" prot="public" static="yes" mutable="no">
         <type>const <ref refid="da/d28/namespaceloguru_1ae059ebe3c190d1c391c44fb2d9a40a9c" kindref="member">StringPairList</ref></type>
@@ -797,7 +797,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1292" column="29" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1292" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1292" column="29" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1292" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a55eb846751c8596d6c49af78c9de0fea" prot="public" static="yes" mutable="no">
         <type>pthread_once_t</type>
@@ -811,7 +811,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1896" column="23" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1896" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1896" column="23" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1896" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="da/d28/namespaceloguru_1a5722dc87696d683792828d38955a8a08" prot="public" static="yes" mutable="no">
         <type>pthread_key_t</type>
@@ -824,7 +824,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1897" column="22" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1897" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1897" column="22" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1897" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -847,7 +847,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1419" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1419" bodyend="1453" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" declline="254" declcolumn="13"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1419" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1419" bodyend="1453" declfile="/home/boki/KIVI/extern/loguru/loguru.cpp" declline="254" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a73a6871eac42ab542bec3ffa038d4deb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -860,7 +860,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="259" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="259" bodyend="262" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="847" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="259" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="259" bodyend="262" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="847" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1acf19f548909eabbd8b8c63fae72d6600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -873,7 +873,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="272" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="272" bodyend="275" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="850" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="272" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="272" bodyend="275" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="850" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aab7349914bba2ad38e4b1b883e3f1737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -886,7 +886,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="276" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="276" bodyend="279" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="851" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="276" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="276" bodyend="279" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="851" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a2af89d944d5bade64ecb622d90e705cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -899,7 +899,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="280" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="280" bodyend="283" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="852" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="280" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="280" bodyend="283" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="852" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a324a33e32dd763e62b9d9724545bdfe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -912,7 +912,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="284" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="284" bodyend="287" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="853" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="284" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="284" bodyend="287" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="853" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ae1ab53d46fbf3451128901572ad38c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -925,7 +925,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="288" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="288" bodyend="291" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="854" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="288" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="288" bodyend="291" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="854" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a7d8a51a54458d478d80dd0fc4898389f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -938,7 +938,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="292" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="292" bodyend="295" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="855" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="292" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="292" bodyend="295" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="855" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a7e2126c78649847c44ed417ac328641f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -951,7 +951,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="296" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="296" bodyend="299" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="856" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="296" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="296" bodyend="299" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="856" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1af9267cff02992ea0f8638a4c6cce8e99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -964,7 +964,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="300" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="300" bodyend="303" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="857" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="300" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="300" bodyend="303" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="857" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a599ce7522dafb2fbad06a2b9fb6bb03c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -977,7 +977,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="304" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="304" bodyend="307" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="859" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="304" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="304" bodyend="307" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="859" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a992499ee5636f00e6bc078f4416f9746" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -990,7 +990,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="308" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="308" bodyend="311" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="858" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="308" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="308" bodyend="311" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="858" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ab476b604c85a6faa7af6cc781893ac45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1003,7 +1003,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="312" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="312" bodyend="315"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="312" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="312" bodyend="315"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a74db71a01e27aa305c90d6b290ddb71e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1016,7 +1016,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="318" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="318" bodyend="321" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="862" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="318" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="318" bodyend="321" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="862" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aaca964331443f56ddb766ec2b0c090f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1029,7 +1029,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="322" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="322" bodyend="325" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="863" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="322" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="322" bodyend="325" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="863" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ae0fb3077ff3c4119d8f963702944baa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1042,7 +1042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="328" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="328" bodyend="331" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="866" declcolumn="26"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="328" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="328" bodyend="331" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="866" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a154df52ece0ff2e20efcd3f910ec50ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>FILE *</type>
@@ -1059,7 +1059,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="338" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="338" bodyend="341"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="338" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="338" bodyend="341"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ae9c11ee1f559bee40095335eb0ed4c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1080,7 +1080,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="344" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="344" bodyend="372"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="344" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="344" bodyend="372"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ab7ea8855ecd264f915e92073693f59f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1097,7 +1097,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="374" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="374" bodyend="384"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="374" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="374" bodyend="384"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a99b1f816f45089a8e5514eb28806fd1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1114,7 +1114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="386" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="386" bodyend="390"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="386" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="386" bodyend="390"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a27d0c69b12fd9e1418d8f2b82b394eea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -1135,7 +1135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="496" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="496" bodyend="510"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="496" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="496" bodyend="510"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a2086d6cb191ae36dc2c0dcc25edb418a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -1155,7 +1155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="512" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="512" bodyend="519"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="512" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="512" bodyend="519"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a4d8f285e37c63e766c2e197b92b2a55b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -1168,7 +1168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="523" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="523" bodyend="526" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="309" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="523" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="523" bodyend="526" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="309" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a7cce7ed0bba0f62ed0c46086451af018" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1185,7 +1185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="528" column="19" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="528" bodyend="540"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="528" column="19" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="528" bodyend="540"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a013266c2da99b5c66f56ab2e06e7f070" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1211,7 +1211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="542" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="542" bodyend="587"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="542" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="542" bodyend="587"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aa15c2a08cb426b6503000c972c029a1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>long long</type>
@@ -1224,7 +1224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="589" column="18" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="589" bodyend="592"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="589" column="18" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="589" bodyend="592"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a537600d7adaf162b1fb4b9a037aa2db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1241,7 +1241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="595" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="595" bodyend="605" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="521" declcolumn="12"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="595" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="595" bodyend="605" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="521" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ae7918557e2e2d06ccf36610655809746" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1254,7 +1254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="609" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="609" bodyend="613"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="609" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="609" bodyend="613"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a32c1d05f1790ba274654c1816d894b82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1271,7 +1271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="2192" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="2192" bodyend="2230" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" declline="615" declcolumn="13"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="2192" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="2192" bodyend="2230" declfile="/home/boki/KIVI/extern/loguru/loguru.cpp" declline="615" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a159fddcd65156d2d484318ca234a482a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1292,7 +1292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="617" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="617" bodyend="624"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="617" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="617" bodyend="624"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a74532e03e91ea9c13c09b7a179cac337" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1313,7 +1313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="626" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="626" bodyend="630"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="626" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="626" bodyend="630"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aa680aa7840d67dde811c5e61b2d18012" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1334,7 +1334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="632" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="632" bodyend="667"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="632" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="632" bodyend="667"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a4f373def30f0cd2b6ad64c5c6efdb79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -1347,7 +1347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="669" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="669" bodyend="686" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="533" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="669" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="669" bodyend="686" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="533" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a6d8f72cd831bd8f34c94ec0cade8d5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1373,7 +1373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="688" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="688" bodyend="770" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="494" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="688" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="688" bodyend="770" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="494" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a0f484e36943bba661217e8a1e6ca687e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1386,7 +1386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="772" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="772" bodyend="779" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="499" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="772" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="772" bodyend="779" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="499" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a0888658bcb17e401882b9635414490ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1407,7 +1407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="781" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="781" bodyend="791"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="781" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="781" bodyend="791"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a063e16cccb5c9c0403dffca24cb88cd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1420,7 +1420,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="793" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="793" bodyend="796" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="509" declcolumn="12"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="793" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="793" bodyend="796" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="509" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aff53434ed0d580148418b0f1193a7592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1433,7 +1433,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="798" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="798" bodyend="801" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="513" declcolumn="12"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="798" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="798" bodyend="801" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="513" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a601a8d2820244c94e06a95d579e82874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1446,7 +1446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="803" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="803" bodyend="806" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="517" declcolumn="12"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="803" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="803" bodyend="806" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="517" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a9a48ead9a8c888195e4cc3484ced402d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1459,7 +1459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="808" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="808" bodyend="825" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="503" declcolumn="12"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="808" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="808" bodyend="825" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="503" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aa9ad48a7744d7bd55139e960398b1e71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1484,7 +1484,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="827" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="827" bodyend="861" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="541" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="827" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="827" bodyend="861" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="541" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aaee80ec61a85068fdaa54653eb7011c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1501,7 +1501,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="863" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="863" bodyend="895" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="525" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="863" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="863" bodyend="895" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="525" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a92e04c3ddc6d99f2bbbf0cddfda69613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1526,7 +1526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="896" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="896" bodyend="961" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="556" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="896" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="896" bodyend="961" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="556" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ac60440c35d24962e6a3e6558ca1695ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1547,7 +1547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="978" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="978" bodyend="981" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="560" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="978" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="978" bodyend="981" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="560" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a2e7f227dcf7bedf33ce439d2f5a37407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1572,7 +1572,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="982" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="982" bodyend="1001" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="564" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="982" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="982" bodyend="1001" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="564" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a1a943b936f963afac6bf5a55ab6e2c42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1589,7 +1589,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1003" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1003" bodyend="1006" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="570" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1003" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1003" bodyend="1006" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="570" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a4ef5d102b19ca62fbf22582dd067b059" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="da/d28/namespaceloguru_1a8cef682d710856999228519bf735e706" kindref="member">fatal_handler_t</ref></type>
@@ -1602,7 +1602,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1008" column="17" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1008" bodyend="1011" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="574" declcolumn="17"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1008" column="17" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1008" bodyend="1011" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="574" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a7d845223a33dc152771c24fd7aef7b6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1619,7 +1619,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1013" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1013" bodyend="1016" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="593" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1013" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1013" bodyend="1016" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="593" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a901b9c13a670bd33cac64366dbdee074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1636,7 +1636,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1018" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1018" bodyend="1021" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="600" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1018" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1018" bodyend="1021" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="600" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a5a58a9892201ad69a2b66ed744caedeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1657,7 +1657,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1023" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1023" bodyend="1032" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="816" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1023" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1023" bodyend="1032" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="816" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a8a9378985a6f6b6a8897dbcac323a42f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1670,7 +1670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1034" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1034" bodyend="1041"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1034" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1034" bodyend="1041"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ae0b741af647dc97bb1a0eb5178399502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1707,7 +1707,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1043" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1043" bodyend="1054" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="581" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1043" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1043" bodyend="1054" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="581" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a457b7e581bf0965222ce64a56b672689" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1724,7 +1724,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1058" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1058" bodyend="1086" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="604" declcolumn="12"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1058" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1058" bodyend="1086" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="604" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a1e353ab20d7940a901fdc45b0ffe7b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref></type>
@@ -1741,7 +1741,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1090" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1090" bodyend="1122" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="610" declcolumn="11"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1090" column="11" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1090" bodyend="1122" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="610" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a178ac06a1bacaa48bccbe5855f8cd5ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1758,7 +1758,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1124" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1124" bodyend="1142" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="614" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1124" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1124" bodyend="1142" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="614" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aae6816d87e46176b7404b4de30899f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1771,7 +1771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1144" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1144" bodyend="1156" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="618" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1144" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1144" bodyend="1156" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="618" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a8725200edaee7f999024f18a3d560bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="da/d28/namespaceloguru_1ad25a6f3705989d9d5c66c029d51fa80a" kindref="member">Verbosity</ref></type>
@@ -1784,7 +1784,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1159" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1159" bodyend="1163" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="622" declcolumn="11"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1159" column="11" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1159" bodyend="1163" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="622" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1adfbc393d2f90e216e0f630af398c5628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1801,7 +1801,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1187" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1187" bodyend="1210" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="783" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1187" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1187" bodyend="1210" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="783" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1af759c8f42583d986853214ea5983d778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1826,7 +1826,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1212" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1212" bodyend="1269" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="794" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1212" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1212" bodyend="1269" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="794" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ab75cff1700515ec0dd475c4edc030443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -1843,7 +1843,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1275" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1275" bodyend="1281" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="820" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1275" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1275" bodyend="1281" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="820" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a90dbd4d5660d37fdddca620d4a57ce72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1864,7 +1864,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1304" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1304" bodyend="1320"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1304" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1304" bodyend="1320"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ad9f4e3bf744375527ed2d97046eaa3ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1881,7 +1881,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1322" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1322" bodyend="1343"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1322" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1322" bodyend="1343"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a372a1341f0e951f2c49f26ecec46e6c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1898,7 +1898,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1345" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1345" bodyend="1395"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1345" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1345" bodyend="1395"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a2493fc1a4a8bd4959874ff4c6f2ced4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -1915,7 +1915,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1411" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1411" bodyend="1415" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="801" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1411" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1411" bodyend="1415" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="801" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a22a9e69c0d2cee080d49565ba61370db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1948,7 +1948,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1455" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1455" bodyend="1527"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1455" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1455" bodyend="1527"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1af1fa5ec85e2b69f76313727d3db03116" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1977,7 +1977,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1530" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1530" bodyend="1657"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1530" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1530" bodyend="1657"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a93101991b1ebd5bc2395e06947c3ada6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2014,7 +2014,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1660" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1660" bodyend="1668"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1660" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1660" bodyend="1668"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1abcfa2922952173b3ae260f1850a397b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2046,7 +2046,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1684" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1684" bodyend="1691"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1684" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1684" bodyend="1691"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a1d01642273bfeeb1273c2845d6bd2658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2078,7 +2078,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1693" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1693" bodyend="1701"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1693" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1693" bodyend="1701"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1afff7d4277e0ee1551b27830a6a907aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2091,7 +2091,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1704" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1704" bodyend="1716" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="724" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1704" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1704" bodyend="1716" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="724" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a6d3bb151261a4affe054a4946b549bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2127,7 +2127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1794" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1794" bodyend="1802"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1794" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1794" bodyend="1802"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a2f7f57346aed68e67a8174a94a34f3a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2156,7 +2156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1805" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1805" bodyend="1808" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="718" declcolumn="22"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1805" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1805" bodyend="1808" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="718" declcolumn="22"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aedd4be365c3b9993c7504d71d7f66072" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -2177,7 +2177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1828" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1828" bodyend="1833"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1828" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1828" bodyend="1833"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1af0c1b3d5713133fc8e16d09c481cfd65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -2197,7 +2197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1835" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1835" bodyend="1842"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1835" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1835" bodyend="1842"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aac589fc00b126243dd4ab00af87ae524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2218,7 +2218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1874" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1874" bodyend="1877" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="875" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1874" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1874" bodyend="1877" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="875" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a995cfd57d1a2cd29e03b77a0167c00b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2235,7 +2235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1899" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1899" bodyend="1902"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1899" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1899" bodyend="1902"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a77a79ce161c710e7f51aeaff6afaf9f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2248,7 +2248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1904" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1904" bodyend="1907"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1904" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1904" bodyend="1907"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1af490f610ba84f4f1b9d7852e324fd62f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="da/d28/namespaceloguru_1a32536af5051303743d462aae48200b0f" kindref="member">ECPtr</ref> &amp;</type>
@@ -2261,7 +2261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1909" column="7" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1909" bodyend="1919"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1909" column="7" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1909" bodyend="1919"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a78dd4ae9d86931114c5b8750d73286b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="da/d28/namespaceloguru_1ade41b46faf8ad40d426a403e173c2e5a" kindref="member">EcHandle</ref></type>
@@ -2274,7 +2274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1924" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1924" bodyend="1927" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1040" declcolumn="10"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1924" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1924" bodyend="1927" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1040" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a56e60183ee5dbfc93c1afc895ad01f6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2287,7 +2287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1929" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1929" bodyend="1932" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1044" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1929" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1929" bodyend="1932" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1044" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a99c9ea2c66de7be1aaade293212379ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2304,7 +2304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1934" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1934" bodyend="1965"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1934" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1934" bodyend="1965"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a60486381ed2ea53105844eae5dd2b388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2321,7 +2321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1982" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1982" bodyend="1988" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1052" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1982" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1982" bodyend="1988" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1052" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1add8d5e9dcc8d5fdeb5e5dfd2414ae2bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2338,7 +2338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1990" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1990" bodyend="2040" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1053" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1990" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1990" bodyend="2040" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1053" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a218d3ff17663f01b0793e36830723e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2355,7 +2355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="2061" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="2061" bodyend="2073" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1063" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="2061" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="2061" bodyend="2073" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1063" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ad65b1ac6808ed5778300fcccbf7485b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2376,7 +2376,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="2099" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="2099" bodyend="2103"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="2099" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="2099" bodyend="2103"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a5adc06a1661b1523f276c30d6b721fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2393,7 +2393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="2105" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="2105" bodyend="2108"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="2105" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="2105" bodyend="2108"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1af3bd36e94d1e8fd3a42b16a60c604370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2410,7 +2410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="2110" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="2110" bodyend="2118"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="2110" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="2110" bodyend="2118"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1af7d7aa05e9e8a73ea64ff85234ef83b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2433,7 +2433,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="2120" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="2120" bodyend="2190"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="2120" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="2120" bodyend="2190"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a4287f5408416f3d557d1a4f14c150115" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2453,7 +2453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="304" column="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="304" column="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1af13a94a89ea76c6be3d4da9341e1382a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> void</type>
@@ -2474,7 +2474,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="529" column="6" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="529" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="529" column="6" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="529" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a1b1d887d517bc571775b366a3d4b5b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> void</type>
@@ -2506,7 +2506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="647" column="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="647" column="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a1f7c1f5e70c72fad89b5eb5dcfd32eb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> void <ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> void</type>
@@ -2538,7 +2538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="651" column="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="651" column="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ab34fc48e7b982a5afa9814a2f041db8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="df/dec/loguru_8hpp_1a524081c4f39147239804e7e0a9e37667" kindref="member">LOGURU_NORETURN</ref> void</type>
@@ -2574,7 +2574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="710" column="22"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="710" column="22"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a6c3378ed659354fa4a5afa591faa1b9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2595,7 +2595,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="727" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="727" bodyend="730"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="727" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="727" bodyend="730"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ac951a670dd9876d09c9dd232ae4cc760" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2614,7 +2614,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="732" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="732" bodyend="735"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="732" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="732" bodyend="735"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a53841e226276609d9fcd194f76932b75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2633,7 +2633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="737" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="737" bodyend="740"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="737" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="737" bodyend="740"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a2b4d663837d6ec271efb755cf5ca77ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2652,7 +2652,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="742" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="742" bodyend="745"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="742" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="742" bodyend="745"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ac22a91db2ca651d00a4c3953050b11ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2671,7 +2671,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="747" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="747" bodyend="750"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="747" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="747" bodyend="750"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ab6fa4393ad58ea8196c3255eac254f05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2690,7 +2690,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="752" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="752" bodyend="755"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="752" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="752" bodyend="755"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ab272290c59d0f38dd371c962654c1704" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2709,7 +2709,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="757" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="757" bodyend="760"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="757" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="757" bodyend="760"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aa1f546beab13fa5e63fdefb9c9338034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2728,7 +2728,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="762" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="762" bodyend="765"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="762" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="762" bodyend="765"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a5e4576279ad1862c71bcbb52b62e6215" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2747,7 +2747,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="767" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="767" bodyend="770"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="767" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="767" bodyend="770"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a8d5900eb68be9d97a2e8dd4f9299f09a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2766,7 +2766,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="772" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="772" bodyend="775"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="772" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="772" bodyend="775"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a14b15470454d40f390515ac0c7e522bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2783,7 +2783,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1048" column="6" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1048" declcolumn="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1048" column="6" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1048" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a247006ece535f01120f94ffa0de39ebb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2800,7 +2800,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1054" column="20" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1054" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1054" column="20" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1054" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a72ff89b35bbd93e21d73abc7c202e522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2817,7 +2817,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1055" column="20" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1055" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1055" column="20" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1055" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aacbfba6932e7e61c62a3ab6ef15afbff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2834,7 +2834,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1056" column="20" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1056" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1056" column="20" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1056" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1ac8eabc48f3284cc32e31419526f44995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2851,7 +2851,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1057" column="20" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1057" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1057" column="20" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1057" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1adf6f6d323959caf9bb7fdf4ed81f1e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2868,7 +2868,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1058" column="20" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1058" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1058" column="20" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1058" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1aa2fb3c8147779d7845d56955f0f6a9eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2885,7 +2885,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1059" column="20" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1059" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1059" column="20" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1059" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a9fba7929a3274664254012b7cb023401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2902,7 +2902,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1060" column="20" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1060" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1060" column="20" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1060" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a6b877741ef0298b46389eceabba9ec32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2919,7 +2919,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1061" column="20" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1061" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1061" column="20" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1061" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="da/d28/namespaceloguru_1a9344bc44b45eb00216123d56508d623d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="df/dec/loguru_8hpp_1a414e08e83e9c38c6351fa42ecd3627fa" kindref="member">LOGURU_EXPORT</ref> <ref refid="de/d40/classloguru_1_1Text" kindref="compound">Text</ref></type>
@@ -2936,13 +2936,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="1062" column="20" declfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" declline="1062" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="1062" column="20" declfile="/home/boki/KIVI/extern/loguru/loguru.hpp" declline="1062" declcolumn="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="140" column="1"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="140" column="1"/>
   </compounddef>
 </doxygen>

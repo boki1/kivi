@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3652" column="31" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3652" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3652" column="31" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3652" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3628" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3628" bodyend="3628"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3628" column="13" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3628" bodyend="3628"/>
       </memberdef>
       <memberdef kind="function" id="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1a3104513b50a3da1659f82d69ac79057d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3630" column="18" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3630" bodyend="3647"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3630" column="18" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3630" bodyend="3647"/>
       </memberdef>
       <memberdef kind="function" id="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1aa8ba33f6de86d0198b77023e1808933b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::string</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3648" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3648" bodyend="3650"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3648" column="25" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3648" bodyend="3650"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -132,7 +132,7 @@
         <link refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod"/>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3626" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3626" bodyend="3653"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3626" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3626" bodyend="3653"/>
     <listofallmembers>
       <member refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1a5cff10175edc91ed105b157493218ad8" prot="public" virt="non-virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>ContainsMatcher</name></member>
       <member refid="de/de6/structCatch_1_1Matchers_1_1Vector_1_1ContainsMatcher_1aa8ba33f6de86d0198b77023e1808933b" prot="public" virt="virtual"><scope>Catch::Matchers::Vector::ContainsMatcher</scope><name>describe</name></member>

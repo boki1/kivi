@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="411" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="411" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="411" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="411" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/df7/structloguru_1_1SignalOptions_1a0f5ffaa75aa0b6ff60fe26fd17de8e41" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="414" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="414" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="414" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="414" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/df7/structloguru_1_1SignalOptions_1afd71fa12ceb09f0cd16c7d3edbbcf2d2" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="417" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="417" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="417" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="417" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/df7/structloguru_1_1SignalOptions_1ad8e0b5c9a760baaa4aa651839f32b39a" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="420" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="420" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="420" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="420" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/df7/structloguru_1_1SignalOptions_1a64f585553d3b682c69917cf84b0d222e" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="423" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="423" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="423" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="423" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/df7/structloguru_1_1SignalOptions_1ac4a34b1999230af30ecade78b4d48bb7" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="426" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="426" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="426" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="426" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/df7/structloguru_1_1SignalOptions_1afc8339a398c04fec7b7a02b88ed5016d" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="429" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="429" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="429" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="429" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/df7/structloguru_1_1SignalOptions_1a36575eed90aabe2434d608db3414d9b6" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="432" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="432" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="432" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="432" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -137,14 +137,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="434" column="22" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="434" bodyend="446"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="434" column="22" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="434" bodyend="446"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="406" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="407" bodyend="447"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="406" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="407" bodyend="447"/>
     <listofallmembers>
       <member refid="dd/df7/structloguru_1_1SignalOptions_1ac9d835edf836502b901b93a08e98dae2" prot="public" virt="non-virtual"><scope>loguru::SignalOptions</scope><name>none</name></member>
       <member refid="dd/df7/structloguru_1_1SignalOptions_1a0f5ffaa75aa0b6ff60fe26fd17de8e41" prot="public" virt="non-virtual"><scope>loguru::SignalOptions</scope><name>sigabrt</name></member>

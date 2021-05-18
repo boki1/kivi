@@ -27,14 +27,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="484" column="24" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="484" bodyend="487"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="484" column="24" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="484" bodyend="487"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="484" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="484" bodyend="487"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="484" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="484" bodyend="487"/>
     <listofallmembers>
       <member refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6a" prot="public" virt="non-virtual"><scope>Catch::CaseSensitive</scope><name>Choice</name></member>
       <member refid="d3/d1d/structCatch_1_1CaseSensitive_1aad49d3aee2d97066642fffa919685c6aa4ffff8d29b481f0116abc37228cd53f6" prot="public" virt="non-virtual"><scope>Catch::CaseSensitive</scope><name>No</name></member>

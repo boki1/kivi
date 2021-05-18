@@ -35,7 +35,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/argparse/argparse.h" line="101" column="1" bodyfile="/home/boki/.tmp/kivi/extern/argparse/argparse.h" bodystart="101" bodyend="101"/>
+    <location file="/home/boki/KIVI/extern/argparse/argparse.h" line="101" column="1" bodyfile="/home/boki/KIVI/extern/argparse/argparse.h" bodystart="101" bodyend="101"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

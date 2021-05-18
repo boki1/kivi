@@ -21,6 +21,6 @@
 <codeline></codeline>
 <codeline><highlight class="normal">`parsing_context.test.cc`<sp/>-<sp/>This<sp/>tests<sp/>whether<sp/>the<sp/>`parsing_context`<sp/>structure<sp/>used<sp/>during<sp/>the<sp/>syntactical<sp/>analysis<sp/>actually<sp/>acts<sp/>correctly</highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/test/frontend/README.md"/>
+    <location file="/home/boki/KIVI/test/frontend/README.md"/>
   </compounddef>
 </doxygen>

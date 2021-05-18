@@ -14,14 +14,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1870" column="13" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1870" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1870" column="13" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1870" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="1868" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1869" bodyend="1871"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="1868" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1869" bodyend="1871"/>
     <listofallmembers>
       <member refid="d7/dfa/structloguru_1_1StringStream_1a4f69485f98030452c5de763b02924b0f" prot="public" virt="non-virtual"><scope>loguru::StringStream</scope><name>str</name></member>
     </listofallmembers>

@@ -4,18 +4,13 @@
     <compoundname>statements.cc</compoundname>
     <includes refid="d4/d91/syntactical__structures_8hh" local="yes">syntactical_structures.hh</includes>
     <includes local="no">memory</includes>
+    <includedby refid="da/dd4/parsing__context_8cc" local="yes">/home/boki/KIVI/frontend/parser/parsing_context.cc</includedby>
     <incdepgraph>
       <node id="2">
         <label>syntactical_structures.hh</label>
         <link refid="d4/d91/syntactical__structures_8hh"/>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="6">
-        <label>variant</label>
-      </node>
-      <node id="4">
-        <label>string</label>
       </node>
       <node id="3">
         <label>syntax.hh</label>
@@ -33,6 +28,12 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
+      <node id="6">
+        <label>variant</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
       <node id="9">
         <label>optional</label>
       </node>
@@ -43,7 +44,7 @@
         <label>utility</label>
       </node>
       <node id="1">
-        <label>/home/boki/.tmp/kivi/frontend/parser/statements.cc</label>
+        <label>/home/boki/KIVI/frontend/parser/statements.cc</label>
         <link refid="d5/d1a/statements_8cc"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -54,6 +55,18 @@
         <label>memory</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/boki/KIVI/frontend/parser/parsing_context.cc</label>
+        <link refid="da/dd4/parsing__context_8cc"/>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/frontend/parser/statements.cc</label>
+        <link refid="d5/d1a/statements_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innernamespace refid="d7/df6/namespacesyntax__analyzer">syntax_analyzer</innernamespace>
       <sectiondef kind="define">
       <memberdef kind="define" id="d5/d1a/statements_8cc_1a0649e970fdba545073f046a3b73e9efd" prot="public" static="no">
@@ -64,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="6" column="9" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="6" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/statements.cc" line="6" column="9" bodyfile="/home/boki/KIVI/frontend/parser/statements.cc" bodystart="6" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -88,13 +101,13 @@
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1ae83e90fa247c1be34a7dbc3ed2f05bed" kindref="member">if_stmt</ref>(expression&amp;&amp;<sp/>condition,<sp/>expression&amp;&amp;<sp/>than_body)</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a786887572f6ef1c20f2d8177cb2f1639" kindref="member">expression::type::If</ref>,<sp/>{<sp/>move(condition),<sp/>move(than_body)<sp/>}};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a786887572f6ef1c20f2d8177cb2f1639" kindref="member">expression::type::If</ref>,<sp/>make_shared&lt;expression&gt;(move(condition)),<sp/>{<sp/>move(than_body)<sp/>}};</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df6/namespacesyntax__analyzer_1a717e25ba7c4fec313db67811b64ce0c0" kindref="member">while_stmt</ref>(expression&amp;&amp;<sp/>condition,<sp/>expression&amp;&amp;<sp/>loop_body)</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3cddbb8f43a4e074e2c2ce3e8622f43e" kindref="member">expression::type::While</ref>,<sp/>{<sp/>move(condition),<sp/>move(loop_body)<sp/>}};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>expression{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression_1acb9c461ee7ac7375e51d5ffdd3896024a3cddbb8f43a4e074e2c2ce3e8622f43e" kindref="member">expression::type::While</ref>,<sp/>make_shared&lt;expression&gt;(move(condition)),<sp/>{<sp/>move(loop_body)<sp/>}};</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>expression</highlight></codeline>
@@ -119,6 +132,6 @@
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//KIVI_PARSER_STATEMENTS_HH_</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc"/>
+    <location file="/home/boki/KIVI/frontend/parser/statements.cc"/>
   </compounddef>
 </doxygen>

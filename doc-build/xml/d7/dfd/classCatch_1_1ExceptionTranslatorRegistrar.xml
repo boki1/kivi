@@ -25,14 +25,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3050" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3050" bodyend="3053"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3050" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3050" bodyend="3053"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3019" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3019" bodyend="3054"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3019" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3019" bodyend="3054"/>
     <listofallmembers>
       <member refid="d7/dfd/classCatch_1_1ExceptionTranslatorRegistrar_1aa73229de911f26b1df6c6c87c4d9e04e" prot="public" virt="non-virtual"><scope>Catch::ExceptionTranslatorRegistrar</scope><name>ExceptionTranslatorRegistrar</name></member>
     </listofallmembers>

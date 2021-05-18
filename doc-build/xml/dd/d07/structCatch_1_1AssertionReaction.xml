@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2542" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2542" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2542" column="14" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2542" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/d07/structCatch_1_1AssertionReaction_1a82c8d95a2c1b6a331bde66982a8e090f" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -30,14 +30,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2543" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2543" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2543" column="14" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2543" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2541" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2541" bodyend="2544"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2541" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2541" bodyend="2544"/>
     <listofallmembers>
       <member refid="dd/d07/structCatch_1_1AssertionReaction_1adcf30fb90ff20d9789df78d424652497" prot="public" virt="non-virtual"><scope>Catch::AssertionReaction</scope><name>shouldDebugBreak</name></member>
       <member refid="dd/d07/structCatch_1_1AssertionReaction_1a82c8d95a2c1b6a331bde66982a8e090f" prot="public" virt="non-virtual"><scope>Catch::AssertionReaction</scope><name>shouldThrow</name></member>

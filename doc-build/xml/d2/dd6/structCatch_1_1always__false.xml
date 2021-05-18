@@ -35,7 +35,7 @@
         <label>std::false_type</label>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="923" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="923" bodyend="923"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="923" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="923" bodyend="923"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

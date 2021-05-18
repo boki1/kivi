@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/db5/ir__code_8hh" kind="file" language="C++">
+    <compoundname>ir_code.hh</compoundname>
+    <includes local="no">optional</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">variant</includes>
+    <includes local="no">string_view</includes>
+    <includedby refid="dc/d6c/codes_8cc" local="yes">/home/boki/KIVI/frontend/ir_generation/codes.cc</includedby>
+    <includedby refid="d7/d00/generation__context_8hh" local="yes">/home/boki/KIVI/frontend/ir_generation/generation_context.hh</includedby>
+    <includedby refid="dd/dcd/generation__unit_8hh" local="yes">/home/boki/KIVI/frontend/ir_generation/generation_unit.hh</includedby>
+    <includedby refid="d0/d70/ir__code_8cc" local="yes">/home/boki/KIVI/frontend/ir_generation/ir_code.cc</includedby>
+    <includedby refid="d9/d0f/main_8cc" local="no">/home/boki/KIVI/main.cc</includedby>
+    <includedby refid="d9/d10/ir__printer_8cc" local="no">/home/boki/KIVI/utils/ir_printer/ir_printer.cc</includedby>
+    <includedby refid="d9/d35/ir__printer_8hh" local="no">/home/boki/KIVI/utils/ir_printer/ir_printer.hh</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>variant</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/frontend/ir_generation/ir_code.hh</label>
+        <link refid="db/db5/ir__code_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string_view</label>
+      </node>
+      <node id="2">
+        <label>optional</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>/home/boki/KIVI/main.cc</label>
+        <link refid="d9/d0f/main_8cc"/>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/frontend/ir_generation/ir_code.hh</label>
+        <link refid="db/db5/ir__code_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/boki/KIVI/frontend/ir_generation/ir_code.cc</label>
+        <link refid="d0/d70/ir__code_8cc"/>
+      </node>
+      <node id="5">
+        <label>/home/boki/KIVI/frontend/ir_generation/generation_unit.cc</label>
+        <link refid="d8/dc5/generation__unit_8cc"/>
+      </node>
+      <node id="6">
+        <label>/home/boki/KIVI/frontend/ir_generation/generation_unit.hh</label>
+        <link refid="dd/dcd/generation__unit_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/boki/KIVI/utils/ir_printer/ir_printer.cc</label>
+        <link refid="d9/d10/ir__printer_8cc"/>
+      </node>
+      <node id="8">
+        <label>/home/boki/KIVI/utils/ir_printer/ir_printer.hh</label>
+        <link refid="d9/d35/ir__printer_8hh"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/boki/KIVI/test/frontend/ir_generation.test.cc</label>
+        <link refid="d3/d3d/ir__generation_8test_8cc"/>
+      </node>
+      <node id="3">
+        <label>/home/boki/KIVI/frontend/ir_generation/generation_context.hh</label>
+        <link refid="d7/d00/generation__context_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/boki/KIVI/frontend/ir_generation/codes.cc</label>
+        <link refid="dc/d6c/codes_8cc"/>
+      </node>
+      <node id="4">
+        <label>/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc</label>
+        <link refid="db/de1/concrete__generators_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/dc9/classintermediate__representation_1_1tac" prot="public">intermediate_representation::tac</innerclass>
+    <innernamespace refid="d5/d90/namespaceintermediate__representation">intermediate_representation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>KIVI_IR_CODE_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KIVI_IR_CODE_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;variant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string_view&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d5/d90/namespaceintermediate__representation" kindref="compound">intermediate_representation</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17" refid="d1/dc9/classintermediate__representation_1_1tac" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="d1/dc9/classintermediate__representation_1_1tac_1a6408f11ad47d8b1ff2cd71a52b093358" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a6408f11ad47d8b1ff2cd71a52b093358" kindref="member">tac_ptr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>The<sp/>type<sp/>used<sp/>for<sp/>TAC<sp/>chaining</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">vregister_type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>The<sp/>indexes<sp/>of<sp/>the<sp/>&quot;fake&quot;<sp/>(virtual)<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;vregister_type&gt;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">operands_type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Used<sp/>to<sp/>represent<sp/>all<sp/>virtual<sp/>register<sp/>operands<sp/>for<sp/>the<sp/>current<sp/>TAC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9" kindref="member">type</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9ab7e7f2b46723f5b08d763041108f8fed" kindref="member">Nop</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>No<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a95b19f7739b0b7ea7d6b07586be54f36" kindref="member">Init</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Store<sp/>a<sp/>pointer<sp/>to<sp/>a<sp/>value<sp/>at<sp/>address<sp/>&amp;identifier<sp/>+<sp/>offset<sp/>where<sp/>identifier<sp/>is<sp/>a<sp/>function&apos;s<sp/>base</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9aec211f7c20af43e742bf2570c3cb84f9" kindref="member">Add</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Perform<sp/>addition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a67d9ebb87ad2c62fe6b9de06c8da7fa5" kindref="member">Negate</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Negation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a5fb63579fc981698f97d55bfecb213ea" kindref="member">Copy</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Assign<sp/>a<sp/>copy<sp/>of<sp/>another<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a7a1a5f3e79fdc91edf2f5ead9d66abb4" kindref="member">Read</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Read<sp/>from<sp/>address</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a1129c0e4d43f2d121652a7302712cff6" kindref="member">Write</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Write<sp/>at<sp/>address</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a0ccb67e7eaae09d9e4078d161eeca100" kindref="member">Equals</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Whether<sp/>two<sp/>values<sp/>are<sp/>equal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9ab04fe4cbf180f1665007dfca7073d598" kindref="member">IfNotZero</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Perform<sp/>branch<sp/>if<sp/>not<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9affb017548928ab2305e7c55cb67c04ca" kindref="member">FunctionCall</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Function<sp/>call</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9a988fd738de9c6d177440c5dcf69e73ce" kindref="member">Return</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Return<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45" refid="d1/dc9/classintermediate__representation_1_1tac_1afdb104612423d4264e947b04df40fae6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9" kindref="member">tac::type</ref><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1afdb104612423d4264e947b04df40fae6" kindref="member">m_type</ref>{<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9ab7e7f2b46723f5b08d763041108f8fed" kindref="member">type::Nop</ref><sp/>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d1/dc9/classintermediate__representation_1_1tac_1a4478fdce5e8b9741d8e682fadb162675" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a4478fdce5e8b9741d8e682fadb162675" kindref="member">m_identifier</ref>{};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="d1/dc9/classintermediate__representation_1_1tac_1aff46d2c1c4979e9a483137cb7c7c8f97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1aff46d2c1c4979e9a483137cb7c7c8f97" kindref="member">m_value</ref>{};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="d1/dc9/classintermediate__representation_1_1tac_1a283a12d941aa4b7829c94984e60e5a39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac_ptr</ref><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a283a12d941aa4b7829c94984e60e5a39" kindref="member">m_next</ref>{<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d1/dc9/classintermediate__representation_1_1tac_1a8f9cc85a92f2f0c2eee82e5f2266c437" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::optional&lt;tac_ptr&gt;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a8f9cc85a92f2f0c2eee82e5f2266c437" kindref="member">m_condition</ref>{};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d1/dc9/classintermediate__representation_1_1tac_1ac0bacb5e45cbb2ccd8c89ea1e04c36d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac0bacb5e45cbb2ccd8c89ea1e04c36d0" kindref="member">m_operands</ref>{};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ctors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d1/dc9/classintermediate__representation_1_1tac_1a284112578177c61aa2adbd894d199fe6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a284112578177c61aa2adbd894d199fe6" kindref="member">tac</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d1/dc9/classintermediate__representation_1_1tac_1a669d8b62e45a781b061ddef3ea8c88a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a669d8b62e45a781b061ddef3ea8c88a4" kindref="member">tac</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a284112578177c61aa2adbd894d199fe6" kindref="member">tac</ref>(<ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9" kindref="member">type</ref><sp/><ref refid="dc/d6c/codes_8cc_1acae8d16027df472cf07674d1f1a3fbfe" kindref="member">tac_type</ref>,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref><sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a17abdfdc2254b7bf02b463eae044e092" kindref="member">value</ref><sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>i<sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a6408f11ad47d8b1ff2cd71a52b093358" kindref="member">tac_ptr</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1af00f7cfb01021e34070694d7fa44b965" kindref="member">next</ref><sp/>=<sp/>{<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::optional&lt;tac_ptr&gt;&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a00755a4d40a2ebe897e0d008999dfca1" kindref="member">condition</ref><sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a284112578177c61aa2adbd894d199fe6" kindref="member">tac</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a17abdfdc2254b7bf02b463eae044e092" kindref="member">value</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a284112578177c61aa2adbd894d199fe6" kindref="member">tac</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a284112578177c61aa2adbd894d199fe6" kindref="member">tac</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a6408f11ad47d8b1ff2cd71a52b093358" kindref="member">tac_ptr</ref>&amp;<sp/>branch,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="d1/dc9/classintermediate__representation_1_1tac_1a81defaf8d48264840a275a159a54ee9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a81defaf8d48264840a275a159a54ee9c" kindref="member">tac</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Getters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6e80d4ead8e52f5e5623acaa5b8fed9" kindref="member">tac::type</ref></highlight></codeline>
+<codeline lineno="94" refid="d1/dc9/classintermediate__representation_1_1tac_1aec056475e77765e087396cef595a9518" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1aec056475e77765e087396cef595a9518" kindref="member">get_type</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="95"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1afdb104612423d4264e947b04df40fae6" kindref="member">m_type</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;</highlight></codeline>
+<codeline lineno="100" refid="d1/dc9/classintermediate__representation_1_1tac_1a000d6b0a8895186e59f635279bb5575f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a000d6b0a8895186e59f635279bb5575f" kindref="member">identifier</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="101"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a4478fdce5e8b9741d8e682fadb162675" kindref="member">m_identifier</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="d1/dc9/classintermediate__representation_1_1tac_1a17abdfdc2254b7bf02b463eae044e092" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a17abdfdc2254b7bf02b463eae044e092" kindref="member">value</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="107"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1aff46d2c1c4979e9a483137cb7c7c8f97" kindref="member">m_value</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a6408f11ad47d8b1ff2cd71a52b093358" kindref="member">tac_ptr</ref>&amp;</highlight></codeline>
+<codeline lineno="112" refid="d1/dc9/classintermediate__representation_1_1tac_1af00f7cfb01021e34070694d7fa44b965" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1af00f7cfb01021e34070694d7fa44b965" kindref="member">next</ref>()</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a283a12d941aa4b7829c94984e60e5a39" kindref="member">m_next</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="comment">/*<sp/>mut<sp/>*/</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a6408f11ad47d8b1ff2cd71a52b093358" kindref="member">tac_ptr</ref>&amp;</highlight></codeline>
+<codeline lineno="118" refid="d1/dc9/classintermediate__representation_1_1tac_1a61a169f539f4f1ed3cfc16b729950447" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a61a169f539f4f1ed3cfc16b729950447" kindref="member">next_mut</ref>()</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a283a12d941aa4b7829c94984e60e5a39" kindref="member">m_next</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::optional&lt;tac_ptr&gt;&amp;</highlight></codeline>
+<codeline lineno="124" refid="d1/dc9/classintermediate__representation_1_1tac_1a00755a4d40a2ebe897e0d008999dfca1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a00755a4d40a2ebe897e0d008999dfca1" kindref="member">condition</ref>()</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a8f9cc85a92f2f0c2eee82e5f2266c437" kindref="member">m_condition</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="comment">/*<sp/>mut<sp/>*/</highlight><highlight class="normal"><sp/>std::optional&lt;tac_ptr&gt;&amp;</highlight></codeline>
+<codeline lineno="130" refid="d1/dc9/classintermediate__representation_1_1tac_1aa63f3fc464ad3b1c3da074bd7218a473" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1aa63f3fc464ad3b1c3da074bd7218a473" kindref="member">condition_mut</ref>()</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a8f9cc85a92f2f0c2eee82e5f2266c437" kindref="member">m_condition</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;vregister_type&gt;&amp;</highlight></codeline>
+<codeline lineno="136" refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="137"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac0bacb5e45cbb2ccd8c89ea1e04c36d0" kindref="member">m_operands</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="d1/dc9/classintermediate__representation_1_1tac_1a93de28259d061a92cb39a2c76e998f73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a93de28259d061a92cb39a2c76e998f73" kindref="member">tac_nop</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="d1/dc9/classintermediate__representation_1_1tac_1a3a0d14743db3e568b895b1f3d7bcae3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a3a0d14743db3e568b895b1f3d7bcae3e" kindref="member">tac_init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>ident_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="d1/dc9/classintermediate__representation_1_1tac_1aa8bf1cd84c4b603e169efae8c3d9bb6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1aa8bf1cd84c4b603e169efae8c3d9bb6b" kindref="member">tac_add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="d1/dc9/classintermediate__representation_1_1tac_1af39ce2fedf674af28bca8fc2d8d4d672" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1af39ce2fedf674af28bca8fc2d8d4d672" kindref="member">tac_neg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="d1/dc9/classintermediate__representation_1_1tac_1ad253ba86397556baaed2171b02ca4399" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ad253ba86397556baaed2171b02ca4399" kindref="member">tac_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="d1/dc9/classintermediate__representation_1_1tac_1a194d035688f147b3bcea2bd523a8cd1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a194d035688f147b3bcea2bd523a8cd1e" kindref="member">tac_read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="d1/dc9/classintermediate__representation_1_1tac_1a36153c2643bbbbb381da54ce6273a185" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a36153c2643bbbbb381da54ce6273a185" kindref="member">tac_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="d1/dc9/classintermediate__representation_1_1tac_1ac6020e8fce0c95e0e0d1b7cc8642b8d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1ac6020e8fce0c95e0e0d1b7cc8642b8d9" kindref="member">tac_eq</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="d1/dc9/classintermediate__representation_1_1tac_1a0b09428bc096f138bf4caf3c6ec06e09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a0b09428bc096f138bf4caf3c6ec06e09" kindref="member">tac_ifnz</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="d1/dc9/classintermediate__representation_1_1tac_1af8e8436661ab17ba5054ac67ea0015d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1af8e8436661ab17ba5054ac67ea0015d4" kindref="member">tac_fcall</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="d1/dc9/classintermediate__representation_1_1tac_1a95ad58a01ea22fccaae49e8482a2c530" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a95ad58a01ea22fccaae49e8482a2c530" kindref="member">tac_return</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a5faf843a49165c69a2743361633b2375" kindref="member">operands</ref>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//KIVI_IR_CODE_HH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/KIVI/frontend/ir_generation/ir_code.hh"/>
+  </compounddef>
+</doxygen>

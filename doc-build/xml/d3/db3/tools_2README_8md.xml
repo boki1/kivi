@@ -29,6 +29,6 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>+<sp/>`--upload`<sp/>(or<sp/>`-u`)<sp/>Uploads<sp/>the<sp/>built<sp/>documentation<sp/>to<sp/>the<sp/>github<sp/>pages</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>+<sp/>`--open`<sp/>(or<sp/>`-o`)<sp/>Opens<sp/>the<sp/>build<sp/>documentation.<sp/>If<sp/>an<sp/>upload<sp/>was<sp/>just<sp/>made,<sp/>it<sp/>is<sp/>opened<sp/>directly<sp/>by<sp/>the<sp/>url,<sp/>otherwise<sp/>-<sp/>from<sp/>local<sp/>files.</highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/tools/README.md"/>
+    <location file="/home/boki/KIVI/tools/README.md"/>
   </compounddef>
 </doxygen>

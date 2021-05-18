@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/dcd/classcli_1_1options__set" kind="class" language="C++" prot="public">
+    <compoundname>cli::options_set</compoundname>
+    <includes refid="d5/df1/cli_8hh" local="no">cli.hh</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08" prot="private" static="no" strong="yes">
+        <type></type>
+        <name>CompileToStage</name>
+        <enumvalue id="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08a7ccbb03cb795734415a0b6924a8d7aed" prot="private">
+          <name>ASM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08af186217753c37b9b9f958d906208506e" prot="private">
+          <name>O</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enum class giving the compile stage options:<itemizedlist>
+<listitem><para>ASM: to assembly;</para>
+</listitem><listitem><para>O: to object. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="20" column="1" bodyfile="/home/boki/KIVI/utils/cli/cli.hh" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="dd/dcd/classcli_1_1options__set_1a4fe64da0f71f7d74aecd884fd02699d0" prot="private" static="no" strong="yes">
+        <type></type>
+        <name>VisualizeFlagShift</name>
+        <enumvalue id="dd/dcd/classcli_1_1options__set_1a4fe64da0f71f7d74aecd884fd02699d0ac77bb0f69e2a80e046a8dc7f0da9320f" prot="private">
+          <name>AST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dd/dcd/classcli_1_1options__set_1a4fe64da0f71f7d74aecd884fd02699d0a4f74d343f26bbd58a8cbbad2cab6a704" prot="private">
+          <name>IR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of shifts to be made in order to get the visualisation flag you need: <simplesect kind="note"><para>The visualisation flags consists of the bit flags, contained in the VisualizeFlagShift, reading from the most significant bit to the least one. These are as follows:<itemizedlist>
+<listitem><para>AST: Abstract Syntax Tree</para>
+</listitem><listitem><para>IR: Intermediate (code) Generation </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="31" column="1" bodyfile="/home/boki/KIVI/utils/cli/cli.hh" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="dd/dcd/classcli_1_1options__set_1a0ae7d016675568c9a4c9767cefaa221f" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int cli::options_set::VISUALIZATION_TYPES</definition>
+        <argsstring></argsstring>
+        <name>VISUALIZATION_TYPES</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="35" column="18" bodyfile="/home/boki/KIVI/utils/cli/cli.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/dcd/classcli_1_1options__set_1ad4b39783ac2f147fc22223d26ee835e7" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08" kindref="member">CompileToStage</ref></type>
+        <definition>CompileToStage cli::options_set::compile_to</definition>
+        <argsstring></argsstring>
+        <name>compile_to</name>
+        <initializer>= <ref refid="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08af186217753c37b9b9f958d906208506e" kindref="member">CompileToStage::O</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="37" column="16" bodyfile="/home/boki/KIVI/utils/cli/cli.hh" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dcd/classcli_1_1options__set_1a64b26c2f381bf53a41ca198f8384dc76" prot="private" static="no" mutable="no">
+        <type>std::bitset&lt; <ref refid="dd/dcd/classcli_1_1options__set_1a0ae7d016675568c9a4c9767cefaa221f" kindref="member">VISUALIZATION_TYPES</ref> &gt;</type>
+        <definition>std::bitset&lt;VISUALIZATION_TYPES&gt; cli::options_set::vis_flags</definition>
+        <argsstring></argsstring>
+        <name>vis_flags</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+<para>The flags for what type of visualization should be done. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The visualisation flags consists of the bit flags, contained in the VisualizeFlagShift, reading from the most significant bit to the least one. See enum class VisualizeFlagShift. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="45" column="13" bodyfile="/home/boki/KIVI/utils/cli/cli.hh" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="dd/dcd/classcli_1_1options__set_1a6c4877aedee55652eb27dab082fa8965" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cli::options_set::usage</definition>
+        <argsstring>()</argsstring>
+        <name>usage</name>
+        <briefdescription>
+<para>Describes the cli usage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Used when -h or <ndash/>help flag is given or when the cli is not used correctly </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="52" column="1" bodyfile="/home/boki/KIVI/utils/cli/cli.cc" bodystart="7" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dd/dcd/classcli_1_1options__set_1a9cf83c19fa1716776bb28a9f2c2a678e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cli::options_set::set_compile_to</definition>
+        <argsstring>(options_set::CompileToStage compileStage)</argsstring>
+        <name>set_compile_to</name>
+        <param>
+          <type><ref refid="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08" kindref="member">options_set::CompileToStage</ref></type>
+          <declname>compileStage</declname>
+        </param>
+        <briefdescription>
+<para>Sets the compile_to member field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compileStage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the value to be set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="58" column="6" bodyfile="/home/boki/KIVI/utils/cli/cli.cc" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dcd/classcli_1_1options__set_1a85827b3b9c5105149dc53349e60ab5e1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cli::options_set::recognize_compil_stage</definition>
+        <argsstring>(std::string &amp;&amp;arg)</argsstring>
+        <name>recognize_compil_stage</name>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@briev After recognising there is a compile-to stage, recognize_compil_stage gets the exact stage and sets it using the set_compile_to. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the argument to be recognised </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The argument is the part <emphasis>after</emphasis> the equals sign. For instance, instead of <computeroutput>--compile-to=ASM</computeroutput>, it looks only for the ASM part. </para>
+</simplesect>
+<simplesect kind="note"><para>The argument is valid regardless of the capitalization (<bold>ASM</bold> and <bold>asm</bold> both will <bold>work</bold>, however <computeroutput>AsM</computeroutput> will not be recognized as a valid command) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="69" column="6" bodyfile="/home/boki/KIVI/utils/cli/cli.cc" bodystart="33" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dcd/classcli_1_1options__set_1a223a2e2bb95152a5b58036a21fa02265" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cli::options_set::set_visualization_flags</definition>
+        <argsstring>(options_set::VisualizeFlagShift vis_flag_shift)</argsstring>
+        <name>set_visualization_flags</name>
+        <param>
+          <type><ref refid="dd/dcd/classcli_1_1options__set_1a4fe64da0f71f7d74aecd884fd02699d0" kindref="member">options_set::VisualizeFlagShift</ref></type>
+          <declname>vis_flag_shift</declname>
+        </param>
+        <briefdescription>
+<para>Sets the vis_flags member field bit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vis_flag_shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- which bit to be set (the shift left number) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="75" column="6" bodyfile="/home/boki/KIVI/utils/cli/cli.cc" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dcd/classcli_1_1options__set_1aa2c6b4fa60c7d3eefe81ee8db3d588ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cli::options_set::recognize_visualization</definition>
+        <argsstring>(std::string &amp;&amp;arg)</argsstring>
+        <name>recognize_visualization</name>
+        <param>
+          <type>std::string &amp;&amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>After recognising there is a vis flag set on the command line, recognize_visualization gets all the exact stages and sets their flags by the set_visualization_flags function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the argument to be recognized </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The argument is valid regardless of the capitalization (<bold>AST</bold> and <bold>ast</bold> both will <bold>work</bold>, however <computeroutput>AsT</computeroutput> will not be recognized as a valid command) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="85" column="6" bodyfile="/home/boki/KIVI/utils/cli/cli.cc" bodystart="59" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/dcd/classcli_1_1options__set_1a812effb040060cee1820842f4e14d33d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cli::options_set::process_options</definition>
+        <argsstring>(const std::string &amp;arg)</argsstring>
+        <name>process_options</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Processes a single option. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the string containing an option </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if success; 1 if the execution of the whole program should be stopped (e.g. when <ndash/>help flag is enabled). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/cli/cli.hh" line="94" column="6" bodyfile="/home/boki/KIVI/utils/cli/cli.cc" bodystart="76" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/KIVI/utils/cli/cli.hh" line="15" column="1" bodyfile="/home/boki/KIVI/utils/cli/cli.hh" bodystart="16" bodyend="95"/>
+    <listofallmembers>
+      <member refid="dd/dcd/classcli_1_1options__set_1ad4b39783ac2f147fc22223d26ee835e7" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>compile_to</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1aa515abf09364d07e1afaaf1d872c9f08" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>CompileToStage</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1a812effb040060cee1820842f4e14d33d" prot="public" virt="non-virtual"><scope>cli::options_set</scope><name>process_options</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1a85827b3b9c5105149dc53349e60ab5e1" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>recognize_compil_stage</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1aa2c6b4fa60c7d3eefe81ee8db3d588ee" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>recognize_visualization</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1a9cf83c19fa1716776bb28a9f2c2a678e" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>set_compile_to</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1a223a2e2bb95152a5b58036a21fa02265" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>set_visualization_flags</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1a6c4877aedee55652eb27dab082fa8965" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>usage</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1a64b26c2f381bf53a41ca198f8384dc76" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>vis_flags</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1a0ae7d016675568c9a4c9767cefaa221f" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>VISUALIZATION_TYPES</name></member>
+      <member refid="dd/dcd/classcli_1_1options__set_1a4fe64da0f71f7d74aecd884fd02699d0" prot="private" virt="non-virtual"><scope>cli::options_set</scope><name>VisualizeFlagShift</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

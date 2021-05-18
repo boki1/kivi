@@ -44,14 +44,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4496" column="26" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4496" bodyend="4501"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4496" column="26" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="4496" bodyend="4501"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4496" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4496" bodyend="4501"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4496" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="4496" bodyend="4501"/>
     <listofallmembers>
       <member refid="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baad6c3e4a5797b7ee0a812e4fc88128983" prot="public" virt="non-virtual"><scope>Catch::WaitForKeypress</scope><name>BeforeExit</name></member>
       <member refid="dc/d3e/structCatch_1_1WaitForKeypress_1a2e8c4369d0a605d64e3e83b5af3399baaba7f6d9b2377122a118b371ab7ae3185" prot="public" virt="non-virtual"><scope>Catch::WaitForKeypress</scope><name>BeforeStart</name></member>

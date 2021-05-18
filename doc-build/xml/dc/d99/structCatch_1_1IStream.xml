@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1432" column="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1432" column="17"/>
       </memberdef>
       <memberdef kind="function" id="dc/d99/structCatch_1_1IStream_1a55a9ddbe250261ff38642f480ebdd902" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>std::ostream &amp;</type>
@@ -28,14 +28,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1433" column="30"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1433" column="30"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1431" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1431" bodyend="1434"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1431" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1431" bodyend="1434"/>
     <listofallmembers>
       <member refid="dc/d99/structCatch_1_1IStream_1a55a9ddbe250261ff38642f480ebdd902" prot="public" virt="pure-virtual"><scope>Catch::IStream</scope><name>stream</name></member>
       <member refid="dc/d99/structCatch_1_1IStream_1a344a88d0e5fc1f727f5801c72b4a4e2a" prot="public" virt="virtual"><scope>Catch::IStream</scope><name>~IStream</name></member>

@@ -7,20 +7,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">###<sp/>AST<sp/>printer</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">Provides<sp/>visualization<sp/>to<sp/>the<sp/>generated<sp/>AST.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">----------</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">**Contents**</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`ast_printer.hh`\</highlight></codeline>
-<codeline><highlight class="normal">&gt;<sp/>Defines<sp/>the<sp/>API</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`ast_printer.cc`\</highlight></codeline>
-<codeline><highlight class="normal">&gt;<sp/>Implements<sp/>the<sp/>API</highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/utils/ast_printer/README.md"/>
+    <location file="/home/boki/KIVI/utils/ast_printer/README.md"/>
   </compounddef>
 </doxygen>

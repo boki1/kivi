@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="905" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="905" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="905" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="905" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="919" column="3" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="919" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="919" column="3" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="919" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="de/d7c/classloguru_1_1EcEntryData_1ac2f7b178b5792e82b948fc81bb1ab312" prot="private" static="no" mutable="no">
         <type><ref refid="de/d7c/classloguru_1_1EcEntryData_1a4e4738a2eb975b3c15a66858cf7f8629" kindref="member">Printer</ref></type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="920" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="920" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="920" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="920" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="907" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="907" bodyend="910"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="907" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="907" bodyend="910"/>
       </memberdef>
       <memberdef kind="function" id="de/d7c/classloguru_1_1EcEntryData_1a4979a8172502122c764e8146c51e01a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="912" column="14" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="912" bodyend="916"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="912" column="14" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="912" bodyend="916"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -143,7 +143,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="902" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="903" bodyend="921"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="902" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="903" bodyend="921"/>
     <listofallmembers>
       <member refid="de/d7c/classloguru_1_1EcEntryData_1a1f2535b83910d0e8b7e6a455a47ab58c" prot="private" virt="non-virtual"><scope>loguru::EcEntryData</scope><name>_data</name></member>
       <member refid="d3/d28/classloguru_1_1EcEntryBase_1a68dc2d49b602fbeaba578e9e357100ce" prot="public" virt="non-virtual"><scope>loguru::EcEntryData</scope><name>_descr</name></member>

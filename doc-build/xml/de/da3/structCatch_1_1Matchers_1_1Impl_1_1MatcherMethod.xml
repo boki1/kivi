@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3261" column="26"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3261" column="26"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -98,7 +98,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3260" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3260" bodyend="3262"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3260" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3260" bodyend="3262"/>
     <listofallmembers>
       <member refid="de/da3/structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod_1ae0920ff9e817acf08e1bb0cbcb044e30" prot="public" virt="pure-virtual"><scope>Catch::Matchers::Impl::MatcherMethod</scope><name>match</name></member>
     </listofallmembers>

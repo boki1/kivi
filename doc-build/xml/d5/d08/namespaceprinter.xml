@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="17" column="13" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="17" bodyend="-1"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="17" column="13" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="17" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="25" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="25" bodyend="85"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="25" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="25" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1a17c580227c8a46664eee12a37412b12c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="93" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="93" bodyend="96"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="93" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="93" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1aecc84ece5bc9d6cee20bb51cee9c91a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="104" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="104" bodyend="107"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="104" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="104" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1a365398b10a38ea107b871831aa10aab4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="115" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="115" bodyend="118"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="115" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="115" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1afc078028838eaad1806a375913947760" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="126" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="126" bodyend="129"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="126" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="126" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1acf808b23bcea1a30edb5d99ef24c260d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::string</type>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="132" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="132" bodyend="150" declfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh" declline="26" declcolumn="1"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="132" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="132" bodyend="150" declfile="/home/boki/KIVI/utils/ast_printer/ast_printer.hh" declline="26" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1af69bddbd4b5b69cca2a8ad9931149c07" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::string</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="153" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="153" bodyend="156" declfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh" declline="34" declcolumn="1"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="153" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="153" bodyend="156" declfile="/home/boki/KIVI/utils/ast_printer/ast_printer.hh" declline="34" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1a13987e86dc4cabc8e12c36fe8a5cbc47" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="269" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="269" bodyend="282" declfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" declline="159" declcolumn="20"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="270" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="270" bodyend="283" declfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" declline="159" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1a177a78810d48743d9b71ff9c22818bc4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::string</type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="162" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="162" bodyend="220" declfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh" declline="42" declcolumn="1"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="162" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="162" bodyend="221" declfile="/home/boki/KIVI/utils/ast_printer/ast_printer.hh" declline="42" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1ab1f863ab91da244edd2d926f9630f268" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::string</type>
@@ -266,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="223" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="223" bodyend="232" declfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh" declline="50" declcolumn="1"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="224" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="224" bodyend="233" declfile="/home/boki/KIVI/utils/ast_printer/ast_printer.hh" declline="50" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d5/d08/namespaceprinter_1aac96d10629fd998cd476471c7e344646" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::string</type>
@@ -332,13 +332,76 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="235" column="1" bodyfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" bodystart="235" bodyend="266" declfile="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh" declline="61" declcolumn="1"/>
+        <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="236" column="1" bodyfile="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" bodystart="236" bodyend="267" declfile="/home/boki/KIVI/utils/ast_printer/ast_printer.hh" declline="61" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d08/namespaceprinter_1a1c2ded5a286f71d12cac6cb131b15942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printer::print_ir</definition>
+        <argsstring>(ir::tac *tac_code, std::ostream &amp;os)</argsstring>
+        <name>print_ir</name>
+        <param>
+          <type><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">ir::tac</ref> *</type>
+          <declname>tac_code</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/ir_printer/ir_printer.cc" line="10" column="6" bodyfile="/home/boki/KIVI/utils/ir_printer/ir_printer.cc" bodystart="10" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d08/namespaceprinter_1a927c641e5e91a350c4363e1b493466fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printer::print_ir</definition>
+        <argsstring>(intermediate_representation::generation_unit &amp;gunit, std::ostream &amp;os)</argsstring>
+        <name>print_ir</name>
+        <param>
+          <type><ref refid="da/dea/classintermediate__representation_1_1generation__unit" kindref="compound">intermediate_representation::generation_unit</ref> &amp;</type>
+          <declname>gunit</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/ir_printer/ir_printer.cc" line="58" column="6" bodyfile="/home/boki/KIVI/utils/ir_printer/ir_printer.cc" bodystart="58" bodyend="135" declfile="/home/boki/KIVI/utils/ir_printer/ir_printer.hh" declline="10" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d08/namespaceprinter_1a6e808d611e0ca06c04d57e08bd0b87e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printer::print_ir</definition>
+        <argsstring>(std::shared_ptr&lt; intermediate_representation::tac &gt; &amp;code, std::ostream &amp;os)</argsstring>
+        <name>print_ir</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">intermediate_representation::tac</ref> &gt; &amp;</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/utils/ir_printer/ir_printer.hh" line="9" column="14" declfile="/home/boki/KIVI/utils/ir_printer/ir_printer.hh" declline="9" declcolumn="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc" line="10" column="1"/>
+    <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.cc" line="10" column="1"/>
   </compounddef>
 </doxygen>

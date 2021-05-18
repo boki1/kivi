@@ -30,10 +30,6 @@
       <node id="4">
         <label>atomic</label>
       </node>
-      <node id="2">
-        <label>loguru.hpp</label>
-        <link refid="df/dec/loguru_8hpp"/>
-      </node>
       <node id="12">
         <label>string</label>
       </node>
@@ -55,29 +51,8 @@
       <node id="19">
         <label>cxxabi.h</label>
       </node>
-      <node id="17">
-        <label>unistd.h</label>
-      </node>
-      <node id="14">
-        <label>vector</label>
-      </node>
-      <node id="15">
-        <label>signal.h</label>
-      </node>
-      <node id="8">
-        <label>cstdlib</label>
-      </node>
-      <node id="10">
-        <label>mutex</label>
-      </node>
-      <node id="5">
-        <label>chrono</label>
-      </node>
-      <node id="13">
-        <label>thread</label>
-      </node>
       <node id="1">
-        <label>/home/boki/.tmp/kivi/extern/loguru/loguru.cpp</label>
+        <label>/home/boki/KIVI/extern/loguru/loguru.cpp</label>
         <link refid="df/d02/loguru_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -122,6 +97,31 @@
         <childnode refid="22" relation="include">
         </childnode>
       </node>
+      <node id="17">
+        <label>unistd.h</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+      <node id="15">
+        <label>signal.h</label>
+      </node>
+      <node id="8">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>loguru.hpp</label>
+        <link refid="df/dec/loguru_8hpp"/>
+      </node>
+      <node id="10">
+        <label>mutex</label>
+      </node>
+      <node id="5">
+        <label>chrono</label>
+      </node>
+      <node id="13">
+        <label>thread</label>
+      </node>
       <node id="3">
         <label>algorithm</label>
       </node>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="29" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="29" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="29" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d02/loguru_8cpp_1ab71d3283a6d001a376107ce16365a7e1" prot="public" static="no">
         <name>LOGURU_PREAMBLE_WIDTH</name>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="31" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="31" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="31" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d02/loguru_8cpp_1ac8b1ae5666bff93a5db0bb45f99f5832" prot="public" static="no">
         <name>LOG_USER</name>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="52" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="52" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="52" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d02/loguru_8cpp_1ae688d728e1acdfe5988c7db45d6f0166" prot="public" static="no">
         <name>PATH_MAX</name>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="72" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="72" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="72" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d02/loguru_8cpp_1a0f31df6340b82e15bd8ac7fa14a58818" prot="public" static="no">
         <name>LOGURU_PTHREADS</name>
@@ -192,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="94" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="94" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="94" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d02/loguru_8cpp_1aa5ac453e6229012365d4e8a52dae4740" prot="public" static="no">
         <name>LOGURU_WINTHREADS</name>
@@ -203,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="95" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="95" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="95" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d02/loguru_8cpp_1a541dc8d21c27dd1b01deab0e3f6122da" prot="public" static="no">
         <name>LOGURU_STACKTRACES</name>
@@ -214,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="97" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="97" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="97" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d02/loguru_8cpp_1a62cd248474333de2b3f5cf3e6228be9a" prot="public" static="no">
         <name>LOGURU_PTLS_NAMES</name>
@@ -225,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="137" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="137" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="137" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d02/loguru_8cpp_1a30bbdfff96c27a9486c0fe40b751fa61" prot="public" static="no">
         <name>VTSEQ</name>
@@ -237,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="269" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="269" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="269" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="269" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d02/loguru_8cpp_1ad9a2673b0bcda54ae9a8b6b016d3dd3a" prot="public" static="no">
         <name>DEFINE_EC</name>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" line="2042" column="9" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="2042" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.cpp" line="2042" column="9" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="2042" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2503,6 +2503,6 @@
 <codeline lineno="2240"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2241"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LOGURU_IMPLEMENTATION</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.cpp"/>
   </compounddef>
 </doxygen>

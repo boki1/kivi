@@ -101,14 +101,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1351" column="20" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1351" bodyend="1369"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1351" column="20" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1351" bodyend="1369"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1351" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1351" bodyend="1369"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1351" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1351" bodyend="1369"/>
     <listofallmembers>
       <member refid="d5/d8c/structCatch_1_1ResultWas_1a624e1ee3661fcf6094ceef1f654601efa8b6d3d5bc78d4e7a95543b6ecfbdb57d" prot="public" virt="non-virtual"><scope>Catch::ResultWas</scope><name>DidntThrowException</name></member>
       <member refid="d5/d8c/structCatch_1_1ResultWas_1a624e1ee3661fcf6094ceef1f654601efaa9107b7836cc7590ca668002f76d27c7" prot="public" virt="non-virtual"><scope>Catch::ResultWas</scope><name>Exception</name></member>

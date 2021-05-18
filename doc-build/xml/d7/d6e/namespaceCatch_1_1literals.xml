@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3178" column="20" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3178" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3178" column="20" declfile="/home/boki/KIVI/extern/catch2/catch2.hpp" declline="3178" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="d7/d6e/namespaceCatch_1_1literals_1aded81112b3a271a8b9538dff17acd093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="d2/da4/classCatch_1_1Detail_1_1Approx" kindref="compound">Detail::Approx</ref></type>
@@ -35,13 +35,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3179" column="20" declfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" declline="3179" declcolumn="20"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3179" column="20" declfile="/home/boki/KIVI/extern/catch2/catch2.hpp" declline="3179" declcolumn="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3177" column="1"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3177" column="1"/>
   </compounddef>
 </doxygen>

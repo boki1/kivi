@@ -7,29 +7,9 @@
     <includes local="no">vector</includes>
     <includes refid="d2/d2b/textbox_8hh" local="no">textbox/textbox.hh</includes>
     <includes refid="d9/d1c/syntax_8hh" local="no">parser/syntax.hh</includes>
-    <includedby refid="d9/d0f/main_8cc" local="no">/home/boki/.tmp/kivi/main.cc</includedby>
-    <includedby refid="dc/df4/ast__printer_8cc" local="yes">/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc</includedby>
+    <includedby refid="d9/d0f/main_8cc" local="no">/home/boki/KIVI/main.cc</includedby>
+    <includedby refid="dc/df4/ast__printer_8cc" local="yes">/home/boki/KIVI/utils/ast_printer/ast_printer.cc</includedby>
     <incdepgraph>
-      <node id="1">
-        <label>/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh</label>
-        <link refid="d9/d96/ast__printer_8hh"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>variant</label>
-      </node>
-      <node id="2">
-        <label>string</label>
-      </node>
       <node id="7">
         <label>parser/syntax.hh</label>
         <link refid="d9/d1c/syntax_8hh"/>
@@ -46,6 +26,12 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
+      <node id="8">
+        <label>variant</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
       <node id="10">
         <label>optional</label>
       </node>
@@ -54,6 +40,23 @@
       </node>
       <node id="3">
         <label>utility</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/utils/ast_printer/ast_printer.hh</label>
+        <link refid="d9/d96/ast__printer_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>algorithm</label>
       </node>
       <node id="5">
         <label>textbox/textbox.hh</label>
@@ -65,29 +68,26 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="6">
-        <label>algorithm</label>
-      </node>
       <node id="9">
         <label>memory</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
-        <label>/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.cc</label>
-        <link refid="dc/df4/ast__printer_8cc"/>
+      <node id="2">
+        <label>/home/boki/KIVI/main.cc</label>
+        <link refid="d9/d0f/main_8cc"/>
       </node>
       <node id="1">
-        <label>/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh</label>
+        <label>/home/boki/KIVI/utils/ast_printer/ast_printer.hh</label>
         <link refid="d9/d96/ast__printer_8hh"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="2">
-        <label>/home/boki/.tmp/kivi/main.cc</label>
-        <link refid="d9/d0f/main_8cc"/>
+      <node id="3">
+        <label>/home/boki/KIVI/utils/ast_printer/ast_printer.cc</label>
+        <link refid="dc/df4/ast__printer_8cc"/>
       </node>
     </invincdepgraph>
     <innernamespace refid="d5/d08/namespaceprinter">printer</innernamespace>
@@ -132,6 +132,6 @@
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//KIVI_UTILS_AST_PRINTER_AST_PRINTER_HH_</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/utils/ast_printer/ast_printer.hh"/>
+    <location file="/home/boki/KIVI/utils/ast_printer/ast_printer.hh"/>
   </compounddef>
 </doxygen>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4834" column="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4834" column="17"/>
       </memberdef>
       <memberdef kind="function" id="d6/d0e/structCatch_1_1IRunner_1a03713202dd2e041e30b8030088ab0116" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -28,14 +28,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4835" column="22"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4835" column="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4833" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4833" bodyend="4836"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4833" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="4833" bodyend="4836"/>
     <listofallmembers>
       <member refid="d6/d0e/structCatch_1_1IRunner_1a03713202dd2e041e30b8030088ab0116" prot="public" virt="pure-virtual"><scope>Catch::IRunner</scope><name>aborting</name></member>
       <member refid="d6/d0e/structCatch_1_1IRunner_1a5f539a88a7772d68de8a2e4028774209" prot="public" virt="virtual"><scope>Catch::IRunner</scope><name>~IRunner</name></member>

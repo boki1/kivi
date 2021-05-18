@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3858" column="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3858" column="17"/>
       </memberdef>
       <memberdef kind="function" id="de/d7e/structCatch_1_1IGeneratorTracker_1ae88084f9af27c8b9a5d5775b9c148498" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>auto</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3859" column="22"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3859" column="22"/>
       </memberdef>
       <memberdef kind="function" id="de/d7e/structCatch_1_1IGeneratorTracker_1a23be942fc51672598bfa02c678c3078a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>auto</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3860" column="22"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3860" column="22"/>
       </memberdef>
       <memberdef kind="function" id="de/d7e/structCatch_1_1IGeneratorTracker_1a9945eff42219edc5a7071eebd8b0419e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -58,14 +58,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3861" column="22"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3861" column="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3857" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3857" bodyend="3862"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3857" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3857" bodyend="3862"/>
     <listofallmembers>
       <member refid="de/d7e/structCatch_1_1IGeneratorTracker_1a23be942fc51672598bfa02c678c3078a" prot="public" virt="pure-virtual"><scope>Catch::IGeneratorTracker</scope><name>getGenerator</name></member>
       <member refid="de/d7e/structCatch_1_1IGeneratorTracker_1ae88084f9af27c8b9a5d5775b9c148498" prot="public" virt="pure-virtual"><scope>Catch::IGeneratorTracker</scope><name>hasGenerator</name></member>

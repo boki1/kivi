@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="690" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="690" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="690" column="11" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="690" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1a2e6b88f4e4cae0227184fdd154a4fc3f" prot="private" static="no" mutable="no">
         <type>const char *</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="691" column="12" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="691" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="691" column="12" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="691" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1ae9a3c94b24e5b75cad60f32a6850f2f1" prot="private" static="no" mutable="no">
         <type>unsigned</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="692" column="10" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="692" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="692" column="10" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="692" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1acc51c4bd12062ef8b774d58c08c68dac" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="693" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="693" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="693" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="693" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1a399e4c282842557ba4d5964ee1470608" prot="private" static="no" mutable="no">
         <type>long long</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="694" column="11" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="694" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="694" column="11" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="694" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d7/d82/classloguru_1_1LogScopeRAII_1a1298a4ef3afea74b0451a92fc1887ab2" prot="private" static="no" mutable="no">
         <type>char</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="695" column="6" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="695" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="695" column="6" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="695" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="658" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="658" bodyend="660"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="658" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="658" bodyend="660"/>
       </memberdef>
       <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1a859bd0bf34492be2ec0a7d6a69c54c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="661" column="1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="661" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1af6a62fa268a8db000f5bc76d5ef1b8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="662" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.cpp" bodystart="1751" bodyend="1784"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="662" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.cpp" bodystart="1751" bodyend="1784"/>
       </memberdef>
       <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1a6818243f127876647d92507fa1defba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="682" column="1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="682" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="686" column="1"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="686" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1aa0c5ce888d328f2dbf371a11bf3de9d5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="d7/d82/classloguru_1_1LogScopeRAII" kindref="compound">LogScopeRAII</ref> &amp;</type>
@@ -190,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="687" column="14"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="687" column="14"/>
       </memberdef>
       <memberdef kind="function" id="d7/d82/classloguru_1_1LogScopeRAII_1ad4f673e438095148823c12228c9dcbdd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -206,14 +206,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="688" column="6"/>
+        <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="688" column="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" line="655" column="1" bodyfile="/home/boki/.tmp/kivi/extern/loguru/loguru.hpp" bodystart="656" bodyend="696"/>
+    <location file="/home/boki/KIVI/extern/loguru/loguru.hpp" line="655" column="1" bodyfile="/home/boki/KIVI/extern/loguru/loguru.hpp" bodystart="656" bodyend="696"/>
     <listofallmembers>
       <member refid="d7/d82/classloguru_1_1LogScopeRAII_1a2e6b88f4e4cae0227184fdd154a4fc3f" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>_file</name></member>
       <member refid="d7/d82/classloguru_1_1LogScopeRAII_1acc51c4bd12062ef8b774d58c08c68dac" prot="private" virt="non-virtual"><scope>loguru::LogScopeRAII</scope><name>_indent_stderr</name></member>

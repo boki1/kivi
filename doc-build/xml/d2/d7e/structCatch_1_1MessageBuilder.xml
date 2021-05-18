@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2636" column="21" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2636" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2636" column="21" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2636" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2626" column="9"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2626" column="9"/>
       </memberdef>
       <memberdef kind="function" id="d2/d7e/structCatch_1_1MessageBuilder_1a20fa48d069b20dddcc2d3df8abb123c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2631" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2631" bodyend="2634"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2631" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2631" bodyend="2634"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -130,7 +130,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2625" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2625" bodyend="2637"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2625" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2625" bodyend="2637"/>
     <listofallmembers>
       <member refid="d2/d7e/structCatch_1_1MessageBuilder_1a979f1c2b36d78f80ee275bfa5ba0209f" prot="public" virt="non-virtual"><scope>Catch::MessageBuilder</scope><name>m_info</name></member>
       <member refid="d6/db6/structCatch_1_1MessageStream_1a9202520faed8882ef469db9f353ec578" prot="public" virt="non-virtual"><scope>Catch::MessageBuilder</scope><name>m_stream</name></member>

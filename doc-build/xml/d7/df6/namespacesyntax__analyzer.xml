@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="19" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="19" bodyend="22" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="20" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="19" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="19" bodyend="22" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="20" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a6ee3dc0764d8a21cc27f1902a5a1cb30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="25" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="25" bodyend="28" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="28" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="25" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="25" bodyend="28" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="28" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a1d881d7931a6966be2147e9e4c073b92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="31" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="31" bodyend="34" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="36" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="31" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="31" bodyend="34" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="36" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a533a85533b9d2a8153e079761e35d4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="37" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="37" bodyend="40" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="43" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="37" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="37" bodyend="40" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="43" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a78cb9dbcef41ae49f90453430aaec225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="43" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="43" bodyend="46" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="51" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="43" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="43" bodyend="46" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="51" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a9ad6a484094a248f6ecd58dadfed6781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="49" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="49" bodyend="52" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="60" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="49" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="49" bodyend="52" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="60" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a7082e93e3a478dc5181fa85e1dc044df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="55" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="55" bodyend="58" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="69" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="55" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="55" bodyend="58" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="69" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a3ea046a3281d3216884f66d2a9a2ed82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="61" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="61" bodyend="64" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="78" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="61" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="61" bodyend="64" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="78" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a65910b168b44811d9ec858eb947f17fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="67" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="67" bodyend="70" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="87" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="67" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="67" bodyend="70" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="87" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a678818cf55653245ebda81825461d3b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -354,7 +354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="73" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="73" bodyend="76" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="96" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="73" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="73" bodyend="76" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="96" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1ae1a82efed5e7647f5c6d8243a38c1478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -396,7 +396,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="79" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="79" bodyend="83" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="105" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="79" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="79" bodyend="83" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="105" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a88c8eb005118819f7d76280a32a08024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -438,7 +438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="86" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="86" bodyend="89" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="114" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="86" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="86" bodyend="89" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="114" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a25e672e5808f12eb55b01e892b1022a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -490,7 +490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="92" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="92" bodyend="102" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="124" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="92" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="92" bodyend="100" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="124" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a7847e2850e81c45dffa4bb57a8c5b47c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -520,7 +520,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="105" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" bodystart="105" bodyend="108" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="132" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="103" column="1" bodyfile="/home/boki/KIVI/frontend/parser/expressions.cc" bodystart="103" bodyend="106" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="132" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a84fbe047931e8dc0b4e669c7e30c8376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -541,7 +541,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" line="148" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="148" bodyend="152"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.cc" line="150" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="150" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1ae83e90fa247c1be34a7dbc3ed2f05bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -583,7 +583,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="18" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="18" bodyend="21" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="141" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/statements.cc" line="18" column="1" bodyfile="/home/boki/KIVI/frontend/parser/statements.cc" bodystart="18" bodyend="21" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="141" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a717e25ba7c4fec313db67811b64ce0c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -625,7 +625,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="24" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="24" bodyend="27" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="150" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/statements.cc" line="24" column="1" bodyfile="/home/boki/KIVI/frontend/parser/statements.cc" bodystart="24" bodyend="27" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="150" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1aef31df3c52051f0a99af48ba79dbafe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -655,7 +655,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="30" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="30" bodyend="33" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="158" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/statements.cc" line="30" column="1" bodyfile="/home/boki/KIVI/frontend/parser/statements.cc" bodystart="30" bodyend="33" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="158" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1af281f3ad5da076ef802ec0bfa6cc23e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -672,7 +672,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="36" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="36" bodyend="39" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="165" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/statements.cc" line="36" column="1" bodyfile="/home/boki/KIVI/frontend/parser/statements.cc" bodystart="36" bodyend="39" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="165" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="d7/df6/namespacesyntax__analyzer_1a69bbfeec8bacaad18d3f8b67d0e76575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -690,13 +690,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/statements.cc" line="42" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/statements.cc" bodystart="42" bodyend="45" declfile="/home/boki/.tmp/kivi/frontend/parser/syntactical_structures.hh" declline="171" declcolumn="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/statements.cc" line="42" column="1" bodyfile="/home/boki/KIVI/frontend/parser/statements.cc" bodystart="42" bodyend="45" declfile="/home/boki/KIVI/frontend/parser/syntactical_structures.hh" declline="171" declcolumn="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/expressions.cc" line="16" column="1"/>
+    <location file="/home/boki/KIVI/frontend/parser/expressions.cc" line="16" column="1"/>
   </compounddef>
 </doxygen>

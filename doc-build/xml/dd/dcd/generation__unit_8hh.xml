@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/dcd/generation__unit_8hh" kind="file" language="C++">
+    <compoundname>generation_unit.hh</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">map</includes>
+    <includes refid="db/db5/ir__code_8hh" local="yes">ir_code.hh</includes>
+    <includes refid="d9/d1c/syntax_8hh" local="no">parser/syntax.hh</includes>
+    <includedby refid="dc/d6c/codes_8cc" local="yes">/home/boki/KIVI/frontend/ir_generation/codes.cc</includedby>
+    <includedby refid="db/de1/concrete__generators_8cc" local="yes">/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc</includedby>
+    <includedby refid="d7/d00/generation__context_8hh" local="yes">/home/boki/KIVI/frontend/ir_generation/generation_context.hh</includedby>
+    <includedby refid="d8/dc5/generation__unit_8cc" local="yes">/home/boki/KIVI/frontend/ir_generation/generation_unit.cc</includedby>
+    <includedby refid="d3/d3d/ir__generation_8test_8cc" local="no">/home/boki/KIVI/test/frontend/ir_generation.test.cc</includedby>
+    <includedby refid="d9/d35/ir__printer_8hh" local="no">/home/boki/KIVI/utils/ir_printer/ir_printer.hh</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>parser/syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>variant</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>ir_code.hh</label>
+        <link refid="db/db5/ir__code_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string_view</label>
+      </node>
+      <node id="6">
+        <label>optional</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/frontend/ir_generation/generation_unit.hh</label>
+        <link refid="dd/dcd/generation__unit_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>/home/boki/KIVI/main.cc</label>
+        <link refid="d9/d0f/main_8cc"/>
+      </node>
+      <node id="5">
+        <label>/home/boki/KIVI/frontend/ir_generation/generation_unit.cc</label>
+        <link refid="d8/dc5/generation__unit_8cc"/>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/frontend/ir_generation/generation_unit.hh</label>
+        <link refid="dd/dcd/generation__unit_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/boki/KIVI/utils/ir_printer/ir_printer.cc</label>
+        <link refid="d9/d10/ir__printer_8cc"/>
+      </node>
+      <node id="7">
+        <label>/home/boki/KIVI/utils/ir_printer/ir_printer.hh</label>
+        <link refid="d9/d35/ir__printer_8hh"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/boki/KIVI/test/frontend/ir_generation.test.cc</label>
+        <link refid="d3/d3d/ir__generation_8test_8cc"/>
+      </node>
+      <node id="4">
+        <label>/home/boki/KIVI/frontend/ir_generation/generation_context.hh</label>
+        <link refid="d7/d00/generation__context_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/boki/KIVI/frontend/ir_generation/codes.cc</label>
+        <link refid="dc/d6c/codes_8cc"/>
+      </node>
+      <node id="3">
+        <label>/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc</label>
+        <link refid="db/de1/concrete__generators_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="da/dea/classintermediate__representation_1_1generation__unit" prot="public">intermediate_representation::generation_unit</innerclass>
+    <innernamespace refid="d5/d90/namespaceintermediate__representation">intermediate_representation</innernamespace>
+    <briefdescription>
+<para>Defines an class which represents an IR generation unit. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>KIVI_CONCRETE_CODES_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KIVI_CONCRETE_CODES_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/db5/ir__code_8hh" kindref="compound">ir_code.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d9/d1c/syntax_8hh" kindref="compound">parser/syntax.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::unique_ptr;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d5/d90/namespaceintermediate__representation" kindref="compound">intermediate_representation</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21" refid="da/dea/classintermediate__representation_1_1generation__unit" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/dea/classintermediate__representation_1_1generation__unit" kindref="compound">generation_unit</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>tac*&gt;<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" kindref="member">label_entries_type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Used<sp/>for<sp/>mapping<sp/>labels<sp/>(functions)<sp/>and<sp/>their<sp/>associated<sp/>_first_<sp/>TAC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="da/dea/classintermediate__representation_1_1generation__unit_1a748a0ff5411d98928a381a8958309a38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>std::size_t&gt;<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a748a0ff5411d98928a381a8958309a38" kindref="member">parameter_count_type</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>Used<sp/>for<sp/>mapping<sp/>the<sp/>number<sp/>of<sp/>parameters<sp/>to<sp/>their<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="da/dea/classintermediate__representation_1_1generation__unit_1a570d342b242a2ea6dd141da8e591baa9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;unique_ptr&lt;tac&gt;&gt;<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a570d342b242a2ea6dd141da8e591baa9" kindref="member">m_tacs</ref>{};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="da/dea/classintermediate__representation_1_1generation__unit_1abd9f1bcece9928c2364d41227c919202" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a748a0ff5411d98928a381a8958309a38" kindref="member">parameter_count_type</ref><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1abd9f1bcece9928c2364d41227c919202" kindref="member">m_function_parameters</ref>{};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="da/dea/classintermediate__representation_1_1generation__unit_1a342593f698e650334bddbe03d9ac33fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" kindref="member">label_entries_type</ref><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a342593f698e650334bddbe03d9ac33fb" kindref="member">m_entry_points</ref>{};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">generation_context;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_unit::generation_context</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1abb2972d5a7ca05ba6f14ce36f19ed763" kindref="member">prepare_context</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">syntax_analyzer::function</ref>&amp;<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Concrete<sp/>generators<sp/>(concrete_generators.cc)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="da/dea/classintermediate__representation_1_1generation__unit_1aeaec4c6a2164f09d2442024afd780f37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1aeaec4c6a2164f09d2442024afd780f37" kindref="member">generate_sequence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>gtx);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>generate_addition(const<sp/>syntax_analyzer::expression&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>generate_multiplication(const<sp/>syntax_analyzer::expression&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>generate_division(const<sp/>syntax_analyzer::expression&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>generate_modulo(const<sp/>syntax_analyzer::expression&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>generate_equality(const<sp/>syntax_analyzer::expression&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="da/dea/classintermediate__representation_1_1generation__unit_1a87335c4a4800042ba67b560494db6b34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a87335c4a4800042ba67b560494db6b34" kindref="member">generate_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>gtx);</highlight></codeline>
+<codeline lineno="64" refid="da/dea/classintermediate__representation_1_1generation__unit_1a2d4f40a654d429cd5225540ce9e4dfe8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a2d4f40a654d429cd5225540ce9e4dfe8" kindref="member">generate_funcall</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>gtx);</highlight></codeline>
+<codeline lineno="65" refid="da/dea/classintermediate__representation_1_1generation__unit_1a020cc91550e17268f68839f3b37954d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a020cc91550e17268f68839f3b37954d2" kindref="member">generate_number</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>gtx);</highlight></codeline>
+<codeline lineno="66" refid="da/dea/classintermediate__representation_1_1generation__unit_1a75117caa2cc27786717b60b2910a15fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a75117caa2cc27786717b60b2910a15fa" kindref="member">generate_return</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>gtx);</highlight></codeline>
+<codeline lineno="67" refid="da/dea/classintermediate__representation_1_1generation__unit_1a9d7d4f0cad958234a39d710c9bd5cdce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a9d7d4f0cad958234a39d710c9bd5cdce" kindref="member">generate_nop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>gtx);</highlight></codeline>
+<codeline lineno="68" refid="da/dea/classintermediate__representation_1_1generation__unit_1a32419904540ec2582a172a399d3b372c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a32419904540ec2582a172a399d3b372c" kindref="member">generate_negation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>gtx);</highlight></codeline>
+<codeline lineno="69" refid="da/dea/classintermediate__representation_1_1generation__unit_1a3cf0d0c3e1b7639f35ffc2e20d50796e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a3cf0d0c3e1b7639f35ffc2e20d50796e" kindref="member">generate_identifier</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>gtx);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="da/dea/classintermediate__representation_1_1generation__unit_1a8d61192a557cb47caa44c49de589e58f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a8d61192a557cb47caa44c49de589e58f" kindref="member">generate_conditional</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>gtx);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>generate_if(const<sp/>syntax_analyzer::expression&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>generate_while(const<sp/>syntax_analyzer::expression&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>TAC<sp/>concrete<sp/>constructors<sp/>(codes.cc)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="da/dea/classintermediate__representation_1_1generation__unit_1aaf7c929d7855d1d47427dbbee47b8985" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1aaf7c929d7855d1d47427dbbee47b8985" kindref="member">tac_nop</ref>();</highlight></codeline>
+<codeline lineno="77" refid="da/dea/classintermediate__representation_1_1generation__unit_1ade9b9cbec5f857638fd7a952ee4e05fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1ade9b9cbec5f857638fd7a952ee4e05fb" kindref="member">tac_init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>ident_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="78" refid="da/dea/classintermediate__representation_1_1generation__unit_1aa88fe2248fd95fa2ac3ff4544cf74e8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1aa88fe2248fd95fa2ac3ff4544cf74e8b" kindref="member">tac_add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="79" refid="da/dea/classintermediate__representation_1_1generation__unit_1ac3e33f0a16025253d43dc01f6b72342f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1ac3e33f0a16025253d43dc01f6b72342f" kindref="member">tac_neg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="80" refid="da/dea/classintermediate__representation_1_1generation__unit_1aa08ddc7a07d78a52302bf242c63ddf3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1aa08ddc7a07d78a52302bf242c63ddf3a" kindref="member">tac_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="81" refid="da/dea/classintermediate__representation_1_1generation__unit_1a7a05a7aef970731a32c63268a51f436a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a7a05a7aef970731a32c63268a51f436a" kindref="member">tac_read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="82" refid="da/dea/classintermediate__representation_1_1generation__unit_1a55a25da3a56d406dafe7f72be078d2f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a55a25da3a56d406dafe7f72be078d2f8" kindref="member">tac_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="83" refid="da/dea/classintermediate__representation_1_1generation__unit_1a65acd96e3bffcf60188a63ccd5b03742" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a65acd96e3bffcf60188a63ccd5b03742" kindref="member">tac_eq</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="84" refid="da/dea/classintermediate__representation_1_1generation__unit_1a490d3f9da0268354cdc6ce1d16d19b9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a490d3f9da0268354cdc6ce1d16d19b9b" kindref="member">tac_ifnz</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="85" refid="da/dea/classintermediate__representation_1_1generation__unit_1a0358f1cad6154db1725d3ba8cd69d79e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a0358f1cad6154db1725d3ba8cd69d79e" kindref="member">tac_fcall</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="86" refid="da/dea/classintermediate__representation_1_1generation__unit_1a63c67860335b5c270955f6a4f5370986" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a63c67860335b5c270955f6a4f5370986" kindref="member">tac_return</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref>&amp;<sp/>operands);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>definitions<sp/>of<sp/>the<sp/>three<sp/>address<sp/>code<sp/>instructions<sp/>and<sp/>their<sp/>operands</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>*</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a601041f6d90806c905ffad8dfe214f90" kindref="member">define_tac</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac" kindref="compound">tac</ref>&amp;<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1afeedce24612a7aa95cdfb515a1e5eae2" kindref="member">generate_ir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>,<sp/><ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">generation_context</ref>&amp;<sp/>ctx);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a43e346ae52885aa30e78f1da4f12208c" kindref="member">generate_function</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">syntax_analyzer::function</ref>&amp;<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a7126b3b333c247a512ef5a3354e3ef52" kindref="member">generate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;syntax_analyzer::function&gt;&amp;<sp/>ctx_functions);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Getters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;unique_ptr&lt;tac&gt;&gt;&amp;</highlight></codeline>
+<codeline lineno="105" refid="da/dea/classintermediate__representation_1_1generation__unit_1a1583772560255aa94f352edcebfd1dd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a1583772560255aa94f352edcebfd1dd4" kindref="member">tacs</ref>()</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a570d342b242a2ea6dd141da8e591baa9" kindref="member">m_tacs</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="comment">/*<sp/>mut<sp/>*/</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a748a0ff5411d98928a381a8958309a38" kindref="member">parameter_count_type</ref>&amp;</highlight></codeline>
+<codeline lineno="111" refid="da/dea/classintermediate__representation_1_1generation__unit_1ab1002938edd982d492700052e628893b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1ab1002938edd982d492700052e628893b" kindref="member">function_parameters_mut</ref>()</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1abd9f1bcece9928c2364d41227c919202" kindref="member">m_function_parameters</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="comment">/*<sp/>mut<sp/>*/</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" kindref="member">label_entries_type</ref>&amp;</highlight></codeline>
+<codeline lineno="117" refid="da/dea/classintermediate__representation_1_1generation__unit_1a0214d6797c5b4a27ef977f796ea360d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a0214d6797c5b4a27ef977f796ea360d0" kindref="member">entry_points_mut</ref>()</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a342593f698e650334bddbe03d9ac33fb" kindref="member">m_entry_points</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a06f7bd3642fd76815bf0c6f92377affd" kindref="member">label_entries_type</ref>&amp;</highlight></codeline>
+<codeline lineno="123" refid="da/dea/classintermediate__representation_1_1generation__unit_1ae12e7abb493ba4c7b976a15a02033989" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1ae12e7abb493ba4c7b976a15a02033989" kindref="member">entry_points</ref>()</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a342593f698e650334bddbe03d9ac33fb" kindref="member">m_entry_points</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//KIVI_CONCRETE_CODES_HH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/KIVI/frontend/ir_generation/generation_unit.hh"/>
+  </compounddef>
+</doxygen>

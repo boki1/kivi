@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2299" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2299" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2299" column="14" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2299" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2301" column="14" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2301" bodyend="2303"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2301" column="14" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2301" bodyend="2303"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2306" column="18" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2306" bodyend="2309"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2306" column="18" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2306" bodyend="2309"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -91,7 +91,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="2298" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="2298" bodyend="2310"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="2298" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="2298" bodyend="2310"/>
     <listofallmembers>
       <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a101c7db86c87eff93a8ff496720e6320" prot="public" virt="non-virtual"><scope>Catch::UnaryExpr</scope><name>getResult</name></member>
       <member refid="d3/d6e/structCatch_1_1ITransientExpression_1a3b436e13a0a6d3522bbf70d4e31deb22" prot="public" virt="non-virtual"><scope>Catch::UnaryExpr</scope><name>isBinaryExpression</name></member>

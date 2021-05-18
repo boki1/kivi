@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/de1/concrete__generators_8cc" kind="file" language="C++">
+    <compoundname>concrete_generators.cc</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="d5/df9/transform__iterator_8hh" local="no">transform_iterator/transform_iterator.hh</includes>
+    <includes refid="d7/d00/generation__context_8hh" local="yes">generation_context.hh</includes>
+    <includes refid="dd/dcd/generation__unit_8hh" local="yes">generation_unit.hh</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>iterator</label>
+      </node>
+      <node id="15">
+        <label>parser/syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>variant</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>ir_code.hh</label>
+        <link refid="db/db5/ir__code_8hh"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>string_view</label>
+      </node>
+      <node id="9">
+        <label>optional</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="14">
+        <label>generation_unit.hh</label>
+        <link refid="dd/dcd/generation__unit_8hh"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>utility</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>transform_iterator/transform_iterator.hh</label>
+        <link refid="d5/df9/transform__iterator_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>generation_context.hh</label>
+        <link refid="d7/d00/generation__context_8hh"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc</label>
+        <link refid="db/de1/concrete__generators_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="d5/d90/namespaceintermediate__representation">intermediate_representation</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="db/de1/concrete__generators_8cc_1a7df899243573620418516d56f2a9f9b8" prot="public" static="no">
+        <type><ref refid="da/dea/classintermediate__representation_1_1generation__unit" kindref="compound">ir::generation_unit</ref></type>
+        <definition>using gu =  ir::generation_unit</definition>
+        <argsstring></argsstring>
+        <name>gu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc" line="9" column="1" bodyfile="/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d5/df9/transform__iterator_8hh" kindref="compound">transform_iterator/transform_iterator.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d00/generation__context_8hh" kindref="compound">generation_context.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/dcd/generation__unit_8hh" kindref="compound">generation_unit.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">sa</ref><sp/>=<sp/><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d5/d90/namespaceintermediate__representation" kindref="compound">ir</ref><sp/>=<sp/><ref refid="d5/d90/namespaceintermediate__representation" kindref="compound">intermediate_representation</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit" kindref="compound">gu</ref><sp/>=<sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit" kindref="compound">ir::generation_unit</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d5/d90/namespaceintermediate__representation" kindref="compound">intermediate_representation</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>place_chain(<ref refid="d1/dc9/classintermediate__representation_1_1tac_1a6408f11ad47d8b1ff2cd71a52b093358" kindref="member">tac::tac_ptr</ref><sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>generation_unit::generation_context&amp;<sp/>ctx)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(*ctx.target()<sp/>=<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>;<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>;<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref><sp/>=<sp/>*ctx.target())</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*ctx.target()<sp/>=<sp/><ref refid="d2/dfe/parsing__context_8test_8cc_1a40036ceeca10849cabe2f0d92ffda83d" kindref="member">code</ref>-&gt;next();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>make_vreg(<ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context" kindref="compound">gu::generation_context</ref>&amp;<sp/>ctx,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>store_it<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>vreg<sp/>=<sp/>ctx.<ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1a2a6289bb1d2791d5760e5897ac3a849e" kindref="member">increase_counter</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(store_it)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ctx.<ref refid="d6/d94/classintermediate__representation_1_1generation__unit_1_1generation__context_1ad060d33cd042e4d0c2f8a7e79ff2a673" kindref="member">store_vreg</ref>(vreg);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vreg;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a3cf0d0c3e1b7639f35ffc2e20d50796e" kindref="member">gu::generate_identifier</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>ident<sp/>=<sp/>std::get&lt;sa::identifier&gt;(e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1a91fb0b9285eb7478042d33f2d578ea29" kindref="member">terminal</ref>());</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(ident.get_type())</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sa::identifier::type::Function:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_chain(tac_init(ident.name(),<sp/>{<sp/>make_vreg(gtx),<sp/>0l<sp/>}),<sp/>gtx);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sa::identifier::type::Local:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(gtx.map_mut().emplace(ident.index(),<sp/>gtx.increase_counter()).first-&gt;second);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sa::identifier::type::Parameter:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(ident.index());</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sa::identifier::type::Undefined:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d39/namespaceCatch_1a4e5b5dc07abdfa30de33593dfab71f43" kindref="member">std::cerr</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Err:<sp/>During<sp/>identifier<sp/>translation<sp/>to<sp/>IR!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a32419904540ec2582a172a399d3b372c" kindref="member">gu::generate_negation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(gtx.increase_counter());</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1abfcc782036a2cfe2a8fdbded6c4c95a6" kindref="member">tac::operands_type</ref><sp/>operands<sp/>=<sp/>{<sp/>gtx.load_vreg(),<sp/>generate_ir(e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>().front(),<sp/>gtx)<sp/>};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_chain(tac_neg(operands),<sp/>gtx);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a75117caa2cc27786717b60b2910a15fa" kindref="member">gu::generate_return</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(generate_ir(e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>().front(),<sp/>gtx));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_chain(tac_return({<sp/>gtx.load_vreg()<sp/>}),<sp/>gtx);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a020cc91550e17268f68839f3b37954d2" kindref="member">gu::generate_number</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(gtx.increase_counter());</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_chain(tac_init(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>{<sp/>gtx.load_vreg(),<sp/>std::get&lt;int&gt;(e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1a91fb0b9285eb7478042d33f2d578ea29" kindref="member">terminal</ref>())<sp/>}),<sp/>gtx);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a9d7d4f0cad958234a39d710c9bd5cdce" kindref="member">gu::generate_nop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(gtx.increase_counter());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_chain(tac_init(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>{<sp/>gtx.load_vreg(),<sp/>0L<sp/>}),<sp/>gtx);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1aeaec4c6a2164f09d2442024afd780f37" kindref="member">gu::generate_sequence</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>i<sp/>:<sp/>e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>())</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref><sp/>prev<sp/>=<sp/>gtx.load_vreg();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref><sp/>last<sp/>=<sp/>generate_ir(i,<sp/>gtx);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(last);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(prev<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(gtx.increase_counter());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1a1018dfb0d0d49eca484b9b10bf0b4db7" kindref="member">get_type</ref>()<sp/>==<sp/>sa::expression::type::Addition)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_chain(tac_add({<sp/>gtx.load_vreg(),<sp/>prev,<sp/>last<sp/>}),<sp/>gtx);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1a1018dfb0d0d49eca484b9b10bf0b4db7" kindref="member">get_type</ref>()<sp/>==<sp/>sa::expression::type::Equality)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_chain(tac_eq({<sp/>gtx.load_vreg(),<sp/>prev,<sp/>last<sp/>}),<sp/>gtx);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a8d61192a557cb47caa44c49de589e58f" kindref="member">gu::generate_conditional</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(gtx.increase_counter());</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tac*<sp/>b_then<sp/>=<sp/>tac_init(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>{<sp/>gtx.load_vreg(),<sp/>1l<sp/>});<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Then-branch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tac*<sp/>b_else<sp/>=<sp/>tac_init(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>{<sp/>gtx.load_vreg(),<sp/>0l<sp/>});<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Else-branch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tac*<sp/>end<sp/>=<sp/>tac_nop();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b_then-&gt;next_mut()<sp/>=<sp/>b_else-&gt;next_mut()<sp/>=<sp/>end;<sp/></highlight><highlight class="comment">//<sp/>A<sp/>common<sp/>target<sp/>for<sp/>both.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tac*&amp;<sp/>begin<sp/>=<sp/>*gtx.target();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>i<sp/>:<sp/>e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>())</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/dc9/classintermediate__representation_1_1tac_1a315bd11e72f7402555a925294645fa5b" kindref="member">tac::vregister_type</ref><sp/>i_ir<sp/>=<sp/>generate_ir(i,<sp/>gtx);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>create<sp/>a<sp/>branch<sp/>after<sp/>contingent<sp/>statements<sp/>in<sp/>a<sp/>loop.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1a1018dfb0d0d49eca484b9b10bf0b4db7" kindref="member">get_type</ref>()<sp/>==<sp/>sa::expression::type::While<sp/>&amp;&amp;<sp/>i<sp/>!=<sp/>e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>().front())</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Immediately<sp/>after<sp/>the<sp/>expression,<sp/>create<sp/>a<sp/>branch<sp/>on<sp/>its<sp/>result.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tac*<sp/>condition<sp/>=<sp/>*gtx.target()<sp/>=<sp/>tac_ifnz({<sp/>i_ir,<sp/>0<sp/>});</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*gtx.target()<sp/>=<sp/>condition-&gt;next();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>condition-&gt;condition_mut()<sp/>=<sp/>b_else;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>end<sp/>of<sp/>the<sp/>statement<sp/>chain<sp/>is<sp/>linked<sp/>into<sp/>b_then.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>loops,<sp/>the<sp/>chain<sp/>is<sp/>linked<sp/>back<sp/>into<sp/>the<sp/>start<sp/>of<sp/>the<sp/>loop<sp/>instead.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*gtx.target()<sp/>=<sp/>e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1a1018dfb0d0d49eca484b9b10bf0b4db7" kindref="member">get_type</ref>()<sp/>==<sp/>sa::expression::type::While<sp/>?<sp/>begin<sp/>:<sp/>b_then;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*gtx.target()<sp/>=<sp/>end-&gt;next();<sp/><sp/></highlight><highlight class="comment">//<sp/>Code<sp/>continues<sp/>after<sp/>the<sp/>end<sp/>node.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a87335c4a4800042ba67b560494db6b34" kindref="member">gu::generate_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>src<sp/>=<sp/>e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>().front();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>dest<sp/>=<sp/>e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>().back();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>generate_ir(src,<sp/>gtx);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(generate_ir(dest,<sp/>gtx));</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_chain(tac_copy({<sp/>gtx.load_vreg(),<sp/>temp<sp/>}),<sp/>gtx);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit_1a2d4f40a654d429cd5225540ce9e4dfe8" kindref="member">gu::generate_funcall</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">syntax_analyzer::expression</ref>&amp;<sp/>e,<sp/>generation_context&amp;<sp/>gtx)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.store_vreg(gtx.increase_counter());</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;tac::vregister_type&gt;<sp/>operands<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gtx.load_vreg(),</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="d5/df9/transform__iterator_8hh_1a40014b6385e3a509135f9f1165bdc71d" kindref="member">make_transform_iterator</ref>(</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>().begin(),</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e.<ref refid="db/df3/classsyntax__analyzer_1_1expression_1abf18cf1e11fafe8457ee2db5ff6f3dd0" kindref="member">operands</ref>().end(),</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">sa::expression</ref>&amp;<sp/>p)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>generate_ir(p,<sp/>gtx);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}),</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="d9/d26/structtransform__iterator" kindref="compound">transform_iterator&lt;tac::vregister_type&gt;</ref>{}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>place_chain(tac_fcall(operands),<sp/>gtx);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/KIVI/frontend/ir_generation/concrete_generators.cc"/>
+  </compounddef>
+</doxygen>

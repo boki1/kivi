@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="41" column="13" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="41" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="41" column="13" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a9149991d8630d72ae400bae32a1c1238" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref> &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="44" column="13" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="44" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="44" column="13" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a3b03eaea3687a9f75ffd9839d79e41fe" prot="private" static="no" mutable="no">
         <type><ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="47" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="47" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="47" column="10" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a230ea96dceec0888f154d5448a3b4d8c" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="50" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="50" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="50" column="5" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="50" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="61" column="12" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="61" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="61" column="12" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a12e6eabcb03275e68bbb3a887e2ba736" prot="public" static="no" mutable="no">
         <type><ref refid="dc/de8/classyy_1_1location" kindref="compound">yy::location</ref></type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="64" column="14" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="64" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="64" column="14" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="64" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="76" column="10" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="22" bodyend="29"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="76" column="10" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="24" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1acf6678dde52fe14a89d4794670e0c748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="84" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="32" bodyend="36"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="84" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="34" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1add95595c473fd83ff4fdb081cb692d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="93" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="39" bodyend="49"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="93" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="41" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1ae06f23672f91a396e038e98e62df8007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -214,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="104" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="52" bodyend="72"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="104" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="54" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a235277e494bb30ca3947b9ec3178503c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -246,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="113" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="115" bodyend="120"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="113" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="117" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a932f936bda0d636d34f4019aa9b1341d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -278,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="122" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="123" bodyend="128"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="122" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="125" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a65d54eb7593ee9af0b23df4a317a9d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -310,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="131" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="131" bodyend="137"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="131" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="133" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a915784ee7853a7fac173ed59884129a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -329,7 +329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="140" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="140" bodyend="145"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="140" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="142" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a918cdca2ea1a9076669ec7b7df647e64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">expression</ref></type>
@@ -370,7 +370,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="152" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="75" bodyend="91"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="152" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="77" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a7849c16b31f71affa6ae6874269d35f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref> &amp;</type>
@@ -413,7 +413,7 @@
         <inbodydescription>
 <para>Adds implicit return statement at the end of the block &quot;concatenated&quot; by this double-compound statement</para>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="161" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.cc" bodystart="94" bodyend="112"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="161" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.cc" bodystart="96" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1aa9c9d2238ddf322e66c7731168b889c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const std::vector&lt; <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &gt; &amp;</type>
@@ -426,7 +426,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="165" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="165" bodyend="168"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="165" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="165" bodyend="168"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1acb5f2dd6f4c362ebeb976f76aa80286c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; <ref refid="d1/d9f/classsyntax__analyzer_1_1identifier" kindref="compound">identifier</ref> &gt; &amp;</type>
@@ -439,7 +439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="171" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="171" bodyend="174"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="171" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="171" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a5e883491811a60f9a974ca6010766855" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const std::vector&lt; <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref> &gt; &amp;</type>
@@ -452,7 +452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="177" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="177" bodyend="180"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="177" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="177" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1afadc7125f48e9b2f0e7fe6a2cff1291c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">function</ref> &amp;</type>
@@ -465,7 +465,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="183" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="183" bodyend="186"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="183" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="183" bodyend="186"/>
       </memberdef>
       <memberdef kind="function" id="dd/d9f/classsyntax__analyzer_1_1parsing__context_1ae05ee75f3a0750b30f71f78439023311" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -478,7 +478,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="189" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="189" bodyend="192"/>
+        <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="189" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="189" bodyend="192"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -528,7 +528,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" line="37" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/parsing_context.hh" bodystart="38" bodyend="193"/>
+    <location file="/home/boki/KIVI/frontend/parser/parsing_context.hh" line="37" column="1" bodyfile="/home/boki/KIVI/frontend/parser/parsing_context.hh" bodystart="38" bodyend="193"/>
     <listofallmembers>
       <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1afadc7125f48e9b2f0e7fe6a2cff1291c" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>current_function</name></member>
       <member refid="dd/d9f/classsyntax__analyzer_1_1parsing__context_1a932f936bda0d636d34f4019aa9b1341d" prot="public" virt="non-virtual"><scope>syntax_analyzer::parsing_context</scope><name>define_function</name></member>

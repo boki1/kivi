@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_c802a52f71a9867085062b6c590fa632" kind="dir">
-    <compoundname>/home/boki/.tmp/kivi/utils/cli</compoundname>
+    <compoundname>/home/boki/KIVI/utils/cli</compoundname>
+    <innerfile refid="d0/d4f/cli_8cc">cli.cc</innerfile>
     <innerfile refid="d5/df1/cli_8hh">cli.hh</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/utils/cli/"/>
+    <location file="/home/boki/KIVI/utils/cli/"/>
   </compounddef>
 </doxygen>

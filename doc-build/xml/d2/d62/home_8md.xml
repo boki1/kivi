@@ -7,66 +7,28 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">![Kivi<sp/>Logo](https://i.postimg.cc/PxHqD9Y9/kiwi.png)</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>The<sp/>Kivi<sp/>Programming<sp/>Language</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Kivi</highlight></codeline>
-<codeline><highlight class="normal">&gt;<sp/>Version:<sp/>0.01</highlight></codeline>
-<codeline><highlight class="normal">&gt;</highlight></codeline>
-<codeline><highlight class="normal">&gt;<sp/>Compiler<sp/>for<sp/>a<sp/>C-like<sp/>language<sp/>with<sp/>educational<sp/>purposes<sp/>only\</highlight></codeline>
-<codeline><highlight class="normal">&gt;<sp/>elsys@SoftwareDevelopment<sp/>course<sp/>project</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Welcome</highlight></codeline>
-<codeline><highlight class="normal">This<sp/>is<sp/>the<sp/>Kivi<sp/>programming<sp/>language.<sp/>Here<sp/>you<sp/>will<sp/>find<sp/>answers<sp/>the<sp/>following<sp/>questions:</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>How<sp/>does<sp/>the<sp/>compiler<sp/>work?</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>What<sp/>does<sp/>it<sp/>do<sp/>internally?</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>What<sp/>features<sp/>does<sp/>it<sp/>support?<sp/>How<sp/>are<sp/>they<sp/>implemented?</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>What<sp/>are<sp/>the<sp/>key<sp/>components<sp/>of<sp/>the<sp/>project?</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>How<sp/>can<sp/>you<sp/>build<sp/>it<sp/>and<sp/>run<sp/>it<sp/>on<sp/>your<sp/>local<sp/>machine?</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>What<sp/>requirement<sp/>do<sp/>you<sp/>need<sp/>to<sp/>suffice<sp/>in<sp/>order<sp/>to<sp/>successfully<sp/>use<sp/>the<sp/>compiler?</highlight></codeline>
+<codeline><highlight class="normal">[![Kivi<sp/>logo](https://i.postimg.cc/PxHqD9Y9/kiwi.png)](https://postimg.cc/2qHmRHH7)</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Also</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>the<sp/>source<sp/>code</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>tests</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>building<sp/>instructions<sp/>(`CMakeLists`<sp/>chain)</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>example<sp/>kivi<sp/>programs</highlight></codeline>
+<codeline><highlight class="normal">-------------</highlight></codeline>
+<codeline><highlight class="normal">*NB!!!<sp/>The<sp/>Kivi<sp/>programming<sp/>language<sp/>is<sp/>a<sp/>school<sp/>project<sp/>and<sp/>does<sp/>not<sp/>purport<sp/>for<sp/>uniqueness<sp/>nor<sp/>innovation!*</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">...<sp/>and<sp/>many<sp/>more.</highlight></codeline>
+<codeline><highlight class="normal">-----------</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Key<sp/>links</highlight></codeline>
+<codeline><highlight class="normal">Welcome<sp/>to<sp/>**The<sp/>Kivi<sp/>programming<sp/>language**!</highlight></codeline>
+<codeline><highlight class="normal">==========================</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>Homepage<sp/>-<sp/>[Link](https://boki1.github.io/kivi/)</highlight></codeline>
-<codeline><highlight class="normal">&gt;</highlight></codeline>
-<codeline><highlight class="normal">&gt;<sp/>Dev-Documentation<sp/>-<sp/>[Link](https://boki1.github.io/kivi/dev/dev.html)</highlight></codeline>
-<codeline><highlight class="normal">&gt;</highlight></codeline>
-<codeline><highlight class="normal">&gt;<sp/>GitHub<sp/>Repository<sp/>-<sp/>[Link](https://github.com/boki1/kivi)</highlight></codeline>
-<codeline><highlight class="normal">&gt;</highlight></codeline>
-<codeline><highlight class="normal">&gt;<sp/>Diagrams<sp/>-<sp/>[Link]()</highlight></codeline>
+<codeline><highlight class="normal">Kivi<sp/>is<sp/>a<sp/>compiler<sp/>for<sp/>a<sp/>simplified<sp/>C-like<sp/>language<sp/>created<sp/>as<sp/>a<sp/>course<sp/>project<sp/>for<sp/>the<sp/>subject<sp/>Software<sp/>Development<sp/>in<sp/>TUES.<sp/>The<sp/>principle<sp/>objectives<sp/>for<sp/>us,<sp/>the<sp/>creators,<sp/>are<sp/>to<sp/>learn<sp/>about<sp/>the<sp/>fundamental<sp/>ideas<sp/>and<sp/>design<sp/>principles<sp/>associated<sp/>with<sp/>compiler<sp/>and<sp/>programming<sp/>language<sp/>design.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Contribution</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">In<sp/>case<sp/>you<sp/>like<sp/>what<sp/>you<sp/>see<sp/>and<sp/>want<sp/>to<sp/>contribute<sp/>to<sp/>the<sp/>project<sp/>fire-up<sp/>a<sp/>[complaint](https://github.com/boki1/kivi/issues)<sp/>or<sp/>directly<sp/>fork<sp/>the<sp/>repository.<sp/>Pull<sp/>requests<sp/>are<sp/>welcome<sp/><sp/>any<sp/>time<sp/>:).</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Docs</highlight></codeline>
+<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://boki1.github.io/kivi&quot;&gt;&lt;img<sp/>width=&quot;200px&quot;<sp/>height=&quot;200px&quot;<sp/><sp/>src=&quot;https://cdn.iconscout.com/icon/free/png-256/documentation-1502741-1272951.png&quot;/&gt;&lt;/a&gt;</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Credits</highlight></codeline>
-<codeline><highlight class="normal">_With<sp/>additional<sp/>project-only<sp/>nicknames<sp/>:smile:</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Dev</highlight></codeline>
+<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://boki1.github.io/kivi/dev/dev.html&quot;&gt;&lt;img<sp/>width=&quot;200px&quot;<sp/>height=&quot;200px&quot;<sp/><sp/>src=&quot;https://i.ibb.co/4Sd29HN/gear-wheel.png&quot;/&gt;&lt;/a&gt;</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">-<sp/>[@vkabadzhova](https://www.linkedin.com/in/violeta-kabadzhova-7272031a8/)<sp/>aka<sp/>Baklava</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>[@kristoimenov](https://www.linkedin.com/in/kristiyan-stoimenov-589500207/)<sp/>aka<sp/>Kryptonite</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">**Other**</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">Huge<sp/>thanks<sp/>to<sp/>[@bisqwit](https://www.youtube.com/channel/UCKTehwyGCKF-b2wo0RKwrcg)<sp/>for<sp/>his<sp/>great<sp/>tutorial!<sp/>This<sp/>school<sp/>project<sp/>was<sp/>greatly<sp/>influenced<sp/>by<sp/>his<sp/>work<sp/>and<sp/>video<sp/>materials!<sp/>It<sp/>served<sp/>us<sp/>as<sp/>a<sp/>great<sp/>motivation<sp/>to<sp/>dive<sp/>into<sp/>the<sp/>world<sp/>of<sp/>compiler<sp/>implementation.<sp/></highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">###<sp/>License</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">The<sp/>MIT<sp/>License<sp/>(MIT)</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">Copyright<sp/>©<sp/>2021<sp/>Violeta<sp/>Kabadzhova,<sp/>Kristiyan<sp/>Stoimenov</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>“Software”),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>“AS<sp/>IS”,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
     </programlisting>
     <location file="home.md"/>
   </compounddef>

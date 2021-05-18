@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4353" column="17"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4353" column="17"/>
       </memberdef>
       <memberdef kind="function" id="d4/d17/structCatch_1_1IContext_1a684e4ae71d1fdf3060c352ecde1d122f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="d6/d6e/structCatch_1_1IResultCapture" kindref="compound">IResultCapture</ref> *</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4355" column="32"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4355" column="32"/>
       </memberdef>
       <memberdef kind="function" id="d4/d17/structCatch_1_1IContext_1af088415dde18d039ed5a2f95b02767c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="d6/d0e/structCatch_1_1IRunner" kindref="compound">IRunner</ref> *</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4356" column="25"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4356" column="25"/>
       </memberdef>
       <memberdef kind="function" id="d4/d17/structCatch_1_1IContext_1a72a2718232adea8925fec9e71d3efd75" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="d8/d39/namespaceCatch_1afd20a5d4f9d2f4d525db81a7765367b0" kindref="member">IConfigPtr</ref> const  &amp;</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4357" column="34"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4357" column="34"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -74,7 +74,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="4351" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="4352" bodyend="4358"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="4351" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="4352" bodyend="4358"/>
     <listofallmembers>
       <member refid="d4/d17/structCatch_1_1IContext_1a72a2718232adea8925fec9e71d3efd75" prot="public" virt="pure-virtual"><scope>Catch::IContext</scope><name>getConfig</name></member>
       <member refid="d4/d17/structCatch_1_1IContext_1a684e4ae71d1fdf3060c352ecde1d122f" prot="public" virt="pure-virtual"><scope>Catch::IContext</scope><name>getResultCapture</name></member>

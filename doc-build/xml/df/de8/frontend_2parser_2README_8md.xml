@@ -7,60 +7,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">###<sp/>Parser</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">Here<sp/>resides<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>first<sp/>two<sp/>stages<sp/>of<sp/>the<sp/>compilation<sp/>process:<sp/>lexer<sp/>and<sp/>parser.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">Additional<sp/>tools<sp/>used<sp/>here<sp/>are<sp/>`bison&gt;=3.7`<sp/>and<sp/>`re2c`.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">----------------</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">**Contents**</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`lexemes.re`\</highlight></codeline>
-<codeline><highlight class="normal">This<sp/>file<sp/>enlists<sp/>all<sp/>supported<sp/>tokens<sp/>in<sp/>the<sp/>language<sp/>and<sp/>provides<sp/>a<sp/>skeleton<sp/>which<sp/>`re2c`<sp/>uses<sp/>in<sp/>order<sp/>to<sp/>generate<sp/>a<sp/>lexer</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`grammar.y`\</highlight></codeline>
-<codeline><highlight class="normal">This<sp/>file<sp/>describes<sp/>the<sp/>grammar<sp/>which<sp/>will<sp/>be<sp/>later<sp/>imposed<sp/>on<sp/>a<sp/>given<sp/>source<sp/>file<sp/>in<sp/>order<sp/>to<sp/>produce<sp/>a<sp/>valid<sp/>AST</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`error.cc`\</highlight></codeline>
-<codeline><highlight class="normal">This<sp/>file<sp/>implements<sp/>the<sp/>error<sp/>recovery<sp/>function<sp/>required<sp/>by<sp/>`bison`</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`syntax.hh`\</highlight></codeline>
-<codeline><highlight class="normal">This<sp/>file<sp/>provides<sp/>definitions<sp/>of<sp/>all<sp/>syntactic<sp/>structures<sp/>used<sp/>by<sp/>the<sp/>internal<sp/>representation<sp/>of<sp/>the<sp/>AST<sp/>(`function`,<sp/>`identifier`,<sp/>etc.)</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`syntax.cc`\</highlight></codeline>
-<codeline><highlight class="normal">This<sp/>file<sp/>implements<sp/>the<sp/>functions<sp/>in<sp/>the<sp/>classes<sp/>in<sp/>`syntax.hh`<sp/></highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`parsing_context.hh`\</highlight></codeline>
-<codeline><highlight class="normal">This<sp/>file<sp/>defines<sp/>a<sp/>structure<sp/>which<sp/>keeps<sp/>track<sp/>of<sp/>all<sp/>contextual<sp/>information<sp/>required<sp/>during<sp/>the<sp/>syntactical<sp/>analysis</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`parsing_context.cc`</highlight></codeline>
-<codeline><highlight class="normal">Implements<sp/>the<sp/>API<sp/>defined<sp/>in<sp/>`parsing_context.hh`</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`syntactical_structures.hh`\</highlight></codeline>
-<codeline><highlight class="normal">Declares<sp/>concrete<sp/>&quot;constructors&quot;<sp/>for<sp/>all<sp/>expressions<sp/>and<sp/>statements</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`expressions.cc`\</highlight></codeline>
-<codeline><highlight class="normal">Defines<sp/>all<sp/>&quot;constructors&quot;<sp/>for<sp/>expressions<sp/>declared<sp/>in<sp/>`syntactical_structures.hh`</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`statements.cc`\</highlight></codeline>
-<codeline><highlight class="normal">Defines<sp/>all<sp/>&quot;constructors&quot;<sp/>for<sp/>statements<sp/>declared<sp/>in<sp/>`syntactical_structures.hh`</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">**Auotmatically<sp/>generated<sp/>files<sp/>by<sp/>`bison`<sp/>and<sp/>`re2c`**</highlight></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`parser.tab.hh`\</highlight></codeline>
-<codeline><highlight class="normal">Parser<sp/>API</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`location.hh`\</highlight></codeline>
-<codeline><highlight class="normal">Location<sp/>class<sp/>used<sp/>by<sp/>the<sp/>parser</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">&gt;<sp/>`parser.tab.cc`\</highlight></codeline>
-<codeline><highlight class="normal"><sp/>Parser<sp/>implementation</highlight></codeline>
-<codeline><highlight class="normal"><sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>&gt;<sp/>`lexer.tab.cc`\</highlight></codeline>
-<codeline><highlight class="normal"><sp/>Lexer<sp/>implementation</highlight></codeline>
-<codeline></codeline>
     </programlisting>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/README.md"/>
+    <location file="/home/boki/KIVI/frontend/parser/README.md"/>
   </compounddef>
 </doxygen>

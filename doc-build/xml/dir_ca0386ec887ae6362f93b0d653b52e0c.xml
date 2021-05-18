@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_ca0386ec887ae6362f93b0d653b52e0c" kind="dir">
-    <compoundname>/home/boki/.tmp/kivi/frontend</compoundname>
-    <innerdir refid="dir_69fd1c89beb623194d4a9d4a4f99a89d">/home/boki/.tmp/kivi/frontend/ir_generation</innerdir>
-    <innerdir refid="dir_a7a1a12fbb25630aee71df98dd1561c7">/home/boki/.tmp/kivi/frontend/parser</innerdir>
+    <compoundname>/home/boki/KIVI/frontend</compoundname>
+    <innerdir refid="dir_69fd1c89beb623194d4a9d4a4f99a89d">/home/boki/KIVI/frontend/ir_generation</innerdir>
+    <innerdir refid="dir_a7a1a12fbb25630aee71df98dd1561c7">/home/boki/KIVI/frontend/parser</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/frontend/"/>
+    <location file="/home/boki/KIVI/frontend/"/>
   </compounddef>
 </doxygen>

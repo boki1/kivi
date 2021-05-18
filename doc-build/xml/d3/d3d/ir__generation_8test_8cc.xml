@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d3d/ir__generation_8test_8cc" kind="file" language="C++">
+    <compoundname>ir_generation.test.cc</compoundname>
+    <includes refid="df/dbf/catch2_8hpp" local="no">catch2/catch2.hpp</includes>
+    <includes refid="dd/dcd/generation__unit_8hh" local="no">ir_generation/generation_unit.hh</includes>
+    <includes local="no">ir_generation/generator_context.hh</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="24">
+        <label>parser/syntax.hh</label>
+        <link refid="d9/d1c/syntax_8hh"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>variant</label>
+      </node>
+      <node id="8">
+        <label>cassert</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="13">
+        <label>exception</label>
+      </node>
+      <node id="10">
+        <label>ostream</label>
+      </node>
+      <node id="2">
+        <label>catch2/catch2.hpp</label>
+        <link refid="df/dbf/catch2_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>ir_generation/generator_context.hh</label>
+      </node>
+      <node id="20">
+        <label>ir_code.hh</label>
+        <link refid="db/db5/ir__code_8hh"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>random</label>
+      </node>
+      <node id="23">
+        <label>string_view</label>
+      </node>
+      <node id="21">
+        <label>optional</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="18">
+        <label>ir_generation/generation_unit.hh</label>
+        <link refid="dd/dcd/generation__unit_8hh"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>iosfwd</label>
+      </node>
+      <node id="1">
+        <label>/home/boki/KIVI/test/frontend/ir_generation.test.cc</label>
+        <link refid="d3/d3d/ir__generation_8test_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="9">
+        <label>type_traits</label>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d3/d3d/ir__generation_8test_8cc_1a44299816cc4bd4f029a2b6f2d9837139" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">sa::function</ref></type>
+        <definition>sa::function foo</definition>
+        <argsstring></argsstring>
+        <name>foo</name>
+        <initializer>{
+	&quot;foo&quot;,
+	sa::expression{
+		sa::expression::type::Return,
+		{ <ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">sa::expression</ref>(1) }
+	},
+	0,
+	1
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/test/frontend/ir_generation.test.cc" line="18" column="14" bodyfile="/home/boki/KIVI/test/frontend/ir_generation.test.cc" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d3/d3d/ir__generation_8test_8cc_1a3d8b2ba5aabd4276c67006073a1953c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST_CASE</definition>
+        <argsstring>(&quot;IR Generation context&quot;, &quot;[ir_context]&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <param>
+          <type>&quot;IR Generation <ref refid="d2/dfe/parsing__context_8test_8cc_1a7928821299fa8c9b608b5ef17d2a729f" kindref="member">context</ref>&quot;</type>
+        </param>
+        <param>
+          <type>&quot;&quot;</type>
+          <array>[ir_context]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/boki/KIVI/test/frontend/ir_generation.test.cc" line="28" column="1" bodyfile="/home/boki/KIVI/test/frontend/ir_generation.test.cc" bodystart="28" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tests the generation of intermediate representation by given AST. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="df/dbf/catch2_8hpp" kindref="compound">catch2/catch2.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="dd/dcd/generation__unit_8hh" kindref="compound">ir_generation/generation_unit.hh</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ir_generation/generator_context.hh&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::make_shared;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d4/d1b/namespaceCatch_1_1Generators_1_1pf_1adb71cb1098062f6baaf86ec4feadae7d" kindref="member">std::make_unique</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::move;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">sa</ref><sp/>=<sp/><ref refid="d7/df6/namespacesyntax__analyzer" kindref="compound">syntax_analyzer</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d5/d90/namespaceintermediate__representation" kindref="compound">ir</ref><sp/>=<sp/><ref refid="d5/d90/namespaceintermediate__representation" kindref="compound">intermediate_representation</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>foo<sp/>n:<sp/>return<sp/>1;<sp/>return<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="d7/d16/classsyntax__analyzer_1_1function" kindref="compound">sa::function</ref><sp/><ref refid="d3/d3d/ir__generation_8test_8cc_1a44299816cc4bd4f029a2b6f2d9837139" kindref="member">foo</ref>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;foo&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">sa::expression</ref>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sa::expression::type::Return,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="db/df3/classsyntax__analyzer_1_1expression" kindref="compound">sa::expression</ref>(1)<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>0,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="d3/d3d/ir__generation_8test_8cc_1a3d8b2ba5aabd4276c67006073a1953c1" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;IR<sp/>Generation<sp/>context&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[ir_context]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dbf/catch2_8hpp_1ad512fd95a78b95770b9759823f8fbc21" kindref="member">SECTION</ref>(</highlight><highlight class="stringliteral">&quot;Construction<sp/>by<sp/>&apos;generate_function&apos;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dea/classintermediate__representation_1_1generation__unit" kindref="compound">ir::generation_unit</ref><sp/>gunit;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ctx<sp/>=<sp/>gunit.<ref refid="da/dea/classintermediate__representation_1_1generation__unit_1abb2972d5a7ca05ba6f14ce36f19ed763" kindref="member">prepare_context</ref>(<ref refid="d3/d3d/ir__generation_8test_8cc_1a44299816cc4bd4f029a2b6f2d9837139" kindref="member">foo</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/boki/KIVI/test/frontend/ir_generation.test.cc"/>
+  </compounddef>
+</doxygen>

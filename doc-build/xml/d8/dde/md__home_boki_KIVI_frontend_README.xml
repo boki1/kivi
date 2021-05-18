@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/dde/md__home_boki_KIVI_frontend_README" kind="page">
+    <compoundname>md__home_boki_KIVI_frontend_README</compoundname>
+    <title>Frontend</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This directory contains the source code related to the implementation of the frontend of Kivi compiler.</para>
+<para><hruler/>
+</para>
+<para><bold>Contents</bold></para>
+<para><itemizedlist>
+<listitem><para><computeroutput>grammar.y</computeroutput> This is the grammar used by <computeroutput>bison</computeroutput> in order to generate an actual state machine-based parser.</para>
+</listitem><listitem><para><computeroutput>lexemes.re</computeroutput> This file lists the lexemes/tokens used by <computeroutput>re2c</computeroutput> (in combination with <computeroutput>bison</computeroutput>) in order to generate the code for lexical analysis stage </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/home/boki/KIVI/frontend/README.md"/>
+  </compounddef>
+</doxygen>

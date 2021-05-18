@@ -28,13 +28,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3933" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3933" bodyend="3935"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3933" column="25" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3933" bodyend="3935"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3931" column="5"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3931" column="5"/>
   </compounddef>
 </doxygen>

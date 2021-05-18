@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1617" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1617" bodyend="1623"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1617" column="13" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1617" bodyend="1623"/>
       </memberdef>
       <memberdef kind="function" id="d2/dc0/structCatch_1_1StringMaker_1a68bb548de0e5ad364228b1ca3dd2f561" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -57,14 +57,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1628" column="13" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1628" bodyend="1634"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1628" column="13" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1628" bodyend="1634"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="1613" column="5" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="1613" bodyend="1635"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="1613" column="5" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="1613" bodyend="1635"/>
     <listofallmembers>
       <member refid="d2/dc0/structCatch_1_1StringMaker_1ab2c357e22b754802c4b1351257103eb6" prot="public" virt="non-virtual"><scope>Catch::StringMaker</scope><name>convert</name></member>
       <member refid="d2/dc0/structCatch_1_1StringMaker_1a68bb548de0e5ad364228b1ca3dd2f561" prot="public" virt="non-virtual"><scope>Catch::StringMaker</scope><name>convert</name></member>

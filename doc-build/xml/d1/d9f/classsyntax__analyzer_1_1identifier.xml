@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="48" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="49" bodyend="54"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="48" column="1" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="49" bodyend="54"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="58" column="18" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="58" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="58" column="18" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/d9f/classsyntax__analyzer_1_1identifier_1a043bebc0275159a71eff4ccb88d3390e" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="61" column="13" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="61" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="61" column="13" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/d9f/classsyntax__analyzer_1_1identifier_1a5243781342ab151f4df44f20459b5bb6" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="65" column="5" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="65" bodyend="-1"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="65" column="5" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="65" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="69" column="1"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="69" column="1"/>
       </memberdef>
       <memberdef kind="function" id="d1/d9f/classsyntax__analyzer_1_1identifier_1ab8a7777149eb1d33a0fa874ebda0842f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="72" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.cc" bodystart="119" bodyend="122"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="72" column="1" bodyfile="/home/boki/KIVI/frontend/parser/syntax.cc" bodystart="136" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="d1/d9f/classsyntax__analyzer_1_1identifier_1a58f7df029937e3a1a760d2611b060b0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="76" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="76" bodyend="80"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="76" column="1" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="76" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="d1/d9f/classsyntax__analyzer_1_1identifier_1adf4c9b09133fdcb3064e992ff1e052d3" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type><ref refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a37c2039743baa4aaa82f8ad66bba9177" kindref="member">identifier::type</ref></type>
@@ -162,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="84" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="84" bodyend="87"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="84" column="1" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="84" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="d1/d9f/classsyntax__analyzer_1_1identifier_1a98286bce4809f7d460bb6075c5e20668" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>int</type>
@@ -175,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="90" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="90" bodyend="93"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="90" column="1" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="90" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="d1/d9f/classsyntax__analyzer_1_1identifier_1ae1236ed1f3460df700ecfdcba95f2a25" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const std::string &amp;</type>
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="96" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="96" bodyend="99"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="96" column="1" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="96" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="d1/d9f/classsyntax__analyzer_1_1identifier_1a3d3f133a504c3ba9f639a400d6d820bc" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>std::string</type>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="102" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="102" bodyend="105"/>
+        <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="102" column="1" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="102" bodyend="105"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -233,7 +233,7 @@
         <link refid="df/d98/classsyntax__analyzer_1_1syntactic__structure"/>
       </node>
     </collaborationgraph>
-    <location file="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" line="38" column="1" bodyfile="/home/boki/.tmp/kivi/frontend/parser/syntax.hh" bodystart="39" bodyend="106"/>
+    <location file="/home/boki/KIVI/frontend/parser/syntax.hh" line="38" column="1" bodyfile="/home/boki/KIVI/frontend/parser/syntax.hh" bodystart="39" bodyend="106"/>
     <listofallmembers>
       <member refid="d1/d9f/classsyntax__analyzer_1_1identifier_1adf4c9b09133fdcb3064e992ff1e052d3" prot="public" virt="non-virtual"><scope>syntax_analyzer::identifier</scope><name>get_type</name></member>
       <member refid="d1/d9f/classsyntax__analyzer_1_1identifier_1a522e7902a4f9ef2d1392ec1dddba2fde" prot="public" virt="non-virtual"><scope>syntax_analyzer::identifier</scope><name>identifier</name></member>

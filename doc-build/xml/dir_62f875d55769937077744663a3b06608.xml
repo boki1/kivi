@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_62f875d55769937077744663a3b06608" kind="dir">
+    <compoundname>/home/boki/KIVI/utils/ir_printer</compoundname>
+    <innerfile refid="d9/d10/ir__printer_8cc">ir_printer.cc</innerfile>
+    <innerfile refid="d9/d35/ir__printer_8hh">ir_printer.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/boki/KIVI/utils/ir_printer/"/>
+  </compounddef>
+</doxygen>

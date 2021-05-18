@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3542" column="35" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3542" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3542" column="35" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3542" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1ad05dbc99aba3c3c386d6b856b213f911" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3543" column="25" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3543" bodyend="-1"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3543" column="25" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3543" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3538" column="13"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3538" column="13"/>
       </memberdef>
       <memberdef kind="function" id="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1a77639b1165c01f424ee0e96f53335010" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3539" column="25"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3539" column="25"/>
       </memberdef>
       <memberdef kind="function" id="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1a9759155344d696b2476d764a1d95fcc9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -81,14 +81,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3540" column="25"/>
+        <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3540" column="25"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" line="3536" column="9" bodyfile="/home/boki/.tmp/kivi/extern/catch2/catch2.hpp" bodystart="3537" bodyend="3544"/>
+    <location file="/home/boki/KIVI/extern/catch2/catch2.hpp" line="3536" column="9" bodyfile="/home/boki/KIVI/extern/catch2/catch2.hpp" bodystart="3537" bodyend="3544"/>
     <listofallmembers>
       <member refid="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1a77639b1165c01f424ee0e96f53335010" prot="public" virt="non-virtual"><scope>Catch::Matchers::StdString::CasedString</scope><name>adjustString</name></member>
       <member refid="d3/de8/structCatch_1_1Matchers_1_1StdString_1_1CasedString_1aa88bbc5acd2bff22351d8d4b1816b561" prot="public" virt="non-virtual"><scope>Catch::Matchers::StdString::CasedString</scope><name>CasedString</name></member>

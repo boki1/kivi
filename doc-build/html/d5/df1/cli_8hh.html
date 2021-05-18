@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Kivi: /home/boki/.tmp/kivi/utils/cli/cli.hh File Reference</title>
+<title>Kivi: /home/boki/KIVI/utils/cli/cli.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -70,9 +70,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cli.hh File Reference</div>  </div>
 </div><!--header-->
@@ -80,13 +78,14 @@ $(function() {
 
 <p>This file provides the blueprint of the command line interface where all utilities needed for it are placed. It is used for flags such as -h, &ndash;help, -v, &ndash;version, etc.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="../../de/d36/argparse_8h_source.html">argparse/argparse.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;bitset&gt;</code><br />
 </div>
 <p><a href="../../d5/df1/cli_8hh_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d62/structcli_1_1settings.html">cli::settings</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcd/classcli_1_1options__set.html">cli::options_set</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -94,22 +93,11 @@ Namespaces</h2></td></tr>
 <tr class="memitem:d5/dfa/namespacecli"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/namespacecli.html">cli</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a8ca7573e9d726fa3664925551e2b8d6a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/namespacecli.html#a8ca7573e9d726fa3664925551e2b8d6a">cli::pe</a> = settings::print_stage_enum</td></tr>
-<tr class="separator:a8ca7573e9d726fa3664925551e2b8d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa2e4349201a2f1a495642d706a82907a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/namespacecli.html#aa2e4349201a2f1a495642d706a82907a">cli::should_print</a> (pe stage)</td></tr>
-<tr class="separator:aa2e4349201a2f1a495642d706a82907a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c557b921ffc48ad3e206d16ca501874"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/namespacecli.html#a7c557b921ffc48ad3e206d16ca501874">cli::parse_arguments</a> (int argc, const char *argv[])</td></tr>
-<tr class="separator:a7c557b921ffc48ad3e206d16ca501874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a199ce2c5cde0cf837bd1b16fbd999bc7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../df/d62/structcli_1_1settings.html">cli::settings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/namespacecli.html#a199ce2c5cde0cf837bd1b16fbd999bc7">cli::globals</a></td></tr>
-<tr class="separator:a199ce2c5cde0cf837bd1b16fbd999bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8afd5292066bd2e76d8e92fae11f9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/namespacecli.html#a5c8afd5292066bd2e76d8e92fae11f9c">cli::argument_parser</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:a5c8afd5292066bd2e76d8e92fae11f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 'main' of the cli which should be called in order to process all the flags enabled on the command line.  <a href="../../d5/dfa/namespacecli.html#a5c8afd5292066bd2e76d8e92fae11f9c">More...</a><br /></td></tr>
+<tr class="separator:a5c8afd5292066bd2e76d8e92fae11f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file provides the blueprint of the command line interface where all utilities needed for it are placed. It is used for flags such as -h, &ndash;help, -v, &ndash;version, etc. </p>
