@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['option_1607',['Option',['../d7/dc7/classCatch_1_1Option.html',1,'Catch']]],
+  ['options_1608',['Options',['../de/d1e/structloguru_1_1Options.html',1,'loguru']]]
+];

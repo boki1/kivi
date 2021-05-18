@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['readme_2958',['README',['../d7/daa/md__home_boki_proj_kivi_ir_backend_compiler_README.html',1,'(Global Namespace)'],['../d2/d18/md__home_boki_proj_kivi_ir_backend_README.html',1,'(Global Namespace)'],['../d0/d36/md__home_boki_proj_kivi_ir_examples_README.html',1,'(Global Namespace)'],['../df/d22/md__home_boki_proj_kivi_ir_extern_README.html',1,'(Global Namespace)'],['../d7/df9/md__home_boki_proj_kivi_ir_frontend_parser_README.html',1,'(Global Namespace)'],['../d5/d93/md__home_boki_proj_kivi_ir_README.html',1,'(Global Namespace)'],['../dd/d01/md__home_boki_proj_kivi_ir_test_backend_README.html',1,'(Global Namespace)'],['../d4/dd5/md__home_boki_proj_kivi_ir_test_README.html',1,'(Global Namespace)'],['../d6/df4/md__home_boki_proj_kivi_ir_utils_ast_printer_README.html',1,'(Global Namespace)'],['../d2/ddf/md__home_boki_proj_kivi_ir_utils_README.html',1,'(Global Namespace)'],['../d0/d30/md_README.html',1,'(Global Namespace)']]],
-  ['requirements_2959',['requirements',['../d7/da7/md_dev_requirements.html',1,'']]]
-];
