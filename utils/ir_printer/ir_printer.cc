@@ -57,8 +57,8 @@ namespace printer {
             std::size_t referred{};
         };
 
-        std::map<std::shared_ptr<ir::tac>, data> statistics;
-        std::list<ir::tac> remaining_statements;
+        std::map<std::shared_ptr<ir::tac>, data> statistics{};
+        std::list<ir::tac> remaining_statements{};
 
         auto add_label = [l = 0lu](data &d) mutable { d.labels.push_back('L' + std::to_string(l++)); };
 
@@ -74,7 +74,6 @@ namespace printer {
                 if (t.labels.empty() && t.referred++) {
                     add_label(t);
                 }
-
             }
             if (tac->condition()) {
                 auto &t = statistics[tac->condition()];

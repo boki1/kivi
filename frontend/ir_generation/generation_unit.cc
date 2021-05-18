@@ -257,7 +257,7 @@ namespace intermediate_representation {
     }
 
     generation_unit::generation_context::generation_context(int counter, std::shared_ptr<std::shared_ptr<tac>> target)
-            : m_counter(counter), m_target(std::move(target)) {}
+            : m_counter(counter), m_target(std::move(target)), m_map({}) {}
 
     tac::fake_register_type
     generation_unit::generation_context::counter() {

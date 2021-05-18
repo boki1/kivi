@@ -10,13 +10,13 @@
 namespace intermediate_representation {
     class generation_unit {
         /// All three address codes used in a unit to be generated
-        std::vector<std::shared_ptr<tac>> m_all_tacs;
+        std::vector<std::shared_ptr<tac>> m_all_tacs{};
 
         /// Number of parameters in each function
-        std::map<std::string, std::size_t> m_function_parameters;
+        std::map<std::string, std::size_t> m_function_parameters{};
 
         /// The entry point address of each function
-        std::map<std::string, std::shared_ptr<tac>> m_entry_points;
+        std::map<std::string, std::shared_ptr<tac>> m_entry_points{};
 
         std::string m_string_constants;
 
