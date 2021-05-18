@@ -12,3 +12,6 @@ Checkout [this](conventions.md) file for an in-depth look.
 **Cpp20**
 
 C++20 is now available so some modifications have been enabled. Check [this](cpp17_to_cpp20.md) file for more information.
+
+**Known bugs**
+These are bugs known to happen, but which are not fixed yet. Check it out [here](known_bugs.md).

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/d99/md_gh_pages_dev_requirements" kind="page">
+    <compoundname>md_gh_pages_dev_requirements</compoundname>
+    <title>requirements</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><bold>Bare minimum</bold> <blockquote><para>./tools/run.sh\ ./tools/clean.sh </para>
+</blockquote>In order to successfully build you will need: <programlisting><codeline><highlight class="normal">bison&gt;=3.7</highlight></codeline>
+<codeline><highlight class="normal">re2c=&gt;2.03</highlight></codeline>
+<codeline><highlight class="normal">g++<sp/>(C++17)</highlight></codeline>
+<codeline><highlight class="normal">cmake&gt;=3.17</highlight></codeline>
+<codeline><highlight class="normal">make&gt;=4.21</highlight></codeline>
+</programlisting></para>
+<para><bold>Docs</bold> <blockquote><para>./tools/doc.sh </para>
+</blockquote>In order to successfully build the documentation you will need: <programlisting><codeline><highlight class="normal">Doxygen&gt;=1.8</highlight></codeline>
+</programlisting></para>
+<para>In order to successfully run the tests you will need: <blockquote><para>./tools/test.sh</para>
+<para></para>
+</blockquote><programlisting><codeline><highlight class="normal">Catch2=2</highlight></codeline>
+</programlisting></para>
+<para><bold>Optional</bold> <blockquote><para>ghp-import -npf docs/build/html </para>
+</blockquote>In order to successfully upload the current version of comment documentation build of <computeroutput>root/docs/build/html</computeroutput> in github pages: <programlisting><codeline><highlight class="normal">ghp-import&gt;=1.1</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="gh-pages/dev/requirements.md"/>
+  </compounddef>
+</doxygen>

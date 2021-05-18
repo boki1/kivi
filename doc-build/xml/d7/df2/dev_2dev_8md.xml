@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/df2/dev_2dev_8md" kind="file" language="Markdown">
+    <compoundname>dev.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Dev<sp/>documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Building**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>order<sp/>to<sp/>build<sp/>the<sp/>kivi<sp/>compiler,<sp/>first<sp/>checkout<sp/>the<sp/>[requirements<sp/>page](requirements.md).</highlight></codeline>
+<codeline><highlight class="normal">After<sp/>that,<sp/>in<sp/>order<sp/>run<sp/>`./tools/build.sh`<sp/>to<sp/>actually<sp/>build<sp/>the<sp/>binary.<sp/>Having<sp/>done<sp/>that,<sp/>you<sp/>are<sp/>ready<sp/>to<sp/>go<sp/>-<sp/>either<sp/>`./tools/run.sg<sp/>source_file.kv`<sp/>to<sp/>compile<sp/>your<sp/>source<sp/>file<sp/>or<sp/>`./tools/test.sh`<sp/>in<sp/>order<sp/>to<sp/>run<sp/>the<sp/>test<sp/>cases<sp/>for<sp/>the<sp/>project.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Conventions**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Checkout<sp/>[this](conventions.md)<sp/>file<sp/>for<sp/>an<sp/>in-depth<sp/>look.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Cpp20**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">C++20<sp/>is<sp/>now<sp/>available<sp/>so<sp/>some<sp/>modifications<sp/>have<sp/>been<sp/>enabled.<sp/>Check<sp/>[this](cpp17_to_cpp20.md)<sp/>file<sp/>for<sp/>more<sp/>information.</highlight></codeline>
+    </programlisting>
+    <location file="dev/dev.md"/>
+  </compounddef>
+</doxygen>
