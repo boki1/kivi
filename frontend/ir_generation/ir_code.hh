@@ -18,7 +18,7 @@ namespace intermediate_representation
 	{
 	 public:
 		typedef tac* tac_ptr;                     //< The type used for TAC chaining
-		typedef int vregister_type;                          //< The indexes of the "fake" (virtual) registers
+		typedef unsigned vregister_type;                          //< The indexes of the "fake" (virtual) registers
 		typedef std::vector<vregister_type> operands_type;        //< Used to represent all virtual register operands for the current TAC
 
 

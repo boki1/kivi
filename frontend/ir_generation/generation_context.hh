@@ -24,7 +24,7 @@ namespace intermediate_representation
 		tac::vregister_type m_counter;
 
 		/// The previous virtual register
-		tac::vregister_type m_vreg{ -1 };
+		tac::vregister_type m_vreg{ ~0u };
 
 		/// Pointer to the next instruction address
 		tac** m_target;

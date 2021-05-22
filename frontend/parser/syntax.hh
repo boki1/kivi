@@ -154,11 +154,6 @@ namespace syntax_analyzer
 		/// The value of the expression if it is a terminal(Identifier, String or Number)
 		expression::terminal_type m_terminal_value{};
 
-		/// Used to store any special, specific operand such as the condition of
-		/// the if statement, the condition of the while loop and the name of the
-		/// function in a function call expression
-		peculiar_type m_peculiar;
-
 		/// Holds the specific type of expression
 		expression::type m_type;
 
@@ -196,12 +191,10 @@ namespace syntax_analyzer
 		bool operator!=(const expression&) const noexcept;
 
 	 public:
-
 		/**
-		 * TODO:
-		 * @brief
-		 * @param rhs
-		 * @return
+		 * @brief Assigns an expression to another expression
+		 * @param rhs The expression
+		 * @return The finalized assigned expression
 		 */
 		expression
 		assign(expression&& rhs)&&;
@@ -240,12 +233,6 @@ namespace syntax_analyzer
 			return m_terminal_value;
 		}
 
-		[[nodiscard]] const expression::peculiar_type&
-		peculiar() const noexcept
-		{
-			return m_peculiar;
-		}
-
 		[[nodiscard]] expression::type
 		get_type() const noexcept
 		{
@@ -278,7 +265,7 @@ namespace syntax_analyzer
 
 		function(std::string&& name, expression&& body, int locals = 0, int parameters = 0);
 
-		bool operator==(const function &other) const;
+		bool operator==(const function& other) const;
 
 	 public:
 		int add_local() noexcept
@@ -291,11 +278,13 @@ namespace syntax_analyzer
 			return m_parameters++;
 		}
 
-		void set_name(const std::string &name) noexcept {
+		void set_name(const std::string& name) noexcept
+		{
 			m_name = name;
 		}
 
-		void set_body(expression&& expr) noexcept {
+		void set_body(expression&& expr) noexcept
+		{
 			m_body = expr;
 		}
 

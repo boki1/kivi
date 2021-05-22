@@ -203,7 +203,7 @@ namespace printer
 		case et::While:
 		{
 			const std::string& condition
-				= print(*expr.peculiar().value());
+				= print(expr.operands().front());
 			const std::string& body = print(expr, ", ", "()", false, 1);
 			return "while " + condition + " " + body;
 		}

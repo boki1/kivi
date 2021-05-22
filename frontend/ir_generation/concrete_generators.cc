@@ -53,7 +53,7 @@ namespace intermediate_representation
 		{
 		case sa::identifier::type::Function:
 		{
-			place_chain(tac_init(ident.name(), { make_vreg(gtx), 0l }), gtx);
+			place_chain(tac_init(make_vreg(gtx), ident.name(), 0l), gtx);
 			break;
 		}
 		case sa::identifier::type::Local:
@@ -91,13 +91,14 @@ namespace intermediate_representation
 	void gu::generate_number(const syntax_analyzer::expression& e, generation_context& gtx)
 	{
 		gtx.store_vreg(gtx.increase_counter());
-		place_chain(tac_init("", { gtx.load_vreg(), std::get<int>(e.terminal()) }), gtx);
+		auto num = static_cast<unsigned>(std::get<int>(e.terminal()));
+		place_chain(tac_init(gtx.load_vreg(), "", num), gtx);
 	}
 
 	void gu::generate_nop(const syntax_analyzer::expression& e, generation_context& gtx)
 	{
 		gtx.store_vreg(gtx.increase_counter());
-		place_chain(tac_init("", { gtx.load_vreg(), 0L }), gtx);
+		place_chain(tac_init(gtx.load_vreg(), "", 0u), gtx);
 	}
 
 	void gu::generate_sequence(const syntax_analyzer::expression& e, generation_context& gtx)
@@ -130,8 +131,8 @@ namespace intermediate_representation
 		gtx.store_vreg(gtx.increase_counter());
 		/// This is an If() statement. Therefore three mandatory statements are created:
 
-		tac* b_then = tac_init("", { gtx.load_vreg(), 1l });        // Then-branch
-		tac* b_else = tac_init("", { gtx.load_vreg(), 0l });        // Else-branch
+		tac* b_then = tac_init(1u, "", gtx.load_vreg());        // Then-branch
+		tac* b_else = tac_init(0u, "", gtx.load_vreg());        // Else-branch
 		tac* end = tac_nop();
 		b_then->next_mut() = b_else->next_mut() = end; // A common target for both.
 

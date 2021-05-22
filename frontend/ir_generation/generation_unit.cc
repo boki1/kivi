@@ -22,7 +22,7 @@ namespace intermediate_representation
 		/// The number of the current virtual register
 		/// @note Starts from -1 because -1 + 1 = 0, meaning that each increment will
 		/// result if correct virtual register number
-		auto vreg = tac::vregister_type{ -1 };
+		auto vreg = ~tac::vregister_type{};
 
 		using expr_type = sa::expression::type;
 
@@ -100,7 +100,7 @@ namespace intermediate_representation
 		// Add an entry in for the function (initially the first TAC is at `nullptr`)
 		tac** target_ptr = &(entry_points_mut()[function.name()] = nullptr);
 
-		return generation_unit::generation_context{ function.parameters(), target_ptr };
+		return generation_unit::generation_context{ static_cast<unsigned int>(function.parameters()), target_ptr };
 	}
 
 	void

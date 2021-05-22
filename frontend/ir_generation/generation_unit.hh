@@ -74,7 +74,7 @@ namespace intermediate_representation
 
 	 public: // TAC concrete constructors (codes.cc)
 		[[nodiscard]] tac* tac_nop();
-		[[nodiscard]] tac* tac_init(const std::string& ident_name, const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_init(tac::vregister_type value, const std::string& ident, unsigned operand);
 		[[nodiscard]] tac* tac_add(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_neg(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_copy(const tac::operands_type& operands);

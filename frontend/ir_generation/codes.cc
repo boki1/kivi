@@ -24,9 +24,9 @@ namespace intermediate_representation
 	}
 
 	tac*
-	gu::tac_init(const std::string& ident_name, const opers_type& operands)
+	gu::tac_init(unsigned int value, const std::string& ident, unsigned operand)
 	{
-		return define_tac(tac{ tac_type::Init, operands, 0, ident_name });
+		return define_tac(tac{ tac_type::Init, { operand }, static_cast<int>(value), ident });
 	}
 
 	tac*

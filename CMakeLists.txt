@@ -27,10 +27,10 @@ endfunction()
 
 ############### Testing
 
-find_package(Catch2 CONFIG REQUIRED)
-enable_testing()
-include(CTest)
-include(Catch)
+# find_package(Catch2 CONFIG REQUIRED)
+# enable_testing()
+# include(CTest)
+# include(Catch)
 
 ############### Subdirectories
 
