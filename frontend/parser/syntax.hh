@@ -113,7 +113,6 @@ namespace syntax_analyzer
 	{
 	 public:
 		typedef std::variant<std::monostate, identifier, std::string, int> terminal_type; //< Used when representing a terminal expression
-		typedef std::optional<std::shared_ptr<expression>> peculiar_type; //< Used for the "peculiar" field
 
 		/**
 		 * @brief Enumeration which marks the concrete type of expression which is
@@ -181,9 +180,6 @@ namespace syntax_analyzer
 
 		/// Manual construction
 		expression(expression::type type, std::vector<expression>);
-
-		/// Construction construction with "peculiar" field set
-		expression(expression::type type, peculiar_type&&, std::vector<expression>);
 
 		expression& operator=(const expression&) = default;
 

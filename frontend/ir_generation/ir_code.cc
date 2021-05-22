@@ -16,10 +16,16 @@ namespace intermediate_representation
 		const tac::operands_type& operands /* = {} */ ,
 		int value /* = 0 */,
 		const std::string& i /* = {} */,
-		const tac::tac_ptr& next /* = { nullptr } */,
-		const std::optional<tac_ptr>& condition /* = {} */)
+		tac_ptr condition /* = nullptr */,
+		const tac::tac_ptr& next /* = { nullptr } */)
 
-		: m_value{ value }, m_identifier{ i }, m_next{ next }, m_condition{ condition }, m_operands{ operands }, m_type{ tac_type }
+		: m_value{ value },
+		  m_identifier{ i },
+		  m_next{ next },
+		  m_condition{ condition },
+		  m_operands{ operands },
+		  m_type{ tac_type },
+		  m_has_condition{ condition != nullptr }
 	{
 	}
 

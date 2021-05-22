@@ -1,57 +1,75 @@
-#include "ir_printer.hh"
-#include <ir_generation/ir_code.hh>
 #include <iostream>
 #include <list>
 
+#include <ir_generation/ir_code.hh>
+
+#include "ir_printer.hh"
+
 namespace ir = intermediate_representation;
+using ir_type = ir::tac::type;
 
 namespace printer
 {
-	void print_ir(ir::tac* tac_code, std::ostream& os)
+	// Colourful constants
+	const std::string PURPLE_COLOR = "\033[1;35m ";
+	const std::string GREEN_COLOR = "\033[1;32m ";
+	const std::string CYAN_COLOR = "\033[1;36m";
+	const std::string WHITE_COLOR = "\033[1;37m";
+
+	void print_ir(const ir::tac& tac_code, std::ostream& os)
 	{
-		switch (tac_code->get_type())
+		os << "  " << PURPLE_COLOR;
+		switch (tac_code.get_type())
 		{
-		case ir::tac::type::Nop:
-			os << "\t" << "nop" << "\t";
+		case ir_type::Nop:
+			os << "nop";
 			break;
-		case ir::tac::type::Init:
-			os << "\t" << "init" << "\t";
+		case ir_type::Init:
+			os << "init";
 			break;
-		case ir::tac::type::Add:
-			os << "\t" << "add" << "\t";
+		case ir_type::Add:
+			os << "add";
 			break;
 		case ir::tac::type::Negate:
-			os << "\t" << "neg" << "\t";
+			os << "neg";
 			break;
-		case ir::tac::type::Copy:
-			os << "\t" << "copy" << "\t";
+		case ir_type::Copy:
+			os << "copy";
 			break;
-		case ir::tac::type::Read:
-			os << "\t" << "read" << "\t";
+		case ir_type::Read:
+			os << "read";
 			break;
-		case ir::tac::type::Write:
-			os << "\t" << "write" << "\t";
+		case ir_type::Write:
+			os << "write";
 			break;
-		case ir::tac::type::Equals:
-			os << "\t" << "eq" << "\t";
+		case ir_type::Equals:
+			os << "eq";
 			break;
-		case ir::tac::type::IfNotZero:
-			os << "\t" << "ifnz" << "\t";
+		case ir_type::IfNotZero:
+			os << "ifnz";
 			break;
-		case ir::tac::type::FunctionCall:
-			os << "\t" << "fcall" << "\t";
+		case ir_type::FunctionCall:
+			os << "fcall";
 			break;
-		case ir::tac::type::Return:
-			os << "\t" << "rtrn" << "\t";
+		case ir_type::Return:
+			os << "ret";
 			break;
 		}
-		for (auto u: tac_code->operands())
+
+		os << "\t" << WHITE_COLOR;
+
+		for (const auto& vreg: tac_code.operands())
+			os << " R" << vreg;
+
+		// Additional output
+
+		switch (tac_code.get_type())
 		{
-			os << " R" << u;
-		}
-		if (tac_code->get_type() == ir::tac::type::Init)
-		{
-			os << "\"" << tac_code->identifier() << "\"" << tac_code->value();
+		case ir::tac::type::Init:
+			os << " \"" << tac_code.identifier() << "\" " << tac_code.value();
+			break;
+		default:;
+			/* nothing */
 		}
 	}
 
@@ -59,13 +77,13 @@ namespace printer
 	{
 		struct data
 		{
-			std::vector<std::string> labels{};
-			bool done{};
-			std::size_t referred{};
+			std::vector<std::string> labels;
+			bool is_done = false;
+			bool is_referenced = false;
 		};
 
-		std::map<ir::tac*, data> statistics{};
-		std::list<ir::tac> remaining_statements{};
+		std::map<ir::tac*, data> source_index{};
+		std::list<ir::tac*> remaining_codes{};
 
 		auto add_label = [l = 0lu](data& d) mutable
 		{
@@ -74,61 +92,70 @@ namespace printer
 
 		for (const auto& entry_point : gunit.entry_points())
 		{
-			remaining_statements.push_back(*entry_point.second);
-			statistics[entry_point.second].labels.push_back(entry_point.first);
+			remaining_codes.push_back(entry_point.second);
+			source_index[entry_point.second].labels.push_back(CYAN_COLOR + entry_point.first);
 		}
 
 		for (const auto& tac: gunit.tacs())
 		{
 			if (tac->next())
 			{
-				auto& t = statistics[tac->next()];
+				auto& code_idx = source_index[tac->next()];
 
-				if (t.labels.empty() && t.referred++)
-				{
-					add_label(t);
-				}
+				if (code_idx.labels.empty() && code_idx.is_referenced)
+					add_label(code_idx);
+
+				code_idx.is_referenced = true;
 			}
+
 			if (tac->condition().has_value())
 			{
-				auto& t = statistics[tac->condition().value()];
+				auto& code_idx = source_index[tac->condition().value()];
 
-				if (t.labels.empty())
-				{
-					add_label(t);
-				}
+				if (code_idx.labels.empty())
+					add_label(code_idx);
 			}
 		}
 
-		while (!remaining_statements.empty())
+		while (!remaining_codes.empty())
 		{
-			ir::tac* chain = &remaining_statements.front();
-			remaining_statements.pop_front();
-			for (bool needs_jmp = false; chain != nullptr; chain = chain->next(), needs_jmp = true)
+			ir::tac* code_chain = remaining_codes.front();
+			remaining_codes.pop_front();
+
+			bool jmp = false;
+
+			while (code_chain)
 			{
-				auto& stats = statistics[chain];
-				if (!stats.done)
+				auto& code_idx = source_index[code_chain];
+
+				if (code_idx.is_done)
 				{
-					if (needs_jmp)
-					{
-						os << "\tJMP " << stats.labels.front() << '\n';
-					}
-					stats.done = true;
+					if (jmp)
+						os << PURPLE_COLOR << "  jmp   " << WHITE_COLOR << code_idx.labels.front() << '\n';
 					break;
 				}
 
-				for (const auto& l: stats.labels) os << l << ":\n";
-				print_ir(chain, os);
-				if (chain->condition().has_value())
+				code_idx.is_done = true;
+
+				for (const auto& label: code_idx.labels)
+					os << GREEN_COLOR << label << ":\n" << WHITE_COLOR;
+
+				// Concrete printing function
+				print_ir(*code_chain, os);
+
+				if (code_chain->condition().has_value())
 				{
-					auto& branch_stats = statistics[chain->condition().value()];
-					os << ", JMP " << branch_stats.labels.front();
-					if (!branch_stats.done)
+					auto& branch_stats = source_index.at(code_chain->condition().value());
+					os << PURPLE_COLOR << ", jmp " << WHITE_COLOR << branch_stats.labels.front();
+					if (!branch_stats.is_done)
 					{
-						remaining_statements.push_front(*chain->condition().value());
+						remaining_codes.push_front(code_chain->condition().value());
 					}
 				}
 				os << '\n';
+
+				code_chain = code_chain->next();
+				jmp = true;
 			}
 
 		}

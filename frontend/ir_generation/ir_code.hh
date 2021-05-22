@@ -56,8 +56,11 @@ namespace intermediate_representation
 		tac_ptr m_next{ nullptr };
 
 		/// Used _only_ for the IfNotZero TAC
-		/// if var[p0] <> 0, m_condition overrides next.
-		std::optional<tac_ptr> m_condition{};
+		/// TODO: Change to std::optional
+		/// Problem: Cannot get pointer to the value stored inside the std::optional<>
+		/// Current workaround: Store an additional boolean to denote whether m_conditional is used
+		tac_ptr m_condition{ nullptr };
+		bool m_has_condition{ false };
 
 		/// Contains all virtual registers used
 		tac::operands_type m_operands{};
@@ -75,8 +78,9 @@ namespace intermediate_representation
 			const operands_type& operands = {},
 			int value = {},
 			const std::string& i = {},
-			const tac_ptr& next = { nullptr },
-			const std::optional<tac_ptr>& condition = {});
+			tac_ptr condition = nullptr,
+			const tac_ptr& next = { nullptr }
+		);
 
 		/// Init construction
 		tac(const std::string& str, int value, const tac::operands_type& operands);
@@ -120,16 +124,55 @@ namespace intermediate_representation
 			return m_next;
 		}
 
-		[[nodiscard]] const std::optional<tac_ptr>&
+		[[nodiscard]] std::optional<tac_ptr>
 		condition()
+		{
+			if (m_has_condition)
+				return { m_condition };
+			return {};
+		}
+
+		[[nodiscard]] /* mut */ tac_ptr&
+		condition_mut()
 		{
 			return m_condition;
 		}
 
-		[[nodiscard]] /* mut */ std::optional<tac_ptr>&
-		condition_mut()
+		[[nodiscard]] tac_ptr*
+		condition_double_ptr() noexcept
+		{
+			return &m_condition;
+		}
+
+		[[nodiscard]] tac_ptr*
+		next_double_ptr() noexcept
+		{
+			return &m_next;
+		}
+
+		void
+		set_has_condition(bool has = true)
+		{
+			m_has_condition = has;
+		}
+
+		/**
+		 * @warning Unsafe
+		 * @brief Returns the contained pointed _without_ checking whether there is an actual value
+		 * @note Use with caution! Be absolutely sure that there is an actual value store in the std::optional<>
+		 * @note If no actual value is present a nullptr is returned!
+		 * @return Pointer to the code structure
+		 */
+		[[nodiscard]] /* unsafe */ tac_ptr
+		condition_ptr() const /* unsafe */
 		{
 			return m_condition;
+		}
+
+		void
+		set_condition_ptr(tac_ptr ptr)
+		{
+			m_condition = ptr;
 		}
 
 		[[nodiscard]] const std::vector<vregister_type>&

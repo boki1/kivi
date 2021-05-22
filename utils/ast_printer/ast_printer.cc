@@ -14,7 +14,7 @@ namespace printer
 //!
 
 	// Colorful constants
-	std::string BoldCyan = "\033[1;36m";
+	std::string BOLD_CYAN = "\033[1;36m";
 
 	/**
 	 * @brief Creates vertex in the graph
@@ -143,7 +143,7 @@ namespace printer
 					vertex_children, isnot_oneliner, is_simple,
 					should_separate_first));
 
-			ast_stream << BoldCyan << "\n" << fun.name() + ":\n" << graph.to_string();
+			ast_stream << BOLD_CYAN << "\n" << fun.name() + ":\n" << graph.to_string();
 		}
 
 		return ast_stream.str();

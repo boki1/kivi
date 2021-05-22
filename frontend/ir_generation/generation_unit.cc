@@ -19,10 +19,7 @@ namespace intermediate_representation
 	tac::vregister_type
 	generation_unit::generate_ir(const sa::expression& code, generation_context& ctx)
 	{
-		/// The number of the current virtual register
-		/// @note Starts from -1 because -1 + 1 = 0, meaning that each increment will
-		/// result if correct virtual register number
-		auto vreg = ~tac::vregister_type{};
+		ctx.push_temp(~0u);
 
 		using expr_type = sa::expression::type;
 
@@ -89,7 +86,7 @@ namespace intermediate_representation
 			break;
 		}
 
-		return vreg;
+		return ctx.pop_temp();
 	}
 
 	generation_unit::generation_context generation_unit::prepare_context(const syntax_analyzer::function& function)

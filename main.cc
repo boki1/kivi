@@ -9,27 +9,60 @@
 #include <parser/parsing_context.hh>
 
 int
-main (int argc, char *argv[])
+main(int argc, char* argv[])
 {
-    //	if (cli::argument_parser(argc, argv))
-    //	{
-    //		std::cout << "Bad usage\n";
-    //		return 1;
-    //	}
+	std::string file = argv[1];
+	std::ifstream fstr(file);
+	std::string buffer(std::istreambuf_iterator<char>(fstr), {});
 
-    std::string file = argv[1];
-    std::ifstream fstr (file);
-    std::string buffer (std::istreambuf_iterator<char> (fstr), {});
+	sa::parsing_context ctx{ buffer.c_str(), &file };
 
-    sa::parsing_context ctx{ buffer.c_str (), &file };
+	yy::kivi_parser parser{ ctx };
+	parser.parse();
 
-    yy::kivi_parser parser{ ctx };
-    parser.parse ();
+	std::cout << printer::print(ctx.functions());
 
-    std::cout << printer::print (ctx.functions ());
+//	sa::function fibish{
+//		"fibish",
+//		sa::compound_stmt({
+//			sa::expression{
+//				sa::expression::type::If,
+//				{
+//					sa::expression{
+//						sa::expression::type::Equality,
+//						{
+//							sa::expression({ sa::identifier::type::Parameter, "n" }),
+//							sa::expression{ 0 }
+//						}
+//					},
+//					sa::expression{ sa::expression::type::Return, { sa::expression{ 0 }}}
+//				}
+//			},
+//			sa::expression{
+//				sa::expression::type::If,
+//				{
+//					sa::expression{
+//						sa::expression::type::Equality,
+//						{
+//							sa::expression({ sa::identifier::type::Parameter, "n" }),
+//							sa::expression{ 1 }
+//						}
+//					},
+//					sa::expression{ sa::expression::type::Return, { sa::expression{ 1 }}}
+//				}
+//			},
+//			sa::expression{ sa::expression::type::Return, { sa::expression{ 0 }}}
+//		}),
+//		0,
+//		1
+//	};
+//
+//	intermediate_representation::generation_unit gu{};
+//	gu.generate_function(fibish);
 
-//    intermediate_representation::generation_unit gu{};
-//    gu.generate (ctx.functions ());
+	intermediate_representation::generation_unit gu{};
+	gu.generate(ctx.functions());
+	printer::print_ir(gu, std::cout);
 
-    return 0;
+	return 0;
 }

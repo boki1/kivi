@@ -6,6 +6,8 @@
 #define KIVI_GENERATION_CONTEXT_HH
 
 #include <map>
+#include <utility>
+#include <stack>
 
 #include "ir_code.hh"
 #include "generation_unit.hh"
@@ -26,6 +28,9 @@ namespace intermediate_representation
 		/// The previous virtual register
 		tac::vregister_type m_vreg{ ~0u };
 
+		/// Temporary virtual register tracker
+		std::stack<tac::vregister_type> m_temp_vregs{};
+
 		/// Pointer to the next instruction address
 		tac** m_target;
 
@@ -35,24 +40,49 @@ namespace intermediate_representation
 	 public:
 
 		/// Complete manual construction
-		generation_context(tac::vregister_type c, tac** target, const variable_index_type& index = {})
+		generation_context(tac::vregister_type c, tac** target, variable_index_type index = {})
 			: m_counter{ c },
 			  m_target{ target },
-			  m_map{ index }
+			  m_map{ std::move(index) }
 		{
 		}
 
 	 public:
-		/* discarding is fine */ tac::vregister_type
-		store_vreg(tac::vregister_type vreg)
+
+		void
+		set_target(tac** target)
 		{
-			return m_vreg = vreg;
+			m_target = target;
+		}
+
+		[[nodiscard]]
+		tac::vregister_type
+		pop_temp() noexcept
+		{
+			auto to_pop = m_temp_vregs.top();
+			m_temp_vregs.pop();
+			return to_pop;
+		}
+
+		/* discarding is fine */ tac::vregister_type
+		update_temp(tac::vregister_type newvalue) noexcept
+		{
+			m_temp_vregs.top() = newvalue;
+			auto popped = pop_temp();
+			push_temp(newvalue);
+			return popped;
+		}
+
+		void
+		push_temp(tac::vregister_type temp) noexcept
+		{
+			m_temp_vregs.push(temp);
 		}
 
 		[[nodiscard]] tac::vregister_type
-		load_vreg() noexcept
+		fetch_temp() const noexcept
 		{
-			return m_vreg;
+			return m_temp_vregs.top();
 		}
 
 		[[nodiscard]] tac::vregister_type

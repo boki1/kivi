@@ -63,12 +63,12 @@ namespace intermediate_representation
 		void generate_copy(const syntax_analyzer::expression& e, generation_context& gtx);
 		void generate_funcall(const syntax_analyzer::expression& e, generation_context& gtx);
 		void generate_number(const syntax_analyzer::expression& e, generation_context& gtx);
-		void generate_return(const syntax_analyzer::expression& e, generation_context& gtx);
+		void generate_return(const syntax_analyzer::expression& expr, generation_context& gtx);
 		void generate_nop(const syntax_analyzer::expression& e, generation_context& gtx);
-		void generate_negation(const syntax_analyzer::expression& e, generation_context& gtx);
+		void generate_negation(const syntax_analyzer::expression& expr, generation_context& gtx);
 		void generate_identifier(const syntax_analyzer::expression& e, generation_context& gtx);
 
-		void generate_conditional(const syntax_analyzer::expression& e, generation_context& gtx);
+		void generate_conditional(const syntax_analyzer::expression& expr, generation_context& gtx);
 //		void generate_if(const syntax_analyzer::expression& e, generation_context& gtx);
 //		void generate_while(const syntax_analyzer::expression& e, generation_context& gtx);
 
