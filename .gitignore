@@ -31,3 +31,4 @@ Debug/
 cmake-build-Release/
 docs/html/
 docs/latex/
+frontend/parser/OLD_GRAMMAR.y
