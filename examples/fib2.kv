@@ -1,0 +1,25 @@
+// KNOWN BUG: bad_variant_access
+
+fib n:
+{
+    if n == 0:
+    return 0;
+
+    if n == 1:
+    return 1;
+
+    auto this = 0;
+    auto next = 1;
+    auto temp = 0;
+    auto i = 0;
+
+    while i <> n:
+    {
+        temp = next + this;
+        this = next;
+        next = temp;
+        i = i + 1;
+    }
+
+    return next;
+}

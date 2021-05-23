@@ -22,44 +22,6 @@ main(int argc, char* argv[])
 
 	std::cout << printer::print(ctx.functions());
 
-//	sa::function fibish{
-//		"fibish",
-//		sa::compound_stmt({
-//			sa::expression{
-//				sa::expression::type::If,
-//				{
-//					sa::expression{
-//						sa::expression::type::Equality,
-//						{
-//							sa::expression({ sa::identifier::type::Parameter, "n" }),
-//							sa::expression{ 0 }
-//						}
-//					},
-//					sa::expression{ sa::expression::type::Return, { sa::expression{ 0 }}}
-//				}
-//			},
-//			sa::expression{
-//				sa::expression::type::If,
-//				{
-//					sa::expression{
-//						sa::expression::type::Equality,
-//						{
-//							sa::expression({ sa::identifier::type::Parameter, "n" }),
-//							sa::expression{ 1 }
-//						}
-//					},
-//					sa::expression{ sa::expression::type::Return, { sa::expression{ 1 }}}
-//				}
-//			},
-//			sa::expression{ sa::expression::type::Return, { sa::expression{ 0 }}}
-//		}),
-//		0,
-//		1
-//	};
-//
-//	intermediate_representation::generation_unit gu{};
-//	gu.generate_function(fibish);
-
 	intermediate_representation::generation_unit gu{};
 	gu.generate(ctx.functions());
 	printer::print_ir(gu, std::cout);
