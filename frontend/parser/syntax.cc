@@ -45,9 +45,13 @@ namespace syntax_analyzer
 	}
 
 	void
-	expression::append(expression&& appendant)
+	expression::front_add(expression&& appendant)
 	{
-		m_operands.push_back(move(appendant));
+		std::vector<expression> operands{};
+		operands.reserve(m_operands.size() + 1);
+		operands.push_back(move(appendant));
+		std::move(begin(m_operands), end(m_operands), back_inserter(operands));
+		m_operands = move(operands);
 	}
 
 	void

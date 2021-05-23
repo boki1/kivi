@@ -200,7 +200,7 @@ namespace syntax_analyzer
 		 * @param appendant The new operand
 		 */
 		void
-		append(expression&& appendant);
+		front_add(expression&& appendant);
 
 		/**
 		 * @brief Combines the operands of the expressions into the first one

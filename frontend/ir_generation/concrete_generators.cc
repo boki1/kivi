@@ -1,5 +1,6 @@
 #include <iostream>
 #include <transform_iterator/transform_iterator.hh>
+#include <algorithm>
 
 #include "generation_context.hh"
 #include "generation_unit.hh"
@@ -203,20 +204,21 @@ namespace intermediate_representation
 		place_chain(tac_copy({ gtx.fetch_temp(), temp }), gtx);
 	}
 
-	void gu::generate_funcall(const syntax_analyzer::expression& e,
-		generation_context& gtx)
+	void gu::generate_funcall(const syntax_analyzer::expression& expr, generation_context& gtx)
 	{
-		// todo: !!!
 		gtx.update_temp(gtx.increase_counter());
 
-		std::vector<tac::vregister_type> operands = {
-			gtx.fetch_temp(),
-			*make_transform_iterator(
-				e.operands().begin(), e.operands().end(),
-				[&](const sa::expression& p)
-				{ return generate_ir(p, gtx); }),
-			*transform_iterator<tac::vregister_type>{}};
+		std::vector<tac::vregister_type> vreg_parameters;
+		vreg_parameters.reserve(expr.operands().size());
 
-		place_chain(tac_fcall(operands), gtx);
+		std::transform(expr.operands().begin(), expr.operands().end(), std::back_inserter(vreg_parameters), [&](const sa::expression& operand)
+		{
+		  return generate_ir(operand, gtx);
+		});
+
+		// Insert the return virtual register
+		vreg_parameters.insert(vreg_parameters.begin(), gtx.fetch_temp());
+
+		place_chain(tac_fcall(vreg_parameters), gtx);
 	}
 } // namespace intermediate_representation

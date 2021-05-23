@@ -92,7 +92,7 @@ namespace syntax_analyzer
 	function_call_expr(std::string&& fun_name, expression&& parameter_list /* = {} */)
 	{
 		auto name = expression(identifier(identifier::type::Function, move(fun_name)));
-		parameter_list.append(move(name));
+		parameter_list.front_add(move(name));
 		return expression(
 			expression::type::FunctionCall,
 			move(parameter_list.operands_copy())

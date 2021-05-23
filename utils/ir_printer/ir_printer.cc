@@ -49,7 +49,7 @@ namespace printer
 			os << "ifnz";
 			break;
 		case ir_type::FunctionCall:
-			os << "fcall";
+			os << "call";
 			break;
 		case ir_type::Return:
 			os << "ret";
