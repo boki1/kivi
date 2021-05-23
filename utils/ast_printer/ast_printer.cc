@@ -162,9 +162,6 @@ namespace printer
 	print(const sa::expression& expr, bool is_statement /* = false */) noexcept
 	{
 		// Iterators pointing to the first and last expression in `expr.operands()`
-		const auto& front = expr.operands().cbegin();
-		const auto& back = expr.operands().cend();
-
 		switch (expr.get_type())
 		{
 		case et::Nop:
@@ -198,12 +195,11 @@ namespace printer
 		{
 			if (expr.operands().empty())
 				return "??";
-			return "(" + print(*back) + " = " + print(*front) + ")";
+			return "(" + print(expr.operands().back()) + " = " + print(expr.operands().front()) + ")";
 		}
 		case et::While:
 		{
-			const std::string& condition
-				= print(expr.operands().front());
+			const std::string& condition = print(expr.operands().front());
 			const std::string& body = print(expr, ", ", "()", false, 1);
 			return "while " + condition + " " + body;
 		}
@@ -211,7 +207,7 @@ namespace printer
 		{
 			if (expr.operands().empty())
 				return "??";
-			return "( " + print(*front) + " )"
+			return "( " + print(expr.operands().front()) + " )"
 				+ print(expr, ", ", "()", false, 1);
 		}
 		case et::Return:

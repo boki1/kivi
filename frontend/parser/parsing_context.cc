@@ -55,17 +55,15 @@ namespace syntax_analyzer
 	{
 		LOG_S (INFO) << "Defining identifier \"" << ident.name() << "\"";
 
-		bool is_duplicate
-			= std::any_of(scopes().begin(), scopes().end(),
-				[&](const identifier& s)
-				{ return s == ident; });
+		bool is_duplicate = std::any_of(scopes().begin(), scopes().end(), [&](const identifier& s)
+		{
+		  return s == ident;
+		});
 
 		if (is_duplicate)
 		{
-			LOG_S (WARNING)
-			<< "Duplicate definition of \"" + ident.name() << "\".";
-			throw kp::syntax_error(yy_location, "Duplicate definition of \""
-				+ ident.name() + "\".");
+			LOG_S (WARNING) << "Duplicate definition of \"" + ident.name() << "\".";
+			throw kp::syntax_error(yy_location, "Duplicate definition of \"" + ident.name() + "\".");
 		}
 
 		scopes_mut().push_back(ident);
@@ -98,11 +96,10 @@ namespace syntax_analyzer
 	{
 		/// Adds implicit return statement at the end of the block
 		/// "concatenated" by this double-compound statement
-		auto new_body = sa::compound_stmt(
-			{
-				body,
-				return_stmt()
-			});
+		auto new_body = sa::compound_stmt({
+			body,
+			return_stmt()
+		});
 
 		m_current_function.set_body(move(new_body));
 		m_current_function.set_name(name);

@@ -70,17 +70,17 @@ Parameter_list:
 
 Single_param:
   Single_param ',' Safe_identifier 				{ ctx.define_parameter(move($3)); }
-| IDENTIFIER 									{ ctx.define_parameter(move($1)); }
+| IDENTIFIER 							{ ctx.define_parameter(move($1)); }
 ;
 
 Statement:
   Compound_statement Safe_closing_brace 		{ $$ = move($1); ctx.exit_scope(); }
-| IF Safe_expression Safe_colon Safe_statement 	{ $$ = sa::if_stmt(move($2), move($4)); }
+| IF Safe_expression Safe_colon Safe_statement 		{ $$ = sa::if_stmt(move($2), move($4)); }
 | WHILE Safe_expression ':' Safe_statement 		{ $$ = sa::while_stmt(move($2), move($4)); }
 | RETURN Safe_expression Safe_semicolon 		{ $$ = sa::return_stmt(move($2)); }
-| Expression Safe_semicolon 					{ $$ = move($1); }
+| Expression Safe_semicolon 				{ $$ = move($1); }
 | VAR Safe_identifier '=' Safe_expression 		{ $$ = ctx.define_local(move($2)).assign(move($4)); }
-| ';' 											{ }
+| ';' 							{ }
 ;
 
 Comma_sep_expressions:
@@ -102,16 +102,16 @@ Comparison_operation:
 
 Arithmetic_operation:
   Expression '+' error 							{ $$ = move($1); }
-| Expression '+' Expression 					{ $$ = sa::addition_expr(move($1), move($3)); }
+| Expression '+' Expression 						{ $$ = sa::addition_expr(move($1), move($3)); }
 | Expression '-' error 							{ $$ = move($1); }
-| Expression '-' Expression %prec '+' 			{ $$ = sa::addition_expr(move($1), sa::negation_expr(move($3))); }
+| Expression '-' Expression %prec '+' 					{ $$ = sa::addition_expr(move($1), sa::negation_expr(move($3))); }
 | Expression '*' error 							{ $$ = move($1); }
-| Expression '*' Expression 					{ $$ = sa::multiplication_expr(move($1), move($3)); }
+| Expression '*' Expression 						{ $$ = sa::multiplication_expr(move($1), move($3)); }
 | Expression '/' error 							{ $$ = move($1); }
-| Expression '/' Expression %prec '*' 			{ $$ = sa::division_expr(move($1), move($3)); }
+| Expression '/' Expression %prec '*' 					{ $$ = sa::division_expr(move($1), move($3)); }
 | Expression '=' error 							{ $$ = move($1); }
-| Expression '=' Expression 					{ $$ = sa::assignment_expr(move($1), move($3)); }
-| Expression '%' Expression 					{ $$ = sa::modular_division_expr(move($1), move($3)); }
+| Expression '=' Expression 						{ $$ = sa::assignment_expr(move($1), move($3)); }
+| Expression '%' Expression 						{ $$ = sa::modular_division_expr(move($1), move($3)); }
 | Expression '%' error 							{ $$ = move($1); }
 ;
 
