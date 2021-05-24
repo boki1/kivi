@@ -1,5 +1,3 @@
-######## Generate parser and lexer with bison and re2c
-
 set(AUTOGEN_PARSER_FILES
         "${PARSER_DIR}/parser.tab.cc"
         "${PARSER_DIR}/parser.tab.hh"
