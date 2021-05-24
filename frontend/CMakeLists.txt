@@ -18,7 +18,7 @@ set(AUTOGEN_FILES
 add_custom_command(
         PRE_BUILD
         OUTPUT ${AUTOGEN_PARSER_FILES}
-        COMMAND bison "${GRAMMAR}" --file-prefix=parser -d -Wnone
+        COMMAND bison "${GRAMMAR}" --file-prefix=parser -d
         COMMENT "======================== Generating parser with bison ========================"
         WORKING_DIRECTORY ${PARSER_DIR}
         VERBATIM

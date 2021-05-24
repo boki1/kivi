@@ -3,7 +3,6 @@
  * @brief Tests the syntactical analysis stage of the compiler
  */
 
-#include <bits/types/struct_sched_param.h>
 #include <memory>
 #include <vector>
 

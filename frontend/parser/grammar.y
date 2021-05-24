@@ -1,10 +1,10 @@
 %language "c++"
-%define api.parser.class { kivi_parser }
+%define parser_class_name { kivi_parser }
 %define api.value.type variant
 %define api.token.constructor
 %define parse.assert
 %define parse.error verbose
-%require "3.7"
+/* %require "3.7" */
 %locations   // <--
 
 %code requires {
@@ -27,12 +27,12 @@ using std::move;
 
 // Precedence and associativity
 
-// %left ','
+%left ','
 %right '='
 %left "<>" "=="
 %left '+' '-'
 %left '*' '/'
-// %left '('
+%left '('
 
 %type<int>         NUMBER_LITERAL
 %type<std::string> IDENTIFIER STRING_LITERAL

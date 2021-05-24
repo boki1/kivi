@@ -1,7 +1,8 @@
-# Removes files generated during compilation
 rm -rf build
-
-# Removes the files from the previous documentation build
 rm -rf docs/build
-
 rm -rf Testing
+rm -rf Debug
+rm -r frontend/parser/*tab*
+rm -r frontend/parser/position.hh
+rm -r frontend/parser/location.hh
+rm -r frontend/parser/stack.hh
