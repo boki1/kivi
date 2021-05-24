@@ -39,19 +39,24 @@ namespace intermediate_representation
 		return define_tac(tac{ tac_type::Negate, operands });
 	}
 
+    tac* gu::tac_mult(const opers_type& operands)
+    {
+        return define_tac(tac{ tac_type::Multiplication, operands });
+    }
+
+    tac* gu::tac_div(const opers_type& operands)
+    {
+        return define_tac(tac{ tac_type::Division, operands });
+    }
+
+    tac* gu::tac_mod(const opers_type& operands)
+    {
+        return define_tac(tac{tac_type::ModuloOperator, operands });
+    }
+
 	tac* gu::tac_copy(const opers_type& operands)
 	{
 		return define_tac(tac{ tac_type::Copy, operands });
-	}
-
-	tac* gu::tac_read(const opers_type& operands)
-	{
-		return define_tac(tac{ tac_type::Read, operands });
-	}
-
-	tac* gu::tac_write(const opers_type& operands)
-	{
-		return define_tac(tac{ tac_type::Write, operands });
 	}
 
 	tac* gu::tac_eq(const opers_type& operands)

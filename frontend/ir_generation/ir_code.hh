@@ -27,17 +27,20 @@ namespace intermediate_representation
 		 */
 		enum class type
 		{
-			Nop,            //< No operation
-			Init,           //< Store a pointer to a value at address &identifier + offset where identifier is a function's base
-			Add,            //< Perform addition
-			Negate,         //< Negation
-			Copy,           //< Assign a copy of another variable
-			Read,           //< Read from address
-			Write,          //< Write at address
-			Equals,         //< Whether two values are equal
-			IfNotZero,      //< Perform branch if not zero
-			FunctionCall,   //< Function call
-			Return          //< Return value
+			Nop,            ///< No operation
+			Init,           ///< Store a pointer to a value at address &identifier + offset where identifier is a function's base
+			Add,            ///< Perform addition
+			Negate,         ///< Negation
+            Multiplication, ///< Multiplication
+            Division,       ///< Division
+            ModuloOperator,         ///< ModuloOperator operator
+			Copy,           ///< Assign a copy of another variable
+			Read,           ///< Read from address
+			Write,          ///< Write at address
+			Equals,         ///< Whether two values are equal
+			IfNotZero,      ///< Perform branch if not zero
+			FunctionCall,   ///< Function call
+			Return          ///< Return value
 		};
 
 	 private:
@@ -180,34 +183,7 @@ namespace intermediate_representation
 		{
 			return m_operands;
 		}
-
-		//!
-		//! Concrete TAC "named constructors"
-		//! @note `tac` stands for Three-Address Code
-
-		[[nodiscard]] tac* tac_nop();
-
-		[[nodiscard]] tac* tac_init(const std::string& ident_name, const tac::operands_type& operands);
-
-		[[nodiscard]] tac* tac_add(const tac::operands_type& operands);
-
-		[[nodiscard]] tac* tac_neg(const tac::operands_type& operands);
-
-		[[nodiscard]] tac* tac_copy(const tac::operands_type& operands);
-
-		[[nodiscard]] tac* tac_read(const tac::operands_type& operands);
-
-		[[nodiscard]] tac* tac_write(const tac::operands_type& operands);
-
-		[[nodiscard]] tac* tac_eq(const tac::operands_type& operands);
-
-		[[nodiscard]] tac* tac_ifnz(const tac::operands_type& operands);
-
-		[[nodiscard]] tac* tac_fcall(const tac::operands_type& operands);
-
-		[[nodiscard]] tac* tac_return(const tac::operands_type& operands);
 	};
-
 }
 
 #endif //KIVI_IR_CODE_HH

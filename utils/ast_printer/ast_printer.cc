@@ -57,7 +57,7 @@ namespace printer
 			type_str = "Equality";
 			break;
 		case et::ModularDivision:
-			type_str = "Modulo";
+			type_str = "ModuloOperator";
 			break;
 		case et::Copy:
 			type_str = "Copy";

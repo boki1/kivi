@@ -36,11 +36,14 @@ namespace printer
 		case ir_type::Copy:
 			os << "copy";
 			break;
-		case ir_type::Read:
-			os << "read";
+		case ir_type::Multiplication:
+			os << "mult";
 			break;
-		case ir_type::Write:
-			os << "write";
+		case ir_type::Division:
+			os << "div";
+			break;
+		case ir_type::ModuloOperator:
+			os << "mod";
 			break;
 		case ir_type::Equals:
 			os << "eq";

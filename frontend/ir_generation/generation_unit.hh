@@ -54,11 +54,6 @@ namespace intermediate_representation
 	 public: // Concrete generators (concrete_generators.cc)
 
 		void generate_sequence(const syntax_analyzer::expression& e, generation_context& gtx);
-//		void generate_addition(const syntax_analyzer::expression& e, generation_context& gtx);
-//		void generate_multiplication(const syntax_analyzer::expression& e, generation_context& gtx);
-//		void generate_division(const syntax_analyzer::expression& e, generation_context& gtx);
-//		void generate_modulo(const syntax_analyzer::expression& e, generation_context& gtx);
-//		void generate_equality(const syntax_analyzer::expression& e, generation_context& gtx);
 
 		void generate_copy(const syntax_analyzer::expression& e, generation_context& gtx);
 		void generate_funcall(const syntax_analyzer::expression& expr, generation_context& gtx);
@@ -69,17 +64,16 @@ namespace intermediate_representation
 		void generate_identifier(const syntax_analyzer::expression& e, generation_context& gtx);
 
 		void generate_conditional(const syntax_analyzer::expression& expr, generation_context& gtx);
-//		void generate_if(const syntax_analyzer::expression& e, generation_context& gtx);
-//		void generate_while(const syntax_analyzer::expression& e, generation_context& gtx);
 
 	 public: // TAC concrete constructors (codes.cc)
 		[[nodiscard]] tac* tac_nop();
 		[[nodiscard]] tac* tac_init(tac::vregister_type value, const std::string& ident, unsigned operand);
 		[[nodiscard]] tac* tac_add(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_neg(const tac::operands_type& operands);
+        [[nodiscard]] tac* tac_mult(const tac::operands_type& operands);
+        [[nodiscard]] tac* tac_div(const tac::operands_type& operands);
+        [[nodiscard]] tac* tac_mod(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_copy(const tac::operands_type& operands);
-		[[nodiscard]] tac* tac_read(const tac::operands_type& operands);
-		[[nodiscard]] tac* tac_write(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_eq(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_ifnz(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_fcall(const tac::operands_type& operands);

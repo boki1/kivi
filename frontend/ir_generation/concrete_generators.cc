@@ -111,41 +111,32 @@ namespace intermediate_representation {
             if (prev == ~0u)
                 continue;
 
-            if (e.get_type() == sa::expression::type::Addition) {
-                auto vreg = make_vreg(gtx);
-                gtx.push_temp(vreg);
-                auto code = tac_add({vreg, prev, last});
-                place_chain(code, gtx);
-            } else if (e.get_type() == sa::expression::type::Equality) {
-                auto vreg = make_vreg(gtx);
-                gtx.push_temp(vreg);
-                auto code = tac_eq({vreg, prev, last});
-                place_chain(code, gtx);
-            } else if (e.get_type() == sa::expression::type::Multiplication) {
-                int a_num = std::get<int>(e.operands().at(0).terminal());
-                int b_num = std::get<int>(e.operands().at(1).terminal());
+            tac *(generation_unit::*fun)(const tac::operands_type &operands);
 
-                // The following two vars are used in case of multiplication with zero
-                int non_zero_operand = (a_num > 0) ? a_num : b_num;
-                auto potentially_zero_reg = (a_num > 0) ? last : prev;
-
-                auto tmp_sum_res_reg = make_vreg(gtx);
-                gtx.push_temp(tmp_sum_res_reg);
-
-                place_chain(tac_copy({tmp_sum_res_reg, potentially_zero_reg}), gtx);
-
-                auto sum_reg = make_vreg(gtx);
-                gtx.push_temp(sum_reg);
-
-                for (int j = 0; j < non_zero_operand - 1; ++j) {
-                    auto code = tac_add({sum_reg, tmp_sum_res_reg, potentially_zero_reg});
-                    place_chain(code, gtx);
-
-                    place_chain(tac_copy({tmp_sum_res_reg, sum_reg}), gtx);
-                }
-            } else {
-                gtx.update_temp(last);
+            switch (e.get_type()) {
+                case sa::expression::type::Addition:
+                    fun = &generation_unit::tac_add;
+                    break;
+                case sa::expression::type::Equality:
+                    fun = &generation_unit::tac_eq;
+                    break;
+                case sa::expression::type::Multiplication:
+                    fun = &generation_unit::tac_mult;
+                    break;
+                case sa::expression::type::Division:
+                    fun = &generation_unit::tac_div;
+                    break;
+                case sa::expression::type::ModularDivision:
+                    fun = &generation_unit::tac_mod;
+                    break;
+                default:
+                    gtx.update_temp(last);
+                    continue;
             }
+            auto vreg = make_vreg(gtx);
+            gtx.push_temp(vreg);
+            auto code = (this->*fun)({vreg, prev, last});
+            place_chain(code, gtx);
         }
     }
 
