@@ -125,27 +125,23 @@ namespace intermediate_representation {
                 int a_num = std::get<int>(e.operands().at(0).terminal());
                 int b_num = std::get<int>(e.operands().at(1).terminal());
 
-                // TODO: this must not be a rtrn stmt! Exchange it with a logical expression
-                if (a_num == 0 || b_num == 0) {
-                    place_chain(tac_return({0}), gtx);
-                } else if (a_num == 1) {
-                    place_chain(tac_return({last}), gtx);
-                } else if (b_num == 1) {
-                    place_chain(tac_return({prev}), gtx);
-                } else {
-                    auto tmp_sum_res_reg = make_vreg(gtx);
-                    gtx.push_temp(tmp_sum_res_reg);
-                    place_chain(tac_copy({tmp_sum_res_reg, last}), gtx);
+                // The following two vars are used in case of multiplication with zero
+                int non_zero_operand = (a_num > 0) ? a_num : b_num;
+                auto potentially_zero_reg = (a_num > 0) ? last : prev;
 
-                    auto sum_reg = make_vreg(gtx);
-                    gtx.push_temp(sum_reg);
+                auto tmp_sum_res_reg = make_vreg(gtx);
+                gtx.push_temp(tmp_sum_res_reg);
 
-                    for (int j = 0; j < a_num - 1; ++j) {
-                        auto code = tac_add({sum_reg, tmp_sum_res_reg, last});
-                        place_chain(code, gtx);
+                place_chain(tac_copy({tmp_sum_res_reg, potentially_zero_reg}), gtx);
 
-                        place_chain(tac_copy({tmp_sum_res_reg, sum_reg}), gtx);
-                    }
+                auto sum_reg = make_vreg(gtx);
+                gtx.push_temp(sum_reg);
+
+                for (int j = 0; j < non_zero_operand - 1; ++j) {
+                    auto code = tac_add({sum_reg, tmp_sum_res_reg, potentially_zero_reg});
+                    place_chain(code, gtx);
+
+                    place_chain(tac_copy({tmp_sum_res_reg, sum_reg}), gtx);
                 }
             } else {
                 gtx.update_temp(last);
