@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 ############## Global "variables"
 
-set(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}")
+set(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/src")
 set(FRONTEND_DIR "${PROJECT_ROOT}/frontend")
 set(PARSER_DIR "${FRONTEND_DIR}/parser")
 set(GRAMMAR "${PARSER_DIR}/grammar.y")
@@ -31,20 +31,5 @@ enable_testing()
 
 ############### Subdirectories
 
-add_subdirectory(extern)
-add_subdirectory(utils)
-add_subdirectory(frontend)
-add_subdirectory(backend)
-add_subdirectory(test)
+add_subdirectory(src)
 
-################ Main
-
-add_executable(kivi
-        main.cc)
-
-target_link_libraries(kivi PRIVATE kivi_ir)
-target_link_libraries(kivi PRIVATE kivi_parser)
-target_link_libraries(kivi PRIVATE ast_printer)
-target_link_libraries(kivi PRIVATE ir_printer)
-target_link_libraries(kivi PRIVATE cli)
-target_link_libraries(kivi PRIVATE loguru)
