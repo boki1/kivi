@@ -1,9 +1,15 @@
+
 # Clion
 .idea/
 cmake-build-debug/
 
 #Vscode
+<<<<<<< HEAD
 .vscode/
+=======
+.vscode
+.cache
+>>>>>>> master
 
 Testing/
 
@@ -21,8 +27,10 @@ build/
 
 # Docs/
 docs/gh-pages
+docs/dev/gh-pages/
 docs/build
 
+<<<<<<< HEAD
 # Kdevelop
 *.kdev4
 .kdev4/
@@ -32,3 +40,8 @@ cmake-build-Release/
 docs/html/
 docs/latex/
 frontend/parser/OLD_GRAMMAR.y
+=======
+# KDevelop
+*.kdev4
+.kdev4/
+>>>>>>> master
