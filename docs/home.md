@@ -6,6 +6,12 @@
 > Compiler for a C-like language with educational purposes only\
 > elsys@SoftwareDevelopment course project
 
+## Docs
+<a href="https://boki1.github.io/kivi"><img width="200px" height="200px"  src="https://cdn.iconscout.com/icon/free/png-256/documentation-1502741-1272951.png"/></a>
+
+## Dev
+<a href="https://boki1.github.io/kivi/dev/dev.html"><img width="200px" height="200px"  src="https://i.ibb.co/4Sd29HN/gear-wheel.png"/></a>
+
 ### Welcome
 This is the Kivi programming language. Here you will find answers the following questions:
 - How does the compiler work?
@@ -21,7 +27,7 @@ Also
 - building instructions (`CMakeLists` chain)
 - example kivi programs
 
-... and many more.
+... and more :smile:.
 
 ### Key links
 

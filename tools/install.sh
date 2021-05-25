@@ -1,4 +1,4 @@
 #!/bin/bash
 
 ./build.sh
-cp build/kivi /usr/bin/kivi
+cp build/src/kivi /usr/bin/kivi

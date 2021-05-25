@@ -1,18 +1,17 @@
-cmake_minimum_required(VERSION 3.17)
-
-project(kivi
-        VERSION 0.0.1
+cmake_minimum_required(VERSION 3.9)
+project(kivi VERSION 0.0.1
         HOMEPAGE_URL https://boki1.github.io/kivi/
         LANGUAGES C CXX
         DESCRIPTION "Simple compiler for educational purposes"
-        )
+		)
+
+add_compile_options(-g)
 
 set(CMAKE_CXX_STANDARD 17)
 
-
 ############## Global "variables"
 
-set(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}")
+set(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/src")
 set(FRONTEND_DIR "${PROJECT_ROOT}/frontend")
 set(PARSER_DIR "${FRONTEND_DIR}/parser")
 set(GRAMMAR "${PARSER_DIR}/grammar.y")
@@ -31,26 +30,8 @@ endfunction()
 
 ############### Testing
 
-find_package(Catch2 CONFIG REQUIRED)
 enable_testing()
-include(CTest)
-include(Catch)
 
 ############### Subdirectories
 
-add_subdirectory(extern)
-add_subdirectory(utils)
-add_subdirectory(frontend)
-add_subdirectory(backend)
-add_subdirectory(test)
-
-################ Main
-
-add_executable(kivi
-        main.cc)
-
-target_link_libraries(kivi PRIVATE kivi_parser)
-target_link_libraries(kivi PRIVATE ast_printer)
-target_link_libraries(kivi PRIVATE argparse)
-target_link_libraries(kivi PRIVATE cli)
-target_link_libraries(kivi PRIVATE loguru)
+add_subdirectory(src)
