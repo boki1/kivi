@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
-project(kivi)
+project(kivi VERSION 0.0.1
+        HOMEPAGE_URL https://boki1.github.io/kivi/
+        LANGUAGES C CXX
+        DESCRIPTION "Simple compiler for educational purposes"
+		)
 
 add_compile_options(-g)
 
@@ -18,7 +22,6 @@ set(TEST_DIR "${PROJECT_ROOT}/test")
 set(UTILS_DIR "${PROJECT_ROOT}/utils")
 
 ############### Utilities
-
 function(print)
     foreach (var ${ARGN})
         message("${var} = ${${var}}")
@@ -32,4 +35,3 @@ enable_testing()
 ############### Subdirectories
 
 add_subdirectory(src)
-

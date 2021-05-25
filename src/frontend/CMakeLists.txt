@@ -1,5 +1,3 @@
-# add_subdirectory(parser)
-
 set(AUTOGEN_PARSER_FILES
         "${PARSER_DIR}/parser.tab.cc"
         "${PARSER_DIR}/parser.tab.hh"

@@ -2,12 +2,10 @@
 
 #define LOGURU_WITH_STREAMS 1
 #include <loguru/loguru.hpp>
-//#include <util/common.hh>
 
-#include "expressions.cc"
 #include "parser.tab.hh"
 #include "parsing_context.hh"
-#include "statements.cc"
+#include "syntactical_structures.hh"
 #include "syntax.hh"
 
 /**

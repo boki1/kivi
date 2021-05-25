@@ -34,7 +34,6 @@ add_library(
 target_include_directories(textbox PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 set_target_properties(textbox PROPERTIES LINKER_LANGUAGE CXX)
 
-
 # # # # #
 # Transform iterator
 # # # # #
@@ -45,3 +44,14 @@ add_library(
 
 target_include_directories(transform_iterator PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 set_target_properties(transform_iterator PROPERTIES LINKER_LANGUAGE CXX)
+
+##########
+# Argparse
+#########
+add_library(
+	argparse
+	argparse/argparse.h
+)
+
+set_target_properties(argparse PROPERTIES LINKER_LANGUAGE CXX)
+target_include_directories(argparse PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
