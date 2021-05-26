@@ -1,9 +1,5 @@
 cmake_minimum_required(VERSION 3.9)
-project(kivi VERSION 0.0.1
-        HOMEPAGE_URL https://boki1.github.io/kivi/
-        LANGUAGES C CXX
-        DESCRIPTION "Simple compiler for educational purposes"
-		)
+project(kivi VERSION 0.0.1)
 
 add_compile_options(-g)
 
