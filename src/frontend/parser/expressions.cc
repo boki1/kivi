@@ -6,9 +6,12 @@
 #ifndef _KIVI_PARSER_EXPRESSIONS_HH
 #define _KIVI_PARSER_EXPRESSIONS_HH
 
+#include <algorithm>
 #include <memory>
 
 #include "syntactical_structures.hh"
+#include "syntax.hh"
+#include "semantics.hh"
 
 using std::make_shared;
 using std::move;
@@ -89,8 +92,16 @@ namespace syntax_analyzer
 	}
 
 	expression
-	function_call_expr(std::string&& fun_name, expression&& parameter_list /* = {} */)
+	function_call_expr(std::string&& fun_name, const std::vector<function> &declared_functions, expression&& parameter_list /* = {} */)
 	{
+		auto it = std::find_if(declared_functions.begin(), declared_functions.end(), [&](const auto &declared_fun)
+		{
+			return declared_fun.name() == fun_name && declared_fun.parameters() == parameter_list.operands().size();
+		});
+
+		if (it == declared_functions.end())
+			throw semantics::undefined_function_called{fun_name, static_cast<int>(parameter_list.operands().size()) };
+
 		auto name = expression(identifier(identifier::type::Function, move(fun_name)));
 		parameter_list.front_add(move(name));
 		return expression(

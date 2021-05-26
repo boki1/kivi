@@ -121,7 +121,7 @@ namespace syntax_analyzer
 	 * @return Constructed expression
 	 */
 	expression
-	function_call_expr(std::string&& fun_name, expression&& parameter_list = {});
+	function_call_expr(std::string&& fun_name, const std::vector<function> &declared_functions, expression&& parameter_list = {});
 
 	/**
 	 * @brief Defines a sequence of expressions

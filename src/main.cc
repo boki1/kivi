@@ -1,3 +1,4 @@
+#include "parser/semantics.hh"
 #include <fstream>
 #include <iostream>
 
@@ -20,7 +21,15 @@ int main(int argc, const char *argv[])
 	// PARSING
 	sa::parsing_context ctx{buffer.c_str(), &file};
 	yy::kivi_parser parser{ctx};
-	parser.parse();
+	try {
+		parser.parse();
+	} catch (semantics::undefined_function_called &u) {
+		std::cerr << u.what() << " '" << u.fun() << "'";
+		if (u.params_expected() != 0)
+			std::cerr << "with " << u.params() << " whilst " << u.params_expected() << " were expected.";
+		std::cerr << "\n";
+	}
+
 
 	if (cli::should_print(cli::pe::ast))
 	{
