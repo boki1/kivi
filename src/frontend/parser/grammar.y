@@ -121,8 +121,8 @@ Unary_operation:
 ;
 
 Function_call_operation:
-  Safe_identifier '(' ')' 											{ $$ = sa::function_call_expr(move($1), ctx.functions()); }
-| Safe_identifier '(' Comma_sep_expressions Safe_closing_parentesis 	{ $$ = sa::function_call_expr(move($1), ctx.functions(), move($3)); }
+  Safe_identifier '(' ')' 											{ $$ = sa::function_call_expr(move($1), ctx.functions(), ctx.current_function()); }
+| Safe_identifier '(' Comma_sep_expressions Safe_closing_parentesis 	{ $$ = sa::function_call_expr(move($1), ctx.functions(), ctx.current_function(), move($3)); }
 ;
 
 Expressions:
