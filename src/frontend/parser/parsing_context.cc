@@ -14,7 +14,6 @@
  */
 
 using kp = yy::kivi_parser;
-
 using std::move;
 
 namespace syntax_analyzer
@@ -25,13 +24,16 @@ namespace syntax_analyzer
 	{
 		yy_location.begin.filename = filename;
 		yy_location.end.filename = filename;
-		LOG_F (INFO, "Initializing parsing_context\n");
+
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_F (INFO, "Initializing parsing_context\n");
 	}
 
 	void
 	parsing_context::enter_scope()
 	{
-		LOG_F (INFO, "Placing a new scope at the end\n");
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_F (INFO, "Placing a new scope at the end\n");
 		m_scopes.emplace_back();
 	}
 
@@ -40,18 +42,22 @@ namespace syntax_analyzer
 	{
 		if (m_scopes.empty())
 		{
-			LOG_F (WARNING, "Popping last scope from the back FAILED because "
-							"no elements are present\n");
+//			if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//				LOG_F (WARNING, "Popping last scope from the back FAILED because "
+//								"no elements are present\n");
 			throw cannot_pop_out_of_empty_exception();
 		}
-		LOG_F (INFO, "Popping last scope from the back\n");
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_F (INFO, "Popping last scope from the back\n");
+
 		m_scopes.pop_back();
 	}
 
 	expression
 	parsing_context::define_identifier(const identifier& ident)
 	{
-		LOG_S (INFO) << "Defining identifier \"" << ident.name() << "\"";
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_S (INFO) << "Defining identifier \"" << ident.name() << "\"";
 
 		bool is_duplicate = std::any_of(scopes().begin(), scopes().end(), [&](const identifier& s)
 		{
@@ -60,7 +66,8 @@ namespace syntax_analyzer
 
 		if (is_duplicate)
 		{
-			LOG_S (WARNING) << "Duplicate definition of \"" + ident.name() << "\".";
+//			if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//				LOG_S (WARNING) << "Duplicate definition of \"" + ident.name() << "\".";
 			throw kp::syntax_error(yy_location, "Duplicate definition of \"" + ident.name() + "\".");
 		}
 
@@ -72,7 +79,8 @@ namespace syntax_analyzer
 	expression
 	parsing_context::use_identifier(const std::string& name) const
 	{
-		LOG_S (INFO) << "Using identifier \"" + name << "\".";
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_S (INFO) << "Using identifier \"" + name << "\".";
 
 		auto it = std::find_if(scopes().begin(), scopes().end(),
 			[&](const auto& s)
@@ -83,7 +91,8 @@ namespace syntax_analyzer
 			return expression(*it);
 		}
 
-		LOG_S (WARNING) << "Unknown identifier \"" + name << "\".";
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_S (WARNING) << "Unknown identifier \"" + name << "\".";
 		throw kp::syntax_error(yy_location,
 			"Unknown identifier \"" + name + "\"");
 	}
@@ -102,7 +111,8 @@ namespace syntax_analyzer
 		m_current_function.set_body(move(new_body));
 		m_current_function.set_name(name);
 
-		LOG_S (INFO) << "Defining function (\"" + name << "\") with body.\n";
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_S (INFO) << "Defining function (\"" + name << "\") with body.\n";
 		m_functions.push_back(m_current_function);
 		m_current_function = {};
 		return m_functions.back();
@@ -111,7 +121,8 @@ namespace syntax_analyzer
 	expression
 	parsing_context::define_local(std::string&& name)
 	{
-		LOG_S (INFO) << "Defining local variable (\"" + name << "\")" << '\n';
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_S (INFO) << "Defining local variable (\"" + name << "\")" << '\n';
 		return define_identifier(identifier(identifier::type::Local, move(name),
 			m_current_function.add_local()));
 	}
@@ -119,7 +130,8 @@ namespace syntax_analyzer
 	expression
 	parsing_context::define_function(std::string name)
 	{
-		LOG_S (INFO) << "Defining function (\"" + name << "\")" << '\n';
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_S (INFO) << "Defining function (\"" + name << "\")" << '\n';
 		return define_identifier(identifier(identifier::type::Function,
 			move(name), functions().size()));
 	}
@@ -127,7 +139,8 @@ namespace syntax_analyzer
 	expression
 	parsing_context::define_parameter(std::string&& name)
 	{
-		LOG_S (INFO) << "Defining parameter (\"" + name << "\")" << '\n';
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_S (INFO) << "Defining parameter (\"" + name << "\")" << '\n';
 		return define_identifier(identifier(identifier::type::Parameter,
 			move(name),
 			m_current_function.add_param()));
@@ -137,7 +150,8 @@ namespace syntax_analyzer
 	parsing_context::define_register()
 	{
 		std::string name = "$L" + std::to_string(m_registers++);
-		LOG_S (INFO) << "Defining register (\"" + name << "\")" << '\n';
+//		if (cli::globals.verbosity_level == cli::settings::verbosity::v2)
+//			LOG_S (INFO) << "Defining register (\"" + name << "\")" << '\n';
 		return define_local(move(name));
 	}
 

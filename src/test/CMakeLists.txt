@@ -11,7 +11,7 @@ target_link_libraries(test_main PUBLIC ${UNIT_TEST_DEPENDS})
 
 ############################## Example test
 
-add_executable(test__example frontend/example.test.cc)
+add_executable(test__example frontend/parse_examples.test.cc)
 target_link_libraries(test__example PUBLIC test_main)
 add_test(NAME Example
         COMMAND test__example)
@@ -43,3 +43,13 @@ add_executable(test__ir_gen frontend/ir_generation.test.cc)
 target_link_libraries(test__ir_gen PUBLIC test_main)
 add_test(NAME IR
         COMMAND test__ir_gen)
+
+############################## x86 Machine Target
+
+add_executable(test__x86_machine_target backend/x86_machine_target.test.cc)
+target_link_libraries(test__x86_machine_target PUBLIC test_main)
+target_link_libraries(test__x86_machine_target PUBLIC kivi_compiler)
+target_link_libraries(test__x86_machine_target PUBLIC kivi_ir)
+target_link_libraries(test__x86_machine_target PUBLIC arch)
+add_test(NAME Machine_Target_x86
+        COMMAND test__x86_machine_target)

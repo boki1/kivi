@@ -1,4 +1,4 @@
-### Frontend unit test
+### Frontend unit tests
 
 This directory contains unit-tests for the frontend part of the compiler.
 

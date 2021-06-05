@@ -9,7 +9,7 @@ namespace compiler
 {
 
 	template<typename T>
-	[[nodiscard]] machine_target default_target();
+	[[nodiscard]] machine_target configure_target();
 
 	struct x86
 	{
@@ -17,7 +17,7 @@ namespace compiler
 	};
 
 	template<>
-	[[nodiscard]] machine_target default_target<x86>();
+	[[nodiscard]] machine_target configure_target<x86>();
 
 }
 

@@ -9,3 +9,5 @@ rm -f $PARSER_DIR/*tab*
 rm -f $PARSER_DIR/position.hh
 rm -f $PARSER_DIR/location.hh
 rm -f $PARSER_DIR/stack.hh
+
+echo -e "\e[1;33;3m-- Cleaned\e[0m"

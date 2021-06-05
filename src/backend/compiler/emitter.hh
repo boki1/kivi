@@ -4,6 +4,8 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <sstream>
+#include <fstream>
 
 #include "machine_target.hh"
 
@@ -20,8 +22,8 @@ namespace compiler
 		/// Resulting output file which contains the assembly of the program
 		std::string m_output_file;
 
-		/// Input program in three address code form
-
+		/// Result assembly
+		std::stringstream m_sstr{};
 
 		/// Concrete machine architecture
 		machine_target m_strategy;
@@ -40,10 +42,25 @@ namespace compiler
 
 	 public:
 
-		/// Initiates the whole compilation process
-		bool operator()()
+		/**
+		 * @brief Performs the whole compilation phase unless one of the stages fails
+		 * @return bool -- True on success and false on error; Fetch the output by calling `fetch_result`
+		 */
+		bool compile()
 		{
-			return false;
+			return (select_instructions() && allocate_registers() && prepare_runtime());
+		}
+
+		const std::stringstream& fetch_result()
+		{
+			return m_sstr;
+		}
+
+		std::unique_ptr<std::ofstream> commit_and_fetch_result()
+		{
+			auto fstr = std::make_unique<std::ofstream>(m_output_file);
+			if (fstr) *fstr << m_sstr.rdbuf();
+			return fstr;
 		}
 
 		//!
@@ -76,6 +93,28 @@ namespace compiler
 		bool prepare_runtime()
 		{
 			return false;
+		}
+
+	 public:
+		const std::string& output_file() const
+		{
+			return m_output_file;
+		}
+		const std::stringstream& sstr() const
+		{
+			return m_sstr;
+		}
+		const machine_target& strategy() const
+		{
+			return m_strategy;
+		}
+		const std::vector<instruction>& program() const
+		{
+			return m_program;
+		}
+		const std::vector<ir::tac>& three_address_code() const
+		{
+			return m_three_address_code;
 		}
 	};
 

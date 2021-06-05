@@ -29,8 +29,7 @@ namespace compiler
 
 		machine_target(const instruction_set_type& t_is,
 			const register_set_type& t_regs,
-			const std::vector<ir::tac>& input,
-			const std::unordered_map<ir::tac, instruction>& ir_to_native_mapping,
+			const std::unordered_map<ir::tac::type, instruction>& ir_to_native_mapping,
 			stackmem_management_fptr alloc,
 			stackmem_management_fptr drop
 		)
@@ -38,8 +37,7 @@ namespace compiler
 			  m_registers{ t_regs },
 			  m_allocate_stackmem_routine{ alloc },
 			  m_free_stackmem_routine{ drop },
-			  m_ir_input{ input },
-			  m_instruction_selector{ input, ir_to_native_mapping },
+			  m_instruction_selector{ ir_to_native_mapping },
 			  m_register_allocator{}
 		{
 		}
@@ -64,11 +62,13 @@ namespace compiler
 		/// Concrete register allocation algorithm
 		register_allocator m_register_allocator;
 
-		/// The input program
-		const std::vector<ir::tac>& m_ir_input;
+	 public:
+		const std::vector<instruction>& process_input(const std::vector<ir::tac>& t_input)
+		{
+			/// DO STUFF
+		}
 
 	 public:
-
 		template<typename T>
 		[[nodiscard]] word<T> stk_alloc(int bytes)
 		{
@@ -81,14 +81,30 @@ namespace compiler
 			return m_free_stackmem_routine(bytes);
 		}
 
-		const std::vector<instruction>& operator()()
+	 public:
+		[[nodiscard]] const instruction_set_type& instruction_set() const
 		{
-			return generate();
+			return m_instruction_set;
 		}
-
-		const std::vector<instruction>& generate()
+		[[nodiscard]] const register_set_type& register_set() const
 		{
-//			return ...
+			return m_registers;
+		}
+		[[nodiscard]] const instruction_selector& selector() const
+		{
+			return m_instruction_selector;
+		}
+		[[nodiscard]] const register_allocator& rallocator() const
+		{
+			return m_register_allocator;
+		}
+		[[nodiscard]] stackmem_management_fptr stk_alloc_fptr() const
+		{
+			return m_allocate_stackmem_routine;
+		}
+		[[nodiscard]] stackmem_management_fptr stk_dealloc_fptr() const
+		{
+			return m_free_stackmem_routine;
 		}
 	};
 }

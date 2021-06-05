@@ -15,14 +15,12 @@ namespace compiler
 	class instruction_selector
 	{
 	 private:
-		const std::vector<ir::tac>& m_three_address_code;
-		const std::unordered_map<ir::tac, instruction>& m_mapping;
+		const std::unordered_map<ir::tac::type, instruction>& m_mapping;
 		std::vector<instruction> m_selected{};
 
 	 public:
-		instruction_selector(const std::vector<ir::tac>& t_ir, const std::unordered_map<ir::tac, instruction>& t_mapping)
-			: m_three_address_code{ t_ir },
-			  m_mapping{ t_mapping }
+		explicit instruction_selector(const std::unordered_map<ir::tac::type, instruction>& t_mapping)
+			: m_mapping{ t_mapping }
 		{
 		}
 
@@ -32,7 +30,7 @@ namespace compiler
 			return false;
 		}
 
-		bool select()
+		bool select_from(const std::vector<ir::tac>& three_address_code)
 		{
 			return false;
 		}

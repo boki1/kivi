@@ -11,3 +11,5 @@ add_library(x86
 
 target_link_libraries(x86 PRIVATE kivi_compiler)
 target_link_libraries(x86 PRIVATE arch)
+target_link_libraries(x86 PRIVATE kivi_ir)
+target_link_libraries(x86 PRIVATE optional_ref)

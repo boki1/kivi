@@ -16,3 +16,4 @@ target_link_libraries(kivi PRIVATE ast_printer)
 target_link_libraries(kivi PRIVATE ir_printer)
 target_link_libraries(kivi PRIVATE cli)
 target_link_libraries(kivi PRIVATE loguru)
+
