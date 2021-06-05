@@ -8,8 +8,11 @@
 #include <vector>
 #include <memory>
 #include <map>
-#include "ir_code.hh"
+#include <algorithm>
+
 #include <parser/syntax.hh>
+
+#include "ir_code.hh"
 
 using std::unique_ptr;
 
@@ -70,9 +73,9 @@ namespace intermediate_representation
 		[[nodiscard]] tac* tac_init(tac::vregister_type value, const std::string& ident, unsigned operand);
 		[[nodiscard]] tac* tac_add(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_neg(const tac::operands_type& operands);
-        [[nodiscard]] tac* tac_mult(const tac::operands_type& operands);
-        [[nodiscard]] tac* tac_div(const tac::operands_type& operands);
-        [[nodiscard]] tac* tac_mod(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_mult(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_div(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_mod(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_copy(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_eq(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_ifnz(const tac::operands_type& operands);
@@ -93,6 +96,18 @@ namespace intermediate_representation
 
 		void
 		generate(const std::vector<syntax_analyzer::function>& ctx_functions);
+
+		[[nodiscard]]
+		std::vector<tac> fetch_output() const
+		{
+			std::vector<tac> three_address_code{};
+			three_address_code.reserve(m_tacs.size());
+			std::transform(m_tacs.begin(), m_tacs.end(), std::back_inserter(three_address_code), [](const auto& ptr)
+			{
+			  return *ptr;
+			});
+			return three_address_code;
+		}
 
 	 public: // Getters
 		[[nodiscard]] const std::vector<unique_ptr<tac>>&

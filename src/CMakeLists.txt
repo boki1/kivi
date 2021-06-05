@@ -9,6 +9,7 @@ add_subdirectory(test)
 add_executable(kivi
         main.cc)
 
+target_link_libraries(kivi PRIVATE kivi_compiler)
 target_link_libraries(kivi PRIVATE kivi_ir)
 target_link_libraries(kivi PRIVATE kivi_parser)
 target_link_libraries(kivi PRIVATE ast_printer)

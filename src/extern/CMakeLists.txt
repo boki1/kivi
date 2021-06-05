@@ -55,3 +55,13 @@ add_library(
 
 set_target_properties(argparse PROPERTIES LINKER_LANGUAGE CXX)
 target_include_directories(argparse PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+
+##########
+# OptionalRef
+#########
+add_library(
+		optional_ref
+		optional_ref/optional_ref.hh)
+
+set_target_properties(optional_ref PROPERTIES LINKER_LANGUAGE CXX)
+target_include_directories(optional_ref PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")

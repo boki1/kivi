@@ -9758,7 +9758,7 @@ namespace Catch {
                     else if( mode == "auto" )
                         config.useColour = UseColour::Auto;
                     else
-                        return ParserResult::runtimeError( "colour mode must be one of: auto, yes or no. '" + useColour + "' not recognised" );
+                        return ParserResult::runtimeError( "colour_type mode must be one of: auto, yes or no. '" + useColour + "' not recognised" );
                 return ParserResult::ok( ParseResultType::Matched );
             };
         auto const setWaitForKeypress = [&]( std::string const& keypress ) {
@@ -9870,7 +9870,7 @@ namespace Catch {
                 ["--rng-seed"]
                 ( "set a specific seed for random numbers" )
             | Opt( setColourUsage, "yes|no" )
-                ["--use-colour"]
+                ["--use-colour_type"]
                 ( "should output be colourised" )
             | Opt( config.libIdentify )
                 ["--libidentify"]
@@ -10127,10 +10127,10 @@ namespace {
                 case Colour::BrightWhite:   return setTextAttribute( FOREGROUND_INTENSITY | FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE );
                 case Colour::BrightYellow:  return setTextAttribute( FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN );
 
-                case Colour::Bright: CATCH_INTERNAL_ERROR( "not a colour" );
+                case Colour::Bright: CATCH_INTERNAL_ERROR( "not a colour_type" );
 
                 default:
-                    CATCH_ERROR( "Unknown colour requested" );
+                    CATCH_ERROR( "Unknown colour_type requested" );
             }
         }
 
@@ -10190,8 +10190,8 @@ namespace {
                 case Colour::BrightWhite:   return setColour( "[1;37m" );
                 case Colour::BrightYellow:  return setColour( "[1;33m" );
 
-                case Colour::Bright: CATCH_INTERNAL_ERROR( "not a colour" );
-                default: CATCH_INTERNAL_ERROR( "Unknown colour requested" );
+                case Colour::Bright: CATCH_INTERNAL_ERROR( "not a colour_type" );
+                default: CATCH_INTERNAL_ERROR( "Unknown colour_type requested" );
             }
         }
         static IColourImpl* instance() {

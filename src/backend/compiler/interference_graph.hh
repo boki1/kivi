@@ -1,24 +1,27 @@
 #ifndef KIVI_INTERFERENCE_GRAPH_HH
 #define KIVI_INTERFERENCE_GRAPH_HH
 
-#include "liveliness_analyzer.hh"
-#include "register.hh"
+#include <unordered_map>
+#include <vector>
+
+#include "liveness_analyzer.hh"
+#include "common.hh"
 
 namespace compiler
 {
-    class interference_graph
-    {
-    public:
-        using colour = int;
-    private:
-        //TODO: registers
-        liveness_analyzer m_liveness_analyzer;
-        std::vector <colour> m_colours;
-    public:
-        void add_element();
-        void build();
-        std::map<register_type, colour> paint();
-    };
+	class interference_graph
+	{
+	 public:
+		using colour_type = unsigned long int;
+	 private:
+		const std::vector<rregister>& registers;
+		liveness_analyzer m_liveness_analyzer;
+		std::vector<colour_type> m_colours;
+	 public:
+		void add_element();
+		void build();
+		std::unordered_map<rregister, colour_type> paint();
+	};
 }
 
 #endif //KIVI_INTERFERENCE_GRAPH_HH
