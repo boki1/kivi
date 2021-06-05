@@ -44,12 +44,22 @@ target_link_libraries(test__ir_gen PUBLIC test_main)
 add_test(NAME IR
         COMMAND test__ir_gen)
 
-############################## x86 Machine Target
+############################## x86_64 Machine Target
 
-add_executable(test__x86_machine_target backend/x86_machine_target.test.cc)
-target_link_libraries(test__x86_machine_target PUBLIC test_main)
-target_link_libraries(test__x86_machine_target PUBLIC kivi_compiler)
-target_link_libraries(test__x86_machine_target PUBLIC kivi_ir)
-target_link_libraries(test__x86_machine_target PUBLIC arch)
-add_test(NAME Machine_Target_x86
-        COMMAND test__x86_machine_target)
+add_executable(test__x86_64_machine_target backend/x86_64_machine_target.test.cc)
+target_link_libraries(test__x86_64_machine_target PUBLIC test_main)
+target_link_libraries(test__x86_64_machine_target PUBLIC kivi_compiler)
+target_link_libraries(test__x86_64_machine_target PUBLIC kivi_ir)
+target_link_libraries(test__x86_64_machine_target PUBLIC arch)
+add_test(NAME Machine_Target_x86_64
+        COMMAND test__x86_64_machine_target)
+
+
+############################ x86_64 Instruction Selection
+add_executable(test__x86_64_instruction_selection backend/x86_64_instruction_selection.cc)
+target_link_libraries(test__x86_64_instruction_selection PUBLIC test_main)
+target_link_libraries(test__x86_64_instruction_selection PUBLIC kivi_compiler)
+target_link_libraries(test__x86_64_instruction_selection PUBLIC kivi_ir)
+target_link_libraries(test__x86_64_instruction_selection PUBLIC arch)
+add_test(NAME Instruction_Selection_x86_64
+        COMMAND test__x86_64_instruction_selection)

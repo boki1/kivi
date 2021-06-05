@@ -35,8 +35,6 @@ class tac
 		Division,		///< Division
 		ModuloOperator, ///< ModuloOperator operator
 		Copy,			///< Assign a copy of another variable
-		Read,			///< Read from address
-		Write,			///< Write at address
 		Equals,			///< Whether two values are equal
 		IfNotZero,		///< Perform branch if not zero
 		FunctionCall,	///< Function call

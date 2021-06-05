@@ -2,6 +2,7 @@ add_library(kivi_compiler
         machine_target.hh
         emitter.hh
         instruction_selector.hh
+        instruction_selector.cc
         liveness_analyzer.hh
         interference_graph.hh
         interference_graph.cc

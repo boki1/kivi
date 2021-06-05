@@ -22,14 +22,14 @@ namespace compiler
 		/// @return The beginning of memory allocated
 		/// @note In case of failure word{0} is returned
 		/// @todo change word<T>
-		using stackmem_management_fptr = word<uint32_t> (*)(int);
+		using stackmem_management_fptr = word<uint64_t> (*)(int);
 
 		using instruction_set_type = std::vector<instruction>;
 		using register_set_type = std::vector<rregister>;
 
 		machine_target(const instruction_set_type& t_is,
 			const register_set_type& t_regs,
-			const std::unordered_map<ir::tac::type, instruction>& ir_to_native_mapping,
+			const std::unordered_map<ir::tac::type, std::vector<instruction>>& ir_to_native_mapping,
 			stackmem_management_fptr alloc,
 			stackmem_management_fptr drop
 		)
@@ -90,7 +90,7 @@ namespace compiler
 		{
 			return m_registers;
 		}
-		[[nodiscard]] const instruction_selector& selector() const
+		[[nodiscard]] instruction_selector& selector_mut()
 		{
 			return m_instruction_selector;
 		}

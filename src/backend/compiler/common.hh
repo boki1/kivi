@@ -36,15 +36,13 @@ namespace compiler
 	/// Machine target instruction abstraction
 	struct instruction
 	{
-		// TODO: word<T>
-		using operand_type = std::vector<std::variant<rregister, word<uint32_t>>>;
-
+		/// The mnemonic of the instruction
 		std::string_view name;
-		int bytes;
-		int opcode;
-		instruction::operand_type operands{};
-		instruction(const std::string_view& t_name, int t_bytes, int t_opcode, instruction::operand_type t_operand = {})
-			: name{ t_name }, bytes{ t_bytes }, opcode{ t_opcode }, operands{ move(t_operand) }
+
+		/// The expected number of operands
+		int operands;
+		instruction(const std::string_view& t_name, int t_operands = 0)
+			: name{ t_name }, operands{ t_operands }
 		{
 		}
 	};

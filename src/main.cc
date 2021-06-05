@@ -9,7 +9,7 @@
 #include <parser/parsing_context.hh>
 #include <compiler/emitter.hh>
 #include <arch/all.hh>
-#include <arch/x86/x86_machine_target.hh>
+#include <arch/x86_64/x86_64_machine_target.hh>
 
 void report(const std::string_view& error_message)
 {
@@ -49,7 +49,7 @@ int main(int argc, const char* argv[])
 	auto three_address_code = irgen_unit.fetch_output();
 
 	// COMPILING
-	compiler::emitter x86_emitter{ compiler::configure_target<compiler::x86>(), three_address_code };
+	compiler::emitter x86_emitter{ compiler::configure_target<compiler::x86_64>(), three_address_code };
 	if (x86_emitter.compile())
 		report("FAILURE: Error occurred during compilation");
 
