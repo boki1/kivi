@@ -55,6 +55,7 @@ set(KIVI_PARSER_FILES
         parser/parser.tab.cc
         parser/parser.tab.hh
         parser/lexer.tab.cc
+        parser/semantics.hh
         )
 
 

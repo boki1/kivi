@@ -199,7 +199,7 @@ class expression : public syntactic_structure
 	 * @brief Adds an operand in the operands vector of the expression
 	 * @param to_add  The new operand
 	 */
-	void add(expression&& to_add);
+	void add(expression &&to_add);
 
 	/**
 	 * @brief Combines the operands of the expressions into the first one
