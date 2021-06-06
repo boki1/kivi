@@ -75,7 +75,11 @@ namespace compiler
 		 */
 		bool select_instructions()
 		{
-			return m_strategy.selector_mut().select_for(m_three_address_code);
+			auto is_ok = m_strategy.selector_mut().select_for(m_three_address_code);
+			if (is_ok)
+				m_program = m_strategy.selector().fetch_selected_output();
+
+			return is_ok;
 		}
 
 		/**

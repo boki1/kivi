@@ -57,7 +57,7 @@ namespace printer
 			type_str = "Equality";
 			break;
 		case et::ModularDivision:
-			type_str = "ModuloOperator";
+			type_str = "Modulo";
 			break;
 		case et::Copy:
 			type_str = "Copy";
@@ -161,7 +161,7 @@ namespace printer
 	std::string
 	print(const sa::expression& expr, bool is_statement /* = false */) noexcept
 	{
-		// Iterators pointing to the first and last expression in `expr.operands()`
+		// Iterators pointing to the first and last expression in `expr.expected_actual_operands()`
 		switch (expr.get_type())
 		{
 		case et::Nop:

@@ -51,7 +51,7 @@ namespace intermediate_representation
 
 	tac* gu::tac_mod(const opers_type& operands)
 	{
-		return define_tac(tac{ tac_type::ModuloOperator, operands });
+		return define_tac(tac{ tac_type::Modulo, operands });
 	}
 
 	tac* gu::tac_copy(const opers_type& operands)

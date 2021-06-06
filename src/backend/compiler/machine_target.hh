@@ -29,7 +29,7 @@ namespace compiler
 
 		machine_target(const instruction_set_type& t_is,
 			const register_set_type& t_regs,
-			const std::unordered_map<ir::tac::type, std::vector<instruction>>& ir_to_native_mapping,
+			TAC_to_native_mapper ir_to_native_mapping,
 			stackmem_management_fptr alloc,
 			stackmem_management_fptr drop
 		)
@@ -44,11 +44,14 @@ namespace compiler
 
 	 private:
 
-		/// _Used_ instruction set of the machine target
+		/// _Used_ instruction set of the machine target const instruction_set_type& m_instruction_set;
 		const instruction_set_type& m_instruction_set;
 
 		/// Registers of the target machine
 		const register_set_type& m_registers;
+
+		/// Function ptr to a mapper which is responsible for mapping kivi TAC statements to native machine instructions
+		TAC_to_native_mapper m_mapper;
 
 		//!
 		//! Stack memory management operations
@@ -90,7 +93,10 @@ namespace compiler
 		{
 			return m_registers;
 		}
-		[[nodiscard]] instruction_selector& selector_mut() { return m_instruction_selector; }
+		[[nodiscard]] instruction_selector& selector_mut()
+		{
+			return m_instruction_selector;
+		}
 		[[nodiscard]] const instruction_selector& selector() const
 		{
 			return m_instruction_selector;

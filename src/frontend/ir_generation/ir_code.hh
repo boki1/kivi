@@ -19,8 +19,7 @@ namespace intermediate_representation
 	 public:
 		typedef tac* tac_ptr;             //< The type used for TAC chaining
 		typedef unsigned vregister_type; //< The indexes of the "fake" (virtual) registers
-		typedef std::vector<vregister_type>
-			operands_type; //< Used to represent all virtual register operands for the current TAC
+		typedef std::vector<vregister_type> operands_type; //< Used to represent all virtual register expected_actual_operands for the current TAC
 
 		/**
 		 * @brief Enumeration class containing all the three-address codes
@@ -33,7 +32,7 @@ namespace intermediate_representation
 			Negate, ///< Negation
 			Multiplication, ///< Multiplication
 			Division,        ///< Division
-			ModuloOperator, ///< ModuloOperator operator
+			Modulo, ///< Modulo operator
 			Copy,            ///< Assign a copy of another variable
 			Equals,            ///< Whether two values are equal
 			IfNotZero,        ///< Perform branch if not zero
@@ -49,7 +48,7 @@ namespace intermediate_representation
 		/// Reference to function's name (label)
 		std::string m_identifier{};
 
-		/// Offset
+		/// Value
 		int m_value{};
 
 		/// Label and mark whether it is a function
@@ -158,6 +157,7 @@ namespace intermediate_representation
 			return true;
 		}
 
+
 		void set_has_condition(bool has = true)
 		{
 			m_has_condition = has;
@@ -203,8 +203,19 @@ namespace intermediate_representation
 			return m_label.value_or(std::make_pair("[NO LABEL]", false)).first;
 		}
 
-		[[nodiscard]] bool has_label() const { return m_label.has_value(); }
-		[[nodiscard]] bool has_branching_label() const { return m_branching_label.has_value(); }
+		[[nodiscard]] bool is_function_label() const
+		{
+			return m_label.value_or(std::make_pair("[NO LABEL]", false)).second;
+		}
+
+		[[nodiscard]] bool has_label() const
+		{
+			return m_label.has_value();
+		}
+		[[nodiscard]] bool has_branching_label() const
+		{
+			return m_branching_label.has_value();
+		}
 	};
 } // namespace intermediate_representation
 

@@ -2,9 +2,10 @@
 #include <iostream>
 #include <string_view>
 
+#include <asm_printer/asm_printer.hh>
 #include <ast_printer/ast_printer.hh>
-#include <cli/cli.hh>
 #include <ir_printer/ir_printer.hh>
+#include <cli/cli.hh>
 #include <parser/parser.tab.hh>
 #include <parser/parsing_context.hh>
 #include <compiler/emitter.hh>
@@ -40,19 +41,18 @@ int main(int argc, const char* argv[])
 	// GENERATING INTERMEDIATE REPRESENTATION
 	intermediate_representation::generation_unit irgen_unit{};
 	irgen_unit.generate(ctx.functions());
-	irgen_unit.labelize();
+	auto TAC_sorted = irgen_unit.fetch_output();
 
 	if (cli::should_print(cli::pe::ir))
-	{
 		printer::print_ir(irgen_unit, std::cout);
-	}
 
-	auto three_address_code = irgen_unit.fetch_output();
 
 	// COMPILING
-	compiler::emitter x86_emitter{ compiler::configure_target<compiler::x86_64>(), three_address_code };
-	if (x86_emitter.compile())
-		report("FAILURE: Error occurred during compilation");
+	compiler::emitter x86_emitter{ compiler::configure_target<compiler::x86_64>(), TAC_sorted };
+	if (!x86_emitter.select_instructions())
+		report("FAILURE: Error during instruction selection");
+
+	printer::print_instruction_selection(std::cout, x86_emitter);
 
 	// Assembly generation
 	if (cli::should_print(cli::pe::asm_))

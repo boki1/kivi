@@ -136,13 +136,13 @@ class expression : public syntactic_structure
 	};
 
   private:
-	//! In the operands of the expressions are contained all associated
+	//! In the expected_actual_operands of the expressions are contained all associated
 	//! expressions which are required in order to successfully process "this"
 	//! expression. Important note is that the supported statements are also
 	//! represented as expression having (if one is present) their specific
 	//! peculiarity stored in specific way.
 
-	/// The operands associated with the concrete expression
+	/// The expected_actual_operands associated with the concrete expression
 	std::vector<expression> m_operands;
 
 	/// The value of the expression if it is a terminal(Identifier, String or Number)
@@ -190,19 +190,19 @@ class expression : public syntactic_structure
 	expression assign(expression &&rhs) &&;
 
 	/**
-	 * @brief Appends an operand in the front of the operands vector of the expression
+	 * @brief Appends an operand in the front of the expected_actual_operands vector of the expression
 	 * @param to_add The new operand
 	 */
 	void front_add(expression &&to_add);
 
 	/**
-	 * @brief Adds an operand in the operands vector of the expression
+	 * @brief Adds an operand in the expected_actual_operands vector of the expression
 	 * @param to_add  The new operand
 	 */
 	void add(expression&& to_add);
 
 	/**
-	 * @brief Combines the operands of the expressions into the first one
+	 * @brief Combines the expected_actual_operands of the expressions into the first one
 	 * @param other The other one
 	 */
 	void extend(expression &&other);

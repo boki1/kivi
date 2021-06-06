@@ -113,12 +113,10 @@ namespace intermediate_representation
 	generation_unit::generate(const std::vector<sa::function>& ctx_functions)
 	{
 		for (const auto& f: ctx_functions)
-		{
 			generate_function(f);
-		}
 	}
 
-	void
+	std::vector<tac*>
 	generation_unit::labelize()
 	{
 		struct lineinfo
@@ -130,6 +128,7 @@ namespace intermediate_representation
 
 		std::map<tac*, lineinfo> source_index{};
 		std::list<tac*> remaining_codes{};
+		std::vector<tac*> sorted;
 
 		auto add_label = [l = 0lu](lineinfo& d) mutable
 		{
@@ -185,8 +184,7 @@ namespace intermediate_representation
 
 				if (!code_idx.label.empty())
 					code_chain->labelize(code_idx.label);
-
-
+				sorted.push_back(code_chain);
 
 				if (code_chain->condition().has_value())
 				{
@@ -201,6 +199,20 @@ namespace intermediate_representation
 			}
 
 		}
+		return sorted;
+	}
+
+	[[nodiscard]] std::vector<tac>
+	generation_unit::fetch_output()
+	{
+		std::vector<tac> three_address_code;
+		three_address_code.reserve(m_tacs.size());
+
+		std::vector<tac::tac_ptr> sorted = labelize();
+		for (tac::tac_ptr TAC_ptr : sorted)
+			three_address_code.push_back(*TAC_ptr);
+
+		return three_address_code;
 	}
 
 }

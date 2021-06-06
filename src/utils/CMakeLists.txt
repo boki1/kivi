@@ -31,3 +31,16 @@ add_library(
 
 target_include_directories(ir_printer PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 target_link_libraries(ir_printer PRIVATE kivi_ir)
+
+###################### Assembly printer
+add_library(
+        asm_printer
+        asm_printer/asm_printer.cc
+        asm_printer/asm_printer.hh
+)
+
+target_include_directories(asm_printer PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+target_link_libraries(asm_printer PRIVATE kivi_ir)
+target_link_libraries(asm_printer PRIVATE optional_ref)
+target_link_libraries(asm_printer PRIVATE kivi_compiler)
+

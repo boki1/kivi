@@ -7,11 +7,7 @@ namespace compiler
 {
 	bool instruction_selector::select_for(const ir::tac& TAC)
 	{
-		auto type = TAC.get_type();
-		if (m_mapping.find(type) == m_mapping.end())
-			return false;
-
-		auto instructions = m_mapping.at(type);
+		auto instructions = m_mapper(TAC);
 		std::copy(instructions.begin(), instructions.end(), std::back_inserter(m_selected));
 		return true;
 	}
@@ -20,12 +16,10 @@ namespace compiler
 	{
 		m_selected.clear();
 		m_selected.reserve(TACs.size() + TACs.size() / 2);
-		bool selection_failed = false;
-		std::for_each(TACs.begin(), TACs.end(), [this, &selection_failed](const auto& TAC)
-		{
-		  selection_failed |= !select_for(TAC);
-		});
 
-		return !selection_failed;
+		return std::all_of(TACs.begin(), TACs.end(), [&](const ir::tac& TAC)
+		{
+		  return select_for(TAC);
+		});
 	}
 }

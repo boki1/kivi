@@ -92,9 +92,9 @@ SCENARIO("Perform instruction selection", "[x86_64_iselect]")
 			THEN("Check produced selection with expected values")
 			{
 				std::vector<compiler::instruction> expected{
-					{ "mov", 2 },
-					{ "mov", 2 },
-					{ "add", 2 },
+					compiler::instruction{ "mov" },
+					compiler::instruction{ "mov" },
+					compiler::instruction{ "add" },
 				};
 
 				REQUIRE(x64_emitter.select_instructions());
@@ -112,21 +112,21 @@ SCENARIO("Perform instruction selection", "[x86_64_iselect]")
 			THEN("The resulting assembly is evaluated")
 			{
 				std::vector<compiler::instruction> expected{
-					{ "mov", 2 },
-					{ "mov", 2 },
-					{ "mov", 2 },
-					{ "mov", 2 },
-					{ "neg", 1 },
-					{ "add", 2 },
-					{ "cmp", 2 },
-					{ "jnz", 1 },
-					{ "mov", 2 },
-					{ "mov", 2 },
-					{ "add", 2 },
-					{ "mov", 2 },
-					{ "add", 2 },
-					{ "nop" },
-					{ "ret", 1 },
+					compiler::instruction{ "mov" },
+					compiler::instruction{ "mov" },
+					compiler::instruction{ "mov" },
+					compiler::instruction{ "mov" },
+					compiler::instruction{ "neg" },
+					compiler::instruction{ "add" },
+					compiler::instruction{ "cmp" },
+					compiler::instruction{ "jnz" },
+					compiler::instruction{ "mov" },
+					compiler::instruction{ "mov" },
+					compiler::instruction{ "add" },
+					compiler::instruction{ "mov" },
+					compiler::instruction{ "add" },
+					compiler::instruction{ "nop" },
+					compiler::instruction{ "ret" },
 				};
 
 				REQUIRE(x64_emitter.select_instructions());

@@ -23,7 +23,7 @@ namespace intermediate_representation
 		typedef std::map<std::size_t, tac::vregister_type> variable_index_type;
 	 private:
 		/// The number of the next register
-		tac::vregister_type m_counter;
+		static inline tac::vregister_type m_counter = 0;
 
 		/// The previous virtual register
 		tac::vregister_type m_vreg{ ~0u };
@@ -40,11 +40,18 @@ namespace intermediate_representation
 	 public:
 
 		/// Complete manual construction
-		generation_context(tac::vregister_type c, tac** target, variable_index_type index = {})
-			: m_counter{ c },
-			  m_target{ target },
+		generation_context(tac::vregister_type reserved, tac** target, variable_index_type index = {})
+			: m_target{ target },
 			  m_map{ std::move(index) }
 		{
+			// Reserve `reserved` # of virtual registers for the parameters of the function
+			generation_context::m_counter += reserved;
+		}
+
+		/// "Phony" construction of generation context for use during the macro expansion in the backend
+		static auto create_dont_reserve(tac** target = nullptr) -> generation_unit::generation_context
+		{
+			return generation_unit::generation_context{ 0, target };
 		}
 
 	 public:

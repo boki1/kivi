@@ -23,7 +23,7 @@ I. Create mapping
 </div>
 
 <div id="second_note">
-> `imul` and `idiv` are signed operations, so a straight-forward optimization would be to check whether the operands are unsigned and if that is the case, to perform their unsigned alternatives (`mul` and `div` respectively)
+> `imul` and `idiv` are signed operations, so a straight-forward optimization would be to check whether the expected_actual_operands are unsigned and if that is the case, to perform their unsigned alternatives (`mul` and `div` respectively)
 </div>
 
 <div id="third_note">

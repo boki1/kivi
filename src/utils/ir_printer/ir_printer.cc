@@ -42,7 +42,7 @@ namespace printer
 		case ir_type::Division:
 			os << "div";
 			break;
-		case ir_type::ModuloOperator:
+		case ir_type::Modulo:
 			os << "mod";
 			break;
 		case ir_type::Equals:
@@ -69,7 +69,10 @@ namespace printer
 		switch (tac_code.get_type())
 		{
 		case ir::tac::type::Init:
-			os << " \"" << tac_code.identifier() << "\" " << tac_code.value();
+			if (tac_code.identifier().empty())
+				os << " #" << tac_code.value();
+			else
+				os << " \"" << tac_code.identifier() << "\"";
 			break;
 		default:;
 			/* nothing */
@@ -132,5 +135,7 @@ namespace printer
 			}
 
 		}
+
+		os << '\n';
 	}
 }

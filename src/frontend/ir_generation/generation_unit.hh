@@ -65,7 +65,15 @@ namespace intermediate_representation
 		void generate_conditional(const syntax_analyzer::expression& expr, generation_context& gtx);
 
 	 public:
-		void labelize();
+
+		/**
+		 * @brief Put labels where required
+		 * @return Sorted sequence of statements
+		 */
+		[[nodiscard]] std::vector<tac*> labelize();
+
+		[[nodiscard]]
+		std::vector<tac> fetch_output() ;
 
 	 public: // TAC concrete constructors (codes.cc)
 		[[nodiscard]] tac* tac_nop();
@@ -83,7 +91,7 @@ namespace intermediate_representation
 		[[nodiscard]] tac* tac_goto(tac::tac_ptr branch);
 
 		/*
-		 * The definitions of the three address code instructions and their operands
+		 * The definitions of the three address code instructions and their expected_actual_operands
 		 */
 		tac*
 		define_tac(const tac& code);
@@ -97,17 +105,6 @@ namespace intermediate_representation
 		void
 		generate(const std::vector<syntax_analyzer::function>& ctx_functions);
 
-		[[nodiscard]]
-		std::vector<tac> fetch_output() const
-		{
-			std::vector<tac> three_address_code{};
-			three_address_code.reserve(m_tacs.size());
-			std::transform(m_tacs.begin(), m_tacs.end(), std::back_inserter(three_address_code), [](const auto& ptr)
-			{
-			  return *ptr;
-			});
-			return three_address_code;
-		}
 
 	 public: // Getters
 		[[nodiscard]] const std::vector<unique_ptr<tac>>&

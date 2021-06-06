@@ -16,12 +16,12 @@ namespace compiler
 	class instruction_selector
 	{
 	 private:
-		const std::unordered_map<ir::tac::type, std::vector<instruction>>& m_mapping;
+		TAC_to_native_mapper m_mapper;
 		std::vector<instruction> m_selected{};
 
 	 public:
-		explicit instruction_selector(const std::unordered_map<ir::tac::type, std::vector<instruction>>& t_mapping)
-			: m_mapping{ t_mapping }
+		explicit instruction_selector(TAC_to_native_mapper t_mapper)
+			: m_mapper{ t_mapper }
 		{
 		}
 
@@ -44,7 +44,7 @@ namespace compiler
 		 * @brief Acquire the result of the `select_for` call
 		 * @return All selected instructions
 		 */
-		const std::vector<instruction>& fetch_selected_output() const
+		[[nodiscard]] const std::vector<instruction>& fetch_selected_output() const
 		{
 			return m_selected;
 		}
