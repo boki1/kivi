@@ -26,8 +26,6 @@ namespace compiler
 		  selection_failed |= !select_for(TAC);
 		});
 
-		/// As of now, there is no way that the amount of input instruction could be bigger than the resulting
-		/// instructions, so this is what we check to find whether the instruction_selector has selection_failed miserably.
-		return !selection_failed && m_selected.size() <= TACs.size();
+		return !selection_failed;
 	}
 }

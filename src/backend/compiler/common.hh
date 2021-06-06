@@ -3,6 +3,7 @@
 
 #include <string_view>
 #include <variant>
+#include <ostream>
 
 namespace compiler
 {
@@ -44,6 +45,17 @@ namespace compiler
 		instruction(const std::string_view& t_name, int t_operands = 0)
 			: name{ t_name }, operands{ t_operands }
 		{
+		}
+
+		bool operator==(const instruction& rhs) const
+		{
+			return name == rhs.name && operands == rhs.operands;
+		}
+
+		friend std::ostream& operator<<(std::ostream& os, const instruction& instruction)
+		{
+			os << "{ name: " << instruction.name << ", operands: " << instruction.operands << "}";
+			return os;
 		}
 	};
 }

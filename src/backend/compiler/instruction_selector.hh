@@ -44,7 +44,7 @@ namespace compiler
 		 * @brief Acquire the result of the `select_for` call
 		 * @return All selected instructions
 		 */
-		const std::vector<instruction>& fetch_selected_output()
+		const std::vector<instruction>& fetch_selected_output() const
 		{
 			return m_selected;
 		}

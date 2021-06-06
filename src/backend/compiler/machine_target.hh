@@ -94,6 +94,10 @@ namespace compiler
 		{
 			return m_instruction_selector;
 		}
+		[[nodiscard]] const instruction_selector& selector() const
+		{
+			return m_instruction_selector;
+		}
 		[[nodiscard]] const register_allocator& rallocator() const
 		{
 			return m_register_allocator;

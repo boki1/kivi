@@ -22,7 +22,15 @@ namespace compiler
 			{ TAC::Nop, {{ "nop" }}},
 			{ TAC::Init, {{ "mov", 2 }}},
 			{ TAC::Equals, {{ "cmp", 2 }}},
-			{ TAC::Copy, {{ "mov", 2 }}}
+			{ TAC::Copy, {{ "mov", 2 }}},
+			{ TAC::Return, {{ "ret", 1 }}},
+			{ TAC::Add, {{ "add", 2 }}},
+			{ TAC::Negate, {{ "neg", 1 }}},
+			{ TAC::Division, {{ "idiv", 2 }}},
+			{ TAC::Multiplication, {{ "imul", 2 }}},
+			{ TAC::ModuloOperator, {{ "idiv", 2 }}},
+			{ TAC::FunctionCall, {{ "call", 1 }}},
+			{ TAC::IfNotZero, {{ "cmp", 2 }, { "jnz", 1 }}}
 		};
 
 		template<typename T>

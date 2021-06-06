@@ -29,3 +29,65 @@ I. Create mapping
 <div id="third_note">
 > there is not modular division instruction, but `div` (and `idiv`) store the remainder as well so we can get it from there
 </div>
+
+# Example
+-------------
+
+KIVI IR:
+```
+fib:
+init RO 0; f1
+init R1 1; f2
+init R2 0; fsum
+init R3 0; counter
+
+while_begin:
+neg R3, R4; R4 = -R3
+add R4, R4, 10; R4 = R4 + 10
+ifnz R4, end
+
+copy R1, R0
+copy R2, R1
+add R2, R1, R0
+add R3, R3, 1
+print R2
+goto while_begin
+
+end:
+ret
+```
+
+Expected assembly:
+```x86
+fib: 			; (int, int)
+
+push %rbp		; prologue
+mov %rsp, %rbp		;
+
+mov %r8, 0		; f1
+mov %r9, 1		; f2
+mov %r10, 0		; fsum
+mov %r11, 0		; counter
+
+while_begin:
+
+mov %r12, %r11		; (-counter) + 10 == 0 ?
+neg %r12		; continue :
+add %r12, 10		; goto end
+jnz end
+
+mov %r8, %r9		; f1 = f2
+mov %r9, %r10		; f2 = fsum
+add %r10, %r9		; fsum = f1 + f2
+add %r11, 1		; counter ++
+print %r10		; do something
+
+goto while_begin
+
+end:			; epilogue
+mov %rbp, %rsp
+pop %rbp
+leave
+ret
+
+```
