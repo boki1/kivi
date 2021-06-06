@@ -39,20 +39,20 @@ namespace intermediate_representation
 		return define_tac(tac{ tac_type::Negate, operands });
 	}
 
-    tac* gu::tac_mult(const opers_type& operands)
-    {
-        return define_tac(tac{ tac_type::Multiplication, operands });
-    }
+	tac* gu::tac_mult(const opers_type& operands)
+	{
+		return define_tac(tac{ tac_type::Multiplication, operands });
+	}
 
-    tac* gu::tac_div(const opers_type& operands)
-    {
-        return define_tac(tac{ tac_type::Division, operands });
-    }
+	tac* gu::tac_div(const opers_type& operands)
+	{
+		return define_tac(tac{ tac_type::Division, operands });
+	}
 
-    tac* gu::tac_mod(const opers_type& operands)
-    {
-        return define_tac(tac{tac_type::ModuloOperator, operands });
-    }
+	tac* gu::tac_mod(const opers_type& operands)
+	{
+		return define_tac(tac{ tac_type::ModuloOperator, operands });
+	}
 
 	tac* gu::tac_copy(const opers_type& operands)
 	{
@@ -79,6 +79,11 @@ namespace intermediate_representation
 	tac* gu::tac_return(const opers_type& operands)
 	{
 		return define_tac(tac{ tac_type::Return, operands });
+	}
+
+	tac* gu::tac_goto(tac::tac_ptr branch)
+	{
+		return define_tac(tac{ branch });
 	}
 
 } // namespace intermediate_representation

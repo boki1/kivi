@@ -46,10 +46,6 @@ namespace intermediate_representation
 
 	 public:
 
-		/// Default construction only required
-
-	 public:
-
 		/// Instantiates a context for the given function and returns it
 		generation_unit::generation_context
 		prepare_context(const syntax_analyzer::function& function);
@@ -68,6 +64,9 @@ namespace intermediate_representation
 
 		void generate_conditional(const syntax_analyzer::expression& expr, generation_context& gtx);
 
+	 public:
+		void labelize();
+
 	 public: // TAC concrete constructors (codes.cc)
 		[[nodiscard]] tac* tac_nop();
 		[[nodiscard]] tac* tac_init(tac::vregister_type value, const std::string& ident, unsigned operand);
@@ -81,6 +80,7 @@ namespace intermediate_representation
 		[[nodiscard]] tac* tac_ifnz(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_fcall(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_return(const tac::operands_type& operands);
+		[[nodiscard]] tac* tac_goto(tac::tac_ptr branch);
 
 		/*
 		 * The definitions of the three address code instructions and their operands

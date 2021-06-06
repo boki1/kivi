@@ -40,11 +40,24 @@ namespace compiler
 		/// The mnemonic of the instruction
 		std::string_view name;
 
+		/// Label if one is present
+		std::optional<std::string_view> label;
+		std::optional<bool> is_fun;
+
 		/// The expected number of operands
 		int operands;
-		instruction(const std::string_view& t_name, int t_operands = 0)
-			: name{ t_name }, operands{ t_operands }
+		instruction(const std::string_view& t_name,
+			int t_operands = 0,
+			const std::optional<std::string_view> t_label = {},
+			std::optional<bool> t_is_fun = { false })
+			: name{ t_name }, operands{ t_operands }, label{ t_label }, is_fun{ t_is_fun }
 		{
+		}
+
+		void put_label(const std::string_view& t_label, bool t_is_fun)
+		{
+			label.emplace(t_label);
+			is_fun.emplace(t_is_fun);
 		}
 
 		bool operator==(const instruction& rhs) const

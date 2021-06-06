@@ -78,46 +78,21 @@ namespace printer
 
 	void print_ir(intermediate_representation::generation_unit& gunit, std::ostream& os)
 	{
-		struct data
+		std::unordered_map<ir::tac*, bool> performed;
+		std::list<ir::tac*> remaining_codes;
+
+		std::transform(gunit.entry_points().begin(), gunit.entry_points().end(), std::back_inserter(remaining_codes), [&performed](const auto& entry)
 		{
-			std::vector<std::string> labels;
-			bool is_done = false;
-			bool is_referenced = false;
-		};
+		  performed.insert(std::make_pair(entry.second, false));
+		  return entry.second;
+		});
 
-		std::map<ir::tac*, data> source_index{};
-		std::list<ir::tac*> remaining_codes{};
-
-		auto add_label = [l = 0lu](data& d) mutable
+		for (const auto& TAC: gunit.tacs())
 		{
-		  d.labels.push_back('L' + std::to_string(l++));
-		};
-
-		for (const auto& entry_point : gunit.entry_points())
-		{
-			remaining_codes.push_back(entry_point.second);
-			source_index[entry_point.second].labels.push_back(CYAN_COLOR + entry_point.first);
-		}
-
-		for (const auto& tac: gunit.tacs())
-		{
-			if (tac->next())
-			{
-				auto& code_idx = source_index[tac->next()];
-
-				if (code_idx.labels.empty() && code_idx.is_referenced)
-					add_label(code_idx);
-
-				code_idx.is_referenced = true;
-			}
-
-			if (tac->condition().has_value())
-			{
-				auto& code_idx = source_index[tac->condition().value()];
-
-				if (code_idx.labels.empty())
-					add_label(code_idx);
-			}
+			if (TAC->next())
+				performed.insert_or_assign(TAC->next(), false);
+			if (TAC->condition().has_value())
+				performed.insert_or_assign(TAC->condition_ptr(), false);
 		}
 
 		while (!remaining_codes.empty())
@@ -126,37 +101,32 @@ namespace printer
 			remaining_codes.pop_front();
 
 			bool jmp = false;
-
 			while (code_chain)
 			{
-				auto& code_idx = source_index[code_chain];
-
-				if (code_idx.is_done)
+				auto& index = performed[code_chain];
+				if (index)
 				{
 					if (jmp)
-						os << PURPLE_COLOR << "  jmp   " << WHITE_COLOR << code_idx.labels.front() << '\n';
+						os << PURPLE_COLOR << "  jmp  " << WHITE_COLOR << code_chain->label() << '\n';
 					break;
 				}
+				index = true;
 
-				code_idx.is_done = true;
+				if (code_chain->has_label())
+					os << GREEN_COLOR << code_chain->label() << ":\n" << WHITE_COLOR;
 
-				for (const auto& label: code_idx.labels)
-					os << GREEN_COLOR << label << ":\n" << WHITE_COLOR;
-
-				// Concrete printing function
+				// Concrete printer
 				print_ir(*code_chain, os);
 
 				if (code_chain->condition().has_value())
 				{
-					auto& branch_stats = source_index.at(code_chain->condition().value());
-					os << PURPLE_COLOR << ", jmp " << WHITE_COLOR << branch_stats.labels.front();
-					if (!branch_stats.is_done)
-					{
-						remaining_codes.push_front(code_chain->condition().value());
-					}
+					os << PURPLE_COLOR << ", goto " << WHITE_COLOR << code_chain->branching_label();
+					auto& performed_branch = performed.at(code_chain->condition_ptr());
+					if (!performed_branch)
+						remaining_codes.push_back(code_chain->condition_ptr());
 				}
-				os << '\n';
 
+				os << '\n';
 				code_chain = code_chain->next();
 				jmp = true;
 			}

@@ -90,10 +90,7 @@ namespace compiler
 		{
 			return m_registers;
 		}
-		[[nodiscard]] instruction_selector& selector_mut()
-		{
-			return m_instruction_selector;
-		}
+		[[nodiscard]] instruction_selector& selector_mut() { return m_instruction_selector; }
 		[[nodiscard]] const instruction_selector& selector() const
 		{
 			return m_instruction_selector;

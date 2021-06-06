@@ -84,7 +84,7 @@ print %r10		; do something
 
 goto while_begin
 
-end:			; epilogue
+end:			; epiloguep
 mov %rbp, %rsp
 pop %rbp
 leave

@@ -40,6 +40,7 @@ int main(int argc, const char* argv[])
 	// GENERATING INTERMEDIATE REPRESENTATION
 	intermediate_representation::generation_unit irgen_unit{};
 	irgen_unit.generate(ctx.functions());
+	irgen_unit.labelize();
 
 	if (cli::should_print(cli::pe::ir))
 	{

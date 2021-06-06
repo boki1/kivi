@@ -36,6 +36,11 @@ namespace intermediate_representation
 	tac::tac(const std::string& i, const operands_type& operands) : m_identifier(), m_operands(operands)
 	{
 	}
+
+	tac::tac(tac::tac_ptr branch)
+		: tac{ type::Goto, {}, {}, {}, {}, branch }
+	{
+	}
 }
 
 

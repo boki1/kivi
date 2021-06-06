@@ -8,7 +8,7 @@ add_library(kivi_compiler
         interference_graph.cc
         register_allocator.hh
         liveness_analyzer.cc
-        common.hh)
+        common.hh emitter.cc)
 
 target_link_libraries(kivi_compiler PRIVATE kivi_ir)
 target_link_libraries(kivi_compiler PRIVATE optional_ref)
