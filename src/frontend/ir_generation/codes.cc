@@ -81,9 +81,9 @@ namespace intermediate_representation
 		return define_tac(tac{ tac_type::Return, operands });
 	}
 
-	tac* gu::tac_goto(tac::tac_ptr branch)
+	tac* gu::tac_goto(const std::string& branch_label)
 	{
-		return define_tac(tac{ branch });
+		return define_tac(tac{ branch_label });
 	}
 
 } // namespace intermediate_representation

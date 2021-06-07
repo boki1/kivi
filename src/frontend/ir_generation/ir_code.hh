@@ -64,7 +64,9 @@ namespace intermediate_representation
 		/// Current workaround: Store an additional boolean to denote whether m_conditional is used
 		tac_ptr m_condition{ nullptr };
 		bool m_has_condition{ false };
-		std::optional<std::string_view> m_branching_label;
+
+		/// Branch off to ...
+		std::optional<std::string> m_branching_label;
 
 		/// Contains all virtual registers used
 		tac::operands_type m_operands{};
@@ -89,7 +91,7 @@ namespace intermediate_representation
 		tac(const tac_ptr& branch, const tac::operands_type& operands);
 
 		/// Goto _only_ construction
-		explicit tac(tac_ptr branch);
+		explicit tac(const std::string& branch_label);
 
 		/// Nop construction
 		explicit tac(const tac::operands_type& operands);
@@ -157,7 +159,6 @@ namespace intermediate_representation
 			return true;
 		}
 
-
 		void set_has_condition(bool has = true)
 		{
 			m_has_condition = has;
@@ -193,7 +194,7 @@ namespace intermediate_representation
 			m_branching_label.emplace(t_label);
 		}
 
-		[[nodiscard]] std::string_view branching_label() const
+		[[nodiscard]] std::string branching_label() const
 		{
 			return m_branching_label.value_or("[NO_LABEL]");
 		}

@@ -37,11 +37,10 @@ namespace intermediate_representation
 	{
 	}
 
-	tac::tac(tac::tac_ptr branch)
-		: tac{ type::Goto, {}, {}, {}, {}, branch }
+	tac::tac(const std::string& branch_label)
+		: m_type{ tac::type::Goto }, m_branching_label{ branch_label }
 	{
 	}
-
 
 }
 

@@ -36,7 +36,7 @@ namespace compiler
 				break;
 
 			case TAC_type::Equals:
-				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[0], TAC.operands()[1] });
+				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[1], TAC.operands()[2] });
 				break;
 
 			case TAC_type::Negate:
@@ -117,7 +117,7 @@ namespace compiler
 				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[0] });
 				result.back().add_int_literal(0);
 				result.emplace_back("jnz", 2, std::vector{ TAC.operands()[0] });
-				result.back().add_jmp_label(TAC.branching_label());
+				result.back().add_jmp_label(std::string{ TAC.branching_label() });
 				break;
 
 			case TAC_type::FunctionCall:
@@ -125,8 +125,8 @@ namespace compiler
 				break;
 
 			case TAC_type::Goto:
-				// Unreachable
-				result.emplace_back("goto ...");
+				result.emplace_back("jmp");
+				result.back().add_jmp_label(std::string{ TAC.branching_label() });
 				break;
 			}
 

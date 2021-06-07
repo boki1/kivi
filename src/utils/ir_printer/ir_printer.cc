@@ -57,6 +57,9 @@ namespace printer
 		case ir_type::Return:
 			os << "ret";
 			break;
+		case ir_type::Goto:
+			os << "goto\t" << WHITE_COLOR << tac_code.branching_label();
+			break;
 		}
 
 		os << "\t" << WHITE_COLOR;
@@ -110,7 +113,7 @@ namespace printer
 				if (index)
 				{
 					if (jmp)
-						os << PURPLE_COLOR << "  jmp  " << WHITE_COLOR << code_chain->label() << '\n';
+						os << PURPLE_COLOR << "  goto  " << WHITE_COLOR << code_chain->label() << '\n';
 					break;
 				}
 				index = true;

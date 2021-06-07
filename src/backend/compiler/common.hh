@@ -91,7 +91,7 @@ namespace compiler
 		{
 			int_literal.emplace(lit);
 		}
-		void add_jmp_label(const std::string_view& t_label)
+		void add_jmp_label(const std::string& t_label)
 		{
 			jmp_label.emplace(t_label);
 		}

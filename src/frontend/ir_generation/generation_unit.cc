@@ -176,7 +176,11 @@ namespace intermediate_representation
 				if (code_idx.is_done)
 				{
 					if (jmp)
-						code_chain->place_branching_label(code_idx.label);
+					{
+//						code_chain->place_branching_label(code_idx.label);
+						auto unconditional_goto = tac_goto(std::string{ code_idx.label });
+						remaining_codes.push_back(unconditional_goto);
+					}
 					break;
 				}
 

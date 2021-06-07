@@ -23,9 +23,10 @@ namespace printer
 			if (i.label.has_value())
 			{
 				auto &[label_name, is_fun] = i.label.value();
-				os << (is_fun ? PURPLE : CYAN) << label_name << WHITE << ":\n";
+				if (!label_name.empty())
+					os << (is_fun ? PURPLE : CYAN) << label_name << WHITE << ":\n";
 			}
-			
+
 			os << GREEN << '\t' << i.name << WHITE << "  ";
 
 			for (const auto& v: i.virtual_operands)

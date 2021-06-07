@@ -88,7 +88,7 @@ namespace intermediate_representation
 		[[nodiscard]] tac* tac_ifnz(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_fcall(const tac::operands_type& operands);
 		[[nodiscard]] tac* tac_return(const tac::operands_type& operands);
-		[[nodiscard]] tac* tac_goto(tac::tac_ptr branch);
+		[[nodiscard]] tac* tac_goto(const std::string& branch_label);
 
 		/*
 		 * The definitions of the three address code instructions and their expected_actual_operands
