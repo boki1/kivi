@@ -52,7 +52,7 @@ namespace intermediate_representation
 		int m_value{};
 
 		/// Label and mark whether it is a function
-		std::optional<std::pair<std::string_view, bool>> m_label;
+		std::optional<std::pair<std::string, bool>> m_label;
 
 		/// Pointer to next statement in the chain
 		/// The end is marked with nullptr
@@ -66,7 +66,7 @@ namespace intermediate_representation
 		bool m_has_condition{ false };
 
 		/// Branch off to ...
-		std::optional<std::string> m_branching_label;
+		std::optional<std::string> m_branching_label{};
 
 		/// Contains all virtual registers used
 		tac::operands_type m_operands{};
@@ -107,7 +107,7 @@ namespace intermediate_representation
 			return m_identifier;
 		}
 
-		[[nodiscard]] const int value() const
+		[[nodiscard]] int value() const
 		{
 			return m_value;
 		}
@@ -186,12 +186,13 @@ namespace intermediate_representation
 			return m_operands;
 		}
 
-		void place_branching_label(const std::string_view& t_label)
+		void place_branching_label(const std::string& t_label)
 		{
-			if (get_type() != type::IfNotZero || m_branching_label.has_value())
+			if (m_branching_label.has_value())
 				return;
 
-			m_branching_label.emplace(t_label);
+			auto new_branching_label = std::make_optional(t_label);
+			m_branching_label.swap(new_branching_label);
 		}
 
 		[[nodiscard]] std::string branching_label() const
@@ -199,9 +200,9 @@ namespace intermediate_representation
 			return m_branching_label.value_or("[NO_LABEL]");
 		}
 
-		[[nodiscard]] std::string_view label() const
+		[[nodiscard]] std::string label() const
 		{
-			return m_label.value_or(std::make_pair("[NO LABEL]", false)).first;
+			return std::string{ m_label.value_or(std::make_pair("[NO LABEL]", false)).first };
 		}
 
 		[[nodiscard]] bool is_function_label() const

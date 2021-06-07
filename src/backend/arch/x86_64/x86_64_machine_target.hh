@@ -46,6 +46,7 @@ namespace compiler
 
 			case TAC_type::Return:
 				result.emplace_back("ret", 0, TAC.operands());
+				break;
 
 			case TAC_type::Add:
 				/// TAC: add R0, R1, R2
@@ -117,7 +118,7 @@ namespace compiler
 				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[0] });
 				result.back().add_int_literal(0);
 				result.emplace_back("jnz", 2, std::vector{ TAC.operands()[0] });
-				result.back().add_jmp_label(std::string{ TAC.branching_label() });
+				result.back().add_jmp_label(TAC.branching_label());
 				break;
 
 			case TAC_type::FunctionCall:
@@ -126,12 +127,12 @@ namespace compiler
 
 			case TAC_type::Goto:
 				result.emplace_back("jmp");
-				result.back().add_jmp_label(std::string{ TAC.branching_label() });
+				result.back().add_jmp_label(TAC.branching_label());
 				break;
 			}
 
 			if (TAC.has_label())
-				result.front().put_label(std::string{ TAC.label() }, TAC.is_function_label());
+				result.front().put_label(TAC.label(), TAC.is_function_label());
 
 			return result;
 		}

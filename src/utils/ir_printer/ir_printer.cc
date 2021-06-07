@@ -1,5 +1,6 @@
 #include <iostream>
 #include <list>
+#include <unordered_map>
 
 #include <ir_generation/ir_code.hh>
 

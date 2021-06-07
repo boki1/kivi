@@ -60,10 +60,10 @@ namespace compiler
 		std::optional<int> int_literal{};
 
 		/// Jump label
-		std::optional<std::string_view> jmp_label{};
+		std::optional<std::string> jmp_label{};
 
 		/// Predefined virtual-actual register mappings
-		std::unordered_map<ir::tac::vregister_type, std::string_view> precolored;
+		std::unordered_map<ir::tac::vregister_type, std::string> precolored;
 
 		/// Actual expected_actual_operands
 		std::vector<std::string_view> actual_operands;
@@ -89,14 +89,21 @@ namespace compiler
 
 		void add_int_literal(int lit)
 		{
+			if (int_literal.has_value())
+				return;
 			int_literal.emplace(lit);
 		}
+
 		void add_jmp_label(const std::string& t_label)
 		{
-			jmp_label.emplace(t_label);
+			if (jmp_label.has_value())
+				return;
+
+			auto new_jmp_label = std::make_optional(t_label);
+			jmp_label.swap(new_jmp_label);
 		}
 
-		bool precolor(ir::tac::vregister_type vregister, const std::string_view& color)
+		bool precolor(ir::tac::vregister_type vregister, const std::string& color)
 		{
 			if (precolored.find(vregister) != precolored.end())
 				return false;
