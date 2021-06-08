@@ -16,9 +16,17 @@ namespace printer
 {
 	void print_instruction_selection(std::ostream& os, const compiler::emitter& emitter)
 	{
+		if (!emitter.debug().functions.empty())
+		{
+			os << RED << "Stored functions\n\n" << WHITE;
+			for (const auto &[reg, fun]: emitter.debug().functions)
+				os << fun << " is \"stored\" in" << reg << '\n';
+			os << '\n';
+		}
+
 		os << ORANGE << "After instruction selection\n\n" << WHITE;
 
-		for (const auto& i :emitter.program())
+		for (const auto& i :emitter.debug().after_instruction_selection)
 		{
 			if (i.label.has_value())
 			{
@@ -41,7 +49,9 @@ namespace printer
 			{
 				os << RED << "\t; where";
 				for (const auto &[key, value] : i.precolored)
-					os << " R" << key << " is predefined as " << value;
+				{
+					os << " R" << key << " is predefined as %" << value << ';';
+				}
 			}
 			os << WHITE << '\n';
 		}

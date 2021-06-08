@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./tools/clean.sh
+# ./tools/clean.sh
 
 mkdir -p build
 cd build

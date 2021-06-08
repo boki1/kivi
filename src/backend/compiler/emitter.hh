@@ -6,6 +6,7 @@
 #include <vector>
 #include <sstream>
 #include <fstream>
+#include <unordered_map>
 
 #include "machine_target.hh"
 
@@ -31,12 +32,19 @@ namespace compiler
 		/// Program
 		std::vector<instruction> m_program{};
 
+		/// Additional info for debugging during development
+		struct meta
+		{
+			std::unordered_map<ir::tac::vregister_type, std::string_view> functions;
+			std::vector<instruction> after_instruction_selection;
+		} debug_meta;
+
 		/// Input program in IR form
 		const std::vector<ir::tac>& m_three_address_code;
 
 	 public:
 		explicit emitter(machine_target&& target, const std::vector<ir::tac>& t_tacs, std::string output_file = "a.asm")
-			: m_strategy{ move(target) }, m_output_file{ std::move(output_file) }, m_three_address_code{ t_tacs }
+			: m_strategy{ move(target) }, m_output_file{ std::move(output_file) }, m_three_address_code{ t_tacs }, debug_meta{}
 		{
 		}
 
@@ -75,11 +83,13 @@ namespace compiler
 		 */
 		bool select_instructions()
 		{
-			auto is_ok = m_strategy.selector_mut().select_for(m_three_address_code);
-			if (is_ok)
-				m_program = m_strategy.selector().fetch_selected_output();
+			m_strategy.selector_mut().select_for(m_three_address_code);
+			const auto[program, functions] = m_strategy.selector().fetch_selected_output();
 
-			return is_ok;
+			debug_meta.after_instruction_selection = program;
+			debug_meta.functions = functions;
+
+			return true;
 		}
 
 		/**
@@ -119,6 +129,10 @@ namespace compiler
 		const std::vector<ir::tac>& three_address_code() const
 		{
 			return m_three_address_code;
+		}
+		const auto& debug() const
+		{
+			return debug_meta;
 		}
 	};
 

@@ -1,6 +1,9 @@
 #ifndef KIVI_SRC_BACKEND_ARCH_X86_X86_MACHINE_TARGET_HH_
 #define KIVI_SRC_BACKEND_ARCH_X86_X86_MACHINE_TARGET_HH_
 
+#include <stack>
+#include <cassert>
+
 #include <compiler/machine_target.hh>
 #include <arch/all.hh>
 #include <ir_generation/generation_context.hh>
@@ -12,21 +15,94 @@ namespace compiler
 	namespace x86_machine_target
 	{
 
+		// TODO: DO we need this??
 		static const machine_target::instruction_set_type x86_is{};
 		static const machine_target::register_set_type x86_regs{};
+
+		// These two are exptected to be set when inserting the prologue of the callee and to be used by the epilogue as well
+		std::optional<ir::tac::vregister_type> Rrbp_opt;
+		std::optional<ir::tac::vregister_type> Rrsp_opt;
 
 		//! TODO:
 		//! In order to provide minimal amount of optimization during the instruction selection stage, add an additional
 		//! "rule" which is responsible for checking whether a lighter instruction may be used (e.g. when adding 1, prefer inc over add).
 
-		std::vector<instruction> x86_map(const ir::tac& TAC)
+		std::vector<instruction> x86_map(const ir::tac& TAC,
+			const std::unordered_map<ir::tac::vregister_type, std::string_view>& functions)
 		{
 			std::vector<instruction> result;
 			result.reserve(1);
 
 			auto TAC_gencontext = ir::generation_unit::generation_context::create_dont_reserve();
 			auto new_vreg = [&TAC_gencontext]() -> ir::tac::vregister_type
-			{ return TAC_gencontext.increase_counter(); };
+			{
+			  return TAC_gencontext.increase_counter();
+			};
+
+			if (TAC.is_function_label()) //< Put function prologue
+			{
+				Rrbp_opt.reset();
+				Rrsp_opt.reset();
+
+				Rrbp_opt = std::make_optional(ir::tac::vregister_type{ new_vreg() });
+				Rrsp_opt = std::make_optional(ir::tac::vregister_type{ new_vreg() });
+
+				// We can safely call .value() since we just put value in it
+				const auto& Rrbp = Rrbp_opt.value();
+				const auto& Rrsp = Rrsp_opt.value();
+
+				result.emplace_back("push", 1, std::vector{ Rrbp })
+					.precolor(Rrbp, "rbp");
+				result.emplace_back("mov", 2, std::vector{ Rrbp, Rrsp })
+					.precolor(Rrbp, "rbp")
+					.precolor(Rrsp, "rsp");
+			}
+
+			size_t current_register = 0ul;
+
+			auto load_params =
+				[&TAC_gencontext, &result, &new_vreg, &current_register](const auto& rev_start,
+					const auto& rev_finish) mutable
+				{
+				  static std::array<std::string, 6> registers{ "rdi", "rsi", "rdx", "rcx", "r8", "r9" };
+				  std::stack<std::pair<std::string, ir::tac::vregister_type>> stored;
+
+				  // Push parameters in reverse order
+				  for (auto it = rev_start; it != rev_finish; ++it)
+				  {
+					  ir::tac::vregister_type arg = *it;
+
+					  if (current_register >= 6)
+					  {
+						  // TODO: From memory
+						  result.emplace_back("mov", 2, std::vector{ ~0u, arg });
+					  }
+					  else
+					  {
+						  // push %reg
+						  // mov %reg, paramN
+						  auto Rnew = new_vreg();
+						  const auto& carrier_reg = registers.at(current_register);
+						  result.emplace_back("push", 1, std::vector{ Rnew }).precolor(Rnew, carrier_reg);
+						  result.emplace_back("mov", 2, std::vector{ Rnew, arg }).precolor(Rnew, carrier_reg);
+						  stored.push(std::make_pair(carrier_reg, Rnew));
+					  }
+
+					  current_register++;
+				  }
+
+				  return stored;
+				};
+
+			auto unload_params = [&](auto& occupied) -> void
+			{
+			  while (!occupied.empty())
+			  {
+				  auto &[reg, Rtemp] = occupied.top();
+				  result.emplace_back("pop", 1, std::vector{ Rtemp }).precolor(Rtemp, reg);
+				  occupied.pop();
+			  }
+			};
 
 			switch (TAC.get_type())
 			{
@@ -36,8 +112,14 @@ namespace compiler
 				break;
 
 			case TAC_type::Equals:
-				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[1], TAC.operands()[2] });
+			{
+				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0] }).add_int_literal(0);
+				result.emplace_back("sub", 2, std::vector{ TAC.operands()[0], TAC.operands()[1] });
+				result.emplace_back("add", 2, std::vector{ TAC.operands()[0], TAC.operands()[2] });
+				result.emplace_back("not", 1, std::vector{ TAC.operands()[0] });
+				result.emplace_back("not", 1, std::vector{ TAC.operands()[0] });
 				break;
+			}
 
 			case TAC_type::Negate:
 				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0], TAC.operands()[1] });
@@ -45,8 +127,16 @@ namespace compiler
 				break;
 
 			case TAC_type::Return:
+			{
+				// If no prologue has been inserted -- don't know what to do
+				assert(Rrbp_opt.has_value());
+				assert(Rrsp_opt.has_value());
+				const auto& Rrbp = Rrbp_opt.value();
+				// Insert epilogue
+				result.emplace_back("pop", 1, std::vector{ Rrbp }).precolor(Rrbp, "rbp");
 				result.emplace_back("ret", 0, TAC.operands());
 				break;
+			}
 
 			case TAC_type::Add:
 				/// TAC: add R0, R1, R2
@@ -109,21 +199,44 @@ namespace compiler
 				break;
 
 			case TAC_type::Init:
-				// TODO: Handle function "initializations"
-				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0] });
-				result.back().add_int_literal(TAC.value());
+				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0] }).add_int_literal(TAC.value());
 				break;
 
 			case TAC_type::IfNotZero:
-				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[0] });
-				result.back().add_int_literal(0);
-				result.emplace_back("jnz", 2, std::vector{ TAC.operands()[0] });
-				result.back().add_jmp_label(TAC.branching_label());
+				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[0] }).add_int_literal(0);
+				result.emplace_back("jnz", 2, std::vector{ TAC.operands()[0] }).add_jmp_label(TAC.branching_label());
 				break;
 
 			case TAC_type::FunctionCall:
-				result.emplace_back("fcall ...");
+			{
+				/// There _are_ at least 2 operands in such statement:
+				/// [0] := retval vreg container
+				/// [1] := function name
+				assert(TAC.operands().size() >= 2);
+
+				std::stack<std::pair<std::string, ir::tac::vregister_type>>
+					occupied = load_params(TAC.operands().rbegin(), TAC.operands().rend() - 1);
+
+				const auto
+					fun_label = std::string{ functions.at(TAC.operands()[1]) }; //< at(1) is the "function register"
+				result.emplace_back("call").add_jmp_label(fun_label);
+
+				// Cleanup and fetch retval
+				auto& Rretval = TAC.operands()[0];
+				auto Rrax = new_vreg();
+				current_register = 0ul;
+				result.emplace_back("mov", 2, std::vector{ Rretval, Rrax }).precolor(Rrax, "rax");
+
+				unload_params(occupied);
+				while (!occupied.empty())
+				{
+					auto &[reg, Rtemp] = occupied.top();
+					result.emplace_back("pop", 1, std::vector{ Rtemp }).precolor(Rtemp, reg);
+					occupied.pop();
+				}
+
 				break;
+			}
 
 			case TAC_type::Goto:
 				result.emplace_back("jmp");

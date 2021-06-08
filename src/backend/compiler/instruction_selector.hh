@@ -16,8 +16,14 @@ namespace compiler
 	class instruction_selector
 	{
 	 private:
+		/// TAC to machine target native instruction mapper
 		TAC_to_native_mapper m_mapper;
+
+		/// Instructions which are result from the selection
 		std::vector<instruction> m_selected{};
+
+		/// Function identifiers stored in registers in TAC form
+		std::unordered_map<ir::tac::vregister_type, std::string_view> m_functions{};
 
 	 public:
 		explicit instruction_selector(TAC_to_native_mapper t_mapper)
@@ -31,22 +37,16 @@ namespace compiler
 		 * @param three_address_code
 		 * @return true if successful and false if not
 		 */
-		bool select_for(const std::vector<ir::tac>& TACs);
-
-		/**
-		 * @brief Performs a macro expansion instruction selection on a single three address code statement
-		 * @param TAC The single IR statement
-		 * @return The selected instruction
-		 */
-		bool select_for(const ir::tac& TAC);
+		void select_for(const std::vector<ir::tac>& TACs);
 
 		/**
 		 * @brief Acquire the result of the `select_for` call
 		 * @return All selected instructions
 		 */
-		[[nodiscard]] const std::vector<instruction>& fetch_selected_output() const
+		[[nodiscard]] auto
+		fetch_selected_output() const
 		{
-			return m_selected;
+			return std::make_pair(m_selected, m_functions);
 		}
 	};
 }

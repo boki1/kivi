@@ -5,6 +5,7 @@
 #include <utility>
 #include <variant>
 #include <ostream>
+#include <memory>
 
 #include <ir_generation/ir_code.hh>
 
@@ -15,7 +16,29 @@ namespace compiler
 	/// Forward declaration
 	class instruction;
 
-	using TAC_to_native_mapper = std::vector<instruction> (*)(const ir::tac&);
+	class unknown_vregister_exception : std::exception
+	{
+	public:
+		explicit unknown_vregister_exception(ir::tac::vregister_type t_unknown)
+			: m_unknown{ t_unknown }, m_what_msg{ new char[100] }
+		{
+			sprintf(m_what_msg.get(), "Err: Unaware of virtual register #%u (R%u).", m_unknown, m_unknown);
+		}
+
+		[[nodiscard]] const char*
+		what() const noexcept override
+		{
+			return m_what_msg.get();
+		}
+	private:
+		ir::tac::vregister_type m_unknown{ ~0u };
+		std::unique_ptr<char[]> m_what_msg;
+	};
+
+	using TAC_to_native_mapper = std::vector<instruction> (*)(
+		const ir::tac& /* TAC_to_map */ ,
+		const std::unordered_map<ir::tac::vregister_type, std::string_view>& /* functions_in_registers */
+	);
 
 	/// Machine target register abstraction
 	struct rregister
@@ -103,12 +126,13 @@ namespace compiler
 			jmp_label.swap(new_jmp_label);
 		}
 
-		bool precolor(ir::tac::vregister_type vregister, const std::string& color)
+		instruction& precolor(ir::tac::vregister_type vregister, const std::string& color)
 		{
 			if (precolored.find(vregister) != precolored.end())
-				return false;
+				throw unknown_vregister_exception{ vregister };
 
-			precolored.emplace(vregister, color);
+			precolored[vregister] = color;
+			return *this;
 		}
 
 		void put_label(const std::string& t_label, bool t_is_fun)
@@ -124,7 +148,8 @@ namespace compiler
 
 		friend std::ostream& operator<<(std::ostream& os, const instruction& instruction)
 		{
-			os << "{ name: " << instruction.name << ", expected_actual_operands: " << instruction.expected_actual_operands << "}";
+			os << "{ name: " << instruction.name << ", expected_actual_operands: "
+			   << instruction.expected_actual_operands << "}";
 			return os;
 		}
 

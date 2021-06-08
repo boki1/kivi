@@ -10,7 +10,7 @@ namespace sa = syntax_analyzer;
 
 namespace intermediate_representation
 {
-	/// Defines an already constructed TAC
+/// Defines an already constructed TAC
 	tac*
 	generation_unit::define_tac(const tac& code)
 	{
@@ -124,6 +124,7 @@ namespace intermediate_representation
 			std::string label;
 			bool is_done = false;
 			bool is_referenced = false;
+			bool is_function = false;
 		};
 
 		std::map<tac*, lineinfo> source_index{};
@@ -137,8 +138,10 @@ namespace intermediate_representation
 
 		for (const auto& entry_point : entry_points())
 		{
+//			entry_point.second.
 			remaining_codes.push_back(entry_point.second);
 			source_index[entry_point.second].label = entry_point.first;
+			source_index[entry_point.second].is_function = true;
 		}
 
 		for (const auto& tac: tacs())
@@ -177,7 +180,6 @@ namespace intermediate_representation
 				{
 					if (jmp)
 					{
-//						code_chain->place_branching_label(code_idx.label);
 						auto unconditional_goto = tac_goto(std::string{ code_idx.label });
 						remaining_codes.push_back(unconditional_goto);
 					}
@@ -187,7 +189,7 @@ namespace intermediate_representation
 				code_idx.is_done = true;
 
 				if (!code_idx.label.empty())
-					code_chain->labelize(code_idx.label);
+					code_chain->labelize(code_idx.label, code_idx.is_function);
 				sorted.push_back(code_chain);
 
 				if (code_chain->condition().has_value())
@@ -213,8 +215,13 @@ namespace intermediate_representation
 		three_address_code.reserve(m_tacs.size());
 
 		std::vector<tac::tac_ptr> sorted = labelize();
-		for (tac::tac_ptr TAC_ptr : sorted)
-			three_address_code.push_back(*TAC_ptr);
+		std::transform(sorted.cbegin(), sorted.cend(), std::back_inserter(three_address_code), [](tac::tac_ptr ptr)
+		{
+		  return *ptr;
+		});
+
+//		for (tac::tac_ptr TAC_ptr : sorted)
+//			three_address_code.push_back(*TAC_ptr);
 
 		return three_address_code;
 	}
