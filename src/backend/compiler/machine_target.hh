@@ -16,7 +16,7 @@ namespace compiler
 {
 	class machine_target
 	{
-	 public:
+	public:
 		/// Template for the functions related to stack memory management
 		/// @tparam	*unnamed*(bytes) The amount of bytes to be allocated
 		/// @return The beginning of memory allocated
@@ -38,11 +38,12 @@ namespace compiler
 			  m_allocate_stackmem_routine{ alloc },
 			  m_free_stackmem_routine{ drop },
 			  m_instruction_selector{ ir_to_native_mapping },
+			  m_mapper{ ir_to_native_mapping },
 			  m_register_allocator{}
 		{
 		}
 
-	 private:
+	private:
 
 		/// _Used_ instruction set of the machine target const instruction_set_type& m_instruction_set;
 		const instruction_set_type& m_instruction_set;
@@ -65,13 +66,13 @@ namespace compiler
 		/// Concrete register allocation algorithm
 		register_allocator m_register_allocator;
 
-	 public:
+	public:
 		const std::vector<instruction>& process_input(const std::vector<ir::tac>& t_input)
 		{
 			/// DO STUFF
 		}
 
-	 public:
+	public:
 		template<typename T>
 		[[nodiscard]] word<T> stk_alloc(int bytes)
 		{
@@ -84,7 +85,7 @@ namespace compiler
 			return m_free_stackmem_routine(bytes);
 		}
 
-	 public:
+	public:
 		[[nodiscard]] const instruction_set_type& instruction_set() const
 		{
 			return m_instruction_set;

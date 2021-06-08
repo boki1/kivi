@@ -9,15 +9,98 @@
 #include <ir_generation/generation_context.hh>
 
 using TAC_type = ir::tac::type;
+using Subreg_type = compiler::rregister::Subreg_type;
 
 namespace compiler
 {
 	namespace x86_machine_target
 	{
 
-		// TODO: DO we need this??
+		// TODO: Is this actually required?
 		static const machine_target::instruction_set_type x86_is{};
-		static const machine_target::register_set_type x86_regs{};
+
+		static const machine_target::register_set_type x86_regs{
+
+			//!
+			//! Callee-owned
+			//!
+
+			rregister{ "rax", 8, true, false }, //< Return value
+			rregister{ "eax", 4, true, false, "rax" },
+			rregister{ "ax", 2, true, false, "eax", Subreg_type::Hi },
+			rregister{ "al", 2, true, false, "eax", Subreg_type::Lo },
+			rregister{ "rdi", 8, true, false }, //< First parameter
+			rregister{ "edi", 4, true, false, "rdi" },
+			rregister{ "dx", 2, true, false, "edi", Subreg_type::Hi },
+			rregister{ "dl", 2, true, false, "edi", Subreg_type::Lo },
+			rregister{ "rsi", 8, true, false }, //< Second parameter
+			rregister{ "esi", 4, true, false, "rsi" },
+			rregister{ "sx", 2, true, false, "esi", Subreg_type::Hi },
+			rregister{ "sl", 2, true, false, "esi", Subreg_type::Lo },
+			rregister{ "rdx", 8, true, false }, //< Third parameter
+			rregister{ "edx", 4, true, false, "rdx" },
+			rregister{ "dx", 2, true, false, "edx", Subreg_type::Hi },
+			rregister{ "dl", 2, true, false, "edx", Subreg_type::Lo },
+			rregister{ "rcx", 8, true, false }, //< Fourth parameter
+			rregister{ "ecx", 4, true, false, "rcx" },
+			rregister{ "cx", 2, true, false, "ecx", Subreg_type::Hi },
+			rregister{ "cl", 2, true, false, "ecx", Subreg_type::Lo },
+			rregister{ "r8", 8, true, false }, //< Fifth parameter
+			rregister{ "r8d", 4, true, false, "r8" },
+			rregister{ "r8w", 2, true, false, "r8d", Subreg_type::Hi },
+			rregister{ "r8b", 2, true, false, "r8d", Subreg_type::Lo },
+			rregister{ "r9", 8, true, false }, //< Fifth parameter
+			rregister{ "r9d", 4, true, false, "r9" },
+			rregister{ "r9w", 2, true, false, "r9d", Subreg_type::Hi },
+			rregister{ "r9b", 2, true, false, "r9d", Subreg_type::Lo },
+			rregister{ "r10", 8, true, false }, //< Scratch/temporary
+			rregister{ "r10d", 4, true, false, "r10" },
+			rregister{ "r10w", 2, true, false, "r10d", Subreg_type::Hi },
+			rregister{ "r10b", 2, true, false, "r10d", Subreg_type::Lo },
+			rregister{ "r11", 8, true, false }, //< Scratch/temporary
+			rregister{ "r11d", 4, true, false, "r11" },
+			rregister{ "r11w", 2, true, false, "r11d", Subreg_type::Hi },
+			rregister{ "r11b", 2, true, false, "r11d", Subreg_type::Lo },
+
+			//!
+			//! Caller-owned
+			//!
+
+			{ "rsp", 8, false, true }, //< Stack pointer
+			{ "esp", 4, false, true, "rsp" },
+			{ "sp", 2, false, true, "esp", Subreg_type::Hi },
+			{ "spl", 2, false, true, "esp", Subreg_type::Lo },
+			{ "rbx", 8, false, true }, //< Local variable
+			{ "ebx", 4, false, true, "rbx" },
+			{ "bx", 2, false, true, "ebx", Subreg_type::Hi },
+			{ "bl", 2, false, true, "ebx", Subreg_type::Lo },
+			{ "rbp", 8, false, true }, //< Stack frame / Local variable
+			{ "ebp", 4, false, true, "rbp" },
+			{ "bp", 2, false, true, "ebp", Subreg_type::Hi },
+			{ "bpl", 2, false, true, "ebp", Subreg_type::Lo },
+			{ "r12", 8, false, true }, //< Local variable
+			{ "r12d", 4, false, true, "r12" },
+			{ "r12w", 2, false, true, "r12d", Subreg_type::Hi },
+			{ "r12b", 2, false, true, "r12d", Subreg_type::Lo },
+			{ "r13", 8, false, true }, //< Local variable
+			{ "r13d", 4, false, true, "r13" },
+			{ "r13w", 2, false, true, "r13d", Subreg_type::Hi },
+			{ "r13b", 2, false, true, "r13d", Subreg_type::Lo },
+			{ "r14", 8, false, true }, //< Local variable
+			{ "r14d", 4, false, true, "r14" },
+			{ "r14w", 2, false, true, "r14d", Subreg_type::Hi },
+			{ "r14b", 2, false, true, "r14d", Subreg_type::Lo },
+			{ "r15", 8, false, true }, //< Local variable
+			{ "r15d", 4, false, true, "r15" },
+			{ "r15w", 2, false, true, "r15d", Subreg_type::Hi },
+			{ "r15b", 2, false, true, "r15d", Subreg_type::Lo },
+
+			//!
+			//! Special
+			//!
+
+			// Not added
+		};
 
 		// These two are exptected to be set when inserting the prologue of the callee and to be used by the epilogue as well
 		std::optional<ir::tac::vregister_type> Rrbp_opt;
@@ -113,11 +196,11 @@ namespace compiler
 
 			case TAC_type::Equals:
 			{
+				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[1], TAC.operands()[2] });
 				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0] }).add_int_literal(0);
-				result.emplace_back("sub", 2, std::vector{ TAC.operands()[0], TAC.operands()[1] });
-				result.emplace_back("add", 2, std::vector{ TAC.operands()[0], TAC.operands()[2] });
-				result.emplace_back("not", 1, std::vector{ TAC.operands()[0] });
-				result.emplace_back("not", 1, std::vector{ TAC.operands()[0] });
+				result.emplace_back("sete",
+					1,
+					std::vector{ TAC.operands()[0] }); //< [0] is a _byte_ register or memory
 				break;
 			}
 
@@ -204,7 +287,9 @@ namespace compiler
 
 			case TAC_type::IfNotZero:
 				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[0] }).add_int_literal(0);
-				result.emplace_back("jnz", 2, std::vector{ TAC.operands()[0] }).add_jmp_label(TAC.branching_label());
+				result.emplace_back("jnz",
+					2,
+					std::vector{ TAC.operands()[0] }).add_jmp_label(TAC.branching_label());
 				break;
 
 			case TAC_type::FunctionCall:
@@ -218,7 +303,8 @@ namespace compiler
 					occupied = load_params(TAC.operands().rbegin(), TAC.operands().rend() - 1);
 
 				const auto
-					fun_label = std::string{ functions.at(TAC.operands()[1]) }; //< at(1) is the "function register"
+					fun_label =
+					std::string{ functions.at(TAC.operands()[1]) }; //< at(1) is the "function register"
 				result.emplace_back("call").add_jmp_label(fun_label);
 
 				// Cleanup and fetch retval

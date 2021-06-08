@@ -47,13 +47,30 @@ namespace compiler
 		int bytes;
 		bool is_callee_save;
 		bool is_caller_save;
+		enum class Subreg_type
+		{
+			Lo, Hi
+		};
+		std::optional<std::string_view> parent{};
+		std::optional<Subreg_type> subreg_type{};
 
-		constexpr rregister(const std::string_view& t_name, int t_bytes, bool t_callee = true, bool t_caller = true)
+		constexpr rregister(const std::string_view& t_name,
+			int t_bytes,
+			bool t_callee,
+			bool t_caller,
+			std::string_view t_parent = "",
+			std::optional<Subreg_type> t_sub_type = {})
 			: name{ t_name },
 			  bytes{ t_bytes },
 			  is_callee_save{ t_callee },
 			  is_caller_save{ t_caller }
 		{
+			if (t_parent != "")
+			{
+				parent = std::make_optional(t_parent);
+				if (t_sub_type.has_value())
+					subreg_type.swap(t_sub_type);
+			}
 		}
 	};
 
