@@ -8,6 +8,8 @@
 #include <memory>
 
 #include <ir_generation/ir_code.hh>
+#include <iterator>
+#include <iostream>
 
 namespace ir = intermediate_representation;
 
@@ -93,7 +95,7 @@ namespace compiler
 		/// Label if one is present and mark if it is a function or not
 		std::optional<std::pair<std::string, bool>> label;
 
-		/// Virtual expected_actual_operands
+		/// Virtual operands
 		std::vector<ir::tac::vregister_type> virtual_operands;
 
 		/// Literal
@@ -105,25 +107,20 @@ namespace compiler
 		/// Predefined virtual-actual register mappings
 		std::unordered_map<ir::tac::vregister_type, std::string> precolored;
 
-		/// Actual expected_actual_operands
+		/// Actual operands
 		std::vector<std::string_view> actual_operands;
 
-		/// The expected number of actual expected_actual_operands
-		int expected_actual_operands;
-
 		explicit instruction(const std::string_view& t_name,
-			int t_operands = 0,
-			const std::string& t_label = {},
-			bool t_is_fun = false)
-			: name{ t_name }, expected_actual_operands{ t_operands }, label{ std::make_pair(t_label, t_is_fun) }
+                             bool t_is_fun = false,
+			                const std::string& t_label = {})
+			: name{ t_name }, label{ std::make_pair(t_label, t_is_fun) }
 		{
 		}
 
-		instruction(const std::string_view& t_name,
-			int t_operands,
-			std::vector<ir::tac::vregister_type> t_virtual_operands = {}
+		explicit instruction(const std::string_view& t_name,
+			std::vector<ir::tac::vregister_type> t_virtual_operands
 		)
-			: name{ t_name }, expected_actual_operands{ t_operands }, virtual_operands{ std::move(t_virtual_operands) }
+			: name{ t_name }, virtual_operands{ std::move(t_virtual_operands) }
 		{
 		}
 
@@ -160,13 +157,14 @@ namespace compiler
 
 		bool operator==(const instruction& rhs) const
 		{
-			return name == rhs.name && expected_actual_operands == rhs.expected_actual_operands;
+			return name == rhs.name;
 		}
 
 		friend std::ostream& operator<<(std::ostream& os, const instruction& instruction)
 		{
-			os << "{ name: " << instruction.name << ", expected_actual_operands: "
-			   << instruction.expected_actual_operands << "}";
+			os << "{ name: " << instruction.name << ", operands: ";
+            std::copy(instruction.actual_operands.begin(), instruction.actual_operands.end(), std::ostream_iterator<std::basic_string_view<char>>(os, "; "));
+			os << "}";
 			return os;
 		}
 

@@ -191,22 +191,21 @@ namespace compiler
 			{
 
 			case TAC_type::Nop:
-				result.emplace_back("nop");
+                result.emplace_back(compiler::instruction{"nop", std::vector<ir::tac::vregister_type>{}});
 				break;
 
 			case TAC_type::Equals:
 			{
-				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[1], TAC.operands()[2] });
-				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0] }).add_int_literal(0);
+				result.emplace_back("cmp", std::vector{ TAC.operands()[1], TAC.operands()[2] });
+				result.emplace_back("mov", std::vector{ TAC.operands()[0] }).add_int_literal(0);
 				result.emplace_back("sete",
-					1,
 					std::vector{ TAC.operands()[0] }); //< [0] is a _byte_ register or memory
 				break;
 			}
 
 			case TAC_type::Negate:
-				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0], TAC.operands()[1] });
-				result.emplace_back("neg", 1, std::vector{ TAC.operands()[0] });
+				result.emplace_back("mov", std::vector{ TAC.operands()[0], TAC.operands()[1] });
+				result.emplace_back("neg", std::vector{ TAC.operands()[0] });
 				break;
 
 			case TAC_type::Return:
@@ -216,8 +215,8 @@ namespace compiler
 				assert(Rrsp_opt.has_value());
 				const auto& Rrbp = Rrbp_opt.value();
 				// Insert epilogue
-				result.emplace_back("pop", 1, std::vector{ Rrbp }).precolor(Rrbp, "rbp");
-				result.emplace_back("ret", 0, TAC.operands());
+				result.emplace_back("pop", std::vector{ Rrbp }).precolor(Rrbp, "rbp");
+				result.emplace_back("ret", TAC.operands());
 				break;
 			}
 
@@ -229,8 +228,8 @@ namespace compiler
 				///			add R0, R1
 				/// Meaning: Store R2 in R0
 				///			 Add R1 to R0
-				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0], TAC.operands()[2] });
-				result.emplace_back("add", 2, std::vector{ TAC.operands()[0], TAC.operands()[1] });
+				result.emplace_back("mov", std::vector{ TAC.operands()[0], TAC.operands()[2] });
+				result.emplace_back("add", std::vector{ TAC.operands()[0], TAC.operands()[1] });
 				break;
 
 				//! Note for multiplication, division and modular division
@@ -247,10 +246,10 @@ namespace compiler
 			case TAC_type::Multiplication:
 			{
 				auto Reax = new_vreg();
-				result.emplace_back("mov", 2, std::vector{ Reax, TAC.operands()[1] });
+				result.emplace_back("mov", std::vector{ Reax, TAC.operands()[1] });
 				result.back().precolor(Reax, "%eax");
-				result.emplace_back("imul", 2, std::vector{ TAC.operands()[2] });
-				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0], Reax });
+				result.emplace_back("imul", std::vector{ TAC.operands()[2] });
+				result.emplace_back("mov", std::vector{ TAC.operands()[0], Reax });
 				result.back().precolor(Reax, "%eax");
 			}
 				break;
@@ -258,10 +257,10 @@ namespace compiler
 			case TAC_type::Division:
 			{
 				auto Reax = new_vreg();
-				result.emplace_back("mov", 2, std::vector{ Reax, TAC.operands()[1] });
+				result.emplace_back("mov", std::vector{ Reax, TAC.operands()[1] });
 				result.back().precolor(Reax, "%eax");
-				result.emplace_back("idiv", 2, std::vector{ TAC.operands()[2] });
-				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0], Reax });
+				result.emplace_back("idiv", std::vector{ TAC.operands()[2] });
+				result.emplace_back("mov", std::vector{ TAC.operands()[0], Reax });
 				result.back().precolor(Reax, "%eax");
 			}
 				break;
@@ -270,25 +269,24 @@ namespace compiler
 			{
 				auto Reax = new_vreg();
 				auto Redx = new_vreg();
-				result.emplace_back("mov", 2, std::vector{ Reax, TAC.operands()[1] });
+				result.emplace_back("mov", std::vector{ Reax, TAC.operands()[1] });
 				result.back().precolor(Reax, "%eax");
-				result.emplace_back("idiv", 2, std::vector{ TAC.operands()[2] });
-				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0], Redx });
+				result.emplace_back("idiv", std::vector{ TAC.operands()[2] });
+				result.emplace_back("mov", std::vector{ TAC.operands()[0], Redx });
 				result.back().precolor(Redx, "%edx");
 			}
 
 			case TAC_type::Copy:
-				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0], TAC.operands()[1] });
+				result.emplace_back("mov", std::vector{ TAC.operands()[0], TAC.operands()[1] });
 				break;
 
 			case TAC_type::Init:
-				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0] }).add_int_literal(TAC.value());
+				result.emplace_back("mov", std::vector{ TAC.operands()[0] }).add_int_literal(TAC.value());
 				break;
 
 			case TAC_type::IfNotZero:
-				result.emplace_back("cmp", 2, std::vector{ TAC.operands()[0] }).add_int_literal(0);
+				result.emplace_back("cmp", std::vector{ TAC.operands()[0] }).add_int_literal(0);
 				result.emplace_back("jnz",
-					2,
 					std::vector{ TAC.operands()[0] }).add_jmp_label(TAC.branching_label());
 				break;
 
@@ -311,21 +309,20 @@ namespace compiler
 				auto& Rretval = TAC.operands()[0];
 				auto Rrax = new_vreg();
 				current_register = 0ul;
-				result.emplace_back("mov", 2, std::vector{ Rretval, Rrax }).precolor(Rrax, "rax");
+				result.emplace_back("mov", std::vector{ Rretval, Rrax }).precolor(Rrax, "rax");
 
 				unload_params(occupied);
 				while (!occupied.empty())
 				{
 					auto &[reg, Rtemp] = occupied.top();
-					result.emplace_back("pop", 1, std::vector{ Rtemp }).precolor(Rtemp, reg);
+					result.emplace_back("pop", std::vector{ Rtemp }).precolor(Rtemp, reg);
 					occupied.pop();
 				}
-
 				break;
 			}
 
 			case TAC_type::Goto:
-				result.emplace_back("jmp");
+			    result.emplace_back(compiler::instruction{"jmp", std::vector<ir::tac::vregister_type>{}});
 				result.back().add_jmp_label(TAC.branching_label());
 				break;
 			}

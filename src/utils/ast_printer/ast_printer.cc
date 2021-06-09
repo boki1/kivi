@@ -161,7 +161,7 @@ namespace printer
 	std::string
 	print(const sa::expression& expr, bool is_statement /* = false */) noexcept
 	{
-		// Iterators pointing to the first and last expression in `expr.expected_actual_operands()`
+		// Iterators pointing to the first and last expression in `expr.operands()`
 		switch (expr.get_type())
 		{
 		case et::Nop:

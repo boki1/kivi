@@ -20,6 +20,12 @@ void report(const std::string_view& error_message)
 
 int main(int argc, const char* argv[])
 {
+    if (!argv[1]) {
+        ArgumentParser parser("Kivi", "The Kivi programming language");
+        parser.print_help();
+        return 1;
+    }
+
 	if (cli::parse_arguments(argc, argv))
 		return 1;
 

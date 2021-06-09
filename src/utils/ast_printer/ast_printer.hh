@@ -53,7 +53,7 @@ namespace printer
 	 * @brief Prints an operation
 	 * @param expr 	The operation
 	 * @param oper	The stringified operator
-	 * @param separator The separator between expected_actual_operands
+	 * @param separator The separator between operands
 	 * @note The separator is required to be of length 2 (at least)
 	 * @return The string representation of the operation
 	 */

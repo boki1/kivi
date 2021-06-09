@@ -2,7 +2,7 @@ add_subdirectory(extern)
 add_subdirectory(utils)
 add_subdirectory(frontend)
 add_subdirectory(backend)
-#add_subdirectory(test)
+add_subdirectory(test)
 
 ################ Main
 

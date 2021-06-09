@@ -91,7 +91,7 @@ namespace intermediate_representation
 		[[nodiscard]] tac* tac_goto(const std::string& branch_label);
 
 		/*
-		 * The definitions of the three address code instructions and their expected_actual_operands
+		 * The definitions of the three address code instructions and their operands
 		 */
 		tac*
 		define_tac(const tac& code);
