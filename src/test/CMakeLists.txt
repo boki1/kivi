@@ -56,7 +56,7 @@ add_test(NAME Machine_Target_x86_64
 
 
 ############################ x86_64 Instruction Selection
-add_executable(test__x86_64_instruction_selection backend/x86_64_instruction_selection.cc)
+add_executable(test__x86_64_instruction_selection backend/x86_64_instruction_selection.test.cc)
 target_link_libraries(test__x86_64_instruction_selection PUBLIC test_main)
 target_link_libraries(test__x86_64_instruction_selection PUBLIC kivi_compiler)
 target_link_libraries(test__x86_64_instruction_selection PUBLIC kivi_ir)

@@ -134,9 +134,9 @@ namespace compiler
 				const auto& Rrbp = Rrbp_opt.value();
 				const auto& Rrsp = Rrsp_opt.value();
 
-				result.emplace_back("push", 1, std::vector{ Rrbp })
+				result.emplace_back("push", std::vector{ Rrbp })
 					.precolor(Rrbp, "rbp");
-				result.emplace_back("mov", 2, std::vector{ Rrbp, Rrsp })
+				result.emplace_back("mov", std::vector{ Rrbp, Rrsp })
 					.precolor(Rrbp, "rbp")
 					.precolor(Rrsp, "rsp");
 			}
@@ -158,7 +158,7 @@ namespace compiler
 					  if (current_register >= 6)
 					  {
 						  // TODO: From memory
-						  result.emplace_back("mov", 2, std::vector{ ~0u, arg });
+						  result.emplace_back("mov", std::vector{ ~0u, arg });
 					  }
 					  else
 					  {
@@ -166,8 +166,8 @@ namespace compiler
 						  // mov %reg, paramN
 						  auto Rnew = new_vreg();
 						  const auto& carrier_reg = registers.at(current_register);
-						  result.emplace_back("push", 1, std::vector{ Rnew }).precolor(Rnew, carrier_reg);
-						  result.emplace_back("mov", 2, std::vector{ Rnew, arg }).precolor(Rnew, carrier_reg);
+						  result.emplace_back("push", std::vector{ Rnew }).precolor(Rnew, carrier_reg);
+						  result.emplace_back("mov", std::vector{ Rnew, arg }).precolor(Rnew, carrier_reg);
 						  stored.push(std::make_pair(carrier_reg, Rnew));
 					  }
 
@@ -182,7 +182,7 @@ namespace compiler
 			  while (!occupied.empty())
 			  {
 				  auto &[reg, Rtemp] = occupied.top();
-				  result.emplace_back("pop", 1, std::vector{ Rtemp }).precolor(Rtemp, reg);
+				  result.emplace_back("pop", std::vector{ Rtemp }).precolor(Rtemp, reg);
 				  occupied.pop();
 			  }
 			};
