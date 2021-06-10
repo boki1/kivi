@@ -9,7 +9,7 @@ namespace compiler
 {
 	class register_allocator
 	{
-	 private:
+	private:
 		std::optional<compiler::interference_graph> m_graph{};
 
 		// std::optional<std::vector<...>> m_excess;
@@ -23,7 +23,7 @@ namespace compiler
 		/// The output of the register allocator process
 		std::vector<instruction> m_output{};
 
-	 public:
+	public:
 		register_allocator() = default;
 
 		explicit register_allocator(const std::vector<instruction>& t_input)
@@ -31,11 +31,15 @@ namespace compiler
 		{
 		}
 
-	 public:
+	public:
 		bool operator()()
 		{
 			return false;
 		}
+
+		void prepare_for_allocation();
+
+		void find_storage_location();
 
 		bool build_interference_graph()
 		{

@@ -51,14 +51,14 @@ int main(int argc, const char* argv[])
 	compiler::emitter x86_emitter{ compiler::configure_target<compiler::x86_64>(), TAC_sorted };
 	if (!x86_emitter.select_instructions())
 		report("FAILURE: Error during instruction selection");
-
 	printer::print_instruction_selection(std::cout, x86_emitter);
+
+	auto basic_blocks = x86_emitter.form_basic_blocks();
+	printer::print_basic_block(std::cout, x86_emitter);
 
 	// Assembly generation
 	if (cli::should_print(cli::pe::asm_))
-	{
-		std::cout << "\nno asm yet :/\n";
-	}
+	{ /*		std::cout << "\nno asm yet :/\n"; */ }
 
 	return 0;
 }

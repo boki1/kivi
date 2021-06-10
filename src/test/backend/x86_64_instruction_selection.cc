@@ -94,6 +94,7 @@ SCENARIO("Perform instruction selection", "[x86_64_iselect]")
 				std::vector<compiler::instruction> expected{
 					compiler::instruction{ "mov" },
 					compiler::instruction{ "mov" },
+					compiler::instruction{ "mov" },
 					compiler::instruction{ "add" },
 				};
 

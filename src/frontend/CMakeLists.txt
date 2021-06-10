@@ -72,7 +72,7 @@ add_library(kivi_ir
         ir_generation/generation_unit.cc
         ir_generation/generation_context.hh
         ir_generation/concrete_generators.cc
-        )
+        ir_generation/liveness_data.hh)
 
 target_include_directories(kivi_ir PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 target_link_libraries(kivi_ir PRIVATE kivi_parser)

@@ -222,13 +222,14 @@ namespace compiler
 			}
 
 			case TAC_type::Add:
-				/// TAC: add R0, R1, R2
-				/// Meaning: R0 = R1 + R2
-				///----------------------
-				/// x86_64: mov R0, R2
-				///			add R0, R1
-				/// Meaning: Store R2 in R0
-				///			 Add R1 to R0
+				//! TAC: add R0, R1, R2
+				//! Meaning: R0 = R1 + R2
+				//!----------------------
+				//! x86_64: mov R0, R2
+				//!			add R0, R1
+				//! Meaning: Store R2 in R0
+				//!			 Add R1 to R0
+
 				result.emplace_back("mov", 2, std::vector{ TAC.operands()[0], TAC.operands()[2] });
 				result.emplace_back("add", 2, std::vector{ TAC.operands()[0], TAC.operands()[1] });
 				break;

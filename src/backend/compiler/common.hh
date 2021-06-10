@@ -127,6 +127,30 @@ namespace compiler
 		{
 		}
 
+		bool operator==(const instruction& rhs) const
+		{
+			return std::tie(name,
+				label,
+				virtual_operands,
+				int_literal,
+				jmp_label,
+				precolored,
+				actual_operands,
+				expected_actual_operands) == std::tie(rhs.name,
+				rhs.label,
+				rhs.virtual_operands,
+				rhs.int_literal,
+				rhs.jmp_label,
+				rhs.precolored,
+				rhs.actual_operands,
+				rhs.expected_actual_operands);
+		}
+
+		bool operator!=(const instruction& rhs) const
+		{
+			return !(rhs == *this);
+		}
+
 		void add_int_literal(int lit)
 		{
 			if (int_literal.has_value())
@@ -158,11 +182,6 @@ namespace compiler
 			label.swap(new_label);
 		}
 
-		bool operator==(const instruction& rhs) const
-		{
-			return name == rhs.name && expected_actual_operands == rhs.expected_actual_operands;
-		}
-
 		friend std::ostream& operator<<(std::ostream& os, const instruction& instruction)
 		{
 			os << "{ name: " << instruction.name << ", expected_actual_operands: "
@@ -178,6 +197,11 @@ namespace compiler
 		void add_actual_operand(std::string_view aoperand)
 		{
 			actual_operands.push_back(aoperand);
+		}
+
+		bool is_branch() const
+		{
+			return jmp_label.has_value();
 		}
 	};
 }
