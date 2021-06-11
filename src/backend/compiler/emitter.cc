@@ -2,7 +2,6 @@
 
 namespace compiler
 {
-
 	std::vector<emitter::basic_block> emitter::form_basic_blocks()
 	{
 		auto leaders = find_leaders();
@@ -47,4 +46,29 @@ namespace compiler
 
 		return leaders;
 	}
+
+
+	emitter::basic_block_liveness determine_liveness(const emitter& emitter, const emitter::basic_block &block)
+	{
+		emitter::basic_block_liveness table { block };
+
+		const auto &program = emitter.program();
+		for (auto it = program.rbegin(); it != program.rend(); ++it)
+			table.next_line(it.base() - 1);
+
+		return table;
+	}
+
+
+	void emitter::basic_block_liveness::next_line(emitter::basic_block::stmt_ptr stmt)
+	{
+		for (const auto &x: stmt->virtual_operands)
+		{
+			// in x = y + z
+			// x is marked dead in the table
+			// y and z to live
+			// y's and z's next use to `stmt`
+		}
+	}
+
 }

@@ -61,7 +61,7 @@ namespace compiler
 		 */
 		bool compile()
 		{
-			return (select_instructions() && allocate_registers() && prepare_runtime());
+			return (select_instructions() && allocate_registers());
 		}
 
 		const std::stringstream& fetch_result()
@@ -99,6 +99,8 @@ namespace compiler
 				: begin{ t_begin }, end{ t_end }, begin_line{ t_begin_line }, end_line{ t_end_line }
 			{
 			}
+
+			basic_block() = default;
 		};
 
 		/**
@@ -132,18 +134,48 @@ namespace compiler
 		}
 
 		/**
+		 * @brief Keeps detailed information about the next usages of values in a given basic block
+		 */
+		struct basic_block_liveness
+		{
+			struct entry
+			{
+				/// Liveness status
+				enum class status { live, not_live };
+
+				/// Next-use
+				basic_block::stmt_ptr next_use;
+			};
+
+			/// Basic block container
+			const basic_block &block_container;
+
+			/// Table with info. about the whole block
+			std::unordered_map<ir::tac::vregister_type, basic_block_liveness::entry> info;
+
+
+			/// Construction
+			basic_block_liveness(const basic_block &t_block) : block_container { t_block } {}
+
+			/// Update info. with data from next line
+			void next_line(basic_block::stmt_ptr stmt);
+		};
+
+		/**
+		 * @brief  Determines the liveness of virtual registers in a given block ("scope")
+		 * @param block The block in which the vreg resides (or one of its usages)
+		 * @return Usage struct with detailed information about all used virtual registers
+		 */
+		[[nodiscard]] basic_block_liveness
+		determine_liveness(const basic_block &block);
+
+		/**
 		 * @brief Performs register allocation algorithm on the given program
 		 * @note Ran _after_ `select_instructions()`
 		 * @return true
 		 * @return false
 		 */
 		bool allocate_registers()
-		{
-			return false;
-		}
-
-		/// TODO:
-		bool prepare_runtime()
 		{
 			return false;
 		}

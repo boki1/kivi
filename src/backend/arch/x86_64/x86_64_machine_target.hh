@@ -103,6 +103,9 @@ namespace compiler
 		};
 
 		// These two are exptected to be set when inserting the prologue of the callee and to be used by the epilogue as well
+		// extern std::optional<ir::tac::vregister_type> Rrbp_opt;
+		// extern std::optional<ir::tac::vregister_type> Rrsp_opt;
+
 		std::optional<ir::tac::vregister_type> Rrbp_opt;
 		std::optional<ir::tac::vregister_type> Rrsp_opt;
 
@@ -110,9 +113,14 @@ namespace compiler
 		//! In order to provide minimal amount of optimization during the instruction selection stage, add an additional
 		//! "rule" which is responsible for checking whether a lighter instruction may be used (e.g. when adding 1, prefer inc over add).
 
-		std::vector<instruction> x86_map(const ir::tac& TAC,
-			const std::unordered_map<ir::tac::vregister_type, std::string_view>& functions)
-		{
+		// std::vector<instruction> x86_map(const ir::tac& TAC, const std::unordered_map<ir::tac::vregister_type, std::string_view>& functions);
+
+
+		std::vector<instruction> x86_map(
+				const ir::tac& TAC,
+				const std::unordered_map<ir::tac::vregister_type,
+				std::string_view>& functions
+			){
 			std::vector<instruction> result;
 			result.reserve(1);
 
@@ -337,28 +345,33 @@ namespace compiler
 			return result;
 		}
 
+
+
+		/// TODO:
 		template<typename T>
 		[[nodiscard]] word<T> stkmem_allocate(int bytes)
 		{
 			return word<uint64_t>{ 10 };
 		}
 
+		/// TODO:
 		template<typename T>
 		[[nodiscard]] word<T> stkmem_deallocate(int bytes)
 		{
 			return word<uint64_t>{ 10 };
 		}
-	}
 
-/**
- * @brief Setup an x86_64 target machine
- * @return The resulting machine target
- */
+	}
+	/**
+	 * @brief Setup an x86_64 target machine
+	 * @return The resulting machine target
+	 */
 	template<>
 	[[nodiscard]] machine_target configure_target<x86_64>()
 	{
 		using namespace x86_machine_target;
 		return machine_target{ x86_is, x86_regs, x86_map, stkmem_allocate, stkmem_deallocate };
 	}
+
 }
 #endif //KIVI_SRC_BACKEND_ARCH_X86_X86_MACHINE_TARGET_HH_
