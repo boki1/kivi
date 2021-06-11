@@ -108,35 +108,6 @@ SCENARIO("Perform instruction selection", "[x86_64_iselect]")
 
 		}
 
-//		WHEN("Selecting instruction for prepared listing of TACs which calculate number from the fibonacci sequence")
-//		{
-//
-//			auto x64_emitter = compiler::emitter{ compiler::configure_target<compiler::x86_64>(), fib_TACs };
-//			THEN("The resulting assembly is evaluated")
-//			{
-//				std::vector<compiler::instruction> expected{
-//					compiler::instruction{ "mov" },
-//					compiler::instruction{ "mov" },
-//					compiler::instruction{ "mov" },
-//					compiler::instruction{ "mov" },
-//					compiler::instruction{ "neg" },
-//					compiler::instruction{ "add" },
-//					compiler::instruction{ "cmp" },
-//					compiler::instruction{ "jnz" },
-//					compiler::instruction{ "mov" },
-//					compiler::instruction{ "mov" },
-//					compiler::instruction{ "add" },
-//					compiler::instruction{ "mov" },
-//					compiler::instruction{ "add" },
-//					compiler::instruction{ "nop" },
-//					compiler::instruction{ "ret" },
-//				};
-//
-//				REQUIRE(x64_emitter.select_instructions());
-//				const auto& actual = x64_emitter.strategy().selector().fetch_selected_output();
-//
-//				REQUIRE(expected == actual);
-//			}
-//		}
+
 	}
 }

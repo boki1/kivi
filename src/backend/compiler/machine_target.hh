@@ -21,7 +21,6 @@ namespace compiler
 		/// @tparam	*unnamed*(bytes) The amount of bytes to be allocated
 		/// @return The beginning of memory allocated
 		/// @note In case of failure word{0} is returned
-		/// @todo change word<T>
 		using stackmem_management_fptr = word<uint64_t> (*)(int);
 
 		using instruction_set_type = std::vector<instruction>;

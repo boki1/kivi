@@ -74,7 +74,20 @@ namespace compiler
 					subreg_type.swap(t_sub_type);
 			}
 		}
-	};
+
+        bool operator==(const rregister &rhs) const {
+            return name == rhs.name &&
+                   bytes == rhs.bytes &&
+                   is_callee_save == rhs.is_callee_save &&
+                   is_caller_save == rhs.is_caller_save &&
+                   parent == rhs.parent &&
+                   subreg_type == rhs.subreg_type;
+        }
+
+        bool operator!=(const rregister &rhs) const {
+            return !(rhs == *this);
+        }
+    };
 
 	/// Machine target word abstraction
 	template<typename T, std::enable_if_t<std::is_unsigned_v<T>, bool> = true>
