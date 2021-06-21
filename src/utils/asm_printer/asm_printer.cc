@@ -98,13 +98,6 @@ namespace printer
 		int line = 0;
 		for (auto it = prog.cbegin(); it != prog.cend(); ++it)
 		{
-			for (const auto &block: blocks)
-			{
-				if (block.begin_line == line)
-					os << GREEN << "-------------------------------- Block #" << block.id << WHITE << '\n';
-				else if (block.end_line == line)
-					os << GREEN << "--------------------------------" << WHITE << '\n';
-			}
 			line++;
 
 			next_line();
@@ -138,6 +131,15 @@ namespace printer
 					os << " R" << key << " is predefined as %" << value << ';';
 				}
 			}
+
+			for (const auto& block: blocks)
+			{
+				if (block.begin_line == line)
+					os << '\t' << ORANGE << "; Block #" << block.id << " begins" << WHITE;
+				else if (block.end_line == line + 1)
+					os << '\t' << ORANGE << "; Block #" << block.id << " ends";
+			}
+
 			os << WHITE << '\n';
 		}
 
