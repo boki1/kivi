@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![Build Status](https://travis-ci.com/boki1/kivi.svg?branch=master)](https://travis-ci.com/boki1/kivi)
-[![Active](http://img.shields.io/badge/Status-Active-green.svg)](https://tterb.github.io)  
+[![Active](https://img.shields.io/badge/Status-Inactive-green.svg)](https://tterb.github.io)  
 
 [![Kivi logo](https://i.postimg.cc/PxHqD9Y9/kiwi.png)](https://postimg.cc/2qHmRHH7)
 
